@@ -65,8 +65,6 @@ Note: many terms used in the parts list, like ESC, PDB etc., are explained later
 | &euro;XXX GBP 1.75 | <img width="128" src="images/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
 | &euro;XXX GBP 4.5 | <img width="128" src="images/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
 
-TODO: fill in links.
-
 XXX prices - remember:
 
 * Batteries x 2
