@@ -30,40 +30,40 @@ Note: many terms used in the parts list, like ESC, PDB etc., are explained later
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX Fr. 26 | <img width="128" src="images/f450-frame-3.jpg"> <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached([link] (XXX)).
-| &euro;XXX Fr. 160 | <img width="128" src="images/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs([link] (XXX)).
-| &euro;XXX GBP 130 | <img width="128" src="images/pixhawk-1.jpg"> <img height="128" src="images/pixhawk-2.jpg"> <img height="128" src="images/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system([link] (XXX)).
-| &euro;XXX GBP 35 | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module([link] (XXX)).
-| &euro;XXX GBP 23.50 | <img width="128" src="images/receiver-d4r-ii.jpg"><br>D4R II receiver - the drone's wireless receiver([link] (XXX)).
-| &euro;XXX GBP 30 | <img height="128" src="images/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver([link] (XXX)).
-| &euro;XXX Fr. 115 | <img height="128" src="images/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter([link] (XXX)).
-| &euro;XXX GBP 15 | <img height="128" src="images/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB([link] (XXX)).
+| &euro;XXX Fr. 26 | <img width="128" src="images/f450-frame-3.jpg"> <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link](XXX)).
+| &euro;XXX Fr. 160 | <img width="128" src="images/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs ([link](XXX)).
+| &euro;XXX GBP 130 | <img width="128" src="images/pixhawk-1.jpg"> <img height="128" src="images/pixhawk-2.jpg"> <img height="128" src="images/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](XXX)).
+| &euro;XXX GBP 35 | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](XXX)).
+| &euro;XXX GBP 23.50 | <img width="128" src="images/receiver-d4r-ii.jpg"><br>D4R II receiver - the drone's wireless receiver ([link](XXX)).
+| &euro;XXX GBP 30 | <img height="128" src="images/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](XXX)).
+| &euro;XXX Fr. 115 | <img height="128" src="images/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter ([link](XXX)).
+| &euro;XXX GBP 15 | <img height="128" src="images/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB ([link](XXX)).
 | &euro;XXX Fr. 40 | <img width="128" src="images/lipo-3300mAh-4s1p-14.8v-25C.jpg"><br>LiPo 3300mAh 4S1P 14.8V 25C battery |
 
 ### Support components
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX GBP 4.5 | <img height="128" src="images/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system([link] (XXX)).
-| &euro;XXX GBP 3.2 | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver([link] (XXX)).
-| &euro;XXX GBP 8 | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"><br>Telemetry upgrade cable([link] (XXX)).
-| &euro;XXX GBP 2 | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter)([link] (XXX)).
-| &euro;XXX GBP 6.75 | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector([link] (XXX)).
-| &euro;XXX GBP 2 | <img width="128" src="images/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector([link] (XXX)).
-| &euro;XXX Fr. 8 | <img width="128" src="images/spare-propellars.jpg"><br>Spare propellars([link] (XXX)).
-| &euro;XXX Fr. 5 | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear([link] (XXX)).
-| &euro;XXX GBP 4 | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm([link] (XXX)).
-| &euro;XXX GBP 18 | <img width="128" src="images/e430-lipo-charger.jpg"><br>E430 LiPo charger([link] (XXX)).
+| &euro;XXX GBP 4.5 | <img height="128" src="images/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system ([link](XXX)).
+| &euro;XXX GBP 3.2 | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver ([link](XXX)).
+| &euro;XXX GBP 8 | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"><br>Telemetry upgrade cable ([link](XXX)).
+| &euro;XXX GBP 2 | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter) ([link](XXX)).
+| &euro;XXX GBP 6.75 | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector ([link](XXX)).
+| &euro;XXX GBP 2 | <img width="128" src="images/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector ([link](XXX)).
+| &euro;XXX Fr. 8 | <img width="128" src="images/spare-propellars.jpg"><br>Spare propellars ([link](XXX)).
+| &euro;XXX Fr. 5 | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](XXX)).
+| &euro;XXX GBP 4 | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](XXX)).
+| &euro;XXX GBP 18 | <img width="128" src="images/e430-lipo-charger.jpg"><br>E430 LiPo charger ([link](XXX)).
 
 ### Additional physical components
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX GBP 1.5 | <img width="128" src="images/t-plug-male-power-connector.jpg"><br>T-plug male power connector - connects the PDB to the power module([link] (XXX)).
-| &euro;XXX GBP 2.45 | <img width="128" src="images/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame([link] (XXX)).
-| &euro;XXX GBP 2.75 | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps to attach battery to frame([link] (XXX)).
-| &euro;XXX GBP 1.75 | <img width="128" src="images/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame([link] (XXX)).
-| &euro;XXX GBP 4.5 | <img width="128" src="images/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use([link] (XXX)).
+| &euro;XXX GBP 1.5 | <img width="128" src="images/t-plug-male-power-connector.jpg"><br>T-plug male power connector - connects the PDB to the power module ([link](XXX)).
+| &euro;XXX GBP 2.45 | <img width="128" src="images/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](XXX)).
+| &euro;XXX GBP 2.75 | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps to attach battery to frame ([link](XXX)).
+| &euro;XXX GBP 1.75 | <img width="128" src="images/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](XXX)).
+| &euro;XXX GBP 4.5 | <img width="128" src="images/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](XXX)).
 
 TODO: fill in links.
 
