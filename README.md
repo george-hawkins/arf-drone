@@ -30,45 +30,46 @@ Note: many terms, like PDB, used in the parts list are explained later.
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX | <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-2.jpg"> <img width="128" src="images/f450-frame-3.jpg"> <img width="128" src="images/f450-frame-4.jpg"> F450 frame - the basic platform to which everything else is attached. |
-| &euro;XXX | <img width="128" src="images/e305-quad-propulsion-system.jpg"> E305 propulsion system - propellars, motors and ESCs. |
-| &euro;XXX | <img height="128" src="images/apm-power-module.jpg"> Power module - connects the battery to the flight controller and the PDB. |
-| &euro;XXX | <img height="128" src="images/battery-monitor-alarm.jpg"> Battery monitor alarm. |
-| &euro;XXX | <img width="128" src="images/pixhawk-1.jpg"> <img height="128" src="images/pixhawk-2.jpg"> <img height="128" src="images/pixhawk-3.jpg"> Pixhawk flight controller - the "brains" of the system. |
-| &euro;XXX | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"> u-blox NEO-M8 GPS (and compass) module. |
-| &euro;XXX | <img height="128" src="images/transmitter-taranis-q-x7.jpg"> Taranis Q X7 transmitter. |
-| &euro;XXX | <img width="128" src="images/receiver-d4r-ii.jpg"> D4R II receiver - the drone's wireless receiver. |
-| &euro;XXX | <img height="128" src="images/receiver-x8r.jpg"> X8R receiver - the drone's wireless receiver. |
-| &euro;XXX | <img width="128" src="images/lipo-3300mAh-4s1p-14.8v-25C.jpg"> LiPo 3300mAh 4S1P 14.8V 25C battery |
+| &euro;XXX | <img width="128" src="images/f450-frame-3.jpg"> <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached. |
+| &euro;XXX | <img width="128" src="images/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs. |
+| &euro;XXX | <img width="128" src="images/pixhawk-1.jpg"> <img height="128" src="images/pixhawk-2.jpg"> <img height="128" src="images/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system. |
+| &euro;XXX | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module. |
+| &euro;XXX | <img width="128" src="images/receiver-d4r-ii.jpg"><br>D4R II receiver - the drone's wireless receiver. |
+| &euro;XXX | <img height="128" src="images/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver. |
+| &euro;XXX | <img height="128" src="images/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter. |
+| &euro;XXX | <img height="128" src="images/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB. |
+| &euro;XXX | <img width="128" src="images/lipo-3300mAh-4s1p-14.8v-25C.jpg"><br>LiPo 3300mAh 4S1P 14.8V 25C battery |
 
 ### Support components
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX | <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-2.jpg"> <img width="128" src="images/f450-frame-3.jpg"> <img width="128" src="images/f450-frame-4.jpg"> F450 frame - the basic platform to which everything else is attached. |
-| &euro;XXX | <img height="128" src="images/gps-mast.jpg"> GPS mast - separates the GPS unit from interference from the rest of the system. |
-| &euro;XXX | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"> External LED and USB connector for the Pixhawk. |
-| &euro;XXX | <img width="128" src="images/i2c-splitter.jpg"> I2C splitter - enables the compass connector of the GPS module and the external LED and USB connector to share the I2C port of the Pixhawk. |
-| &euro;XXX | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"> <img width="128" src="images/telemetry-upgrade-cable-2.jpg"> Telemetry upgrade cable. |
-| &euro;XXX | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"> Telemetry upgrade cable adapter. |
-| &euro;XXX | <img width="128" src="images/spare-propellars.jpg"> Spare propellars. |
-| &euro;XXX | <img width="128" src="images/f450-f550-landing-gear.jpg"> F450/F550 landing gear. |
-| &euro;XXX | <img width="128" src="images/e430-lipo-charger.jpg"> E430 LiPo charger. |
-| &euro;XXX | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"> FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver. |
+| &euro;XXX | <img height="128" src="images/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system. |
+| &euro;XXX | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver. |
+| &euro;XXX | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"> <img width="128" src="images/telemetry-upgrade-cable-2.jpg"><br>Telemetry upgrade cable. |
+| &euro;XXX | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter). |
+| &euro;XXX | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector for the Pixhawk. |
+| &euro;XXX | <img width="128" src="images/i2c-splitter.jpg"><br>I2C splitter - enables the compass connector of the GPS module and the external LED and USB connector to share the I2C port of the Pixhawk. |
+| &euro;XXX | <img width="128" src="images/spare-propellars.jpg"><br>Spare propellars. |
+| &euro;XXX | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear. |
+| &euro;XXX | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm. |
+| &euro;XXX | <img width="128" src="images/e430-lipo-charger.jpg"><br>E430 LiPo charger. |
 
 ### Additional physical components
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"> Hook and loop velcro straps to attach battery to frame. |
-| &euro;XXX | <img width="128" src="images/3mm-mounting-foam.jpg"> 3mm mounting foam. |
-| &euro;XXX | <img width="128" src="images/lipo-safety-bag.jpg"> LiPo safety bag - keep LiPos safely contained when charging or not in use. |
-| &euro;XXX | <img width="128" src="images/t-plug-male-power-connector.jpg"> T-plug male power connector - connects the PDB to the power module. |
-| &euro;XXX | <img width="128" src="images/vibration-damping-mounting-set.jpg"> Vibration damping mounting set - isolates the flight controller from the vibration of the frame. |
+| &euro;XXX | <img width="128" src="images/t-plug-male-power-connector.jpg"><br>T-plug male power connector - connects the PDB to the power module. |
+| &euro;XXX | <img width="128" src="images/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame. |
+| &euro;XXX | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps to attach battery to frame. |
+| &euro;XXX | <img width="128" src="images/3mm-mounting-foam.jpg"><br>3mm mounting foam - attach ESCs and other components to the frame. |
+| &euro;XXX | <img width="128" src="images/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use. |
 
 XXX prices - remember battery by 2.
 
 Note: the quadcopter has two clockwise and two counterclockwise motors and there are clockwise and counterclockwise specific propellars, so the pack of two spare propellars has one of each.
+
+Note: when using the D4R II receiver the SPC is needed to connect the telemetry upgrade cable to the older style connector of the D4R II, when using the X8R receiver the SPC is needed for a completely different situation - adapting the FUL-1 to connect the receiver to the flight controller.
 
 * [DJI Flame Wheel F450 frame](https://www.estore.ch/flying-platforms/flame-wheel/1304/flame-wheel-f450)
 * [DJI E305 propulsion system](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)
