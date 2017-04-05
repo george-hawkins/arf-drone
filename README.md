@@ -30,36 +30,36 @@ Include indicative prices in Euros - maybe include as a small secondary table (w
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX | <img height="128">images/apm-power-module.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/battery-monitor-alarm.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/f450-frame-1.gif</img> YYY |
-| &euro;XXX | <img height="128">images/gps-mast.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/hook-and-loop-velcro-straps.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/pixhawk-2.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/pixhawk-3.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/pixhawk-external-led-and-usb.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/telemetry-receiver-x8r.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/telemetry-upgrade-cable-1.jpg</img> YYY |
-| &euro;XXX | <img height="128">images/transmitter-taranis-q-x7.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/3mm-mounting-foam.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/e305-quad-propulsion-system.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/e430-lipo-charger.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/f450-f500-landing-gear.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/f450-frame-2.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/f450-frame-3.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/f450-frame-4.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/i2c-splitter.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/lipo-3300mAh-4s1p-14.8v-25C.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/lipo-safety-bag.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/pixhawk-1.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/spare-propellars.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/t-plug-male-power-connector.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/telemetry-receiver-d4r-ii.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/telemetry-upgrade-cable-2.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/telemetry-upgrade-cable-adapter.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/ttl-to-rs232-converter-ful-1.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/ublox-neo-m8n-gps-with-compass.jpg</img> YYY |
-| &euro;XXX | <img width="128">images/vibration-damping-mounting-set.jpg</img> YYY |
+| &euro;XXX | <img height="128" src="images/apm-power-module.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/battery-monitor-alarm.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/f450-frame-1.gif"> YYY |
+| &euro;XXX | <img height="128" src="images/gps-mast.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/pixhawk-2.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/pixhawk-3.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/telemetry-receiver-x8r.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"> YYY |
+| &euro;XXX | <img height="128" src="images/transmitter-taranis-q-x7.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/3mm-mounting-foam.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/e305-quad-propulsion-system.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/e430-lipo-charger.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/f450-f500-landing-gear.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/f450-frame-2.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/f450-frame-3.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/f450-frame-4.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/i2c-splitter.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/lipo-3300mAh-4s1p-14.8v-25C.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/lipo-safety-bag.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/pixhawk-1.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/spare-propellars.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/t-plug-male-power-connector.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/telemetry-receiver-d4r-ii.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/telemetry-upgrade-cable-2.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"> YYY |
+| &euro;XXX | <img width="128" src="images/vibration-damping-mounting-set.jpg"> YYY |
 
 * [DJI Flame Wheel F450 frame](https://www.estore.ch/flying-platforms/flame-wheel/1304/flame-wheel-f450)
 * [DJI E305 propulsion system](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)
