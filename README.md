@@ -30,40 +30,40 @@ Note: many terms used in the parts list, like ESC, PDB etc., are explained later
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX Fr. 26 | <img width="128" src="images/f450-frame-3.jpg"> <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link](XXX)).
-| &euro;XXX Fr. 160 | <img width="128" src="images/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs ([link](XXX)).
-| &euro;XXX GBP 130 | <img width="128" src="images/pixhawk-1.jpg"> <img height="128" src="images/pixhawk-2.jpg"> <img height="128" src="images/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](XXX)).
-| &euro;XXX GBP 35 | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](XXX)).
-| &euro;XXX GBP 23.50 | <img width="128" src="images/receiver-d4r-ii.jpg"><br>D4R II receiver - the drone's wireless receiver ([link](XXX)).
-| &euro;XXX GBP 30 | <img height="128" src="images/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](XXX)).
-| &euro;XXX Fr. 115 | <img height="128" src="images/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter ([link](XXX)).
-| &euro;XXX GBP 15 | <img height="128" src="images/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB ([link](XXX)).
-| &euro;XXX Fr. 40 | <img width="128" src="images/lipo-3300mAh-4s1p-14.8v-25C.jpg"><br>LiPo 3300mAh 4S1P 14.8V 25C battery |
+| &euro;XXX Fr. 26 | <img width="128" src="images/f450-frame-3.jpg"> <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link 1](https://www.amainhobbies.com/dji-flame-wheel-f450-basic-quadcopter-drone-kit-dji-fw450bas/p235233), [link 2](http://www.builtdrones.com/dji-flamewheel-f450-basic-kit/)).
+| &euro;XXX Fr. 160 | <img width="128" src="images/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs ([link](http://store.dji.com/product/e305-4)).
+| &euro;XXX GBP 130 | <img width="128" src="images/pixhawk-1.jpg"> <img height="128" src="images/pixhawk-2.jpg"> <img height="128" src="images/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](https://pixhawk.org/modules/pixhawk)).
+| &euro;XXX GBP 35 | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/)).
+| &euro;XXX GBP 23.50 | <img width="128" src="images/receiver-d4r-ii.jpg"><br>D4R II receiver - the drone's wireless receiver ([link](https://www.unmannedtechshop.co.uk/frsky-d4r-ii-4-8ch-accst-receiver/)).
+| &euro;XXX GBP 30 | <img height="128" src="images/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).
+| &euro;XXX Fr. 115 | <img height="128" src="images/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter ([link](https://www.unmannedtechshop.co.uk/frsky-taranis-q-x7-2-4ghz-transmitter/)).
+| &euro;XXX GBP 15 | <img height="128" src="images/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB ([link](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/)).
+| &euro;XXX Fr. 40 | <img width="128" src="images/lipo-3300mAh-4s1p-14.8v-25C.jpg"><br>LiPo 3300mAh 4S1P 14.8V 25C battery ([link](https://www.unmannedtechshop.co.uk/gens-ace-3300mah-14-8v-25c-4s1p-lipo-battery-pack/)). |
 
 ### Support components
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX GBP 4.5 | <img height="128" src="images/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system ([link](XXX)).
-| &euro;XXX GBP 3.2 | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver ([link](XXX)).
-| &euro;XXX GBP 8 | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"><br>Telemetry upgrade cable ([link](XXX)).
-| &euro;XXX GBP 2 | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter) ([link](XXX)).
-| &euro;XXX GBP 6.75 | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector ([link](XXX)).
-| &euro;XXX GBP 2 | <img width="128" src="images/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector ([link](XXX)).
-| &euro;XXX Fr. 8 | <img width="128" src="images/spare-propellars.jpg"><br>Spare propellars ([link](XXX)).
-| &euro;XXX Fr. 5 | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](XXX)).
-| &euro;XXX GBP 4 | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](XXX)).
-| &euro;XXX GBP 18 | <img width="128" src="images/e430-lipo-charger.jpg"><br>E430 LiPo charger ([link](XXX)).
+| &euro;XXX GBP 4.5 | <img height="128" src="images/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system ([link](https://www.unmannedtechshop.co.uk/foldable-gps-mast-mount/)).
+| &euro;XXX GBP 3.2 | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver ([link](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/)).
+| &euro;XXX GBP 8 | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"><br>FUC-3 upgrade cable ([link](https://www.unmannedtechshop.co.uk/frusb-3-frsky-upgrade-cable-fuc-3/)).
+| &euro;XXX GBP 2 | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter) ([link](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/)).
+| &euro;XXX GBP 6.75 | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector ([link](https://www.unmannedtechshop.co.uk/all-in-one-led-and-usb-module-for-pixhawk/)).
+| &euro;XXX GBP 2 | <img width="128" src="images/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector ([link](https://www.unmannedtechshop.co.uk/i2c-board/)).
+| &euro;XXX Fr. 8 | <img width="128" src="images/spare-propellars.jpg"><br>Spare propellars ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
+| &euro;XXX Fr. 5 | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](http://www.helipal.com/dji-landing-gear-for-f450-f550.html)).
+| &euro;XXX GBP 4 | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)).
+| &euro;XXX GBP 18 | <img width="128" src="images/e430-lipo-charger.jpg"><br>E430 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-e430-lipo-life-2-4s-balance-charger/)).
 
 ### Additional physical components
 
 | Price | Description |
 |-------|-------------|
-| &euro;XXX GBP 1.5 | <img width="128" src="images/t-plug-male-power-connector.jpg"><br>T-plug male power connector - connects the PDB to the power module ([link](XXX)).
-| &euro;XXX GBP 2.45 | <img width="128" src="images/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](XXX)).
-| &euro;XXX GBP 2.75 | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps to attach battery to frame ([link](XXX)).
-| &euro;XXX GBP 1.75 | <img width="128" src="images/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](XXX)).
-| &euro;XXX GBP 4.5 | <img width="128" src="images/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](XXX)).
+| &euro;XXX GBP 1.5 | <img width="128" src="images/t-plug-male-power-connector.jpg"><br>T-plug male power connector - connects the PDB to the power module ([link](https://www.unmannedtechshop.co.uk/male-deans-t-plug-wire-10cm/)).
+| &euro;XXX GBP 2.45 | <img width="128" src="images/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)).
+| &euro;XXX GBP 2.75 | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps to attach battery to frame ([link](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
+| &euro;XXX GBP 1.75 | <img width="128" src="images/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
+| &euro;XXX GBP 4.5 | <img width="128" src="images/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
 
 TODO: fill in links.
 
@@ -79,6 +79,8 @@ Note: the quadcopter has two clockwise and two counterclockwise motors and there
 Note: when using the D4R II receiver the SPC is needed to connect the telemetry upgrade cable to the older style connector of the D4R II, when using the X8R receiver the SPC is needed for a completely different situation - adapting the FUL-1 to connect the receiver to the flight controller.
 
 Note: when the Pixhawk is buried at the heart of the quadcopter its power LED can be hard to see and its USB port difficult to access - the external LED and USB connector connects is an extension cable that attaches to the Pixhawk at one end and has a power LED and USB port at the other end that can be mounted somewhere more accessable on the frame.
+
+TODO: mention no end of Chinese knockoffs on Alibaba etc. - in fact for some components its hard to find ones that really come from the desired original manufacturer among a sea of seemingly identical products.
 
 * [DJI Flame Wheel F450 frame](https://www.estore.ch/flying-platforms/flame-wheel/1304/flame-wheel-f450)
 * [DJI E305 propulsion system](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)
@@ -197,6 +199,15 @@ There are open source hardware implementations and many commercial ESCs are flas
 
 So for this piece of hardware it seems easiest to stick with the commercial ones and consider them non-upgradable black boxes.
 
+Frame kit
+---------
+
+TODO: move F450 ARF section up here.
+
+Explain choice of F450 - that it's mentioned in <http://ardupilot.org/copter/docs/build-your-own-multicopter.html> and there are lots of first time build instructions (see open tabs).
+
+Say it has been around for a long time, while other components change it remains constant, seems practically the de-facto standard (at least in the non-race quadcopter space).
+
 Flight controller
 -----------------
 
@@ -226,7 +237,7 @@ Pixhawk.org vs ArduPilot.org
 
 The pixhawk.org site seems to be the spiritual home of the Pixhawk while the ArduPilot.org site seems to be more actively maintained and has far more detail.
 
-Pixhawk.org seems to be concerned with higher level issues, like open hardware, while ardupilot.org focuses more on the practical issues of getting working.
+Pixhawk.org seems to be concerned with higher level issues, like open hardware, while ardupilot.org focuses more on the practical hobbyist oriented issues of getting things working.
 
 You can see obvious differences, e.g. pixhawk.org clearly lists the D4R-II receiver as their recommended FrSKY receiver (see [here](https://pixhawk.org/peripherals/radio-control/frsky)), while ardupilot.org lists the D4R-II as deprecated and recommend far newer FrSKY receivers (see [here](http://ardupilot.org/copter/docs/common-frsky-telemetry.html)).
 
