@@ -1,25 +1,87 @@
-F450 quadcopter build
-=====================
+First time quadcopter build
+===========================
 
-Parts:
+Goal: I wanted to go from knowing nothing about remote control vehicles to building a quadcopter that could complete a route autononmously, i.e. without human control from the ground. I wanted as few black box elements as possible in the system and so used open source software and hardware wherever reasonably possible.
 
-* [DJI E305 propulsion system](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)
+TODO: include photo of final build here.
+
+Having some experience with hobbyist electronics projects I initially thought I'd really be able to make a quadcopter from scratch, 3D printing elements of the frame, sourcing most of the components, like motors, as generic parts from a big distributor like Digi-Key, and only having to buy a few drone-specific components like propellars.
+
+I was quite disappointed when I found various pages (such as [this one](http://ardupilot.org/copter/docs/build-your-own-multicopter.html) from ArduPilot) making clear that this wasn't an option to consider when making ones first drone.
+
+Apparently I'd have to start with what's referred to as an ARF (almost ready to fly) kit, i.e. an unassembled frame and the parts for the propulsion system (propellars, motors etc.).
+
+The ARF acronym makes it sound like almost all the interesting work has been taken care of and all that's left is to put things together lego style.
+
+But it turns out, if starting from scratch with no prior experience of drones, that there's quite enough additional complexity without also having to worry about the frame and the propulsion system.
+
+Parts
+-----
+
+So what other parts do you need besides a frame and a propulsion system? The list of parts below makes it clear there's a bit more to this whole thing.
+
+Do a parts list as a table with photos, like you see e.g. on Sparkfun - <https://www.sparkfun.com/wish_lists/123728?_ga=1.209580690.1690585925.1476821819>
+
+Include indicative prices in Euros - maybe include as a small secondary table (without pictures) that gives a clear total.
+
+| Price | Description |
+|-------|-------------|
+| &euro;XXX | img The air frame - the basic platform to which everything else is attached.
+
+| Price | Description |
+|-------|-------------|
+| &euro;XXX | <img height="128">images/apm-power-module.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/battery-monitor-alarm.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/f450-frame-1.gif</img> YYY |
+| &euro;XXX | <img height="128">images/gps-mast.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/hook-and-loop-velcro-straps.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/pixhawk-2.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/pixhawk-3.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/pixhawk-external-led-and-usb.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/telemetry-receiver-x8r.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/telemetry-upgrade-cable-1.jpg</img> YYY |
+| &euro;XXX | <img height="128">images/transmitter-taranis-q-x7.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/3mm-mounting-foam.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/e305-quad-propulsion-system.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/e430-lipo-charger.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/f450-f500-landing-gear.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/f450-frame-2.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/f450-frame-3.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/f450-frame-4.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/i2c-splitter.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/lipo-3300mAh-4s1p-14.8v-25C.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/lipo-safety-bag.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/pixhawk-1.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/spare-propellars.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/t-plug-male-power-connector.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/telemetry-receiver-d4r-ii.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/telemetry-upgrade-cable-2.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/telemetry-upgrade-cable-adapter.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/ttl-to-rs232-converter-ful-1.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/ublox-neo-m8n-gps-with-compass.jpg</img> YYY |
+| &euro;XXX | <img width="128">images/vibration-damping-mounting-set.jpg</img> YYY |
+
 * [DJI Flame Wheel F450 frame](https://www.estore.ch/flying-platforms/flame-wheel/1304/flame-wheel-f450)
+* [DJI E305 propulsion system](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)
 * [Landing gear](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1311/f450/f550-landing-gear)
-* [Pixhawk flight controller](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/) bundled with a Ublox Neo-M8N GPS module and an APM power module.
+* [Pixhawk flight controller](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/) with the optional Ublox Neo-M8N GPS module and an APM power module.
 * [LiPo battery charger](https://www.unmannedtechshop.co.uk/skyrc-e430-lipo-life-2-4s-balance-charger/)
 * [LiPo safety bag](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)
 * [Battery strap](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)
 * [FrSKY D4R-II receiver](https://www.unmannedtechshop.co.uk/frsky-d4r-ii-4-8ch-accst-receiver/)
-* [FrSKY USB upgrade cable](https://www.unmannedtechshop.co.uk/frusb-3-frsky-upgrade-cable-fuc-3/) bundled with a smart port converter (SPC).
+* [FrSKY USB upgrade cable](https://www.unmannedtechshop.co.uk/frusb-3-frsky-upgrade-cable-fuc-3/) with the optional smart port converter (SPC).
 * [FrSKY Taranis Q X7 transmitter](http://www.dronefactory.ch/produkt/frsky-taranis-q-x7-weiss/)
 * [FrSKY FUL-1 TTL-to-RS232 converter](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/)
 * [Vibration damping mounting set](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)
 * [Battery alarm](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)
 * [Spare propellars](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1349/e305-9450-self-tightening-rotor-composite-hub-white-with-silver-stripes?number=FE0014)
+* [T-plug power connector](https://www.unmannedtechshop.co.uk/male-deans-t-plug-wire-10cm/)
+* [GPS mast](https://www.unmannedtechshop.co.uk/foldable-gps-mast-mount/)
 * Two 3300 mAh 4S 14.8V 25C LiPo batteries (see battery section below).
 
 See upgrade warning regarding receiver [here](https://pixhawk.org/peripherals/radio-control/frsky#receivers) hence the FrSKY USB upgrade cable (this cable has a 4 pin connector while the FrSKY D4R-II has a 3 pin connector hence the SBC).
+
+Q: why did I buy the frame and the propulsion system separately rather than bundled together as a so-called ARF kit? A: see the [section later](#f450-arf-kit) on the F450 ARF kit.
 
 Extras:
 
@@ -31,6 +93,29 @@ Once installed in the frame it can be hard to see the LED on the Pixhawk or get 
 This module connects to the same I2C port on the Pixhawk as the compass, hence the I2C splitter.
 
 Note: the Pixhawk has a GPS and I2C port - the I2C port is shown [here](https://pixhawk.org/modules/pixhawk) as being intended either for the compass or for an I2C splitter. The Ublox Neo-M8N GPS module also provides the compass so it has two connectors and takes up both the GPS port and an I2C port.
+
+TODO: explain that the transmitter is the hand held remote control and the receiver is the corresponding component in the drone but that the names are historical and that both now transmit and receive.
+
+Miscellaneous parts
+-------------------
+
+Thread glue (also called thread lock). I'd never heard of this before - it comes in various strengths but for this situation it's a weak glue that's applied to the thread before you screw the screw into place, it's weak enough that you can still remove the screw later but strong enough that it stops the screw coming loose due to vibration.
+
+According to the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) you should use it for the various screws (but not for attaching the propellars).
+
+[Loctite 243](http://www.na.henkel-adhesives.com/industrial/blue-threadlockers-medium-strength-13231.htm) seems to be suitable (UHU also have something similar, [UHU schraubensicher mittelfest](http://www.uhu-profi.de/produkte/anaerobe-klebstoffe-schraubensicherung/detail/uhu-schraubensicher-mittelfest.html), but don't seem to market it in the UK):
+
+* <https://www.amazon.co.uk/Loctite-Lock-Acting-Thread-Sealant/dp/B003ZUXQIA> 3ml
+* <http://www.conrad.ch/ce/de/product/055936/Schraubensicherung-Festigkeit-mittel-10-ml-LOCTITE-243-1335840> 10ml
+* <http://www.conrad.ch/ce/de/product/055357/Schraubensicherung-Festigkeit-mittel-10-ml-UHU-Schraubensicher-45590> 10ml
+
+2mm hex wrench (for the F450 screws):
+
+* <http://www.conrad-electronic.co.uk/ce/en/product/817256/Workshop-Allen-wrench-Wera-354-Spanner-size-2-mm-Blade-length-75-mm>
+* <http://www.conrad-electronic.co.uk/ce/en/product/818955/Allen-Allen-key-set-7-piece-Basetech>
+* <https://www.amazon.co.uk/Silverline-HK11-Hex-Key-2-10/dp/B000LFXJUM>
+
+Remaining parts (from the F450 user manual) not covered elsewhere: [nylon cable ties](https://www.amazon.co.uk/Green-Cable-100Mm-2-5Mm-All/dp/B00904S2DE), scissors, [flush cutters](https://www.sparkfun.com/products/11952), soldering iron and solder.
 
 Batteries
 ---------
@@ -47,7 +132,7 @@ Swiss suppliers of Gens ace 3300 mAh 4S 14.8V 25C LiPo batteries:
 * <https://www.brack.ch/gens-ace-lipo-akku-3300mah-234057> Fr. 39.
 * <https://www.digitec.ch/de/s1/product/gens-ace-akku-1480v-3300mah-lipo-4s-rc-akku-5606232?tagIds=1-850-596> Fr. 55.
 
-Note: theis battery comes with a T-plug (Deans) connector.
+Note: this battery comes with a T-plug (Deans) connector.
 
 Q: what's the battery alarm (see parts list) for? A: it makes a loud noise when your battery is about to die - this gives you time to land the drone before it just drops out of the sky!
 
@@ -67,6 +152,37 @@ Orientation
 -----------
 
 The white arrow seen near the bottom of the front panel of the Pixhawk case isn't a pointless graphic - when installing the unit this arrow should be pointing towards the front of the quadcopter (see the [standard orientation](http://ardupilot.org/copter/docs/common-mounting-the-flight-controller.html#standard-orientation) section of the ArduPilot setup guide).
+
+Vibration
+---------
+
+The drone depends on sensors, the [IMU](https://en.wikipedia.org/wiki/Inertial_measurement_unit) (intertial measurement unit) in particular, that are susceptible to the vibrations produced by the propulsion system.
+
+Damping these vibrations is the reason for the noticeable size increase in the Pixhawk 2, the so called "cube" that provides a space in which to isolate the IMC.
+
+On the whole it seems the classic Pixhawk can live with normal vibration, 3DR (the original manufacturer) just recommended attaching it directly to the frame with adhesive foam pad, but there are many home made and low volume commercial options for improving on this.
+
+I bought a [vibration damping mounting set](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/) and used it but didn't make any effort to see if its presence or absence noticeable affected any aspect of the drone's operation.
+
+ESC (electronic speed control)
+------------------------------
+
+[ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller.
+
+The ESCs are the most expensive element in the E305 propulsion system (one ESC being just a little more expensive than its corresponding motor).
+
+An ESC contains its own microcontroller (generally an Atmel Atmega or a Silabs 8051).
+
+There are open source hardware implementations and many commercial ESCs are flashable with open source firmware (the main open source firmwares being [BLHeli](https://github.com/bitdump/BLHeli) and [SimonK](https://github.com/sim-/tgy)). However there seem to be no really popular open source hardware implementations and configuring the open source firmwares for your particular ESCs (whether commercial or open source) is non-trivial.
+
+So for this piece of hardware it seems easiest to stick with the commercial ones and consider them non-upgradable black boxes.
+
+Flight controller
+-----------------
+
+TODO: explain the parts, in addition to propulsion system and frame, i.e. flight controller etc. and why you chose the F450 and the Pixhawk (rather than a cheaper controller like the OpenPilot [CC3D Revolution](https://www.unmannedtechshop.co.uk/openpilot-cc3d-revolution-flight-controller/), the Revolution is a product of [LibrePilot](https://www.librepilot.org/), a successor to the now defunct OpenPilot).
+
+Reorder Pixhawk and Pixhawk 2 and other sections below so things come in more sensible order.
 
 Flight stack
 ------------
@@ -125,7 +241,7 @@ As of March 2017 something called the [Pixhawk 2.1](http://www.proficnc.com/cont
 
 While it is open source hardware it appears to be a product of a particular individual, Philip Rowse, and his company ProfiCNC rather than a wider community.
 
-At its heart it is identical to the original Pixhawk - it has same STM32 F4 MCU (running at the same speed etc.).
+At its heart it is identical to the original Pixhawk - it has the same STM32 F4 MCU (running at the same speed etc.).
 
 However it does have design features that the Pixhawk does not, such as vibration isolation, IMU (inertial measurement unit) redundancy, better connectors and more I/O.
 
@@ -135,7 +251,7 @@ While Philip Rowse deserves to make money from his efforts he clearly feels that
 
 For a sense of this see his interaction with the wider community on the ArduPilot forums, e.g. this [Pixhawk 2 Getting Started](http://discuss.ardupilot.org/t/pixhawk-2-getting-started/10031) thread.
 
-Having said all that the Pixhawk 2 is [clearly listed](https://pixhawk.org/modules/pixhawk2) as one of the autopilot systems on the pixhawk.org site.
+Having said all that the Pixhawk 2 is [clearly listed](https://pixhawk.org/modules/pixhawk2) as one of the autopilot systems acknowledged on the pixhawk.org site.
 
 And it does seem that the initial development did involve the wider community and 3DR, however 3DR seem to have gone their own way with closed hardware and it is only through the efforts of Philip Rowse that it has eventually come to market at all.
 
@@ -149,7 +265,7 @@ However the ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/co
 Pixhawk autopilot
 -----------------
 
-The [Pixhawk](https://pixhawk.org/modules/pixhawk) is an [open source hardware](http://freedomdefined.org/OSHW) flight controller that originated at [ETH Zurich](https://en.wikipedia.org/wiki/ETH_Zurich) and is the de-facto standard non-commerical flight controller.
+The [Pixhawk](https://pixhawk.org/modules/pixhawk) is an [open source hardware](http://freedomdefined.org/OSHW) flight controller that originated at [ETH Zurich](https://en.wikipedia.org/wiki/ETH_Zurich) and is the de-facto standard high end open source hardware flight controller.
 
 The software for the Pixhawk is the [PX4 autopilot](http://px4.io/docs/px4-basic-concepts/) that covers both basic direct remote control and fully autonomous autopilot operation.
 
@@ -165,7 +281,7 @@ I specifically wanted an open source hardware controller - after a bit of search
 * RadioLink - <http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html>
 * Salange - <https://www.mhm-modellbau.de/part-FLC-HM07.php>
 
-I went with the version from Unmanned Tech for no better reason than that they're linked to as a supplier from the pixhawk.org site and they seem to be a bit more engaged in the product than the other suppliers.
+I went with the Pixhawk version from Unmanned Tech as it's there product that they supply directly, they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on many other sites.
 
 I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/).
 
@@ -181,7 +297,7 @@ These are the one I found that sell the E305 propulsion system:
 * https://www.marionvillemodels.com/
 * https://www.mhm-modellbau.de/
 * http://www.globe-flight.de/
-* https://www.freakware.de/p/
+* https://www.freakware.de/
 * http://www.flight-place.de/
 * https://www.estore.ch/
 * http://www.visuals-switzerland.net
@@ -190,8 +306,8 @@ And you can also buy it direct from DJI (oddly their store doesn't offer the F45
 
 * http://store.dji.com/product/e305-4
 
-Flame Wheel F450 ARF kit
-------------------------
+F450 ARF kit
+------------
 
 The Flame Wheel F450 ARF (almost ready to fly) kit is a popular kit recommended by many sites.
 
@@ -210,15 +326,18 @@ It's the propulsion system that makes up most of the cost, the 4 motor E305 vari
 
 And it's the propulsion system that's the source of confusion when comparing the F450 ARF kit across sites.
 
-It seems the kit originally shipped with the no longer available E300 propulsion system and the photos and descriptions on many sites still refer to this setup (you can easily spot the white rectangular components labelled 30A OPTO - these are the ESCs).
 
-On other sites you can see the components from the E305 propulsion system (here the ESCs have a more high tech reddish semi-transparent look and are labelled 420 LITE).
+It seems the kit originally shipped with the 30A OPTO ESCs, these were then replaced with the E300 propulsion system around 2014. And the E300 system was replaced with the current (as of April 2017) E305 propulsion system.
+
+The 30A OPTO ESCs and the E300 propulsion system are no longer available, however the photos and descriptions on many sites still refer to this setup. You can easily spot what system is involved by looking at the photos and finding the ESCs (rectanglar plastic components). The original ESCs are white and labelled 30A OPTO, the E300 ones are black (and labelled E300) and the E305 ESCs have a more high tech reddish semi-transparent look and are labelled 420 LITE.
 
 It's not clear whether sites simply haven't updated their photos and descriptions or if they really are selling older variants of the kit. Many sites make no mention at all of E300 or E305, simply listing "motots" etc. without specific part numbers.
 
 And the components listed by some sites don't line up at all with what you get when buying the E305 propulsion system on its own, e.g. not listing the two spare propellars or listing two sets of different length propellars rather than just 9.4" propellars.
 
 In the end I bought an E305 propulsion system and an F450 frame separately, rather than as a kit, to make sure I got what I expected (and the price savings of buying them bundled together in a kit seem to be minimal).
+
+TODO: mention PDB (power distribution board) that comes with the E305 propulsion system but is unneeded as the bottom plate of the F450 is a PDB.
 
 E300 vs E305 vs E310
 --------------------
@@ -230,3 +349,12 @@ The E300 vs E305 situation is simple - the E300 is no longer available and the E
 The E305 vs the E310 situation is more complicated. The E310 actually came out before the E305 and while E310 systems are more expensive than E305 systems that doesn't mean the E310 is necessarily better than the E305. "Better" depends on your needs - with a basic setup you'll actually get longer flying times with the E305 and choosing the E310 over the E305 involves research and geeky tradeoffs (involving features like active braking etc.) and deciding what's relevant in relation to how you intend to use your drone.
 
 For an in-depth review of the E305, with some comparison to the E310, along with a link to an older E310 review by the same reviewer see [this post](https://www.rcgroups.com/forums/showthread.php?2456770-Review-DJI-E305-Tuned-Propulsion-System) to RCGroups.com.
+
+DJI videos
+----------
+
+* <https://www.youtube.com/watch?v=pUTHIL_Xfcc> - assembling the original F450 kit.
+* <https://www.youtube.com/watch?v=H_Rvi7xQLdw> - assembly with the (then) newer E300 propulsion system (now replaced by the E350). Note: with the F450 you don't have to use the E305 PDB as the bottom plate of the F450 is a PDB.
+* <https://www.youtube.com/watch?v=qJZa7p3rsCU> - installing the Naza M V2 - while I didn't use this flight controller it's interesting to see how everything is fitted in.
+
+Note: according to one of the comments the "video shows the base plate being mounted sideways. If you want to mount a front facing camera gimbal you should mount the base plate the other way." And someone else comments that "she moves the solder around with the iron and that means there is too little heat and the cable should be still until the solder has gotten hard again ... give a little more heat and hold it still a little longer after removing the heat! Better to use a more powerful soldering iron, then the time to heat it up is less and the heat doesn't go that deep in the board and the conector."
