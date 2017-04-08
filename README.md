@@ -70,64 +70,42 @@ The [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Ma
 
 The 2mm hex key and the threadlocker (which is something I'd never heard of before) are covered in the [miscellaneous parts](NOTES.md#miscellaneous-parts) note.
 
-Note: the quadcopter has two clockwise and two counterclockwise motors and there are clockwise and counterclockwise specific propellars, so the pack of two spare propellars has one of each.
+Websites
+--------
 
-Note: when using the D4R II receiver the SPC is needed to connect the telemetry upgrade cable to the older style connector of the D4R II, when using the X8R receiver the SPC is needed for a completely different situation - adapting the FUL-1 to connect the receiver to the flight controller.
+When putting together this page the most useful sites I found were:
 
-Note: when the Pixhawk is buried at the heart of the quadcopter its power LED can be hard to see and its USB port difficult to access - the external LED and USB connector connects is an extension cable that attaches to the Pixhawk at one end and has a power LED and USB port at the other end that can be mounted somewhere more accessable on the frame.
+* ArduPilot - in particular its [assembly](http://ardupilot.org/copter/docs/common-pixhawk-wiring-and-quick-start.html) and related sections.
+* [Pixhawk.org](https://pixhawk.org/)
+* RCGroups - in particualr the [multicopter drone forums](https://www.rcgroups.com/aircraft-electric-multirotor-drones-790/).
 
-TODO: mention no end of Chinese knockoffs on Alibaba etc. - in fact for some components its hard to find ones that really come from the desired original manufacturer among a sea of seemingly identical products.
+The [ArduPilot forums](http://discuss.ardupilot.org/) and [PX4 forums](http://discuss.px4.io/).
 
-See upgrade warning regarding receiver [here](https://pixhawk.org/peripherals/radio-control/frsky#receivers) hence the FrSKY USB upgrade cable (this cable has a 4 pin connector while the FrSKY D4R-II has a 3 pin connector hence the SBC).
+Note: the terms Pixhawk and PX4 seem to be used interchangeably - though Pixhawk is used more often to the flight controller hardware while PX4 is used for the flight controller software stack.
 
-Q: why did I buy the frame and the propulsion system separately rather than bundled together as a so-called ARF kit? A: see the [section later](#f450-arf-kit) on the F450 ARF kit.
+---
 
-Once installed in the frame it can be hard to see the LED on the Pixhawk or get at its USB port hence the external LED and USB module. This module connects to the same I2C port on the Pixhawk as the compass, hence the I2C splitter.
+The following sections cover the major components of the quadcopter. In writing this page I started including so many side notes that they started clogging up the whole things that I've moved these notes out into [`NOTES`](NOTES.md). They're worth scanning over quickly and cover:
 
-Note: the Pixhawk has a GPS and I2C port - the I2C port is shown [here](https://pixhawk.org/modules/pixhawk) as being intended either for the compass or for an I2C splitter. The Ublox Neo-M8N GPS module also provides the compass so it has two connectors and takes up both the GPS port and an I2C port.
+* [Brief notes](NOTES.md#brief-notes) on clockwise and two counterclockwise motors, the external LED and USB connector.
+* The [F450 ARF kit](NOTES.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
+* The [E300 vs E305 vs E310](NOTES.md#e300-vs-e305-vs-e310) propulsion systems.
+* The LiPo [batteries]((NOTES.md#batteries), the T-plug battery connector, the battery alarm and the battery safety bag.
+* [Vibration](NOTES.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
+* Predefined [waypoints](NOTES.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
+* The [Pixhawk 2.1](NOTES.md#pixhawk-21) and some background leading to my choice of the classic Pixhawk flight controller.
+* [Pixhawk.org vs the ArduPilot site](NOTES.md#pixhawkorg-vs-ardupilotorg).
+* [Bags and cases](NOTES.md#bag--case) and why the size of the F450 makes it hard to find a good bag for it.
+* [Chinese copies](NOTES.md#chinese-copies) and how buying drone parts is a case of caveat emptor.
 
-TODO: explain that the transmitter is the hand held remote control and the receiver is the corresponding component in the drone but that the names are historical and that both now transmit and receive.
+Frame
+-----
 
-Batteries
----------
+Explain choice of F450 - that it's mentioned in <http://ardupilot.org/copter/docs/build-your-own-multicopter.html> and there are lots of first time build instructions (see open tabs).
 
-Many pages that describe building an F450 based mention a 3s battery however the DJI [E305 product page](https://store.dji.com/product/e305-4) recommends a 4S battery (i.e. 4 cells rather than 3 - see [everything you need to know about LiPo batteries](http://www.rcuniverse.com/forum/rc-car-general-discussions-179/11586761-everything-you-need-know-about-lipo-batteries.html)).
+Say it has been around for a long time, while other components change it remains constant, seems practically the de-facto standard (at least in the non-race quadcopter space).
 
-As there are now many restrictions on shipping LiPo batteries it's probably best to order them locally even if you order other parts internationally.
-
-While the batteries are expensive most people seem to buy at least two so that they can have one attached to their drone and one in reserve.
-
-Note: this battery comes with a T-plug (Deans) connector.
-
-Q: what's the battery alarm (see parts list) for? A: it makes a loud noise when your battery is about to die - this gives you time to land the drone before it just drops out of the sky!
-
-Waypoints
----------
-
-The Pixhawk can take an SD card which can be used to store waypoints (among other things - see [here](https://pixhawk.ethz.ch/software/imu/sd_card)) and you can communicate directly with the Pixhawk via USB and so establish a flight plan without the ground control software then needing to communicate with the drone while in flight.
-
-However in-flight interaction between the ground control software and the drone might be interesting and I might have bought the necessary telemetry kit (which also comes as a bundle option with the Unmanned Tech Pixhawk) if it had not been out of stock:
-
-* [100mW telemetry kit](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/)
-* [500mW telemetry kit](https://www.unmannedtechshop.co.uk/500mw-unmanned-3dr-telemetry-kit-v2-433mhz/)
-
-Note that the 100mW page advises also buying a [6-pos connector](https://www.unmannedtechshop.co.uk/df13-6-position-connector-15cm-pack-of-5/) (there's also a 30cm version) for connecting to the Pixhawk, while the 500mW page warns that 500mW may not be legal in certain countries.
-
-Orientation
------------
-
-The white arrow seen near the bottom of the front panel of the Pixhawk case isn't a pointless graphic - when installing the unit this arrow should be pointing towards the front of the quadcopter (see the [standard orientation](http://ardupilot.org/copter/docs/common-mounting-the-flight-controller.html#standard-orientation) section of the ArduPilot setup guide).
-
-Vibration
----------
-
-The drone depends on sensors, the [IMU](https://en.wikipedia.org/wiki/Inertial_measurement_unit) (intertial measurement unit) in particular, that are susceptible to the vibrations produced by the propulsion system.
-
-Damping these vibrations is the reason for the noticeable size increase in the Pixhawk 2, the so called "cube" that provides a space in which to isolate the IMC.
-
-On the whole it seems the classic Pixhawk can live with normal vibration, 3DR (the original manufacturer) just recommended attaching it directly to the frame with adhesive foam pad, but there are many home made and low volume commercial options for improving on this.
-
-I bought a [vibration damping mounting set](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/) and used it but didn't make any effort to see if its presence or absence noticeable affected any aspect of the drone's operation.
+TODO: mention PDB (power distribution board) that comes with the E305 propulsion system but is unneeded as the bottom plate of the F450 is a PDB.
 
 ESC (electronic speed control)
 ------------------------------
@@ -142,101 +120,12 @@ There are open source hardware implementations and many commercial ESCs are flas
 
 So for this piece of hardware it seems easiest to stick with the commercial ones and consider them non-upgradable black boxes.
 
-Frame kit
----------
-
-TODO: move F450 ARF section up here.
-
-Explain choice of F450 - that it's mentioned in <http://ardupilot.org/copter/docs/build-your-own-multicopter.html> and there are lots of first time build instructions (see open tabs).
-
-Say it has been around for a long time, while other components change it remains constant, seems practically the de-facto standard (at least in the non-race quadcopter space).
-
 Flight controller
 -----------------
 
 TODO: explain the parts, in addition to propulsion system and frame, i.e. flight controller etc. and why you chose the F450 and the Pixhawk (rather than a cheaper controller like the OpenPilot [CC3D Revolution](https://www.unmannedtechshop.co.uk/openpilot-cc3d-revolution-flight-controller/), the Revolution is a product of [LibrePilot](https://www.librepilot.org/), a successor to the now defunct OpenPilot).
 
 Reorder Pixhawk and Pixhawk 2 and other sections below so things come in more sensible order.
-
-Flight stack
-------------
-
-The Pixhawk supports two flight stacks - PX4 and ArduPilot. The pixhawk.org used to feature a page covering the choice between the two, but for whatever reason this is now gone, but you can still find [it on the Wayback Machine](https://web.archive.org/web/20150915080740/http://www.pixhawk.com/choice).
-
-Note: the ArduPilot stack, often abbreviated as APM (for ArduPilotMega), is rather misleadingly named. It comes from its early days when it originally ran on the [Arduino Mega](https://www.arduino.cc/en/Main/arduinoBoardMega) - but those days are long gone. It now runs on ARM processors, like the one found in the Pixhawk, and various other platforms. This [code overview](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) shows it can run on Linux and that when it runs on the Pixhawk it actually sits on top of the PX4 firmware.
-
-When it comes to comparing the PX4 and ArduPilot flight stacks there's lots of confusing and often contradictory information out there. For some information see [this thread](http://discuss.ardupilot.org/t/apm-stack-question-apm-vs-px4/11497) and [this thread](http://discuss.ardupilot.org/t/new-guy-here-trying-to-make-sense-of-it-all/9255) on the ArduPilot forums and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-when-to-choose-what/2214) and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-arduplane-for-mapping-photogrammetry-using-fixed-wing/1766) on the the PX4 forums.
-
-The [ArduPilot stack](https://github.com/ArduPilot/ardupilot) and the [PX4 one](https://github.com/PX4/Firmware/) can both be found on Github and both are clearly under active development.
-
-PX4 appears to more a product of the academic community while ArduPilot appears to a product of the hobbyist community with some resulting differences in focus, e.g. PX4 seem to focus more on autonomous flight while ArduPilot perhaps more on direct control.
-
-Both though work with ground control software for autonomous operation, e.g. Mission Planner (for ArduPilot) and QGroundControl (originally developed to work with PX4 but now also compatible with ArduPilot). See the [ground station](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html) section of the ArduPilot site for some comparison of ground control applications.
-
-**Important:** the pixhawk.org and ardupilot.org sites cover much more than just flight stacks, most of the content on both is useful irrespective of which flight stack one uses.
-
-Pixhawk.org vs ArduPilot.org
-----------------------------
-
-The pixhawk.org site seems to be the spiritual home of the Pixhawk while the ArduPilot.org site seems to be more actively maintained and has far more detail.
-
-Pixhawk.org seems to be concerned with higher level issues, like open hardware, while ardupilot.org focuses more on the practical hobbyist oriented issues of getting things working.
-
-You can see obvious differences, e.g. pixhawk.org clearly lists the D4R-II receiver as their recommended FrSKY receiver (see [here](https://pixhawk.org/peripherals/radio-control/frsky)), while ardupilot.org lists the D4R-II as deprecated and recommend far newer FrSKY receivers (see [here](http://ardupilot.org/copter/docs/common-frsky-telemetry.html)).
-
-It's unclear if the pixhawk.org site's information is often just stale or if it reflects real differences in hardware supported by PX4 and ArduPilot flight stacks (pixhawk.org claims to be somewhat agnostic when it comes to the flight stack but clearly most of the site assumes the PX4 stack).
-
-Bag / case
-----------
-
-The main quoted dimension for a quadcopter seems to be its diagonal size which is the distance from the central shaft of one motor to that of the motor furthest away from it, i.e. the one diagonally opposite.
-
-The DJI Phantom 3, one of the most popular ready assembled drones, has a diagonal size of 350mm.
-
-The F450 has a diagonal size of 450mm (see [here](http://g03.a.alicdn.com/kf/HTB1srtkGVXXXXcnXFXXq6xXFXXXP/221683912/HTB1srtkGVXXXXcnXFXXq6xXFXXXP.jpg)) and as such is quite a lot larger than most common drones. So it won't fit it most cases, even those cases described as "universal".
-
-I would have liked something like a cheap shoulder bag or messenger bag with padding and according to the pixhawk.org [F450 page](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) Parrot used to produce something like this for their AR.Drone 2.0 which would fit the F450 nicely. It doesn't seem to be available anymore but you can see it pictured on various sites (e.g. on [hobbysportz.com](http://www.hobbysportz.com/index.php?route=product/product&product_id=878)) and you can find knock-offs on eBay (e.g. [here](http://www.ebay.com/itm/New-PARROT-AR-DRONE-CANVAS-TOTE-BAG-CARRY-BAG-Black-FREE-SHIPPING-/232217382039?hash=item36113c0c97)) (presumably those eBay and hobbysportz links will soon go stale fairly quickly).
-
-The only other possibly suitable carry case that I found was the [Lowepro DroneGuard Kit](https://www.lowepro.de/brands/lowepro/droneguard/droneguard-kit/pd350/) which may be a good match for the F450 as the arms can stick out over the side of the bag. However without a shoulder strap it looks more suitable for just carrying a drone a short distance from the back of your car rather than e.g. carrying it on public transport.
-
-Many people seem to have just made their own cases using foam and the kind of storage boxes you find at DIY stores, but again these kind of cases only really look suitable for transport by car.
-
-Transmitter
------------
-
-The Taranis X9D+ is a mid-spec transmitter that's a very popular choice for setups like the one here. However I'm not really interested in direct remote control of the drone, but just want it as an option, hence the choice of the Q X7 which is a cut down cheaper version of the X9D+ but is very similar in many respects and runs the same [OpenTX](http://www.open-tx.org/downloads) firmware (note the warning for Taranis users on the download page, it's probably better to get firmware updates via FrSKY).
-
-See the Dronetrest blog for a [comparison of the two transmitters](http://blog.dronetrest.com/taranis-x9d-or-taranis-q-x7-which-is-better-to-buy/).
-
-TODO: move D4R II vs X8R bit into this section and comment that in the end you actually bought an RX8R.
-
-Pixhawk 2.1
------------
-
-As of March 2017 something called the [Pixhawk 2.1](http://www.proficnc.com/content/13-pixhawk2) is gradually becoming available.
-
-While it is open source hardware it appears to be a product of a particular individual, Philip Rowse, and his company ProfiCNC rather than a wider community.
-
-At its heart it is identical to the original Pixhawk - it has the same STM32 F4 MCU (running at the same speed etc.).
-
-However it does have design features that the Pixhawk does not, such as vibration isolation, IMU (inertial measurement unit) redundancy, better connectors and more I/O.
-
-I.e. it appears to be a more professional design rather than something fundamentally different to the original Pixhawk.
-
-While Philip Rowse deserves to make money from his efforts he clearly feels that he and ProfiCNC should be the sole manufactures of the unit, i.e. he does not seem to be an open hardware enthusiast encouraging the world to pick up on his design.
-
-For a sense of this see his interaction with the wider community on the ArduPilot forums, e.g. this [Pixhawk 2 Getting Started](http://discuss.ardupilot.org/t/pixhawk-2-getting-started/10031) thread.
-
-Having said all that the Pixhawk 2 is [clearly listed](https://pixhawk.org/modules/pixhawk2) as one of the autopilot systems acknowledged on the pixhawk.org site.
-
-And it does seem that the initial development did involve the wider community and 3DR, however 3DR seem to have gone their own way with closed hardware and it is only through the efforts of Philip Rowse that it has eventually come to market at all.
-
-Telemetry
----------
-
-The FrSKY D4R-II is the recommended receiver on the pixhawk.org [FrSKY page](https://pixhawk.org/peripherals/radio-control/frsky) and as outlined on their [FrSKY telemetry page](https://pixhawk.org/peripherals/telemetry/frsky) you can use an [FrSKY FUL-1 converter](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/) to connect the Pixhawk to the receiver so it can send telemetry data to the transmitter.
-
-However the ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) describes the D4R-II as deprecated and recommends the [FrSKY X8R](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/) again with the FUL-1 but with an additional [smart port converter](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/) (the same converter as bundled with the FrSKY USB upgrade cable above).
 
 Pixhawk autopilot
 -----------------
@@ -261,6 +150,44 @@ I went with the Pixhawk version from Unmanned Tech as it's there product that th
 
 I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/).
 
+Orientation note: the white arrow seen near the bottom of the front panel of the Pixhawk case isn't a pointless graphic - when installing the unit this arrow should be pointing towards the front of the quadcopter (see the [standard orientation](http://ardupilot.org/copter/docs/common-mounting-the-flight-controller.html#standard-orientation) section of the ArduPilot setup guide).
+
+Flight stack
+------------
+
+The Pixhawk supports two flight stacks - PX4 and ArduPilot. The pixhawk.org used to feature a page covering the choice between the two, but for whatever reason this is now gone, but you can still find [it on the Wayback Machine](https://web.archive.org/web/20150915080740/http://www.pixhawk.com/choice).
+
+Note: the ArduPilot stack, often abbreviated as APM (for ArduPilotMega), is rather misleadingly named. It comes from its early days when it originally ran on the [Arduino Mega](https://www.arduino.cc/en/Main/arduinoBoardMega) - but those days are long gone. It now runs on ARM processors, like the one found in the Pixhawk, and various other platforms. This [code overview](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) shows it can run on Linux and that when it runs on the Pixhawk it actually sits on top of the PX4 firmware.
+
+When it comes to comparing the PX4 and ArduPilot flight stacks there's lots of confusing and often contradictory information out there. For some information see [this thread](http://discuss.ardupilot.org/t/apm-stack-question-apm-vs-px4/11497) and [this thread](http://discuss.ardupilot.org/t/new-guy-here-trying-to-make-sense-of-it-all/9255) on the ArduPilot forums and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-when-to-choose-what/2214) and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-arduplane-for-mapping-photogrammetry-using-fixed-wing/1766) on the the PX4 forums.
+
+The [ArduPilot stack](https://github.com/ArduPilot/ardupilot) and the [PX4 one](https://github.com/PX4/Firmware/) can both be found on Github and both are clearly under active development.
+
+PX4 appears to more a product of the academic community while ArduPilot appears to a product of the hobbyist community with some resulting differences in focus, e.g. PX4 seem to focus more on autonomous flight while ArduPilot perhaps more on direct control.
+
+Both though work with ground control software for autonomous operation, e.g. Mission Planner (for ArduPilot) and QGroundControl (originally developed to work with PX4 but now also compatible with ArduPilot). See the [ground station](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html) section of the ArduPilot site for some comparison of ground control applications.
+
+**Important:** the pixhawk.org and ardupilot.org sites cover much more than just flight stacks, most of the content on both is useful irrespective of which flight stack one uses.
+
+Transmitter
+-----------
+
+The Taranis X9D+ is a mid-spec transmitter that's a very popular choice for setups like the one here. However I'm not really interested in direct remote control of the drone, but just want it as an option, hence the choice of the Q X7 which is a cut down cheaper version of the X9D+ but is very similar in many respects and runs the same [OpenTX](http://www.open-tx.org/downloads) firmware (note the warning for Taranis users on the download page, it's probably better to get firmware updates via FrSKY).
+
+See the Dronetrest blog for a [comparison of the two transmitters](http://blog.dronetrest.com/taranis-x9d-or-taranis-q-x7-which-is-better-to-buy/).
+
+XXX Pixhawk.org clearly lists the D4R-II receiver as their recommended FrSKY receiver (see [here](https://pixhawk.org/peripherals/radio-control/frsky)), while ardupilot.org lists the D4R-II as deprecated and recommend far newer FrSKY receivers (see [here](http://ardupilot.org/copter/docs/common-frsky-telemetry.html)).
+
+XXX The FrSKY D4R-II is the recommended receiver on the pixhawk.org [FrSKY page](https://pixhawk.org/peripherals/radio-control/frsky) and as outlined on their [FrSKY telemetry page](https://pixhawk.org/peripherals/telemetry/frsky) you can use an [FrSKY FUL-1 converter](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/) to connect the Pixhawk to the receiver so it can send telemetry data to the transmitter.
+
+XXX However the ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) describes the D4R-II as deprecated and recommends the [FrSKY X8R](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/) again with the FUL-1 but with an additional [smart port converter](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/) (the same converter as bundled with the FrSKY USB upgrade cable above).
+
+Note: when using the D4R II receiver the SPC is needed to connect the telemetry upgrade cable to the older style connector of the D4R II, when using the X8R receiver the SPC is needed for a completely different situation - adapting the FUL-1 to connect the receiver to the flight controller.
+
+See upgrade warning regarding receiver [here](https://pixhawk.org/peripherals/radio-control/frsky#receivers) hence the FrSKY USB upgrade cable (this cable has a 4 pin connector while the FrSKY D4R-II has a 3 pin connector hence the SBC).
+
+TODO: explain that the transmitter is the hand held remote control and the receiver is the corresponding component in the drone but that the names are historical and that both now transmit and receive.
+
 Stores
 ------
 
@@ -281,50 +208,6 @@ These are the one I found that sell the E305 propulsion system:
 And you can also buy it direct from DJI (oddly their store doesn't offer the F450 frame or many other parts):
 
 * http://store.dji.com/product/e305-4
-
-F450 ARF kit
-------------
-
-The Flame Wheel F450 ARF (almost ready to fly) kit is a popular kit recommended by many sites.
-
-Coming, as it does, with many parts it seems a convenient way to buy almost all the components you need.
-
-However these kits aren't so popular that you'll necessarily find them at all or at the best price at the normal big brand online sites like Amazon or the bigger technologu oriented sites.
-
-Searching online however quickly becomes confusing - a wide variety of prices, pictures that clearly involve somewhat different components on different sites and list of slightly different number of components (with some sites listing e.g. a single set of propellars, some with both 8" and 10" propellar sets and some with additional spare propellars).
-
-It turns out the kit is really just a bundle of two things:
-
-* The [F450 frame](http://www.dji.com/flame-wheel-arf/feature) consisting of just the polyamide nylon arms and the top and bottom central plates/boards.
-* The [E305 tuned propulsion system](http://store.dji.com/product/e305-4) consisting of motors, propellars, ESC (electronic speed control) units plus necessary bolts etc.
-
-It's the propulsion system that makes up most of the cost, the 4 motor E305 variant costs around USD $150, while the frame itself just costs around $25.
-
-And it's the propulsion system that's the source of confusion when comparing the F450 ARF kit across sites.
-
-
-It seems the kit originally shipped with the 30A OPTO ESCs, these were then replaced with the E300 propulsion system around 2014. And the E300 system was replaced with the current (as of April 2017) E305 propulsion system.
-
-The 30A OPTO ESCs and the E300 propulsion system are no longer available, however the photos and descriptions on many sites still refer to this setup. You can easily spot what system is involved by looking at the photos and finding the ESCs (rectanglar plastic components). The original ESCs are white and labelled 30A OPTO, the E300 ones are black (and labelled E300) and the E305 ESCs have a more high tech reddish semi-transparent look and are labelled 420 LITE.
-
-It's not clear whether sites simply haven't updated their photos and descriptions or if they really are selling older variants of the kit. Many sites make no mention at all of E300 or E305, simply listing "motots" etc. without specific part numbers.
-
-And the components listed by some sites don't line up at all with what you get when buying the E305 propulsion system on its own, e.g. not listing the two spare propellars or listing two sets of different length propellars rather than just 9.4" propellars.
-
-In the end I bought an E305 propulsion system and an F450 frame separately, rather than as a kit, to make sure I got what I expected (and the price savings of buying them bundled together in a kit seem to be minimal).
-
-TODO: mention PDB (power distribution board) that comes with the E305 propulsion system but is unneeded as the bottom plate of the F450 is a PDB.
-
-E300 vs E305 vs E310
---------------------
-
-DJI products a number of [propulsion systems](http://www.dji.com/products/tuned-propulsion-system). The E300, E305 and E310 systems are the ones most commonly mentioned in relation to the F450 frame.
-
-The E300 vs E305 situation is simple - the E300 is no longer available and the E305 is clearly seen as its replacement.
-
-The E305 vs the E310 situation is more complicated. The E310 actually came out before the E305 and while E310 systems are more expensive than E305 systems that doesn't mean the E310 is necessarily better than the E305. "Better" depends on your needs - with a basic setup you'll actually get longer flying times with the E305 and choosing the E310 over the E305 involves research and geeky tradeoffs (involving features like active braking etc.) and deciding what's relevant in relation to how you intend to use your drone.
-
-For an in-depth review of the E305, with some comparison to the E310, along with a link to an older E310 review by the same reviewer see [this post](https://www.rcgroups.com/forums/showthread.php?2456770-Review-DJI-E305-Tuned-Propulsion-System) to RCGroups.com.
 
 DJI videos
 ----------
