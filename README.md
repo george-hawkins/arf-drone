@@ -90,13 +90,17 @@ The following sections cover the major components of the quadcopter. In writing 
 * [Brief notes](NOTES.md#brief-notes) on clockwise and two counterclockwise motors, the external LED and USB connector.
 * The [F450 ARF kit](NOTES.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
 * The [E300 vs E305 vs E310](NOTES.md#e300-vs-e305-vs-e310) propulsion systems.
-* The LiPo [batteries]((NOTES.md#batteries), the T-plug battery connector, the battery alarm and the battery safety bag.
+* The LiPo [batteries](NOTES.md#batteries), the T-plug battery connector, the battery alarm and the battery safety bag.
 * [Vibration](NOTES.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
 * Predefined [waypoints](NOTES.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
 * The [Pixhawk 2.1](NOTES.md#pixhawk-21) and some background leading to my choice of the classic Pixhawk flight controller.
 * [Pixhawk.org vs the ArduPilot site](NOTES.md#pixhawkorg-vs-ardupilotorg).
 * [Bags and cases](NOTES.md#bag--case) and why the size of the F450 makes it hard to find a good bag for it.
 * [Chinese copies](NOTES.md#chinese-copies) and how buying drone parts is a case of caveat emptor.
+
+TODO: fill out [`stores.md`](stores.md) and [`assembly.md`](assembly.md) files further.
+
+Now that's out of the way let's get onto the sections covering the major components...
 
 Frame
 -----
@@ -187,33 +191,3 @@ Note: when using the D4R II receiver the SPC is needed to connect the telemetry 
 See upgrade warning regarding receiver [here](https://pixhawk.org/peripherals/radio-control/frsky#receivers) hence the FrSKY USB upgrade cable (this cable has a 4 pin connector while the FrSKY D4R-II has a 3 pin connector hence the SBC).
 
 TODO: explain that the transmitter is the hand held remote control and the receiver is the corresponding component in the drone but that the names are historical and that both now transmit and receive.
-
-Stores
-------
-
-I live in Switzerland and generally look for stores in the UK, Germany and Switzerland.
-
-These are the one I found that sell the E305 propulsion system:
-
-* http://www.quadcopters.co.uk/
-* https://www.buildyourowndrone.co.uk/
-* https://www.marionvillemodels.com/
-* https://www.mhm-modellbau.de/
-* http://www.globe-flight.de/
-* https://www.freakware.de/
-* http://www.flight-place.de/
-* https://www.estore.ch/
-* http://www.visuals-switzerland.net
-
-And you can also buy it direct from DJI (oddly their store doesn't offer the F450 frame or many other parts):
-
-* http://store.dji.com/product/e305-4
-
-DJI videos
-----------
-
-* <https://www.youtube.com/watch?v=pUTHIL_Xfcc> - assembling the original F450 kit.
-* <https://www.youtube.com/watch?v=H_Rvi7xQLdw> - assembly with the (then) newer E300 propulsion system (now replaced by the E350). Note: with the F450 you don't have to use the E305 PDB as the bottom plate of the F450 is a PDB.
-* <https://www.youtube.com/watch?v=qJZa7p3rsCU> - installing the Naza M V2 - while I didn't use this flight controller it's interesting to see how everything is fitted in.
-
-Note: according to one of the comments the "video shows the base plate being mounted sideways. If you want to mount a front facing camera gimbal you should mount the base plate the other way." And someone else comments that "she moves the solder around with the iron and that means there is too little heat and the cable should be still until the solder has gotten hard again ... give a little more heat and hold it still a little longer after removing the heat! Better to use a more powerful soldering iron, then the time to heat it up is less and the heat doesn't go that deep in the board and the conector."
