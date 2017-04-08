@@ -24,7 +24,7 @@ So what other parts do you need besides a frame and a propulsion system? The lis
 
 An approximate price in Euros (though I bought most items in the UK or Switzerland) has been given for every item, as you can see the most expensive items are the propulsion system, flight controller and transmitter. The batteries (if you buy two to have one in reserve) also add a significant cost.
 
-Note: various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on the [`NOTES`](NOTES.md) page.
+Various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on the [`NOTES`](NOTES.md) page. Many terms in this page are used before being fully explained but hopefully they're all explained at some point.
 
 ### Major components
 
@@ -79,9 +79,9 @@ When putting together this page the most useful sites I found were:
 * [Pixhawk.org](https://pixhawk.org/)
 * RCGroups - in particualr the [multicopter drone forums](https://www.rcgroups.com/aircraft-electric-multirotor-drones-790/).
 
-The [ArduPilot forums](http://discuss.ardupilot.org/) and [PX4 forums](http://discuss.px4.io/).
+The [ArduPilot forums](http://discuss.ardupilot.org/) and [PX4 forums](http://discuss.px4.io/) were also useful.
 
-Note: the terms Pixhawk and PX4 seem to be used interchangeably - though Pixhawk is used more often to the flight controller hardware while PX4 is used for the flight controller software stack.
+Note: the terms Pixhawk and PX4 are often used interchangeably - though Pixhawk more often refers to the flight controller hardware while PX4 more often refers to the flight controller software stack.
 
 ---
 
