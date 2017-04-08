@@ -130,7 +130,7 @@ The DJI Phantom 3, one of the most popular ready assembled drones, has a diagona
 
 The F450 has a diagonal size of 450mm (see [here](http://g03.a.alicdn.com/kf/HTB1srtkGVXXXXcnXFXXq6xXFXXXP/221683912/HTB1srtkGVXXXXcnXFXXq6xXFXXXP.jpg)) and as such is quite a lot larger than most common drones. So it won't fit it most cases, even those cases described as "universal".
 
-I would have liked something like a cheap shoulder bag or messenger bag with padding and according to the pixhawk.org [F450 page](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) Parrot used to produce something like this for their AR.Drone 2.0 which would fit the F450 nicely. It doesn't seem to be available anymore but you can see it pictured on various sites (e.g. on [hobbysportz.com](http://www.hobbysportz.com/index.php?route=product/product&product_id=878)) and you can find knock-offs on eBay (e.g. [here](http://www.ebay.com/itm/New-PARROT-AR-DRONE-CANVAS-TOTE-BAG-CARRY-BAG-Black-FREE-SHIPPING-/232217382039?hash=item36113c0c97)) (presumably those eBay and hobbysportz links will soon go stale fairly quickly).
+I would have liked something like a cheap shoulder bag or messenger bag with padding and according to the pixhawk.org [F450 page](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) Parrot used to produce something like this for their AR.Drone 2.0 which would fit the F450 nicely. It doesn't seem to be available anymore but you can see it pictured on various sites (e.g. on [hobbysportz.com](http://www.hobbysportz.com/index.php?route=product/product&product_id=878)) and you can find knock-offs on eBay (e.g. [here](http://www.ebay.com/itm/New-PARROT-AR-DRONE-CANVAS-TOTE-BAG-CARRY-BAG-Black-FREE-SHIPPING-/232217382039?hash=item36113c0c97)) (presumably those eBay and hobbysportz links will go stale fairly quickly).
 
 The only other possibly suitable carry case that I found was the [Lowepro DroneGuard Kit](https://www.lowepro.de/brands/lowepro/droneguard/droneguard-kit/pd350/) which may be a good match for the F450 as the arms can stick out over the side of the bag. However without a shoulder strap it looks more suitable for just carrying a drone a short distance from the back of your car rather than e.g. carrying it on public transport.
 
@@ -139,7 +139,7 @@ Many people seem to have just made their own cases using foam and the kind of st
 Chinese copies
 --------------
 
-With some of the parts here being open source hardware it's perhaps odd to take of Chinese copies.
+With some of the parts here being open source hardware it's perhaps odd to talk of Chinese copies.
 
 But there certainly seem to be no end of Chinese versions of all the parts used in this project, many masquerading as versions from more respected brands (or from lesser known brands that have proved themselves capable of producing a quality version of a given component).
 
@@ -148,7 +148,7 @@ So while you can buy all necessary components from sites like [AliExpress](https
 Miscellaneous parts
 -------------------
 
-[Threadlocker](https://en.wikipedia.org/wiki/Thread-locking_fluid) (also called thread or screw glue) comes in various strengths but for this situation it's a weak glue that's applied to the thread of a scew before you screw it into place, it's weak enough that you can still unscrew the screw later but strong enough that it stops the screw coming loose due to vibration (apparently its commonly used in automotive applications).
+[Threadlocker](https://en.wikipedia.org/wiki/Thread-locking_fluid) (also called thread or screw glue) comes in various strengths but for this situation it's a weak glue that's applied to the thread of a scew before you screw it into place, it's weak enough that you can still unscrew the screw later but strong enough that it stops the screw coming loose due to vibration (apparently it's common in automotive applications).
 
 According to the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) you should use it for the various screws (but not for attaching the propellars).
 
