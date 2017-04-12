@@ -24,7 +24,7 @@ So what other parts do you need besides a frame and a propulsion system? The lis
 
 An approximate price in Euros (though I bought most items in the UK or Switzerland) has been given for every item, as you can see the most expensive items are the propulsion system, flight controller and transmitter. The batteries (especially if you buy two to have one in reserve) and charger also add a significant cost. Each part is listed with one or more links to either a product page or a shop page that provides details about the product (in the case of shop pages I chose pages that provided the best description and not necessarily the shop from which I bought the given part).
 
-Various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on the [`NOTES`](NOTES.md) page. Many terms in this page are used before being fully explained but hopefully they're all explained at some point.
+Various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on one of the other pages here (the same is generally true for terms that crop elsewhere here).
 
 ### Major components
 
@@ -106,63 +106,73 @@ Now that's out of the way let's get onto the sections covering the major compone
 Frame
 -----
 
-Explain choice of F450 - that it's mentioned in <http://ardupilot.org/copter/docs/build-your-own-multicopter.html> and there are lots of first time build instructions (see open tabs).
+The frame is the basic physical platform to which all other components are attached. While most of the other components are updated on a regular basis, frame design seems to stay fairly constant.
 
-Say it has been around for a long time, while other components change it remains constant, seems practically the de-facto standard (at least in the non-race quadcopter space).
+The [DJI Flame Wheel](https://www.dji.com/flame-wheel-arf/feature) F450 frame came out in early 2012 and seems to still be one of the most popular non-race quadcopter frames.
 
-TODO: mention PDB (power distribution board) that comes with the E305 propulsion system but is unneeded as the bottom plate of the F450 is a PDB.
+I choose it because it's recommended on many first time build page (such as the ArduPilot [build your own multicopter](http://ardupilot.org/copter/docs/build-your-own-multicopter.html)) and it has more available space in its central section than it's little brother, the F350, without the extra complexity and expense of its six armed big brother the F550.
 
-ESC (electronic speed control)
-------------------------------
+It consists of just four arms and a top and bottom central plate. The bottom plate also serves as the PDB (power distribution board), i.e. the board that connects the motors (via ESCs) to the battery (via the power module).
 
-[ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller.
+The ESCs (covered later) are soldered directly to the PDB, as is a cable for connecting the PDB to the power module.
 
-The ESCs are the most expensive element in the E305 propulsion system (one ESC being just a little more expensive than its corresponding motor).
+Note: if you buy the E305 propulsion system separately from the frame then it will come with a small PDB so that the propulsion system can be used with any frame, this separate PDB is not needed when using the F450 frame.
 
-An ESC contains its own microcontroller (generally an Atmel Atmega or a Silabs 8051).
+Power module
+------------
 
-There are open source hardware implementations and many commercial ESCs are flashable with open source firmware (the main open source firmwares being [BLHeli](https://github.com/bitdump/BLHeli) and [SimonK](https://github.com/sim-/tgy)). However there seem to be no really popular open source hardware implementations and configuring the open source firmwares for your particular ESCs (whether commercial or open source) is non-trivial.
-
-So for this piece of hardware it seems easiest to stick with the commercial ones and consider them non-upgradable black boxes.
+The power module is just a tiny circuit board that connects to the battery at one end and to the PDB (as described above) at the other end, it also has a 6-position connector that connects to the flight controller.
 
 Flight controller
 -----------------
 
-TODO: explain the parts, in addition to propulsion system and frame, i.e. flight controller etc. and why you chose the F450 and the Pixhawk (rather than a cheaper controller like the OpenPilot [CC3D Revolution](https://www.unmannedtechshop.co.uk/openpilot-cc3d-revolution-flight-controller/), the Revolution is a product of [LibrePilot](https://www.librepilot.org/), a successor to the now defunct OpenPilot).
+The flight controller is the brains of the operation. It's one of the largest components in the system, essentially it's a small computer with its own internal sensors and connectors allowing it to take input from external components (such as the GPS and compass), interact with receivers and control the rest of the system.
 
-Reorder Pixhawk and Pixhawk 2 and other sections below so things come in more sensible order.
+It's internal set of sensors are together called an IMU ([inertial measurement unit](https://en.wikipedia.org/wiki/Inertial_measurement_unit)). For a drone the typical IMU covers 10 [degrees of freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(mechanics)) that are provided by:
 
-Pixhawk autopilot
------------------
+* A 3-axis gyroscope.
+* A 3-axis accelerometer.
+* A 3-axis magnetometer (compass).
+* A barometric pressure (altitude) sensor.
+
+It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors on their own I suggest the Adafruit [NXP 9-DOF IMU breakout](https://www.adafruit.com/product/3463) and their [barometric pressure sensor breakout](https://www.adafruit.com/product/2651) (then work through the Adafruit tutorials for the boards and try out their AHRS (altitude and heading reference system) [tutorial](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all)).
+
+There are many flight controllers but as noted above I wanted an open source hardware implementation. I chose the Pixhawk flight controller which is covered in the next section.
+
+Note: the flight controller is often also called the autopilot.
+
+Pixhawk
+-------
 
 The [Pixhawk](https://pixhawk.org/modules/pixhawk) is an [open source hardware](http://freedomdefined.org/OSHW) flight controller that originated at [ETH Zurich](https://en.wikipedia.org/wiki/ETH_Zurich) and is the de-facto standard high end open source hardware flight controller.
 
-The software for the Pixhawk is the [PX4 autopilot](http://px4.io/docs/px4-basic-concepts/) that covers both basic direct remote control and fully autonomous autopilot operation.
+It is the most commonly used flight controller with the popular [ArduPilot flight stack](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) and the [PX4 flight stack](http://px4.io/docs/px4-basic-concepts/) - at least in the hobbyist community (neither of these flight stacks is tied to the Pixhawk).
 
-While the Pixhawk is open source hardware most discussions recommend the [3DR](https://3dr.com/) produced Pixhawk and warn against cheap chinese produced versions.
+It is the most expensive component in the parts list above, and there are certainly cheaper flight controllers - the most interesting of which seems to be the OpenPilot [CC3D Revolution](https://www.unmannedtechshop.co.uk/openpilot-cc3d-revolution-flight-controller/) which is a product of the [LibrePilot](https://www.librepilot.org/) project (a successor to the now defunct OpenPilot project).
 
-However 3DR no longer produce the Pixhawk version you see covered by the [pixhawk.org](https://pixhawk.org/) and [px4.io](http://px4.io/) but have now gone off and produced their own version called the [Pixhawk Mini](https://store.3dr.com/products/3dr-pixhawk).
+However I chose the Pixhawk as I liked the flight stack projects that used it and liked the fact that it is popular in academic environments.
 
-I specifically wanted an open source hardware controller - after a bit of searching I came across versions produced by:
+While the Pixhawk is open source hardware most discussions recommend the [3DR](https://3dr.com/) produced Pixhawk and warn against cheap chinese produced versions. However 3DR no longer produce the Pixhawk version you see covered by the [pixhawk.org](https://pixhawk.org/) and [px4.io](http://px4.io/) sites and instead seem to have gone down a more closed source route. They now sell what they refer to as the [Pixhawk Mini](https://store.3dr.com/products/3dr-pixhawk), however it is not branded as open source hardaware and they do not seem to have released schematics etc. for it.
 
-* Unmanned Tech - <https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/>
-* 3DXR - <https://www.3dxr.co.uk/product/pixhawk-1-v2-4-8-m8n-gps-power-brick/>
-* HolyBro - <https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html>
-* RadioLink - <http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html>
-* Salange - <https://www.mhm-modellbau.de/part-FLC-HM07.php>
+So at the moment you have no choice but to go with a version produced by some other manufacturer. I did some searching and after excluding completely unknown knock-offs I came up with the following list:
 
-I went with the Pixhawk version from Unmanned Tech as it's there product that they supply directly, they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on many other sites.
+* [Unmanned Pixhawk](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/)
+* [3DXR Pixhawk](https://www.3dxr.co.uk/product/pixhawk-1-v2-4-8-m8n-gps-power-brick/)
+* [Holybro Pix32](http://www.holybro.com/product/11)
+* [RadioLink Pixhawk](http://www.radiolink.com.cn/doce/product-detail-116.html)
 
-I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/).
+The Unmanned and 3DXR Pixhawks are available directly from their producers, while the Holybro can be picked up e.g. from [Synosystems DE](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html) and the RadioLink from e.g. from the [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot.html). There are no end of versions from anonymous manufacturers on sites like [AliExpress](https://www.aliexpress.com/) and [Banggood](http://www.banggood.com/).
 
-Orientation note: the white arrow seen near the bottom of the front panel of the Pixhawk case isn't a pointless graphic - when installing the unit this arrow should be pointing towards the front of the quadcopter (see the [standard orientation](http://ardupilot.org/copter/docs/common-mounting-the-flight-controller.html#standard-orientation) section of the ArduPilot setup guide).
+I went with the Pixhawk version from Unmanned Tech UK as they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on other sites. I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/).
 
 Flight stack
 ------------
 
-The Pixhawk supports two flight stacks - PX4 and ArduPilot. The pixhawk.org used to feature a page covering the choice between the two, but for whatever reason this is now gone, but you can still find [it on the Wayback Machine](https://web.archive.org/web/20150915080740/http://www.pixhawk.com/choice).
+The flight stack is the software that runs on the flight controller hardaware and covers, among many other things, both basic direct remote control and fully autonomous autopilot operation.
 
-Note: the ArduPilot stack, often abbreviated as APM (for ArduPilotMega), is rather misleadingly named. It comes from its early days when it originally ran on the [Arduino Mega](https://www.arduino.cc/en/Main/arduinoBoardMega) - but those days are long gone. It now runs on ARM processors, like the one found in the Pixhawk, and various other platforms. This [code overview](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) shows it can run on Linux and that when it runs on the Pixhawk it actually sits on top of the PX4 firmware.
+As already mentioned the Pixhawk supports two flight stacks - PX4 and ArduPilot (the pixhawk.org site used to feature a page covering the choice between the two, it's now gone but you can still find [it on the Wayback Machine](https://web.archive.org/web/20150915080740/http://www.pixhawk.com/choice)).
+
+Note: the ArduPilot stack, often abbreviated as APM (for ArduPilotMega), is rather misleadingly named. It comes from its early days when it originally ran on the [Arduino Mega](https://www.arduino.cc/en/Main/arduinoBoardMega). Those days are long gone and it now runs on ARM processors, like the one found in the Pixhawk, and various other platforms. This [code overview](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) shows it can run on Linux and that when it runs on the Pixhawk it actually sits on top of the PX4 firmware.
 
 When it comes to comparing the PX4 and ArduPilot flight stacks there's lots of confusing and often contradictory information out there. For some information see [this thread](http://discuss.ardupilot.org/t/apm-stack-question-apm-vs-px4/11497) and [this thread](http://discuss.ardupilot.org/t/new-guy-here-trying-to-make-sense-of-it-all/9255) on the ArduPilot forums and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-when-to-choose-what/2214) and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-arduplane-for-mapping-photogrammetry-using-fixed-wing/1766) on the the PX4 forums.
 
@@ -174,21 +184,54 @@ Both though work with ground control software for autonomous operation, e.g. Mis
 
 **Important:** the pixhawk.org and ardupilot.org sites cover much more than just flight stacks, most of the content on both is useful irrespective of which flight stack one uses.
 
-Transmitter
------------
+ESC (electronic speed control)
+------------------------------
 
-The Taranis X9D+ is a mid-spec transmitter that's a very popular choice for setups like the one here. However I'm not really interested in direct remote control of the drone, but just want it as an option, hence the choice of the Q X7 which is a cut down cheaper version of the X9D+ but is very similar in many respects and runs the same [OpenTX](http://www.open-tx.org/downloads) firmware (note the warning for Taranis users on the download page, it's probably better to get firmware updates via FrSKY).
+The propulsion systems constists of the propellars, motors and ESCs. [ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller. An ESC contains its own microcontroller (generally an Atmel ATmega or a Silabs 8051).
 
-See the Dronetrest blog for a [comparison of the two transmitters](http://blog.dronetrest.com/taranis-x9d-or-taranis-q-x7-which-is-better-to-buy/).
+I chose the E305 propulsion system as it's the standard system sold with the F450 frame (and can be bought bundled together with it as a kit). The ESCs are the most expensive element in the E305 propulsion system (one ESC being just a little more expensive than its corresponding motor).
 
-XXX Pixhawk.org clearly lists the D4R-II receiver as their recommended FrSKY receiver (see [here](https://pixhawk.org/peripherals/radio-control/frsky)), while ardupilot.org lists the D4R-II as deprecated and recommend far newer FrSKY receivers (see [here](http://ardupilot.org/copter/docs/common-frsky-telemetry.html)).
+There are open source hardware implementations and many commercial ESCs are flashable with open source firmware (the main open source firmwares being [BLHeli](https://github.com/bitdump/BLHeli) and [SimonK](https://github.com/sim-/tgy)). However there seem to be no really popular open source hardware implementations and configuring the open source firmwares for your particular ESCs (whether commercial or open source) is non-trivial.
 
-XXX The FrSKY D4R-II is the recommended receiver on the pixhawk.org [FrSKY page](https://pixhawk.org/peripherals/radio-control/frsky) and as outlined on their [FrSKY telemetry page](https://pixhawk.org/peripherals/telemetry/frsky) you can use an [FrSKY FUL-1 converter](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/) to connect the Pixhawk to the receiver so it can send telemetry data to the transmitter.
+Many closed source hardware manufacturers produce ESCs that come with the BLHeli firmware as standard, e.g. the [Turingy Multistar 20A](https://hobbyking.com/en_us/turnigy-multistar-20a-v2-esc-with-blheli-and-4a-lbec-2-6s.html) or the [DYS XM20A](https://hobbyking.com/en_us/xm20a-mini-esc.html).
 
-XXX However the ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) describes the D4R-II as deprecated and recommends the [FrSKY X8R](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/) again with the FUL-1 but with an additional [smart port converter](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/) (the same converter as bundled with the FrSKY USB upgrade cable above).
+DJI make a big deal of the fact that their propulsion systems, including the E305, are "tuned" propulsion systems - that the ESCs rather than being sold for use with arbitrary motors have been specifically tuned to work very well with the motors sold as part of the same system. This seems to have been well received by reviewers.
 
-Note: when using the D4R II receiver the SPC is needed to connect the telemetry upgrade cable to the older style connector of the D4R II, when using the X8R receiver the SPC is needed for a completely different situation - adapting the FUL-1 to connect the receiver to the flight controller.
+So for this piece of hardware it seemed easiest to stick with the commercial ones from DJI and consider them non-upgradable black boxes.
 
-See upgrade warning regarding receiver [here](https://pixhawk.org/peripherals/radio-control/frsky#receivers) hence the FrSKY USB upgrade cable (this cable has a 4 pin connector while the FrSKY D4R-II has a 3 pin connector hence the SBC).
+Note: for earlier DJI propulsion systems the system and the ESCs had the same name, e.g. E300. For the E305 system that's no longer the case and the ESCs are named 420 LITE.
 
-TODO: explain that the transmitter is the hand held remote control and the receiver is the corresponding component in the drone but that the names are historical and that both now transmit and receive.
+Transmitter and receiver
+------------------------
+
+The transmitter is the handheld control unit while the receiver is the corresponding component in the drone that receives instructions from the ground and communicates them to the flight controller.
+
+The names transmitter and receiver reflect their primary/historical function - these days communication between the two is now two way.
+
+The transmitters and receivers from the manufacturers FrSKY and Futaba seem to be the most popular choices for pairing with the Pixhawk.
+
+I went with FrSKY as there as the information relating to hooking FrSKY components up to the Pixhawk seemed easier to follow.
+
+The Taranis X9D+ is a mid-spec transmitter that's a very popular choice for setups like the one here. However I'm not primarily interested in direct remote control so I chose the Q X7 which is a cut down cheaper version of the X9D+ but is very similar in many respects and runs the same [OpenTX](http://www.open-tx.org/downloads) firmware. See the DroneTrest blog for a [comparison of the two transmitters](http://blog.dronetrest.com/taranis-x9d-or-taranis-q-x7-which-is-better-to-buy/).
+
+Depending on where you look the recommended corresponding is either the FrSKY D4R-II or the X8R.
+
+FrSKY D4R-II is the recommended receiver on the pixhawk.org [FrSKY page](https://pixhawk.org/peripherals/radio-control/frsky) and as outlined on their [FrSKY telemetry page](https://pixhawk.org/peripherals/telemetry/frsky) you can use an [FrSKY FUL-1 converter](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/) to connect the Pixhawk to the receiver so it can send telemetry data to the transmitter.
+
+However the ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) describes the D4R-II as deprecated and recommends the [FrSKY X8R](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/) again with the FUL-1 but with an additional [smart port converter](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/) (the same converter as bundled with the FrSKY USB upgrade cable above).
+
+In the parts list you'll see a number of additional components related to the receiver:
+
+* FUL-1 - needed for connecting the telemetry port of the flight controller to the receiver.
+* FUC-3 - upgrade cable.
+* SPC (smart port converter).
+
+It's always good to be able update the firmware of any given component and the FUC-3 is needed for doing this with FrSKY products.
+
+Upgrading the receiver isn't just a good idea - it may be required, see the [warning](https://pixhawk.org/peripherals/radio-control/frsky#receivers) in the pixhawk.org section covering FrSKY receivers.
+
+The SPC is needed in two quite different situations - it's needed to connect the upgrade cable to the older style connector of the D4R II and when using the X8R receiver it's needed for adapting the FUL-1 to connect the receiver to the flight controller.
+
+Connecting the telemetry output of the flight controller to the receiver is optional - the receiver simply forwards the telemetry information to the receiver which can then display it to the user on its small LCD screen.
+
+Note: the FUL-1 is not a special purpose component, it's a completely generic component and many other manufacturers produce something similar - it just performs the task of converting TTL to RS232 (see [here](https://www.sparkfun.com/tutorials/215) for more information), something that's needed in many situations.
