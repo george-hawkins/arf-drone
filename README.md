@@ -235,3 +235,8 @@ The SPC is needed in two quite different situations - it's needed to connect the
 Connecting the telemetry output of the flight controller to the receiver is optional - the receiver simply forwards the telemetry information to the receiver which can then display it to the user on its small LCD screen.
 
 Note: the FUL-1 is not a special purpose component, it's a completely generic component and many other manufacturers produce something similar - it just performs the task of converting TTL to RS232 (see [here](https://www.sparkfun.com/tutorials/215) for more information), something that's needed in many situations.
+
+Telemetry kit
+-------------
+
+TODO: install the [telemetry kit](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/) and see if it simply relays telemetry information or if it allows direct control from the ground station.
