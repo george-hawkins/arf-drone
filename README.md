@@ -22,7 +22,7 @@ Parts
 
 So what other parts do you need besides a frame and a propulsion system? The list of parts below makes it clear there's a bit more to this whole thing.
 
-An approximate price in Euros (though I bought most items in the UK or Switzerland) has been given for every item, as you can see the most expensive items are the propulsion system, flight controller and transmitter. The batteries (if you buy two to have one in reserve) also add a significant cost. Each part is listed with one or more links to either a product page or a shop page that provides details about the product (in the case of shop pages I chose pages that provided the best description and not necessarily the shop from which I bought the given part).
+An approximate price in Euros (though I bought most items in the UK or Switzerland) has been given for every item, as you can see the most expensive items are the propulsion system, flight controller and transmitter. The batteries (especially if you buy two to have one in reserve) and charger also add a significant cost. Each part is listed with one or more links to either a product page or a shop page that provides details about the product (in the case of shop pages I chose pages that provided the best description and not necessarily the shop from which I bought the given part).
 
 Various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on the [`NOTES`](NOTES.md) page. Many terms in this page are used before being fully explained but hopefully they're all explained at some point.
 
@@ -52,7 +52,8 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 | &euro;7.50 | <img width="128" src="images/spare-propellars.jpg"><br>Spare propellars ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
 | &euro;5 | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](http://www.helipal.com/dji-landing-gear-for-f450-f550.html)).
 | &euro;4.50 | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)).
-| &euro;21 | <img width="128" src="images/e430-lipo-charger.jpg"><br>E430 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-e430-lipo-life-2-4s-balance-charger/)).
+| &euro;40 | <img width="128" src="images/s60-lipo-charger.jpg"><br>S60 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
+| &euro;7.50 | <img width="128" src="images/t-plug-charger-cable.jpg"><br>T-plug charger cable - connects battery to charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
 
 ### Additional physical components
 
@@ -90,7 +91,7 @@ The following sections cover the major components of the quadcopter. In writing 
 * [Brief notes](NOTES.md#brief-notes) on clockwise and two counterclockwise motors, the external LED and USB connector.
 * The [F450 ARF kit](NOTES.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
 * The [E300 vs E305 vs E310](NOTES.md#e300-vs-e305-vs-e310) propulsion systems.
-* The LiPo [batteries](NOTES.md#batteries), the T-plug battery connector, the battery alarm and the battery safety bag.
+* The LiPo [batteries](NOTES.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
 * [Vibration](NOTES.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
 * Predefined [waypoints](NOTES.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
 * The [Pixhawk 2.1](NOTES.md#pixhawk-21) and some background leading to my choice of the classic Pixhawk flight controller.

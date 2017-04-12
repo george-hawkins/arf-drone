@@ -64,7 +64,11 @@ Note: as well as the two T-plugs connectors, the power module has a 6-position D
 In addition to the batteries and T-plug connector I bought:
 
 * A battery alarm - this makes a loud noise when your battery is about to die - this gives you time to land the drone rather than being taken by surprise and see it drop from the skies.
-* A LiPo safety bag - the lithium-ion technology of LiPo batteries is prone to explosion (as made clear to the world by the Samsung Note 7), this bag provides some degree of protection when charging and for storage. Even when such a bag is used LiPo batteries should still not be left charging unattended.
+* A LiPo safety bag - the lithium-ion technology of LiPo batteries can result in explosions (as made clear to the world by the Samsung Note 7), this bag provides some degree of protection when charging and for storage. Even when such a bag is used LiPo batteries should still not be left charging unattended. There is a commercial drone development team in the same office space that I work in and they definitely use these bags.
+
+On the whole I think should only be as complicated as it needs to be, so initially I didn't want to buy a battery charger with an LCD screen. At first I was going to buy the much cheaper SkyRC E430 charger but in the end I bought the S60. Why? Because LiPos have a storage voltage, if you're going to leave a LiPo lying around for more than a few days it should be charged to about 50% before storage. The S60 has a storage mode whereas with the E430 you'd have to e.g. work out how long it takes to fully charge a battery and then unplug the battery after it had been charging for about half this time.
+
+There are no end of scare stories around lithium-ion batteries, such as LiPos, but clearly most such batteries never explode - the message seems to be to always buy new batteries from a recognised dealer and if you treat them with respect everything will be OK. For more details see e.g. [15 things every LiPo battery user should know](http://thedronegirl.com/2015/02/07/lipo-battery/).
 
 Vibration
 ---------
