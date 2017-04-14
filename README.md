@@ -17,6 +17,8 @@ But it turns out, if starting from scratch with no prior experience of drones, t
 
 Important: this build requires a small amount of soldering and it's assumed you've already got a soldering iron, solder etc.
 
+TODO: add summary explaining that this page covers parts and that there are other pages - [`NOTES.md`](NOTES.md), [`stores.md`](stores.md), [`purchase-order.md`](purchase-order.md) and [`assembly.md`](assembly.md).
+
 Parts
 -----
 
