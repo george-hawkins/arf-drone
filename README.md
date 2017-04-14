@@ -135,7 +135,7 @@ It's internal set of sensors are together called an IMU ([inertial measurement u
 * A 3-axis magnetometer (compass).
 * A barometric pressure (altitude) sensor.
 
-It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors on their own I suggest the Adafruit [NXP 9-DOF IMU breakout](https://www.adafruit.com/product/3463) and their [barometric pressure sensor breakout](https://www.adafruit.com/product/2651) (then work through the Adafruit tutorials for the boards and try out their AHRS (altitude and heading reference system) [tutorial](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all)).
+It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors on their own I suggest the Adafruit [NXP 9-DOF IMU breakout](https://www.adafruit.com/product/3463) and their [barometric pressure sensor breakout](https://www.adafruit.com/product/2651) (then work through the Adafruit tutorials for the boards and try out their AHRS (altitude and heading reference system) [tutorial](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all)). **TODO:** move into NOTES.md.
 
 There are many flight controllers but as noted above I wanted an open source hardware implementation. I chose the Pixhawk flight controller which is covered in the next section.
 
@@ -239,4 +239,4 @@ Note: the FUL-1 is not a special purpose component, it's a completely generic co
 Telemetry kit
 -------------
 
-TODO: install the [telemetry kit](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/) and see if it simply relays telemetry information or if it allows direct control from the ground station.
+TODO: install the [telemetry kit](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/) and see if it simply relays telemetry information or if it allows direct control from the ground station. If it's interesting add it into the parts list.

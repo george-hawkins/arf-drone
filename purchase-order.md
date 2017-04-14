@@ -1,8 +1,8 @@
 Purchase order
 --------------
 
-* GBP 180 - Pixhawk flight controller - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/)).
-  With the optional power module and Ublox Neo-M8N GPS module.
+* GBP 215 - Pixhawk flight controller - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/)).
+  With the optional power module, Ublox Neo-M8N GPS module and telemetry kit.
 * GBP 31.50 - RX8R receiver - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/frsky-rx8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).
 * GBP 4.50 - GPS mast - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/foldable-gps-mast-mount/)).
 * GBP 3.20 - FUL-1 TTL to RS232 converter - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/)).
