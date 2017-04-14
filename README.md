@@ -17,7 +17,7 @@ But it turns out, if starting from scratch with no prior experience of drones, t
 
 Important: this build requires a small amount of soldering and it's assumed you've already got a soldering iron, solder etc.
 
-TODO: add summary explaining that this page covers parts and that there are other pages - [`NOTES.md`](NOTES.md), [`stores.md`](stores.md), [`purchase-order.md`](purchase-order.md) and [`assembly.md`](assembly.md).
+TODO: add summary explaining that this page covers parts and that there are other pages - [`notes.md`](notes.md), [`stores.md`](stores.md), [`purchase-order.md`](purchase-order.md) and [`assembly.md`](assembly.md).
 
 Parts
 -----
@@ -73,7 +73,7 @@ As already noted some minor soldering is required - it's assumed you already hav
 
 The [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) additionally notes that you'll need threadlocker, a 2mm hex key, [nylon cable ties](https://www.amazon.co.uk/Green-Cable-100Mm-2-5Mm-All/dp/B00904S2DE), scissors and [flush cutters](https://www.sparkfun.com/products/11952).
 
-The 2mm hex key and the threadlocker (which is something I'd never heard of before) are covered in the [miscellaneous parts](NOTES.md#miscellaneous-parts) note.
+The 2mm hex key and the threadlocker (which is something I'd never heard of before) are covered in the [miscellaneous parts](notes.md#miscellaneous-parts) note.
 
 Websites
 --------
@@ -90,19 +90,19 @@ Note: the terms Pixhawk and PX4 are often used interchangeably - though Pixhawk 
 
 ---
 
-The following sections cover the major components of the quadcopter. In writing this page I started including so many side notes that they started clogging up the whole things that I've moved these notes out into [`NOTES`](NOTES.md). They're worth scanning over quickly and cover:
+The following sections cover the major components of the quadcopter. In writing this page I started including so many side notes that they started clogging up the whole things that I've moved these notes out into [`notes.md`](notes.md). They're worth scanning over quickly and cover:
 
-* [Brief notes](NOTES.md#brief-notes) on clockwise and two counterclockwise motors, the external LED and USB connector.
-* The [F450 ARF kit](NOTES.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
-* The [E300 vs E305 vs E310](NOTES.md#e300-vs-e305-vs-e310) propulsion systems.
-* The LiPo [batteries](NOTES.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
-* The [IMU and MCU](NOTES.md#imu-and-mcu) - the core parts of the flight controller and how you can experiment with them.
-* [Vibration](NOTES.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
-* Predefined [waypoints](NOTES.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
-* The [Pixhawk 2.1](NOTES.md#pixhawk-21) and some background leading to my choice of the classic Pixhawk flight controller.
-* [Pixhawk.org vs the ArduPilot site](NOTES.md#pixhawkorg-vs-ardupilotorg).
-* [Bags and cases](NOTES.md#bag--case) and why the size of the F450 makes it hard to find a good bag for it.
-* [Chinese copies](NOTES.md#chinese-copies) and how buying drone parts is a case of caveat emptor.
+* [Brief notes](notes.md#brief-notes) on clockwise and two counterclockwise motors, the external LED and USB connector.
+* The [F450 ARF kit](notes.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
+* The [E300 vs E305 vs E310](notes.md#e300-vs-e305-vs-e310) propulsion systems.
+* The LiPo [batteries](notes.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
+* The [IMU and MCU](notes.md#imu-and-mcu) - the core parts of the flight controller and how you can experiment with them.
+* [Vibration](notes.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
+* Predefined [waypoints](notes.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
+* The [Pixhawk 2.1](notes.md#pixhawk-21) and some background leading to my choice of the classic Pixhawk flight controller.
+* [Pixhawk.org vs the ArduPilot site](notes.md#pixhawkorg-vs-ardupilotorg).
+* [Bags and cases](notes.md#bag--case) and why the size of the F450 makes it hard to find a good bag for it.
+* [Chinese copies](notes.md#chinese-copies) and how buying drone parts is a case of caveat emptor.
 
 TODO: fill out [`assembly.md`](assembly.md) file further.
 
@@ -140,7 +140,7 @@ It's internal set of sensors are together called an IMU ([inertial measurement u
 * A 3-axis magnetometer (compass).
 * A barometric pressure (altitude) sensor.
 
-It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors (and with the MCU) then see the [IMU and MCU section](NOTES.md#imc-and-mcu) on the note page.
+It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors (and with the MCU) then see the [IMU and MCU section](notes.md#imc-and-mcu) on the note page.
 
 There are many flight controllers but as noted above I wanted an open source hardware implementation. I chose the Pixhawk flight controller which is covered in the next section.
 
