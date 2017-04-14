@@ -161,7 +161,7 @@ So at the moment you have no choice but to go with a version produced by some ot
 * [Holybro Pix32](http://www.holybro.com/product/11)
 * [RadioLink Pixhawk](http://www.radiolink.com.cn/doce/product-detail-116.html)
 
-The Unmanned and 3DXR Pixhawks are available directly from their producers, while the Holybro can be picked up e.g. from [Synosystems DE](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html) and the RadioLink from e.g. from the [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot.html). There are no end of versions from anonymous manufacturers on sites like [AliExpress](https://www.aliexpress.com/) and [Banggood](http://www.banggood.com/).
+The Unmanned and 3DXR Pixhawks are available directly from their producers, while the Holybro can be picked up e.g. from [Synosystems DE](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html) and the RadioLink from e.g. from the [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot.html). There are no end of versions from anonymous manufacturers on sites like [AliExpress](https://www.aliexpress.com/) and [Banggood](http://www.banggood.com/).
 
 I went with the Pixhawk version from Unmanned Tech UK as they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on other sites. I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/).
 
