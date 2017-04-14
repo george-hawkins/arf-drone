@@ -70,6 +70,28 @@ On the whole I think should only be as complicated as it needs to be, so initial
 
 There are no end of scare stories around lithium-ion batteries, such as LiPos, but clearly most such batteries never explode - the message seems to be to always buy new batteries from a recognised dealer and if you treat them with respect everything will be OK. For more details see e.g. [15 things every LiPo battery user should know](http://thedronegirl.com/2015/02/07/lipo-battery/).
 
+IMU and MCU
+-----------
+
+As noted elsewhere the main group of sensors in the flight controller is called the IMU (inertial measurement unit). If you'd like to experiment with such sensors on their own then I suggest the Adafruit [NXP 9-DOF IMU breakout](https://www.adafruit.com/product/3463) along with their [barometric pressure sensor breakout](https://www.adafruit.com/product/2651).
+
+Then work throught their tutorials for the [9-DOF IMU](https://forums.adafruit.com/viewtopic.php?f=25&t=115536) and the [barometric pressure sensor](https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout?view=all).
+
+Then go further and learn about things like the Madgwick IMU and AHRS sensor fusion algorithm with their AHRS (altitude and heading reference system) [tutorial](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all)).
+
+The Pixhawk uses an [STM32](https://en.wikipedia.org/wiki/STM32) MCU ([microcontroller](https://en.wikipedia.org/wiki/Microcontroller)). STMicroelectronics produce two very cheap development boards based around the STM32F429ZIT6 (which is similar to but not identical to the STM32F4 MCU in the Pixhawk) - the [Nucleo F429ZI](https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/) and the [Discovery F429ZI](https://developer.mbed.org/platforms/ST-Discovery-F429ZI/).
+
+While I prefer the Nucleo boards most of the pages covering the PX4 flight stack and its [NuttX RTOS](http://nuttx.org/) (real-time operating system) refer to the Discovery board, e.g.:
+
+* Pixhawk.org - [Running PX4 firmware on the STM Discovery development kit](https://pixhawk.org/modules/stm32f4discovery)
+* Bitbucket - [NuttX/boards/stm32f429i-disco](https://bitbucket.org/nuttx/boards/src/master/stm32f429i-disco/)
+* NuttX - [supported platforms](http://www.nuttx.org/Documentation/NuttX.html#stm32f429x)
+* [STM32 development on Mac OS](http://www.mjoldfield.com/atelier/2015/04/stm32-development.html)
+
+Note: the NuttX source is hosted on Bitbucket, PX4 host their own versions of the [NuttX repos on Github](https://github.com/PX4-NuttX) - the two are not mirrors and I don't know how far they've diverged from each other.
+
+For Mac developers the PX4 people provide a number of [homebrew formula](https://github.com/PX4/homebrew-px4) including one to install the appropriate GCC toolchain.
+
 Vibration
 ---------
 
