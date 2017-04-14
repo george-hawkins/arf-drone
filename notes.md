@@ -3,15 +3,15 @@ Brief notes
 
 This section just covers small items that don't warrant being split out into individual sections.
 
-* A quadcopter has two clockwise and two counterclockwise motors and there are clockwise and counterclockwise specific propellars, so a pack of two spare propellars contains one of each.
-* When the Pixhawk is buried at the heart of the quadcopter its power LED can be hard to see and its USB port difficult to access so one can buy a module that provides an external LED and USB port. This just consists of an extension cable that attaches to the Pixhawk at one end and has a power LED and USB port at the other end that can be mounted somewhere more accessable on the frame.
+* A quadcopter has two clockwise and two counterclockwise motors and there are clockwise and counterclockwise specific propellars, so a pack of two spare propellars will contain one of each.
+* When the Pixhawk is buried at the heart of the quadcopter its power LED can be hard to see and its USB port difficult to access so one can buy a module that provides an external LED and USB port. This just consists of an extension cable that attaches to the Pixhawk at one end and has a LED and USB port at the other end that can be mounted somewhere more accessable on the frame.
 
-  The Pixhawk has a GPS and I2C port - the I2C port is shown [here](https://pixhawk.org/modules/pixhawk) as being intended either for the compass or for an I2C splitter. As most GPS modules also provide the compass they have two connectors and take up both the GPS port and an I2C port. The module providing the external LED and USB port also connects to the I2C port so an I2C splitter is required to connect both it and the compass connector of the GPS module.
+  The Pixhawk has a GPS and an I2C port - the I2C port is shown [here](https://pixhawk.org/modules/pixhawk) as being intended either for the compass or for an I2C splitter. As most GPS modules also provide the compass they have two connectors and take up both the GPS port and the I2C port. The module providing the external LED and USB port also connects to the I2C port so an I2C splitter is required to connect both it and the compass connector of the GPS module at the same time.
 
 F450 ARF kit
 ------------
 
-The Flame Wheel F450 ARF (almost ready to fly) kit is a popular kit recommended by many sites. Coming, as it does, with many parts it seems a convenient way to buy almost all the components you need. However these kits aren't so popular that you'll necessarily find them at all or at the best price at the normal big brand online sites like Amazon or the bigger technology oriented sites.
+The Flame Wheel F450 ARF (almost ready to fly) kit is a popular kit recommended by many sites. Coming, as it does, with many parts it seems a convenient way to buy many of the components you need. However these kits aren't so popular that you'll necessarily find them at all, or at the best price, at the normal big brand online sites like Amazon or the bigger technology oriented sites.
 
 Searching online however quickly becomes confusing - on different sites there are lists and pictures that clearly involve somewhat different components.
 
@@ -20,15 +20,15 @@ It turns out the kit is really just a bundle of two things:
 * The [F450 frame](http://www.dji.com/flame-wheel-arf/feature) consisting of just the quadcopter arms and the top and bottom central plates.
 * The [E305 tuned propulsion system](http://store.dji.com/product/e305-4) consisting of motors, propellars, ESCs and the necessary bolts etc.
 
-It's the propulsion system that makes up most of the cost, the 4 motor E305 variant costs around US$150, while the frame itself just costs around $25. And it's the propulsion system that's the source of confusion when comparing the F450 ARF kit across sites.
+It's the propulsion system that makes up most of the cost, the 4 motor E305 variant costs around US$150, while the frame itself costs only $25. And it's the propulsion system that's the source of confusion when comparing the F450 ARF kit across sites.
 
-It seems the kit originally shipped with 30A OPTO ESCs, these were then replaced with the E300 propulsion system around 2014. And the E300 system was replaced (sometime in 2015) with the current (as of April 2017) E305 propulsion system.
+It seems the kit originally shipped with 30A OPTO ESCs, these were then replaced with the E300 propulsion system around 2014. And the E300 system was itself replaced (sometime in 2015) with the current (as of April 2017) E305 propulsion system.
 
 The 30A OPTO ESCs and the E300 propulsion system are no longer available, however the photos and descriptions on many sites still refer to this setup. You can easily spot what system is involved by looking at the photos and finding the ESCs (rectanglar plastic components). The original ESCs are white and labelled 30A OPTO, the E300 ones are black (and labelled E300) and the E305 ESCs have a more high tech reddish semi-transparent look and are labelled 420 LITE.
 
 I presume most sites actually carry the current version of the ARF kit and simply haven't updated their photos and descriptions since they first started carrying the kit.
 
-In the end I bought an E305 propulsion system and an F450 frame separately, rather than as a kit, to make sure I got what I expected (and anyway the price saving of buying them bundled together in a kit seems to be minimal).
+In the end I bought an E305 propulsion system and an F450 frame separately, rather than combined as a kit, to make sure I got what I expected (the price saving of buying them bundled together seems to be minimal).
 
 However it looks like DJI are no longer selling the F450 frame separately in many markets so you may have no choice but to buy the frame and propulsion system together in an ARF kit.
 
@@ -46,15 +46,15 @@ For an in-depth review of the E305, with some comparison to the E310, along with
 Batteries
 ---------
 
-Many pages that describe building an F450 based mention using a 3s battery however the DJI [E305 product page](https://store.dji.com/product/e305-4) recommends a 4S battery (i.e. 4 cells rather than 3 - see [everything you need to know about LiPo batteries](http://www.rcuniverse.com/forum/rc-car-general-discussions-179/11586761-everything-you-need-know-about-lipo-batteries.html)).
+Many pages, that describe building an F450 based system, mention using a 3s battery however the DJI [E305 product page](https://store.dji.com/product/e305-4) recommends a 4S battery (i.e. 4 cells rather than 3 - see [everything you need to know about LiPo batteries](http://www.rcuniverse.com/forum/rc-car-general-discussions-179/11586761-everything-you-need-know-about-lipo-batteries.html)).
 
 As there are now many restrictions on shipping LiPo batteries it's probably best to order them locally even if you order other parts internationally.
 
 While the batteries are expensive most people seem to buy at least two so that they can have one attached to their drone and one in reserve.
 
-The batteries I bought, like most similar batteries, come with a T-plug (Deans) connector. The power module has two female T-plugs, one connects to the battery and the other connects to the PDB so one of the additional parts that I bought is a cable that's already terminated with a male T-plug connector for connecting the PDB to the power module (that seemed easier than soldering a T-plug connector to the unterminated cable that comes with the frame kit).
+The batteries I bought, like most similar batteries, come with a T-plug (Deans) connector. The power module has two female T-plugs, one connects to the battery and the other connects to the PDB so one of the additional parts that I bought, to connect the PDB to the power module, is a cable that's already terminated with a male T-plug connector (this seemed easier than soldering a T-plug connector to the unterminated cable that comes with the frame).
 
-Note: as well as the two T-plugs connectors, the power module has a 6-position DF13 cable that connects to the flight controller.
+Note: as well as the two T-plugs connectors, the power module has a 6-position cable that connects to the flight controller.
 
 In addition to the batteries and T-plug connector I bought:
 
@@ -70,22 +70,20 @@ IMU and MCU
 
 As noted elsewhere the main group of sensors in the flight controller is called the IMU (inertial measurement unit). If you'd like to experiment with such sensors on their own then I suggest the Adafruit [NXP 9-DOF IMU breakout](https://www.adafruit.com/product/3463) along with their [barometric pressure sensor breakout](https://www.adafruit.com/product/2651).
 
-Then work throught their tutorials for the [9-DOF IMU](https://forums.adafruit.com/viewtopic.php?f=25&t=115536) and the [barometric pressure sensor](https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout?view=all).
-
-Then go further and learn about things like the Madgwick IMU and AHRS sensor fusion algorithm with the Adafruit AHRS (altitude and heading reference system) [tutorial](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all)).
+Then work throught their tutorials for the [9-DOF IMU](https://forums.adafruit.com/viewtopic.php?f=25&t=115536) and the [barometric pressure sensor](https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout?view=all). Afterwards go further and learn about things like the Madgwick IMU and AHRS sensor fusion algorithm with the Adafruit AHRS (altitude and heading reference system) [tutorial](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all).
 
 The Pixhawk uses an [STM32](https://en.wikipedia.org/wiki/STM32) MCU ([microcontroller](https://en.wikipedia.org/wiki/Microcontroller)). STMicroelectronics produce two very cheap development boards based around the STM32F429ZI (which is almost identical to the MCU in the Pixhawk) - the [Nucleo F429ZI](https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/) and the [Discovery F429ZI](https://developer.mbed.org/platforms/ST-Discovery-F429ZI/).
 
 While I prefer the Nucleo boards most of the pages covering the PX4 flight stack and its [NuttX RTOS](http://nuttx.org/) (real-time operating system) refer to the Discovery board, e.g.:
 
-* Pixhawk.org - [Running PX4 firmware on the STM Discovery development kit](https://pixhawk.org/modules/stm32f4discovery)
-* Bitbucket - [NuttX/boards/stm32f429i-disco](https://bitbucket.org/nuttx/boards/src/master/stm32f429i-disco/)
-* NuttX - [supported platforms](http://www.nuttx.org/Documentation/NuttX.html#stm32f429x)
-* [STM32 development on Mac OS](http://www.mjoldfield.com/atelier/2015/04/stm32-development.html)
+* Pixhawk.org - [Running PX4 firmware on the STM Discovery development kit](https://pixhawk.org/modules/stm32f4discovery).
+* Bitbucket - [NuttX/boards/stm32f429i-disco](https://bitbucket.org/nuttx/boards/src/master/stm32f429i-disco/).
+* NuttX - [supported platforms](http://www.nuttx.org/Documentation/NuttX.html#stm32f429x).
+* [STM32 development on Mac OS](http://www.mjoldfield.com/atelier/2015/04/stm32-development.html).
 
 Note: the NuttX source is hosted on Bitbucket, PX4 host their own versions of the [NuttX repos on Github](https://github.com/PX4-NuttX) - the two are not mirrors and it's unclear how far they've diverged from each other.
 
-For Mac developers the PX4 people provide a number of [homebrew formula](https://github.com/PX4/homebrew-px4) including one to install the appropriate GCC toolchain.
+For developers using Macs the PX4 people provide a number of [homebrew formula](https://github.com/PX4/homebrew-px4) including one to install the appropriate GCC toolchain.
 
 Vibration
 ---------
@@ -101,7 +99,7 @@ I bought a [vibration damping mounting set](https://www.unmannedtechshop.co.uk/v
 Waypoints
 ---------
 
-The Pixhawk can take an SD card which can be used to store waypoints (among other things - see [here](https://pixhawk.ethz.ch/software/imu/sd_card)) and you can communicate directly with the Pixhawk via USB and so establish a flight plan without the ground control software then needing to communicate with the drone while in flight.
+The Pixhawk can take an SD card which can be used to store waypoints (among other things - see [here](https://pixhawk.ethz.ch/software/imu/sd_card)) and before flying you can connect directly to the Pixhawk via USB and so establish a flight plan without the ground control software then needing to communicate with the drone while in flight.
 
 However in-flight interaction between the ground control software and the drone might be interesting and I might have bought the necessary telemetry kit (which also comes as a bundle option with the Unmanned Tech Pixhawk) if it had not been out of stock:
 
@@ -115,13 +113,11 @@ TODO: merge some or all of this with the telemetry kit section on main page.
 Pixhawk 2.1
 -----------
 
-As of March 2017 something called the [Pixhawk 2.1](http://www.proficnc.com/content/13-pixhawk2) is gradually becoming available.
-
-While it is open source hardware it appears to be a product of a particular individual, Philip Rowse, and his company ProfiCNC rather than a wider community.
+As of March 2017 something called the [Pixhawk 2.1](http://www.proficnc.com/content/13-pixhawk2) is gradually becoming available. While it is open source hardware it appears to be a product of a particular individual, Philip Rowse, and his company ProfiCNC rather than a wider community.
 
 It has exactly the same STM32 F4 MCU (running at the same speed etc.) as the classic Pixhawk. However it does have design features that the Pixhawk does not, such as vibration isolation, IMU (inertial measurement unit) redundancy, better connectors and more I/O. I.e. it appears to be a more professional design rather than something fundamentally different to the original Pixhawk.
 
-While Philip Rowse deserves to make money from his efforts he clearly feels that he and ProfiCNC should be the sole manufactures of the unit, i.e. he does not seem to be an open hardware enthusiast encouraging the world to pick up on his design. For a sense of this see his interaction with the wider community on the ArduPilot forums, e.g. this [Pixhawk 2 Getting Started](http://discuss.ardupilot.org/t/pixhawk-2-getting-started/10031) thread.
+While Philip Rowse deserves to make money from his efforts he clearly feels that he and his company ProfiCNC should be the sole manufactures of the unit, i.e. he does not seem to be an open hardware enthusiast encouraging the world to pick up on his design. For a sense of this see his interaction with the wider community on the ArduPilot forums, e.g. this [Pixhawk 2 Getting Started](http://discuss.ardupilot.org/t/pixhawk-2-getting-started/10031) thread.
 
 Having said all that the Pixhawk 2 is [clearly listed](https://pixhawk.org/modules/pixhawk2) as one of the autopilot systems acknowledged on the pixhawk.org site.
 
@@ -132,11 +128,11 @@ The classic Pixhawk is now quite an old design and some of its sensors are no lo
 Pixhawk.org vs ArduPilot.org
 ----------------------------
 
-The pixhawk.org site seems to be the spiritual home of the Pixhawk while the ArduPilot.org site seems to be more actively maintained and has far more detail.
+The [pixhawk.org](https://pixhawk.org/) site seems to be the spiritual home of the Pixhawk while the [ardupilot.org](http://ardupilot.org/ardupilot/) site seems to be more actively maintained and has far more detail.
 
 Pixhawk.org seems to be concerned with higher level issues, like open hardware, while ardupilot.org focuses more on the practical hobbyist oriented issues of getting things working.
 
-It's unclear if the pixhawk.org site's information is often just stale or if it reflects real differences in hardware supported by PX4 and ArduPilot flight stacks (pixhawk.org claims to be somewhat agnostic when it comes to the flight stack but clearly most of the site assumes the PX4 stack), e.g. pixhawk.org recommends the D4R-II FrSKY receiver while ardupilot.org considers it deprecated and covers far newer FrSKY receivers.
+It's unclear if the pixhawk.org site's information is often just stale or if it reflects real differences in hardware supported by the PX4 and ArduPilot flight stacks (pixhawk.org claims to be somewhat agnostic when it comes to the flight stack but clearly most of the site assumes the PX4 stack), e.g. pixhawk.org recommends the D4R-II FrSKY receiver while ardupilot.org considers it deprecated and covers far newer FrSKY receivers.
 
 Bag / case
 ----------
@@ -145,7 +141,7 @@ The main quoted dimension for a quadcopter seems to be its diagonal size which i
 
 The DJI Phantom 3, one of the most popular ready assembled drones, has a diagonal size of 350mm.
 
-The F450 has a diagonal size of 450mm (see [here](http://g03.a.alicdn.com/kf/HTB1srtkGVXXXXcnXFXXq6xXFXXXP/221683912/HTB1srtkGVXXXXcnXFXXq6xXFXXXP.jpg)) and as such is quite a lot larger than most common drones. So it won't fit it most cases, even those cases described as "universal".
+The F450 has a diagonal size of 450mm (see [here](http://g03.a.alicdn.com/kf/HTB1srtkGVXXXXcnXFXXq6xXFXXXP/221683912/HTB1srtkGVXXXXcnXFXXq6xXFXXXP.jpg)) and as such is quite a lot larger than most consumer drones. So it won't fit in most cases, even those cases described as "universal".
 
 I would have liked something like a cheap shoulder bag or messenger bag with padding and according to the pixhawk.org [F450 page](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) Parrot used to produce something like this for their AR.Drone 2.0 which would fit the F450 nicely. It doesn't seem to be available anymore but you can see it pictured on various sites (e.g. on [hobbysportz.com](http://www.hobbysportz.com/index.php?route=product/product&product_id=878)) and you can find knock-offs on eBay (e.g. [here](http://www.ebay.com/itm/New-PARROT-AR-DRONE-CANVAS-TOTE-BAG-CARRY-BAG-Black-FREE-SHIPPING-/232217382039?hash=item36113c0c97)).
 
@@ -158,7 +154,7 @@ Chinese copies
 
 With some of the parts here being open source hardware it's perhaps odd to talk of Chinese "copies".
 
-But there certainly seem to be no end of Chinese versions of all the parts used in this project, many masquerading as versions from more respected brands (or from lesser known brands that have proved themselves capable of producing a quality version of a given component).
+But there certainly seem to be no end of Chinese versions of all the parts used in this project, many masquerading as versions from more respected brands or lesser known brands that had already proved themselves capable of producing a quality version of a given component.
 
 So while you can buy all necessary components from sites like [AliExpress](https://www.aliexpress.com/) or [Banggood](http://www.banggood.com/) it's definitely a case of buyer beware.
 
@@ -167,7 +163,7 @@ Miscellaneous parts
 
 [Threadlocker](https://en.wikipedia.org/wiki/Thread-locking_fluid) (also called thread or screw glue) comes in various strengths but for this situation it's a weak glue that's applied to the thread of a scew before you screw it into place, it's weak enough that you can still unscrew the screw later but strong enough that it stops the screw coming loose due to vibration (apparently it's common in automotive applications).
 
-According to the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) you should use it for the various screws (but not for attaching the propellars).
+According to the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) you should use it for the various screws needed to assemble the frame (but not for attaching the propellars).
 
 [Loctite 243](http://www.na.henkel-adhesives.com/industrial/blue-threadlockers-medium-strength-13231.htm) seems to be suitable (UHU also have something similar, [UHU schraubensicher mittelfest](http://www.uhu-profi.de/produkte/anaerobe-klebstoffe-schraubensicherung/detail/uhu-schraubensicher-mittelfest.html), but don't seem to market it internationally).
 

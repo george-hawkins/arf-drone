@@ -5,30 +5,29 @@ First time quadcopter build
 
 TODO: include photo of final build here.
 
-Having some experience with hobbyist electronics projects I initially thought I'd really be able to make a quadcopter from scratch, 3D printing elements of the frame, sourcing most of the components, like motors, as generic parts from a big distributor like Digi-Key, and only having to buy a few drone-specific components like propellars.
+Having some experience with hobbyist electronics projects I initially thought that I'd really be able to make a quadcopter from scratch, 3D printing elements of the frame, sourcing most of the components, like motors, as generic parts from a big distributor like Digi-Key, and only having to buy a few drone-specific components like propellars.
 
-I was quite disappointed when I found various pages (such as [this one](http://ardupilot.org/copter/docs/build-your-own-multicopter.html) from ArduPilot) making clear that this wasn't an option to consider when making ones first drone.
+I was quite disappointed when I found various pages (such as [this one](http://ardupilot.org/copter/docs/build-your-own-multicopter.html) from ArduPilot) making clear that this wasn't an option to consider when making ones first drone. Apparently I'd have to start with what's referred to as an ARF (almost ready to fly) kit, i.e. an unassembled frame and the parts for the propulsion system (propellars, motors etc.).
 
-Apparently I'd have to start with what's referred to as an ARF (almost ready to fly) kit, i.e. an unassembled frame and the parts for the propulsion system (propellars, motors etc.).
-
-The ARF acronym makes it sound like almost all the interesting work has been taken care of and all that's left is to put things together lego style.
-
-But it turns out, if starting from scratch with no prior experience of drones, that there's quite enough additional complexity without also having to worry about the frame and the propulsion system.
+The ARF acronym makes it sound like all the interesting work has been taken care of and all that's left is to put things together lego style. But it turns out, if starting from scratch with no prior experience of drones, that there's quite enough additional complexity without also having to worry about the frame and the propulsion system.
 
 Important: this build requires a small amount of soldering and it's assumed you've already got a soldering iron, solder etc.
 
-TODO: add summary explaining that this page covers parts and that there are other pages - [`notes.md`](notes.md), [`stores.md`](stores.md), [`purchase-order.md`](purchase-order.md) and [`assembly.md`](assembly.md).
+TODO: add summary explaining that this page covers parts and that there are other pages - [`notes.md`](notes.md), [`stores.md`](stores.md), [`purchase-order.md`](purchase-order.md) and [`assembly.md`](assembly.md). Fill out [`assembly.md`](assembly.md) file properly.
+
 
 Parts
 -----
 
-So what other parts do you need besides a frame and a propulsion system? The list of parts below makes it clear there's a bit more to this whole thing.
+So what other parts do you need besides a frame and a propulsion system? The list of parts below makes clear that there's quite a bit more to this whole thing.
 
-An approximate price in Euros (though I bought most items in the UK or Switzerland) has been given for every item, as you can see the most expensive items are the propulsion system, flight controller and transmitter. The batteries (especially if you buy two to have one in reserve) and charger also add a significant cost. Each part is listed with one or more links to either a product page or a shop page that provides details about the product (in the case of shop pages I chose pages that provided the best description and not necessarily the shop from which I bought the given part).
+An approximate price in Euros has been given for every item (even though I bought most items in the UK or Switzerland). As you can see the most expensive items are the propulsion system, flight controller and transmitter. The batteries (especially if you buy two in order to have one in reserve) and charger also add a significant cost.
+
+Each part is listed with one or more links to either a product page or a shop page that provides details about the part (in the case of shop pages I chose pages that provided the best description and not necessarily the shop from which I bought the given part).
 
 I've put together a separate page - [`stores.md`](stores.md) - which includes links to sites that carry the parts shown here.
 
-Various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on one of the other pages here (the same is generally true for terms that crop elsewhere here).
+Various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on one of the other pages here.
 
 ### Major components
 
@@ -71,9 +70,7 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 
 As already noted some minor soldering is required - it's assumed you already have a soldering iron and solder and know how to use them.
 
-The [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) additionally notes that you'll need threadlocker, a 2mm hex key, [nylon cable ties](https://www.amazon.co.uk/Green-Cable-100Mm-2-5Mm-All/dp/B00904S2DE), scissors and [flush cutters](https://www.sparkfun.com/products/11952).
-
-The 2mm hex key and the threadlocker (which is something I'd never heard of before) are covered in the [miscellaneous parts](notes.md#miscellaneous-parts) note.
+The [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) additionally notes that you'll need threadlocker, a 2mm hex key, [nylon cable ties](https://www.amazon.co.uk/Green-Cable-100Mm-2-5Mm-All/dp/B00904S2DE), scissors and [flush cutters](https://www.sparkfun.com/products/11952). The hex key and the threadlocker (which is something I'd never heard of before) are covered in the [miscellaneous parts](notes.md#miscellaneous-parts) note.
 
 Websites
 --------
@@ -86,16 +83,16 @@ When putting together this page the most useful sites I found were:
 
 The [ArduPilot forums](http://discuss.ardupilot.org/) and [PX4 forums](http://discuss.px4.io/) were also useful.
 
-Note: the terms Pixhawk and PX4 are often used interchangeably - though Pixhawk more often refers to the flight controller hardware while PX4 more often refers to the flight controller software stack.
+Note: the terms Pixhawk and PX4 are often used interchangeably - though Pixhawk generally refers to the flight controller hardware while PX4 generally refers to the flight controller software stack.
 
 ---
 
-The following sections cover the major components of the quadcopter. In writing this page I started including so many side notes that they started clogging up the whole things that I've moved these notes out into [`notes.md`](notes.md). They're worth scanning over quickly and cover:
+The following sections cover the major components of the quadcopter. In writing this page I started including so many side notes that they started clogging up the whole thing, so I've moved these notes out into [`notes.md`](notes.md). They're worth scanning over quickly. They cover:
 
-* [Brief notes](notes.md#brief-notes) on clockwise and two counterclockwise motors, the external LED and USB connector.
+* [Brief notes](notes.md#brief-notes) on clockwise and counterclockwise motors and the external LED and USB connector.
 * The [F450 ARF kit](notes.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
 * The [E300 vs E305 vs E310](notes.md#e300-vs-e305-vs-e310) propulsion systems.
-* The LiPo [batteries](notes.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
+* The [LiPo batteries](notes.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
 * The [IMU and MCU](notes.md#imu-and-mcu) - the core parts of the flight controller and how you can experiment with them.
 * [Vibration](notes.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
 * Predefined [waypoints](notes.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
@@ -104,20 +101,18 @@ The following sections cover the major components of the quadcopter. In writing 
 * [Bags and cases](notes.md#bag--case) and why the size of the F450 makes it hard to find a good bag for it.
 * [Chinese copies](notes.md#chinese-copies) and how buying drone parts is a case of caveat emptor.
 
-TODO: fill out [`assembly.md`](assembly.md) file further.
-
 Now that's out of the way let's get onto the sections covering the major components...
 
 Frame
 -----
 
-The frame is the basic physical platform to which all other components are attached. While most of the other components are updated on a regular basis, frame design seems to stay fairly constant.
+The frame is the basic physical platform to which all other components are attached. While most of the other components are updated on a regular basis, frame design seems to evolve at a slower pace.
 
-The [DJI Flame Wheel](https://www.dji.com/flame-wheel-arf/feature) F450 frame came out in early 2012 and seems to still be one of the most popular non-race quadcopter frames.
+The [DJI Flame Wheel](https://www.dji.com/flame-wheel-arf/feature) F450 frame came out in early 2012 and still seems to be one of the most popular non-race quadcopter frames.
 
-I choose it because it's recommended on many first time build page (such as the ArduPilot [build your own multicopter](http://ardupilot.org/copter/docs/build-your-own-multicopter.html)) and it has more available space in its central section than it's little brother, the F350, without the extra complexity and expense of its six armed big brother the F550.
+I choose it because it's recommended on many first time build page (such as the ArduPilot [build your own multicopter](http://ardupilot.org/copter/docs/build-your-own-multicopter.html)) and it has more available space in its central section than it's little brother - the F350 - without the extra complexity and expense of its six armed big brother - the F550.
 
-It consists of just four arms and a top and bottom central plate. The bottom plate also serves as the PDB (power distribution board), i.e. the board that connects the motors (via ESCs) to the battery (via the power module).
+It consists of four arms and a top and bottom central plate. The bottom plate also serves as the PDB (power distribution board), i.e. the board that connects the motors (via ESCs) to the battery (via the power module).
 
 The ESCs (covered later) are soldered directly to the PDB, as is a cable for connecting the PDB to the power module.
 
@@ -140,7 +135,7 @@ It's internal set of sensors are together called an IMU ([inertial measurement u
 * A 3-axis magnetometer (compass).
 * A barometric pressure (altitude) sensor.
 
-It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors (and with the MCU) then see the [IMU and MCU section](notes.md#imc-and-mcu) on the note page.
+It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors (and with the MCU) then see the [IMU and MCU section](notes.md#imc-and-mcu) on the notes page.
 
 There are many flight controllers but as noted above I wanted an open source hardware implementation. I chose the Pixhawk flight controller which is covered in the next section.
 
@@ -151,9 +146,9 @@ Pixhawk
 
 The [Pixhawk](https://pixhawk.org/modules/pixhawk) is an [open source hardware](http://freedomdefined.org/OSHW) flight controller that originated at [ETH Zurich](https://en.wikipedia.org/wiki/ETH_Zurich) and is the de-facto standard high end open source hardware flight controller.
 
-It is the most commonly used flight controller with the popular [ArduPilot flight stack](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) and the [PX4 flight stack](http://px4.io/docs/px4-basic-concepts/) - at least in the hobbyist community (neither of these flight stacks is tied to the Pixhawk).
+It is the most commonly used flight controller when using the popular [ArduPilot flight stack](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) and the [PX4 flight stack](http://px4.io/docs/px4-basic-concepts/) - at least in the hobbyist community - though neither of these flight stacks is tied to the Pixhawk.
 
-It is the most expensive component in the parts list above, and there are certainly cheaper flight controllers - the most interesting of which seems to be the OpenPilot [CC3D Revolution](https://www.unmannedtechshop.co.uk/openpilot-cc3d-revolution-flight-controller/) which is a product of the [LibrePilot](https://www.librepilot.org/) project (a successor to the now defunct OpenPilot project).
+It is the most expensive component in the parts list above and there are certainly cheaper flight controllers - the most interesting of which seems to be the OpenPilot [CC3D Revolution](https://www.unmannedtechshop.co.uk/openpilot-cc3d-revolution-flight-controller/) which is a product of the [LibrePilot](https://www.librepilot.org/) project (a successor to the now defunct OpenPilot project).
 
 However I chose the Pixhawk as I liked the flight stack projects that used it and liked the fact that it is popular in academic environments.
 
@@ -179,39 +174,37 @@ As already mentioned the Pixhawk supports two flight stacks - PX4 and ArduPilot 
 
 Note: the ArduPilot stack, often abbreviated as APM (for ArduPilotMega), is rather misleadingly named. It comes from its early days when it originally ran on the [Arduino Mega](https://www.arduino.cc/en/Main/arduinoBoardMega). Those days are long gone and it now runs on ARM processors, like the one found in the Pixhawk, and various other platforms. This [code overview](http://ardupilot.org/dev/docs/apmcopter-code-overview.html) shows it can run on Linux and that when it runs on the Pixhawk it actually sits on top of the PX4 firmware.
 
-When it comes to comparing the PX4 and ArduPilot flight stacks there's lots of confusing and often contradictory information out there. For some information see [this thread](http://discuss.ardupilot.org/t/apm-stack-question-apm-vs-px4/11497) and [this thread](http://discuss.ardupilot.org/t/new-guy-here-trying-to-make-sense-of-it-all/9255) on the ArduPilot forums and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-when-to-choose-what/2214) and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-arduplane-for-mapping-photogrammetry-using-fixed-wing/1766) on the the PX4 forums.
+When it comes to comparing the PX4 and ArduPilot flight stacks there's lots of confusing and often contradictory information out there. For some information see [this thread](http://discuss.ardupilot.org/t/apm-stack-question-apm-vs-px4/11497) and [this one](http://discuss.ardupilot.org/t/new-guy-here-trying-to-make-sense-of-it-all/9255) on the ArduPilot forums and [this thread](http://discuss.px4.io/t/px4-vs-ardupilot-when-to-choose-what/2214) and [this one](http://discuss.px4.io/t/px4-vs-ardupilot-arduplane-for-mapping-photogrammetry-using-fixed-wing/1766) on the the PX4 forums.
 
 The [ArduPilot stack](https://github.com/ArduPilot/ardupilot) and the [PX4 one](https://github.com/PX4/Firmware/) can both be found on Github and both are clearly under active development.
 
-PX4 appears to more a product of the academic community while ArduPilot appears to a product of the hobbyist community with some resulting differences in focus, e.g. PX4 seem to focus more on autonomous flight while ArduPilot perhaps more on direct control.
+PX4 appears to be more a product of the academic community while ArduPilot appears to a product of the hobbyist community with some resulting differences in focus, e.g. PX4 seems to focus more on autonomous flight while ArduPilot perhaps more on direct control.
 
 Both though work with ground control software for autonomous operation, e.g. Mission Planner (for ArduPilot) and QGroundControl (originally developed to work with PX4 but now also compatible with ArduPilot). See the [ground station](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html) section of the ArduPilot site for some comparison of ground control applications.
 
 **Important:** the pixhawk.org and ardupilot.org sites cover much more than just flight stacks, most of the content on both is useful irrespective of which flight stack one uses.
 
-ESC (electronic speed control)
-------------------------------
+ESC
+---
 
-The propulsion systems constists of the propellars, motors and ESCs. [ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller. An ESC contains its own microcontroller (generally an Atmel ATmega or a Silabs 8051).
+The propulsion systems constists of the propellars, motors and ESCs (electronic speed control). [ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller. An ESC contains its own microcontroller (generally an Atmel ATmega or a Silabs 8051).
 
 I chose the E305 propulsion system as it's the standard system sold with the F450 frame (and can be bought bundled together with it as a kit). The ESCs are the most expensive element in the E305 propulsion system (one ESC being just a little more expensive than its corresponding motor).
 
-There are open source hardware implementations and many commercial ESCs are flashable with open source firmware (the main open source firmwares being [BLHeli](https://github.com/bitdump/BLHeli) and [SimonK](https://github.com/sim-/tgy)). However there seem to be no really popular open source hardware implementations and configuring the open source firmwares for your particular ESCs (whether commercial or open source) is non-trivial.
+There are open source hardware ESC implementations and many commercial ESCs are flashable with open source firmware (the main open source firmwares being [BLHeli](https://github.com/bitdump/BLHeli) and [SimonK](https://github.com/sim-/tgy)). However there seem to be no really popular open source hardware implementations and configuring the open source firmwares for your particular ESCs (whether commercial or open source) is non-trivial.
+
+So for this piece of hardware it seemed easiest to stick with the commercial ones from DJI and consider them non-upgradable black boxes.
 
 Many closed source hardware manufacturers produce ESCs that come with the BLHeli firmware as standard, e.g. the [Turingy Multistar 20A](https://hobbyking.com/en_us/turnigy-multistar-20a-v2-esc-with-blheli-and-4a-lbec-2-6s.html) or the [DYS XM20A](https://hobbyking.com/en_us/xm20a-mini-esc.html).
 
 DJI make a big deal of the fact that their propulsion systems, including the E305, are "tuned" propulsion systems - that the ESCs rather than being sold for use with arbitrary motors have been specifically tuned to work very well with the motors sold as part of the same system. This seems to have been well received by reviewers.
-
-So for this piece of hardware it seemed easiest to stick with the commercial ones from DJI and consider them non-upgradable black boxes.
 
 Note: for earlier DJI propulsion systems the system and the ESCs had the same name, e.g. E300. For the E305 system that's no longer the case and the ESCs are named 420 LITE.
 
 Transmitter and receiver
 ------------------------
 
-The transmitter is the handheld control unit while the receiver is the corresponding component in the drone that receives instructions from the ground and communicates them to the flight controller.
-
-The names transmitter and receiver reflect their primary/historical function - these days communication between the two is now two way.
+The transmitter is the handheld control unit while the receiver is the corresponding component in the drone that receives instructions from the ground and communicates them to the flight controller. The names transmitter and receiver reflect their primary/historical function - these days communication between the two is now two way.
 
 The transmitters and receivers from the manufacturers FrSKY and Futaba seem to be the most popular choices for pairing with the Pixhawk.
 
@@ -219,11 +212,11 @@ I went with FrSKY as there as the information relating to hooking FrSKY componen
 
 The Taranis X9D+ is a mid-spec transmitter that's a very popular choice for setups like the one here. However I'm not primarily interested in direct remote control so I chose the Q X7 which is a cut down cheaper version of the X9D+ but is very similar in many respects and runs the same [OpenTX](http://www.open-tx.org/downloads) firmware. See the DroneTrest blog for a [comparison of the two transmitters](http://blog.dronetrest.com/taranis-x9d-or-taranis-q-x7-which-is-better-to-buy/).
 
-Depending on where you look the recommended corresponding is either the FrSKY D4R-II or the X8R.
+Depending on where you look the recommended corresponding receiver is either the FrSKY D4R-II or the X8R.
 
-FrSKY D4R-II is the recommended receiver on the pixhawk.org [FrSKY page](https://pixhawk.org/peripherals/radio-control/frsky) and as outlined on their [FrSKY telemetry page](https://pixhawk.org/peripherals/telemetry/frsky) you can use an [FrSKY FUL-1 converter](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/) to connect the Pixhawk to the receiver so it can send telemetry data to the transmitter.
+The FrSKY D4R-II is the recommended receiver on the pixhawk.org [FrSKY page](https://pixhawk.org/peripherals/radio-control/frsky) and as outlined on their [FrSKY telemetry page](https://pixhawk.org/peripherals/telemetry/frsky) you can use an [FrSKY FUL-1 converter](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/) to connect the Pixhawk to the receiver so it can send telemetry data to the transmitter.
 
-However the ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) describes the D4R-II as deprecated and recommends the [FrSKY X8R](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/) again with the FUL-1 but with an additional [smart port converter](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/) (the same converter as bundled with the FrSKY USB upgrade cable above).
+However the ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) describes the D4R-II as deprecated and recommends the [FrSKY X8R](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/), again with the FUL-1 but with an additional [smart port converter](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/) (the same converter as bundled with the FrSKY USB upgrade cable above).
 
 In the parts list you'll see a number of additional components related to the receiver:
 
@@ -231,15 +224,13 @@ In the parts list you'll see a number of additional components related to the re
 * FUC-3 - upgrade cable.
 * SPC (smart port converter).
 
-It's always good to be able update the firmware of any given component and the FUC-3 is needed for doing this with FrSKY products.
+It's always good to be able update the firmware of any given component and the FUC-3 is needed for doing this with FrSKY products. Upgrading the receiver isn't just a good idea - it may be required, see the [warning](https://pixhawk.org/peripherals/radio-control/frsky#receivers) in the pixhawk.org section covering FrSKY receivers.
 
-Upgrading the receiver isn't just a good idea - it may be required, see the [warning](https://pixhawk.org/peripherals/radio-control/frsky#receivers) in the pixhawk.org section covering FrSKY receivers.
-
-The SPC is needed in two quite different situations - it's needed to connect the upgrade cable to the older style connector of the D4R II and when using the X8R receiver it's needed for adapting the FUL-1 to connect the receiver to the flight controller.
+The SPC is needed in two quite different situations - it's needed to connect the upgrade cable to the older style connector of the D4R-II and when using the X8R receiver it's needed for adapting the FUL-1 to connect the receiver to the flight controller.
 
 Connecting the telemetry output of the flight controller to the receiver is optional - the receiver simply forwards the telemetry information to the receiver which can then display it to the user on its small LCD screen.
 
-Note: the FUL-1 is not a special purpose component, it's a completely generic component and many other manufacturers produce something similar - it just performs the task of converting TTL to RS232 (see [here](https://www.sparkfun.com/tutorials/215) for more information), something that's needed in many situations.
+Note: the FUL-1 is not a special purpose component, it's a completely generic and many other manufacturers produce something similar - it just performs the task of converting TTL to RS232 (see [here](https://www.sparkfun.com/tutorials/215) for more information), something that's needed in many situations.
 
 Telemetry kit
 -------------

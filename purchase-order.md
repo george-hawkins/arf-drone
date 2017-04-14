@@ -16,7 +16,6 @@ Purchase order
 * GBP 2.75 - Hook and loop velcro straps - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
 * GBP 1.75 - Mounting foam - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
 * GBP 4.50 - LiPo safety bag - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
-
 * Fr. 26 - F450 frame - ([AEROdron CH](https://www.estore.ch/flying-platforms/flame-wheel/1304/flame-wheel-f450)).
 * Fr. 160 - E305 propulsion system - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)).
 * Fr. 8 - Spare propellars - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1349/e305-9450-self-tightening-rotor-composite-hub-white-with-silver-stripes?number=FE0014)).
