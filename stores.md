@@ -14,24 +14,24 @@ For the specialist country specific sites [Unmanned Tech UK](https://www.unmanne
 E305 propulsion system
 ----------------------
 
-* GBP 120 [Quadcopters UK](http://www.quadcopters.co.uk/dji-e305-tuned-propulsion-4-axis-full-set-2140-p.asp)
-* GBP 130 [Build Your Own Drone UK](https://www.buildyourowndrone.co.uk/dji-e305-tuned-propulsion-system-quadcopter)
-* GBP 130 [Marionville Models UK](https://www.marionvillemodels.com/products/dji-e305-tuned-propulsion-system-4-motor-esc-3-pair-props-accessories?variant=7427382147)
-* &euro;160 [MHM Modelbau DE](https://www.mhm-modellbau.de/part-CP.EP.003000.php)
-* &euro;160 [Globe Flight DE](http://www.globe-flight.de/DJI-E305-Tuningset-4S-fuer-Quadrokopter?ref=dof)
-* &euro;160 [Freakware DE](https://www.freakware.de/p/dji-e305-antriebsset-copter-4axes-dji-innovations-djii011178-a138988.htm?slpos=a1-2673063)
-* Fr. 160 [AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)
-* Fr. 190 [Visuals CH](http://www.visuals-switzerland.net/en/drone-camera-accesorry/109921-dji-dji-e305-4xmotor-4xmotor-esc-3xpair-props-accessories.html)
+* GBP 120 - [Quadcopters UK](http://www.quadcopters.co.uk/dji-e305-tuned-propulsion-4-axis-full-set-2140-p.asp)
+* GBP 130 - [Build Your Own Drone UK](https://www.buildyourowndrone.co.uk/dji-e305-tuned-propulsion-system-quadcopter)
+* GBP 130 - [Marionville Models UK](https://www.marionvillemodels.com/products/dji-e305-tuned-propulsion-system-4-motor-esc-3-pair-props-accessories?variant=7427382147)
+* &euro;160 - [MHM Modelbau DE](https://www.mhm-modellbau.de/part-CP.EP.003000.php)
+* &euro;160 - [Globe Flight DE](http://www.globe-flight.de/DJI-E305-Tuningset-4S-fuer-Quadrokopter?ref=dof)
+* &euro;160 - [Freakware DE](https://www.freakware.de/p/dji-e305-antriebsset-copter-4axes-dji-innovations-djii011178-a138988.htm?slpos=a1-2673063)
+* Fr. 160 - [AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)
+* Fr. 190 - [Visuals CH](http://www.visuals-switzerland.net/en/drone-camera-accesorry/109921-dji-dji-e305-4xmotor-4xmotor-esc-3xpair-props-accessories.html)
 
 Note: DJI also sell this product [directly](http://store.dji.com/product/e305-4), oddly though they don't sell the basic frame or many other parts directly.
 
 Pixhawk
 -------
 
-* GBP 130 [Unmanned Tech UK](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/)
-* GBP 140 [3DXR UK](https://www.3dxr.co.uk/product/pixhawk-1-v2-4-8-m8n-gps-power-brick/)
-* &euro;170 [XXX YY](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html)
-* &euro;170 [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html)
+* GBP 130 - [Unmanned Tech UK](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/)
+* GBP 140 - [3DXR UK](https://www.3dxr.co.uk/product/pixhawk-1-v2-4-8-m8n-gps-power-brick/)
+* &euro;170 - [Synosystems UAV DE](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html)
+* &euro;170 - [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html)
 
 Note: each of the above shops is selling a Pixhawk from a different manufacturer, so direct price comparisons aren't necessarily meaningful, the build from one manufacturer may be of higher quality than from another.
 
@@ -46,17 +46,15 @@ For each of the shops I've listed the version of the propulsion system that's me
 * GBP 134 (30A OPTO) - [Swift RC UK](http://www.swiftrc.co.uk/dji-f450-quadcopter-artf-kit-6318-p.asp)
 * GBP 141 (E305) - [Build Your Own Drone UK](https://www.buildyourowndrone.co.uk/dji-f450-flame-wheel-e305-arf-kit-v2)
 * GBP 142 (E305) - [Marionville Models UK](https://www.marionvillemodels.com/products/dji-f450-flamewheel-kit?variant=910590395)
-
-* Fr. 170 (E300) - [AEROdron CH](https://www.estore.ch/flying-platforms/flame-wheel/1302/flame-wheel-f450-arf-kit-with-motors-esc-propeller)
-* Fr. 170 (E300) - [Hobby Shop Ritter CH](https://www.hobbyshop-ritter.ch/flamewheel-f450-p-11007.html)
-* Fr. 170 (E300) - [Multicopter Shop CH](http://multicopter-shop.ch/index.php/kategorien/product/view/1/33)
-* Fr. 190 (E300) - [Modellsport Schweighofer CH](https://www.der-schweighofer.ch/DJI-F450-Quadrocopter-ARTF-a103593)
-* Fr. 193 (E300) - [Digitec CH](https://www.digitec.ch/de/s1/product/dji-quadcopter-flame-wheel-f450-arf-rc-drohne-5806029)
-* Fr. 200 (E300) - [Brack CH](https://www.brack.ch/dji-flame-wheel-f450-arf-255131)
-
 * &euro;170 (E305) - [Globe Flight DE](http://www.globe-flight.de/DJI-NAZA-ARF-Kit-quadrocopter-Hobby-F450-E305)
 * &euro;170 (E305) - [MHM Modelbau DE](https://www.mhm-modellbau.de/part-CP.MX.540005.php)
 * &euro;160 (E305) - [Freakware DE](https://www.freakware.de/p/dji-flame-wheel-f450-quadrocopter-arf-dji-innovations-djii000370-a79909.htm)
 * &euro;170 (E305) - [FPV Multicopter DE](https://www.fpv-multicopter.com/DJI-Flame-Wheel-F450-Set-inkl-2312-Motoren)
 * &euro;170 (E300) - [RC HeliShopBerlin DE](http://www.helishop-berlin.de/Multikopter/DJI/DJI-Multikopter-Flame-Wheel-F450-ARF.htm?SessionId=&a=article&ProdNr=DJII000370&p=1398)
 * &euro;170 (30A OPTO) - [FPV24 DE](https://www.fpv24.com/de/dji/dji-flame-wheel-f450-arf-kit)
+* Fr. 170 (E300) - [AEROdron CH](https://www.estore.ch/flying-platforms/flame-wheel/1302/flame-wheel-f450-arf-kit-with-motors-esc-propeller)
+* Fr. 170 (E300) - [Hobby Shop Ritter CH](https://www.hobbyshop-ritter.ch/flamewheel-f450-p-11007.html)
+* Fr. 170 (E300) - [Multicopter Shop CH](http://multicopter-shop.ch/index.php/kategorien/product/view/1/33)
+* Fr. 190 (E300) - [Modellsport Schweighofer CH](https://www.der-schweighofer.ch/DJI-F450-Quadrocopter-ARTF-a103593)
+* Fr. 193 (E300) - [Digitec CH](https://www.digitec.ch/de/s1/product/dji-quadcopter-flame-wheel-f450-arf-rc-drohne-5806029)
+* Fr. 200 (E300) - [Brack CH](https://www.brack.ch/dji-flame-wheel-f450-arf-255131)

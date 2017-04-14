@@ -24,6 +24,8 @@ So what other parts do you need besides a frame and a propulsion system? The lis
 
 An approximate price in Euros (though I bought most items in the UK or Switzerland) has been given for every item, as you can see the most expensive items are the propulsion system, flight controller and transmitter. The batteries (especially if you buy two to have one in reserve) and charger also add a significant cost. Each part is listed with one or more links to either a product page or a shop page that provides details about the product (in the case of shop pages I chose pages that provided the best description and not necessarily the shop from which I bought the given part).
 
+I've put together a separate page - [`stores.md`](stores.md) - which includes links to sites that carry the parts shown here.
+
 Various acronyms used in the parts list, like ESC and PDB, are explained later in this pages or on one of the other pages here (the same is generally true for terms that crop elsewhere here).
 
 ### Major components
