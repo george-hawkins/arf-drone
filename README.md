@@ -94,6 +94,7 @@ The following sections cover the major components of the quadcopter. In writing 
 * The [F450 ARF kit](NOTES.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
 * The [E300 vs E305 vs E310](NOTES.md#e300-vs-e305-vs-e310) propulsion systems.
 * The LiPo [batteries](NOTES.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
+* The [IMU and MCU](NOTES.md#imu-and-mcu) - the core parts of the flight controller and how you can experiment with them.
 * [Vibration](NOTES.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
 * Predefined [waypoints](NOTES.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
 * The [Pixhawk 2.1](NOTES.md#pixhawk-21) and some background leading to my choice of the classic Pixhawk flight controller.
@@ -101,7 +102,7 @@ The following sections cover the major components of the quadcopter. In writing 
 * [Bags and cases](NOTES.md#bag--case) and why the size of the F450 makes it hard to find a good bag for it.
 * [Chinese copies](NOTES.md#chinese-copies) and how buying drone parts is a case of caveat emptor.
 
-TODO: fill out [`stores.md`](stores.md) and [`assembly.md`](assembly.md) files further.
+TODO: fill out [`assembly.md`](assembly.md) file further.
 
 Now that's out of the way let's get onto the sections covering the major components...
 

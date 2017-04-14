@@ -9,7 +9,7 @@ I live in Switzerland and generally look for stores in the UK, Germany and Switz
 
 I always like to put numbers to things so I looked up the [Alexa rank](http://www.alexa.com/siteinfo) for every site. Traffic figures are obviously a crude metric as to anything.
 
-For the specialist country specific sites [Unmanned Tech UK](https://www.unmannedtechshop.co.uk/) had by far the highest rank. In the UK [Quadcopters UK](http://www.quadcopters.co.uk/) also ranked highly. In Germany [Globe Flight DE](http://www.globe-flight.de/) and [MHM-Modelbau DE](https://www.mhm-modellbau.de/) ranked highest. In Switzerland no particular specialist store stood out based on its Alexa ranking but more general stores like [Brack CH](https://www.brack.ch/) and [Digitec CH](https://www.digitec.ch/) carry a lot of drone parts. Of the international stores [RobotShop INT](http://www.robotshop.com/eu/en/) was the highest ranked specialist store.
+For the specialist country specific sites [Unmanned Tech UK](https://www.unmannedtechshop.co.uk/) had by far the highest rank. In the UK [Quadcopters UK](http://www.quadcopters.co.uk/) also ranked highly. In Germany [Globe Flight DE](http://www.globe-flight.de/) and [MHM-Modelbau DE](https://www.mhm-modellbau.de/) ranked highest. In Switzerland no particular specialist store stood out based on its Alexa ranking but more general stores like [Brack CH](https://www.brack.ch/) and [Digitec CH](https://www.digitec.ch/) carry a lot of drone parts. The international store [RobotShop INT](http://www.robotshop.com/eu/en/) ranked higher than any of the country specific specialist store.
 
 E305 propulsion system
 ----------------------
