@@ -187,7 +187,7 @@ Both though work with ground control software for autonomous operation, e.g. Mis
 ESC
 ---
 
-The propulsion systems constists of the propellars, motors and ESCs (electronic speed control). [ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller. An ESC contains its own microcontroller (generally an Atmel ATmega or a Silabs 8051).
+The propulsion systems constists of the propellars, motors and ESCs (electronic speed control). [ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller. An ESC contains its own microcontroller (generally an Atmel ATmega or a Silabs 8051). For more information on ESCs see the DroneTrest [guide](http://www.dronetrest.com/t/what-to-consider-when-buying-a-esc-for-your-multirotor/1305).
 
 I chose the E305 propulsion system as it's the standard system sold with the F450 frame (and can be bought bundled together with it as a kit). The ESCs are the most expensive element in the E305 propulsion system (one ESC being just a little more expensive than its corresponding motor).
 
@@ -230,7 +230,7 @@ The SPC is needed in two quite different situations - it's needed to connect the
 
 Connecting the telemetry output of the flight controller to the receiver is optional - the receiver simply forwards the telemetry information to the receiver which can then display it to the user on its small LCD screen.
 
-Note: the FUL-1 is not a special purpose component, it's a completely generic and many other manufacturers produce something similar - it just performs the task of converting TTL to RS232 (see [here](https://www.sparkfun.com/tutorials/215) for more information), something that's needed in many situations.
+Note: the FUL-1 is not a special purpose component, it's completely generic and many other manufacturers produce something similar - it just performs the task of converting TTL to RS232 (see [here](https://www.sparkfun.com/tutorials/215) for more information), something that's needed in many situations.
 
 Telemetry kit
 -------------
