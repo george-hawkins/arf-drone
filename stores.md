@@ -9,7 +9,11 @@ I live in Switzerland and generally look for stores in the UK, Germany and Switz
 
 I always like to put numbers to things so I looked up the [Alexa rank](http://www.alexa.com/siteinfo) for every site - though traffic figures are obviously a crude metric as to anything.
 
-For the specialist country specific sites [Unmanned Tech UK](https://www.unmannedtechshop.co.uk/) had by far the highest rank. In the UK [Quadcopters UK](http://www.quadcopters.co.uk/) also ranked highly. In Germany [Globe Flight DE](http://www.globe-flight.de/) and [MHM-Modelbau DE](https://www.mhm-modellbau.de/) ranked highest. In Switzerland no particular specialist store stood out based on its Alexa ranking but more general major online retailers like [Brack CH](https://www.brack.ch/) and [Digitec CH](https://www.digitec.ch/) carry a lot of drone parts. The international store [RobotShop INT](http://www.robotshop.com/eu/en/) ranked higher than any of the country specific specialist store.
+For the specialist country specific sites [Unmanned Tech UK](https://www.unmannedtechshop.co.uk/) had by far the highest rank. In the UK [Quadcopters UK](http://www.quadcopters.co.uk/) also ranked highly. In Germany [Globe Flight DE](http://www.globe-flight.de/) and [MHM-Modelbau DE](https://www.mhm-modellbau.de/) ranked highest. In Switzerland no particular specialist store stood out based on its Alexa ranking but more general major online retailers like [Brack CH](https://www.brack.ch/) and [Digitec CH](https://www.digitec.ch/) carry a lot of drone parts. The international stores [HobbyKing INT](https://hobbyking.com) and [RobotShop INT](http://www.robotshop.com/eu/en/) ranked higher than any of the country specific specialist store.
+
+When researching any component of this quadcopter build the name HobbyKing invariably came up - it is certainly one of the most referenced / well known sites when it comes to this area.
+
+For the full Alexa figures see [`alexa-rank.txt`](alexa-rank.txt) - some of the stores listed here have very low/poor ranks, interpret that as you will.
 
 E305 propulsion system
 ----------------------
@@ -32,8 +36,12 @@ Pixhawk
 * GBP 140 - [3DXR UK](https://www.3dxr.co.uk/product/pixhawk-1-v2-4-8-m8n-gps-power-brick/)
 * &euro;170 - [Synosystems UAV DE](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html)
 * &euro;170 - [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html)
+* &euro;120 - [HobbyKing INT](https://hobbyking.com/en_us/hkpilot32-autonomous-vehicle-32bit-control-set-w-power-module.html)
 
-Note: each of the above shops is selling a Pixhawk from a different manufacturer, so direct price comparisons aren't necessarily meaningful, the build from one manufacturer may be of higher quality than from another.
+Notes:
+
+* Each of the above shops is selling a Pixhawk from a different manufacturer, so direct price comparisons aren't necessarily meaningful, the build from one manufacturer may be of higher quality than from another.
+* Apparently the HobbyKing Pixhawk uses different connectors to those used by other manufacturers - and its power modules definitely uses an XT60 rather than the T-plug that's assumed for batteries etc. here.
 
 F450 ARF kit
 ------------
