@@ -165,11 +165,7 @@ The Unmanned, HKPilot32 and 3DXR Pixhawks are available directly from their prod
 
 I went with the Pixhawk version from Unmanned Tech UK as they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on other sites. I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/). TODO: and telemetry kit?
 
-<div id="x"/>
-<span id="connector-note"></span>
-<a name="y"></a>
-
-Note: apparently the HobbyKing Pixhawk uses different connectors to those used by other manufacturers - and its power modules definitely uses an XT60 rather than the T-plug that's assumed for batteries etc. here.
+<a id="connector-note"></a>Note: apparently the HobbyKing Pixhawk uses different connectors to those used by other manufacturers - and its power modules definitely uses an XT60 rather than the T-plug that's assumed for batteries etc. here.
 
 Flight stack
 ------------
