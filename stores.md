@@ -36,7 +36,7 @@ Pixhawk
 * GBP 140 - [3DXR UK](https://www.3dxr.co.uk/product/pixhawk-1-v2-4-8-m8n-gps-power-brick/)
 * &euro;170 - [Synosystems UAV DE](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html)
 * &euro;170 - [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot-se100-gps.html)
-* &euro;120 - [HobbyKing INT](https://hobbyking.com/en_us/hkpilot32-autonomous-vehicle-32bit-control-set-w-power-module.html) (see note on [different connectors](README.md#connector-note)).
+* &euro;120 - [HobbyKing INT](https://hobbyking.com/en_us/hkpilot32-autonomous-vehicle-32bit-control-set-w-power-module.html) (see note on [different connectors](README.md#user-content-connector-note)).
 
 Note: each of the above shops is selling a Pixhawk from a different manufacturer, so direct price comparisons aren't necessarily meaningful, the build from one manufacturer may be of higher quality than from another.
 
