@@ -159,10 +159,13 @@ So at the moment you have no choice but to go with a version produced by some ot
 * [3DXR Pixhawk](https://www.3dxr.co.uk/product/pixhawk-1-v2-4-8-m8n-gps-power-brick/)
 * [Holybro Pix32](http://www.holybro.com/product/11)
 * [RadioLink Pixhawk](http://www.radiolink.com.cn/doce/product-detail-116.html)
+* [HKPilot32](https://hobbyking.com/en_us/hkpilot32-autonomous-vehicle-32bit-control-set-w-power-module.html)
 
-The Unmanned and 3DXR Pixhawks are available directly from their producers, while the Holybro can be picked up e.g. from [Synosystems DE](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html) and the RadioLink from e.g. from the [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot.html). There are no end of versions from anonymous manufacturers on sites like [AliExpress](https://www.aliexpress.com/) and [Banggood](http://www.banggood.com/).
+The Unmanned, HKPilot32 and 3DXR Pixhawks are available directly from their producers, while the Holybro can be picked up e.g. from [Synosystems DE](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html) and the RadioLink from e.g. from the [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot.html). There are no end of versions from anonymous manufacturers on sites like [AliExpress](https://www.aliexpress.com/) and [Banggood](http://www.banggood.com/).
 
 I went with the Pixhawk version from Unmanned Tech UK as they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on other sites. I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/). TODO: and telemetry kit?
+
+<span id="connector-note">Note:</span> apparently the HobbyKing Pixhawk uses different connectors to those used by other manufacturers - and its power modules definitely uses an XT60 rather than the T-plug that's assumed for batteries etc. here.
 
 Flight stack
 ------------
