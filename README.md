@@ -136,9 +136,11 @@ It's internal set of sensors are together called an IMU ([inertial measurement u
 
 It's fairly obvious how important such sensors must be for a drone - if you'd like to experiment with such sensors (and with the MCU) then see the [IMU and MCU section](notes.md#imc-and-mcu) on the notes page.
 
-There are many flight controllers but as noted above I wanted an open source hardware implementation. I chose the Pixhawk flight controller which is covered in the next section.
+Note: if the IMU has a compass you might wonder why the GPS module also has one. The GPS module is normally raised away from the main body of the drone, on a mast, in order to isolate it from electrical noise - this noise is also an issue for the IMU's compass so, if present, the compass of the GPS module is used in preference.
 
-Note: the flight controller is often also called the autopilot.
+The flight controller is often also called the autopilot but this shouldn't confuse you into thinking it's just needed for autonomous flight - it's handling tasks like controlling the speed of the individual motors, via the ESCs, irrespective of whether a preprogrammed path is being followed or someone is directing the drone from the ground.
+
+There are many flight controllers but as noted above I wanted an open source hardware implementation. I chose the Pixhawk flight controller which is covered in the next section.
 
 Pixhawk
 -------
@@ -165,7 +167,7 @@ The Unmanned, HKPilot32 and 3DXR Pixhawks are available directly from their prod
 
 I went with the Pixhawk version from Unmanned Tech UK as they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on other sites. I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/). TODO: and telemetry kit?
 
-<a id="connector-note"></a>Note: apparently the HobbyKing Pixhawk uses different connectors to those used by other manufacturers - and its power modules definitely uses an XT60 rather than the T-plug that's assumed for batteries etc. here.
+<a id="connector-note"></a>Note: apparently the HobbyKing Pixhawk isn't connector compatible with other makes (see [where to buy section](https://pixhawk.org/modules/pixhawk#where_to_buy) on pixhawk.org, though I haven't been able to confirm this from any other source).
 
 Flight stack
 ------------
