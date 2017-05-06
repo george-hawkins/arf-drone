@@ -48,7 +48,7 @@ Batteries
 
 Many pages, that describe building an F450 based system, mention using a 3s battery however the DJI [E305 product page](https://store.dji.com/product/e305-4) recommends a 4S battery (i.e. 4 cells rather than 3 - see [everything you need to know about LiPo batteries](http://www.rcuniverse.com/forum/rc-car-general-discussions-179/11586761-everything-you-need-know-about-lipo-batteries.html)).
 
-**Update:** the motors that are part of the E305 family come in two variants - 800KV and 960KV (for the meaning of KV in this context see [KV on Wikipedia](https://en.wikipedia.org/wiki/Motor_constants)). These motors are identically priced, which should give you a clear indication that a higher isn't better (or worse). In fact the 800KV variant can handle a higher take off weight and it's recommended that one use 4S batteries with them while 3S batteries are recommended for the 960KV variant (see the [features section](http://store.dji.com/product/2312e-motor-800kv-cw) for either of the motor variants). The E305 bundles that include propellars, motors and ESCs always include the 800KV variant. Why would one want a higher KV? You'll have to Google for this - basically there are applications where higher RPMs, at the cost of lower torque, are a better fit.
+**Update:** the motors that are part of the E305 family come in two variants - 800KV and 960KV (for the meaning of KV in this context see [KV on Wikipedia](https://en.wikipedia.org/wiki/Motor_constants)). These motors are identically priced, which should give you an indication that a higher KV values isn't better (or worse). In fact the 800KV variant can handle a higher take off weight and it's recommended that one use 4S batteries with them while 3S batteries are recommended for the 960KV variant (see the [features section](http://store.dji.com/product/2312e-motor-800kv-cw) for either of the motor variants). The E305 bundles that include propellars, motors and ESCs always include the 800KV variant. Why would one want a higher KV? You'll have to Google for this - basically there are applications where higher RPMs, at the cost of lower torque, are a better fit.
 
 As there are now many restrictions on shipping LiPo batteries it's probably best to order them locally even if you order other parts internationally.
 
@@ -68,7 +68,9 @@ Power connectors
 
 The power module has two XT60 connectors, a male one that's meant to connect to the battery and a female one that connects to the PDB.
 
-The F450 frame comes with an unterminated cable that's meant to be used for connecting the PDB to the power module, but rather than solder an XT60 connector onto this cable I simply bought a bough a cable that was already terminated with a male XT60 connector.
+TODO: add pointer to nice reference page on common connector types like XT60 and T-plug.
+
+The F450 frame comes with an unterminated cable that's meant to be used for connecting the PDB to the power module, but rather than solder an XT60 connector onto this cable I simply bought a cable that was already terminated with a male XT60 connector.
 
 The batteries I bought come with a T-plug (Deans) connector so in order to connect them to the power module I bought a male T-plug to female XT60 adaptor (like [this one](https://www.unmannedtechshop.co.uk/male-t-plug-to-female-xt60-adaptor/)).
 
@@ -82,11 +84,11 @@ Charger
 The cells in a LiPo battery need to be charged in a [balanced manner](http://www.tjinguytech.com/charging-how-tos/balance-connectors) so the batteries actually have two connectors:
 
 * The already mentioned T-plug connector used both for charging the battery and for delivering power to the drone.
-* A balance port connector that also connects to the charger and is necessary for monitoring the charging process. During flight this connector can be left unconnected or can be connected to a battery alarm that uses it monitor if the voltage falls below a predefined danger level.
+* A balance port connector that also connects to the charger and is necessary for monitoring the charging process. During flight this connector can be left unconnected or can be connected to a battery alarm that uses it to monitor if the voltage falls below a predefined danger level.
 
 So during charging the battery is connected via both its connectors to the charger. The balance port connector of my batteries can plug directly into the charger without problem, however the charger also has two banana connector ports and the accompanying cable that plugs into these ports comes with an XT60 connector at the other end. So again the same problem as with the power module.
 
-Rather than use an adaptor, as with the power module, I simply bought a replacement banana plugs cable that was terminated with a T-plug at the other end (like this [one](http://shop.epproduct.com/pi/en/EP-Ladekabel-Deans-Stecker.html).
+Rather than use an adaptor, as with the power module, I simply bought a replacement banana plugs cable that was terminated with a T-plug at the other end (like [this one](http://shop.epproduct.com/pi/en/EP-Ladekabel-Deans-Stecker.html)).
 
 IMU and MCU
 -----------
