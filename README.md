@@ -56,6 +56,7 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 | &euro;5 | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](http://www.helipal.com/dji-landing-gear-for-f450-f550.html)).
 | &euro;4.50 | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)).
 | &euro;40 | <img width="128" src="images/s60-lipo-charger.jpg"><br>S60 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
+| &euro;7.50 | <img width="128" src="images/t-plug-charger-cable.jpg"><br>T-plug charger cable - connects battery to charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
 
 ### Additional physical components
 
@@ -91,7 +92,7 @@ The following sections cover the major components of the quadcopter. In writing 
 * [Brief notes](notes.md#brief-notes) on clockwise and counterclockwise motors and the external LED and USB connector.
 * The [F450 ARF kit](notes.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
 * The [E300 vs E305 vs E310](notes.md#e300-vs-e305-vs-e310) propulsion systems.
-* The [LiPo batteries](notes.md#batteries), the charger, the battery alarm and the battery safety bag.
+* The [LiPo batteries](notes.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
 * The [IMU and MCU](notes.md#imu-and-mcu) - the core parts of the flight controller and how you can experiment with them.
 * [Vibration](notes.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
 * Predefined [waypoints](notes.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
@@ -165,7 +166,7 @@ So at the moment you have no choice but to go with a version produced by some ot
 
 The Unmanned, HKPilot32 and 3DXR Pixhawks are available directly from their producers, while the Holybro can be picked up e.g. from [Synosystems DE](https://synosystems.de/de/kategorien/315-pix32-px4-246-pixhawk-flight-controller.html) and the RadioLink from e.g. from the [RobotShop INT](http://www.robotshop.com/eu/en/radiolink-pixhawk-advanced-autopilot.html). There are no end of versions from anonymous manufacturers on sites like [AliExpress](https://www.aliexpress.com/) and [Banggood](http://www.banggood.com/).
 
-I went with the Pixhawk version from Unmanned Tech UK as they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on other sites. I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/). TODO: and telemetry kit?
+I went with the Pixhawk version from Unmanned Tech UK as they seem more engaged in the whole scene than many other suppliers, they are linked to as a supplier on the pixhawk.org site and are mentioned favorably on other sites. I bought it bundled with a [Ublox Neo-M8N GPS module](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/) and an [APM power module](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/).
 
 <a id="connector-note"></a>Note: apparently the HobbyKing Pixhawk isn't connector compatible with other makes (see [where to buy section](https://pixhawk.org/modules/pixhawk#where_to_buy) on pixhawk.org, though I haven't been able to confirm this from any other source).
 

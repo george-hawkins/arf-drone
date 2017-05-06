@@ -22,6 +22,7 @@ Purchase order
 * Fr. 5 - F450/F550 landing gear - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1311/f450/f550-landing-gear)).
 * Fr. 115 - Taranis Q X7 transmitter ([DroneFactory CH](http://www.dronefactory.ch/produkt/frsky-taranis-q-x7-weiss/)).
 * Fr. 50 - S60 LiPo charger - ([Brack CH](https://www.brack.ch/skyrc-s60-366689)).
+* Fr. 8 - T-plug charger cable - ([Brack CH](https://www.brack.ch/ep-ladekabel-deans-247074)).
 * 2 x Fr. 40 - LiPo 3300mAh 4S1P 14.8V 25C battery - ([Brack CH](https://www.brack.ch/gens-ace-lipo-akku-3300mah-234057)).
 
 Minor parts:
@@ -33,8 +34,7 @@ Items to consider:
 
 * [100mW telemetry kit](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/) as additional part of Pixhawk bundle.
 * [6-pos connector](https://www.unmannedtechshop.co.uk/df13-6-position-connector-15cm-pack-of-5/) to connect the telemetry kit to the Pixhawk.
-
-TODO: knock out this section once you've worked with the telemetry kit.
+* LiPo charger from Swiss supplier.
 
 Alternative Swiss suppliers of Gens ace 3300 mAh 4S 14.8V 25C LiPo batteries:
 
