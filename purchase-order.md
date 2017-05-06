@@ -34,7 +34,8 @@ Items to consider:
 
 * [100mW telemetry kit](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/) as additional part of Pixhawk bundle.
 * [6-pos connector](https://www.unmannedtechshop.co.uk/df13-6-position-connector-15cm-pack-of-5/) to connect the telemetry kit to the Pixhawk.
-* LiPo charger from Swiss supplier.
+
+TODO: knock out this section once you've worked with the telemetry kit.
 
 Alternative Swiss suppliers of Gens ace 3300 mAh 4S 14.8V 25C LiPo batteries:
 
