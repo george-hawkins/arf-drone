@@ -62,7 +62,8 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 
 | Price | Description |
 |-------|-------------|
-| &euro;2 | <img width="128" src="images/t-plug-male-power-connector.jpg"><br>T-plug male power connector - connects the PDB to the power module ([link](https://www.unmannedtechshop.co.uk/male-deans-t-plug-wire-10cm/)).
+| &euro;1 | <img width="128" src="images/xt60-male-power-connector.jpg"><br>XT60 male power connector - connects the PDB to the power module ([link](https://www.unmannedtechshop.co.uk/male-xt60-wire-10cm/)).
+| &euro;3 | <img width="128" src="images/t-plug-male-to-xt60-female-adaptor.jpg"><br>male T-plug to female XT60 adaptor - connects the battery to the power module ([link](https://www.unmannedtechshop.co.uk/male-t-plug-to-female-xt60-adaptor/)).
 | &euro;3 | <img width="128" src="images/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)).
 | &euro;3 | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps - attach battery to frame ([link](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
 | &euro;2 | <img width="128" src="images/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
@@ -92,7 +93,8 @@ The following sections cover the major components of the quadcopter. In writing 
 * [Brief notes](notes.md#brief-notes) on clockwise and counterclockwise motors and the external LED and USB connector.
 * The [F450 ARF kit](notes.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
 * The [E300 vs E305 vs E310](notes.md#e300-vs-e305-vs-e310) propulsion systems.
-* The [LiPo batteries](notes.md#batteries), the T-plug battery connector, the charger, the battery alarm and the battery safety bag.
+* The [LiPo batteries](notes.md#batteries), the [charger](notes.md#charger), the battery alarm and the battery safety bag.
+* The [power connectors](nodes.md#power-connectors) on the power module.
 * The [IMU and MCU](notes.md#imu-and-mcu) - the core parts of the flight controller and how you can experiment with them.
 * [Vibration](notes.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
 * Predefined [waypoints](notes.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).

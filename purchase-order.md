@@ -11,7 +11,8 @@ Purchase order
 * GBP 6.75 - External LED and USB connector ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/all-in-one-led-and-usb-module-for-pixhawk/)).
 * GBP 2 - I2C splitter - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/i2c-board/)).
 * GBP 4 - Battery monitor alarm - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)).
-* GBP 1.50 - T-plug male power connector - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/male-deans-t-plug-wire-10cm/)).
+* GBP 1 - XT60 male power connector - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/male-xt60-wire-10cm/)).
+* GBP 2.75 - male T-plug to female XT60 adaptor ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/male-t-plug-to-female-xt60-adaptor/)).
 * GBP 2.45 - Vibration damping mounting set - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)).
 * GBP 2.75 - Hook and loop velcro straps - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
 * GBP 1.75 - Mounting foam - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
