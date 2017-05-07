@@ -40,11 +40,13 @@ You can use the INC button during charging to cycle through information about th
 
 The charger beeps when finished - just press the STOP button to turn off the flashing end of charging message and unplug the battery.
 
-### Charging notes
+### Notes
+
+The charger has a timeout (that defaults to 2 hours) - any operation that needs longer than this amount of time will be stopped when the timeout expires. This just forces you to be present - the charger can't accidentally be left running indefinitely. When this happens you can simply continue the operation by starting it again (hold ENTER for 3 seconds as above).
 
 Ideally you should charge your battery on a fire resistent surface like concrete. Many people recommend charging the battery in a LiPo safety bag (as well as simply storing them in such a bag) or in something even more robust (like a well vented ammo box). I've shown the LiPo sitting on top of the safety bag above just so you can see everything.
 
-If you've set things up as described it should take an hour or so to charge the battery from 20% to full. Why 20%? A LiPo battery should never be discharged beyond 80% of its capacity (search for the "80% rule" [herre](http://www.rchelicopterfun.com/rc-lipo-batteries.html)).
+If you've set things up as described it should take an hour or so to charge the battery from 20% to full. Why 20%? A LiPo battery should never be discharged beyond 80% of its capacity (search for the "80% rule" [here](http://www.rchelicopterfun.com/rc-lipo-batteries.html)).
 
 Taking the milliamp/hours, 3300mAh in my case, and translating that value directly to the Amp setting for the charger, as done above, is the simplest thing to do - but the reason for doing this takes a bit of explanation and involves the batteries charge rate. If you're interested see [this page](http://www.dronetrest.com/t/everything-you-need-to-know-about-lipo-battery-chargers/1326) and it's battery charging rules (that include the injunction "always charge your battery at 1C or less") and its charging current section that explains combining the charging rate and the battery's milliamp/hours value, for even more details see the page mentioned above that covers the 80% rule.
 
