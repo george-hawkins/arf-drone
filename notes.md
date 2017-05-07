@@ -57,9 +57,11 @@ Power connectors
 
 TODO: provide link to common competing connectors like T-plug and XT60. Comment on lack of standardization, e.g. Gens ace and Tattu are popular LiPo brands and both produce near identical 4S and 3S batteries but Tattu uses XT60 connectors while Gens ace uses T-plug.
 
-The power module and charger come with connectors suitable for directly connecting to a battery with an XT60 connector. However I bought batteries with a T-plug connector - in retrospect finding similar ones with XT60 connectors would have saved some trouble.
+The power module and charger come with connectors suitable for directly connecting to a battery with an XT60 connector. However I bought batteries with a T-plug connector.
 
-The charger came with a cable with two banana plugs at one end and an XT60 connector at the other. I bought a separate cable (like [this one](http://shop.epproduct.com/pi/en/EP-Ladekabel-Deans-Stecker.html)) with a T-plug connector instead to replace this cable. And for the power module I a male T-plug to female XT60 adaptor (like [this one](https://www.unmannedtechshop.co.uk/male-t-plug-to-female-xt60-adaptor/)).
+The charger came with a cable with two banana plugs at one end and an XT60 connector at the other. So I replaced this cable with a cable (like [this one](http://shop.epproduct.com/pi/en/EP-Ladekabel-Deans-Stecker.html)) with a T-plug connector instead. And for the power module I bought a male T-plug to female XT60 adaptor (like [this one](https://www.unmannedtechshop.co.uk/male-t-plug-to-female-xt60-adaptor/)).
+
+When I bought my batteries I wasn't aware that there were other makes with XT60 connectors, finding such batteries would have saved this trouble.
 
 The power module actually has two XT60 connectors, a male one that's meant to connect to the battery and a female one that connects to the PDB. The F450 frame comes with an unterminated cable that's meant to be used for connecting the PDB to the power module, but rather than solder an XT60 connector onto this cable I simply bought a cable that was already terminated with a male XT60 connector.
 
