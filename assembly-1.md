@@ -42,7 +42,7 @@ The charger beeps when finished - just press the STOP button to turn off the fla
 
 ### Charging notes
 
-Ideally you should charge your battery on a fire resistent surface like concrete - I just used my LiPo safety bag.
+Ideally you should charge your battery on a fire resistent surface like concrete. Many people recommend charging the battery in a LiPo safety bag (as well as simply storing them in such a bag) or in something even more robust (like a well vented ammo box). I've shown the LiPo sitting on top of the safety bag above just so you can see everything.
 
 If you've set things up as described it should take an hour or so to charge the battery from 20% to full. Why 20%? A LiPo battery should never be discharged beyond 80% of its capacity (search for the "80% rule" [herre](http://www.rchelicopterfun.com/rc-lipo-batteries.html)).
 
@@ -62,3 +62,9 @@ The main reason that I bought the S60 charger rather than a cheaper and simpler 
 The whole process is nearly identical to charging. The only difference is that right at the start when the "LiPo balance" mode is showing you just need to press INC until "LiPo storage" mode is shown instead. Then just go through the same process as before. If the battery is currently below its storage voltage the charger will charge it, and if it's above the charger will discharge it, until the storage voltage is reached.
 
 Once the battery is at storage voltage the battery should be stored in a LiPo safety bag.
+
+It took my charger 170 minutes to bring to take a battery, of the type I'm using, down from full charge to storage voltage.
+
+TODO: if it took this long to discharge then is the 1 hour charge time from 20% (which I calculated using an online calculator rather than from experience) really accurate?
+
+Note: there's a lot of dispute on the web as to whether storage voltage is crucial or not important at all - battery manufacturers though consistently recommend it.
