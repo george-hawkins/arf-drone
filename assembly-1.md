@@ -1,9 +1,17 @@
-<img width="128" src="images/assembly/charging/batteries.jpg">
-<img width="128" src="images/assembly/charging/battery-alarm.jpg">
-<img width="128" src="images/assembly/charging/charger.jpg">
-<img height="128" src="images/assembly/charging/charging.jpg">
-<img width="128" src="images/assembly/charging/replacement-cable.jpg">
-<img height="128" src="images/assembly/charging/safety-bag.jpg">
+Batteries
+=========
+
+| Parts |
+|-------|
+| <img width="128" src="images/assembly/charging/charger.jpg"><br>S60 charger. |
+| <img width="128" src="images/assembly/charging/replacement-cable.jpg"><br>Replacement T-plug terminated charging cable. |
+| <img width="128" src="images/assembly/charging/batteries.jpg"><br>Batteries |
+| <img height="128" src="images/assembly/charging/safety-bag.jpg"><br>LiPo safety bag. |
+| <img width="128" src="images/assembly/charging/battery-alarm.jpg"><br>Battery alarm. |
+
+Charging setup:
+
+<img height="256" src="images/assembly/charging/charging.jpg">
 
 Battery charging
 ----------------
