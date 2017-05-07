@@ -90,7 +90,7 @@ Note: the terms Pixhawk and PX4 are often used interchangeably - though Pixhawk 
 
 The following sections cover the major components of the quadcopter. In writing this page I started including so many side notes that they started clogging up the whole thing, so I've moved these notes out into [`notes.md`](notes.md). They're worth scanning over quickly. They cover:
 
-* [Brief notes](notes.md#brief-notes) on clockwise and counterclockwise motors and the external LED and USB connector.
+* Brief notes on [clockwise and counterclockwise motors](notes.md#motor-direction) and the [external LED and USB connector](notes.md#external-led-and-usb-port).
 * The [F450 ARF kit](notes.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
 * The [E300 vs E305 vs E310](notes.md#e300-vs-e305-vs-e310) propulsion systems and the [E305 motor variants](notes.md#e305-motor-variants).
 * The [power connectors](notes.md#power-connectors) of the power module and the charger.
