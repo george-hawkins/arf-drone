@@ -1,12 +1,19 @@
-Brief notes
------------
+Notes
+=====
 
-This section just covers small items that don't warrant being split out into individual sections.
+This page contains miscellaneous notes that came out of putting together the parts list for the quadcopter.
 
-* A quadcopter has two clockwise and two counterclockwise motors and there are clockwise and counterclockwise specific propellars, so a pack of two spare propellars will contain one of each.
-* When the Pixhawk is buried at the heart of the quadcopter its power LED can be hard to see and its USB port difficult to access so one can buy a module that provides an external LED and USB port. This just consists of an extension cable that attaches to the Pixhawk at one end and has a LED and USB port at the other end that can be mounted somewhere more accessable on the frame.
+Motor direction
+---------------
 
-  The Pixhawk has a GPS and an I2C port - the I2C port is shown [here](https://pixhawk.org/modules/pixhawk) as being intended either for the compass or for an I2C splitter. As most GPS modules also provide the compass they have two connectors and take up both the GPS port and the I2C port. The module providing the external LED and USB port also connects to the I2C port so an I2C splitter is required to connect both it and the compass connector of the GPS module at the same time.
+A quadcopter has two clockwise (CW) and two counterclockwise (CCW) motors and there are clockwise and counterclockwise specific propellars. So spare propellars generally come in packs of two, one for each direction.
+
+External LED and USB port
+-------------------------
+
+When the Pixhawk is buried at the heart of the quadcopter its power LED can be hard to see and its USB port difficult to access so one can buy a module that provides an external LED and USB port. This just consists of an extension cable that attaches to the Pixhawk at one end and has a LED and USB port at the other end that can be mounted somewhere more accessable on the frame.
+
+The Pixhawk has a GPS and an I2C port - the I2C port is shown [here](https://pixhawk.org/modules/pixhawk) as being intended either for the compass or for an I2C splitter. As most GPS modules also provide the compass they have two connectors and take up both the GPS port and the I2C port. The module providing the external LED and USB port also connects to the I2C port so an I2C splitter is required to connect both it and the compass connector of the GPS module at the same time.
 
 F450 ARF kit
 ------------
