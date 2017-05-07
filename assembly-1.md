@@ -13,6 +13,8 @@ Charging setup:
 
 <img height="256" src="images/assembly/charging/charging.jpg">
 
+The battery should be connected via **both** its connectors to the charger as shown.
+
 Battery charging
 ----------------
 
