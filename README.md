@@ -92,9 +92,9 @@ The following sections cover the major components of the quadcopter. In writing 
 
 * [Brief notes](notes.md#brief-notes) on clockwise and counterclockwise motors and the external LED and USB connector.
 * The [F450 ARF kit](notes.md#f450-arf-kit) and why I choose to buy the F450 frame and propulsion system as separate components rather than bundled as an ARF kit.
-* The [E300 vs E305 vs E310](notes.md#e300-vs-e305-vs-e310) propulsion systems.
+* The [E300 vs E305 vs E310](notes.md#e300-vs-e305-vs-e310) propulsion systems and the [E305 motor variants](#notes.md#e305-motor-variants).
+* The [power connectors](notes.md#power-connectors) of the power module and the charger.
 * The [LiPo batteries](notes.md#batteries), the [charger](notes.md#charger), the battery alarm and the battery safety bag.
-* The [power connectors](notes.md#power-connectors) on the power module.
 * The [IMU and MCU](notes.md#imu-and-mcu) - the core parts of the flight controller and how you can experiment with them.
 * [Vibration](notes.md#vibration) and why a vibration damping kit might improve the performance of the sensors in the flight controller.
 * Predefined [waypoints](notes.md#waypoints) and in-flight drone-to-computer communication (as opposed to using the hand-held transmitter).
