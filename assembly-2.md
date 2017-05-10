@@ -40,7 +40,7 @@ This larger connector then needs to be connected to the pins on the SPC PCB. Loo
 
 **Warning:** if you're just used to consumer electronics products where it's generally impossible to plug things in in a way that results in damage to the device it may come as a surprise that this is all two easy in the realm of hobbyist electronics, getting the colors wrong and mixing up your wires will often result in irreparable damange.
 
-Now you have a joined up cable with a USB connector at one end, the SPC in the middle and a smart port connector at the other end. The smart point connector plugs into the X8R receiver, but **don't** do that yet.
+Now you have a joined up cable with a USB connector at one end, the SPC in the middle and a smart port connector at the other end. The smart point connector plugs into the left hand side of the X8R receiver (the side that has just a single port), but **don't** do that yet.
 
 Important: don't get smart port connectors and S.BUS connectors mixed up - the receiver has both and they look identical but they're different things.
 
