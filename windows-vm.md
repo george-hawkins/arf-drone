@@ -6,6 +6,8 @@ Note: these VMs are not meant for general purpose long term use and are only val
 
 Once you've installed VirtualBox you just need to unzip the Windows VM download, this produces an OVA file which you should double click - this will start VirtualBox and cause it to automatically install the new VM.
 
+Note: the native MacOS `unzip` can't handle the zip format Microsoft is using for these VMs - you need to use `p7zip` (if you're using [Homebrew](https://brew.sh/) you just install it with `brew install p7zip`), see this [SO answer](https://superuser.com/a/626731/238591) for more details.
+
 Once installed start the VM - when up and running for the first time just leave it alone for a few minutes and it will automatically activate itself (it also encouraged me to upgrade OneDrive - which I did, it did not then force me to log in to any related cloud service).
 
 The VM is already setup with VirtualBox [guest additions](https://www.virtualbox.org/manual/ch04.html) so there's no need to install these.

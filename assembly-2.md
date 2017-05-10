@@ -1,6 +1,27 @@
 Upgrading the receiver
 ======================
 
+<img width="256" src="images/assembly/electronics/fuc-3.jpg">  
+FrUSB-3 (FUC-3).
+
+<img width="256" src="images/assembly/electronics/fuc-3-unplugged.jpg">  
+FUC-3 with original cable unplugged.
+
+<img height="256" src="images/assembly/electronics/spc.jpg">  
+Smart port converter (SPC).
+
+<img height="256" src="images/assembly/electronics/fuc-3-and-spc.jpg">  
+FUC-3 with other cable plugged in and connected to the SPC.
+
+<img height="256" src="images/assembly/electronics/spc-connection-closeup.jpg">  
+Closeup of cable from FUC-3 connected to SPC.
+
+<img height="256" src="images/assembly/electronics/receiver-rx8r.jpg">  
+RX8R receiver.
+
+<img height="256" src="images/assembly/electronics/receiver-connected-to-computer.jpg">  
+Receiver connected to computer via FUC-3 and SPC.
+
 With other receivers such as the D4R-II there are [warnings](https://pixhawk.org/peripherals/radio-control/frsky#parts_list) that the receiver must be upgraded before use with the Pixhawk.
 
 I've found no such warning for the receivers like the X8R but it makes sense to make sure your receiver is using the latest firmware.
@@ -39,6 +60,6 @@ Important: the upgrade software seems to be completely unflexible as to the orde
 
 ### Notes
 
-DJ WoodZ has a [page](http://djwoodz.com/2016/04/11/How-To-Update-FrSky-X4R-SB-Firmware-via-USB/) that covers similar instructions for the X4R and has nice clear photos and screenshots that provide more step-by-step details (that are relevant for both the X4R and X8R).
+DJ WoodZ has a [page](http://djwoodz.com/2016/04/11/How-To-Update-FrSky-X4R-SB-Firmware-via-USB/) that covers similar instructions for the X4R and has nice clear photos and screenshots that provide some more step-by-step details than here (that are relevant for both the X4R and X8R).
 
 The transmitter (which we'll come to in a later section) runs software called [OpenTX](http://www.open-tx.org), with versions 2.1.x and later of OpenTX you can update external devices like receivers via the transmitter - see this [DroneTrest guide](http://www.dronetrest.com/t/how-to-upgrade-your-frsky-receiver-firmware-x8r-x4r-x4r-sb/1667) for instructions on how to do this. This is an alternative to having to use a Windows machine to upgrade the receiver.
