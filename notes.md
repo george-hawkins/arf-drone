@@ -218,4 +218,4 @@ A 2mm hex key (or Allen key/wrench) is needed for the F450 screws - sources:
 * Single 2mm hex screw driver [Conrad UK](http://www.conrad-electronic.co.uk/ce/en/product/817256/Workshop-Allen-wrench-Wera-354-Spanner-size-2-mm-Blade-length-75-mm).
 * Set of hex keys [Conrad UK](http://www.conrad-electronic.co.uk/ce/en/product/818955/Allen-Allen-key-set-7-piece-Basetech).
 
-Some other components involve very small hex key sizes, such as 1mm or 2.5mm, so a set of smaller key sizes is useful (rather than the more common sets where the smallest size key is 2mm or larger).
+Some other components involve very small hex key sizes, such as 1mm or 2.5mm, so a set of smaller key sizes is useful (rather than the more common sets where the smallest size key is 2mm or larger). It's nice though to have a proper 2mm screw driver, rather than a tiny basic hex key, for assembling things like the F450 frame.
