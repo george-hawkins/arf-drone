@@ -3,16 +3,16 @@ Electronics
 
 Now that we've upgraded the receiver we can connect up all the electronics (except the battery, ESCs and motors) and then connect everything to a laptop or PC via USB and set things up and experiment a bit without having to put together the full drone.
 
-Pixhawk parts - the Pixhawk flight controller, a buzzer, an arming button, a cable for connecting the receiver (bottom left), a micro SD card, a USB cable and a SD card adapter and two other cables (that aren't of immediate use).
+Pixhawk parts - the Pixhawk flight controller, a buzzer, an arming button, a cable for connecting the receiver (bottom left), a micro SD card, a USB cable and a SD card adapter and two other cables (that aren't of immediate use).  
 <img height="256" src="images/assembly/electronics/pixhawk-parts.jpg">
 
-GPS and compass module.
+GPS and compass module.  
 <img height="256" src="images/assembly/electronics/gps-and-compass.jpg">
 
-Pixhawk wired up (without receiver).
+Pixhawk wired up (without receiver).  
 <img height="256" src="images/assembly/electronics/pixhawk-wired-up-1.jpg">
 
-Pixhawk with microSD card inserted.
+Pixhawk with microSD card inserted.  
 <img height="256" src="images/assembly/electronics/pixhawk-with-sd-card-inserted.jpg">
 
 Note: the SD card really is just used for storage (logs, waypoint data etc.), it does not contain the Pixhawk OS - this is flashed to 2MB of non-removable internal RAM.
@@ -24,10 +24,10 @@ When initially attempting to plug in the buzzer etc. I found the connectors so u
 The receiver
 ------------
 
-Receiver cable plugged into Pixhawk.
+Receiver cable plugged into Pixhawk.  
 <img height="256" src="images/assembly/electronics/pixhawk-to-receiver-1.jpg"> <img height="256" src="images/assembly/electronics/pixhawk-to-receiver-2.jpg">
 
-Receiver cable plugged into receiver.
+Receiver cable plugged into receiver.  
 <img height="256" src="images/assembly/electronics/receiver-to-pixhawk.jpg">
 
 I was surprised how hard it was to find clear instructions on connecting the X8R receiver to the Pixhawk - it's trivial once you know how but still I didn't find anything that just plainly told you which set of three pins at the end of the Pixhawk to use and which port on the receiver to use.

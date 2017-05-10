@@ -1,25 +1,25 @@
 Upgrading the receiver
 ======================
 
-FrUSB-3 (FUC-3).
+FrUSB-3 (FUC-3).  
 <img width="256" src="images/assembly/electronics/fuc-3.jpg">
 
-FUC-3 with original cable unplugged.
+FUC-3 with original cable unplugged.  
 <img width="256" src="images/assembly/electronics/fuc-3-unplugged.jpg">
 
-Smart port converter (SPC).
+Smart port converter (SPC).  
 <img height="256" src="images/assembly/electronics/spc.jpg">
 
-FUC-3 with other cable plugged in and connected to the SPC.
+FUC-3 with other cable plugged in and connected to the SPC.  
 <img height="256" src="images/assembly/electronics/fuc-3-and-spc.jpg">
 
-Closeup of cable from FUC-3 connected to SPC.
+Closeup of cable from FUC-3 connected to SPC.  
 <img height="256" src="images/assembly/electronics/spc-connection-closeup.jpg">
 
-RX8R receiver.
+RX8R receiver.  
 <img height="256" src="images/assembly/electronics/receiver-rx8r.jpg">
 
-Receiver connected to computer via FUC-3 and SPC.
+Receiver connected to computer via FUC-3 and SPC.  
 <img height="256" src="images/assembly/electronics/receiver-connected-to-computer.jpg">
 
 With other receivers such as the D4R-II there are [warnings](https://pixhawk.org/peripherals/radio-control/frsky#parts_list) that the receiver must be upgraded before use with the Pixhawk.
