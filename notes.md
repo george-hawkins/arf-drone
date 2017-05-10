@@ -215,5 +215,5 @@ Sources:
 A 2mm hex key (or Allen key/wrench) is needed for the F450 screws - sources:
 
 * Set of hex keys [Amazon UK](https://www.amazon.co.uk/Silverline-HK11-Hex-Key-2-10/dp/B000LFXJUM).
-* Single 2mm hex screw driver [Conrad CH](http://www.conrad-electronic.co.uk/ce/en/product/817256/Workshop-Allen-wrench-Wera-354-Spanner-size-2-mm-Blade-length-75-mm).
-* Set of hex keys [Conrad CH](http://www.conrad-electronic.co.uk/ce/en/product/818955/Allen-Allen-key-set-7-piece-Basetech).
+* Single 2mm hex screw driver [Conrad UK](http://www.conrad-electronic.co.uk/ce/en/product/817256/Workshop-Allen-wrench-Wera-354-Spanner-size-2-mm-Blade-length-75-mm).
+* Set of hex keys [Conrad UK](http://www.conrad-electronic.co.uk/ce/en/product/818955/Allen-Allen-key-set-7-piece-Basetech).

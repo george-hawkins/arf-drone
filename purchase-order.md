@@ -29,7 +29,7 @@ Purchase order
 Minor parts:
 
 * 10ml Loctite 243 - [Conrad CH](http://www.conrad.ch/ce/de/product/055936/Schraubensicherung-Festigkeit-mittel-10-ml-LOCTITE-243-1335840).
-* Single 2mm hex screw driver [Conrad CH](http://www.conrad-electronic.co.uk/ce/en/product/817256/Workshop-Allen-wrench-Wera-354-Spanner-size-2-mm-Blade-length-75-mm).
+* Single 2mm hex screw driver [Conrad CH](http://www.conrad.ch/ce/de/product/817256/Werkstatt-Innen-Sechskantschraubendreher-Wera-354-Schluesselweite-Metrisch-2-mm-Klingenlaenge-75-mm).
 
 Items to consider:
 
