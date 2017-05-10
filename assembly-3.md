@@ -3,7 +3,7 @@ Electronics
 
 Now that we've upgraded the receiver we can connect up all the electronics (except the battery, ESCs and motors) and then connect everything to a laptop or PC via USB and set things up and experiment a bit without having to put together the full drone.
 
-Pixhawk parts - the Pixhawk flight controller, a buzzer, an arming button, a cable for connecting the receiver (bottom left), a micro SD card, a USB cable and a SD card adapter and two other cables (that aren't of immediate use).  
+The Pixhawk comes with a number of parts, shown here with it - a buzzer, an arming button, a cable for connecting the receiver (bottom left), a micro SD card, a USB cable and a SD card adapter and two other cables (that aren't of immediate use).  
 <img height="256" src="images/assembly/electronics/pixhawk-parts.jpg">
 
 GPS and compass module.  
