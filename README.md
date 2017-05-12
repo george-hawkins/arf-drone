@@ -11,7 +11,7 @@ I was quite disappointed when I found various pages (such as [this one](http://a
 
 The ARF acronym makes it sound like all the interesting work has been taken care of and all that's left is to put things together lego style. But it turns out, if starting from scratch with no prior experience of drones, that there's quite enough additional complexity without also having to worry about the frame and the propulsion system.
 
-Important: this build requires a small amount of soldering and it's assumed you've already got a soldering iron, solder etc.
+Important: this build requires a small amount of soldering and it's assumed you've already got a soldering iron, solder etc. If you've never tried soldering before it's not that hard - see [`soldering.md`](soldering.md) for details.
 
 TODO: add summary explaining that this page covers parts and that there are other pages - [`notes.md`](notes.md), [`stores.md`](stores.md), [`purchase-order.md`](purchase-order.md) and [`assembly.md`](assembly.md). Fill out [`assembly.md`](assembly.md) file properly.
 
