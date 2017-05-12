@@ -10,7 +10,7 @@ GPS and compass module.
 <img height="256" src="images/assembly/electronics/gps-and-compass.jpg">
 
 Pixhawk wired up (without receiver).  
-<img height="256" src="images/assembly/electronics/pixhawk-wired-up-1.jpg">
+<img height="256" src="images/assembly/electronics/pixhawk-wired-up-without-receiver.jpg">
 
 Pixhawk with microSD card inserted.  
 <img height="256" src="images/assembly/electronics/pixhawk-with-sd-card-inserted.jpg">
@@ -47,4 +47,5 @@ So for the Pixhawk you plug this cable into the very first column of pins (label
 Pixhawk fully wired up
 ----------------------
 
-TODO: include pics of wired up setup including receiver.
+Pixhawk wired up (with receiver).  
+<img height="256" src="images/assembly/electronics/pixhawk-wired-up-with-receiver.jpg">
