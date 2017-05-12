@@ -1,5 +1,5 @@
-First time quadcopter build
-===========================
+2017 first time quadcopter build
+================================
 
 **Goal:** I wanted to go from knowing nothing about remote control vehicles to building a quadcopter that could complete a route autononmously, i.e. without human control from the ground. I wanted as few black box elements as possible in the system and so used open source software and hardware wherever reasonably possible.
 
