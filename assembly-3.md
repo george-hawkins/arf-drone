@@ -17,7 +17,7 @@ Pixhawk with microSD card inserted.
 
 There is enough space beyond the external SD card slot that it's possible to insert the SD card without pushing it into the actual SD card holder. The SD card holder is spring loaded and it's fairly obvious once you feel the resistance of the springs - the SD card has to be pushed so far in that I couldn't do it with just my fingers, I needed to use a small screw driver to press it in the final millimeter or two.
 
-Note: the SD card really is just used for storage (logs, waypoint data etc.), it does not contain the Pixhawk flight controller software - this is flashed to 2MB of non-removable internal RAM.
+Note: the SD card comes competely blank and is just used for storage (logs, waypoint data etc.), it does not contain the Pixhawk flight controller software - this is flashed to 2MB of non-removable internal RAM.
 
 The style of connectors used by the Pixhawk and the components that connect to it (with the exception of the receiver) are horrible. I've come across them before in electronics projects - they're designed for production setups where it's not envisaged that a given connection will ever be unplugged again once plugged in, i.e. they're not very hobbyist friendly. It's no wonder that in the video [introducing the Pixracer](https://www.youtube.com/watch?v=mpb6Cq023N8&feature=youtu.be&t=62) that they say the best thing about it is that they've switched to a nicer style of connector. As has the Pixhawk 2.1. The downside of changing the connector type of course is that one then has to change the awful-but-standard connectors on all components one wants to connect.
 
