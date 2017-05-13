@@ -7,16 +7,16 @@ The FrSKY update application only runs on Windows. I only have Mac and Linux mac
 
 Whether using a real Window machine or a VM the upgrade process is fairly simple. The following photos show the parts you need.
 
-FrUSB-3 (FUC-3).  
+_FrUSB-3 (FUC-3)._  
 <img width="256" src="images/assembly/electronics/fuc-3.jpg">
 
-FUC-3 with original cable unplugged.  
+_FUC-3 with original cable unplugged._  
 <img width="256" src="images/assembly/electronics/fuc-3-unplugged.jpg">
 
-Smart port converter (SPC).  
+_Smart port converter (SPC)._  
 <img height="256" src="images/assembly/electronics/spc.jpg">
 
-RX8R receiver.  
+_RX8R receiver._  
 <img height="256" src="images/assembly/electronics/receiver-rx8r.jpg">
 
 OK - let's get started. You need the [FrUSB-3 (FUC-3)](http://www.frsky-rc.com/product/pro.php?pro_id=37) upgrade cable and the [Smart Port Converter (SPC)](http://www.frsky-rc.com/product/pro.php?pro_id=132).
@@ -27,10 +27,10 @@ This larger connector then needs to be connected to the pins on the SPC PCB. Loo
 
 **Warning:** if you're just used to consumer electronics products where it's generally impossible to plug things in in a way that results in damage to the device it may come as a surprise that this is all two easy in the realm of hobbyist electronics, mixing up your wires will often result in irreparable damange.
 
-FUC-3 with other cable plugged in and connected to the SPC.  
+_FUC-3 with other cable plugged in and connected to the SPC_.  
 <img height="256" src="images/assembly/electronics/fuc-3-and-spc.jpg">
 
-Closeup of cable from FUC-3 connected to SPC.  
+_Closeup of cable from FUC-3 connected to SPC_.  
 <img height="256" src="images/assembly/electronics/spc-connection-closeup.jpg">
 
 Now you have a joined up cable with a USB connector at one end, the SPC in the middle and a smart port connector at the other end. The smart point connector plugs into the left hand side of the X8R receiver (the side that has just a single port), but **don't** do that yet.
@@ -49,7 +49,7 @@ Now go to the extracted upgrade application and start it - it has a super simple
 
 Only now should you plug in the receiver, the LED on the receiver should light up and go green and the application should detect the receiver and you can now press the Download button. The download takes several minutes - once done just unplug the receiver. I've seen reports that the receiver can become [bricked](https://en.wikipedia.org/wiki/Brick_(electronics)) if the download is interrupted so always let the process complete.
 
-Receiver connected to computer via FUC-3 and SPC.  
+_Receiver connected to computer via FUC-3 and SPC_.  
 <img height="256" src="images/assembly/electronics/receiver-connected-to-computer.jpg">
 
 Important: the upgrade software seems to be completely inflexible as to the order things need to be plugged in. The FUC-3 must be plugged into the computer before the upgrade software is started, then the `.frk` file should be selected and only then should the receiver be connected (to the smart port terminated connector coming out of the SPC). Things did not work for me if I plugged in the USB connector after starting the upgrade software or connected the receiver before the firmware file had been chosen (the LED on the receiver would light up red and stay red unless the upgrade software was already ready to update it).
