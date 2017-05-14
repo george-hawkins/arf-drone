@@ -65,11 +65,13 @@ OpenTX
 
 So the OS on the transmitter is OpenTX and you can interact with via the LCD and the controls to its left and right. Power on your transmitter and let's try them out:
 
-* PAGE - you can use this to page through various screens, in the default mode (where the state of the sticks etc. are shown) this isn't too intereting.
+* PAGE - you can use this to page through various screens, in the default mode (where the state of the sticks etc. are shown) this isn't too intereting but for the screens reached with MENU there's more to see using PAGE. If you hold the PAGE button a little longer you'll go back a screen rather than forward.
 * MENU - press and release quickly and you get to "model selection", press EXIT to get back to the main screen, press and hold MENU for a little longer and you get to "radio setup".
-* EXIT - as noted gets you back to the main screen, it's also used in combination with the dial when changing setting values.
+* EXIT - as noted gets you back to the main screen, it's also used in combination with the dial when changing setting values. If you've scrolled far down a long screen, with the dial, pressing EXIT quickly will return you to the top of the screen.
 
 Go to "radio setup" and press the PAGE button repeatedly to cycle through various screens (you can see the screen you're on, e.g. 3 of 9, in the upper right corner).
+
+Note: confusingly in this context "radio" just means the overall device, i.e. your Taranis Q X7 and doesn't mean the radio hardware (also called the transmitter or TX module) that communicates with the receiver on the drone.
 
 Let's try out something simple, safe and mildly important to do early on - callibration. Go to "radio setup", press PAGE until you reach the last screen - the callibration screen. Before you press ENTER, i.e. press down the dial on the right, turn the pots so that they're set at half way, i.e. make sure their neither as far as they can go clockwise nor as far as they can go counterclockwise (if a pot is e.g. all the way clockwise before starting then callibration can only work out its lower limit but not its upper limit). Now press ENTER and move the sticks, it'll ask you to set the sticks to their midpoint - as the sticks are self centering you don't have to do anything so just press ENTER again. Now move the sticks so you touch every point of the outline of their corresponding boxes, to callibrate how far the sticks can travel in any direction. Finally turn both pots fully in both directions to similarly calibrate hem and press ENTER - callibration is done.
 
