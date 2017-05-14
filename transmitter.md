@@ -210,9 +210,7 @@ If you can see you're transmitters SD card via USB connection as described above
 
 Once you've disconnected USB (or reinsterted the SD card) restart the transmitter in normal mode and navigate to the contents of the SD card (as described above). Navigate to `FIRMWARE` and select the `.frk` file that you just copied on (it should have a name like `XJT_LBT_build161214.frk` or the same without `LBT` for the US). Select it and press ENTER, i.e. press the dial, You should see a popup with various options - select _Flash int module_ and you should see a progress bar indicating that it's being written.
 
-Oddly the process just finishes without any confirmation (presumably if there was a problem it would have told you) and there appears to be no way to query the XJT firmware version via OpenTX - you just have to trust that it's been done.
-
-TODO: see if I got any feedback on this - https://opentx.rocket.chat/channel/OpenTX_General?msg=mszoW8QwiAirmFfvy
+Oddly the process just finishes without any confirmation (presumably if there was a problem it would have told you) and there appears to be no way to query the XJT firmware version via OpenTX - you just have to trust that it's been done (I've confirmed this on the [OpenTX chat channel](https://opentx.rocket.chat/channel/OpenTX_General?msg=mszoW8QwiAirmFfvy)).
 
 Wrap up
 -------
@@ -220,3 +218,14 @@ Wrap up
 OK - that's it for the moment with the transmitter. Later on we'll use Open Companion again to configure some of the switches to select between various [flight modes](http://ardupilot.org/copter/docs/flight-modes.html) for the quadcopter. And we'll look at disabling self-centering for the throttle.
 
 As noted at the start of this page getting the transmitter ready is the most complex task in the whole build - everything gets simpler from now on.
+
+Notes
+-----
+
+If you're really interested the OpenTX project has a lot of documentation - however I'm not sure I'd recommend it, it can be rather overwhelming and some of it is more confusing than helpful. But for reference here's the material either directly produced by or recommended by the OpenTX project:
+
+* [The OpenTX 2.2 manual](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/) - this is probably the most digestable of these items but isn't terribly detailed.
+* [The OpenTX 2.1 documentation](http://openrcforums.com/forum/viewtopic.php?f=45&t=8724) - despite the similar name this is a completely different set of documentation, it has far more detail but can be confusing at times.
+* [OpenTX University](http://open-txu.org/home/undergraduate-courses/) - someone has put a lot of work into this but I found it so meandering as to be almost useful - but there is some good information in there.
+
+For any given task it's often easier just to Google for information - you'll generally find someone else has writetn something shorter and clearer on that particular thing.
