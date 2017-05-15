@@ -57,3 +57,7 @@ _Pixhawk wired up (with receiver)._
 <img height="256" src="images/assembly/electronics/pixhawk-wired-up-with-receiver.jpg">
 
 Initially I was worriend that the whole setup would need more power than a laptop USB port could easily provide so I connected the Pixhawk to one of the higher ampage capable ports on a powered USB hub but, for whatever reason, this didn't work (the Pixhawk made an unhappy squawking sound). As it turns out the whole system runs fine off my laptop USB port. I used a USB power meter to measure how many amps the whole setup draws - it's never more than 300mA so well wihtin the 500mA minimum that all USB ports should support.
+
+### Device drivers
+
+On Linux and Mac you don't have to worry about device drivers - on Windows though you need to have the appropriate driver installed before hand. Luckily installing [Mission Planner](http://ardupilot.org/planner/docs/common-install-mission-planner.html) takes care of this for you - it actually installs a newer Pixhawk driver version than the one available from the pixhawk.org site (for more details see [`pixhawk-driver.md`](pixhawk-driver.md)).
