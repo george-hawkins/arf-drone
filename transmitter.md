@@ -14,14 +14,14 @@ The manual doesn't even tell you how to turn on the transmitter, the power butto
 So we've got the on button, the other immediately important things are either side of the LCD. To the left we've got PAGE and EXIT and the circular button between them is called MENU. And to the right we've got a dial - it's the ENTER button if you press it but you can also turn it (to navigate up and down menus or cycle through values for a setting).
 
 _Q X7 LCD, buttons and dial_
-<img height="512" src="images/assembly/transmitter/taranis-q-x7-lcd-and-input.png">
+<img width="512" src="images/assembly/transmitter/taranis-q-x7-lcd-and-input.png">
 
 What about all the other switches etc. do? At each of the upper corners we've got a set of three switches, then between them we've got two knobs (called pots), then two joysticks (always just called sticks) and finally above the LCD and between the sticks a set of four 2-way momentary switches. What do these all do? The odd answer is they don't have any inherent meaning - but we'll get to that soon.
 
 The only important thing for the moment is that the switches have names (SA, SB, SC, SD, SF and SH) as do the pots (S1 and S2) and that (initially at least) up/down on the left stick is the throttle (pull it all the way down and the throttle is at zero). The stick directions also have names - J1 to J4.
 
 _Q X7 switches, pots and sticks_
-<img height="512" src="images/assembly/transmitter/taranis-q-x7-switches.png">
+<img width="512" src="images/assembly/transmitter/taranis-q-x7-switches.png">
 
 Note: that the upper left and right switches aren't quite identical - one is [momentary](https://learn.sparkfun.com/tutorials/switch-basics#momentary-switches) and one isn't. Similarly the pots are slightly different - one has a noticeable click at its midpoint.
 
