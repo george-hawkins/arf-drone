@@ -1,7 +1,7 @@
 Electronics
 ===========
 
-Now that we've upgraded the receiver we can connect up all the electronics (except the battery, ESCs and motors) and then connect everything to a laptop or PC via USB and set things up and experiment a bit without having to put together the full drone.
+Now that we've got the transmitter and receiver setup we can connect up all the electronics (except the battery, ESCs and motors) and then connect everything to a laptop or PC via USB and set things up and experiment a bit without having to put together the full drone.
 
 The Pixhawk comes with a number of parts (shown below) - these include a buzzer, an arming button, a cable for connecting the receiver (bottom left), a micro SD card and a USB cable. There's also an SD card adapter and two other cables that aren't of immediate use.
 
