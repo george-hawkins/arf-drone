@@ -31,7 +31,7 @@ So click on _Download_ (or select the last firmware suitable for your jurisdicat
 
 Now start you're transmitter in bootloader mode, connect it to the computer - the transmitter's SD card should appear as a USB drive, copy the appropriate `.frk` file to the `FIRMWARE` directory there.
 
-Eject the transmitter's drives on your computer and disconnect and turn off the transmitter. Now we're going to connect up the transmitter to the receiver as shown here using the servo cable. The servo cable won't prevent you plugging things in incorrectly - if you connect ground on one side to signal on the other you will probably fry your receiver. So double check the connections on both receiver and transmitter, the black wire (ground) should always be furthest away from the little extra notch you see on one side of the S.BUS sockets.
+Eject the transmitter's drives on your computer and disconnect and turn off the transmitter. Now we're going to connect up the transmitter to the receiver as shown here using the servo cable. The servo cable won't prevent you plugging things in incorrectly - if you connect ground on one side to signal on the other you will probably fry your receiver. So double check the connections on both receiver and transmitter, the black wire (ground) should always be furthest away from that little extra notch you see on one side of any S.BUS socket.
 
 _Q X7 connected to receiver_  
 <img height="256" src="images/assembly/receiver/taranis-q-x7-to-receiver.jpg">
