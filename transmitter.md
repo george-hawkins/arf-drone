@@ -208,13 +208,13 @@ Radio upgrade
 
 The internal XJT module is the hardware within the transmitter that communicates with the receiver on your drone.
 
-Aside: I haven't been able to find out what XJT means - it's probably just a meaningless FrSKY acronym.
+Aside: I don't think XJT means - it's probably just a meaningless FrSKY product identifier.
 
 Go to [download](http://www.frsky-rc.com/download/) on the FrSKY, select Firmware, then select Tx Modules (from the dropdown) and click on Firmware-XJT - the picture shows an external XJT module but if you look at the compatibility list you'll see that it's also appropriate for the Taranis Q X7 and other transmitters where the XJT is the standard internal module.
 
-Click on Download and extract the resulting ZIP file. It will contain two `.frk` files. You'll just need one or the other depending on the jurisdication that you'll be flying in (the `LBT` file for the EU and the other file for the US).
+Click on Download and extract the resulting zip file. It will contain two `.frk` files, one with `LBT` in the middle of its name. The US and the EU have different wireless regulations and you should use only the `.frk` file appropriate for your jurisdiction, the LBT one for the EU and the other for the US.
 
-TODO: move over explanation from receiver about LBT being for EU.
+Note: LBT stands for Listen Before Talk and is the firmware type FrSKY is now using for the EU (see their [press release](http://www.frsky-rc.com/media/mediaItem.php?m_id=17)). Your transmitter needs to be compatible with the firmware used by the receiver - so when we come to setting up the receiver next we'll upgrade it too to ensure this is the case.
 
 If you can see you're transmitters SD card via USB connection as described above then just copy the appropriate `.frk` file to the `FIRMWARE` directory on the card. Otherwise turn off the transmitter, pop out the card and copy the file on directly from your computer.
 

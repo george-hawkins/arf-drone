@@ -55,3 +55,5 @@ Now the Pixhawk is wired up and ready to be connected to a computer.
 
 _Pixhawk wired up (with receiver)._  
 <img height="256" src="images/assembly/electronics/pixhawk-wired-up-with-receiver.jpg">
+
+TODO: note that I initially connected the Pixhawk to one of the higher ampage capable ports on a powered hub but, for whatever reason, this didn't work and that the whole system ran without issue off my laptop USB port - use USB power meter to measure how many amps it draws.
