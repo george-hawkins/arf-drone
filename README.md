@@ -33,41 +33,41 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 
 | Price | Description |
 |-------|-------------|
-| &euro;24 | <img width="128" src="images/f450-frame-3.jpg"> <img height="128" src="images/f450-frame-1.gif"> <img width="128" src="images/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link 1](https://www.amainhobbies.com/dji-flame-wheel-f450-basic-quadcopter-drone-kit-dji-fw450bas/p235233), [link 2](http://www.builtdrones.com/dji-flamewheel-f450-basic-kit/)).
-| &euro;150 | <img height="128" src="images/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs ([link](http://store.dji.com/product/e305-4)).
-| &euro;175 | <img width="128" src="images/pixhawk-1.jpg"> <img height="128" src="images/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](https://pixhawk.org/modules/pixhawk)).
-| &euro;41 | <img width="128" src="images/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/)).
-| &euro;35 | <img height="128" src="images/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).
-| &euro;108 | <img height="128" src="images/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter ([link](https://www.unmannedtechshop.co.uk/frsky-taranis-q-x7-2-4ghz-transmitter/)).
-| &euro;17.50 | <img height="128" src="images/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB ([link](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/)).
-| &euro;37 | <img width="128" src="images/lipo-3300mAh-4s1p-14.8v-25C.jpg"><br>LiPo 3300mAh 4S1P 14.8V 25C battery ([link](https://www.unmannedtechshop.co.uk/gens-ace-3300mah-14-8v-25c-4s1p-lipo-battery-pack/)). |
+| &euro;24 | <img width="128" src="images/parts/f450-frame-3.jpg"> <img height="128" src="images/parts/f450-frame-1.gif"> <img width="128" src="images/parts/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link 1](https://www.amainhobbies.com/dji-flame-wheel-f450-basic-quadcopter-drone-kit-dji-fw450bas/p235233), [link 2](http://www.builtdrones.com/dji-flamewheel-f450-basic-kit/)).
+| &euro;150 | <img height="128" src="images/parts/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs ([link](http://store.dji.com/product/e305-4)).
+| &euro;175 | <img width="128" src="images/parts/pixhawk-1.jpg"> <img height="128" src="images/parts/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](https://pixhawk.org/modules/pixhawk)).
+| &euro;41 | <img width="128" src="images/parts/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/)).
+| &euro;35 | <img height="128" src="images/parts/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).
+| &euro;108 | <img height="128" src="images/parts/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter ([link](https://www.unmannedtechshop.co.uk/frsky-taranis-q-x7-2-4ghz-transmitter/)).
+| &euro;17.50 | <img height="128" src="images/parts/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB ([link](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/)).
+| &euro;37 | <img width="128" src="images/parts/lipo-3300mAh-4s1p-14.8v-25C.jpg"><br>LiPo 3300mAh 4S1P 14.8V 25C battery ([link](https://www.unmannedtechshop.co.uk/gens-ace-3300mah-14-8v-25c-4s1p-lipo-battery-pack/)). |
 
 ### Support components
 
 | Price | Description |
 |-------|-------------|
-| &euro;5 | <img height="128" src="images/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system ([link](https://www.unmannedtechshop.co.uk/foldable-gps-mast-mount/)).
-| &euro;4 | <img width="128" src="images/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver ([link](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/)).
-| &euro;9 | <img height="128" src="images/telemetry-upgrade-cable-1.jpg"><br>FUC-3 upgrade cable ([link](https://www.unmannedtechshop.co.uk/frusb-3-frsky-upgrade-cable-fuc-3/)).
-| &euro;2.50 | <img width="128" src="images/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter) ([link](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/)).
-| &euro;8 | <img height="128" src="images/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector ([link](https://www.unmannedtechshop.co.uk/all-in-one-led-and-usb-module-for-pixhawk/)).
-| &euro;2.50 | <img width="128" src="images/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector ([link](https://www.unmannedtechshop.co.uk/i2c-board/)).
-| &euro;7.50 | <img width="128" src="images/spare-propellars.jpg"><br>Spare propellars ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
-| &euro;5 | <img width="128" src="images/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](http://www.helipal.com/dji-landing-gear-for-f450-f550.html)).
-| &euro;4.50 | <img height="128" src="images/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)).
-| &euro;40 | <img width="128" src="images/s60-lipo-charger.jpg"><br>S60 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
-| &euro;7.50 | <img width="128" src="images/t-plug-charger-cable.jpg"><br>T-plug charger cable - connects battery to charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
+| &euro;5 | <img height="128" src="images/parts/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system ([link](https://www.unmannedtechshop.co.uk/foldable-gps-mast-mount/)).
+| &euro;4 | <img width="128" src="images/parts/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver ([link](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/)).
+| &euro;9 | <img height="128" src="images/parts/telemetry-upgrade-cable-1.jpg"><br>FUC-3 upgrade cable ([link](https://www.unmannedtechshop.co.uk/frusb-3-frsky-upgrade-cable-fuc-3/)).
+| &euro;2.50 | <img width="128" src="images/parts/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter) ([link](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/)).
+| &euro;8 | <img height="128" src="images/parts/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector ([link](https://www.unmannedtechshop.co.uk/all-in-one-led-and-usb-module-for-pixhawk/)).
+| &euro;2.50 | <img width="128" src="images/parts/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector ([link](https://www.unmannedtechshop.co.uk/i2c-board/)).
+| &euro;7.50 | <img width="128" src="images/parts/spare-propellars.jpg"><br>Spare propellars ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
+| &euro;5 | <img width="128" src="images/parts/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](http://www.helipal.com/dji-landing-gear-for-f450-f550.html)).
+| &euro;4.50 | <img height="128" src="images/parts/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)).
+| &euro;40 | <img width="128" src="images/parts/s60-lipo-charger.jpg"><br>S60 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
+| &euro;7.50 | <img width="128" src="images/parts/t-plug-charger-cable.jpg"><br>T-plug charger cable - connects battery to charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
 
 ### Additional physical components
 
 | Price | Description |
 |-------|-------------|
-| &euro;1 | <img width="128" src="images/xt60-male-power-connector.jpg"><br>XT60 male power connector - connects the PDB to the power module ([link](https://www.unmannedtechshop.co.uk/male-xt60-wire-10cm/)).
-| &euro;3 | <img width="128" src="images/t-plug-male-to-xt60-female-adaptor.jpg"><br>Male T-plug to female XT60 adaptor - connects the battery to the power module ([link](https://www.unmannedtechshop.co.uk/male-t-plug-to-female-xt60-adaptor/)).
-| &euro;3 | <img width="128" src="images/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)).
-| &euro;3 | <img height="128" src="images/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps - attach battery to frame ([link](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
-| &euro;2 | <img width="128" src="images/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
-| &euro;5 | <img width="128" src="images/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
+| &euro;1 | <img width="128" src="images/parts/xt60-male-power-connector.jpg"><br>XT60 male power connector - connects the PDB to the power module ([link](https://www.unmannedtechshop.co.uk/male-xt60-wire-10cm/)).
+| &euro;3 | <img width="128" src="images/parts/t-plug-male-to-xt60-female-adaptor.jpg"><br>Male T-plug to female XT60 adaptor - connects the battery to the power module ([link](https://www.unmannedtechshop.co.uk/male-t-plug-to-female-xt60-adaptor/)).
+| &euro;3 | <img width="128" src="images/parts/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)).
+| &euro;3 | <img height="128" src="images/parts/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps - attach battery to frame ([link](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
+| &euro;2 | <img width="128" src="images/parts/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
+| &euro;5 | <img width="128" src="images/parts/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
 
 As already noted some minor soldering is required - it's assumed you already have a soldering iron and solder and know how to use them.
 
