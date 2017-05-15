@@ -30,7 +30,10 @@ Batteries
 
 OK - before we use the transmitter we have to add batteries. Take off the battery cover and you'll find a normal looking battery holder that takes 6 AA batteries. When my transmitter arrived the battery cover wouldn't close and it turned out the battery holder wasn't sitting quite right in the case. You can actually pull out the battery holder and instead of using AA batteries you can wire up something like a large LiPo. So just make sure the battery holder is sitting snugly in the case and everything shold be fine.
 
-Note: my battery cover is very loose, this is the only poor feature I've found so far.
+Note: my battery cover is very loose, this is the only poor feature I've found so far. Eventually I taped it in place with masking tape.
+
+_Battery cover taped in place_  
+<img width="256" src="images/assembly/transmitter/taranis-q-x7-masking-tape.jpg">
 
 I used rechargeable NiMH batteries (this [Varta charger](https://www.amazon.co.uk/Varta-57677-PLUG-Charger-Battery/dp/B00HV5XOEG/ref=pd_sim_23_2), that includes four batteries, and an additional [pack of batteries](https://www.amazon.co.uk/Varta-Rechargeable-Batteries-2100mAh-Ni-MH-x/dp/B000EGWOCM/). The Varta charger has a Europlug - Amazon have an own branded [charger](https://www.amazon.co.uk/AmazonBasics-Ni-MH-Battery-Charger-Port/dp/B00TS18AEA/), that presumably comes with a plug to match the market it's sold in, and [batteries](https://www.amazon.co.uk/AmazonBasics-Capacity-Pre-Charged-Rechargeable-Batteries/dp/B00HZV9WTM/). Non-rechargeable batteries, depending on how much you intend to use your drone, may also be fine - the transmitter batteries will last for many hours and given that the LiPo on the drone will only last for about 20 minutes of flight time this means a single set of batteries in the transmitter will last for many flights.
 

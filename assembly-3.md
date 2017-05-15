@@ -18,6 +18,8 @@ The style of connectors used by the Pixhawk and the components that connect to i
 _Pixhawk wired up (without receiver)._  
 <img height="256" src="images/assembly/electronics/pixhawk-wired-up-without-receiver.jpg">
 
+Note: initially I mistook the _GPS_ label as labelling the socket above it and accidentally plugged the GPS into the _SERIAL 4/5_ socket.
+
 When initially attempting to plug in the buzzer etc. I found the connectors so unwilling to go in that I wondered if I was really supposed to apply near board breaking pressure to just force them in. The answer is no - instead for each connector I repeatedly waggled it in and out until everything engaged nicely enough that it was then possible to force the connector in fully. This required a reasonable amount of force, with my thumbnails to the edges of the connector, but not too much.
 
 Once this is done inserting the SD card is altogether more pleasant. There is enough open space beyond the slot in the case that it's possible to push the SD card in without pushing it into the actual SD card holder. The SD card holder is spring loaded so it's fairly obvious once you feel the resistance of the springs. The SD card has to be pushed so far in that I couldn't do it with just my finger nails, I needed to use a small screw driver to press it in the final millimeter or two (if you look closely at the next photo you'll see the SD card is quite far in).
