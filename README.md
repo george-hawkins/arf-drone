@@ -69,6 +69,8 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 | &euro;2 | <img width="128" src="images/parts/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
 | &euro;5 | <img width="128" src="images/parts/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
 
+TODO: remove FUC-3 and SPC (unless they turn out to be needed for making a telemetry cable to connect receiver and Pixhawk).
+
 As already noted some minor soldering is required - it's assumed you already have a soldering iron and solder and know how to use them.
 
 The [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) additionally notes that you'll need threadlocker, a 2mm hex key, [nylon cable ties](https://www.amazon.co.uk/Green-Cable-100Mm-2-5Mm-All/dp/B00904S2DE), scissors and [flush cutters](https://www.sparkfun.com/products/11952). The hex key and the threadlocker (which is something I'd never heard of before) are covered in the [miscellaneous parts](notes.md#miscellaneous-parts) note.
