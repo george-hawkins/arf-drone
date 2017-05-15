@@ -123,7 +123,7 @@ TODO: remove link to above Github issue - and uncheck the options involved - onc
 
 When you start OpenTX it'll check for the latest firmware and ask if you want to download it. Don't - you haven't configured your transmitter model yet and it defaults to downloading firmware for the Taranis X9D+.
 
-So go to settings (the cog icon), change the radio type to _FrSky Taranis X7_ and tick _lua_, _sqt5font_ and _massstorage_ as build options. Only the radio type is very important, the build options could all probably be left unchecked - the three suggested options are just almost always selected in all guides to this - _lua_ enables [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language) scripting for the transmitter, _sqt5font_ is an alternative font that many people prefer and _massstorage_ means that your Taranis looks like a USB drive when it's plugged into your computer via a USB cable.
+So go to settings (the cog icon), change the radio type to _FrSky Taranis X7_ and tick _lua_, _sqt5font_ and _massstorage_ as build options. Only the radio type is very important, the build options could all probably be left unchecked - the three suggested options are just almost always selected in all guides to this - _lua_ enables [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) scripting for the transmitter, _sqt5font_ is an alternative font that many people prefer and _massstorage_ means that your Taranis looks like a USB drive when it's plugged into your computer via a USB cable.
 
 Update: I tried the firmware with _sqt5font_ ticked and with it unticked and didn't see any difference in the transmitter's font so perhaps this setting is irrelevant for the Q X7 - I don't have _sqt5font_ selected anymore.
 
