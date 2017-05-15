@@ -1,59 +1,47 @@
-Electronics
-===========
+Receiver
+========
 
-Now that we've got the transmitter and receiver setup we can connect up all the electronics (except the battery, ESCs and motors) and then connect everything to a laptop or PC via USB and set things up and experiment a bit without having to put together the full drone.
+I took a definite decision on all the components that make up this build. The receiver is the only exception - FrSKY produce a number of receivers that are equally suitable for this setup, the the X6R, X8R and RX8R. The X8R is definitely the most popular option, but in all the pictures here you'll see the RX8R. For all intents and purposes the RX8R is identical to the slightly cheaper X8R (only by pairing two RX8R do you get any additional functionality). The X8R and RX8R are physically identical, the X6R looks a bit different (in particular its S.BUS port isn't separated off from the servo outputs, see this [diagram](http://www.frsky-rc.com/product/images/pic/1470986872.png)) but it's just as suitable.
 
-The Pixhawk comes with a number of parts (shown below) - these include a buzzer, an arming button, a cable for connecting the receiver (bottom left), a micro SD card and a USB cable. There's also an SD card adapter and two other cables that aren't of immediate use.
+I bought the RX8R because the X8R was out of stock at the online store I used. In the text here I always refer to X8R (as that's what I recommend to buy) but when downloading firmware etc. make sure to get the firmware appropriate for your receiver, be it an X6R, X8R or RX8R.
 
-Initially we'll just wire up the Pixhawk, arming button, buzzer and the GPS (and compass) module.
-
-_Pixhawk and accompanying parts._  
-<img height="256" src="images/assembly/electronics/pixhawk-parts.jpg">
-
-_GPS (and compass) module._  
-<img height="256" src="images/assembly/electronics/gps-and-compass.jpg">
-
-The style of connectors used by the Pixhawk and the components that connect to it (with the exception of the receiver) are horrible. I've come across them before in electronics projects - they're designed for production setups where it's not envisaged that a given connection will ever be unplugged again once connected, i.e. they're not very hobbyist friendly. It's no wonder that in the video [introducing the Pixracer](https://www.youtube.com/watch?v=mpb6Cq023N8&feature=youtu.be&t=62) that they say the best thing about it is that they've switched to a nicer style of connector (as has the Pixhawk 2.1). The downside of changing the connector type of course is that one then has to change the awful-but-standard connectors on all components one wants to connect.
-
-_Pixhawk wired up (without receiver)._  
-<img height="256" src="images/assembly/electronics/pixhawk-wired-up-without-receiver.jpg">
-
-Note: initially I mistook the _GPS_ label as labelling the socket above it and accidentally plugged the GPS into the _SERIAL 4/5_ socket.
-
-When initially attempting to plug in the buzzer etc. I found the connectors so unwilling to go in that I wondered if I was really supposed to apply near board breaking pressure to just force them in. The answer is no - instead for each connector I repeatedly waggled it in and out until everything engaged nicely enough that it was then possible to force the connector in fully. This required a reasonable amount of force, with my thumbnails to the edges of the connector, but not too much.
-
-Once this is done inserting the SD card is altogether more pleasant. There is enough open space beyond the slot in the case that it's possible to push the SD card in without pushing it into the actual SD card holder. The SD card holder is spring loaded so it's fairly obvious once you feel the resistance of the springs. The SD card has to be pushed so far in that I couldn't do it with just my finger nails, I needed to use a small screw driver to press it in the final millimeter or two (if you look closely at the next photo you'll see the SD card is quite far in).
-
-_Pixhawk with microSD card inserted._  
-<img height="256" src="images/assembly/electronics/pixhawk-with-sd-card-inserted.jpg">
-
-Note: the SD card comes competely blank and is just used for storage (logs, waypoint data etc.), it does not contain the Pixhawk flight controller software - this is flashed to 2MB of non-removable internal RAM.
-
-The receiver
-------------
-
-The final step (at this point) is to connect the receiver to the Pixhawk.  I was surprised how hard it was to find clear instructions on connecting the X8R receiver to the Pixhawk - it's trivial once you know how but still I didn't find anything that just plainly told you which set of three pins at the end of the Pixhawk to use and which port on the receiver to use.
-
-The best I found was this [video starting at the 21 second mark](https://www.youtube.com/watch?v=uCcVCM7ajNA&feature=youtu.be&t=21). **Important:** when he plugs the connector into the X8R he plugs in the cable such that the white wire (signal) is on the left and black (ground) is on the right, which is correct, but he clearly says "the signal is on the right side" which is incorrect. In the video he just comments that we use the column of pins on the Pixhawk labelled RC and not the one labelled SB (for S.BUS) but doesn't explain why. The SB labelled pins are meant for S.BUS output, not for taking receiver input (whether in S.BUS format or not).
-
-In the end it's all very simple and shown clearly in the following pictures.
-
-_Receiver cable plugged into Pixhawk._  
-<img height="256" src="images/assembly/electronics/pixhawk-to-receiver-1.jpg"> <img height="256" src="images/assembly/electronics/pixhawk-to-receiver-2.jpg">
-
-_Receiver cable plugged into receiver._  
-<img height="256" src="images/assembly/electronics/receiver-to-pixhawk.jpg">
-
-You can confirm you've got the wiring right from the little graphics on both the X8R and the Pixhawk. On the top of X8R you see two little graphics representing the two S.BUS ports, one labelled RX IN and the other SBUS OUT. The cable is plugged into the SBUS OUT port - the little graphic, shaped like the port, contains a minus, a plus and a little square wave symbol, for ground, power and signal respectively, showing you which pin is which. On the Pixhawk right at the end of the three rows of pins similarly you see the labels minus, plus and S.
-
-So for the Pixhawk you plug this cable into the very first column of pins (labelled RC) with the black wire at the top, red in the middle and white at the bottom. Black is ground, red is power and white is signal. For the receiver you plug the cable into the lower right S.BUS port with white (signal) to the left.
-
-Pixhawk fully wired up
+Upgrading the receiver
 ----------------------
 
-Now the Pixhawk is wired up and ready to be connected to a computer.
+With other receivers such as the D4R-II there are [warnings](https://pixhawk.org/peripherals/radio-control/frsky#parts_list) that the receiver must be upgraded before use with the Pixhawk. I've found no such warning for the receivers like the X8R but it makes sense to make sure your receiver is using the latest firmware.
 
-_Pixhawk wired up (with receiver)._  
-<img height="256" src="images/assembly/electronics/pixhawk-wired-up-with-receiver.jpg">
+You can upgrade the receiver via the transmitter - this is much simpler than upgrading it via a computer (and requires no special cables) and is much simpler with the Taranis Q X7 than with the older X9D+. Unlike the older X9D+ the Q X7 comes with a smart port, so it can be connected directly to the receiver with a standard cable.
 
-TODO: note that I initially connected the Pixhawk to one of the higher ampage capable ports on a powered hub but, for whatever reason, this didn't work and that the whole system ran without issue off my laptop USB port - use USB power meter to measure how many amps it draws.
+Note: I documented upgrading the receiver via a computer [here](receiver-windows-upgrade.md) but I think using the transmitter, as outlined here, is the simpler approach.
+
+Your Pixhawk should have come with various cables - one of which is a standard servo cable that should look like this:
+
+_Standard servo cable._  
+<img width="256" src="images/assembly/receiver/servo-cable.jpg">
+
+Later we'll use this to connect the receiver to the Pixhawk but here we'll use it to connect the Q X7 to the receiver.
+
+The process of upgrading the receiver is almost identical to upgrading the internal XJT module on the transmitter - the main difference just being that we have to connect the receiver to the transmitter first.
+
+So as before go to [download](http://www.frsky-rc.com/download/) on the FrSKY site, select Firmware, then select Receivers (from the dropdown) and then select the X8R.
+
+Important: the latest RX8R firmware zip file includes both EU and US `.frk` files, while for the X8R the latest zip file just contains `LBT`, i.e. EU, firmware - you have to look down the version history for the last firmware relevant to the US.
+
+So click on Download (or select the last firmware suitable for your jurisdication) and extract the resulting zip file, if it contains two `.frk` files then just choose the one suitable for you (the one with `LBT` in the name is for the EU and the other is for the US).
+
+Now start you're transmitter in bootloader mode, connect it to the computer - the transmitter's SD card should appear as a USB drive, copy the appropriate `.frk` file to the `FIRMWARE` directory there.
+
+Eject the transmitter's drives on your computer and disconnect and turn off the transmitter. Now we're going to connect up the transmitter to the receiver as shown here using the servo cable. The servo cable won't prevent you plugging things in incorrectly - if you connect ground on one side to signal on the other you will probably fry your receiver. So double check the connections on both receiver and transmitter, the black wire (ground) should always be furthest away from the little extra notch you see on one side of the S.BUS sockets.
+
+_Q X7 connected to receiver_  
+<img height="256" src="images/assembly/receiver/taranis-q-x7-to-receiver.jpg">
+
+_Q X7 connection closeup_  
+<img height="256" src="images/assembly/receiver/taranis-q-x7-connection.jpg">
+
+_Receiver connection closeup_  
+<img height="256" src="images/assembly/receiver/receiver-connection.jpg">
+
+Now that the receiver is connected, turn it on in normal mode, navigate to the `FIRMWARE` directory. Select the right firmware (don't mix it up with the XJT module firmware that you might also have there), it should be called something like `X8R_LBT_build151118.frk`, select ENTER and this time select _Flash ext. device_.
+
+You'll see a progress bar indicating that it's being written, once successfully completed it'll just return to the SD card screen. Turn off the transmitter and disconnect the now upgraded receiver.
