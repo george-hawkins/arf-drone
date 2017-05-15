@@ -1,6 +1,8 @@
 The transmitter
 ===============
 
+TODO: add italics around menu options and the like.
+
 It came as a bit of a surprise to me that, initially at any rate, the transmitter rather than the flight controller was the hardest thing to understand. This page is the longest of the steps covering the quadcopter build - don't let it intimidate you, everything afterward will be much simpler!
 
 If you're new to the whole field, as I was, then the small folded black and white manual that comes with the Taranis Q X7 is impressively unhelpful (and it's not one of those cases where the manufacturer makes the real manual available online).
@@ -191,7 +193,10 @@ Now if you go to "radio setup" (see how above) and then press PAGE to get to the
 
 If you turn off the transmitter, restart it in bootloader mode and connect to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined above). One is the Taranis drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
 
-Note: once after setting up the SD card the bootloader froze in the same fashion as described [here](http://openrcforums.com/forum/viewtopic.php?t=8882). I didn't pull a battery to turn if off - I'd pressed power for a long time and then left the transmitter alone and eventually it turned itself off. I don't know if this was related to adding the SD card and the transmitter successfully entered bootloader mode the next time I tried.
+Notes:
+
+* Once after setting up the SD card the bootloader froze in the same fashion as described [here](http://openrcforums.com/forum/viewtopic.php?t=8882). I didn't pull a battery to turn if off - I'd pressed power for a long time and then left the transmitter alone and eventually it turned itself off. I don't know if this was related to adding the SD card and the transmitter successfully entered bootloader mode the next time I tried.
+* Don't try to use a blank SD card with the transmitter. I tried this initially - I put the transmitter into bootloader and just wanted to use its _Write Firmware_ option to backup the firmware to a blank SD card. But this just results in the mildly cryptic error "No directory found" - OpenTX and its bootloader expects the directory structure seen above, i.e. `FIRMWARE` etc.
 
 Radio upgrade
 -------------
@@ -210,7 +215,9 @@ If you can see you're transmitters SD card via USB connection as described above
 
 Once you've disconnected USB (or reinsterted the SD card) restart the transmitter in normal mode and navigate to the contents of the SD card (as described above). Navigate to `FIRMWARE` and select the `.frk` file that you just copied on (it should have a name like `XJT_LBT_build161214.frk` or the same without `LBT` for the US). Select it and press ENTER, i.e. press the dial, You should see a popup with various options - select _Flash int module_ and you should see a progress bar indicating that it's being written.
 
-Oddly the process just finishes without any confirmation (presumably if there was a problem it would have told you) and there appears to be no way to query the XJT firmware version via OpenTX - you just have to trust that it's been done (I've confirmed this on the [OpenTX chat channel](https://opentx.rocket.chat/channel/OpenTX_General?msg=mszoW8QwiAirmFfvy)).
+Oddly the process just finishes without any confirmation (if there had been a problem though it would have told you) and there appears to be no way to query the XJT firmware version via OpenTX - you just have to trust that it's been done (I've confirmed this on the [OpenTX chat channel](https://opentx.rocket.chat/channel/OpenTX_General?msg=mszoW8QwiAirmFfvy)).
+
+Note: the version history section on the XJT module page only goes up to 23rd Dec 2015, however the notes above refer to version 61214 which came out late 2016. The main download button downloads the latest version, i.e. 61214 as the time of writing.
 
 Wrap up
 -------
