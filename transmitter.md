@@ -16,7 +16,7 @@ So we've got the on button, the other immediately important things are either si
 _Q X7 LCD, buttons and dial_  
 <img width="512" src="images/assembly/transmitter/taranis-q-x7-lcd-and-input.png">
 
-What about all the other switches etc. do? At each of the upper corners we've got a set of three switches, then between them we've got two knobs (called pots), then two joysticks (always just called sticks) and finally above the LCD and between the sticks a set of four 2-way momentary switches. What do these all do? The odd answer is they don't have any inherent meaning - but we'll get to that soon.
+What about all the other switches etc. do? At each of the upper corners we've got a set of three switches, then between them we've got two knobs (called pots), then two joysticks (always just called sticks) and finally, above the LCD and between the sticks, a set of four 2-way momentary switches (that together are referred to as digital trim). What do these all do? The odd answer is they don't have any inherent meaning - but we'll get to that soon.
 
 The only important thing for the moment is that the switches have names (SA, SB, SC, SD, SF and SH) as do the pots (S1 and S2) and that (initially at least) up/down on the left stick is the throttle (pull it all the way down and the throttle is at zero). The stick directions also have names - J1 to J4.
 
