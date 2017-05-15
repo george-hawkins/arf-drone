@@ -34,13 +34,13 @@ Now start you're transmitter in bootloader mode, connect it to the computer - th
 Eject the transmitter's drives on your computer and disconnect and turn off the transmitter. Now we're going to connect up the transmitter to the receiver as shown here using the servo cable. The servo cable won't prevent you plugging things in incorrectly - if you connect ground on one side to signal on the other you will probably fry your receiver. So double check the connections on both receiver and transmitter, the black wire (ground) should always be furthest away from the little extra notch you see on one side of the S.BUS sockets.
 
 _Q X7 connected to receiver_  
-<img width="256" src="images/assembly/receiver/taranis-q-x7-to-receiver.jpg">
+<img height="256" src="images/assembly/receiver/taranis-q-x7-to-receiver.jpg">
 
 _Q X7 connection closeup_  
-<img width="256" src="images/assembly/receiver/taranis-q-x7-connection.jpg">
+<img height="256" src="images/assembly/receiver/taranis-q-x7-connection.jpg">
 
 _Receiver connection closeup_  
-<img width="256" src="images/assembly/receiver/receiver-connection.jpg">
+<img height="256" src="images/assembly/receiver/receiver-connection.jpg">
 
 Now that the receiver is connected, turn it on in normal mode, navigate to the `FIRMWARE` directory. Select the right firmware (don't mix it up with the XJT module firmware that you might also have there), it should be called something like `X8R_LBT_build151118.frk`, select ENTER and this time select _Flash ext. device_.
 
