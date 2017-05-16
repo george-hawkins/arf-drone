@@ -1,7 +1,7 @@
 Receiver
 ========
 
-I took a definite decision on all the components that make up this build. The receiver is the only exception - FrSKY produce a number of receivers that are equally suitable for this setup, the the X6R, X8R and RX8R. The X8R is definitely the most popular option, but in all the pictures here you'll see the RX8R. For all intents and purposes the RX8R is identical to the slightly cheaper X8R (only by pairing two RX8R do you get any additional functionality). The X8R and RX8R are physically identical, the X6R looks a bit different (in particular its S.BUS port isn't separated off from the servo outputs, see this [diagram](http://www.frsky-rc.com/product/images/pic/1470986872.png)) but it's just as suitable.
+I took a definite decision on all the components that make up this build. The receiver is the only exception - FrSKY produce a number of receivers that are equally suitable for this setup, the X6R, X8R and RX8R. The X8R is definitely the most popular option, but in all the pictures here you'll see the RX8R. For all intents and purposes the RX8R is identical to the slightly cheaper X8R (only by pairing two RX8R do you get any additional functionality). While the X8R and RX8R are physically identical, the X6R looks a bit different (in particular its S.BUS port isn't separated off from the servo outputs, see this [diagram](http://www.frsky-rc.com/product/images/pic/1470986872.png)) but it's just as suitable.
 
 I bought the RX8R only because the X8R was out of stock at the online store I used. In the text here I always refer to the X8R (as that's what I recommend to buy) but when downloading firmware etc. make sure to get the firmware appropriate for your receiver, be it an X6R, X8R or RX8R.
 
