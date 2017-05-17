@@ -1,3 +1,8 @@
+Pages and videos
+================
+
+TODO: move initial website recommendations from README to here.
+
 Watching videos is much more bearable if you double the speed - a feature that someone else only recently pointed out to me. Click on the video's settings cog and change the speed.
 
 ---
