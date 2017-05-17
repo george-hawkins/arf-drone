@@ -264,3 +264,57 @@ Batteries:
 
 * [Battery anatomy and plugging in your battery alarm](http://learn.trossenrobotics.com/index.php/getting-started-with-the-arbotix/11-lipo-battery-guide).
 * [Batteries in-depth, including the 80% rule](http://www.rchelicopterfun.com/rc-lipo-batteries.html).
+
+---
+
+Unsorted URLs already used in the other pages:
+
+* http://ardupilot.org/copter/docs/build-your-own-multicopter.html
+* http://ardupilot.org/dev/docs/apmcopter-code-overview.html
+* http://px4.io/docs/px4-basic-concepts/
+* https://github.com/ArduPilot/ardupilot
+* https://github.com/PX4/Firmware/
+* http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html
+* http://blog.dronetrest.com/taranis-x9d-or-taranis-q-x7-which-is-better-to-buy/
+* https://pixhawk.org/peripherals/telemetry/frsky
+* https://pixhawk.org/peripherals/radio-control/frsky
+* https://pixhawk.org/peripherals/radio-control/frsky#receivers
+* https://pixhawk.org/peripherals/radio-control/frsky#parts_list - D4R-II warning
+* http://www.dronetrest.com/t/everything-you-need-to-know-about-lipo-battery-chargers/1326
+* https://oscarliang.com/taranis-q-x7-tx/
+* http://open-txu.org/home/undergraduate-courses/fund-of-opentx/using-zadig/
+* http://www.open-tx.org/
+* https://oscarliang.com/flash-opentx-firmware-taranis/
+* https://www.youtube.com/watch?v=q1D-LEfDprk&feature=youtu.be&t=179
+* http://www.frsky-rc.com/download/
+* http://www.frsky-rc.com/media/mediaItem.php?m_id=17
+* http://ardupilot.org/copter/docs/flight-modes.html
+* https://opentx.gitbooks.io/manual-for-opentx-2-2/content/
+* http://openrcforums.com/forum/viewtopic.php?f=45&t=8724
+* http://open-txu.org/home/undergraduate-courses/
+* http://ardupilot.org/copter/docs/common-mounting-the-flight-controller.html#standard-orientation
+* http://www.dji.com/flame-wheel-arf/feature
+* http://store.dji.com/product/e305-4
+* http://www.dji.com/products/tuned-propulsion-system
+* https://www.rcgroups.com/forums/showthread.php?2456770-Review-DJI-E305-Tuned-Propulsion-System
+* http://store.dji.com/product/2312e-motor-800kv-cw
+* http://www.rcuniverse.com/forum/rc-car-general-discussions-179/11586761-everything-you-need-know-about-lipo-batteries.html
+* http://thedronegirl.com/2015/02/07/lipo-battery/
+* http://www.tjinguytech.com/charging-how-tos/balance-connectors
+* https://pixhawk.org/modules/stm32f4discovery
+* https://bitbucket.org/nuttx/boards/src/master/stm32f429i-disco/
+* http://www.nuttx.org/Documentation/NuttX.html#stm32f429x
+* http://www.mjoldfield.com/atelier/2015/04/stm32-development.html
+* https://github.com/PX4-NuttX
+* https://github.com/PX4/homebrew-px4
+* http://www.proficnc.com/content/13-pixhawk2
+* https://pixhawk.ethz.ch/software/imu/sd_card
+* https://oscarliang.com/choose-rc-transmitter-quadcopter/#modes
+* http://newatlas.com/drone-school-quadcopter-transmitter-mode-1-2/40847/
+* https://www.wearechampionmag.com/quadcopter-transmitter-mode2-vs-mode1-difference
+* https://dronebuff.com/drone-controller/
+* https://www.youtube.com/watch?v=Nk2h06Ql3cM
+* https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=498
+* https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=291
+* https://www.youtube.com/watch?v=yF8jrkYJ7nA&feature=youtu.be&t=22
+* http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/
