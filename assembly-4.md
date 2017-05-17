@@ -15,6 +15,8 @@ _GPS (and compass) module._
 
 The style of connectors used by the Pixhawk and the components that connect to it (with the exception of the receiver) are horrible. I've come across them before in electronics projects - they're designed for production setups where it's not envisaged that a given connection will ever be unplugged again once connected, i.e. they're not very hobbyist friendly. It's no wonder that in the video [introducing the Pixracer](https://www.youtube.com/watch?v=mpb6Cq023N8&feature=youtu.be&t=62) that they say the best thing about it is that they've switched to a nicer style of connector (as has the Pixhawk 2.1). The downside of changing the connector type of course is that one then has to change the awful-but-standard connectors on all components one wants to connect.
 
+Note: in [this video](https://www.youtube.com/watch?v=Kfu8M8t2fWY) from the ETH Pixhawk group it all looks so easy.
+
 _Pixhawk wired up (without receiver)._  
 <img height="256" src="images/assembly/electronics/pixhawk-wired-up-without-receiver.jpg">
 

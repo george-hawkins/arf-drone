@@ -44,6 +44,10 @@ This is an excellent overview of the Q X7. It covers [disabling self centering a
 
 ---
 
+OpenTX splash screens suitable for the [Q X7](http://www.open-tx.org/screens-9x.html) that are much less exciting than [those](http://www.open-tx.org/screens-taranis.html) for the X9D+ (note the Q X7 doesn't support [model images](http://www.open-tx.org/icons-taranis.html)).
+
+---
+
 The Painless360 Pixhawk series:
 
 * https://www.youtube.com/watch?v=uH2iCRA9G7k
@@ -58,6 +62,11 @@ DJI videos:
 
 Note: according to one of the comments the "video shows the base plate being mounted sideways. If you want to mount a front facing camera gimbal you should mount the base plate the other way." And someone else comments that "she moves the solder around with the iron and that means there is too little heat and the cable should be still until the solder has gotten hard again ... give a little more heat and hold it still a little longer after removing the heat! Better to use a more powerful soldering iron, then the time to heat it up is less and the heat doesn't go that deep in the board and the conector."
 
+DJI user manual PDFs:
+
+* [F450 assembly](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) - inclused soldering on ESCs.
+* [E305 assembly](http://dl.djicdn.com/downloads/e305/en/E305_User_Manual_v1.00_en.pdf).
+
 DJI wiki:
 
 * [F450 assembly](http://wiki.dji.com/en/index.php/Flame_Wheel_F450_Assembly)
@@ -70,6 +79,17 @@ Assembling the F450 videos:
 * [From Marionville Models](https://www.youtube.com/watch?v=ER2GxMo0X3E).
 
 * [Nice RCGroups E305 review](https://www.rcgroups.com/forums/showthread.php?2456770-Review-DJI-E305-Tuned-Propulsion-System) - includes lots of pictures and wiring things up to the an F450 frame.
+
+Assembly pages:
+
+* [F450 as assembly example](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) on pixhawk.org.
+* [F450 as assembly example](http://ardupilot.org/copter/docs/dji-f330-flamewheel.html) on ardupilot.org.
+* [Similar thorough walkthru on Quadcopters are Fun](http://quadcoptersarefun.com/2FlamewheelsBuild.html) - uses older PX4 board.
+* [A much less thorough walkthru using the old APM FC](http://diydrones.com/profiles/blogs/using-a-dji-450-flamewheel-quadcopter-with-the-apm) on DIYDrones.
+
+Note: at least one of these builds uses a BEC - this is not necessary for my setup according to [this thread](http://diydrones.com/forum/topics/new-pixhawk-with-dji-f450-kit-motors-beeping) (search for BEC).
+
+Might be nice to ask about BECs on DroneTrest, referencing the above DIYDrones thread and this old old [thread](http://www.dronetrest.com/t/what-kit-do-i-need-for-a-diy-quadcopter-using-the-pixhawk-platform/2168) on their own site.
 
 ---
 
@@ -104,7 +124,16 @@ The parst covering wiring up the Pixhawk:
 
 Wiring up telemetry (shows ArduPilot at least prefer the X6R and X8R over earlier models like the D4R-II):
 
-* http://ardupilot.org/copter/docs/common-frsky-telemetry.html
+* [Telemetry wire for FrSKY receivers](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) plus setup in Mission Planner, OpenTX Companion and on the Taranis (probably a better source than the X8R, but non-Pixhawk specific, Blue Falcon video linked to elsewhere).
+
+The pixhawk.org page on [wiring up telemetry for the D4R-II](https://pixhawk.org/peripherals/telemetry/frsky), note they point non-developers to the uninformative [telemetry page](https://docs.px4.io/en/peripherals/frsky_telemetry.html) in the new user manual (by way of an old archived user manual site).
+
+[ArduPilot GPS wiring up](http://ardupilot.org/copter/docs/common-installing-3dr-ublox-gps-compass-module.html) - not that interesting wiring-wise but covers why you'd use a mast and covers the LEDs - red for power and flashing blue for GPS lock.
+
+Pixhawk.org [overview of the Pixhawk](https://pixhawk.org/modules/pixhawk#specifications) - it's sensors, interfaces etc.
+A very similar [overview](http://ardupilot.org/copter/docs/common-pixhawk-overview.html) from ArduPilot.
+
+Setting up [waypoints in Mission Planner](http://ardupilot.org/copter/docs/common-planning-a-mission-with-waypoints-and-events.html#common-planning-a-mission-with-waypoints-and-events).
 
 ---
 
@@ -112,6 +141,8 @@ The developer guides:
 
 * [The PX4 guide](https://dev.px4.io/en/).
 * [The ArduPilot guide](http://ardupilot.org/dev/).
+
+Note: the PX4 guide covers lots of things that are of interest to an audience beyond core flight controller developers, just look down the TOC - there's lots of high level general information, sections on flight controllers and airframes, tutorials on things like video streaming.
 
 ---
 
@@ -140,6 +171,8 @@ Antenna placement:
 
 Note: the intention with holder seems to be that the antenna will point upwards - this seems to maximize the changce that the copter body will come between antenna and transmitter but perhaps this is irrelevant if the body is essentially transparent (thought 2.4GHz in general has poor propagation through walls etc.). Mounting it upwards on an arm will bring it closer to the GPS - I don't think this should be an issue - the receiver and the GPS operate on completely different frequencies.
 
+[Antenna mount](https://www.unmannedtechshop.co.uk/pcb-antenna-mount-for-x8r-l9r-v2/) on Unmanned Tech.
+
 ---
 
 Arduino and receiver:
@@ -154,6 +187,18 @@ Building the necessary S.BUS inverter - [video](https://oscarliang.com/ctt/uploa
 
 ---
 
+Camera mounts:
+
+* [Simple F450 GoPro mount](http://www.thingiverse.com/thing:470945)
+* [Multipart GoPro mount](http://www.thingiverse.com/thing:2094289)
+* [Anti-jello GoPro mount](http://www.thingiverse.com/thing:92014/#remixes) and an [F450 remix](http://www.thingiverse.com/thing:246168/#files) (crudely done - why do his mounting "squares" protrude into the cetral space?).
+
+I added some of these, plug a couple of gimbal protectors so my Shapeways models:
+
+* https://www.shapeways.com/mymodels
+
+---
+
 Misc links:
 
 * 1S Paraboard for charging 1S batteries - https://hobbyking.com/en_us/micro-paraboard-micro-jst-jst-ph-connectors.html
@@ -161,6 +206,10 @@ Misc links:
 
 * [ArduPilot Mission Planner documentation](http://ardupilot.org/planner/docs/common-install-mission-planner.html)
 * [Mission Planner downloads](http://firmware.eu.ardupilot.org/Tools/MissionPlanner/)
+
+* [QGroundControl](https://docs.qgroundcontrol.com/en/).
+
+* [DroneCode](https://www.dronecode.org/dronecode-software-platform) - a body involved in coordinating between lots of teams, including the PX4 team, and used to also include ArduPilot until they [parted ways](http://discuss.ardupilot.org/t/ardupilot-and-dronecode/11295) (for reasons that sound understandable, at least the way ArduPilot tell it).
 
 * [Setup VirtualBox to grab USB device before something on host does](https://forums.virtualbox.org/viewtopic.php?f=8&t=54008)
 
