@@ -127,6 +127,8 @@ So go to settings (the cog icon), change the radio type to _FrSky Taranis X7_ an
 
 Update: I tried the firmware with _sqt5font_ ticked and with it unticked and didn't see any difference in the transmitter's font so perhaps this setting is irrelevant for the Q X7 - I don't have _sqt5font_ selected anymore.
 
+Note: while you might never use Lua scripting it is used in some standard operations such as the new model setup wizard (that currently is only available if using the older X9D+ but isn't supported yet for the Q X7).
+
 For a more detailed walkthru of these basic settings see Oscar Liang's [walkthru](https://oscarliang.com/flash-opentx-firmware-taranis/), just jump down to the "Firmware Download and Flashing" section. Note that he's setting things up for a Taranis X9D+ and that he turns off _massstorage_ (as a side effect of having it enabled is not being able to use the transmitter with simulators, something I've never tried). Also this [video from the 179 second mark](https://www.youtube.com/watch?v=q1D-LEfDprk&feature=youtu.be&t=179) covers the same thing for the Q X7.
 
 Backup
