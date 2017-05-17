@@ -63,3 +63,5 @@ Initially I was worriend that the whole setup would need more power than a lapto
 ### Device drivers
 
 On Linux and Mac you don't have to worry about device drivers - on Windows though you need to have the appropriate driver installed before hand. Luckily installing [Mission Planner](http://ardupilot.org/planner/docs/common-install-mission-planner.html) takes care of this for you - it actually installs a newer Pixhawk driver version than the one available from the pixhawk.org site (for more details see [`pixhawk-driver.md`](pixhawk-driver.md)).
+
+On Windows [QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html) also installs the appropriate Pixhawk device driver as part of its installation process - however it installs the same older version as on the pixhawk.org site (this at least is the case in version 3.1.3). As noted on Linux and Mac drivers are a non-issue.

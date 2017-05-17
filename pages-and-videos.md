@@ -57,6 +57,8 @@ The Painless360 Pixhawk series:
 
 * https://www.youtube.com/watch?v=uH2iCRA9G7k
 
+Note: in the common power options the only immediatelly relevant bit is at [1:13](https://www.youtube.com/watch?v=DKK0jms402Q&feature=youtu.be&t=73) where he briefly shows configuring a low voltage warning in Mission Planner.
+
 ---
 
 DJI videos:
@@ -95,6 +97,8 @@ Assembly pages:
 Note: at least one of these builds uses a BEC - this is not necessary for my setup according to [this thread](http://diydrones.com/forum/topics/new-pixhawk-with-dji-f450-kit-motors-beeping) (search for BEC).
 
 Might be nice to ask about BECs on DroneTrest, referencing the above DIYDrones thread and this old old [thread](http://www.dronetrest.com/t/what-kit-do-i-need-for-a-diy-quadcopter-using-the-pixhawk-platform/2168) on their own site.
+
+Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t=437) on power options it does look like you don't need a BEC unless you're planning to run e.g. landing gear or camera gimbal servos directly from the Pixhawk, for the ESCs it's not necessary (unless they expect to see 5V on their power lines - which as noted elsewhere I don't think the 420S Lites even have).
 
 ---
 
