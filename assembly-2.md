@@ -57,7 +57,9 @@ It turns out the transmitter is actually a fairly general purpose computer. It h
 
 So actually there are two distinct groups of controls - the sticks, mechanical switches etc. and the controls either side of the LCD that are for the OS.
 
-The transmitter simply transmits the state of the sticks etc. to the drone. On a quadcopter the state of the sticks will be communicated to the flight controller and it will decide how to change the speed of the various motors to achieve the desired action, e.g. drift left. On a classic remote control plane there might be no flight controller and the receiver will directly drive various servos, e.g. the position of one stick will control the position of the aileron and other the position of the rudder.
+The transmitter simply transmits the state of the sticks etc. to the drone. On a quadcopter the state of the sticks will be communicated to the flight controller and it will decide how to change the speed of the various motors to achieve the desired action, e.g. drift left. On a classic remote control plane there might be no flight controller and the receiver will directly drive various [servos](https://learn.sparkfun.com/tutorials/hobby-servo-tutorial), e.g. mildlythe position of one stick will control the position of the aileron and other the position of the rudder.
+
+TODO: should I ask someone, e.g. Henrik, to pick out terms that some geeks might not get, e.g. if they'd done no electronics, like "servo". Probably I should just rely on people not being too stupid to be able to Google.
 
 The important thing is that it's up to the drone to give meaning to the state of the sticks etc. The wiring of the receiver and servos or the configuration of the flight controller determines whether the moving the left stick up and down controls the throttle or something else entirely.
 
