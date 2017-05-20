@@ -17,6 +17,7 @@ Purchase order
 * GBP 2.75 - Hook and loop velcro straps - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
 * GBP 1.75 - Mounting foam - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
 * GBP 4.50 - LiPo safety bag - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
+* USD 20 - Telemetry cable ([Craft and Theory US](http://www.craftandtheoryllc.com/product/frsky-x6r-x8r-flvss-telemetry-cable-for-pixhawk/)) (select the "Pixhawk - Servo" version).
 * Fr. 26 - F450 frame - ([AEROdron CH](https://www.estore.ch/flying-platforms/flame-wheel/1304/flame-wheel-f450)).
 * Fr. 160 - E305 propulsion system - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)).
 * Fr. 8 - Spare propellars - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1349/e305-9450-self-tightening-rotor-composite-hub-white-with-silver-stripes?number=FE0014)).
@@ -25,6 +26,8 @@ Purchase order
 * Fr. 50 - S60 LiPo charger - ([Brack CH](https://www.brack.ch/skyrc-s60-366689)).
 * Fr. 8 - T-plug charger cable - ([Brack CH](https://www.brack.ch/ep-ladekabel-deans-247074)).
 * 2 x Fr. 40 - LiPo 3300mAh 4S1P 14.8V 25C battery - ([Brack CH](https://www.brack.ch/gens-ace-lipo-akku-3300mah-234057)).
+
+TODO: remove FUC-3 and TTL-to-RS232 converter (here and on parts page) and comment that they're more widely available than the Craft and Theory cable but using them involves handling the wiring between Pixhawk and converter, between converter and FUC-3 and finally between FUC-3 and receiver yourself. And that the Craft and Theory part arrived reasonably quickly (for economy international shipping they state 2 to 6 weeks but I got mine in XXX). They also have a [UK distributor](https://www.3dxr.co.uk/product/craft-theory-telemetry-cable/) (but the cheapest international shipping option from UK distributor is GBP 20 vs just USD 5 from the US site).
 
 Minor parts:
 
