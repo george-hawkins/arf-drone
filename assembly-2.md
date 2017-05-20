@@ -207,7 +207,11 @@ Here I setup the initial contents of the SD card on my computer before putting i
 XJT module upgrade
 -------------
 
-The internal XJT module is the hardware within the transmitter that communicates with the receiver on your drone, i.e. the XJT module is the core radio hardware. I don't think XJT means - it's probably just a meaningless FrSKY product identifier. Now that we've upgraded we've upgraded the OpenTX and its bootloader the last step is to upgrade the XJT module.
+The internal XJT module is the hardware within the transmitter that communicates with the receiver on your drone, i.e. the XJT module is the core radio hardware.
+
+Aside: I don't know what XJT stands for though I'd make a wild guess that the X indicates the FrSKY X series, the J is for [JR](http://www.jramericas.com/) and T is for telemetry - i.e. an XJT module is an FrSKY X series telemetry module for use with JR compatible devices. The X series is FrSKY's S.BUS based range (the older D series, that includes models like the D4R-II, is PPM based). For a summary of receiver technologies (PWM, PPM etc.) see this [video](https://www.youtube.com/watch?v=GbUMC8h2uhU) from Painless360.
+
+I don't think XJT means - it's probably just a meaningless FrSKY product identifier. Now that we've upgraded we've upgraded the OpenTX and its bootloader the last step is to upgrade the XJT module.
 
 Go to [_Download_](http://www.frsky-rc.com/download/) on the FrSKY site, select _Firmware_, then select _Tx Modules_ (from the dropdown) and click on _Firmware-XJT_ - the picture shows an external XJT module but if you look at the compatibility list you'll see that it's also appropriate for the Taranis Q X7 and other transmitters where the XJT is the standard internal module.
 
