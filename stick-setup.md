@@ -43,10 +43,25 @@ To disable self centering on the throttle you have to open up the transmitter - 
 
 The whole mechnical mechanism behind a stick is called a gimbal and you often hear people using the terms stick and gimbal interchangeably (though confusingly the term gimbal on its own often means the remote control camera setup that's common on many drones these days - to see the clear distinction between the two see e.g. the [gimbal sticks section](https://hobbyking.com/en_us/radios-receivers-1/parts-accessories/gimbal-sticks-extensions.html) and the [camera gimbals section](https://hobbyking.com/en_us/multi-rotors-drones/camera-gimbals.html) on the HobbyKing online store).
 
-I'm not going to provide instructions on disabling self centering for the throttle, instead I suggest watching these video:
+I'm not going to go in-depth into disabling self centering for the throttle, instead I suggest watching these three videos (each link brings you to the specific point in the video that discusses disabling self centering):
 
-* [Flite Test 8:18](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=498)
 * [Painless360 at 4:51](https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=291)
+* [Flite Test 8:18](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=498)
 * [RCdiy at 0:22](https://www.youtube.com/watch?v=yF8jrkYJ7nA&feature=youtu.be&t=22)
 
-The RCdiy video is accompanied by an excellent [page](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/) that describes the disassembly and provides lots of close up pictures (along with lots of other details on getting the transmitter set up).
+All three videos do things slightly differently. The Painless360 one is the closest to how I did things - however he mixes this step in with removing the battery holder (so he can put in a LiPo instead) which is something I didn't do. Also when removing the back cover he removes two screws that you don't need to remove (the upper left and right screws under the battery cover). Flite Test leave the battery holder connected to the main PCB but, like Painless360, I unplugged it. The whole thing is easy to do but I was a little nervous I'd yank out the wires when unplugging the battery holder or that the screw driver would slip and I'd stab the PCB when tightening the screw that disengages the gimbal spring.
+
+So the steps I took in brief:
+
+* Removed both the battery door and the external module doors from the back cover before starting.
+* Removed the four large Phillips screws holding the back cover on and took it off.
+* Left the battery holder in place but unplugged it from the main PCB.
+* Screwed down (all the way) the lower of the two screws related to the up/down spring arrangement for the left gimbal.
+* Screwed down (all the way) the upper screw of the non-notched bar that provides the friction needed to stop the gimbal just flopping about. I then loosed the screw about half a turn to make the movement a little less stiff.
+* Plugged the battery holder back in and put the back cover back on, taking care to watch out for the pins on the PCB that stick up into the external module bay.
+
+The screw that disengages the gimbal spring is only barely screwed in initially - it actually popped out when I started trying to screw it in. Take care that you don't accidentally rest everything on one switch or gimbal while focusing e.g. on tightening a screw.
+
+In RCdiy's video he removes the battery holder from the back cover - which is unnecessary - and he loosens the upper of two screws related to the up/down spring arrangement rather than the better approach of tightening the lower one. But his video is accompanied by an otherwise excellent [page](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/) that describes the disassembly and provides lots of close up pictures (along with lots of other details on getting the transmitter set up).
+
+Now that the throttle doesn't self center you can leave it pulled down when turning on the transmitter and you'll now longer get any throttle warning when it starts up.
