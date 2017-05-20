@@ -157,7 +157,7 @@ Note: the PX4 guide covers lots of things that are of interest to an audience be
 
 Soldering T-plug:
 
-* https://www.youtube.com/watch?v=opMBIIB6l1M
+* https://www.youtube.com/watch?v=opMBIIB6l1M (black and red wires are mixed up!)
 * https://www.youtube.com/watch?v=3tEBQC-qNE0
 * https://www.youtube.com/watch?v=WtJIrnbl_JI
 
