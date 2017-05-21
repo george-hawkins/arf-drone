@@ -58,7 +58,7 @@ So the steps I took in brief:
 
 * Removed both the battery door and the external module doors from the back cover before starting.
 * Removed the four large Phillips screws holding the back cover on and took it off.
-* Left the battery holder in place but unplugged it from the main PCB.
+* Left the battery holder in place, in the back cover, but unplugged it from the main PCB.
 * Screwed down (all the way) the lower of the two screws related to the up/down spring arrangement for the left gimbal.
 * Screwed down (all the way) the upper screw of the non-notched bar that provides the friction needed to stop the gimbal just flopping about. I then loosed the screw about half a turn to make the movement a little less stiff.
 * Plugged the battery holder back in and put the back cover back on, taking care to watch out for the pins on the PCB that stick up into the external module bay.
