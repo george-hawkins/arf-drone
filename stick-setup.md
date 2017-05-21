@@ -37,7 +37,10 @@ However throttle, i.e. up/down, controls overall power to the propellars - when 
 
 Most people want throttle at zero when they're getting ready for talkoff and then they want it just staying where it is if they take their finger off it.
 
-Aside: older consumer drones used to behave much like this too, at least for the low throttle case. On older DJI models the throttle only self centered if you took your finger off it when it was above the midpoint - on the latest models though the throttle always self centers with the center point meaning "hold current altitude" while up and down mean ascend and descend respectively.
+Aside: older consumer drones used to behave much like this too, at least for the low throttle case. On older DJI models the throttle only self centered if you took your finger off it when it was above the midpoint - on the latest models though the throttle always self centers, with the center point meaning "hold current altitude" while up and down mean ascend and descend respectively.
+
+_Throttle with self centering disabled_
+<img height="256" src="images/assembly/transmitter/throttle-self-centering-disabled.jpg">
 
 To disable self centering on the throttle you have to open up the transmitter - this isn't a big issue, unlike many consumer electronic items that come with strick injunctions against opening them up it's expected that you'll take apart the transmitter (though if you break anything that's still your problem).
 
