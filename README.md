@@ -70,6 +70,7 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 | &euro;5 | <img width="128" src="images/parts/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
 
 TODO: remove FUC-3 and SPC (unless they turn out to be needed for making a telemetry cable to connect receiver and Pixhawk).
+TODO: add [8GB microSD card](https://www.amazon.co.uk/Kingston-8GB-Micro-SD-HC/dp/B001CQT0X4/) for transmitter.
 
 As already noted some minor soldering is required - it's assumed you already have a soldering iron and solder and know how to use them.
 
