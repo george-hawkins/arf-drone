@@ -11,7 +11,7 @@ By far the most common mode is mode 2 and this is the default for the Q X7 so th
 
 If you're interested in the different setups of the different modes see Oscar Liang's description of [modes](https://oscarliang.com/choose-rc-transmitter-quadcopter/#modes) but before you do a note...
 
-The stick directions have names, people who come to quadcopter flying from flying RC planes tend to continue using names that meant something for planes but don't mean little for quadcopters - i.e. aileron, elevator and rudder. For people less wedded to the thinking that went with planes the terms pitch, yaw and roll are used. Both schools use the term throttle.
+The stick directions have names, people who come to quadcopter flying from flying RC planes tend to continue using names that meant something for planes but mean little for quadcopters - i.e. aileron, elevator and rudder. For people less wedded to the thinking that went with planes the terms pitch, yaw and roll are used. Both schools use the term throttle.
 
 If you're new to RC then neither set of terms may mean much so here's a simple table:
 
@@ -22,7 +22,7 @@ If you're new to RC then neither set of terms may mean much so here's a simple t
 | rudder | yaw | turn clockwise or counterclockwise |
 | throttle | throttle | go up or down |
 
-The "term" elevator seems particularly confusing - it doesn't mean up and down as one might guess. Hopefully the distinction between _going_ right and _turning_ clockwise is clear - if you're used to first person shooters then _going_ right is the equivalent of siddling left crabwise while still facing the same direction while _turning_ clockwise means staying put but chaning the direction your facing (turning round to face right, turning further to face back and so on until you do a full 360).
+The "term" elevator seems particularly confusing - it doesn't mean up and down as one might guess. Hopefully the distinction between _going_ right and _turning_ clockwise is clear - if you're used to first person shooters then _going_ right is the equivalent of siddling left crabwise while still facing the same direction while _turning_ clockwise means staying put but changing the direction your facing (turning round to face right, turning further to face back and so on until you do a full 360).
 
 I couldn't find a perfect page showing the use of the terms pitch, roll etc. This [page](http://newatlas.com/drone-school-quadcopter-transmitter-mode-1-2/40847/) clearly labels the sticks for mode 1 and 2 while this [page](https://www.wearechampionmag.com/quadcopter-transmitter-mode2-vs-mode1-difference) shows nicely the affect of the controls on the drone (unfortunately it uses the term roll for forward and backward, as well as left and right, rather than the more common _pitch_ forward and backward).
 
@@ -39,7 +39,7 @@ Most people want throttle at zero when they're getting ready for talkoff and the
 
 Aside: older consumer drones used to behave much like this too, at least for the low throttle case. On older DJI models the throttle only self centered if you took your finger off it when it was above the midpoint - on the latest models though the throttle always self centers, with the center point meaning "hold current altitude" while up and down mean ascend and descend respectively.
 
-_Throttle with self centering disabled_
+_Throttle with self centering disabled_  
 <img height="256" src="images/assembly/transmitter/throttle-self-centering-disabled.jpg">
 
 To disable self centering on the throttle you have to open up the transmitter - this isn't a big issue, unlike many consumer electronic items that come with strick injunctions against opening them up it's expected that you'll take apart the transmitter (though if you break anything that's still your problem).
