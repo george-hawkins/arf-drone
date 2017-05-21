@@ -242,7 +242,7 @@ Notes
 
 If you're really interested the OpenTX project has a lot of documentation - however I'm not sure I'd recommend it, it can be rather overwhelming and some of it is more confusing than helpful. But for reference here's the material either directly produced by or recommended by the OpenTX project:
 
-* [The OpenTX 2.2 manual](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/) - this is probably the most digestable of the items here but it isn't terribly detailed. It is part of the [OpenTX Gitbook collection](https://www.gitbook.com/@opentx) that also includes some Lua related documentation and the OpenTX Taranis manual (which, despite the different seeming name, is nearly identical to the OpenTX 2.2 manual but covers a previous version).
+* [The OpenTX 2.2 manual](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/) - this is probably the most digestable of the items here but it isn't terribly detailed. It is part of the [OpenTX Gitbook collection](https://www.gitbook.com/@opentx) that also includes some Lua related documentation and the OpenTX Taranis manual (which is nearly identical to the OpenTX 2.2 manual but covers a previous version).
 * [The OpenTX 2.1 documentation](http://openrcforums.com/forum/viewtopic.php?f=45&t=8724) - despite the similar name this is a completely different set of documentation, it has far more detail but can be confusing at times.
 * [OpenTX University](http://open-txu.org/home/undergraduate-courses/) - someone has put a lot of work into this but I found it so meandering as to be almost useful - but there is some good information in there.
 
