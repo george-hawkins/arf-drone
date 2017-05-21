@@ -172,7 +172,7 @@ The Q X7 doesn't come with an SD card but we're going to need one to upgrade the
 
 The SD card can store images and sound files that the OpenTX firmware can use and you can backup to the SD card and store firmware updates for the radio (and, as we'll see later, also for the receiver).
 
-You don't need a very big one - the standard set of sound files etc. are only around 37MB and a complete backup takes less than 1MB so a 2GB card would be more than enough. However the smallest card you can buy these days seems to be about 8GB - something like this [Kingston 8GB microSD card](https://www.amazon.co.uk/Kingston-8GB-Micro-SD-HC/dp/B001CQT0X4/).
+You don't need a very big one - the standard set of sound files etc. are only around 37MB and a complete backup takes less than 1MB so a 1GB card would be more than enough. However the smallest card you can buy these days seems to be about 8GB - something like this [Kingston 8GB microSD card](https://www.amazon.co.uk/Kingston-8GB-Micro-SD-HC/dp/B001CQT0X4/).
 
 Go to the same place that you downloaded OpenTX Companion (see above) and just above the links to OpenTX Companion you should find a link to _SDCard content_. Click this and download the latest version shown for the Q X7 (`sdcard-taranis-x7-2.2V0009.zip` at the time of writing).
 
