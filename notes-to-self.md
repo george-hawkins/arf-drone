@@ -8,3 +8,13 @@ To shrink pictures to fit within a 2048x2048 box while maintaining their aspect 
     $ mkdir small
     $ for i in *.jpg; do convert $i -resize 2048x2048\> small/$i; done
 
+To setup screen capture in OpenTX:
+
+* Go to _Model selection_.
+* PAGE to _Special functions_.
+* Use the dial to select a free slot.
+* Press ENTER and then flick e.g. the upper right momentary switch.
+* Press ENTER to confirm this switch.
+* Dial over one to the function, press ENTER and dial down to _Screenshot_ and ENTER to select.
+
+No whenever you flip the momentary switch a screenshot ends up in the SCREENSHOTS directory on the SD card.
