@@ -54,6 +54,8 @@ I'm not going to go in-depth into disabling self centering for the throttle, ins
 
 All three videos do things slightly differently. The Painless360 one is the closest to how I did things - however he mixes this step in with removing the battery holder (so he can put in a LiPo instead) which is something I didn't do. Also when removing the back cover he removes two screws that you don't need to remove (the upper left and right screws under the battery cover). Flite Test leave the battery holder connected to the main PCB but, like Painless360, I unplugged it. The whole thing is easy to do but I was a little nervous I'd yank out the wires when unplugging the battery holder or that the screw driver would slip and I'd stab the PCB when tightening the screw that disengages the gimbal spring.
 
+Note: while the transmitter is opened up in these videos you can take a look at the rest of the internals, not just the gimbals. You'll see things like the little watch battery that will keep the transmitter's clock (called an [RTC](https://en.wikipedia.org/wiki/Real-time_clock)) going even when the main battery compartment is empty.
+
 So the steps I took in brief:
 
 * Removed both the battery door and the external module doors from the back cover before starting.
