@@ -7,55 +7,13 @@ Watching videos is much more bearable if you double the speed - a feature that s
 
 ---
 
-Taranis Q X7 playlist - https://www.youtube.com/playlist?list=PLiYYhnH4BhI-ot9OQ9djvRaacFHboFqC2
-
-Includes:
-
-* Failsafe: no pulses - https://youtu.be/LuJ_K0pOJkE?t=330
-* Binding: https://www.youtube.com/watch?v=RH_RuVbF2YU cf with binding video below.
-* Wiring telemetry: https://youtu.be/WKsFG29Q5mQ - not for Pixhawk but still intesting, zip forward to 8:08 once he gets aways from the receiver and info the flight controller (and then its software).
-* Configuring telemetry: https://www.youtube.com/watch?v=n09q26Gh858
-
-I don't like his throttle de-self-centering video so find another one.
-
-Note: in one of these videos he does use a blank SD card - he never plugs the SD into his own computer. He sets up the initial contents via the USB to the transmitter.
-
-No pulses is the preferred option - see http://ardupilot.org/copter/docs/radio-failsafe.html#receiver-and-flight-controller-set-up
-In their video they setup the failsafe via the receiver - we should do it via the transmitter - but the video shows how to test things - https://youtu.be/FhKREgqjCpM?t=93 - note that I think they've got an ancient PX4 so arming is different.
-
-DroneTrest:
-
-* [Binding video](http://www.dronetrest.com/t/how-to-bind-your-x8r-receiver-to-taranis-x9d/633) cf the video with above, note image shows that you only get max 8 channels out so up above video shouldn't have 1-16 selected.
-
-* They recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner.
-
-Painless360:
-
-* Model setup: https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=170
-* Throttle de-self-centering: https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=291 - jump on to 10:38 once he's done the gibles and see basic OS setup.
-
-Note: you can see there is a backup battery for the RTC.
-
-RCdiy doing same with throttles but also lots of other basic OS setup:
-
-* https://youtu.be/yF8jrkYJ7nA?t=23
-* Accompanying web page: http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/
-
-Long but good indepth overview of the Q X7:
-
-* https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=498
-
-This is an excellent overview of the Q X7. It covers [disabling self centering at 4:19](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=498), [removing the battery holder at 12:14](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=734), [turning it on and interacting with it at 13:27](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=807). The later half of the video is only really relevant if you're flying a plane but it's still interesting to see a setup where the receiver directly controls all the servos rather than just feeding its signal to a flight controller.
-
----
-
 OpenTX splash screens suitable for the [Q X7](http://www.open-tx.org/screens-9x.html) that are much less exciting than [those](http://www.open-tx.org/screens-taranis.html) for the X9D+ (note the Q X7 doesn't support [model images](http://www.open-tx.org/icons-taranis.html)).
 
 ---
 
 The Painless360 Pixhawk series:
 
-* https://www.youtube.com/watch?v=uH2iCRA9G7k
+* https://www.youtube.com/playlist?list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p
 
 Note: in the common power options the only immediatelly relevant bit is at [1:13](https://www.youtube.com/watch?v=DKK0jms402Q&feature=youtu.be&t=73) where he briefly shows configuring a low voltage warning in Mission Planner.
 
