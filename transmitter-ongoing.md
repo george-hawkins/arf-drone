@@ -53,7 +53,7 @@ _Create a new model._
 
 The new model is initially just called MODEL02, the asterisk beside it indicates that it's the currently selected model.
 
-_New model with default name MODEL02._  
+_New model with default name._  
 <img width="256" src="images/opentx-screenshots/create-model-2.bmp">
 
 Now press PAGE and update the model name to something more informative, e.g. "F450 Pix". Long hold ENTER to get a capital letter.
