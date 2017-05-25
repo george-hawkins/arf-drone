@@ -5,6 +5,10 @@ DIY X-racer: <https://www.fpvmodel.com/x-racer-x-1-diy-combo_g1269.html> (it's a
 
 Two photos: <https://photos.google.com/photo/AF1QipMnpYxfD9zhSFv5vbntky99G2c53I1Hcb97jyFk>
 
+The only tool you need is a Phillips #00 screwdriver (like this [one](https://eustore.ifixit.com/en/Tools/Drivers-Wrenches/Phillips-00-Screwdriver-iFixit.html)) (not to be confused with the smaller #000 size or the larger #0 size).
+
+TODO: look at desoldering camera.
+
 ---
 
 The FPV Model [build video](https://www.youtube.com/watch?v=uFnxRmWBuGA) (the only apparent documentation) confusingly shows different motor configurations at different points (black and white motors at front right and at back left when showing motor assembly, then both at front when adding the flight controller).
@@ -43,10 +47,6 @@ Now you can try the sticks - you should see the bars for _Roll_ etc. respond as 
 
 ---
 
-TODO: look at desoldering camera.
-
----
-
 Switches
 --------
 
@@ -74,11 +74,14 @@ Useful pages:
 
 * Oscar Liang's review - <https://oscarliang.com/x-racer-x1-micro-quad/>
 * Arming etc. via stick position - <https://github.com/martinbudden/betaflight/blob/master/docs/Controls.md>
+* Stick PDF cheat sheet - <https://www.rcgroups.com/forums/showatt.php?attachmentid=6740971>
 * Modes - <https://github.com/martinbudden/betaflight/blob/master/docs/Modes.md>
 
 Arm - throttle to lower right.
 Disarm - throttle to lower left.
 Calibrate acceleromter - throttle to upper left, pitch to down (leave roll at center).
+
+Note: the _Save and Exit_ stick positions are only needed in combination with the LCD related operations (as is clear from the PDF cheat sheet).
 
 Important: using the sticks to arm stops working if you assign switches via Betaflight _Modes_ tab. Calibrate isn't listed on the _Modes_ tab and the quad still flashes (as if in acknowledgement) when you use push the sticks to the calibrate position - so it seems you can mix have some settings via sticks positions and some via switches (i.e. AUX1 etc. settings).
 
@@ -110,18 +113,17 @@ The underside of the flight controller PCB has four LEDs - two blue ones at fron
 
 The topside of the flight controller PCB has a number of LEDs, all partically hidden by the video transmitter PCB when stuck on on top. There's one at the back left that seems to just be power - it's constant red while powered. Then there's a set of three LEDs somewhat forward and left of center - the first is red, the other two blue.
 
-On USB, no transmitter: red flashes slowly, first blue flashes fast, second is constant on.
-On USB, transmitter on: red constant on, blue both off.
-On USB, transmitter on and armed: red constant on, first blue on constant, second remains off.
+Being powered via USB or batteries makes no difference to the behavior of the LEDs however the motors will not start to turn if the quad is armed while connected via USB.
 
-TODO: I don't think USB vs BATT makes any difference to the LED behavior - confirm.
+Behavior of topside LEDs:
 
-TODO: does armed look different when not on USB?
-TODO: when you hold the quad at an angle the first blue goes on (flashes) and will not arm (check???) until you lay the quad on a level surface.
+* No transmitter: red flashes slowly, first blue flashes fast, second is constant on.
+* Transmitter on: red constant on, blue both off.
+* Transmitter on and armed: red constant on, first blue on constant, second remains off.
 
-The motors will not start to turn if you arm while the throttle is not at zero (TODO: does an LED flash to indicate this?).
+If you you hold the quad at an angle while disarmed the first blue LED starts to flash and the quad will not arm until you lay it on a level surface (and the blue LED goes off).
 
-The motors will not turn on when armed if connected via USB.
+The motors will not start if you try to arm while the throttle is not at zero. Other than the first blue LED not going, as you'd expect when armed, there's nothing to indicate that the problem is the throttle.
 
 The video transmitter PCB has two tiny banks of LEDs - one containing four blue LEDs with one lit to indicate the currently selected band and one containing eight red LEDs with one lit to indicate the currently selected channel.
 
