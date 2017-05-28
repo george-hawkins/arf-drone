@@ -137,6 +137,8 @@ In order to bind a receiver you have to be able to power it. Normally the receiv
 
 Powering the receiver via the flight controller allows us to provide power to it without needing any additional equipment beyond what's specifically needed for this project. However if you're already into hobbyist electronics then you probably have all that's needed to directly power the receiver - it just needs a 5V source that can provide 100mA. I won't go into that here but if you're curious then take a look at [`receiver-power.md`](receiver-power.md) where I power the receiver via a breadboard power supply, via an Arduino and directly off USB.
 
+TODO...
+
 * Blue Falcon - https://www.youtube.com/watch?v=RH_RuVbF2YU cf with binding video below.
 
 * https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be 19:42 - binding with D4R-II
@@ -160,12 +162,3 @@ Blue Falcon:
 
 * Wiring telemetry: https://youtu.be/WKsFG29Q5mQ - not for Pixhawk but still interesting, zip forward to 8:08 once he gets away from the receiver and into the flight controller (and then its software).
 * Configuring telemetry: https://www.youtube.com/watch?v=n09q26Gh858
-
-Flight modes
-------------
-
-TODO...
-
-Once everything is setup the final step (I hope) is to configure flight modes as per the Painless360 Pixhawk video series:
-
-* https://www.youtube.com/watch?v=agjHu-WhCJw

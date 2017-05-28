@@ -35,6 +35,8 @@ I used rechargeable NiMH batteries - I used this [Varta charger](https://www.ama
 
 See Oscar Liang's in-depth [review of the Q X7](https://oscarliang.com/taranis-q-x7-tx/) that provides a nice walkthru of the transmitter and covers things like replacing the battery pack with a LiPo.
 
+Note: inserting AA batteries into the battery holder is trickier than it should be, getting them out is even worse. In the end I used a perspex ruler to force them out, the ruler still scratched some of the batteries slightly - if anyone has a tip as to how to do this better please say!
+
 Power on
 --------
 
