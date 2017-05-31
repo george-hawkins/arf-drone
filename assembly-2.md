@@ -33,6 +33,8 @@ _Battery cover taped in place_
 
 I used rechargeable NiMH batteries - I used this [Varta charger](https://www.amazon.co.uk/Varta-57677-PLUG-Charger-Battery/dp/B00HV5XOEG/ref=pd_sim_23_2), that includes four batteries, and two additional [packs of four batteries](https://www.amazon.co.uk/Varta-Rechargeable-Batteries-2100mAh-Ni-MH-x/dp/B000EGWOCM/) (this means I can have six batteries in the transmitter and a further six charged and ready to swap in if it runs out of power). The Varta charger has a Europlug - Amazon have an own branded [charger](https://www.amazon.co.uk/AmazonBasics-Ni-MH-Battery-Charger-Port/dp/B00TS18AEA/), that presumably comes with a plug to match the market it's sold in, and their own brand [batteries](https://www.amazon.co.uk/AmazonBasics-Capacity-Pre-Charged-Rechargeable-Batteries/dp/B00HZV9WTM/). Non-rechargeable batteries, depending on how much you intend to use your drone, may also be fine - the transmitter batteries will last for many hours and, given that the LiPo on the drone will only last for about 20 minutes of flight time, this means a single set of batteries in the transmitter will last for many flights.
 
+TODO: include photo of using ribbon to make it possible to remove batteries.
+
 See Oscar Liang's in-depth [review of the Q X7](https://oscarliang.com/taranis-q-x7-tx/) that provides a nice walkthru of the transmitter and covers things like replacing the battery pack with a LiPo.
 
 Note: inserting AA batteries into the battery holder is trickier than it should be, getting them out is even worse. In the end I used a perspex ruler to force them out, the ruler still scratched some of the batteries slightly - if anyone has a tip as to how to do this better please say!
@@ -142,6 +144,8 @@ Now we're ready to connect the transmitter to the computer. You'll need a USB ca
 
 First start the transmitter in bootloader mode - this involves pressing the two swtiches above the LCD inwards while you press the power button. Again Oscar Liang has a nice picture in his [walkthru](https://oscarliang.com/flash-opentx-firmware-taranis/) , see the "Backup Current Configuration" section (however we're going to back things up in a different way).
 
+Note: every so often when starting the transmitter in bootloader mode I found it would crash in the same fashion as described [here](http://openrcforums.com/forum/viewtopic.php?t=8882). Whenever this happened I had to pull out a battery to turn it off. This just seemed to happen occassionally and the transmitter always successfully entered bootloader mode the next time I tried.
+
 Once started in bootloader mode you'll see "plug in a USB cable" at the bottom of the screen - so do that (the USB port is under the flap at the bottom of the transmitter) and connect it to your computer running OpenTX Companion.
 
 First we're going to backup the current transmitter setup - in OpenTX Companion go to the _Read/Write_ menu and first select _Read Firware from Radio_ and save the result as e.g. `orig-firmware.bin`, then select _Backup Radio to File_ and save the result as e.g. `orig-eeprom.bin`.
@@ -201,8 +205,6 @@ Now turn on the transmitter - the first thing you'll notice is that the transmit
 Now if you go to _radio setup_ (as described already above) and then press PAGE to get to the _SD card_ screen you'll see the contents of the card. If you haven't already, try playing with the dial and pressing it to navigate around the contents of the card - it's fairly intuitive.
 
 If you turn off the transmitter, restart it in bootloader mode and connect to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined above). One is the _Taranis_ drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
-
-Notes: Once after setting up the SD card the bootloader froze in the same fashion as described [here](http://openrcforums.com/forum/viewtopic.php?t=8882). I didn't have to pull a battery to turn if off - I pressed power for a long time, left the transmitter alone in order to look for help of the web and eventually it turned itself off unattended. I don't know if this was related to adding the SD card or just a random crash - the transmitter successfully entered bootloader mode the next time I tried.
 
 Here I setup the initial contents of the SD card on my computer before putting it into the transmitter - in [this video](https://www.youtube.com/watch?v=2wZM_dqvBJ4&feature=youtu.be&list=PLiYYhnH4BhI-ot9OQ9djvRaacFHboFqC2&t=170) the presenter inserts a blank SD card straight into the transmitter and then connects the transmitter to his computer and copies the extracted SD card contents over via USB. The end result is the same but don't try to interact with the SD card via the transmitter before this is done. I tried doing this - I put the transmitter into bootloader and just wanted to use its _Write Firmware_ option to backup the firmware to a blank SD card. But this just results in the somewhat cryptic error "No directory found" - OpenTX and its bootloader expect the directory structure seen above, i.e. `FIRMWARE` etc. to already be there.
 
