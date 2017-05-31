@@ -42,7 +42,7 @@ Then use the dial to navigate downwards and set the country code if necessary. I
 _Set country code._  
 <img width="256" src="images/opentx-screenshots/country-code.bmp">
 
-Now navigate down further to the bottom of the screen. The last two entries are _Rx channel ord_ and _Mode_. We already covered mode when setting up the sticks - we're using mode 2 and default value of _Mode_ should already match this. However we do have to change _Rx channel ord_ - by default it's set to _TAER_, change this to _TAER_. The next section below explains what this means.
+Now navigate down further to the bottom of the screen. The last two entries are _Rx channel ord_ and _Mode_. We already covered mode when setting up the sticks - we're using mode 2 and default value of _Mode_ should already match this. However we do have to change _Rx channel ord_ (by default it's set to _TAER_), change this to _AETR_. The next section down below explains what this means.
 
 _Set RX channel order._  
 <img width="256" src="images/opentx-screenshots/rx-channel-ord.bmp">
@@ -104,9 +104,7 @@ We looked at something called mode when we covered stick setup. The chosen mode 
 
 However there are two devices involved here - the transmitter and the receiver. The mode just affects the mapping between stick directions and names like _Ail_, _Ele_, _Thr_ and _Rud_ in the transmitter. So when you're in mode 2 and you move the left stick up and down this adjusts the value that the transmitter associates with throttle. The transmitter then has to transmit this value to the receiver.
 
-The transmitter can output values on up to 32 channels - however most receivers have far fewer values, the one we're using (the X8R) only supports 16.
-
-Typically the stick values are transmitted on the first four channels, i.e. 1 to 4. But like mode it's just a convention how the receiver (and the related equipment, i.e. either directly connected servos or a flight controller) interprets the values it sees on these channels.
+The transmitter can output values on up to 32 channels - however most receivers have far fewer values, the one we're using (the X8R) only supports 16. Typically the stick values are transmitted on the first four channels, i.e. 1 to 4. But like mode it's just a convention how the receiver (and the related equipment - either a flight controller or directly connected servos) interprets the values it sees on these channels.
 
 There are two main conventions for receivers. Many devices follow the convention established by the manufacturers Spektrum and JR where channel 1 is interpreted as the value for the throttle and so on like this:
 
@@ -135,9 +133,9 @@ When you create a new model the controls are initially mapped to channels accord
 _Mixer screen._  
 <img width="256" src="images/opentx-screenshots/mixer-screen.bmp">
 
-_RX channel ord_ is a global setting, however it only affects the initial channel order of models created after you modify it. If you change _Rx channel ord_ later it won't affect any existing models. And once a model has been created you can go to its _Mixer_ screen and change the initially assigned channel order without it affecting anything else.
+_RX channel ord_ is a global setting, however it only affects the initial channel order of models created after you modify it. If you change _Rx channel ord_ again later it won't affect any existing models. And once a model has been created you can go to its _Mixer_ screen and change the initially assigned channel order without it affecting anything else.
 
-Note: there's an _Input_ screen that superficially looks quite similar to the _Mixer_ screen - however this screen is about adjusting the behavior of the various controls, e.g. adjusting expo (which we'll come to later) to make them less "twitchy". On this screen you can even adjust the real source for the values _Thr_ etc. on this particular model. By default the stick direction considered throttle (according to your current mode setting) is mapped to _Thr_ etc. but you could e.g. map one of the pots to _Thr_ for this particular model (or do really odd things like take the source for the _Thr_ value from the aileron stick direction and so on).
+Note: there's an _Input_ screen that superficially looks quite similar to the _Mixer_ screen - however this screen is about adjusting the behavior of the various controls, e.g. adjusting expo (which we'll come to later) to make them less "twitchy". On this screen you can even adjust the real source for the values _Thr_ etc. on this particular model. By default the stick direction considered throttle (according to your current mode setting) is mapped to _Thr_ etc. but you could e.g. map one of the pots to _Thr_ for this particular model (or do really odd things like take the source for the logical _Thr_ value from the aileron stick direction and so on).
 
 Failsafe
 --------
