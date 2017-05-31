@@ -20,7 +20,7 @@ If you're new to RC then neither set of terms may mean much so here's a simple t
 | elevator | pitch | go forward or backward |
 | aileron | roll | go left or right |
 | rudder | yaw | turn clockwise or counterclockwise |
-| throttle | throttle | go up or down |
+| throttle | throttle | ascend or descend |
 
 The "term" elevator seems particularly confusing - it doesn't mean up and down as one might guess. Hopefully the distinction between _going_ right and _turning_ clockwise is clear - if you're used to first person shooters then _going_ right is the equivalent of siddling left crabwise while still facing the same direction while _turning_ clockwise means staying put but changing the direction your facing (turning round to face right, turning further to face back and so on until you do a full 360).
 

@@ -140,6 +140,8 @@ Once done close the _Editing model_ screen and select menu _Read/Write / Write M
 
 ---
 
+TODO: Painless360 has a nice short explanatory [video about expo](https://www.youtube.com/watch?v=ajJ3rJ1HN5Q).
+
 Things to come back to:
 
 3:57 - Inputs - Ele has to be set to _minus_ 100, he explains this also in the second video.
