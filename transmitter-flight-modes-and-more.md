@@ -15,7 +15,7 @@ This page largely covers the process that Painless360 covers well in [this video
 
 He uses the swtiches SF and SE on the Taranis X9D+. The Q X7 doesn't have an SE switch so instead we'll use the upper left pair of three-way switches called SA and SB.
 
-_Upper left switches._
+_Upper left switches._  
 <img width="256" src="images/assembly/transmitter/upper-left-switches.png">
 
 We'll set things up so that flight mode 1 is selected when SA and SB are in their up position, flight mode 2 is selected when SB is moved to its middle position and flight mode 3 when SB is moved to its down position. Then when SA is moved to its middle position SB in its up position selects flight mode 4, in its middle position flight mode 5 and in its down position flight mode 6. Moving SA to its down position does nothing.
