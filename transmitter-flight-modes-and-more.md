@@ -127,9 +127,9 @@ But what about flight mode 6? I have the separate switch SF setup as above and m
 
 Note: for this configuration I used a column in the _Logical Switches_ tab that we ignored previously - to the right of the _V1_ and _V2_ columns is an _AND Switch_ column. It may seem odd to have such a column when _AND_ can be selected in the _Function_ column, however it's independent of the _Function_, _V1_ and _V2_ columns and allows you to optionally specify a third switch that must also be in a given state for the specific logical switch to become active. So I specified SF&uarr; in this column for all my logical switches. However due to a bug in the version I was using the simulator ignored the values of SA and SB unless I closed the simulator and changed focus to another application then returned to OpenTX Companion and reopened the simulator, alternatively I could change one to the SF&uarr; values to !SF&darr; (which is logically the same thing for a two-way switch like SF) - though the issue returned each time I moved focus to another application and then returned to OpenTX Companion.
 
-For more details on logical switches, including an explanation of the _AND switch_ column, see the [logical switches section](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/logical_switches.html) of the OpenTX 2.2 manual.
-
 TODO: log a bug around this and also see if it's Linux specific.
+
+For more details on logical switches, including an explanation of the _AND switch_ column, see the [logical switches section](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/logical_switches.html) of the OpenTX 2.2 manual.
 
 Invert the elevator / pitch
 ---------------------------
