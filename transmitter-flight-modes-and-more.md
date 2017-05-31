@@ -98,6 +98,7 @@ Painless360 feels it's a good idea to assign a single physical switch to switch 
 So let's turn SF into that emergency switch - its the top left two-way switch (the top surfaces left and right of the antennae are often referred to as the shoulders of the transmitter). To do this just return to the _Special Functions_ tab and setup _SF7_ and _SF8_ like so:
 
 | #   | Switch   | Action        | Parameters | Enable |
+|-----|----------|---------------|------------|--------|
 | SF7 | SF&darr; | Override CH05 | 80         | &#2713 |
 | SF8 | SF&darr; | Play Track    | fm-6       |        |
 
