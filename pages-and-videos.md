@@ -19,6 +19,10 @@ Note: in the common power options the only immediatelly relevant bit is at [1:13
 
 ---
 
+DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner.
+
+---
+
 DJI videos:
 
 * <https://www.youtube.com/watch?v=pUTHIL_Xfcc> - assembling the original F450 kit.
@@ -110,16 +114,6 @@ The developer guides:
 * [The ArduPilot guide](http://ardupilot.org/dev/).
 
 Note: the PX4 guide covers lots of things that are of interest to an audience beyond core flight controller developers, just look down the TOC - there's lots of high level general information, sections on flight controllers and airframes, tutorials on things like video streaming.
-
----
-
-Soldering T-plug:
-
-* https://www.youtube.com/watch?v=opMBIIB6l1M (black and red wires are mixed up!)
-* https://www.youtube.com/watch?v=3tEBQC-qNE0
-* https://www.youtube.com/watch?v=WtJIrnbl_JI
-
-The third video doesn't anything beyond using gravity to get solder to soak into cable.
 
 ---
 

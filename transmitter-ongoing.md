@@ -183,15 +183,7 @@ In order to bind a receiver you have to be able to power it. Normally the receiv
 
 Powering the receiver via the flight controller allows us to provide power to it without needing any additional equipment beyond what's specifically needed for this project. However if you're already into hobbyist electronics then you probably have all that's needed to directly power the receiver - it just needs a 5V source that can provide 100mA. I won't go into that here but if you're curious then take a look at [`receiver-power.md`](receiver-power.md) where I power the receiver via a breadboard power supply, via an Arduino and directly off USB.
 
-TODO...
-
-* Blue Falcon - https://www.youtube.com/watch?v=RH_RuVbF2YU cf with binding video below.
-
-* https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be 19:42 - binding with D4R-II
-
-* DroneTrest - http://www.dronetrest.com/t/how-to-bind-your-x8r-receiver-to-taranis-x9d/633 - cf the video with above, note image shows that you only get max 8 channels out so up above video shouldn't have 1-16 selected.
-
-DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner.
+TODO: the binding process is covered in [`binding.md`](binding.md) - fit this into the proper flow of things.
 
 Telemetry
 ---------
