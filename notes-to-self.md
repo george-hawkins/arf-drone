@@ -18,3 +18,9 @@ To setup screen capture in OpenTX:
 * Dial over one to the function, press ENTER and dial down to _Screenshot_ and ENTER to select.
 
 No whenever you flip the momentary switch a screenshot ends up in the SCREENSHOTS directory on the SD card.
+
+To scale the resulting BMPs without any smoothing:
+
+    $ convert -scale 200% x.bmp y.png
+
+Note that BMP is a space inefficient format - even at up to 16 times multiplication the resulting PNG is still smaller than the original BMP.
