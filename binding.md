@@ -13,7 +13,7 @@ Now turn on the transmitter and go to the _Model selection_ screen and press PAG
 
 You just have to go to _[Bnd]_ and press ENTER - the transmitter will start emitting a chirping sound.
 
-_Selecting bind._
+_Selecting bind._  
 <img width="256" src="images/opentx-screenshots/bind.bmp">
 
 Now press the F/S button on the receiver and keep it held down until we're finished. Provide power to the receiver.
