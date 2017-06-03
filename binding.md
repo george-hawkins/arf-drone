@@ -18,7 +18,7 @@ _Selecting bind._
 
 Now press the F/S button on the receiver and keep it held down until we're finished. Provide power to the receiver.
 
-The LEDs should initally be solid light green (almost yellow) and solid red but quickly switch to solid green and flashing red to indicate that the receiver is now bound to the transmitter.
+Both the red and the green LED should be solid initially (though the green looks more yellow beside the strong red) and then quickly change to solid green and flashing red to indicate that the receiver has successfully bound with the transmitter.
 
 Once this is done release the F/S button and then remove power from the receiver. That's it binding is completed.
 
@@ -34,4 +34,4 @@ When all set up the green LED on my receiver flickers very slightly whereas in t
 
 Note: the F/S button also serves other purposes - in addition to being used during binding, as here, it can also be used to set the failsafe behavior and to enter range-check mode. However both these things can also be done via the transmitter - and that's how we'll do things.
 
-TODO: the two page manual that comes with the receiver is largely useless - the table of modes, telemetry etc. is mildly helpful in that it assures you that the above process is correct and that you don't need to use any of the jumpers provided with the receiver. The range check information is important but as noted we'll do that via the transmitter.
+The FrSKY [X8R manual](http://www.frsky-rc.com/download/down.php?id=102) is largely useless for beginners, only once you've made sense of everything else where does it serve as a somewhat helpful summary. The table showing the LED meanings is useful and the table of modes, telemetry etc. reassures one that the process described above is correct (and that you don't need to use any of the jumpers provided with the receiver). The range check and failsafe information is important but as noted we'll handle that via the transmitter.
