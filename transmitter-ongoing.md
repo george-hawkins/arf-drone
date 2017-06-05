@@ -236,8 +236,8 @@ So ArduCopter looks resolvable in terms of getting RSSI to the Pixhawk and on fr
 RSSI and RX8R
 -------------
 
-It looks like an important difference between the X8R and the RX8R is that the second port, beside the SBUS OUT, is no longer an RSSI out port but is now for connection to a second failover RX.
+It looks like an important difference between the X8R and the RX8R is that the second port, beside the SBUS OUT, is no longer an RSSI output port but has been repurposed as an S.BUS input port for connecting a second failover RX.
 
 It's unclear if RSSI is on the PCB but not broken out (what does "on board" [here](https://www.rcgroups.com/forums/showthread.php?2792329-FrSky-New-Arrival-%C2%96-RX8R) mean).
 
-Or if as [this page](https://marketchangers.wordpress.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80%D1%8B/frsky-rx8r-redundancy-bus-receiver/) seems to suggest it's now output over SBUS with the channels - which would be nice as long as the flight controller software can consume it.
+I couldn't find much on the RX8R and RSSI beyond this RCGroups [thread](https://www.rcgroups.com/forums/showthread.php?2792329-FrSky-New-Arrival-%C2%96-RX8R/page6) where the RX8R is clearly being opened up to get at the RSSI signal and this [review](https://marketchangers.wordpress.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80%D1%8B/frsky-rx8r-redundancy-bus-receiver/) that clearly states that the RSSI output has been replaced by S.BUS in (this review also provides a clear explanation of using the redundancy features).
