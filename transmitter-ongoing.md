@@ -87,7 +87,7 @@ If you press PAGE you'll get to a screen that shows the transmitter's channels. 
 _Main screen - page 2, showing channels 1 to 8._  
 <img width="256" src="images/opentx-screenshots/main-screen-p2-ch1-8.bmp">
 
-The transmitter supports 32 channels, initially bars for channels 1 to 8 are shown. Turn the dial and you'll see the topmost bar change to indicate that channels 9 to 16 are now showing, turn it further to see channels 17 to 24 and so on. As nothing is bound to these channels there's nothing really to see.
+The transmitter supports up to 32 channels (16 using the standard internal RF module and 16 more if you add an additional external RF module), initially bars for channels 1 to 8 are shown. Turn the dial and you'll see the topmost bar change to indicate that channels 9 to 16 are now showing, turn it further to see channels 17 to 24 and so on. As nothing is bound to these channels there's nothing really to see.
 
 _Main screen - page 2, showing channels 9 to 16._  
 <img width="256" src="images/opentx-screenshots/main-screen-p2-ch9-16.bmp">
@@ -104,7 +104,7 @@ We looked at something called mode when we covered stick setup. The chosen mode 
 
 However there are two devices involved here - the transmitter and the receiver. The mode just affects the mapping between stick directions and names like _Ail_, _Ele_, _Thr_ and _Rud_ in the transmitter. So when you're in mode 2 and you move the left stick up and down this adjusts the value that the transmitter associates with throttle. The transmitter then has to transmit this value to the receiver.
 
-The transmitter can output values on up to 32 channels - however most receivers have far fewer values, the one we're using (the X8R) only supports 16. Typically the stick values are transmitted on the first four channels, i.e. 1 to 4. But like mode it's just a convention how the receiver (and the related equipment - either a flight controller or directly connected servos) interprets the values it sees on these channels.
+As noted above the transmitter has 16 channels (using its internal RF module) on which it can output these values. Typically the stick values are transmitted on the first four channels, i.e. 1 to 4. But like mode it's just a convention how the receiver (and the related equipment - either a flight controller or directly connected servos) interprets the values it sees on these channels.
 
 There are two main conventions for receivers. Many devices follow the convention established by the manufacturers Spektrum and JR where channel 1 is interpreted as the value for the throttle and so on like this:
 
