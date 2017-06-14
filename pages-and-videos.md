@@ -22,6 +22,16 @@ The Painless360 Pixhawk series - <https://www.youtube.com/playlist?list=PLYsWjAN
 
 TODO: move images/pixhawk-leds/README.md up into same directory as all the other pages.
 
+Some of his APM videos are relevant too:
+
+* Autotrim and autotune - get the flight controller to work out the trim settings and work out the best PID settings - the video <https://www.youtube.com/watch?v=5pqdAOCkz00> and the corresponding ArduCopter pages:
+  * AutoTrim <http://ardupilot.org/copter/docs/autotrim.html>
+  * AutoTune <http://ardupilot.org/copter/docs/autotune.html>
+* MAVLink - he covers updating the radio firmware and trouble shooting the process <https://www.youtube.com/watch?v=uGrsTiJnRVk>
+* The full APM 2.6 (with some 3.1 stuff) playlist <https://www.youtube.com/playlist?list=PLYsWjANuAm4oSFdOSBswt6GmU7y6v60O1>
+
+Note: it looks like you can wire up those nasty connectors that the Pixhawk uses without any soldering or crimping - see 3:33 of <https://www.youtube.com/watch?v=uGrsTiJnRVk> 
+
 ---
 
 Update - this DroneTrest recommened video doesn't cover anything not covered just as well in the Painless360 Pixhawk series. DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner.
@@ -45,12 +55,6 @@ DJI wiki:
 
 * [F450 assembly](http://wiki.dji.com/en/index.php/Flame_Wheel_F450_Assembly)
 * [Motor orientation, mounting and ESCs](http://wiki.dji.com/en/index.php/F450_ESC_and_Motor_Mounting)
-
----
-
-The Pixhawk can output the voltage it sees as telemetry data that can be routed through the RX. However it can't see individual cells. For this you need an [FrSKY FLVSS](http://www.frsky-rc.com/product/pro.php?pro_id=125). Hooking this up directly to the RX, via the Smart Port, and then using this data on the TX for alarms seems easy enough.
-
-Getting this data into the Pixhawk so it can be output via MAVLink seems less clear. The only project I could find around this was [MavLink_FrSkySPort](https://github.com/athertop/MavLink_FrSkySPort/wiki/1.-Setup#combining-teensy-with-frsky-sensors). But it's a bit unclear what the purpose of this project is - it can be used without any additional FrSKY sensors and the stated purpose is to get telemetry data from the Pixhawk to the RX - is this just an open source version of the [Craft & Theory telemetry cable](http://www.craftandtheoryllc.com/product/telemetry-cable-flightdeck-taranis-opentx-ardupilot-arducopter-pixhawk-2-cube-servo-frsky-smartport-smart-port-df13-jst-gh-serial/) or the equivalent that can be cobbled together out of FrSKY parts? If so OK but then it's unclear if the hook up with the FLVSS is just about daisy chaining the two so that both feed into the RX and not about getting the FLVSS data into the Pixhawk. Note: there seem to be multiple active forks of this project - [athertop version](https://github.com/athertop/MavLink_FrSkySPort) claims to be the latest in a series but the earlier [Clooney82 version](https://github.com/Clooney82/MavLink_FrSkySPort) (that's clearly marked as dead and points to the athertop version) has commits that the athertop version does not.
 
 ---
 
@@ -80,6 +84,12 @@ Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t
 * [Video overview, but not a tutorial, on flying a Pixhawk controlled drone](https://www.youtube.com/watch?v=SdRZuQiS7G4), includes flight modes like altitude-hold, circling etc.
 
 * Nice overview of [Pixhawk family](https://www.lambdrive.com/depot/Robotics/Controller/PixhawkFamily/index.html) including history, models (classic, SnapDragon etc.), MAVLink and flight stacks and ground controller software.
+
+---
+
+The Pixhawk can output the voltage it sees as telemetry data that can be routed through the RX. However it can't see individual cells. For this you need an [FrSKY FLVSS](http://www.frsky-rc.com/product/pro.php?pro_id=125). Hooking this up directly to the RX, via the Smart Port, and then using this data on the TX for alarms seems easy enough.
+
+Getting this data into the Pixhawk so it can be output via MAVLink seems less clear. The only project I could find around this was [MavLink_FrSkySPort](https://github.com/athertop/MavLink_FrSkySPort/wiki/1.-Setup#combining-teensy-with-frsky-sensors). But it's a bit unclear what the purpose of this project is - it can be used without any additional FrSKY sensors and the stated purpose is to get telemetry data from the Pixhawk to the RX - is this just an open source version of the [Craft & Theory telemetry cable](http://www.craftandtheoryllc.com/product/telemetry-cable-flightdeck-taranis-opentx-ardupilot-arducopter-pixhawk-2-cube-servo-frsky-smartport-smart-port-df13-jst-gh-serial/) or the equivalent that can be cobbled together out of FrSKY parts? If so OK but then it's unclear if the hook up with the FLVSS is just about daisy chaining the two so that both feed into the RX and not about getting the FLVSS data into the Pixhawk. Note: there seem to be multiple active forks of this project - [athertop version](https://github.com/athertop/MavLink_FrSkySPort) claims to be the latest in a series but the earlier [Clooney82 version](https://github.com/Clooney82/MavLink_FrSkySPort) (that's clearly marked as dead and points to the athertop version) has commits that the athertop version does not.
 
 ---
 
