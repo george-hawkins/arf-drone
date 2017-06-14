@@ -1,0 +1,16 @@
+The 3DR site used to maintain information on the LEDs on the Pixhawk - however gradually all their Pixhawk information is disappearing and the pictures shown here are no longer available there.
+
+These versions of the pictures were downloaded from [Kopterforum.at](http://kopterforum.at/) which requires registration before you can see images posted to its forums.
+
+These images cover:
+
+* The main LED seen at the center of the Pixhawk itself.
+* The red LED in the safety switch.
+
+For more details on the various other LEDs see the [status LEDs documentation](https://pixhawk.org/users/status_leds) on pixhawk.org.
+
+_The main Pixhawk LED_  
+![main LED](main-led.png)
+
+_The safety switch._  
+![safety switch](safety-switch.png)
