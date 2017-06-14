@@ -43,6 +43,12 @@ DJI wiki:
 
 ---
 
+The Pixhawk can output the voltage it sees as telemetry data that can be routed through the RX. However it can't see individual cells. For this you need an [FrSKY FLVSS](http://www.frsky-rc.com/product/pro.php?pro_id=125). Hooking this up directly to the RX, via the Smart Port, and then using this data on the TX for alarms seems easy enough.
+
+Getting this data into the Pixhawk so it can be output via MAVLink seems less clear. The only project I could find around this was [MavLink_FrSkySPort](https://github.com/athertop/MavLink_FrSkySPort/wiki/1.-Setup#combining-teensy-with-frsky-sensors). But it's a bit unclear what the purpose of this project is - it can be used without any additional FrSKY sensors and the stated purpose is to get telemetry data from the Pixhawk to the RX - is this just an open source version of the [Craft & Theory telemetry cable](http://www.craftandtheoryllc.com/product/telemetry-cable-flightdeck-taranis-opentx-ardupilot-arducopter-pixhawk-2-cube-servo-frsky-smartport-smart-port-df13-jst-gh-serial/) or the equivalent that can be cobbled together out of FrSKY parts? If so OK but then it's unclear if the hook up with the FLVSS is just about daisy chaining the two so that both feed into the RX and not about getting the FLVSS data into the Pixhawk. Note: there seem to be multiple active forks of this project - [athertop version](https://github.com/athertop/MavLink_FrSkySPort) claims to be the latest in a series but the earlier [Clooney82 version](https://github.com/Clooney82/MavLink_FrSkySPort) (that's clearly marked as dead and points to the athertop version) has commits that the athertop version does not.
+
+---
+
 Assembling the F450 videos:
 
 * [From Marionville Models](https://www.youtube.com/watch?v=ER2GxMo0X3E).
