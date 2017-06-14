@@ -145,6 +145,8 @@ Painless360 inverts the elevator via the _Inputs_ screen but [this video](https:
 
 So instead go to the _Outputs_ screen for your model, go down to _CH2_ (which is elevator), press ENTER, select _Edit_, go down to _Direction_ and change the _---_ value shown to _INV_.
 
+RCdiy also outlines inverting in this way - as he's referring to a plane he talks of [inverting control surfaces](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#ChangingControl_Surface_Directions).
+
 You can then see the affect of this by going to the main screen and then pressing PAGE to see values being output on the first eight values, move the left stick up and down and you'll see the channel 3 value changing - its value is highest when you push it all the way up (as you'd expect), now move the right stick, i.e. elevator, which we've just inverted and you'll see how its value is at its lowest when the stick is pushed all the way up.
 
 TODO: verify the claim about trim - establish the copter at a stable fixed point and then use the roll trims to force the copter left and right, rather than using the roll stick, then try the same with the pitch trims and see that these trims affect going back and forward in the same way as the roll trims affect going left and right.
