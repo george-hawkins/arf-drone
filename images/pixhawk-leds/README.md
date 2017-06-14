@@ -7,10 +7,10 @@ These images cover:
 * The main LED seen at the center of the Pixhawk itself.
 * The red LED in the safety switch.
 
-For more details on the various other LEDs see the [status LEDs documentation](https://pixhawk.org/users/status_leds) on pixhawk.org.
+For more details on the various other LEDs see the [status LEDs page](https://pixhawk.org/users/status_leds) on pixhawk.org.
 
-_The main Pixhawk LED_  
+_The main Pixhawk LED._  
 ![main LED](main-led.png)
 
-_The safety switch._  
+_The safety switch LED._  
 ![safety switch](safety-switch.png)
