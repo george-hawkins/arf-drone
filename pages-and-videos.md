@@ -75,7 +75,7 @@ Note: at least one of these builds uses a BEC - this is not necessary for my set
 
 Might be nice to ask about BECs on DroneTrest, referencing the above DIYDrones thread and this old old [thread](http://www.dronetrest.com/t/what-kit-do-i-need-for-a-diy-quadcopter-using-the-pixhawk-platform/2168) on their own site.
 
-Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t=437) on power options it does look like you don't need a BEC unless you're planning to run e.g. landing gear or camera gimbal servos directly from the Pixhawk, for the ESCs it's not necessary (unless they expect to see 5V on their power lines - which as noted elsewhere I don't think the 420S Lites even have).
+Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t=437) on power options it does look like you don't need a BEC unless you're planning to run e.g. landing gear or camera gimbal servos directly from the Pixhawk, for the ESCs it's not necessary (unless they expect to see 5V on their power lines - which as noted elsewhere I don't think the 420 Lites even have).
 
 ---
 
@@ -100,7 +100,7 @@ Zener diode and Pixhawk power:
 
 Painless360 has a [full video on power options](https://www.youtube.com/watch?v=DKK0jms402Q&t=459s&list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p&index=6).
 
-However I don't think any of this is relevant for the 420S Lite ESCs that come with the E305 as I think they don't come with a red power wire - so need for a Zener and no possibility to power the Pixhawk via them. TODO: check for red wire when E305 system finally arrives.
+However I don't think any of this is relevant for the 420 Lite ESCs that come with the E305 as I think they don't come with a red power wire - so need for a Zener and no possibility to power the Pixhawk via them. TODO: check for red wire when E305 system finally arrives.
 
 ---
 
