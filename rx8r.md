@@ -34,4 +34,4 @@ Looking at the underside of the radio submodule one can just make out another se
 <img height="512" src="images/rx8r/09.JPG">
 
 _Closeup of P3._  
-![P3 closeup](images/rx8r/09.JPG)
+![P3 closeup](images/rx8r/10.JPG)
