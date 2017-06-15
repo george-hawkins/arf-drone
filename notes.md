@@ -214,6 +214,10 @@ Sources:
 * 10ml Loctite 243 - [Conrad CH](http://www.conrad.ch/ce/de/product/055936/Schraubensicherung-Festigkeit-mittel-10-ml-LOCTITE-243-1335840).
 * 10ml UHU schraubensicher mittelfest - [Conrad CH](http://www.conrad.ch/ce/de/product/055357/Schraubensicherung-Festigkeit-mittel-10-ml-UHU-Schraubensicher-45590).
 
+For a nice video about how to apply thread locker without it squeezing out onto other parts see [this video](https://www.youtube.com/watch?v=NIV_XuHeQUY).
+
+**Update:** despite the F450 assembly manual saying you'll need to provide and apply threadlocker, the actual screws that come with the F450 kit already have threadlocker applied. The small dab of blue seen on the side of each screw, as explained [here](https://superuser.com/questions/441049/why-are-the-screws-of-the-macbook-pro-blue-on-one-side) and elsewhere on the web, is the threadlocker. So it appears there's actually no need to buy and apply it yourself.
+
 A 2mm hex key (or Allen key/wrench) is needed for the F450 screws - sources:
 
 * Set of metric hex keys [Amazon UK](https://www.amazon.co.uk/metric-0-89mm-1-27mm-wrench-Engineer/dp/B002F9MNK4).
