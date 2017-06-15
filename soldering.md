@@ -25,4 +25,4 @@ Once you've got all the equipment, soldering iron and so on, and a nice kit like
 
 Note: everyone seems to solder in a slightly different way so don't be surprised if the advice isn't quite identical across videos etc. but on the whole the core points are always the same.
 
-Painless360 has produced a lot of nice RC related videos that are referenced elsewhere here - and he has a nice [introduction to soldering video](https://www.youtube.com/watch?v=-YPLW5cCiGY).
+Painless360 has produced a lot of nice RC related videos that are referenced elsewhere here - and he has a nice "Introduction to soldering" [video](https://www.youtube.com/watch?v=-YPLW5cCiGY). Similarly Propwashed have a "Soldering Exercises for Drone Building" [video](https://www.youtube.com/watch?v=1XwDlVb7gt4).
