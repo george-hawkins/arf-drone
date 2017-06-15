@@ -79,6 +79,10 @@ Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t
 
 ---
 
+In this DroneTrest [build page](http://www.dronetrest.com/t/qav-zmr-250-assembly-build-guide/1244) (for a random quad build) they bend the battery wire back under the velcro battery strap, i.e. it holds both the battery and the battery's connector - so it doesn't just stick straight out the end of the battery leading to a very long battery-combined-with-power-module cable.
+
+---
+
 * [Nice F550 wired up picture](https://static.rcgroups.net/forums/attachments/1/4/2/1/a6709904-57-FW550Flying1.jpg)
 
 * [Video overview, but not a tutorial, on flying a Pixhawk controlled drone](https://www.youtube.com/watch?v=SdRZuQiS7G4), includes flight modes like altitude-hold, circling etc.
