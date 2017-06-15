@@ -46,7 +46,7 @@ _Motors, ESCs, clamp, PDB and screws._
 ![E305 parts](images/assembly/frame/e305-system-parts.jpg)
 
 _Propellars._  
-![propellars](images/assembly/frame/e305-system-props.jpg)
+![propellars](images/assembly/frame/e305-system-parts-props.jpg)
 
 Mast placement
 --------------
