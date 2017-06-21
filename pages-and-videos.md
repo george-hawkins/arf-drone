@@ -83,6 +83,17 @@ In this DroneTrest [build page](http://www.dronetrest.com/t/qav-zmr-250-assembly
 
 ---
 
+VHB tape
+--------
+
+Very High Bond (VHB) tape is one of the strongest tapes in the world and is intended for industrial, rather than consumer, application and is used as an alternative to rivetting and welding. While bonding very strongly to the materials that it's stuck to, the tape itself is flexible, meaning it can absorb shocks and pressure.
+
+For an interesting look at it see [this video](https://www.youtube.com/watch?v=x0LM6HXMolA) from the BBC's Tommorow's World program showing how they introduded it back in 1985 and then again showed it in the late 90s being used to hold the windows onto the Burj Al Arab hotel in Dubai.
+
+3M produce a number of different varieties - I bought [4611F](https://www.amazon.co.uk/3M-Adhesive-4611F-Temperatures-Metals/dp/B00EDLV24U/), the cheapest variety that's intended only for holding metal to metal, but perhaps a better buy is the slightly more expensive [4941P](https://www.amazon.co.uk/3M-Adhesive-Different-Material-Combinations/dp/B00EDLCS9S/) that's intended for a wider variety of materials.
+
+---
+
 * [Nice F550 wired up picture](https://static.rcgroups.net/forums/attachments/1/4/2/1/a6709904-57-FW550Flying1.jpg)
 
 * [Video overview, but not a tutorial, on flying a Pixhawk controlled drone](https://www.youtube.com/watch?v=SdRZuQiS7G4), includes flight modes like altitude-hold, circling etc.
