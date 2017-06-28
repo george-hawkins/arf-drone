@@ -90,6 +90,8 @@ In addition to the batteries I bought:
 * A battery alarm - this makes a loud noise when your battery is about to die - this gives you time to land the drone rather than being taken by surprise and seeing it drop from the skies.
 * A LiPo safety bag - the lithium-ion technology of LiPo batteries can result in explosions (as made clear to the world by the Samsung Note 7), this bag provides some degree of protection when charging and for storage. Even when such a bag is used LiPo batteries should still not be left charging unattended. There is a commercial drone development team in the same office space that I work in and they definitely use these bags.
 
+**Update:** see elsewhere for info on the FLVSS sensor - this looks like a better alternative to the simple alarm.
+
 Initially I wanted the simplest battery charger possible - no LCD screen or other apparently pointless features. I was going to buy the much cheaper SkyRC E430 charger but in the end I bought the S60. Why? Because LiPos have a storage voltage, if you're going to leave a LiPo lying around for more than a few days it should be charged to about 50% before storage. The S60 can charge or discharge a battery to the appropriate storage voltage, whereas with the E430 you'd have to e.g. work out how long it takes to fully charge a battery and then unplug the battery after it had been charging for about half this time.
 
 There are no end of scare stories around lithium-ion batteries, such as LiPos, but clearly most such batteries never explode - the message seems to be to always buy new batteries from a recognised dealer and if you treat them with respect everything will be OK. For more details see e.g. [15 things every LiPo battery user should know](http://thedronegirl.com/2015/02/07/lipo-battery/).
@@ -211,6 +213,10 @@ Sources:
 * 3ml Loctite 243 - [Amazon UK](https://www.amazon.co.uk/Loctite-Lock-Acting-Thread-Sealant/dp/B003ZUXQIA).
 * 10ml Loctite 243 - [Conrad CH](http://www.conrad.ch/ce/de/product/055936/Schraubensicherung-Festigkeit-mittel-10-ml-LOCTITE-243-1335840).
 * 10ml UHU schraubensicher mittelfest - [Conrad CH](http://www.conrad.ch/ce/de/product/055357/Schraubensicherung-Festigkeit-mittel-10-ml-UHU-Schraubensicher-45590).
+
+For a nice video about how to apply thread locker without it squeezing out onto other parts see [this video](https://www.youtube.com/watch?v=NIV_XuHeQUY).
+
+**Update:** despite the F450 assembly manual saying you'll need to provide and apply threadlocker, the actual screws that come with the F450 kit already have threadlocker applied. The small dab of blue seen on the side of each screw, as explained [here](https://superuser.com/questions/441049/why-are-the-screws-of-the-macbook-pro-blue-on-one-side) and elsewhere on the web, is the threadlocker. So it appears there's actually no need to buy and apply it yourself.
 
 A 2mm hex key (or Allen key/wrench) is needed for the F450 screws - sources:
 

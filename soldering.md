@@ -24,3 +24,5 @@ For a nice getting-started project I'd suggest one of the Sparkfun learn to sold
 Once you've got all the equipment, soldering iron and so on, and a nice kit like Simon Says it's time to learn how to actually solder. There are no end of videos and tutorials on the web but I suggest the Adafruit [one](https://learn.adafruit.com/adafruit-guide-excellent-soldering?view=all) and the Sparkfun [one](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering). Both include excellent overviews of all the equipment etc. before getting onto actually soldering.
 
 Note: everyone seems to solder in a slightly different way so don't be surprised if the advice isn't quite identical across videos etc. but on the whole the core points are always the same.
+
+Painless360 has produced a lot of nice RC related videos that are referenced elsewhere here - and he has a nice "Introduction to soldering" [video](https://www.youtube.com/watch?v=-YPLW5cCiGY). Similarly Propwashed have a "Soldering Exercises for Drone Building" [video](https://www.youtube.com/watch?v=1XwDlVb7gt4).

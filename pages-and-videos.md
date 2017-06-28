@@ -11,15 +11,30 @@ OpenTX splash screens suitable for the [Q X7](http://www.open-tx.org/screens-9x.
 
 ---
 
-The Painless360 Pixhawk series:
+The Painless360 Pixhawk series - <https://www.youtube.com/playlist?list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p>
 
-* https://www.youtube.com/playlist?list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p
+* Video 1 - lots of talk on Pixhawk vs the older APM. At [9:47](https://www.youtube.com/watch?v=uH2iCRA9G7k&feature=youtu.be&list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p&t=587) it gets on to hooking the plugged together setup up to Mission Planner. Mentions aligning arrows on GPS and Pixhawk. Mentions drivers and using a USB port capable of at least 500mA. At 13:52 he gets onto flashing the latest firmware - the phase where you _don't_ connect, then once that's done you connect and go through the wizard for mandatory hardware configuration. Only when you get to the radio calibration do you need to turn on the TX - when calibrating move the sticks _and_ the mode switches. He just sets up three flight modes - stabilize, loiter and RTL - he says he'll get back to this (and that he's already covered this in a video for APM). He doesn't setup failsafe at this point. Once your done hold it out a window until it gets a GPS fix and then try moving it about and moving the sticks and switches.
+* Video 2 - he replaces an existing APM unit on an F450 frame - he's got the flight controller on a vibration damping platform on the top frame plate - I wonder if in an earlier APM video we see how he attached the vibration damping platform to the plate. Note in this video he recommends pulling the red wires out of the ESC connectors and so skip needing a Zener diode. Worth watching - at 4:37 he starts attaching and distributing parts around the frame. At 8:14 he wires in the ESCs to the Pixhawk taking account of CW and CCW. At 9:43 he recommends labelling your ESC connectors 1 to 4, matching the numbering in the ArduCopter Quad X documentation, so you can keep track of them and easily plug them into the Pixhawk. He covers the status LEDs - see [my documentation](images/pixhawk-leds/README.md) - print out the LED pictures. TODO: update any reference to "arming switch" (if there are any) to "safety switch" as its just an additional precursor to the normal TX stick based arming. Make sure not to have props on when powering up for first time. He powers it up by plugging in the battery then once happy he plugs it into Mission Planner via USB (and presses Connect). He presses the safety switch, arms then ups the throttle. He says if the ESCs don't come on at the same time you need to go through ESC callibration. He notes the reversal of the pitch (tho' it looks as if you do reversal and still see pitch (in radio calibration) movign counter to expected - is this really what's wanted? See 17:05). Once happy he goes outdoors, with props now on and does the same - he notes the lack of Expo.
+* Video 3 - looks like its all been covered already in my pages. At 4:06 he mentions the pitch flip and seems to confirm that you see the pitch moving oposite to expected _after_ you've applied the correction to the elevator/pitch and this is how things should be. On the mixes page he does actually name things Roll, Pitch etc. (see 4:28). He applies Expo in OpenTX rather than in Mission Planner - at 6:00 he uses 25% on Ail and Ele and 15% on Rud (and 0 on throttle). At 20:52 he sets the failsafe (pushing throttle to zero to make the craft come down) - again via OpenTX rather than Mission Planner - he says he'll cover this later.
+* Video 4 is just relevant if you've got a D4R-II and covers upgrading the firmware to change the CPPM period to 27ms so there's time to output all 8 channels.
+* Video 5 covers flight modes - it points to the ArduCopter flight modes page. With flight modes there's also simple and super simple options - which equate to headless - and like everyone he discourages their use - although he does say being able to flick into simple or super simple can be nice if the craft is so far away that you've lost orientation (though perhaps RTL is a more obvious option in this situation unless there are obstacles). He recommends stabalize (auto-level) as the initial mode. From 4:32 on is worth watching for a talk-thru of all the modes. Note that you can turn some modes on in combination with others, e.g. alt. hold - this would require a separate switch for such modes though (and channels???). Actually alt. hold is the only one where using it in combination is mentioned.. Alt. hold changes behavior of throttle - essentially it divides the throttle range into three simple fat bands - down, hold, up. He says Land lands better than he can.
+* Video 6 - the only immediatelly relevant bit is at [1:13](https://www.youtube.com/watch?v=DKK0jms402Q&feature=youtu.be&t=73) where he briefly shows configuring a low voltage warning in Mission Planner.
 
-Note: in the common power options the only immediatelly relevant bit is at [1:13](https://www.youtube.com/watch?v=DKK0jms402Q&feature=youtu.be&t=73) where he briefly shows configuring a low voltage warning in Mission Planner.
+TODO: move images/pixhawk-leds/README.md up into same directory as all the other pages.
+
+Some of his APM videos are relevant too:
+
+* Autotrim and autotune - get the flight controller to work out the trim settings and work out the best PID settings - the video <https://www.youtube.com/watch?v=5pqdAOCkz00> and the corresponding ArduCopter pages:
+  * AutoTrim <http://ardupilot.org/copter/docs/autotrim.html>
+  * AutoTune <http://ardupilot.org/copter/docs/autotune.html>
+* MAVLink - he covers updating the radio firmware and trouble shooting the process <https://www.youtube.com/watch?v=uGrsTiJnRVk>
+* The full APM 2.6 (with some 3.1 stuff) playlist <https://www.youtube.com/playlist?list=PLYsWjANuAm4oSFdOSBswt6GmU7y6v60O1>
+
+Note: it looks like you can wire up those nasty connectors that the Pixhawk uses without any soldering or crimping - see 3:33 of <https://www.youtube.com/watch?v=uGrsTiJnRVk> 
 
 ---
 
-DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner.
+Update - this DroneTrest recommened video doesn't cover anything not covered just as well in the Painless360 Pixhawk series. DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner.
 
 ---
 
@@ -60,7 +75,22 @@ Note: at least one of these builds uses a BEC - this is not necessary for my set
 
 Might be nice to ask about BECs on DroneTrest, referencing the above DIYDrones thread and this old old [thread](http://www.dronetrest.com/t/what-kit-do-i-need-for-a-diy-quadcopter-using-the-pixhawk-platform/2168) on their own site.
 
-Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t=437) on power options it does look like you don't need a BEC unless you're planning to run e.g. landing gear or camera gimbal servos directly from the Pixhawk, for the ESCs it's not necessary (unless they expect to see 5V on their power lines - which as noted elsewhere I don't think the 420S Lites even have).
+Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t=437) on power options it does look like you don't need a BEC unless you're planning to run e.g. landing gear or camera gimbal servos directly from the Pixhawk, for the ESCs it's not necessary (unless they expect to see 5V on their power lines - which as noted elsewhere I don't think the 420 Lites even have).
+
+---
+
+In this DroneTrest [build page](http://www.dronetrest.com/t/qav-zmr-250-assembly-build-guide/1244) (for a random quad build) they bend the battery wire back under the velcro battery strap, i.e. it holds both the battery and the battery's connector - so it doesn't just stick straight out the end of the battery leading to a very long battery-combined-with-power-module cable.
+
+---
+
+VHB tape
+--------
+
+Very High Bond (VHB) tape is one of the strongest tapes in the world and is intended for industrial, rather than consumer, application and is used as an alternative to rivetting and welding. While bonding very strongly to the materials that it's stuck to, the tape itself is flexible, meaning it can absorb shocks and pressure.
+
+For an interesting look at it see [this video](https://www.youtube.com/watch?v=x0LM6HXMolA) from the BBC's Tommorow's World program showing how they introduded it back in 1985 and then again showed it in the late 90s being used to hold the windows onto the Burj Al Arab hotel in Dubai.
+
+3M produce a number of different varieties - I bought [4611F](https://www.amazon.co.uk/3M-Adhesive-4611F-Temperatures-Metals/dp/B00EDLV24U/), the cheapest variety that's intended only for holding metal to metal, but perhaps a better buy is the slightly more expensive [4941P](https://www.amazon.co.uk/3M-Adhesive-Different-Material-Combinations/dp/B00EDLCS9S/) that's intended for a wider variety of materials.
 
 ---
 
@@ -72,6 +102,12 @@ Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t
 
 ---
 
+The Pixhawk can output the voltage it sees as telemetry data that can be routed through the RX. However it can't see individual cells. For this you need an [FrSKY FLVSS](http://www.frsky-rc.com/product/pro.php?pro_id=125). Hooking this up directly to the RX, via the Smart Port, and then using this data on the TX for alarms seems easy enough.
+
+Getting this data into the Pixhawk so it can be output via MAVLink seems less clear. The only project I could find around this was [MavLink_FrSkySPort](https://github.com/athertop/MavLink_FrSkySPort/wiki/1.-Setup#combining-teensy-with-frsky-sensors). But it's a bit unclear what the purpose of this project is - it can be used without any additional FrSKY sensors and the stated purpose is to get telemetry data from the Pixhawk to the RX - is this just an open source version of the [Craft & Theory telemetry cable](http://www.craftandtheoryllc.com/product/telemetry-cable-flightdeck-taranis-opentx-ardupilot-arducopter-pixhawk-2-cube-servo-frsky-smartport-smart-port-df13-jst-gh-serial/) or the equivalent that can be cobbled together out of FrSKY parts? If so OK but then it's unclear if the hook up with the FLVSS is just about daisy chaining the two so that both feed into the RX and not about getting the FLVSS data into the Pixhawk. Note: there seem to be multiple active forks of this project - [athertop version](https://github.com/athertop/MavLink_FrSkySPort) claims to be the latest in a series but the earlier [Clooney82 version](https://github.com/Clooney82/MavLink_FrSkySPort) (that's clearly marked as dead and points to the athertop version) has commits that the athertop version does not.
+
+---
+
 Zener diode and Pixhawk power:
 
 * [Powering the Pixhawk](http://ardupilot.org/copter/docs/common-powering-the-pixhawk.html) and search down for "zerner".
@@ -79,7 +115,7 @@ Zener diode and Pixhawk power:
 
 Painless360 has a [full video on power options](https://www.youtube.com/watch?v=DKK0jms402Q&t=459s&list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p&index=6).
 
-However I don't think any of this is relevant for the 420S Lite ESCs that come with the E305 as I think they don't come with a red power wire - so need for a Zener and no possibility to power the Pixhawk via them. TODO: check for red wire when E305 system finally arrives.
+However I don't think any of this is relevant for the 420 Lite ESCs that come with the E305 as I think they don't come with a red power wire - so need for a Zener and no possibility to power the Pixhawk via them. TODO: check for red wire when E305 system finally arrives.
 
 ---
 
