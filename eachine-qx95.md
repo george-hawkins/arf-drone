@@ -78,3 +78,5 @@ When I added the buzzer I also added back the LED strip. When you're out flying 
 
 _Reassembled QX95 with buzzer and LED strip_  
 <img width="512" src="images/qx95/qx95-leds.jpg">
+
+TODO: comment that I pulled off the foam mounting pads from the LED strip and instead held it in place with one of the rubberbands meant for the FPV camera (along with some twists of wire) as this makes it much easier to access the USB connector.
