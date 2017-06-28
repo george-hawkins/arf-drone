@@ -61,7 +61,7 @@ My first customization, after going out for my first practice flights, was very 
 _QX95 with cardboard base for battery_  
 <img width="512" src="images/qx95/qx95-cardboard.jpg">
 
-Whenever I crashed my initial X1 I was very impressed at how robust such a little craft was. The QX95 was the same - it crashed repeatedly without incurring damage and I could cut the throttle and just let it drop out of the sky whenever it seemed to be getting away from me or seemed about to crash into me or something else. It survived drops from significant heights without any damage and without anything even popping off.
+Whenever I crashed my initial X1 I was very impressed at how robust such a little craft was. The QX95 was the same - it crashed repeatedly without incurring damage and I could cut the throttle and just let it drop out of the sky whenever it seemed to be getting away from me or seemed about to crash into me or something else. It survived drops from significant heights without any damage and without anything even popping off. I practised in an area with tough dense grass that provided a lot of shock absorbtion - the results would probably have been rather different over tarmac.
 
 After coming back from my next practice flights I added a buzzer. The QX95 is very small and if it lands some distance away from you it can be hard to find even in short grass. As I'd already removed the FPV camera there was lots of space at the front of the frame for the buzzer. The buzzer is just the standard kind you use in many beginner electronic projects - the important thing is that it's an [active buzzer](https://electronics.stackexchange.com/a/224442/27099) rather than a passive one.
 
