@@ -82,3 +82,10 @@ _Reassembled QX95 with buzzer and LED strip_
 <img width="512" src="images/qx95/qx95-leds.jpg">
 
 The LED strip comes with foam mounting pads to fix the strip in place on the rear posts of the frame. I pulled off these foam pads and instead held it in place with one of the rubberbands meant for the FPV camera (along with some twists of wire) as this makes it much easier to move the strip when you need to access the USB connector.
+
+---
+
+TODO:
+
+* add in [`inprogress-qx95.md`](inprogress-qx95.md) content and work in any relevant information from [`fpv-x-racer.md`](fpv-x-racer.md).
+* cleanup contents of [`cleanflight-settings`] - probably the only thing actually worth keeping is [`qx95-cleanflight-backup-20170624-diff.txt`](cleanflight-settings/qx95-cleanflight-backup-20170624-diff.txt) - move it up out of `cleanflight-settings` and get rid of the rest.

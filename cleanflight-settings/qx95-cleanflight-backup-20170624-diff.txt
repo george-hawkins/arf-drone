@@ -1,0 +1,54 @@
+feature -RX_PPM
+feature -BLACKBOX
+feature -TRANSPONDER
+feature RX_SERIAL
+feature MOTOR_STOP
+feature LED_STRIP
+map TAER1234
+serial 1 64 115200 57600 0 115200
+set looptime = 1000
+set serialrx_provider = SBUS
+set max_throttle = 2000
+set motor_pwm_rate = 1000
+aux 0 0 0 1450 2100
+aux 1 1 0 1175 2100
+set 3d_deadband_throttle = 0
+set acc_trim_roll = 4
+set p_pitch = 80
+set d_pitch = 44
+set p_roll = 80
+set d_roll = 44
+set p_yaw = 185
+set p_level = 50
+set roll_rate = 80
+set pitch_rate = 80
+set yaw_rate = 50
+
+led 0 0,7::IC:3
+led 1 15,7::IATC:12
+led 2 7,7::IATC:12
+led 3 8,7::IC:3
+led 4 0,0:::0
+led 5 0,0:::0
+led 6 0,0:::0
+led 7 0,0:::0
+led 8 0,0:::0
+led 9 0,0:::0
+led 10 0,0:::0
+led 11 0,0:::0
+led 12 0,0:::0
+led 13 0,0:::0
+led 14 0,0:::0
+led 15 0,0:::0
+led 16 0,0:::0
+led 17 0,0:::0
+led 18 0,0:::0
+led 19 0,0:::0
+led 20 0,0:::0
+led 21 0,0:::0
+led 22 0,0:::0
+led 23 0,0:::0
+led 24 0,0:::0
+led 25 0,0:::0
+led 26 0,0:::0
+led 27 0,0:::0
