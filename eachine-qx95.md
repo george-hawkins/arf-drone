@@ -40,6 +40,8 @@ _QX95 with propellars removed and prop guards added_
 
 You may also notice that the FPV camera is gone in this picture. The fun thing here is that you're free to customize your drone as you want. I don't have any of the FPV gear needed to receive the camera signal so as it's bulky and unnecessary I desolderd it (though you could just as well snip the connections to the flight controller board). Note: it's definitely lead free solder on the board so even with my soldering iron set to 425C the solder didn't melt straight away.
 
+It's a shame that you don't seem to be able to buy any of these small drones without an FPV camera as even the most [basic camera](https://www.fpvmodel.com/skyzone-5-8g-25mw-48-channel-transmitter-with-camera-_g1291.html) is fairly expensive and clearly contributes significantly to the overall cost.
+
 I also removed the LED strip as (initially at least) this just seemed like a gimic to me - but as you'll see later I added it back once I realized its value.
 
 Many of the reviews I read commented that the Eachine propellars are notoriously bad - I can't really comment on that (and perhaps they've improved) but having removed the original propellars to put on the guards I replaced them with [propellars from Hubsan](https://www.banggood.com/Hubsan-X4-H107D-FPV-RC-Quadcopter-Spare-Parts-Blade-H107D-a06-p-911713.html).
