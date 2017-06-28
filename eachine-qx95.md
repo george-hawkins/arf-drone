@@ -68,7 +68,7 @@ After coming back from my next practice flights I added a buzzer. The QX95 is ve
 _Flight controller with added buzzer_  
 <img width="512" src="images/qx95/flight-controller-buzzer.jpg">
 
-I used a [WST-1206UX](https://www.digikey.com/products/en?keywords=433-1048-nd) buzzer from Digikey but any 5V rated active buzzer should be fine. On the Banggood product page for the [flight controller](https://www.banggood.com/Eachine-FRF3_EVO-Brushed-Flight-Control-Board-Built-in-FRSKY-Compatible-SBUS-8CH-Receiver-p-1091779.html) you can find detailed images of the board that show exactly where to solder on the plus and minus connectors of the buzzer.
+I used a [WST-1206UX](https://www.digikey.com/products/en?keywords=433-1048-nd) buzzer from Digikey but any 5V rated active buzzer should be fine. On the Banggood product page for the [flight controller](https://www.banggood.com/Eachine-FRF3_EVO-Brushed-Flight-Control-Board-Built-in-FRSKY-Compatible-SBUS-8CH-Receiver-p-1091779.html) you can find detailed images of the board that show exactly where to solder on the plus and minus wires from the buzzer.
 
 Once connected I set up the buzzer flight mode so I could just flip a switch on my transmitter to make the QX95 beep loudly to enable me to find it more easily if it crashed somewhere in the distance.
 
