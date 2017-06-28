@@ -66,7 +66,7 @@ After coming back from my next practice flights I added a buzzer. The QX95 is ve
 _Flight controller with added buzzer_  
 <img width="512" src="images/qx95/flight-controller-buzzer.jpg">
 
-TODO: comment on how the original mounting foam disintigrated when I pulled out the flight controller and that I had to cut up new pieces (and afix them to the flight controller rather than the frame first, as the foam has to be placed carefully to avoid e.g. the aerial or little resistors and connectors).
+Note: usually the foam pads, holding something like this flight controller to the frame, peel off reasonably well and can be reused. The pads on the QX95 however disintegrated when I pulled out the flight controller. I had to carefully scrape the remains of the pads off the flight controller and the frame and then cut new tiny pads, with a craft knife, from the [mounting foam](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/) that I'd already bought for my main quadcopter build. Afix these pads first to the flight controller rather than the frame, as the foam has to be placed carefully to avoid e.g. the aerial and little resistors and connectors, and then remount the flight controller in the frame.
 
 I used a [WST-1206UX](https://www.digikey.com/products/en?keywords=433-1048-nd) buzzer from Digikey but any 5V rated active buzzer should be fine. On the Banggood product page for the [flight controller](https://www.banggood.com/Eachine-FRF3_EVO-Brushed-Flight-Control-Board-Built-in-FRSKY-Compatible-SBUS-8CH-Receiver-p-1091779.html) you can find detailed images of the board that show exactly where to solder on the plus and minus connectors of the buzzer.
 
@@ -79,4 +79,4 @@ When I added the buzzer I also added back the LED strip. When you're out flying 
 _Reassembled QX95 with buzzer and LED strip_  
 <img width="512" src="images/qx95/qx95-leds.jpg">
 
-TODO: comment that I pulled off the foam mounting pads from the LED strip and instead held it in place with one of the rubberbands meant for the FPV camera (along with some twists of wire) as this makes it much easier to access the USB connector.
+The LED strip comes with foam mounting pads to fix the strip in place on the rear posts of the frame. I pulled off these foam pads and instead held it in place with one of the rubberbands meant for the FPV camera (along with some twists of wire) as this makes it much easier to move the strip when you need to access the USB connector.
