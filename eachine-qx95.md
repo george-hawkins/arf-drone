@@ -51,7 +51,7 @@ _QX95 with Hubsan propellers_
 
 If you look very closely at the image you'll see that the propellers are labelled _A_ and _B_ - this seems to be a standard convention for labelling CW and CCW propellers. The propeller to the left of the nose is an _A_ propeller the one to the right a _B_ propeller, at the rear this order is reversed - rear left is a _B_ propeller and rear right is an _A_ propeller.
 
-These weren't actually the propellers I'd intended to use - in reviews I'd read that Gemfan propellers were popular and well regarded but with the propeller guards in place the Gemfan propellers, that I'd bought, were too large.
+These weren't actually the propellers I'd intended to use - in reviews I'd read that Gemfan propellers were popular and well regarded but with the propeller guards in place the Gemfan propellers, that I'd bought, were too large. I picked up the Hubsan propellers at a local store, if I was ordering again from Banggood I'd probably buy [Walkera QR Ladybird propellers](https://www.banggood.com/Wholesale-Walkera-QR-Ladybird-Spare-Parts-Main-Blades-Propellers-QR-Ladybird-Z-01-p-46561.html) which I've seen get good reviews. It's good to have spares - when crashing into grass it's the propellers that take the most noticeable damage as they chop into things.
 
 _QX95 with unused Gemfan propeller_  
 <img width="512" src="images/qx95/qx95-gemfan-props.jpg">
@@ -68,7 +68,7 @@ After coming back from my next practice flights I added a buzzer. The QX95 is ve
 _Flight controller with added buzzer_  
 <img width="512" src="images/qx95/flight-controller-buzzer.jpg">
 
-I used a [WST-1206UX](https://www.digikey.com/products/en?keywords=433-1048-nd) buzzer from Digikey but any 5V rated active buzzer should be fine. On the Banggood product page for the [flight controller](https://www.banggood.com/Eachine-FRF3_EVO-Brushed-Flight-Control-Board-Built-in-FRSKY-Compatible-SBUS-8CH-Receiver-p-1091779.html) you can find detailed images of the board that show exactly where to solder on the plus and minus wires from the buzzer.
+I used a [WST-1206UX](https://www.digikey.com/products/en?keywords=433-1048-nd) buzzer from Digikey but any 5V rated active buzzer should be fine. Banggood sell suitable little [no-name buzzers](https://www.banggood.com/5V-Buzzer-Alarm-Beeper-With-Cable-for-Eachine-QX70-QX90-QX95-NAZE32-F3-DIY-Micro-Brushed-FPV-Racer-p-1100338.html). On the Banggood product page for the [flight controller](https://www.banggood.com/Eachine-FRF3_EVO-Brushed-Flight-Control-Board-Built-in-FRSKY-Compatible-SBUS-8CH-Receiver-p-1091779.html) you can find detailed images of the board that show exactly where to solder on the plus and minus wires from the buzzer.
 
 Once connected I set up the buzzer flight mode so I could just flip a switch on my transmitter to make the QX95 beep loudly to enable me to find it more easily if it crashed somewhere in the distance.
 
@@ -83,11 +83,15 @@ _Reassembled QX95 with buzzer and LED strip_
 
 The LED strip comes with foam mounting pads to fix the strip in place on the rear posts of the frame. I pulled off these foam pads and instead held it in place with one of the rubberbands meant for the FPV camera (along with some twists of wire) as this makes it much easier to move the strip when you need to access the USB connector.
 
+I took out the FPV camera on my QX95 which gave me lots of room for the buzzer but if you want to keep the camera then a nice alternative setup, where space is more constrained, is a [combined buzzer and LED strip](https://www.banggood.com/Matek-WS2812B-LED-Board-With-5V-Buzzer-For-Naze-32-Skyline-32-Flight-Controller-p-991715.html) - fitting this though means desoldering the cable for the existing LED strip before fitting the new one (which is all shown in [this video](https://www.youtube.com/watch?v=TihDtgvOLsc&feature=youtu.be&t=41)).
+
 ---
 
 Increased the roll/pitch expo from 0 to 0.55 and the yaw expo from 0 to 0.35 as per <http://www.propwashed.com/learning-rate-mode/>.
 
 Painless360 (when working with ArduCopter rather than Betaflight) use rates of 25% and 15% respectively for these values. 
+
+I haven't found anything really good on rates and expos in Betaflight - [this video](https://www.youtube.com/watch?v=sGl7KBfZYZA) explains things a bit but you'd already need to have thought about the linear relationship between stick movements and quadcopter movements that exists before these adjustments are applied. Oscar Liang goes into more details [here](https://oscarliang.com/rc-roll-pitch-yaw-rate-cleanflight/), although his initial screenshot comes from an old version of Cleanflight and this is an area where things have changed a lot (which is reflected in comments and updates in the text).
 
 ---
 

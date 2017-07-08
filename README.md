@@ -146,6 +146,8 @@ Note: if the IMU has a compass you might wonder why the GPS module also has one.
 
 The flight controller is often also called the autopilot but this shouldn't confuse you into thinking it's just needed for autonomous flight - it's handling tasks like controlling the speed of the individual motors, via the ESCs, irrespective of whether a preprogrammed path is being followed or someone is directing the drone from the ground.
 
+Note: some people distinguish between the terms flight controller and autopilot - using the term flight controller for the kind of systems found in the drones aimed at the racing crowd that are not capable of autonomous flight while restricting the term autopilot to systems that combine a flight controller with all the bits necessary for autonomous flight, e.g. as [here](http://www.dronetrest.com/t/beginners-guide-to-drone-autopilots-flight-controllers-and-how-they-work/1380) on the DroneTrest site. However this is far from universal and many sources just use the two terms interchangeably.
+
 There are many flight controllers but as noted above I wanted an open source hardware implementation. I chose the Pixhawk flight controller which is covered in the next section.
 
 Pixhawk
