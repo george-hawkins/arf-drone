@@ -14,7 +14,7 @@ OpenTX splash screens suitable for the [Q X7](http://www.open-tx.org/screens-9x.
 The Painless360 Pixhawk series - <https://www.youtube.com/playlist?list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p>
 
 * Video 1 - lots of talk on Pixhawk vs the older APM. At [9:47](https://www.youtube.com/watch?v=uH2iCRA9G7k&feature=youtu.be&list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p&t=587) it gets on to hooking the plugged together setup up to Mission Planner. Mentions aligning arrows on GPS and Pixhawk. Mentions drivers and using a USB port capable of at least 500mA. At 13:52 he gets onto flashing the latest firmware - the phase where you _don't_ connect, then once that's done you connect and go through the wizard for mandatory hardware configuration. Only when you get to the radio calibration do you need to turn on the TX - when calibrating move the sticks _and_ the mode switches. He just sets up three flight modes - stabilize, loiter and RTL - he says he'll get back to this (and that he's already covered this in a video for APM). He doesn't setup failsafe at this point. Once your done hold it out a window until it gets a GPS fix and then try moving it about and moving the sticks and switches.
-* Video 2 - he replaces an existing APM unit on an F450 frame - he's got the flight controller on a vibration damping platform on the top frame plate - I wonder if in an earlier APM video we see how he attached the vibration damping platform to the plate. Note in this video he recommends pulling the red wires out of the ESC connectors and so skip needing a Zener diode. Worth watching - at 4:37 he starts attaching and distributing parts around the frame. At 8:14 he wires in the ESCs to the Pixhawk taking account of CW and CCW. At 9:43 he recommends labelling your ESC connectors 1 to 4, matching the numbering in the ArduCopter Quad X documentation, so you can keep track of them and easily plug them into the Pixhawk. He covers the status LEDs - see [my documentation](images/pixhawk-leds/README.md) - print out the LED pictures. TODO: update any reference to "arming switch" (if there are any) to "safety switch" as its just an additional precursor to the normal TX stick based arming. Make sure not to have props on when powering up for first time. He powers it up by plugging in the battery then once happy he plugs it into Mission Planner via USB (and presses Connect). He presses the safety switch, arms then ups the throttle. He says if the ESCs don't come on at the same time you need to go through ESC callibration. He notes the reversal of the pitch (tho' it looks as if you do reversal and still see pitch (in radio calibration) movign counter to expected - is this really what's wanted? See 17:05). Once happy he goes outdoors, with props now on and does the same - he notes the lack of Expo.
+* Video 2 - he replaces an existing APM unit on an F450 frame - he's got the flight controller on a vibration damping platform on the top frame plate - I wonder if in an earlier APM video we see how he attached the vibration damping platform to the plate. Note in this video he recommends pulling the red wires out of the ESC connectors and so skip needing a Zener diode. Worth watching - at 4:37 he starts attaching and distributing parts around the frame. At 8:14 he wires in the ESCs to the Pixhawk taking account of CW and CCW. At 9:43 he recommends labelling your ESC connectors 1 to 4, matching the numbering in the ArduCopter Quad X documentation, so you can keep track of them and easily plug them into the Pixhawk. He covers the status LEDs - see [my documentation](images/pixhawk-leds/README.md) - print out the LED pictures. TODO: update any reference to "arming switch" (if there are any) to "safety switch" as its just an additional precursor to the normal TX stick based arming. Make sure not to have props on when powering up for first time. He powers it up by plugging in the battery then once happy he plugs it into Mission Planner via USB (and presses Connect). He presses the safety switch, arms then ups the throttle. He says if the ESCs don't come on at the same time you need to go through ESC callibration. He notes the reversal of the pitch (tho' it looks as if you do reversal and still see pitch (in radio calibration) movign counter to expected - is this really what's wanted? See 17:05). Once happy he goes outdoors, with props now on and does the same - he notes the lack of Expo. Note: this video shows a vibration damping platform that's nearly identical to the one used in my build but with much larger 3M pads than the ones that came with my platform.
 * Video 3 - looks like its all been covered already in my pages. At 4:06 he mentions the pitch flip and seems to confirm that you see the pitch moving oposite to expected _after_ you've applied the correction to the elevator/pitch and this is how things should be. On the mixes page he does actually name things Roll, Pitch etc. (see 4:28). He applies Expo in OpenTX rather than in Mission Planner - at 6:00 he uses 25% on Ail and Ele and 15% on Rud (and 0 on throttle). At 20:52 he sets the failsafe (pushing throttle to zero to make the craft come down) - again via OpenTX rather than Mission Planner - he says he'll cover this later.
 * Video 4 is just relevant if you've got a D4R-II and covers upgrading the firmware to change the CPPM period to 27ms so there's time to output all 8 channels.
 * Video 5 covers flight modes - it points to the ArduCopter flight modes page. With flight modes there's also simple and super simple options - which equate to headless - and like everyone he discourages their use - although he does say being able to flick into simple or super simple can be nice if the craft is so far away that you've lost orientation (though perhaps RTL is a more obvious option in this situation unless there are obstacles). He recommends stabalize (auto-level) as the initial mode. From 4:32 on is worth watching for a talk-thru of all the modes. Note that you can turn some modes on in combination with others, e.g. alt. hold - this would require a separate switch for such modes though (and channels???). Actually alt. hold is the only one where using it in combination is mentioned.. Alt. hold changes behavior of throttle - essentially it divides the throttle range into three simple fat bands - down, hold, up. He says Land lands better than he can.
@@ -34,48 +34,104 @@ Note: it looks like you can wire up those nasty connectors that the Pixhawk uses
 
 ---
 
-Update - this DroneTrest recommened video doesn't cover anything not covered just as well in the Painless360 Pixhawk series. DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner.
+Continuity testing the connections on your PDB after finishing soldering [video 5:02](https://www.youtube.com/watch?v=OpwBgGllcwg&t=302) (in German - the auto-translate subtitle aren't bad).
+
+Sparkfun on [continuity testing](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter#continuity).
 
 ---
 
 DJI videos:
 
-* <https://www.youtube.com/watch?v=pUTHIL_Xfcc> - assembling the original F450 kit.
-* <https://www.youtube.com/watch?v=H_Rvi7xQLdw> - assembly with the (then) newer E300 propulsion system (now replaced by the E305). Note: with the F450 you don't have to use the E305 PDB as the bottom plate of the F450 is a PDB.
-* <https://www.youtube.com/watch?v=qJZa7p3rsCU> - installing the Naza M V2 - while I didn't use this flight controller it's interesting to see how everything is fitted in.
+1. <https://www.youtube.com/watch?v=pUTHIL_Xfcc> - assembling the original F450 kit.
+2. <https://www.youtube.com/watch?v=H_Rvi7xQLdw> - assembly with the (then) newer E300 propulsion system (now replaced by the E305). Note: with the F450 you don't have to use the E305 PDB as the bottom plate of the F450 is a PDB.
+3. <https://www.youtube.com/watch?v=qJZa7p3rsCU> - installing the Naza M V2 - while I didn't use this flight controller it's interesting to see how everything is fitted in.
 
 Note: according to one of the comments the "video shows the base plate being mounted sideways. If you want to mount a front facing camera gimbal you should mount the base plate the other way." And someone else comments that "she moves the solder around with the iron and that means there is too little heat and the cable should be still until the solder has gotten hard again ... give a little more heat and hold it still a little longer after removing the heat! Better to use a more powerful soldering iron, then the time to heat it up is less and the heat doesn't go that deep in the board and the conector."
 
+Video 1 is nice and to the point, it shows the whole soldering job but using the older 30A OPTO ESCs where the plus and minus wires of the ESC aren't combined in a single cable (and so you have to be careful not to solder the separate cables so they cover the screw holes of the PDB). It emphasizes getting a robust solder joint with good "wetting". It also shows something called the VU (versatile unit) being soldered to the main power connections - the VU isn't an element of our build. It covers continuity testing and covering the solder points with hot glue to reduce the risk of shorts (something DJI's PDF manual just refers to in passing, telling you to use some kind of "insulating method at all solder spots"). Mounting the motors and the ESCs to the arms and bolting the arms to the PDB is also covered. The ESCs are simple held onto the undersides of the arms with a single cable tie each.
+
+Video 2 shows soldering the ESCs from the newer E300 system to the small E300 PDB - these ESCs now have the plus and minus wires in a single cable just like those in the E305 system used in this build. In this video they spread a small amount of flux on the PDB pads before soldering. Then they add a small amount of solder to each pad, then they really hold each ESC plus and minus wire down on their appropriate pad for a noticeable while before then adding yet more solder on top. They more clearly cover placing CW and CCW motors on the appropriate arms. Unlike the first video the PDB is oriented so the longer sides are the nose and the tail and the red arms are the front facing arms - a configuration that seems common. This video also covers installing the more modern self-tightening propellers.
+
+Video 3 is the least relevant as it covers the installation of DJI flight controller rather than a Pixhawk but it's interesting to see the final assembly involving pieces which aren't covered in the previous videos, including the flight controller, receiver and GPS. In this video you can clearly see the bottom half of velcro strap included in the F450 kit stuck on to the top plate of the frame - something that isn't covered anywhere else. And they emphasize that the GPS must be correctly oriented (arrow facing forward) and they show the mast clearly held on with adhesive rather than with bolts.
+
 DJI user manual PDFs:
 
-* [F450 assembly](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) - inclused soldering on ESCs.
+* [F450 assembly](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) - includes soldering on ESCs.
 * [E305 assembly](http://dl.djicdn.com/downloads/e305/en/E305_User_Manual_v1.00_en.pdf).
+
+The F450 assembly manual is worth reading through quickly but doesn't contain anything surprising. It has nice diagrams for the popeller locking and unlocking. It mentions adding screw glue yourself - which seems unnecessary as the screws now all come with screw glue already applied. And it covers the sounds the ESCs can emit to indicate their status. The E305 manual is similar and covers much the same details - but adds how to use the propeller removal clamp.
 
 DJI wiki:
 
 * [F450 assembly](http://wiki.dji.com/en/index.php/Flame_Wheel_F450_Assembly)
 * [Motor orientation, mounting and ESCs](http://wiki.dji.com/en/index.php/F450_ESC_and_Motor_Mounting)
 
+The wiki pages add little, if anything, and relate to older versions of the propulsion system etc.
+
 ---
 
-Assembling the F450 videos:
+Marionville Models (MM) assembly video - <https://www.youtube.com/watch?v=ER2GxMo0X3E>
 
-* [From Marionville Models](https://www.youtube.com/watch?v=ER2GxMo0X3E).
+At 50 minutes this is one of the most comprehensive videos. It does though cover using the DJI Naza flight controller rather than the Pixhawk.
 
-* [Nice RCGroups E305 review](https://www.rcgroups.com/forums/showthread.php?2456770-Review-DJI-E305-Tuned-Propulsion-System) - includes lots of pictures and wiring things up to the an F450 frame.
+They note that CW motors have a dimple at the tip of the motor shaft while the CCW ones don't and they note that the black hub propellers go with the shafts that have dimples while the silver hub propellers go with the ones without (think black dimple / black propeller). TODO: verify this.
+
+Mounting the propellers before screwing the motors on to the arms looks more trouble than the supposed gain in being able to more easily distinguish CW and CCW motors (and you'll need to take them off anyway for initial motor testing).
+
+Like the second DJI video MM apply flux to the PDB pads. They show that the ground in the ESC cables is actually a coaxial sheath so if you cut the cables shorter you have separate out the wires of the sheath so you can twist them together to form a single ground wire.
+
+In the DJI video they solder the plus and minus ESC wires to the small PDB included with propulsion system, as the MM video points out this is more of a hassle with the F450 PDB where the plus and minus pads are further apart. They tin the ESC wires and show how to handle the issue of the wide apart pins nicely (though each cable ends up lying over a screw hole umtil twisted out of the way)
+
+They add extra solder after soldering on the power connector as it has far fatter wires than the other connections. They note that the scews already have thread lock (and that this results in a little extra resistance as you screw them in). They use electrical insulation tape rather than a glue gun to cover the solder points. They point out you should remember  to thread the ESC cable through the leg connection points before screwing them to the bottom plate. Notes not to over tighten cable ties used for ESCs (otherwise you'll start to distort their casing). They mount the LED module at the rear so you can see the LED as the craft is moving away from you - it'd make sense to mount the external LED and USB module that I have in a similar fashion. DJI mount the battery velcro left to right (which matches up with the power connector sticking out the right) but MM have in going right to left (they say this allows you to e.g. move the battery backwards to compensate for the increased weight at the nose if you add a camera). MM screw down the base of the GPS mast using the outer leg screw points of the top plate - something that won't work out if you mount the vibration damping platform on the top plate.
+
+They discuss the motor to ESC connectors as being AC connectors (check this) and say you can plug them in however you like - then when you do your first power test just swap any two connectors of a given motor if it's turning the wrong direction - yes really just choose any two of the three connectors and swap them. As noted elsewhere (where?) the fact that a CW motor will also run CCW if wired incorrectly doesn't mean they're interchangeable - running CW motors CCW and vice-versa is bad for the motor (have I got a good ref?).
+
+The tidying up of the ESC signal wires (to the flight controller) is nicely done (spooled up together rather than individually) as is the tying of the GPS cable to the mast and spooling up the excess below.
+
+---
 
 Assembly pages:
 
-* [F450 as assembly example](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) on pixhawk.org.
-* [F450 as assembly example](http://ardupilot.org/copter/docs/dji-f330-flamewheel.html) on ardupilot.org.
-* [Similar thorough walkthru on Quadcopters are Fun](http://quadcoptersarefun.com/2FlamewheelsBuild.html) - uses older PX4 board.
-* [A much less thorough walkthru using the old APM FC](http://diydrones.com/profiles/blogs/using-a-dji-450-flamewheel-quadcopter-with-the-apm) on DIYDrones.
+1. [F450 as assembly example](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) on pixhawk.org.
+2. [F450 as assembly example](http://ardupilot.org/copter/docs/dji-f330-flamewheel.html) on ardupilot.org.
+3. [Similar thorough walkthru on Quadcopters are Fun](http://quadcoptersarefun.com/2FlamewheelsBuild.html) - uses older PX4 board.
+4. [A much less thorough walkthru using the old APM FC](http://diydrones.com/profiles/blogs/using-a-dji-450-flamewheel-quadcopter-with-the-apm) on DIYDrones.
+5. [Pukit.com buildlog](http://www.pukit.com/2014/12/16/buildlog-with-dji-f450-flamewheel-naza-v2-and-a-stock-turnigy-9x-transmitter/).
 
-Note: at least one of these builds uses a BEC - this is not necessary for my setup according to [this thread](http://diydrones.com/forum/topics/new-pixhawk-with-dji-f450-kit-motors-beeping) (search for BEC).
+Page 1. is from pixhawk.org and covers a PX4 build (i.e. the Pixhawk's predecessor). Slightly worrying they suggest doing an initial electrical check after the basic soldering outdoors - so you don't ruin your house if you've got things horribly wrong - simply connect the battery directly to the PDB power connector (rather than via the power module as in the final setup) and listen for the ESCs beeping nicely. If you've done a continuity check on all your soldering and double checked red and black wires are all the right way around there shouldn't be any real potential for disaster. Note they use a different arm numbering convention to earlier videos! They cover checking and correcting motor directions.
+
+TODO: check arm numbering conventions used on Pixhawk and ArduCopter sites - things have to match the numbering on the Pixhawk itself.
+
+Page 2. is from ardupilot.org and covers similar details and is similarly old - covering things like BECs which aren't relevant for our setup. In contrast to DJI and most of the other videos they mount the flight controller on the top plate and install the battery in between the top and bottom plates.
+
+Page 3. comes from QuadcoptersAreFun and shares text and photos with the ArduPilot page - the two pages presumably started from the same content but have diverged over time. This page has been updated with more Pixhawk relevant material and is a bit more coherent than the ArduPilot page but doesn't add anything much.
+
+Page 4. comes from DIYDrones and covers much the same details more concisely but uses the old ArduPilot APM flight controller. Again it covers irrelevant details like using a BEC.
+
+Note: DIYDrones is a forum site established by 3DR and seems to have been the spiritual home of the Pixhawk back in the days when 3DR hadn't yet pivoted in other directions.
+
+Page 5. covers doing a build with the Naza flight controller - it has some nice advise on soldering your joints correctly, i.e. tin your wires, apply the iron to the PDB pads and let the solder melt onto the pads directly, not onto the iron.
+
+---
+
+BECs
+----
+
+At least one of the assembly pages aboveuses a BEC - this is not necessary for my setup according to [this thread](http://diydrones.com/forum/topics/new-pixhawk-with-dji-f450-kit-motors-beeping) (search for BEC).
 
 Might be nice to ask about BECs on DroneTrest, referencing the above DIYDrones thread and this old old [thread](http://www.dronetrest.com/t/what-kit-do-i-need-for-a-diy-quadcopter-using-the-pixhawk-platform/2168) on their own site.
 
-Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t=437) on power options it does look like you don't need a BEC unless you're planning to run e.g. landing gear or camera gimbal servos directly from the Pixhawk, for the ESCs it's not necessary (unless they expect to see 5V on their power lines - which as noted elsewhere I don't think the 420 Lites even have).
+Looking at the Painless360 [video](https://www.youtube.com/watch?v=DKK0jms402Q&t=437) on power options it does look like you don't need a BEC unless you're planning to run e.g. landing gear or camera gimbal servos directly from the Pixhawk, for the ESCs it's not necessary (unless they expect to see 5V on their power/positive lines as is the case with some ESCs).
+
+The 420 Lite ESCs just have ground and signal wires - there's no red positive wire - so there's no issue with unplugging the positive wires and no possibility to use the ESCs as an alternative power source - and hence no need for a Zener diode as covered elsewhere.
+
+---
+
+DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner. **Update** - this video doesn't cover anything not covered just as well in the Painless360 Pixhawk series.
+
+---
+
+* [Nice RCGroups E305 review](https://www.rcgroups.com/forums/showthread.php?2456770-Review-DJI-E305-Tuned-Propulsion-System) - includes lots of pictures and wiring things up to the an F450 frame.
 
 ---
 
