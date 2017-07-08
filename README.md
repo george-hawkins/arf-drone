@@ -5,9 +5,9 @@
 
 TODO: include photo of final build here.
 
-Having some experience with hobbyist electronics projects I initially thought that I'd really be able to make a quadcopter from scratch, 3D printing elements of the frame, sourcing most of the components, like motors, as generic parts from a big distributor like Digi-Key, and only having to buy a few drone-specific components like propellars.
+Having some experience with hobbyist electronics projects I initially thought that I'd really be able to make a quadcopter from scratch, 3D printing elements of the frame, sourcing most of the components, like motors, as generic parts from a big distributor like Digi-Key, and only having to buy a few drone-specific components like propellers.
 
-I was quite disappointed when I found various pages (such as [this one](http://ardupilot.org/copter/docs/build-your-own-multicopter.html) from ArduPilot) making clear that this wasn't an option to consider when making ones first drone. Apparently I'd have to start with what's referred to as an ARF (almost ready to fly) kit, i.e. an unassembled frame and the parts for the propulsion system (propellars, motors etc.).
+I was quite disappointed when I found various pages (such as [this one](http://ardupilot.org/copter/docs/build-your-own-multicopter.html) from ArduPilot) making clear that this wasn't an option to consider when making ones first drone. Apparently I'd have to start with what's referred to as an ARF (almost ready to fly) kit, i.e. an unassembled frame and the parts for the propulsion system (propellers, motors etc.).
 
 The ARF acronym makes it sound like all the interesting work has been taken care of and all that's left is to put things together lego style. But it turns out, if starting from scratch with no prior experience of drones, that there's quite enough additional complexity without also having to worry about the frame and the propulsion system.
 
@@ -34,7 +34,7 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 | Price | Description |
 |-------|-------------|
 | &euro;24 | <img width="128" src="images/parts/f450-frame-3.jpg"> <img height="128" src="images/parts/f450-frame-1.gif"> <img width="128" src="images/parts/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link 1](https://www.amainhobbies.com/dji-flame-wheel-f450-basic-quadcopter-drone-kit-dji-fw450bas/p235233), [link 2](http://www.builtdrones.com/dji-flamewheel-f450-basic-kit/)).
-| &euro;150 | <img height="128" src="images/parts/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellars, motors and ESCs ([link](http://store.dji.com/product/e305-4)).
+| &euro;150 | <img height="128" src="images/parts/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellers, motors and ESCs ([link](http://store.dji.com/product/e305-4)).
 | &euro;175 | <img width="128" src="images/parts/pixhawk-1.jpg"> <img height="128" src="images/parts/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](https://pixhawk.org/modules/pixhawk)).
 | &euro;41 | <img width="128" src="images/parts/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/)).
 | &euro;35 | <img height="128" src="images/parts/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).
@@ -52,7 +52,7 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 | &euro;2.50 | <img width="128" src="images/parts/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter) ([link](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/)).
 | &euro;8 | <img height="128" src="images/parts/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector ([link](https://www.unmannedtechshop.co.uk/all-in-one-led-and-usb-module-for-pixhawk/)).
 | &euro;2.50 | <img width="128" src="images/parts/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector ([link](https://www.unmannedtechshop.co.uk/i2c-board/)).
-| &euro;7.50 | <img width="128" src="images/parts/spare-propellars.jpg"><br>Spare propellars ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
+| &euro;7.50 | <img width="128" src="images/parts/spare-props.jpg"><br>Spare propellers ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
 | &euro;5 | <img width="128" src="images/parts/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](http://www.helipal.com/dji-landing-gear-for-f450-f550.html)).
 | &euro;4.50 | <img height="128" src="images/parts/battery-monitor-alarm.jpg"><br>Battery monitor alarm ([link](https://www.unmannedtechshop.co.uk/battery-monitor-alarm-1-8s/)).
 | &euro;40 | <img width="128" src="images/parts/s60-lipo-charger.jpg"><br>S60 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
@@ -197,7 +197,7 @@ Both though work with ground control software for autonomous operation, e.g. Mis
 ESC
 ---
 
-The propulsion systems constists of the propellars, motors and ESCs (electronic speed control). [ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller. An ESC contains its own microcontroller (generally an Atmel ATmega or a Silabs 8051). For more information on ESCs see the DroneTrest [guide](http://www.dronetrest.com/t/what-to-consider-when-buying-a-esc-for-your-multirotor/1305).
+The propulsion systems constists of the propellers, motors and ESCs (electronic speed control). [ESCs](https://en.wikipedia.org/wiki/Electronic_speed_control) are responsible for spinning the motors at the speed requested by the flight controller. An ESC contains its own microcontroller (generally an Atmel ATmega or a Silabs 8051). For more information on ESCs see the DroneTrest [guide](http://www.dronetrest.com/t/what-to-consider-when-buying-a-esc-for-your-multirotor/1305).
 
 I chose the E305 propulsion system as it's the standard system sold with the F450 frame (and can be bought bundled together with it as a kit). The ESCs are the most expensive element in the E305 propulsion system (one ESC being just a little more expensive than its corresponding motor).
 

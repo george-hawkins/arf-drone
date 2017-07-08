@@ -66,6 +66,6 @@ While unarmed move the throttle to the upper left corner and the right stick to 
 
 ---
 
-When the propellars would no longer turn the removed battery shows a voltage of about 3.2V if you test it with a multimeter.
+When the propellers would no longer turn the removed battery shows a voltage of about 3.2V if you test it with a multimeter.
 
 A battery discharged to this level takes about 80 minutes to recharge.

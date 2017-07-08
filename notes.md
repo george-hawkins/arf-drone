@@ -6,7 +6,7 @@ This page contains miscellaneous notes that came out of putting together the par
 Motor direction
 ---------------
 
-A quadcopter has two clockwise (CW) and two counterclockwise (CCW) motors and there are clockwise and counterclockwise specific propellars. So spare propellars generally come in packs of two, one for each direction.
+A quadcopter has two clockwise (CW) and two counterclockwise (CCW) motors and there are clockwise and counterclockwise specific propellers. So spare propellers generally come in packs of two, one for each direction.
 
 External LED and USB port
 -------------------------
@@ -25,7 +25,7 @@ Searching online however quickly becomes confusing - on different sites there ar
 It turns out the kit is really just a bundle of two things:
 
 * The [F450 frame](http://www.dji.com/flame-wheel-arf/feature) consisting of just the quadcopter arms and the top and bottom central plates.
-* The [E305 tuned propulsion system](http://store.dji.com/product/e305-4) consisting of motors, propellars, ESCs and the necessary bolts etc.
+* The [E305 tuned propulsion system](http://store.dji.com/product/e305-4) consisting of motors, propellers, ESCs and the necessary bolts etc.
 
 It's the propulsion system that makes up most of the cost, the 4 motor E305 variant costs around US$150, while the frame itself costs only $25. And it's the propulsion system that's the source of confusion when comparing the F450 ARF kit across sites.
 
@@ -55,7 +55,7 @@ E305 motor variants
 
 The motors that are part of the E305 family come in two variants - 800KV and 960KV (for the meaning of KV in this context see [KV on Wikipedia](https://en.wikipedia.org/wiki/Motor_constants)). These variants are identically priced, which should give you an indication that a higher KV values isn't better (or worse). In fact the 800KV variant can handle a higher take off weight and it's recommended that one use 4S batteries with them while 3S batteries are recommended for the 960KV variant (see the [features section](http://store.dji.com/product/2312e-motor-800kv-cw) for either of the motor variants). See the [batteries](#batteries) section for an explanation of the terms 4S and 3S.
 
-Important: the E305 bundles that include propellars, motors and ESCs always include the 800KV variant.
+Important: the E305 bundles that include propellers, motors and ESCs always include the 800KV variant.
 
 So why would one ever want the 960KV variant? You'll have to Google for this - basically there are certain applications where higher RPMs, at the cost of lower torque, are a better fit.
 
@@ -204,7 +204,7 @@ Miscellaneous parts
 
 [Threadlocker](https://en.wikipedia.org/wiki/Thread-locking_fluid) (also called thread or screw glue) comes in various strengths but for this situation it's a weak glue that's applied to the thread of a scew before you screw it into place, it's weak enough that you can still unscrew the screw later but strong enough that it stops the screw coming loose due to vibration (apparently it's common in automotive applications).
 
-According to the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) you should use it for the various screws needed to assemble the frame (but not for attaching the propellars).
+According to the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) you should use it for the various screws needed to assemble the frame (but not for attaching the propellers).
 
 [Loctite 243](http://www.na.henkel-adhesives.com/industrial/blue-threadlockers-medium-strength-13231.htm) seems to be suitable (UHU also have something similar, [UHU schraubensicher mittelfest](http://www.uhu-profi.de/produkte/anaerobe-klebstoffe-schraubensicherung/detail/uhu-schraubensicher-mittelfest.html), but don't seem to market it internationally).
 

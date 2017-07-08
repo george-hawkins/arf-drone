@@ -30,23 +30,23 @@ The E305 tuned propulsion system consists of:
 * Two clockwise (CW) and two counterclockwise (CCW) 2312E 800KV motors.
 * Two 420 Lite ESCs.
 * A PDB.
-* A propellar removal clamp.
+* A propeller removal clamp.
 * A packet of M3 4.5mm screws and a packet of M3 8mm screws.
-* Three packets of propellars, each containing a CW and CCW propellar.
+* Three packets of propellers, each containing a CW and CCW propeller.
 
 The PDB isn't needed as the bottom plate of the F450 is also a PDB. Similarly two different lengths of screws are provided so you can match them to the depth of the assembly holes on your frame but neither is needed as the F450 frame already came with suitable screws (M3 8mm screws).
 
 If you look at the picture below you can clearly tell the CW and CCW motors apart by the arrows on the sides of the motor housings. If you look at the other side of the motors you'll also see "CW" or "CCW" as part of the labelling.
 
-The housing of the motors is aluminium and apparently buckles easily under pressure so you should always use the propellar removal clamp if you need to grip them tightly.
+The housing of the motors is aluminium and apparently buckles easily under pressure so you should always use the propeller removal clamp if you need to grip them tightly.
 
-Each pack of propellars contains one CW propellar (with a black colored central nut) and one CCW propellar (with a silver colored central nut).
+Each pack of propellers contains one CW propeller (with a black colored central nut) and one CCW propeller (with a silver colored central nut).
 
 _Motors, ESCs, clamp, PDB and screws._  
 ![E305 parts](images/assembly/frame/e305-system-parts.jpg)
 
-_Propellars._  
-![propellars](images/assembly/frame/e305-system-parts-props.jpg)
+_Propellers._  
+![propellers](images/assembly/frame/e305-system-parts-props.jpg)
 
 Mast placement
 --------------

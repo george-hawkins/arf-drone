@@ -33,7 +33,7 @@ Disabling throttle self centering
 
 The Q X7 comes with both sticks self centering in all directions, i.e. if you let go of either it returns to the center point.
 
-However throttle, i.e. up/down, controls overall power to the propellars - when throttle is all the way down the propellars should be off and when its all the way up they should be turning at maximum. So you don't really want throttle just springing half way to a value between these.
+However throttle, i.e. up/down, controls overall power to the propellers - when throttle is all the way down the propellers should be off and when its all the way up they should be turning at maximum. So you don't really want throttle just springing half way to a value between these.
 
 Most people want throttle at zero when they're getting ready for talkoff and then they want it just staying where it is if they take their finger off it.
 

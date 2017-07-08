@@ -15,13 +15,13 @@ The FPV Model [build video](https://www.youtube.com/watch?v=uFnxRmWBuGA) (the on
 
 Oscar Liang mentions this in his [review](https://oscarliang.com/x-racer-x1-micro-quad/), apparently the setup changed between preproduction and production and the front right and back left for the black and white motors is correct for production models.
 
-TODO: comment on CW and CCW motors and also propellars - the propellar setup in particular is hard to see from the video.
+TODO: comment on CW and CCW motors and also propellers - the propeller setup in particular is hard to see from the video.
 
 ---
 
 The motors are hard to push in but don't try laying the frame down on a surface first and then pressing the motors in - the legs will buckle under the pressure.
 
-Video doesn't mention clockwise and counterclockwise motors or propellars.
+Video doesn't mention clockwise and counterclockwise motors or propellers.
 
 The battery died soon after being connected, despite never running the motors, so charge up properly before connecting for the first time.
 

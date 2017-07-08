@@ -20,7 +20,7 @@ Purchase order
 * USD 20 - Telemetry cable ([Craft and Theory US](http://www.craftandtheoryllc.com/product/frsky-x6r-x8r-flvss-telemetry-cable-for-pixhawk/)) (select the "Pixhawk - Servo" version).
 * Fr. 26 - F450 frame - ([AEROdron CH](https://www.estore.ch/flying-platforms/flame-wheel/1304/flame-wheel-f450)).
 * Fr. 160 - E305 propulsion system - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1336/e305-4x-motor/esc-3-pair-propeller-accessories-pack)).
-* Fr. 8 - Spare propellars - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1349/e305-9450-self-tightening-rotor-composite-hub-white-with-silver-stripes?number=FE0014)).
+* Fr. 8 - Spare propellers - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1349/e305-9450-self-tightening-rotor-composite-hub-white-with-silver-stripes?number=FE0014)).
 * Fr. 5 - F450/F550 landing gear - ([AEROdron CH](https://www.estore.ch/flying-platforms/accessories/flame-wheel-accessoires/1311/f450/f550-landing-gear)).
 * Fr. 115 - Taranis Q X7 transmitter ([DroneFactory CH](http://www.dronefactory.ch/produkt/frsky-taranis-q-x7-weiss/)).
 * Fr. 50 - S60 LiPo charger - ([Brack CH](https://www.brack.ch/skyrc-s60-366689)).
