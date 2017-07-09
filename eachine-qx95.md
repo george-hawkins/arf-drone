@@ -1,7 +1,7 @@
 Practising with the Eachine QX95
 ================================
 
-Nearly every introduction to flying quadcopters tells people to expect frequent crashes when they get started with learning to fly. You have to get used to controlling the two sticks simultaneously and get used to things like [ground effect](https://en.wikipedia.org/wiki/Ground_effect_(aerodynamics) and so on.
+Nearly every introduction to flying quadcopters tells people to expect frequent crashes when they get started with learning to fly. You have to get used to controlling the two sticks simultaneously and get used to things like [ground effect](https://en.wikipedia.org/wiki/Ground_effect_(aerodynamics)) and so on.
 
 After investing so much time and money in my F450 quadcopter build I didn't like the idea of its first flight ending after seconds with it flipping over, burying itself in the ground and losing a propeller or two in the process (there are no end of videos of this kind of thing on YouTube).
 
