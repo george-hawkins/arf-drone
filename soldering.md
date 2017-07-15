@@ -35,7 +35,7 @@ _ESC cable length._
 _ESC's braided ground sheath._  
 <img width="512" src="images/assembly/soldering/esc-power-braided.jpg">
 
-It's easier than it looks to just gently pull apart the braiding with something like a toothpick, leaving you with the individual strands of ground wire.
+It's easier than it looks to just gently pull apart the braiding with something like a toothpick (I used a blunt nosed needle), leaving you with the individual strands of ground wire.
 
 _Unbraided ground wires._  
 <img width="512" src="images/assembly/soldering/esc-power-unbraided.jpg">
