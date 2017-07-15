@@ -20,6 +20,17 @@ However Mission Planner is by far the most used, so despite the fact that I use 
 Inprogress notes
 ----------------
 
+_Flat._  
+<img width="512" src="images/calibration/flat.jpg">
+
+_At 90&deg; on nose._  
+<img width="512" src="images/calibration/on-nose.jpg">
+
+_At 90&deg; on right side._  
+<img width="512" src="images/calibration/on-left.jpg">
+
+TODO: is that it's right side, it is relative to the labels on the ports, but if you consider the arrow as pointing in the direction of travel then it's the left when thinking in terms of forward movement (as one would in a car or a train).
+
 TODO: flesh out...
 
 Arming is done by pressing the safety button until it goes solid red and then pushing the throttle to the lower-right corner.
