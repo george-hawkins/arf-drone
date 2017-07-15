@@ -17,10 +17,10 @@ The packets of screws are unlabelled but the packet of shorter screws are the 24
 The red and black wires are for connecting the lower plate (that also serves as a PDB) to power. However rather than solder an XT60 connector onto these I just bought an XT60 connectors that was already soldered onto a pair of wires.
 
 _Central plates, velcro strip, battery strap, wires and screws._  
-![F450 parts](images/assembly/frame/f450-kit-parts.jpg)
+![F450 parts](images/assembly/frame/parts/f450-kit-parts.jpg)
 
 _F450 legs._  
-![F450 legs](images/assembly/frame/f450-kit-parts-legs.jpg)
+![F450 legs](images/assembly/frame/parts/f450-kit-parts-legs.jpg)
 
 E305 tuned propulsion system
 ----------------------------
@@ -43,10 +43,10 @@ The housing of the motors is aluminium and apparently buckles easily under press
 Each pack of propellers contains one CW propeller (with a black colored central nut) and one CCW propeller (with a silver colored central nut).
 
 _Motors, ESCs, clamp, PDB and screws._  
-![E305 parts](images/assembly/frame/e305-system-parts.jpg)
+![E305 parts](images/assembly/frame/parts/e305-system-parts.jpg)
 
 _Propellers._  
-![propellers](images/assembly/frame/e305-system-parts-props.jpg)
+![propellers](images/assembly/frame/parts/e305-system-parts-props.jpg)
 
 Mast placement
 --------------
@@ -56,4 +56,4 @@ If you install the vibration damping board on the top plate then you're fairly l
 An alternative would be to use longer assembly screws and screw the base down with the same screws used to attach one of the F450 legs. Or one could perhaps attach the base to one of the jutting out panels of the bottom plate - this would have the advantage of letting you center the mast better relative to the nose/tail axis of the drone but at the cost of bringing the GPS unit about 37mm closer to the battery and the PDB (the total mast length is about 140mm).
 
 _Placement of the base of the GPS mast._  
-![mast placement](images/assembly/frame/mast-placement.jpg)
+![mast placement](images/assembly/frame/parts/mast-placement.jpg)
