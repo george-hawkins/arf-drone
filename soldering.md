@@ -23,7 +23,7 @@ _ESCs and power connector._
 <img height="512" src="images/assembly/soldering/escs-and-power-connector.jpg">
 
 _F450 PDB._  
-<img width="512" src="images/assembly/soldering/pdb.jpb">
+<img width="512" src="images/assembly/soldering/pdb.jpg">
 
 I cut my cables down to 112mm, I then removed the last 16mm of the outer black silicone coating to reveal the strands of ground wire that are braided into a sheath around the power wire. The silicone is extremely soft - you just have to gently roll the cable under a craft knife to cut the silicone deeply enough to then be able to pull it off.
 
