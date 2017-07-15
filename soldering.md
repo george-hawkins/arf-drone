@@ -27,10 +27,10 @@ _F450 PDB._
 
 I cut my cables down to 112mm, I then removed the last 16mm of the outer black silicone coating to reveal the strands of ground wire that are braided into a sheath around the power wire. The silicone is extremely soft - you just have to gently roll the cable under a craft knife to cut the silicone deeply enough to then be able to pull it off.
 
-**Update:** see the post-mortem and following section below. If repeating I'd cut the cables down to 122mm and expose 26mm of ground and power cable so I could apply the trick of using the coating that's ultimately going to be removed from the power cable to both twist the strands together and stop them splaying apart during tinning.
-
 _ESC cable length._  
 <img width="512" src="images/assembly/soldering/esc-cable-length.png">
+
+**Update:** see the post-mortem and following section below. If repeating I'd cut the cables down to 122mm and expose 26mm of ground and power cable so I could apply the trick of using the coating that's ultimately going to be removed from the power cable to both twist the strands together and stop them splaying apart during tinning.
 
 _ESC's braided ground sheath._  
 <img width="512" src="images/assembly/soldering/esc-power-braided.jpg">
