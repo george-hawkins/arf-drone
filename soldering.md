@@ -82,3 +82,61 @@ You should set your multimeter to continuity mode and hold one of its probes aga
 Continuity where you're expecting it is important - if you don't get a beep where you're expecting it then things won't work later. However testing for shorts, i.e. a beep where there shouldn't be one, is actually more important because things not working is just annoying but shorts are dangerous. There are no end of videos on YouTube showing what happens if you short a LiPo battery - it's really quite dramatic, the cells puff up and eventually explode and sometimes catch fire.
 
 Because of this danger it's important to do the initial battery test (which we'll come to later) outside even if you're confident of your continuity testing. Better safe than sorry - it'd be unfortunate if your drone build resulted in your home burning down!
+
+Post-mortem
+-----------
+
+I wasn't very happy with the results of my soldering job and I asked about the issues I'd experienced in a [post on RCGroups](https://www.rcgroups.com/forums/showthread.php?postid=37903751).
+
+If I was doing this again I'd start off with my 2mm soldering tip - I only switched up from a 0.8mm tip to 2mm once I started experiencing problems. The 2mm tip is the widest available for my Weller WHS 40, the widest Hakko tip that Pololu sell is the 3.2mm [T18-D32](https://www.pololu.com/product/2787) so I guess this implies that in this domain no job should require anything bigger.
+
+This [tutorial on RCTech](http://www.rctech.net/forum/radio-electronics/336870-how-solder-correctly-not-so-brief-lesson.html) says that when working with wires the tip should be as wide as the wire, so as the largest wires one deals with here are 12 AWG (where the core has a diameter of 2.053mm) a 2mm tip should be fine. The same tutorial says when soldering pads the tip must be smaller than the pad. The pads on the PDB here are 5x6mm so it's not clear if a 2mm tip is a bit too small - heat transfer is stated as an issue with small tips and this is certainly an issue I experienced (though I was using way too much solder).
+
+I'd use massively less solder - look at how little solder is involved in the solder joints on the ready-soldered-up power module used in this build. The pads should only be lightly tinned - at [15:40](https://youtu.be/ER2GxMo0X3E?t=940) in the Marionville Models video you can see that he uses at most around 2cm of solder per pad and at the end the pads still look nice and shinny.
+
+I also applied too much solder when tinning the thick 12 AWG wires - the solder apparently should soak all the way to the core but you shouldn't end up with a thick outer coating of solder. Steps 4 and 5 of [this Instructable](http://www.instructables.com/id/Strip-and-Tin-Wires-Like-a-Pro) provide a nice tip on using the silicone coating that you're stripping off to both twist the strands and stop the strands fraying apart while tinning.
+
+I found it hard to coat the fat 12 AWG wires - the junction area between the exposed wire and the silicone coated wire seemed to always end up bare and the underside would end up bare while the top was tinned. Perhaps the trick is to drag the solder across the exposed wire quicker, rather than really feeding solder into the wire as I did, and to then turn the wire over and do the same for the underside. Practicing tinning on pieces of 12 AWG cable cut down to 10cm (the length of the power connector cable) might be an idea.
+
+The RCTech tutorial says one should heat the wire underside while applying the solder to the top but I wonder how well this works with thick 12 AWG wires - perhaps once flux is applied heat really will travel well from one side to the other. While one should always tin one's tip the RCTech tutorial mentions tip tinning in this context to ensure good heat transfer (but you shouldn't be aiming to transfer the solder used in tinning the tip to the tin the wire).
+
+I also got the impression that solder wicked much further up the wire than just the exposed portion. Again it's probably an issue of applying less solder in the first place but perhaps if it's still an issue one can hold the wire in a vice with the tip pointing downward and apply the soldering iron tip to the very end to draw down excess solder to bead up at this point where it can be removed with the tip (and got rid of on a wire sponge).
+
+0.5mm solder (like [this](http://www.all-spec.com/Catalog/Soldering-Rework/Solder/Solder-Wire/24-6337-0010-16600)) seems to be the recommended diameter, don't use anything thicker.
+
+Kester flux pens came up again and again, e.g. this [RCGroups post](https://www.rcgroups.com/forums/showpost.php?p=23956945&postcount=25). The [Kester #2331-zx pen](https://www.sparkfun.com/products/retired/8967) that Sparkfun used to ship, before shipping issues around hazardous chemicals stopped them, seems to be the most poplular, with the [Kester #951 pen](http://www.kester.com/products/product/951-flux-pen) being the more expensive no-clean non-hazardous near equivalent that's available more easily.
+
+There seems to be a lot of argument on no-clean pens vs water-soluble pens vs the classic pens (where you need to use something like isopropyl alcohol to clean up the flux). All seem to have pros and cons. The shelf life of all, given their cost, is depressingly short at about 1 year. Solder paste in contrast seems to last forever. I really couldn't find a good reference on where or why one would choose one over the other, i.e. solder paste vs flux.
+
+At [0:54](https://youtu.be/H_Rvi7xQLdw?t=55) in the DJI E300 video and at [15:02](https://youtu.be/ER2GxMo0X3E?t=902) in the Marionville Models video they clearly use flux but in many other tutorials people talk about solder paste. HobbyKing only sell solder paste and it's not clear there's even much of a difference - is solder paste just flux (the hazardous kind) with solder particles mixed in.
+
+Soldering the 12 AWG power connector wires to their tinned PDB pads was the biggest issue. I haven't come across anything that sounds like the magic solution. Hopefully using way less solder would improve the situation, requiring less heat to melt the solder on the tinned pads (and make them less inclined to instantly resolidify before creating a joint with the wire). I don't believe the solder on the pads can be brought to melt by holding the wire down onto the pads with the soldering iron tip, as is the suggested approach for thinner wires (but who knows with less solder involved?). I suspect the answer is just less solder and a very well tinned tip between wire and pad, holding the wire onto the pad with a pliers (as I found the wire became too hot to hold directly). Then once the solder on wire and pad looks to have melted pull the tip up over the wire and use it to push the wire down onto the pad to push in more heat, then withdrawing the tip and keep the wire held in place with the pliers.
+
+Presumably practice makes perfect.
+
+Retrying
+--------
+
+On one of the discard lengths of wire that I'd cut off one of the ESCs I tried to improve on what I'd done previously.
+
+On soldering down the ground wires I'd noticed the strands were more splayed out at the base than ideal. So really split the strands 50/50 and pull them around either side of the central power wire, really push them down on the outer coating with a finger nail so all strands are at a proper right angle and twist the strands together making sure to twist tight up against the central ground wire.
+
+_Twist ground wires right upto base._  
+<img width="512" src="images/assembly/soldering/post-mortem//twist-to-base.jpg">
+
+As per the mentioned Instructable I cut off 26mm of outer coating rather than 16, leaving me with 10mm of excess. Then when it came to removing the coating from the power wire, instead of pulling off 4mm of coating straight away, I cut into the coating 14mm down and then slowly pulled up (twisting as I went) to expose about 5mm of wire for tinning - this approach stops the strands splaying at the end.
+
+_Expose section for tinning._  
+<img width="512" src="images/assembly/soldering/post-mortem//expose-section.jpg">
+
+I held the wire in a vice like so I could drag the iron from left-to-right underneath the wire while applying solder to the top. It took a little while for the wire to heat up enough for the solder to melt into it. Before tinning the wires I applied solder paste with a toothpick.
+
+_Heat from below._  
+<img width="512" src="images/assembly/soldering/post-mortem//heat-from-below.jpg">
+
+Tinning a longer length than needed and then cutting the tinned wire down to a length of 4mm results in very nice ends with no splaying.
+
+_Trim to desired length._
+<img width="512" src="images/assembly/soldering/post-mortem//trim-to-size.jpg">
+
+I found it impossible to tin the wire right at the base (you can still see the strands at the base) and trying to do so just meant using more solder than wanted without getting it onto the base. So just split the strands nicely 50/50 and pull them tightly around the central power wire - in this photo you can see I pulled more strands around the side we're looking at which results, as seen here, in a thicker bunch of strands on one side of the central power wire.
