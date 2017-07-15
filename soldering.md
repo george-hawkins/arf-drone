@@ -20,12 +20,14 @@ Each ESC comes with two long cables - a servo cable that goes to the flight cont
 Each motor has its own dedicated ESC. Each motor has three cables coming out of it and the connectors on these cables are inserted into one end of an ESC. The motors are mounted at the ends of the quadcopter arms and the ESCs are mounted on the undersides of the arms. When cutting short the ESC power cables it's obviously important to make sure you don't cut them so short that the fairly short cables on the motors can't reach the ESCs when everything is mounted later.
 
 _ESCs and power connector._  
-<img width="512" src="images/assembly/soldering/escs-and-power-connector.jpg">
+<img height="512" src="images/assembly/soldering/escs-and-power-connector.jpg">
 
 _F450 PDB._  
 <img width="512" src="images/assembly/soldering/pdb.jpb">
 
 I cut my cables down to 112mm, I then removed the last 16mm of the outer black silicone coating to reveal the strands of ground wire that are braided into a sheath around the power wire. The silicone is extremely soft - you just have to gently roll the cable under a craft knife to cut the silicone deeply enough to then be able to pull it off.
+
+**Update:** see the post-mortem and following section below. If repeating I'd cut the cables down to 122mm and expose 26mm of ground and power cable so I could apply the trick of using the coating that's ultimately going to be removed from the power cable to both twist the strands together and stop them splaying apart during tinning.
 
 _ESC cable length._  
 <img width="512" src="images/assembly/soldering/esc-cable-length.png">
@@ -51,7 +53,7 @@ _Tinned ground and power wires._
 Once this is done for all four ESCs they're ready to be soldered to the PDB. In this picture I've wrapped the servo wires around the ESCs to keep them out of the way during the soldering job.
 
 _ESCs ready for soldering._  
-<img width="512" src="images/assembly/soldering/escs-soldering-ready.jpg">
+<img height="512" src="images/assembly/soldering/escs-soldering-ready.jpg">
 
 The PDB first has to be prepared by applying solder to all the pads. Applying solder paste to the pads first made a huge difference to how easily the solder spread out nicely on the pads. When soldering I held the iron to each pad for several seconds (the solder paste clearly heats up and starts to bubble) before applying the solder itself. Quite a lot of solder needs to melted onto each pad - too much though and it becomes hard to remelt later when attaching the wires from the ESCs and the power connector - too little and there isn't enough to properly hold the wires in place.
 
@@ -122,7 +124,7 @@ On one of the discard lengths of wire that I'd cut off one of the ESCs I tried t
 On soldering down the ground wires I'd noticed the strands were more splayed out at the base than ideal. So really split the strands 50/50 and pull them around either side of the central power wire, really push them down on the outer coating with a finger nail so all strands are at a proper right angle and twist the strands together making sure to twist tight up against the central ground wire.
 
 _Twist ground wires right upto base._  
-<img width="512" src="images/assembly/soldering/post-mortem//twist-to-base.jpg">
+<img height="512" src="images/assembly/soldering/post-mortem//twist-to-base.jpg">
 
 As per the mentioned Instructable I cut off 26mm of outer coating rather than 16, leaving me with 10mm of excess. Then when it came to removing the coating from the power wire, instead of pulling off 4mm of coating straight away, I cut into the coating 14mm down and then slowly pulled up (twisting as I went) to expose about 5mm of wire for tinning - this approach stops the strands splaying at the end.
 
@@ -136,7 +138,7 @@ _Heat from below._
 
 Tinning a longer length than needed and then cutting the tinned wire down to a length of 4mm results in very nice ends with no splaying.
 
-_Trim to desired length._
+_Trim to desired length._  
 <img width="512" src="images/assembly/soldering/post-mortem//trim-to-size.jpg">
 
 I found it impossible to tin the wire right at the base (you can still see the strands at the base) and trying to do so just meant using more solder than wanted without getting it onto the base. So just split the strands nicely 50/50 and pull them tightly around the central power wire - in this photo you can see I pulled more strands around the side we're looking at which results, as seen here, in a thicker bunch of strands on one side of the central power wire.
