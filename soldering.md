@@ -116,6 +116,8 @@ Soldering the 12 AWG power connector wires to their tinned PDB pads was the bigg
 
 Presumably practice makes perfect.
 
+Quick cargo cult rebuttal: I read that isopropyl alcohol can damage silicone - this isn't the case, the silicone may swell on absorbing the alcohol but this is only temporary and the alcohol will soon evaportate.
+
 Retrying
 --------
 
@@ -141,4 +143,4 @@ Tinning a longer length than needed and then cutting the tinned wire down to a l
 _Trim to desired length._  
 <img width="512" src="images/assembly/soldering/post-mortem//trim-to-size.jpg">
 
-I found it impossible to tin the wire right at the base (you can still see the strands at the base) and trying to do so just meant using more solder than wanted without getting it onto the base. So just split the strands nicely 50/50 and pull them tightly around the central power wire - in this photo you can see I pulled more strands around the side we're looking at which results, as seen here, in a thicker bunch of strands on one side of the central power wire.
+I found it impossible to tin the wire right at the base (you can still see the strands at the base here) and trying to do so just meant using more solder than wanted without getting it onto the base. So just split the strands nicely 50/50 and pull them tightly around the central power wire - in this photo you can see I pulled more strands around the side we're looking at which results, as seen here, in a thick bunch of strands on one side.
