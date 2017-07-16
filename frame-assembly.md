@@ -69,12 +69,12 @@ Now tie the ESCs to the undersides of the arms with cable ties - you'll need XXm
 
 Before you add the top plate number the connectors from the ESCs according to the following scheme:
 
-| No. | Arm         |
-|:---:|-------------|
-| 1   | Front right |
-| 2   | Back left   |
-| 3   | Front left  |
-| 4   | Back left   |
+| No. | Arm         | Motor rotation |
+|:---:|-------------|----------------|
+| 1   | Front right | CCW            |
+| 2   | Back left   | CCW            |
+| 3   | Front left  | CW             |
+| 4   | Back left   | CW             |
 
 The ordering may seem odd (being neither a CW or CCW numbering order) but you can confirm it in the relevant [ArduCopter documentation](http://ardupilot.org/copter/docs/connect-escs-and-motors.html#motor-order-diagrams) and the corresponding [PX4 documentation](https://dev.px4.io/en/airframes/airframe_reference.html#quadrotor-x).
 
