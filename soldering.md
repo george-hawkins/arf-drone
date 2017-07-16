@@ -3,7 +3,7 @@ Soldering the PDB
 
 Soldering the ESCs and the power connector to the PDB is the only really tricky part of the assembly. I had soldered [through hole](https://en.wikipedia.org/wiki/Through-hole_technology) components before for hobby electronics projects but this didn't prepare me very well for the soldering involved here - I was surprised at how quickly the heat from the soldering iron was drawn away from the point of contact, meaning that things like the PDB and wires became extremely hot in the process of trying to solder anything.
 
-For electronics projects I generally have my soldering iron at 325C (when working with leaded solder) but after reading around it seems that a higher temperature is typically used for the thicker wires and larger pads involved here. 375C is a commonly suggested temperature and some people go as high as 400C (but this seems to be considered extreme). At least as important as the temperature is the soldering iron tip - for electronics projects I use a narrow chisel but a broader tip, even at the same temperature setting, can deliver and maintain much more heat at the point of contact.
+For electronics projects I generally have my soldering iron at 325C (when working with leaded solder) but after reading around it seems that a higher temperature is typically used for the thicker wires and larger pads involved here. 375C is a commonly suggested temperature and some people go as high as 400C (but this seems to be considered extreme). At least as important as the temperature is the soldering iron tip - for electronics projects I use a narrow chisel but a broader tip, even at the same temperature setting, can deliver and maintain much more heat at the point of contact. So for this work I switched up to a 2mm tip.
 
 TODO: can I get a better reference than e.g. this [Reddit comment](https://www.reddit.com/r/Multicopter/comments/3d01te/tips_for_soldering_on_a_power_distribution_board/ct0vqeo/) on why a wider tip is so much better than a narrower one at the same given temperature setting.
 
@@ -11,11 +11,11 @@ In hobby electronics projects the solder pads are generally tiny and heat up alm
 
 Solder paste does spread out from the point where it's applied and leaves behind a noticeable residue after soldering. I scrubbed this off with pure isopropyl alcohol (like [this](http://uk.farnell.com/kontakt-chemie/kontakt-ipa-200ml/cleaner-ipa-200ml/dp/2142406)) and normal supermarket cotton swabs.
 
-I used something similar to this [solder paste](https://hobbyking.com/en_us/solder-paste-50g.html) from HobbyKing. In videos you also often see people using no-clean flux pens (like this [one](https://www.adafruit.com/product/3468) from Adafruit). Solder paste is essentially flux with small particles of lead suspended it - but I can't comment on whether one is better than or more appropriate than the other for the usage seen here.
+Initially I bought a small [tin of rosin](http://www.conrad-electronic.co.uk/ce/en/product/813419/) made by Stannol but the rosin was in solid form (the same form as used on the [strings of violin bow](http://www.wikihow.com/Rosin-a-Bow) rather than as a paste that could easily be spread on solder pads. So I went into a local hobby RC shop and they recommended and sold me a tin of solder paste, however if you wanted to buy pure flux paste something like this [paste from SRA](https://www.amazon.com/Rosin-Paste-Flux-135-Jar/dp/B008ZIV85A) is probably the right thing to buy.
+
+So I used something similar to this [solder paste](https://hobbyking.com/en_us/solder-paste-50g.html) from HobbyKing. In videos you also often see people using flux paste or flux pens (like this [one](https://www.adafruit.com/product/3468) from Adafruit). Solder paste is essentially flux with small particles of solder suspended it - but I can't comment on whether one, i.e. solder paste or flux paste, is better than or more appropriate than the other for the usage seen here.
 
 TODO: can I get a definitive take on this - the fact that HobbyKing sells solder paste but no flux pens seems to imply the former is more used in RC hobbyist circles.
-
-Initially I bought a small [tin of rosin](http://www.conrad-electronic.co.uk/ce/en/product/813419/) made by Stannol but the rosin was in solid form (the same form as used on the [strings of violin bow](http://www.wikihow.com/Rosin-a-Bow) rather than as a paste that could easily be spread on solder pads. So I went into a local hobby RC shop and they recommended and sold me a tin of solder paste, however if you wanted to buy pure flux paste something like this [paste from SRA](https://www.amazon.com/Rosin-Paste-Flux-135-Jar/dp/B008ZIV85A) is probably the right thing to buy.
 
 Each ESC comes with two long cables - a servo cable that goes to the flight controller and a power cable that is going to be soldered to the PDB. We're going to leave the servo cables as they are but the power cables are heavy and far too long for this build as they are.
 
@@ -42,7 +42,9 @@ It's easier than it looks to just gently pull apart the braiding with something 
 _Unbraided ground wires._  
 <img width="512" src="images/assembly/soldering/esc-power-unbraided.jpg">
 
-These strands can then be pulled sideways and twisted into a single ground wire and cut back to just a few millimeters. You can then also remove a few millimeters of the red coating around the ground wire.
+These strands can then be pulled sideways and twisted into a single ground wire and cut back to just a few millimeters. You can then also remove a few millimeters of the red coating around the ground wire (the ground wire seems to be about 20 AWG so I stripped this off with my wire stripper set to 20 AWG / 0.8mm).
+
+**Update:** carrying on from the update above, if doing things again I'd cut into the coating of the power wire about 14mm down and pull up the coating slowly, twisting it as I went, to expose around 6mm of wire, tin this exposed wire and only then completely pull off the coating and cut the exposed wire down to about 4mm.
 
 _Strands twisted into single ground wire._  
 <img width="512" src="images/assembly/soldering/esc-power-untinned.jpg">
@@ -110,7 +112,7 @@ I also got the impression that solder wicked much further up the wire than just 
 
 Kester flux pens came up again and again, e.g. this [RCGroups post](https://www.rcgroups.com/forums/showpost.php?p=23956945&postcount=25). The [Kester #2331-zx pen](https://www.sparkfun.com/products/retired/8967) that Sparkfun used to ship, before shipping issues around hazardous chemicals stopped them, seems to be the most poplular, with the [Kester #951 pen](http://www.kester.com/products/product/951-flux-pen) being the more expensive no-clean non-hazardous near equivalent that's available more easily.
 
-There seems to be a lot of argument on no-clean pens vs water-soluble pens vs the classic pens (where you need to use something like isopropyl alcohol to clean up the flux). All seem to have pros and cons. The shelf life of all, given their cost, is depressingly short at about 1 year. Solder paste in contrast seems to last forever. I really couldn't find a good reference on where or why one would choose one over the other, i.e. solder paste vs flux.
+There seems to be a lot of argument on no-clean pens vs water-soluble pens vs the classic pens (where you need to use something like isopropyl alcohol to clean up the flux). All seem to have pros and cons. The shelf life of all, given their cost, is depressingly short at about 1 year. In contrast flux paste seems to last forever (solder paste though doesn't last as long, as the suspended solder particles tend to settle out). I really couldn't find a good reference on where or why one would choose one over the other, i.e. solder paste vs flux.
 
 At [0:54](https://youtu.be/H_Rvi7xQLdw?t=55) in the DJI E300 video and at [15:02](https://youtu.be/ER2GxMo0X3E?t=902) in the Marionville Models video they clearly use flux but in many other tutorials people talk about solder paste. HobbyKing only sell solder paste and it's not clear there's even much of a difference - is solder paste just flux (the hazardous kind) with solder particles mixed in.
 
