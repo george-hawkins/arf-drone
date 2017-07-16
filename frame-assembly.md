@@ -22,14 +22,14 @@ The solder joints are large and exposed and could easily accidentally short agai
 
 I bought a cheap arts and crafts hot glue gun (the Uhu [Creative XL](http://www.uhu.com/en/products/glue-guns-hot-melt-adhesives/detail/uhu-creative-xl-low-melt-110c-glue-gun.html?cHash=62ef031c5d16bc8a8cefa468999b7dd9)) and you can see the results here.
 
-_Solder joints covered in hot glue._
+_Solder joints covered in hot glue._  
 <img width="512" src="images/assembly/frame/hot-glue.jpg">
 
 If you've ever opened up any consumer electronics item you'll often find clear rubbery hot glue has been used at various point, generally as a form of strain relief for cables that may occassionaly be pulled rather than as a form of insulation. The glue from my glue gun was quite different to this, it's not transparent and it went hard rather than rubbery and once hard it was quite easy to prise off (even after leaving it for its 2 hours maximum bonding time) which obviously isn't ideal. After a little searching it seems I should have been looking for "high viscosity", i.e. more rubbery, glue but I can't recommend a particular product.
 
 It's probably good enough to just cover everything up with insulating tape without using hot glue - though watch out, if there are any little spurs or sharp points at the solder joints they may pierce the tape. I finished up covering everything in tape anyway (using completely normal insulating tape - this [one](https://www.amazon.co.uk/d/Tape/Tesa-56192-00010-02-Insulation-Tape-15-mm-Black/B004SQLWH2/) from Tesa), this makes things look much tidier.
 
-_Glue and wires covered by insulation tape._
+_Glue and wires covered by insulation tape._  
 <img width="512" src="images/assembly/frame/insulation-tape.jpg">
 
 What goes where
@@ -60,7 +60,7 @@ TODO: confirm that thread locker really doesn't survive unscrew/rescrew operatio
 
 Now screw on the legs making sure that the power connector for each ESC runs between the arch formed by the points of the leg that are screwed down to the PDB.
 
-_PDB with arms screwed on._
+_PDB with arms screwed on._  
 <img width="512" src="images/assembly/frame/pdb-with-arms.jpg">
 
 As shown in the photo I've used a 2mm hex screw driver for this - using a proper screw driver is far more convenient than using a small Allen key.
@@ -78,7 +78,7 @@ Before you add the top plate number the connectors from the ESCs according to th
 
 The ordering may seem odd (being neither a CW or CCW numbering order) but you can confirm it in the relevant [ArduCopter documentation](http://ardupilot.org/copter/docs/connect-escs-and-motors.html#motor-order-diagrams) and the corresponding [PX4 documentation](https://dev.px4.io/en/airframes/airframe_reference.html#quadrotor-x).
 
-_Arm numbering and CW and CCW motor placement._
+_Arm numbering and CW and CCW motor placement._  
 <img width="512" src="images/assembly/frame/arm-numbering.png">
 
 I use a white [edding 780](http://www.edding.com/creating-and-decorating/products/gloss-paint-marker/edding-780-gloss-paint-marker/) pen that's designed for writing on glass, metal and plastic.
