@@ -8,6 +8,8 @@ To shrink pictures to fit within a 2048x2048 box while maintaining their aspect 
     $ mkdir small
     $ for i in *.jpg; do convert $i -resize 2048x2048\> small/$i; done
 
+    $ convert ~/Downloads/IMG_2017XYZjpg -resize 2048x2048\> result.jpg
+
 To setup screen capture in OpenTX:
 
 * Go to _Model selection_.
