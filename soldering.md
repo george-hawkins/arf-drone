@@ -11,9 +11,11 @@ In hobby electronics projects the solder pads are generally tiny and heat up alm
 
 Solder paste does spread out from the point where it's applied and leaves behind a noticeable residue after soldering. I scrubbed this off with pure isopropyl alcohol (like [this](http://uk.farnell.com/kontakt-chemie/kontakt-ipa-200ml/cleaner-ipa-200ml/dp/2142406)) and normal supermarket cotton swabs.
 
-I used something similar to this [solder paste](https://hobbyking.com/en_us/solder-paste-50g.html) from HobbyKing. In videos you also often see people using no-clean flux pens (like this [one](https://www.adafruit.com/product/3468) from Adafruit). Flux and solder paste are quite different things but I can't comment on whether one is better than or more appropriate than the other for the usage seen here.
+I used something similar to this [solder paste](https://hobbyking.com/en_us/solder-paste-50g.html) from HobbyKing. In videos you also often see people using no-clean flux pens (like this [one](https://www.adafruit.com/product/3468) from Adafruit). Solder paste is essentially flux with small particles of lead suspended it - but I can't comment on whether one is better than or more appropriate than the other for the usage seen here.
 
 TODO: can I get a definitive take on this - the fact that HobbyKing sells solder paste but no flux pens seems to imply the former is more used in RC hobbyist circles.
+
+Initially I bought a small [tin of rosin](http://www.conrad-electronic.co.uk/ce/en/product/813419/) made by Stannol but the rosin was in solid form (the same form as used on the [strings of violin bow](http://www.wikihow.com/Rosin-a-Bow) rather than as a paste that could easily be spread on solder pads. So I went into a local hobby RC shop and they recommended and sold me a tin of solder paste, however if you wanted to buy pure flux paste something like this [paste from SRA](https://www.amazon.com/Rosin-Paste-Flux-135-Jar/dp/B008ZIV85A) is probably the right thing to buy.
 
 Each ESC comes with two long cables - a servo cable that goes to the flight controller and a power cable that is going to be soldered to the PDB. We're going to leave the servo cables as they are but the power cables are heavy and far too long for this build as they are.
 
