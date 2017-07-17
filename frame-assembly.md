@@ -58,27 +58,40 @@ So open up the packet of shorter screws. You'll notice that each screw has a sma
 
 TODO: confirm that thread locker really doesn't survive unscrew/rescrew operations.
 
-Now screw on the legs making sure that the power connector for each ESC runs between the arch formed by the points of the leg that are screwed down to the PDB.
+Now screw on the legs making sure that the power connector for each ESC runs between the arch formed by the points of the leg that are screwed down to the PDB. I made sure not to overtighten the screws, I applied enough force that I could screw them all the way in but I didn't put any real extra force at the end to try and turn them that little bit more. In many videos I've seen the arms still flop around a bit (at least up and down, if not side to side) when the bottom plate is turned over after screwing in the arms - in my case I found there was little or no such motion and the arms were firmly in place once they'd been screwed down.
 
 _PDB with arms screwed on._  
 <img width="512" src="images/assembly/frame/pdb-with-arms.jpg">
 
 As shown in the photo I've used a 2mm hex screw driver for this - using a proper screw driver is far more convenient than using a small Allen key.
 
-Now tie the ESCs to the undersides of the arms with cable ties - you'll need XXmm ties.
+Now tie the ESCs to the undersides of the arms with cable ties - I used ties like these [natural / white 160mm x 2.5mm ties](https://hobbyking.com/en_us/cable-ties-160mm-x-2-5mm-white-100pcs.html) from HobbyKing - 100mm ties are too short. Some people like to match the color of the cable ties to the color of the arms but I didn't find the natural semi-transparent color of standard nylon cable ties too intrusive even on the red arms. 2.5mm is quite thin - wider ones might prevent the ESCs rotating against the arm more, but this isn't really an issue. Be careful not to overtighten the cable ties - you don't want them to tight that they cause the ESC cases to distort. I've used two ties on each arm - one holding down the ESC and another holding the ESC power cable in place at the point where the arm joins the cental body.
 
-Before you add the top plate number the connectors from the ESCs according to the following scheme:
+_Cable ties holding ESCs and their power cables in place._  
+<img width="512" src="images/assembly/frame/cable-ties.jpg">
 
-| No. | Arm         | Motor rotation |
-|:---:|-------------|----------------|
-| 1   | Front right | CCW            |
-| 2   | Back left   | CCW            |
-| 3   | Front left  | CW             |
-| 4   | Back left   | CW             |
+The thinner wires coming out of each ESC are used to control them and will eventually be plugged into the flight controller. It's important to be able to distinguish which connector belongs to which ESC so before adding on the top plate number the connectors at the end of ESC control cables according to the following scheme:
 
-The ordering may seem odd (being neither a CW or CCW numbering order) but you can confirm it in the relevant [ArduCopter documentation](http://ardupilot.org/copter/docs/connect-escs-and-motors.html#motor-order-diagrams) and the corresponding [PX4 documentation](https://dev.px4.io/en/airframes/airframe_reference.html#quadrotor-x).
+| No. | Arm         | Motor type |
+|:---:|-------------|------------|
+| 1   | Front right | CCW        |
+| 2   | Back left   | CCW        |
+| 3   | Front left  | CW         |
+| 4   | Back left   | CW         |
+
+The arms are numbered 1 to 4 so number the connector of each arm's ESC accordingly. The ordering may seem odd (being neither a CW or CCW numbering order) but you can confirm it in the relevant [ArduCopter documentation](http://ardupilot.org/copter/docs/connect-escs-and-motors.html#motor-order-diagrams) and the corresponding [PX4 documentation](https://dev.px4.io/en/airframes/airframe_reference.html#quadrotor-x).
+
+I used a white [edding 780](http://www.edding.com/creating-and-decorating/products/gloss-paint-marker/edding-780-gloss-paint-marker/) pen that's designed for writing on glass, metal and plastic.
 
 _Arm numbering and CW and CCW motor placement._  
 ![arm numbering](images/assembly/frame/arm-numbering.png)
 
-I use a white [edding 780](http://www.edding.com/creating-and-decorating/products/gloss-paint-marker/edding-780-gloss-paint-marker/) pen that's designed for writing on glass, metal and plastic.
+When adding the motors later it's important to use the appropriate motor type (CCW or CW) for each arm, so the above table and diagram include this information.
+
+_ESC connectors numbered 1 to 4._  
+<img width="512" src="images/assembly/frame/numbered-connectors.jpg">
+
+Now that's done scew down the top plate and that's the assembly of the main frame body done - the rest is adding the electronics. Unlike IKEA they've been fairly generous with the screws so there are a few left over spare.
+
+_Frame with top plate attached._  
+<img width="512" src="images/assembly/frame/top-plate-attached.jpg">
