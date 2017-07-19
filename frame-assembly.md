@@ -95,3 +95,28 @@ Now that's done scew down the top plate and that's the assembly of the main fram
 
 _Frame with top plate attached._  
 <img width="512" src="images/assembly/frame/top-plate-attached.jpg">
+
+Mounting the motors
+-------------------
+
+Each motor is designed to run in one particular direction, i.e. clockwise (CW) or counterclockwise (CCW).
+
+The E305 propulsion system comes with two CW and two CCW motors and its important to mount them on the arms according to the table and diagram introduced above when discussing arm numbering.
+
+Each motor is clearly labelled with an arrow show its intended direction of rotation, each motor is also clearly labelled CW or CCW. You can see the arrow and the text CW or CCW in these images.
+
+| CW motor | CCW motor |
+|----------|-----------|
+| <img height="512" src="images/assembly/frame/cw-motor.jpg"> | <img height="512" src="images/assembly/frame/ccw-motor.jpg"> |
+
+So open up the second packet of screws that came with the F450 frame kit - these are the longer 8mm M3 screws - and pair each arm with a motor with the appropriate rotation for that arm. As before the screws have pre-applied thread locker.
+
+_Arms paired with appropriate motors._  
+<img width="512" src="images/assembly/frame/arms-and-motors.jpg">
+
+Check the wires coming out of each motor and flatten them down a little, making sure no wire will squash down on another when the motor is screwed into place. After pushing each screw through a hole in the frame it's a little fiddly lining it up with the appropriate threaded hole in the motor. Again the screws should be screwed in tight but don't try putting a lot of extra force in at the end - you don't want to overtighten them.
+
+_Arms with motors attached._  
+<img width="512" src="images/assembly/frame/motors-attached.jpg">
+
+Don't plug the connectors from the motors into the ESCs at this point - we'll handle that later.
