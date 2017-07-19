@@ -99,24 +99,26 @@ _Frame with top plate attached._
 Mounting the motors
 -------------------
 
-Each motor is designed to run in one particular direction, i.e. clockwise (CW) or counterclockwise (CCW).
+Each motor is designed to turn in one particular direction, i.e. clockwise (CW) or counterclockwise (CCW). This doesn't mean that a CW motor can't turn CCW and vice-versa (as we'll see later when connecting the motors to the ESCs) but running them counter to their intended direction isn't good for them.
 
-The E305 propulsion system comes with two CW and two CCW motors and its important to mount them on the arms according to the table and diagram introduced above when discussing arm numbering.
+TODO: provide reference for the assertion that running them "backwards" is bad for them.
 
-Each motor is clearly labelled with an arrow show its intended direction of rotation, each motor is also clearly labelled CW or CCW. You can see the arrow and the text CW or CCW in these images.
+The E305 propulsion system comes with two CW and two CCW motors and it's important to mount them on the arms according to the table and diagram introduced above when discussing arm numbering.
+
+Each motor is clearly labelled with the text CW or CCW along with an arrow showing its intended direction of rotation. You can see the arrow and the text CW or CCW in these images.
 
 | CW motor | CCW motor |
 |----------|-----------|
-| <img height="512" src="images/assembly/frame/cw-motor.jpg"> | <img height="512" src="images/assembly/frame/ccw-motor.jpg"> |
+| <img width="256" src="images/assembly/frame/cw-motor.jpg"> | <img width="256" src="images/assembly/frame/ccw-motor.jpg"> |
 
 So open up the second packet of screws that came with the F450 frame kit - these are the longer 8mm M3 screws - and pair each arm with a motor with the appropriate rotation for that arm. As before the screws have pre-applied thread locker.
 
 _Arms paired with appropriate motors._  
 <img width="512" src="images/assembly/frame/arms-and-motors.jpg">
 
-Check the wires coming out of each motor and flatten them down a little, making sure no wire will squash down on another when the motor is screwed into place. After pushing each screw through a hole in the frame it's a little fiddly lining it up with the appropriate threaded hole in the motor. Again the screws should be screwed in tight but don't try putting a lot of extra force in at the end - you don't want to overtighten them.
+Check the wires coming out of each motor and flatten them down a little, making sure no wire will squash down on another when the motor is screwed into place. After pushing each screw through a hole in the frame it's a little fiddly to line it up with the appropriate threaded hole in the motor but not too troublesome. Again the screws should be screwed in tight but force them at the end - you don't want to overtighten them.
 
 _Arms with motors attached._  
 <img width="512" src="images/assembly/frame/motors-attached.jpg">
 
-Don't plug the connectors from the motors into the ESCs at this point - we'll handle that later.
+After attaching the motors double check that each arm has the appropriate motor - for each motor the diagonally opposite one should be of the same type. Don't plug the connectors from the motors into the ESCs at this point - we'll do that later.
