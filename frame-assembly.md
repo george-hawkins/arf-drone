@@ -116,7 +116,7 @@ So open up the second packet of screws that came with the F450 frame kit - these
 _Arms paired with appropriate motors._  
 <img width="512" src="images/assembly/frame/arms-and-motors.jpg">
 
-Check the wires coming out of each motor and flatten them down a little, making sure no wire will squash down on another when the motor is screwed into place. After pushing each screw through a hole in the frame it's a little fiddly to line it up with the appropriate threaded hole in the motor but not too troublesome. Again the screws should be screwed in tight but force them at the end - you don't want to overtighten them.
+Check the wires coming out of each motor and flatten them down a little, making sure no wire will squash down on another when the motor is screwed into place. After pushing each screw through a hole in the frame it's a little fiddly to line it up with the appropriate threaded hole in the motor but not too troublesome. Again the screws should be screwed in tight but don't force them at the end - you don't want to overtighten them.
 
 _Arms with motors attached._  
 <img width="512" src="images/assembly/frame/motors-attached.jpg">
