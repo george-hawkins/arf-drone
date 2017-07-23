@@ -25,3 +25,16 @@ That's it. Now you can use the VM just as you would a physical Windows machine. 
 Just go to the Devices menu, select Shared Folders, click the folded icon with a plus, select Other... from the Folder Path dropdown, leave Folder Name as it is (unless you want the folder to have a different name on the VM), tick Auto-Mount and Make Permanent (so the folder is automatically available whenever the VM starts) and then OK.
 
 I had to restart the VM for the shared folder to become visible - once done you'll find it as a shared folder under This PC in Explorer.
+
+USB filters
+-----------
+
+Once you've added the extensions pack VirtualBox is quite flexible in how you can handle USB devices. You can just plug them in as normal and afterwards tell VirtualBox to connect the given USB device through to a given VM.
+
+However there are issues with this - often background processes on the host system will grab a USB device as soon as its connected, e.g. because it mistakenly sees it as a modem that needs to be managed or a USB storage device that might contain photos the user wants to add to their photo management tool.
+
+To prevent this you can setup USB filters for a given VM. Make sure the given VM is shutdown - then right click on it in VirtualBox and select _Settings..._, go to the _USB_ section and make sure _Enable USB Controller_ is ticked and that at least _USB 2.0_ is selected. Then plug in any USB devices that you will want to use with the VM, once plugged in these devices can be added to the list of _USB Device Filters_. For each device just click the "+" button to the right of the list and select the device from the displayed list.
+
+![adding a USB filter](images/virtualization/usb-filters.png)
+
+Then unplug the devices and start the VM - now if you plug in any of these devices VirtualBox will grab it immediatelly before any other process on the host system sees it and immediatelly connect it to the VM, so avoiding any issues with host process trying to grab the device. When the VM is not running the USB device will be treated as normal, i.e. processes on the host system can see it as before.
