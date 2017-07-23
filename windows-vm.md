@@ -63,4 +63,4 @@ For whatever reason there's no corresponding guest-additions ISO but you get the
     $ apt list virtualbox-5.1
     virtualbox-5.1/unknown,now 5.1.24-117012~Ubuntu~xenial amd64 [installed]
 
-Then go to <http://download.virtualbox.org/virtualbox/> and click the appropriate subdirectory (5.1.24) in this case. and download the `VBoxGuestAdditions` ISO file there. You can then attach this to your VM and then open and run it from within the VM to get much nicer integration between the host and the VM (in particular being able to resize the VM window like any other window).
+Then go to <http://download.virtualbox.org/virtualbox/> and click the appropriate subdirectory (`5.1.24` in this case). and download the `VBoxGuestAdditions` ISO file there. You can then attach this to your VM and then open and run it from within the VM to get much nicer integration between the host and the VM (in particular being able to resize the VM window like any other window).
