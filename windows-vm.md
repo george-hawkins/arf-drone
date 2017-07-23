@@ -38,3 +38,29 @@ To prevent this you can setup USB filters for a given VM. Make sure the given VM
 ![adding a USB filter](images/virtualization/usb-filters.png)
 
 Then unplug the devices and start the VM - now if you plug in any of these devices VirtualBox will grab it immediatelly before any other process on the host system sees it and immediatelly connect it to the VM, so avoiding any issues with host process trying to grab the device. When the VM is not running the USB device will be treated as normal, i.e. processes on the host system can see it as before.
+
+Linux VirtualBox
+----------------
+
+On Mac I didn't have any problem running the Windows VMs that I downloaded when using the latest version of VirtualBox for Mac. However on Ubuntu 16.04 LTS (Xenial) the latest VirtualBox available using `apt-get` was 5.0.40 and for whatever reason I found the Windows VMs hung on startup using this version. So I first removed the existing version of VirtualBox (and VirtualBox additions):
+
+    $ sudo apt-get remove virtualbox virtualbox-guest-additions-iso
+
+And then, as per the [Debian-based Linux instructions](https://www.virtualbox.org/wiki/Linux_Downloads#Debian-basedLinuxdistributions) on the VirtualBox site, I added the following line to `/etc/apt/sources.list`:
+
+    deb http://download.virtualbox.org/virtualbox/debian xenial contrib
+
+Then following the rest of the instructions I installed the corresponding key, updated the package indexes and installed the latest VirtualBox package (along with `dkms` if not already installed):
+
+    $ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+    $ sudo apt-get update
+    $ sudo apt-get install virtualbox-5.1 dkms
+
+Then make sure to download and install the extensions (as covered up above).
+
+For whatever reason there's no corresponding guest-additions ISO but you get the appropriate one by determining the installed VirtualBox version:
+
+    $ apt list virtualbox-5.1
+    virtualbox-5.1/unknown,now 5.1.24-117012~Ubuntu~xenial amd64 [installed]
+
+Then go to <http://download.virtualbox.org/virtualbox/> and click the appropriate subdirectory (5.1.24) in this case. and download the `VBoxGuestAdditions` ISO file there. You can then attach this to your VM and then open and run it from within the VM to get much nicer integration between the host and the VM (in particular being able to resize the VM window like any other window).

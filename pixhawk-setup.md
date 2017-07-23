@@ -19,6 +19,27 @@ However Mission Planner is by far the most used, so despite the fact that I use 
 
 Note: the ArduCopter site describes another ground control application called APM Planner 2 (APMP2) as the [best one for Mac and Linux](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html#apm-planner-2-0). But this is simply a plug for a project that's closely associated with ArduPilot. I found that the most common questions asked regarding it were of the form "I can do X in Mission Planner, how do I do X in APMP2?" with the answer almost invariably of the form "You can't do X in APMP2, APMP2 isn't really intended for that use case." So it seems they're not even aiming to create a full feature ground control application, it's unclear though what particular audience they are targeting.
 
+TODO: add pointer to [`windows-vm.md`](windows-vm.md) and add note on the need to add a [USB filter](windows-vm.md#usb-filters) for the Pixhawk.
+
+Mission Planner setup
+---------------------
+
+Download the latest Mission Planner (MP) version using the link in the [installation section](http://ardupilot.org/planner/docs/common-install-mission-planner.html) of the MP documentation (you can also browse around in the [directory](http://firmware.ardupilot.org/Tools/MissionPlanner/) containing the MP installation file if you're interested). At the time of writing (and for some time now) the EU mirror for MP is amazingly slow - it takes more than 20 minutes to download the roughtly 60MB installation file.
+
+As noted elsewhere MP also installs all necessary Pixhawk drivers so no additional driver installation is needed. When running MP for the first time is asks you if you want to enable [Altitude Angel data](https://www.altitudeangel.com/Home/Developers) - you should probably select _Yes_ as this data is needed by MP to highlight things like restricted airspaces around airports. You then have to register for a free Altitude Angel account and allow MP to access it. In the background Windows will also have popped up a Firewall dialog asking if you want to allow MP to access networks (I ticked the boxes for both private and public networks). It then asks you if you want to run the setup wizard - this will set up your Pixhawk - however I suggest skipping the wizard at this point and just let it open the normal full MP application.
+
+I've found MP can be a little flakey during its first run (if you run it from the command prompt you can see various errors being output that don't appear subsequently once you've allowed firewall access etc.) So I suggest just expanding the MP window (it's initially squashed up small enough to fit on even the smallest screen) and then restarting it (it will start with the same window size as it had when you exited).
+
+Once MP is up and running click on _Initial Setup_ and then on _Wizard_. The wizard is fairly self explanatory:
+
+* First you select your vehicle type, i.e. multirotor in this case.
+* Then the multirotor type, the simple four motor X type.
+* Then connect your Pixhawk - and select it from the dropdown list (most probably there'll only be one item in the list, e.g. COM3).
+
+I have no Windows machine so I run Windows as a VM within VirtualBox - while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware via the VM never worked. So instead I always loaded firmware using QGroundControl (which is covered later). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button (upper-right in the main MP window) and only then starting the wizard - this time it goes through the same initial steps but then jumps the firmware steps and goes straight onto the callibration steps:
+
+* CONTINUE HERE.
+
 Inprogress notes
 ----------------
 
@@ -72,3 +93,52 @@ If it beeps twice and refuses to arm despite blinking green check you've pressed
 ---
 
 How to reset the flight controller: <http://ardupilot.org/copter/docs/common-parameter-reset.html>
+
+---
+
+QGroundControl
+--------------
+
+Install QGroundControl (QGC) as per the [Download and Install](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html) section of its manual.
+
+For Mac this is no different to installing any other application. For Linux a few more step are involved.
+
+### Linux installation
+
+On the [download page](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html#ubuntu-linux) there's an easy to use AppImage (for more on AppImage see this [Ask Ubuntu question](https://askubuntu.com/q/774490)) and an old fashioned tar file. I opted for the tar file, so this involved downloading it and then:
+
+    $ sudo apt-get install espeak libespeak-dev libudev-dev libsdl2-dev
+    $ tar -xf ~/Downloads/QGroundControl.tar.bz2
+    $ cd qgroundcontrol
+    $ ./qgroundcontrol-start.sh
+
+The `apt-get` is listed in the [README](https://github.com/mavlink/qgroundcontrol#install-additional-packages) as needed to install all additionally required packages.
+
+Once up and running on Linux the first thing QGC does is point out the usual Linux permissions issue with connecting serial devices like the Pixhawk and tells you how to resolve this:
+
+    $ sudo usermod -a -G dialout $USER
+    $ sudo apt-get remove modemmanager
+
+It's a historical hangover that the `modemmanager` package is still installed by default and that the primary user is not a member of the `dialout` group (the group of people who can access serial-like devices like the Pixhawk). An alternative is to setup [udev](https://wiki.archlinux.org/index.php/udev) rules for the Pixhawk like so:
+
+    $ cat > 99-pixhawk.rules << EOF
+    # Pixhawk udev rules:
+    # * Make it accessable to all users and soft link it to /dev/pixhawk.
+    # * Tell the ModemManager to ignore it.
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="26ac", ATTRS{idProduct}=="0011", SYMLINK+="pixhawk", MODE="0666"
+    ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2404", ENV{ID_MM_DEVICE_IGNORE}="1"
+    EOF
+    $ sudo chown root:root 99-pixhawk.rules
+    $ sudo mv 99-pixhawk.rules /etc/udev/rules.d
+
+Note: udev will automatically pick up this new rule when you plug in the Pixhawk (you only ever need to force udev to reread rules if the device in question is already plugged in or you've modified an existing rule).
+
+Even after such a rule is added QGroundControl will still complain on startup about permissions but then go and successfully automatically connect to your Pixhawk device without issue.
+
+Using udev rules appeals to nerds like myself - adding yourself to the `dialout` group and removing the ModemManager package is probably a more sensible solution that solves the whole issue, for this device and others, once and for all. The only issue is that existing processes will not automatically pickup on the group change - the bluntest solution to this is to reboot your system (just once after invoking `usermod`).
+
+As often seems to happen with USB devices on Linux if you plug them in and out too often something eventually gets confused and they can no longer be successfully reconnected - in this situation I reset the whole USB system with a script I wrote. You can find it [here](https://gist.github.com/george-hawkins/5d93be322379afdc690b976e4b12dd71) and run it like so (assuming you've made it executable):
+
+    $ sudo ./reset-usb
+
+---
