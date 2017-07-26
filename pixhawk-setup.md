@@ -45,7 +45,7 @@ The wizard could do with some work on its usability - especially when it comes t
 OK - so onto the calibration:
 
 * Accelerometer - as instructed you have to place you system in turn flat, on its left, right, nose, tail and back, pressing a key after each step. Each time I tried this I eventually got the message "3D Accel calibration needed" at some point in the process - I had to look at the [source code](https://github.com/ArduPilot/ardupilot/blob/126296b/libraries/AP_Arming/AP_Arming.cpp#L192) to detemine that this really is a critical error meaning that the calibration failed. I just restarted and restarted this step, trying to make the transition between steps - left side to right side etc. - as smooth as possible until eventually the calibration completed without error.
-* Compass - this is kind of a hard one to explain - you're probably best off watching the [compass calibration video](https://www.youtube.com/watch?v=DmsueBS0J3E) that they link to. Essentially you want to completely rotate your Pixhawk on all 3 axes, i.e. x, y and z, where the origin is at the center of your Pixhawk. If you're connected via USB then the longer and more flexible your USB cable the easier this will be. As we'll see much later you can also connect to your ground control application wirelessly - which makes rotating things around every which way much easier. In the video the presenter rotates the craft quite slowly. You don't have to do it in such a disciplined manner - you can just rotate your setup rapidly every which way (making sure to get in full rotations on all three axes), the calibration logic doesn't care what order the data points come in and won't give up recording data points until it's satisfied that it's got what it needs. If you're interested in what's going on here Adafruit have a nice tutorial on the electronics involved and this step equates to what they cover in the [magnetometer calibration section](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all#magnetometer-calibration).
+* Compass - this is kind of a hard one to explain - you're probably best off watching the [compass calibration video](https://www.youtube.com/watch?v=DmsueBS0J3E) that they link to. Essentially you want to completely rotate your Pixhawk on all 3 axes, i.e. x, y and z, where the origin is at the center of your Pixhawk. If you're connected via USB then the longer and more flexible your USB cable the easier this will be. As we'll see much later you can also connect to your ground control application wirelessly - which makes rotating things around every which way much easier. In the video the presenter rotates the craft quite slowly. You don't have to do it in such a disciplined manner - you can just rotate your setup rapidly every which way (making sure to get in full rotations on all three axes), the calibration logic doesn't care what order the data points come in and won't give up recording data points until it's satisfied that it's got what it needs. If you're interested in what's going on here Adafruit have a nice tutorial on the electronics involved and this step equates to what they cover in the [magnetometer calibration section](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all#magnetometer-calibration). TODO: rework this section, don't advocate rapid movement but just point out it doesn't care about order and will stay open until its happy its got the data points it needs.
 * Battery monitor configuration - here you just need to choose "Pixhawk" and "3DR power module" for the autopilot and sensor you're using (the power module is equivalent to the original 3DR ones - interestingly the originals are still [available](https://www.amazon.com/dp/B071Y4CZGZ)) and then the mAh value for you battery. In my case this is 3700, if you're using a slightly different battery make sure to specify the correct value.
 * Sonar - just click _Next_ as we don't have one.
 * Radio calibration - assuming you've bound your transmitter to your receiver (as covered previously), you should now turn on your transmitter and once the green LED on the receiver goes on click the _Continue_ button. The _Spektrum Bind_ section isn't relevant, you just need to click _Calibrate Radio_ then move each stick in turn to its four corners, i.e. covering the furthest points each can go in all directions, you should see red upper and lower bands appear on the throttle, yaw, pitch and roll indicators. When you move the throttle to the lower-right corner you may hear an annoyed beep from the Pixhawk - this is because this stick position is used to arm the flight controller and the beep is telling you that unsurprisinly it's not currently in a state to be armed. Now flip through the switches you've set up to change flight modes, go from flight mode 1 to flight mode 6 - you should see a lower red bar established for radio channel 5 and the high bar getting higher as you flip up through the modes to mode 6. Make sure to press the _Click when Done_ button to wrap up - it will warn you to return you throttle to its lowest position (but doesn't remind you to return your switches to select flight mode 1 which is necessary in order to be able to arm later).
@@ -56,6 +56,71 @@ TODO: have I got pitch correctly inverted, cf with Painless360 video.
 XXX Sometimes I could quit out of the wizard by pressing the standard close (x) button of its window, but often this did nothing and I had to kill MP with the Task Manager to get out of the wizard.
 
 XXX main LED flashes blue when ready, except for safety button, and flashes green once safety button has been pressed and held such that it stays red.
+
+_Calibration complete._  
+<img width="512" src="images/mission-planner/calibration-complete.png">
+
+Try pushing throttle to lower-right to arm.
+TODO: what sound for arm-failure beep?
+
+TODO: do you have to have pressed the safety switch first before this is the thing it complains about, does the safety switch need to be pressed to pass the arm step in the wizard. Just redo the accel calibration and work this out.
+
+_Reboot needed following calibration._  
+<img width="512" src="images/mission-planner/reboot-needed.png">
+
+_Safety switch not pressed._  
+<img width="512" src="images/mission-planner/pre-arm-safety-switch.png">
+
+_No GPS fix._  
+<img width="512" src="images/mission-planner/pre-arm-no-gps.png">
+
+Once armed it will quickly revert to disarmed unless you increase throttle, but even this won't fool it for long, it will eventually still work out that it's on land and disarm.
+
+TODO: what sounds for - arm success beep and disarm beep?
+
+_Armed._  
+<img width="512" src="images/mission-planner/armed.png">
+
+Disarm and go back into the wizard and skip over the previous steps to return to the _Verify_ screen - now try arming and if all goes well this time the final step here should go green.
+
+_Arming successful in the wizard._  
+<img width="512" src="images/mission-planner/armed-wizard.png">
+
+Add these next steps to the list of wizard steps documented above. Geofencing doesn't warrant an image, just explain that I enabled it (it defaults to off) and that'll limit your flight distances and you may want to up the values once you're happy with longer range missions.
+
+Failsafes - there's no right answer, e.g. is RTL really good for battery failsafe - maybe land would be better.
+
+_Failsafes._  
+<img width="512" src="images/mission-planner/failsafes.png">
+
+_Geofence_  
+<img width="512" src="images/mission-planner/geofence.png">
+
+Geofence is (as you can see) step 14, step 15 is a page of links to look at before your first flight, step 16 doesn't exist as a page at all - pressing finish is step 16 and exits the wizard.
+
+Oddly completing the battery monitor step in the wizard doesn't result in it being enabled. Battery monitor is the only item in optional hardware that we have though we'll be adding an SiK radio later.
+
+Note: the K in SiK is for kilo, as in 1000, as the chip in the radio is a SiLabs Si1000 (from the ["what does SiK mean" section](https://github.com/ArduPilot/SiK#what-does-sik-mean) of the SiK firmware README).
+
+TODO: you can enaled just volts or volts and current, I'm guessing the power module only delivers voltage information and the Pixhawk can't see current without an additional sensor? Should I enable the "MP alarm" checkbox.
+
+_Battery monitor._  
+<img width="512" src="images/mission-planner/battery-monitor.png">
+
+Even though I set FS Pwm in the wizard (see above), the default value is still seen here afterward. So I lowered it here. Perhaps don't even mention FS Pwn when going thru the wizard - and add it (and a screenshot) as an issue addressed when trying to arm for the first time.
+
+_FS Pwm._  
+<img width="512" src="images/mission-planner/fs-pwm.png">
+
+Confirm that pitch is reversed.
+
+_Throttle down and pitch up._  
+<img height="512" src="images/mission-planner/pitch-up-throttle-down.jpg">
+
+Throttle is low as you'd expect and pitch is low as we inverted this input when setting up the transmitter. TODO: provide link confirming this is what's needed (probably already in section where I setup TX).
+
+_Throttle and pitch are both low._  
+<img width="512" src="images/mission-planner/pitch-reversed.png">
 
 If you quit out of the wizard and press _Flight Data_ your taken to the view with the artificial horizon where you can generally see a very clear reason displayed for why arming has failed. The messages may be a little unituitive but you can generally find a clear explanation on the page covering all the [pre-arm safety checks](http://ardupilot.org/copter/docs/prearm_safety_check.html) or failing that using Google. The arming failure reasons I experienced were:
 
