@@ -57,6 +57,63 @@ XXX Sometimes I could quit out of the wizard by pressing the standard close (x) 
 
 XXX main LED flashes blue when ready, except for safety button, and flashes green once safety button has been pressed and held such that it stays red.
 
+---
+
+Arming
+------
+
+You can try to arm here in the wizard - move the throttle to the lower-right corner but all you'll hear it XXX indicating arming failure. Unfortunately its impossible to diagnose arming failure here and there are a number of issues that will need to be overcome before you can arm. The best thing to do is quit out of the wizard at this point and switch from the _Initial Setup_ view to the _Flight Data_ view where its much easier to see why arming has failed. There are many reasons arming may fail and the message may often seem less than intuitive but you can generally find a clear explanation on the page covering all the [pre-arm safety checks](http://ardupilot.org/copter/docs/prearm_safety_check.html) or failing that using Google.
+
+**Important:** always make sure that you've got all switches related to changing flight mode in their initial position, your first flight mode should be something like _Stabilize_. The most obscure arming failures I experienced resulted from having a flight mode set that is not really suitable for take off. When trying or retrying the wizard I several times left things in a random flight mode after having flipped the flight mode switches as part of the _Radio Calibration_ step.
+
+_The Flight Data view._  
+<img width="512" src="images/mission-planner/arming/0-start.png">
+
+Above you can immediately see at least one problem - unless you're outside you probably have to GPS fix. But we'll come back to that later. Just try arming anyway - depending on the value sent by your transmitter when your throttle is its lowest position the first arming failure you may see is "Check FS_THR_VALUE".
+
+_Check FS_THR_VALUE warning._  
+<img width="512" src="images/mission-planner/arming/1a-fs_thr_value.png">
+
+This is related to the [radio failsafe](http://ardupilot.org/copter/docs/radio-failsafe.html). There are two radio failsafe mechanisms - no-signal (preferred) and low-throttle. `FS_THR_VALUE` is related to the low-throttle mechanism and, despite the fact that we're actually going to use the preferred no-signal mechanism, the `FS_THR_VALUE` still has to be set correctly.
+
+Switch back to the _Initial Setup_ view, expand _Mandatory Hardware_ and select _Radio Calibration_. Move the throttle up and down and see the resulting throttle value change accordingly, move the throttle to its lowest position and note the value, e.g. 982. Then go from _Radio Calibration_ to _FailSafe_ - there's a section there for _Radio_ that has the value _FS Pwm_, this value must be at least ten less than your lowest throttle value. In my case it wasn't so I adjusted it down 970.
+
+_Note the lowest throttle value._  
+<img width="512" src="images/mission-planner/arming/1b-throttle-low.png">
+
+_Decrease the FS Pwn value._  
+<img width="512" src="images/mission-planner/arming/1c-set-fs_thr_value.png">
+
+Now try arming again. The next failure reason is actually a result of running the wizard! The Pixhawk has to be rebooted in order to pick up the new accelerometer values resulting from the accelerometer calibration step that we did. So press the _Disconnect_ button (upper right) in MP and unplug the Pixhawk and plug it back in to reboot it, once its ready press the _Connect_ button in MP.
+
+_Reboot required after calibration._  
+<img width="512" src="images/mission-planner/arming/2-calibration-reboot.png">
+
+Now try arming again. This time there's no additional explanation shown for the failure - we're down to the initial problem that we saw, the lack of a GPS fix. If you can move outside that's perfect, in my case I balanced my setup, with the GPS unit, rather precariously on a windowsill. It can take several minutes to acquire a fix - on my unit, in addition to the green power LED, a smaller blue LED starts to blink slowly once it has a fix.
+
+_No GPS fix._  
+<img width="512" src="images/mission-planner/arming/3-gps-fix.png">
+
+Even once it has an inital fix it can take a while longer to get a satisfactorily accurate fix. If you ever had an old Garmin or similar handheld GPS unit, you'll remember the initial large circle around your initial position getting smaller and smaller as it acquired signals from further satellites and could gradually narrow in more accurately on your position.
+
+So despite a GPS fix I sometimes saw further arming failures that were down to it not yet having an accurate enough fix. The reasons shown in these cases included "Need 3D Fix" - which is clear enough, "check fence" - this isn't quite as clear, if you've got geofencing enabled (we'll come to that later) then it needs a good initial fix to define the bounds of the geofenced region, and lastly I sometimes got "GPS speed error 1.4 (needs 1.0)" - this is the most obscure and I'm not really sure what it means (perhaps that the GPS is not yet sure that the craft isn't moving). In all cases I just had to wait further until the GPS acquired a suitably accurate fix.
+
+Now we're almost there - try arming again. This failure reason is the most obvious and simple. A feature of the Pixhawk, that many other flight controllers don't have, is a safety switch - this flashes on and off initially, you must press and hold down this switch until it stays red and stops flashing.
+
+_Safety switch needs to be pressed._  
+<img width="512" src="images/mission-planner/arming/4-safety-switch.png">
+
+Once this is done you can try arming one more time - hopefully this time it'll be successful and it will arm. Once armed it will quickly revert to disarmed unless you increase throttle, but even this won't fool it for long - it will eventually still work out that it's on land and disarm.
+
+TODO: what sounds for - arm success beep and disarm beep?
+
+_Successfully armed._  
+<img width="512" src="images/mission-planner/arming/5-armed.png">
+
+---
+
+TODO: remove the screenshots below that duplicate the newer ones above in the arming section.
+
 _Calibration complete._  
 <img width="512" src="images/mission-planner/calibration-complete.png">
 
@@ -73,10 +130,6 @@ _Safety switch not pressed._
 
 _No GPS fix._  
 <img width="512" src="images/mission-planner/pre-arm-no-gps.png">
-
-Once armed it will quickly revert to disarmed unless you increase throttle, but even this won't fool it for long, it will eventually still work out that it's on land and disarm.
-
-TODO: what sounds for - arm success beep and disarm beep?
 
 _Armed._  
 <img width="512" src="images/mission-planner/armed.png">
@@ -121,14 +174,6 @@ Throttle is low as you'd expect and pitch is low as we inverted this input when 
 
 _Throttle and pitch are both low._  
 <img width="512" src="images/mission-planner/pitch-reversed.png">
-
-If you quit out of the wizard and press _Flight Data_ your taken to the view with the artificial horizon where you can generally see a very clear reason displayed for why arming has failed. The messages may be a little unituitive but you can generally find a clear explanation on the page covering all the [pre-arm safety checks](http://ardupilot.org/copter/docs/prearm_safety_check.html) or failing that using Google. The arming failure reasons I experienced were:
-
-* Pixhawk has to be rebooted to save calibration data!!!
-* "Check `FS_THR_VALUE`" - this is related to the [radio failsafe](http://ardupilot.org/copter/docs/radio-failsafe.html). There are two radio failsafe mechanisms - no-signal (preferred) and low-throttle. `FS_THR_VALUE` is related to the low-throttle mechanism and, despite the fact that we're actually going to use the preferred no-signal mechanism, the `FS_THR_VALUE` still has to be set correctly. If you're in the _Initial Setup_ view and expand _Mandatory Hardware_ and select _Radio Calibration_. If your transmitter is on you should be able to move the throttle up and down and see the resulting throttle values, move the throttle to its lowest position and note the value, e.g. 982. Then go from _Radio Calibration_ to _FailSafe_ - there's a section there for _Radio_ with the value _FS Pwm_, this value must be at least ten less than your lowest throttle value. In my case it wasn't so I adjusted it down 970. This is all explained in the linked to pages.
-* TODO: work in other arm failure reasons below.
-
-* CONTINUE HERE.
 
 Inprogress notes
 ----------------
