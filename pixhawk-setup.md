@@ -141,7 +141,7 @@ _Arming successful in the wizard._
 
 Add these next steps to the list of wizard steps documented above. Geofencing doesn't warrant an image, just explain that I enabled it (it defaults to off) and that'll limit your flight distances and you may want to up the values once you're happy with longer range missions.
 
-Failsafes - there's no right answer, e.g. is RTL really good for battery failsafe - maybe land would be better.
+Failsafes - there's no right answer, e.g. is RTL really good for battery failsafe - maybe land would be better. GCS failsafe seems to be another thing that the wizard fails to save, if you later go to _FailSafe_ GCS appears as uncheked, acutally its in an odd indeterminate state - if you click it the checkbox goes from just an outline to being solid white and unchecked, if you click it again it becomes checked (and no clicking or unclicking will return it to the initial outline state) - just as odd there are no options for GCS here despite you being able to select between different options in the wizard, e.g. continue with mission.
 
 _Failsafes._  
 <img width="512" src="images/mission-planner/failsafes.png">
