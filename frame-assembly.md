@@ -84,7 +84,8 @@ The arms are numbered 1 to 4 so number the connector of each arm's ESC according
 I used a white [edding 780](http://www.edding.com/creating-and-decorating/products/gloss-paint-marker/edding-780-gloss-paint-marker/) pen that's designed for writing on glass, metal and plastic.
 
 _Arm numbering and CW and CCW motor placement._  
-<img width="300" src="images/assembly/frame/arm-numbering.svg">
+[![arm numbering](images/assembly/frame/arm-numbering.png)](images/assembly/frame/arm-numbering.svg)
+<!-- Github can't handle relative SVGs - see https://github.com/github/markup/issues/556 and https://github.com/isaacs/github/issues/316 -->
 
 When adding the motors later it's important to use the appropriate motor type (CCW or CW) for each arm, so the above table and diagram include this information.
 
