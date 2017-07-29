@@ -30,7 +30,7 @@ As noted elsewhere MP also installs all necessary Pixhawk drivers so no addition
 
 I've found MP can be a little flakey during its first run (if you run it from the command prompt you can see various errors being output that don't appear subsequently once you've allowed firewall access etc.) So I suggest just expanding the MP window (it's initially squashed up small enough to fit on even the smallest screen) and then restarting it (it will start with the same window size as it had when you exited).
 
-I've also seen MP incorrectly inform me that a newer firmware version was available, e.g. it told me that version 3.5.0 was available - this was technically true, 3.5.0 was available for the helicopter version of the firmware but 3.4.6 was still the latest available quadcopter version and was the version already on my Pixhawk. The version number file stored with the latest stable quadcopter firmware can be seen [here](http://firmware.eu.ardupilot.org/Copter/stable/PX4-quad/git-version.txt).
+I've also seen MP incorrectly inform me that a newer firmware version was available, e.g. it told me that version 3.5.0 was available - this was technically true, 3.5.0 was available for the helicopter version of the firmware but 3.4.6 was still the latest available quadcopter version and was the version already on my Pixhawk. The version number file stored with the latest stable quadcopter firmware can be seen [here](http://firmware.eu.ardupilot.org/Copter/stable/PX4-quad/git-version.txt). See [MissionPlanner/#1620](https://github.com/ArduPilot/MissionPlanner/issues/1620).
 
 Once MP is up and running click on _Initial Setup_ and then on _Wizard_. The wizard is fairly self explanatory:
 
@@ -110,9 +110,42 @@ TODO: what sounds for - arm success beep and disarm beep?
 _Successfully armed._  
 <img width="512" src="images/mission-planner/arming/5-armed.png">
 
+Flight modes
+------------
+
+For a great introduction to flight modes see Painless360's [introduction to flight modes video](https://www.youtube.com/watch?v=PC2io5WPTzM). This gives you a far clearer overview of all the major flight modes than the ArduCopter documentation and points out little details that you might miss otherwise, e.g. that altitude hold dramatically affects the behavior of the throttle.
+
+When we set up the transmitter we went to a lot of trouble to set up switches so that we could switch between six flight modes. Now we can choose what those six modes are. For a full list of flight modes see the ArduCopter [flight modes page](http://ardupilot.org/copter/docs/flight-modes.html) - there are quite a number. But there are five standard recommended flight modes - [stabilize](http://ardupilot.org/copter/docs/stabilize-mode.html), [altitude hold](http://ardupilot.org/copter/docs/altholdmode.html), [loiter](http://ardupilot.org/copter/docs/loiter-mode.html), [return to launch](http://ardupilot.org/copter/docs/rtl-mode.html) (RTL) and [auto](http://ardupilot.org/copter/docs/auto-mode.html). So I configured up these five modes and then chose the very dull mode [land](http://ardupilot.org/copter/docs/land-mode.html) as my sixth choice (as apparently it can do a much smoother job of landing than most beginners).
+
+**Update:** after some further reading I replaced loiter with position hold, this is a newer mode that's similar to loiter but allows more natural stick control, i.e. you can fly the craft in this mode but if you release the sticks it comes to a stop and holds its position.
+
+The other available flight modes are related to things like more agressive and sporty flying styles and more obscure use cases - however [circle](http://ardupilot.org/copter/docs/circle-mode.html) looks interesting if you want to circle a point with a camera and [guided](http://ardupilot.org/copter/docs/flight-modes.html) is relevant if you want to control the craft in-flight from a ground control application. One mode we'll be coming back to later is [auto-tune](http://ardupilot.org/copter/docs/autotune.html) - there are many tunable parameters that affect how the craft flies, auto-tune mode causes the craft to put itself through various maneuvers and by seeing how it behaves it tries to automatically determine the optimal values for these tunable parameters.
+
+_Flight modes._
+<img width="512" src="images/mission-planner/flight-modes.png">
+
+When we were setting up the transmitter we setup flight mode 6 with the intention that it be easy to activate as the panic option. Returning to the point of lanuch is generally a sensible panic option, so while the order of the other flight modes isn't important it's important to select RTL as the flight mode 6. Remember to actually press the _Save Modes_ button once you're finished!
+
+Assuming your transmitter is still on (from the previous transmitter calibration step) you can check the flight mode switches now, flick the switches you configured on the transmitter to flip up through all the flight modes from 1 to 6 - as you select each mode you should see the corresponding dropdown highlighted in green in the wizard (in the image above RTL is highlighted). Each time you change flight mode the Pixhawk will beep loudly.
+
+It is possible to configure more than just six flight modes. Switching between flight modes is done by changing the value the transmitter sends on channel 5. But there are many further unused channels and its possible to use these channels to trigger many additional actions. E.g. if your craft had retractable landing gear controlled by a servo you could configure it to retract or extend depending on whether the channel 7 value is high or low. The channels 7 to 12 can be used to trigger actions in this way and you can see the full list of triggerable actions on the [auxilary function switches page](http://ardupilot.org/copter/docs/channel-7-and-8-options.html#configuration). As you can see many of these actions are flight modes, e.g. land, RTL and auto-tune.
+
+To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. The parameters are in aphabetical order, scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
+
+_Options for channels 7 to 12._
+<img width="512" src="images/mission-planner/ch7-12-options.png">
+
+The spacing is a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
+
+_Channels 7 and 8 under Extended Tuning._
+<img width="512" src="images/mission-planner/ch7-8-options.png">
+
 ---
 
 TODO: remove the screenshots below that duplicate the newer ones above in the arming section.
+
+_Calibration complete but no GPS._
+<img width="512" src="images/mission-planner/wizard-no-gps.png">
 
 _Calibration complete._  
 <img width="512" src="images/mission-planner/calibration-complete.png">
