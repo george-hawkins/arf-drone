@@ -121,7 +121,7 @@ When we set up the transmitter we went to a lot of trouble to set up switches so
 
 The other available flight modes are related to things like more agressive and sporty flying styles and more obscure use cases - however [circle](http://ardupilot.org/copter/docs/circle-mode.html) looks interesting if you want to circle a point with a camera and [guided](http://ardupilot.org/copter/docs/flight-modes.html) is relevant if you want to control the craft in-flight from a ground control application. One mode we'll be coming back to later is [auto-tune](http://ardupilot.org/copter/docs/autotune.html) - there are many tunable parameters that affect how the craft flies, auto-tune mode causes the craft to put itself through various maneuvers and by seeing how it behaves it tries to automatically determine the optimal values for these tunable parameters.
 
-_Flight modes._
+_Flight modes._  
 <img width="512" src="images/mission-planner/flight-modes.png">
 
 When we were setting up the transmitter we setup flight mode 6 with the intention that it be easy to activate as the panic option. Returning to the point of lanuch is generally a sensible panic option, so while the order of the other flight modes isn't important it's important to select RTL as the flight mode 6. Remember to actually press the _Save Modes_ button once you're finished!
@@ -132,19 +132,19 @@ It is possible to configure more than just six flight modes. Switching between f
 
 To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. The parameters are in aphabetical order, scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
 
-_Options for channels 7 to 12._
+_Options for channels 7 to 12._  
 <img width="512" src="images/mission-planner/ch7-12-options.png">
 
 The spacing is a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
 
-_Channels 7 and 8 under Extended Tuning._
+_Channels 7 and 8 under Extended Tuning._  
 <img width="512" src="images/mission-planner/ch7-8-options.png">
 
 ---
 
 TODO: remove the screenshots below that duplicate the newer ones above in the arming section.
 
-_Calibration complete but no GPS._
+_Calibration complete but no GPS._  
 <img width="512" src="images/mission-planner/wizard-no-gps.png">
 
 _Calibration complete._  
