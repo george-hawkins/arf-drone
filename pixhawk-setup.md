@@ -138,8 +138,8 @@ The spacing is a little odd - it might look like each option is related to the d
 _Channels 7 and 8 under Extended Tuning._  
 ![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
 
-Testing transmitter failsafe
-----------------------------
+Testing the transmitter failsafe
+--------------------------------
 
 It's worth confirming that the transmitter failsafe works as expected, i.e. if the craft loses contact with the transmitter it will perform the failsafe action you configured for this situation. To test this turn on the transmitter and arm the craft as we did before. Push the throttle value up to full so that it doesn't immediatelly disarm itself. Then switch to the _Initial Setup_ view, expand _Mandatory Hardware_ and go to _FailSafe_. You'll see green bars for the radio channels showing that values are being received as expected from the transmitter (in the picture below you can see e.g. that channel 3, corresponding to the throttle, is at its max). You'll also see the current flight mode, i.e. stabilize, and that the craft is armed.
 
