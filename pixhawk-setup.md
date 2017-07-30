@@ -28,9 +28,7 @@ Download the latest Mission Planner (MP) version using the link in the [installa
 
 As noted elsewhere MP also installs all necessary Pixhawk drivers so no additional driver installation is needed. When running MP for the first time is asks you if you want to enable [Altitude Angel data](https://www.altitudeangel.com/Home/Developers) - you should probably select _Yes_ as this data is needed by MP to highlight things like restricted airspaces around airports. You then have to register for a free Altitude Angel account and allow MP to access it. In the background Windows will also have popped up a Firewall dialog asking if you want to allow MP to access networks (I ticked the boxes for both private and public networks). It then asks you if you want to run the setup wizard - this will set up your Pixhawk - however I suggest skipping the wizard at this point and just let it open the normal full MP application.
 
-I've found MP can be a little flakey during its first run (if you run it from the command prompt you can see various errors being output that don't appear subsequently once you've allowed firewall access etc.) So I suggest just expanding the MP window (it's initially squashed up small enough to fit on even the smallest screen) and then restarting it (it will start with the same window size as it had when you exited).
-
-I've also seen MP incorrectly inform me that a newer firmware version was available, e.g. it told me that version 3.5.0 was available - this was technically true, 3.5.0 was available for the helicopter version of the firmware but 3.4.6 was still the latest available quadcopter version and was the version already on my Pixhawk. The version number file stored with the latest stable quadcopter firmware can be seen [here](http://firmware.eu.ardupilot.org/Copter/stable/PX4-quad/git-version.txt). See [MissionPlanner/#1620](https://github.com/ArduPilot/MissionPlanner/issues/1620).
+If you look carefully at the console output (the black window that opens in the background behind the MP splash screen) you can see the code complaining about the lack of internet access and such like when you start MP up for the very first time and you haven't yet handled the Windows Firewall dialog that this initial startup triggered. So while it's probably unnecessary I'd suggest restarting straight away after this so that it can startup cleanly with all the access it expects.
 
 Once MP is up and running click on _Initial Setup_ and then on _Wizard_. The wizard is fairly self explanatory:
 
@@ -78,11 +76,11 @@ This is related to the [radio failsafe](http://ardupilot.org/copter/docs/radio-f
 
 Switch back to the _Initial Setup_ view, expand _Mandatory Hardware_ and select _Radio Calibration_. Move the throttle up and down and see the resulting throttle value change accordingly, move the throttle to its lowest position and note the value, e.g. 982. Then go from _Radio Calibration_ to _FailSafe_ - there's a section there for _Radio_ that has the value _FS Pwm_, this value must be at least ten less than your lowest throttle value. In my case it wasn't so I adjusted it down 970.
 
-_Note the lowest throttle value._  
-<img width="512" src="images/mission-planner/arming/1b-throttle-low.png">
+_Note the lowest throttle value (982 here)._  
+![lowest throttle value](images/mission-planner/arming/1b-throttle-low.png)
 
 _Decrease the FS Pwn value._  
-<img width="512" src="images/mission-planner/arming/1c-set-fs_thr_value.png">
+![set FS_THR_VALUE](images/mission-planner/arming/1c-set-fs_thr_value.png)
 
 Now try arming again. The next failure reason is actually a result of running the wizard! The Pixhawk has to be rebooted in order to pick up the new accelerometer values resulting from the accelerometer calibration step that we did. So press the _Disconnect_ button (upper right) in MP and unplug the Pixhawk and plug it back in to reboot it, once its ready press the _Connect_ button in MP.
 
@@ -122,7 +120,7 @@ When we set up the transmitter we went to a lot of trouble to set up switches so
 The other available flight modes are related to things like more agressive and sporty flying styles and more obscure use cases - however [circle](http://ardupilot.org/copter/docs/circle-mode.html) looks interesting if you want to circle a point with a camera and [guided](http://ardupilot.org/copter/docs/flight-modes.html) is relevant if you want to control the craft in-flight from a ground control application. One mode we'll be coming back to later is [auto-tune](http://ardupilot.org/copter/docs/autotune.html) - there are many tunable parameters that affect how the craft flies, auto-tune mode causes the craft to put itself through various maneuvers and by seeing how it behaves it tries to automatically determine the optimal values for these tunable parameters.
 
 _Flight modes._  
-<img width="512" src="images/mission-planner/flight-modes.png">
+![flight modes](images/mission-planner/flight-modes.png)
 
 When we were setting up the transmitter we setup flight mode 6 with the intention that it be easy to activate as the panic option. Returning to the point of lanuch is generally a sensible panic option, so while the order of the other flight modes isn't important it's important to select RTL as the flight mode 6. Remember to actually press the _Save Modes_ button once you're finished!
 
@@ -133,22 +131,22 @@ It is possible to configure more than just six flight modes. Switching between f
 To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. The parameters are in aphabetical order, scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
 
 _Options for channels 7 to 12._  
-<img width="512" src="images/mission-planner/ch7-12-options.png">
+![options for channels 7 to 12](images/mission-planner/ch7-12-options.png)
 
 The spacing is a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
 
 _Channels 7 and 8 under Extended Tuning._  
-<img width="512" src="images/mission-planner/ch7-8-options.png">
+![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
 
 ---
 
 TODO: remove the screenshots below that duplicate the newer ones above in the arming section.
 
 _Calibration complete but no GPS._  
-<img width="512" src="images/mission-planner/wizard-no-gps.png">
+![wizard - no GPS](images/mission-planner/wizard-no-gps.png)
 
 _Calibration complete._  
-<img width="512" src="images/mission-planner/calibration-complete.png">
+![wizard - calibration complete](images/mission-planner/calibration-complete.png)
 
 Try pushing throttle to lower-right to arm.
 TODO: what sound for arm-failure beep?
@@ -170,17 +168,17 @@ _Armed._
 Disarm and go back into the wizard and skip over the previous steps to return to the _Verify_ screen - now try arming and if all goes well this time the final step here should go green.
 
 _Arming successful in the wizard._  
-<img width="512" src="images/mission-planner/armed-wizard.png">
+![wizard - armed](images/mission-planner/armed-wizard.png)
 
 Add these next steps to the list of wizard steps documented above. Geofencing doesn't warrant an image, just explain that I enabled it (it defaults to off) and that'll limit your flight distances and you may want to up the values once you're happy with longer range missions.
 
 Failsafes - there's no right answer, e.g. is RTL really good for battery failsafe - maybe land would be better. GCS failsafe seems to be another thing that the wizard fails to save, if you later go to _FailSafe_ GCS appears as uncheked, acutally its in an odd indeterminate state - if you click it the checkbox goes from just an outline to being solid white and unchecked, if you click it again it becomes checked (and no clicking or unclicking will return it to the initial outline state) - just as odd there are no options for GCS here despite you being able to select between different options in the wizard, e.g. continue with mission.
 
 _Failsafes._  
-<img width="512" src="images/mission-planner/failsafes.png">
+![failsafes](images/mission-planner/failsafes.png)
 
 _Geofence_  
-<img width="512" src="images/mission-planner/geofence.png">
+![geofence](images/mission-planner/geofence.png)
 
 Geofence is (as you can see) step 14, step 15 is a page of links to look at before your first flight, step 16 doesn't exist as a page at all - pressing finish is step 16 and exits the wizard.
 
@@ -191,12 +189,12 @@ Note: the K in SiK is for kilo, as in 1000, as the chip in the radio is a SiLabs
 TODO: you can enaled just volts or volts and current, I'm guessing the power module only delivers voltage information and the Pixhawk can't see current without an additional sensor? Should I enable the "MP alarm" checkbox.
 
 _Battery monitor._  
-<img width="512" src="images/mission-planner/battery-monitor.png">
+![battery monitor](images/mission-planner/battery-monitor.png)
 
 Even though I set FS Pwm in the wizard (see above), the default value is still seen here afterward. So I lowered it here. Perhaps don't even mention FS Pwn when going thru the wizard - and add it (and a screenshot) as an issue addressed when trying to arm for the first time.
 
 _FS Pwm._  
-<img width="512" src="images/mission-planner/fs-pwm.png">
+![FS Pwm setting](images/mission-planner/fs-pwm.png)
 
 Confirm that pitch is reversed.
 
@@ -206,10 +204,12 @@ _Throttle down and pitch up._
 Throttle is low as you'd expect and pitch is low as we inverted this input when setting up the transmitter. TODO: provide link confirming this is what's needed (probably already in section where I setup TX).
 
 _Throttle and pitch are both low._  
-<img width="512" src="images/mission-planner/pitch-reversed.png">
+![pictch reversed](images/mission-planner/pitch-reversed.png)
 
 Inprogress notes
 ----------------
+
+When you press _Connect_ in MP it will check the firmware version on your flight controller and inform you if a newer version is available. It's important to lookup the release announcements for a new version as it may involve additional steps. Version numbers are of the form MAJOR.MINOR.PATCH, e.g. 3.4.6, changes that involve the MAJOR or MINOR number are far more likely to involve such additional steps, e.g. the recent (at the time of writing) change from 3.4.6 to 3.5.0 that's covered by this [announcement](https://discuss.ardupilot.org/t/copter-3-5-0-has-been-released/19241) on the [ArduPilot blog](https://discuss.ardupilot.org/c/blog) that requires a compass recalibration and the setting of a new parameter. You can also find the more detailed, but less easy to consume, release notes [here on Github](https://github.com/ArduPilot/ardupilot/blob/master/ArduCopter/ReleaseNotes.txt). You can check the latest stable firmware version currently published on the ArduPilot firmware site by checking the file [`Copter/stable/PX4/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4/git-version.txt). With 3.5.0 ArduCopter has a single multirotor version, previously there were separate versions for quad, hex, octa etc. and so beside the `PX4/git-version.txt` you'll still find files like [`PX4-quad/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4-quad/git-version.txt) that actually cover an older previous release (presumably these will eventually be cleared out).
 
 _Flat._  
 <img width="512" src="images/calibration/flat.jpg">
