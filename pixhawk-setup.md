@@ -138,7 +138,53 @@ The spacing is a little odd - it might look like each option is related to the d
 _Channels 7 and 8 under Extended Tuning._  
 ![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
 
+Testing transmitter failsafe
+----------------------------
+
+It's worth confirming that the transmitter failsafe works as expected, i.e. if the craft loses contact with the transmitter it will perform the failsafe action you configured for this situation. To test this turn on the transmitter and arm the craft as we did before. Push the throttle value up to full so that it doesn't immediatelly disarm itself. Then switch to the _Initial Setup_ view, expand _Mandatory Hardware_ and go to _FailSafe_. You'll see green bars for the radio channels showing that values are being received as expected from the transmitter (in the picture below you can see e.g. that channel 3, corresponding to the throttle, is at its max). You'll also see the current flight mode, i.e. stabilize, and that the craft is armed.
+
+_Ready for failsafe test._  
+![ready for failsafe test](images/mission-planner/ready-for-failsafe-test.png)
+
+Now turn off the transmitter - you'll hear the Pixhawk beep loudly, as it detects that it's lost the transmitter signal, and you'll see the green bars in the _Radio IN_ column disappear. The flight mode will switch to land (the last phase of RTL) and the bars in the _Servo/Motor OUT_ column will drop accordingly before disappearing as well as the craft quickly determines that it has already landed, at which point it disarms itself.
+
+_Landed and disarmed after failsafe._  
+![failsafe triggered](images/mission-planner/failsafe-triggered.png)
+
+If you then switch to the _Flight Data_ view you'll see an even clearer confirmation of what just happened, i.e. the flight controller stopped receiving input from the RC receiver (as we configured the receiver to output no pulses in the failsafe situation), that the failsafe has been triggered and that the craft is now disarmed.
+
+_XXX._  
+<img width="512" src="images/mission-planner/failsafe-flight-data-view.png">
+
+If you now turn on your transmitter again and try to rearm the craft you'll find it refuses with the error message "Mode not armable". This is because the failsafe caused the flight mode to change (to land in our situation) and this flight mode is not suitable for rearming.
+
+_Still in failsafe flight mode._  
+<img width="512" src="images/mission-planner/post-failsafe-rearm-issue.png">
+
+To get out of this situation simply flick one of your flight mode switches on your transmitter so that it explicitly tells the flight controller to change mode, then flick the switch back to its default position so as to return to stabilize mode and the craft can then be armed again as normal.
+
+Mission Planner notes
+---------------------
+
+If you go to the _Flight Data_ view you'll see a set of tabs below the head up display (HUD), i.e. below the main area. These contain various useful things, e.g. the _PreFlight_ tab shows the pre-flight conditions that have been met (green) or have yet to be met (red), note that only the ticked ones are mandatory. Acquiring a GPS fix can often be very slow and it can be informative to look here to see the satellite count gradually increase.
+
+_Flight data tabs - pre-flight._  
+![satellite count](images/mission-planner/satellite-count.png)
+
+Sometimes the flight data tabs become mysteriously squashed to the bottom of the window and you can't drag the resize bar above them to make them accessable. This happens because the HUD area has a fixed aspect ratio - if the current window size or the ratio of the HUD's width relative to that of the map cause it to get to wide then it will need too much height to maintain its aspect ratio and squash the tabs to the bottom of the widow.
+
+_Squashed flight data tabs._  
+<img width="512" src="images/mission-planner/flight-data-tabs-issue.png">
+
+So you can either resize the window to give it more vertical space or adjust the resize bar between the HUD and the map to give the map more space in order to unsquash the tabs.
+
+_Unsquashed flight data tabs._  
+<img width="512" src="images/mission-planner/flight-data-gauges.png">
+
 ---
+
+Inprogress
+----------
 
 TODO: remove the screenshots below that duplicate the newer ones above in the arming section.
 
