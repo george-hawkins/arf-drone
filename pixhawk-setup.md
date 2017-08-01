@@ -167,10 +167,10 @@ _Still in failsafe flight mode._
 
 To get out of this situation simply flick one of the flight mode switches on your transmitter so that it explicitly tells the flight controller to change mode, then flick the switch back to its default position so as to return to stabilize mode - the craft can then be armed again as normal.
 
-Mission Planner notes
----------------------
+Flight data tabs
+----------------
 
-If you go to the _Flight Data_ view you'll see a set of tabs below the head up display (HUD), i.e. below the main area. These contain various useful things, e.g. the _PreFlight_ tab shows the pre-flight conditions that have been met (green) or have yet to be met (red), note that only the ticked ones are mandatory. Acquiring a GPS fix can often be very slow and it can be informative to look here to see the satellite count gradually increase.
+If you go to the _Flight Data_ view you'll see a set of tabs below the head up display (HUD), i.e. below the main area. These contain various useful things, e.g. the _PreFlight_ tab shows the pre-flight conditions that have been met (green) or have yet to be met (red), note that only the ticked ones are mandatory.
 
 _Flight data tabs - pre-flight._  
 ![satellite count](images/mission-planner/satellite-count.png)
@@ -184,6 +184,48 @@ So you can either resize the window to give it more vertical space or adjust the
 
 _Unsquashed flight data tabs._  
 <img width="512" src="images/mission-planner/flight-data-gauges.png">
+
+GPS
+---
+
+If you go to the _PreFlight_ tab you can see a count of number of satellites that the GPS unit can currently see. This gives you some clue as to the current state but acquiring a GPS fix can often be very slow and it can be useful to get more insight into the what's going on with the GPS unit.
+
+If you go to the _Quick_ tab you'll see pre-chosen set of values that summarize the current state of the craft.
+
+_Default Quick tab values._  
+![initial Quick tab](images/mission-planner/gps/gps-initial-quick.png)
+
+We can customize this to include information relevant to GPS. Right click anywhere among the current values and select _Set View Count_ and change the number of columns from 2 to 3 (and leave the row count as it is at 3). You'll end up with a new column of values - initially all just displaying altitude, double click on each in turn and select the values _satcount_, _gpsstatus_ and _gpshdop_. Note that there are also _satcount2_, _gpsstatus2_ and _gpshdop2_ values, these are only relevant if you also have a secondary GPS unit.
+
+_Quick tab with added GPS values._  
+![Quick tab with added GPS values](images/mission-planner/gps/gps-modified-quick.png)
+
+Assuming the GPS unit hasn't yet acquired any kind of fix you'll see an initial satellite count of zero, a GPS status of 1 and a HDOP value of 99.99. You can find the meanings of the GPS status codes in the MP codebase in [`common.xml`](https://github.com/ArduPilot/MissionPlanner/blob/master/ExtLibs/Mavlink/message_definitions/common.xml) (search down for `GPS_FIX_TYPE`). They're as follows:
+
+| Value | Name                 | Description |
+|---|--------------------------|-------------|
+| 0 | `GPS_FIX_TYPE_NO_GPS`    | No GPS connected |
+| 1 | `GPS_FIX_TYPE_NO_FIX`    | No position information, GPS is connected |
+| 2 | `GPS_FIX_TYPE_2D_FIX`    | 2D position |
+| 3 | `GPS_FIX_TYPE_3D_FIX`    | 3D position |
+| 4 | `GPS_FIX_TYPE_DGPS`      | DGPS/SBAS aided 3D position |
+| 5 | `GPS_FIX_TYPE_RTK_FLOAT` | RTK float, 3D position |
+| 6 | `GPS_FIX_TYPE_RTK_FIXED` | RTK Fixed, 3D position |
+| 7 | `GPS_FIX_TYPE_STATIC`    | Static fixed, typically used for base stations |
+
+So 1 means "no position information, GPS is connected". What about HDOP? This sounds complicated but it's actually the most useful bit of information and its the value the flight controller uses to determine if the GPS measurements are accurate enough to be relied on. DOP stands for dilution of precision and you can find a full explanation of [DOP on Wikipedia](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) - HDOP is horizontal DOP. The important thing is to be able to interpret the value - the Wikipedia page contains a clear [table](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)#Meaning_of_DOP_Values) summarizing this. Basically you want the DOP value to drop to 2 or lower.
+
+If you place the GPS unit somewhere it can acquire a lock (in my case out on a windowsill) then you'll eventually see the satellite count tick up from zero. You need at least four satellites for a 3D fix. So here we see the GPS status has switched from 1 to 3, i.e. it now has a "3D position", but the satellite count is still low and the HDOP value isn't good enough yet.
+
+_Initial GPS lock acquired._  
+![GPS lock acquired](images/mission-planner/gps/gps-lock.png)
+
+With time the satellite count increases, here it's 12, and the HDOP value improves further - a value of 1.01 is rated excellent.
+
+_High accuracy HDOP value reached._   
+![high accuracy HDOP value reached](images/mission-planner/gps/gps-12-sats.png)
+
+What MP considers a good enough HDOP values is controlled by the parameter `GPS_HDOP_GOOD` - by default it's 1.4. You can find this parameter mentioned under "High GPS HDOP" on the ArduCopter [pre-arm safety check page](http://ardupilot.org/copter/docs/prearm_safety_check.html). This is an advanced parameter so you won't see it listed in the _Standard Parameters_ section of MP - to examine it you have to enable MP's advanced mode and look for it in the _Full Parameter List_ section that then becomes visible - modifying this parameter is not recommended.
 
 ---
 
@@ -206,7 +248,7 @@ _Arming successful in the wizard._
 
 Add these next steps to the list of wizard steps documented above. Geofencing doesn't warrant an image, just explain that I enabled it (it defaults to off) and that it'll limit your flight distances and you may want to up the values once you're happy with longer range missions.
 
-**Update:** I eventually disabled geofence, it seems to require an extremely precise initial position fix so that it can determine the bounds of the fence and waiting for such a fix often prevented arming.
+**Update:** geofence requires a precise initial position fix (see the GPS section elsewhere) so that it can determine the bounds of the fence. If you're setting things up initially indoors with your GPS unit balanced on a windowsill it can be hard to achive the GPS accuracy needed and as a result you won't be able to arm the flight controller (the error "check fence" will keep on being displayed on the HUD when you attempt to arm). So you may want to disable geofence initially and only enable it later when you're ready to really go outdoors where the GPS unit has a clearer view of the sky.
 
 TODO: can you see the accuracy of the current fix anywhere and how accurate a fix things like geofencing want?
 
