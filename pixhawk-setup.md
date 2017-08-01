@@ -5,18 +5,18 @@ In order to setup your Pixhawk you need a ground control application. Ground con
 
 But most importantly initially, the ground control application is used to setup and configure your flight controller. It's use after this is optional. Once you've connected your flight controller to your computer via USB you can use the ground control application to update the flight stack (either [ArduCopter](http://ardupilot.org/copter/) or [PX4](http://px4.io/) in our case), calibrate the craft's sensors and setup the flight stack (configuring things such as flight modes).
 
-There are a number of ground control applications - the two most popular are [Mission Planner](http://ardupilot.org/planner/) and [QGroundControl](http://qgroundcontrol.com/). Mission Planner only supports the ArduPilot flight stack and only runs on Windows. QGroundControl supports both ArduPilot and PX4 and it runs on Windows, Mac and Linux.
+There are a number of ground control applications - the two most popular are [Mission Planner](http://ardupilot.org/planner/) (MP) and [QGroundControl](http://qgroundcontrol.com/) (QGC). MP only supports the ArduPilot flight stack and only runs on Windows. QGC supports both ArduPilot and PX4 and it runs on Windows, Mac and Linux.
 
-However Mission Planner is by far the most used, so despite the fact that I use a Mac myself I'll go through setup using Mission Planner on Windows first.
+However MP is by far the most used, so despite the fact that I use a Mac myself I'll go through setup using MP on Windows first.
 
-Note: the ArduCopter site describes another ground control application called APM Planner 2 (APMP2) as the [best one for Mac and Linux](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html#apm-planner-2-0). But this is just a plug for a project that's closely associated with ArduPilot. I found that the most common questions asked regarding it were of the form "I can do X in Mission Planner, how do I do X in APMP2?" with the answer almost invariably of the form "You can't do X in APMP2, APMP2 isn't really intended for that use case." So it seems they're not even aiming to create a full feature ground control application, it's unclear though what particular audience they are targeting.
+Note: the ArduCopter site describes another ground control application called APM Planner 2 (APMP2) as the [best one for Mac and Linux](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html#apm-planner-2-0). But this is just a plug for a project that's closely associated with ArduPilot. I found that the most common questions asked regarding it were of the form "I can do X in MP, how do I do X in APMP2?" with the answer almost invariably of the form "You can't do X in APMP2, APMP2 isn't really intended for that use case." So it seems they're not even aiming to create a full feature ground control application, it's unclear though what particular audience they are targeting.
 
 TODO: add pointer to [`windows-vm.md`](windows-vm.md) and add note on the need to add a [USB filter](windows-vm.md#usb-filters) for the Pixhawk.
 
 Drivers
 -------
 
-TL;DR on Windows all necessary drivers for the Pixhawk are installed for you when you install Mission Planner (or QGroundControl).
+TL;DR on Windows all necessary drivers for the Pixhawk are installed for you when you install MP.
 
 For reasons we won't go into here Microsoft Windows has a much bigger issue than Mac or Linux with small hobbyist electronic devices that aren't backed by big corporations (who can pay up for a USB vendor ID and Windows certification).
 
@@ -24,12 +24,12 @@ Often these devices appear to your computer as simple serial devices (the kind o
 
 If updating the firmware on your transmitter or receiver via your computer or trying to connect a small FPV flight controller to something like [CleanFlight](http://cleanflight.com/) or [BetaFlight](https://github.com/betaflight/betaflight/blob/master/README.md) the driver setup generally involves something like [Zadig](http://zadig.akeo.ie/) (though recently an apparently more convenient/automatic solution is available in the form of the [ImpulseRC Driver Fixer Tool](http://www.dronetrest.com/t/fix-any-stm32-dfu-drivers-issues-when-flashing-betaflight-cleanflight-firmware/3603)).
 
-Having said all that it's nice to find out that for the Pixhawk drivers aren't an issue on any plaform, whether it's Windows, Mac or Linux. Mac and Linux don't need any additional drivers and on Windows the popular ground control application also automatically install the correct Pixhawk related drivers rather than leaving it to you as a separate step.
+Having said all that it's nice to find out that for the Pixhawk drivers aren't an issue on any plaform, whether it's Windows, Mac or Linux. Mac and Linux don't need any additional drivers and on Windows the popular ground control applications, like MP or QGC, also automatically install the correct Pixhawk related drivers rather than leaving it to you as a separate step.
 
 Mission Planner setup
 ---------------------
 
-Download the latest Mission Planner (MP) version using the link in the [installation section](http://ardupilot.org/planner/docs/common-install-mission-planner.html) of the MP documentation (you can also browse around in the [directory](http://firmware.ardupilot.org/Tools/MissionPlanner/) containing the MP installation file if you're interested). At the time of writing (and for some time now) the EU mirror for MP is amazingly slow - it takes more than 20 minutes to download the roughtly 60MB installation file.
+Download the latest MP version using the link in the [installation section](http://ardupilot.org/planner/docs/common-install-mission-planner.html) of the MP documentation (you can also browse around in the [directory](http://firmware.ardupilot.org/Tools/MissionPlanner/) containing the MP installation file if you're interested). At the time of writing (and for some time now) the EU mirror for MP is amazingly slow - it takes more than 20 minutes to download the roughtly 60MB installation file.
 
 As noted elsewhere MP also installs all necessary Pixhawk drivers so no additional driver installation is needed. When running MP for the first time is asks you if you want to enable [Altitude Angel data](https://www.altitudeangel.com/Home/Developers) - you should probably select _Yes_ as this data is needed by MP to highlight things like restricted airspaces around airports. You then have to register for a free Altitude Angel account and allow MP to access it. In the background Windows will also have popped up a Firewall dialog asking if you want to allow MP to access networks (I ticked the boxes for both private and public networks). It then asks you if you want to run the setup wizard - this will set up your Pixhawk - however I suggest skipping the wizard at this point and just let it open the normal full MP application.
 
@@ -41,7 +41,7 @@ Once MP is up and running click on _Initial Setup_ and then on _Wizard_. The wiz
 * Then the multirotor type, the simple four motor X type.
 * Then connect your Pixhawk - and select it from the dropdown list (most probably there'll only be one item in the list, e.g. COM3).
 
-I have no Windows machine so I run Windows as a VM within VirtualBox - while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware via the VM never worked. So instead I always loaded firmware using QGroundControl (which is covered later). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button (upper-right in the main MP window) and only then starting the wizard - this time it goes through the same initial steps but then jumps the firmware steps and goes straight onto the calibration steps.
+I have no Windows machine so I run Windows as a VM within VirtualBox - while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware via the VM never worked. So instead I always loaded firmware using QGC (which is covered later). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button (upper-right in the main MP window) and only then starting the wizard - this time it goes through the same initial steps but then jumps the firmware steps and goes straight onto the calibration steps.
 
 The wizard could do with a little work on its usability - you might initially expect the _Next_ button, seen on each page of the wizard, to initiate the calibration covered by a particular step but it will actually skip it - each page of the wizard generally has another button to start the given calibration process - and for some steps there's also an additonal button that needs to be pressed to mark the step as completed. As we'll see being able to skip steps is important - as it's essentially impossible to complete the wizard in one go, you have to quit it and redo it a number of times, skipping the steps you've already completed.
 
@@ -362,7 +362,7 @@ It's a historical hangover that the `modemmanager` package is still installed by
 
 Note: udev will automatically pick up this new rule when you plug in the Pixhawk (you only ever need to force udev to reread rules if the device in question is already plugged in or you've modified an existing rule).
 
-Even after such a rule is added QGroundControl will still complain on startup about permissions but then go and successfully automatically connect to your Pixhawk device without issue.
+Even after such a rule is added QGC will still complain on startup about permissions but then go and successfully automatically connect to your Pixhawk device without issue.
 
 Using udev rules appeals to nerds like myself - adding yourself to the `dialout` group and removing the ModemManager package is probably a more sensible solution that solves the whole issue, for this device and others, once and for all. The only issue is that existing processes will not automatically pickup on the group change - the bluntest solution to this is to reboot your system (just once after invoking `usermod`).
 
