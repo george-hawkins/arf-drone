@@ -188,9 +188,9 @@ _Unsquashed flight data tabs._
 GPS
 ---
 
-If you go to the _PreFlight_ tab you can see a count of number of satellites that the GPS unit can currently see. This gives you some clue as to the current state but acquiring a GPS fix can often be very slow and it can be useful to get more insight into the what's going on with the GPS unit.
+If you go to the _PreFlight_ tab you can see a count of the number of satellites that the GPS unit can currently see. This gives you some clue as to the current state but acquiring a GPS fix can often be very slow and it can be useful to get more insight into what's going on with the GPS unit.
 
-If you go to the _Quick_ tab you'll see pre-chosen set of values that summarize the current state of the craft.
+If you go to the _Quick_ tab you'll see a preselected set of values that summarize the current state of the craft.
 
 _Default Quick tab values._  
 ![initial Quick tab](images/mission-planner/gps/gps-initial-quick.png)
@@ -213,7 +213,7 @@ Assuming the GPS unit hasn't yet acquired any kind of fix you'll see an initial 
 | 6 | `GPS_FIX_TYPE_RTK_FIXED` | RTK Fixed, 3D position |
 | 7 | `GPS_FIX_TYPE_STATIC`    | Static fixed, typically used for base stations |
 
-So 1 means "no position information, GPS is connected". What about HDOP? This sounds complicated but it's actually the most useful bit of information and its the value the flight controller uses to determine if the GPS measurements are accurate enough to be relied on. DOP stands for dilution of precision and you can find a full explanation of [DOP on Wikipedia](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) - HDOP is horizontal DOP. The important thing is to be able to interpret the value - the Wikipedia page contains a clear [table](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)#Meaning_of_DOP_Values) summarizing this. Basically you want the DOP value to drop to 2 or lower.
+So 1 means "no position information, GPS is connected". What about HDOP? This sounds complicated but it's actually the most useful bit of information and it's the value the flight controller uses to determine if the GPS measurements are accurate enough to be relied on. DOP stands for dilution of precision and you can find a full explanation of [DOP on Wikipedia](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) - HDOP is horizontal DOP. The important thing is to be able to interpret its value - the Wikipedia page contains a clear [table](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)#Meaning_of_DOP_Values) covering this. Basically you want the HDOP value to drop to 1.4 or lower.
 
 If you place the GPS unit somewhere it can acquire a lock (in my case out on a windowsill) then you'll eventually see the satellite count tick up from zero. You need at least four satellites for a 3D fix. So here we see the GPS status has switched from 1 to 3, i.e. it now has a "3D position", but the satellite count is still low and the HDOP value isn't good enough yet.
 
