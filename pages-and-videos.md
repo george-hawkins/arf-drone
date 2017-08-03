@@ -229,7 +229,7 @@ Pages:
 Antenna placement:
 
 * On RCGroups thread [one](https://www.rcgroups.com/forums/showthread.php?2158458-FrSky-PCB-Antenna-Placement#post28634518) and [two](https://www.rcgroups.com/forums/showthread.php?2177966-FrSky-X8R-antenna-placement).
-* FrSKY's [advise](https://www.rcgroups.com/forums/showthread.php?2177966-FrSky-X8R-antenna-placement) on the whole thing.
+* FrSKY's [advise](https://fpv-community.de/showthread.php?33264-FrSky-X8R-Antennenposition/page2) on the whole thing.
 * Popular [antenna holder](http://www.thingiverse.com/thing:258146) (that matches FrSKY's advise) on Thingverse and a [remix](http://www.thingiverse.com/thing:411491) that doesn't involve a raised arm.
 
 Note: the intention with holder seems to be that the antenna will point upwards - this seems to maximize the changce that the copter body will come between antenna and transmitter but perhaps this is irrelevant if the body is essentially transparent (thought 2.4GHz in general has poor propagation through walls etc.). Mounting it upwards on an arm will bring it closer to the GPS - I don't think this should be an issue - the receiver and the GPS operate on completely different frequencies.
