@@ -34,6 +34,8 @@ The Ponoko [Inkscape templates](https://www.ponoko.com/templates/all_product_des
 * Convert text to vectors using _Path / Object to path_.
 * Delete double lines using the _Edit paths by nodes_ tool.
 
+Hackaday has an informative [page](http://hackaday.com/2015/09/22/drawbacks-of-lased-delrin-and-how-to-slip-around-them/) covering various aspects and issues with laser cutting Delrin.
+
 Improvement ideas
 -----------------
 
