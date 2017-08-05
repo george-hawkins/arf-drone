@@ -236,6 +236,10 @@ Note: the intention with holder seems to be that the antenna will point upwards 
 
 [Antenna mount](https://www.unmannedtechshop.co.uk/pcb-antenna-mount-for-x8r-l9r-v2/) on Unmanned Tech.
 
+The FrSKY [FAQ](https://www.frsky-rc.com/pages/faq-page/) has some questions covering antennas that confirm the 90 degree placement and add other details, e.g. don't mount on metal or carbon and keep aways from ESCs and motors.
+
+I asked a [question on antennas](https://electronics.stackexchange.com/q/321893/27099) on the Electronics StackExchange. I didn't get much feedback but I worked out enough that I'm confident the transmission lines aren't "just" wires, e.g. their length is important, but while they're important in getting signal to and from the antennas they don't contribute to the radiation or reception of the radio signal itself so just the location of the antenna themselves and not the transmission lines is important.
+
 ---
 
 Arduino and receiver:
