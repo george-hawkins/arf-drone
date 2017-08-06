@@ -232,6 +232,31 @@ _High accuracy HDOP value reached._
 
 What MP considers a good enough HDOP values is controlled by the parameter `GPS_HDOP_GOOD` - by default it's 1.4. You can find this parameter mentioned under "High GPS HDOP" on the ArduCopter [pre-arm safety check page](http://ardupilot.org/copter/docs/prearm_safety_check.html). This is an advanced parameter so you won't see it listed in the _Standard Parameters_ section of MP - to examine it you have to enable MP's advanced mode and look for it in the _Full Parameter List_ section that then becomes visible - modifying this parameter is not recommended.
 
+Bugs
+----
+
+On the whole MP is a great piece of open source software - the author [Michael Oborne](http://diydrones.com/profiles/blogs/meet-the-developers-michael-oborne) has put an immense amount of work into it and has been actively developing it for years now.
+
+Like all large pieces of software it does have bugs and I came across a few minor ones. They may well be fixed by the time you read this but you may want to check the following after completing the wizard.
+
+First go to _Optional Hardware_ and then to _Battery Monitor_ and check that the _Monitor_, _Sensor_, _APM Ver_ and _Battery Capacity_ are all as expected.
+
+_Correct battery monitor settings._  
+![battery monitor settings](images/mission-planner/battery-monitor.png)
+
+This is related to issue [#1623](https://github.com/ArduPilot/MissionPlanner/issues/1623) whereby the _Monitor_ value may flip to disabled if you go through the wizard more than once.
+
+Note: some simpler sensors only monitor voltage but the battery module can monitor both voltage and current - if you're interested you can see its pinout at the bottom of [this page](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/) and find detailed coverage in the ArduPilot [power module section](http://ardupilot.org/copter/docs/common-3dr-power-module.html).
+
+Second go to _Mandatory Hardware_ and then to _FailSafe_ and check that the GCS and battery failsafes are disabled and that the radio failsafe is enabled, set to the expected action and has the expected _FS Pwm_ value.
+
+_Correct failsafe settings._  
+![failsafe settings](images/mission-planner/correct-failsafes.png)
+
+This is related to issue [#1624](https://github.com/ArduPilot/MissionPlanner/issues/1624) whereby the failsafe setttings shown in the wizard may not be in sync with those displayed outside the wizard in the _FailSafe_ section.
+
+The only other issue I logged was a minor cosmetic one - issue [#1622](https://github.com/ArduPilot/MissionPlanner/issues/1624) - related to the old "DistToMAV" appearing instead of the more intuitive replacement "Dist to Home" under certain circumstances.
+
 ---
 
 Inprogress
@@ -255,11 +280,11 @@ Add these next steps to the list of wizard steps documented above. Geofencing do
 
 **Update:** geofence requires a precise initial position fix (see the GPS section elsewhere) so that it can determine the bounds of the fence. If you're setting things up initially indoors with your GPS unit balanced on a windowsill it can be hard to achive the GPS accuracy needed and as a result you won't be able to arm the flight controller (the error "check fence" will keep on being displayed on the HUD when you attempt to arm). So you may want to disable geofence initially and only enable it later when you're ready to really go outdoors where the GPS unit has a clearer view of the sky.
 
-TODO: can you see the accuracy of the current fix anywhere and how accurate a fix things like geofencing want?
+Failsafe actions are actions that the flight controller will automatically take if certain conditions occur. We can configure actions to occur when the battery level falls too low, when contact is lost with the transmitter and when contact is lost with the ground control station (GCS). The only failsafe we'll configure at this point is what to do when contact is lost with the transmitter - the options are continue mission in auto, RTL and land. There's no choice that's right for every situation but RTL is probably the most appropriate - assuming the failure is due to distance (rather than equipment failure) returning to the point of takeoff should quickly bring the craft back into transmitter range (at which point one can just let it complete the RTL sequence or retake control).
 
-Failsafes - there's no right answer, e.g. is RTL really good for battery failsafe - maybe land would be better. GCS failsafe seems to be another thing that the wizard fails to save, if you later go to _FailSafe_ GCS appears as uncheked, acutally its in an odd indeterminate state - if you click it the checkbox goes from just an outline to being solid white and unchecked, if you click it again it becomes checked (and no clicking or unclicking will return it to the initial outline state) - just as odd there are no options for GCS here despite you being able to select between different options in the wizard, e.g. continue with mission.
+As we currently have no GCS (we'll come to that much later) we won't enable the GCS failsafe. And instead of enabling a failsafe for the low battery situation, we'll later configure an alarm on the transmitter for this situation and you can decide yourself what action to take if this alarm goes off.
 
-TODO: check that the odd indeterminate state of the checkbox isn't just crap initial setup of the components - if I actively disable the GCS failsafe and exit and reenter MP do I see that odd state or similarly if I actively enabled the GCS failsafe?
+Note that the failsafe related to losing contact with the transmitter is called the "throttle failsafe" here in the wizard but if you later go to the _FailSafe_ section under _Mandatory Hardware_ you'll see it's got the more obvious name "radio failsafe". The throttle name is a historical hangover from the original mechanism (mentioned earlier) used for triggering this failsafe.
 
 _Failsafes._  
 ![failsafes](images/mission-planner/failsafes.png)
@@ -269,21 +294,9 @@ _Geofence_
 
 Geofence is (as you can see) step 14, step 15 is a page of links to look at before your first flight, step 16 doesn't exist as a page at all - pressing finish is step 16 and exits the wizard.
 
-Oddly completing the battery monitor step in the wizard doesn't result in it being enabled. Battery monitor is the only item in optional hardware that we have though we'll be adding an SiK radio later.
+Battery monitor is the only item in optional hardware that we have though we'll be adding an SiK radio later.
 
 Note: the K in SiK is for kilo, as in 1000, as the chip in the radio is a SiLabs Si1000 (from the ["what does SiK mean" section](https://github.com/ArduPilot/SiK#what-does-sik-mean) of the SiK firmware README).
-
-TODO: you can enale just volts or volts and current, I'm guessing the power module only delivers voltage information and the Pixhawk can't see current without an additional sensor? Should I enable the "MP alarm" checkbox.
-
-**Update:** wrong - the power module can sense both voltage and current - see the pin out image on [this page](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/) and the ArduCopter [power module documentation](http://ardupilot.org/copter/docs/common-3dr-power-module.html).
-
-_Battery monitor._  
-![battery monitor](images/mission-planner/battery-monitor.png)
-
-Even though I set FS Pwm in the wizard (see above), the default value is still seen here afterward. So I lowered it here. Perhaps don't even mention FS Pwn when going thru the wizard - and add it (and a screenshot) as an issue addressed when trying to arm for the first time.
-
-_FS Pwm._  
-![FS Pwm setting](images/mission-planner/fs-pwm.png)
 
 Confirm that pitch is reversed.
 
