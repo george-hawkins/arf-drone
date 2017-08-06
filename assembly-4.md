@@ -70,7 +70,7 @@ Cardboard layout
 Now we're almost ready to connect the Pixhawk via USB to a computer and configure it for the first time. This configuration will involve all the parts, i.e. Pixhawk, GPS, receiver etc., and will involve some calibration steps, that require rotating the Pixhawk about its axes, so it's best to mount everything on a piece of cardboard first using [Blu Tack](https://en.wikipedia.org/wiki/Blu_Tack) to make these steps easier.
 
 _Pixhawk and other parts mounted on cardboard_  
-<img height="512" src="assembly/electronics/cardboard-layout.jpg">
+<img height="512" src="images/assembly/electronics/cardboard-layout.jpg">
 
 Actually as you can see I used a white alternative to Blu Tack - this comes from UHU, has the original name [White Tack](https://www.amazon.co.uk/UHU-White-Tack-Twin-Pack/dp/B00A1KV52Q/) (in German it's called patafix) and is less oily than Blu Tack.
 
