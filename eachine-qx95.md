@@ -118,3 +118,24 @@ In the end it all worked out and also I replaced the much battered Hubsan propel
 
 _Resurrected QX95 with new LED strip (with integrated buzzer) and Walkera propellers._  
 <img width="512" src="images/qx95/resurrected.jpg">
+
+Battery charging
+----------------
+
+As I'd bought a somewhat more high end balance charger for my main drone project I wanted to be able to use it to also charge the small 1S batteries that are used with the QX95.
+
+TLDR; forget about your balance charger and just use a super cheap charger, like [this one](https://www.banggood.com/X6-6-In-1-Charger-For-Hubsan-X4-WLtoys-UDI-JXD-JJRC-Syma-JXD-p-965757.html) that's specifically designed for charging these batteries.
+
+You can get balance cable, like [this one](https://www.banggood.com/Wholesale-Balance-Charging-Cable-For-Walkera-Wltoys-Hubsan-X4-Eachine-H8-p-51891.html) from Banggood, that can be used to connect up three of the small batteries used by the QX95 to a balance charger so that they appear as a single three cell battery to the charger.
+
+The Banggood cable comes with a JST connector for connecting to the charging port of the charger - if you have a charger like the S60 that uses banana connectors then you'll need an adapter. The small red JST connector involved here is often also called a BEC connector - so if you search on eBay for "[banana to BEC](https://www.ebay.com/sch/i.html?_nkw=banana+to+bec)" you should find the right thing (searching for "[banana to JST](https://www.ebay.com/sch/i.html?_nkw=banana+to+jst)" turns up some appropriate adapters but also turns up more things that aren't what's required here).
+
+In searching for something that could handle could handle more than three batteries I came across this [Reddit thread](https://www.reddit.com/r/Multicopter/comments/2sm378/how_can_i_charge_5_x_240mah_batteries_for_my/) that suggests getting a parallel cable like [this one](https://www.banggood.com/Wholesale-Walkera-Hubsan-X4-Eachine-H8-1-to-5-Balance-Charging-Cable-For-3_7V-Battery-p-68437.html) from Banggood.
+
+It comes with connectors for attaching 5 batteries plus a JST connector and a female micro Losi connector. The female micro Losi connector is a little odd - it actually allows you to take 6 of these cable setups and plug five of them into the battery connectors of the sixth so allowing you to wire up 25 batteries in total. So assuming 5 batteries are enough you can ignore the female micro Losi connector and just connect up the JST connector to your charger (again using a JST to banana adapter if necessary).
+
+Despite the Banggood calling this cable setup a balance charging cable it's actuall a parallel charging cable. I ordered one of these and it was only when it arrived that I realized it couldn't be for balance charging and went back to the Reddit thread - where they do clearly describe it as a parallel charging cable. So what's parallel charging? It's explained in detail [here](http://www.electricrcaircraftguy.com/2013/01/parallel-charging-your-lipo-batteries_22.html) and in less detail but more clearly by Oscar Liang [here](https://oscarliang.com/parallel-charging-multiple-lipo/).
+
+One important constraint is that the batteries all be similarly discharged (Oscar Liang says they should all be within 0.1V). This is an issue given how I fly my QX95. As it has no voltage alarm I just fly it until it's ability to lift in response to the throttle drops off - so given this imprecise stopping point some of my batteries are off from others by more than 0.1V. It is possible to handle this by measuring the voltage of all the batteries and ordering them according to voltage as described in the video accompanying the first explanation of parallel charging that I linked to.
+
+In the end this all seemed like way more trouble than it was worth - so as stated above I'd recommend using a cheap charger that's designed for these small 1S batteries. And if I was determined to use my balance charger I'd stick with the proper balance cable for just 3 batteries rather than trying parallel charging.
