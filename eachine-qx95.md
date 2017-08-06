@@ -99,3 +99,22 @@ TODO:
 
 * add in [`inprogress-qx95.md`](inprogress-qx95.md) content and work in any relevant information from [`fpv-x-racer.md`](fpv-x-racer.md).
 * cleanup contents of [`cleanflight-settings`](cleanflight-settings) - probably the only thing actually worth keeping is [`qx95-cleanflight-backup-20170624-diff.txt`](cleanflight-settings/qx95-cleanflight-backup-20170624-diff.txt) - move it up out of `cleanflight-settings` and get rid of the rest.
+
+---
+
+Crash
+-----
+
+After much abuse and no end of crashes the inevitable eventually did happen and one of the arms broke off. Initially it just bent but I bent it flat and carried on flying without adding any additional support around this point so after a few more crashes it broke off completely. I was flying it in conditions that were too windy and it struck the ground with enough force to break the arm and more surprisingly, given its relatively protected position, break the connector on the LED strip.
+
+_Broken arm and LED connector_  
+<img width="512" src="images/qx95/crash.jpg">
+
+Anyone with an ounce of DIY skills or serious drone racing intentions (where accidents and repairs are a day-to-day fact of life) would have repaired the arm. I instead replaced [the frame](https://www.banggood.com/Eachine-Tiny-QX95-Micro-FPV-Racing-Quadcopter-Spare-Parts-Carbon-Fiber-DIY-Frame-Kit-QX95F-p-1094393.html) - a job at least as time consuming as repairing the arm as you have to disassemble the old setup and reassemble things on the new frame.
+
+I took the opportunity to replace the old LED strip with one with an integrated buzzer. Stupidly I desoldered the wires of the old strip from the main PCB - I should have left them there and instead cut off the connector and soldered down the wires on the new strip. While the desoldering worked, the hole for ground became blocked for some reason - repeated application of the solder sucker didn't help and no matter how much I heated the solder I couldn't force the new ground wire through the hole. Eventually I just soldered the ground wire to a blob of solder on top of the hole. There was no issue with the power or signal holes or with the holes for the buzzer wires.
+
+In the end it all worked out and also I replaced the much battered Hubsan propellers with Walkera propellers.
+
+_Resurrected QX95 with new LED strip (with integrated buzzer) and Walkera propellers._  
+<img width="512" src="images/qx95/resurrected.jpg">
