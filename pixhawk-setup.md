@@ -46,7 +46,7 @@ I have no Windows machine so I run Windows as a VM within VirtualBox - while all
 The wizard could do with a little work on its usability - you might initially expect the _Next_ button, seen on each page of the wizard, to initiate the calibration covered by a particular step but it will actually skip it - each page of the wizard generally has another button to start the given calibration process - and for some steps there's also an additonal button that needs to be pressed to mark the step as completed. As we'll see being able to skip steps is important - as it's essentially impossible to complete the wizard in one go, you have to quit it and redo it a number of times, skipping the steps you've already completed.
 
 _Accelerometer calibration - flat, left, right, nose, tail and back._  
-<img width="256" src="images/mission-planner/accel/flat.jpg"> <img width="256" src="images/mission-planner/accel/left.jpg"> <img width="256" src="images/mission-planner/accel/right.jpg">
+<img width="256" src="images/mission-planner/accel/flat.jpg"> <img height="189.5" src="images/mission-planner/accel/left.jpg"> <img height="189.5" src="images/mission-planner/accel/right.jpg">
 <img width="256" src="images/mission-planner/accel/nose.jpg"> <img width="256" src="images/mission-planner/accel/tail.jpg"> <img width="256" src="images/mission-planner/accel/back.jpg">
 
 OK - so onto the calibration:
