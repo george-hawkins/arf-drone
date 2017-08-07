@@ -69,11 +69,14 @@ Cardboard layout
 
 Now we're almost ready to connect the Pixhawk via USB to a computer and configure it for the first time. This configuration will involve all the parts, i.e. Pixhawk, GPS, receiver etc., and will involve some calibration steps, that require rotating the Pixhawk about its axes, so it's best to mount everything on a piece of cardboard first using [Blu Tack](https://en.wikipedia.org/wiki/Blu_Tack) to make these steps easier.
 
-_Pixhawk and other parts mounted on cardboard_  
+_White tack on back of Pixhawk and other parts._  
+<img height="512" src="images/assembly/electronics/white-tacked-parts.jpg">
+
+_Pixhawk and other parts mounted on cardboard._  
 <img height="512" src="images/assembly/electronics/cardboard-layout.jpg">
 
-Actually as you can see I used a white alternative to Blu Tack - this comes from UHU, has the original name [White Tack](https://www.amazon.co.uk/UHU-White-Tack-Twin-Pack/dp/B00A1KV52Q/) (in German it's called patafix) and is less oily than Blu Tack.
+Actually as you can see I used a alternative to Blu Tack that's white rather than blue - it comes from UHU, has the original name [White Tack](https://www.amazon.co.uk/UHU-White-Tack-Twin-Pack/dp/B00A1KV52Q/) (in German it's called patafix) and is less oily than Blu Tack.
 
-Make sure to get the orientation correct, you'll need to know which side corresponds to nose, tail, left and right. The arrows on the Pixhawk and the GPS module must both be pointing forward, i.e. towards the nose. In the photo you can see GPS module is pointing slightly to the right, this isn't too critical at this stage but when it comes to mounting the components on the actual frame it's important to get this as dead on as you can so the Pixhawk and the GPS both agree exactly on what direction is forward. The arrow on this GPS module points in one direction and its cable comes out the other side like a tail, this seems an intuitive arrangement but isn't universal - some GPS modules have the cable coming out the same side that the arrow is pointing.
+Make sure to get the orientation correct, you'll need to know which side corresponds to nose, tail, left and right. The arrows on the Pixhawk and the GPS module must both be pointing forward, i.e. in the nose direction. In the photo you can see GPS module is pointing slightly to the right, this isn't too critical at this stage but when it comes to mounting the components on the actual frame it's important to get this as dead on as you can so the Pixhawk and the GPS both agree exactly on what direction is forward. The arrow on this GPS module points in one direction and its cable comes out the other side like a tail, this seems an intuitive arrangement but isn't universal - some GPS modules have the cable coming out the same side that the arrow is pointing.
 
 As mentioned the initial setup will involve some calibration steps, these steps will need to be repeated once the parts are mounted in their final position on the frame as proper calibration depends on the current layout of the components involved.
