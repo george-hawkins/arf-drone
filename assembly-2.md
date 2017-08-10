@@ -50,8 +50,7 @@ Balance bar
 
 The transmitter comes with a mysterious little piece which turns out to be for attaching the neck strap. It's called a balance bar and needs to be screwed on pointing downwards with a 2.5mm hex wrench. The power button is still relatively easy to get at despite being covered by the balance bar once in place.
 
-<img height="512" src="images/assembly/transmitter/balance-bar.jpg">
-<img height="512" src="images/assembly/transmitter/balance-bar-and-strap.jpg">
+<img height="512" src="images/assembly/transmitter/balance-bar.jpg"> <img height="512" src="images/assembly/transmitter/balance-bar-and-strap.jpg">
 
 The balance bar has four holes, try suspending the transmitter from the neck strap using each of the different holes in turn - you'll see it affects the angle at which the transmitter hangs - chose whatever suits you best.
 
