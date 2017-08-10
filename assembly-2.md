@@ -24,20 +24,26 @@ Note: that the upper left and right switches aren't quite identical - one is [mo
 Batteries
 ---------
 
-Before we use the transmitter we have to add batteries. Take off the battery cover and you'll find a normal looking battery holder that takes 6 AA batteries. When my transmitter arrived the battery cover wouldn't close and it turned out the battery holder wasn't sitting quite right in the case. You can actually pull out the battery holder and instead of using AA batteries you can wire up something like a large LiPo. So just make sure the battery holder is sitting snugly in the case and everything shold be fine.
-
-The battery cover is very loose, this is the only poor feature I've found so far. Eventually I taped it in place with masking tape.
-
-_Battery cover taped in place_  
-<img width="256" src="images/assembly/transmitter/taranis-q-x7-masking-tape.jpg">
+Before we use the transmitter we have to add batteries. Under the battery cover is a standard battery holder that takes 6 AA batteries. When my transmitter arrived the battery cover wouldn't close and it turned out the battery holder wasn't sitting quite right in the case. You can actually pull out the battery holder and instead of using AA batteries you can wire up something like a large LiPo. So just make sure the battery holder is sitting snugly in the case and everything shold be fine.
 
 I used rechargeable NiMH batteries - I used this [Varta charger](https://www.amazon.co.uk/Varta-57677-PLUG-Charger-Battery/dp/B00HV5XOEG/ref=pd_sim_23_2), that includes four batteries, and two additional [packs of four batteries](https://www.amazon.co.uk/Varta-Rechargeable-Batteries-2100mAh-Ni-MH-x/dp/B000EGWOCM/) (this means I can have six batteries in the transmitter and a further six charged and ready to swap in if it runs out of power). The Varta charger has a Europlug - Amazon have an own branded [charger](https://www.amazon.co.uk/AmazonBasics-Ni-MH-Battery-Charger-Port/dp/B00TS18AEA/), that presumably comes with a plug to match the market it's sold in, and their own brand [batteries](https://www.amazon.co.uk/AmazonBasics-Capacity-Pre-Charged-Rechargeable-Batteries/dp/B00HZV9WTM/). Non-rechargeable batteries, depending on how much you intend to use your drone, may also be fine - the transmitter batteries will last for many hours and, given that the LiPo on the drone will only last for about 20 minutes of flight time, this means a single set of batteries in the transmitter will last for many flights.
 
 See Oscar Liang's in-depth [review of the Q X7](https://oscarliang.com/taranis-q-x7-tx/) that provides a nice walkthru of the transmitter and covers things like replacing the battery pack with a LiPo.
 
-Note: inserting AA batteries into the battery holder is trickier than it should be, getting them out is even worse. In the end I used a perspex ruler to force them out, the ruler still scratched some of the batteries slightly - if anyone has a tip as to how to do this better please say!
+With time I grew to really like the Q X7 but the one terrible feature is the design of the battery compartment - I presume the manufacturer with give it a makeover eventually.
 
-TODO: include photo of using ribbon to make it possible to remove batteries.
+The following is a simple tip but I would describe it as essential. Inserting AA batteries into the battery holder is harder than it should be, getting them out is even worse. The first time I did this I ended up very slightly damaging some of the batteries in the process (just little scratches to their casings). So to make things much easier cut off a length of ribbon and run it below the batteries as you insert them - then you can use the ribbon to help pull them out later when needed.
+
+_Batteries with ribbon underneath._  
+<img width="512" src="images/assembly/transmitter/battery-ribbon.jpg">
+
+Several times I found the transmitter would not start up after replacing the batteries. There never seemed to be any issue with how the batteries were sitting in the batter compartment - but still removing them all and reinsterting them always resolved the problem.
+
+Finally the battery cover itself is very loose - eventually I ended up keeping it in place with masking tape.
+
+_Battery cover taped in place._  
+<img width="512" src="images/assembly/transmitter/taranis-q-x7-masking-tape.jpg">
+
 
 Balance bar
 -----------
