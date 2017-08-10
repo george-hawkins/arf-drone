@@ -258,7 +258,7 @@ If you place the GPS unit somewhere it can acquire a lock (in my case out on a w
 _Initial GPS lock acquired._  
 ![GPS lock acquired](images/mission-planner/gps/gps-lock.png)
 
-With time the satellite count increases, here it's 12, and the HDOP value improves further - a value of 1.01 is rated excellent.
+With time the satellite count increases and the HDOP value improves further, here below the count is 12 and HDOP has reached a value of 1.01 (which is rated excellent).
 
 _High accuracy HDOP value reached._   
 ![high accuracy HDOP value reached](images/mission-planner/gps/gps-12-sats.png)
