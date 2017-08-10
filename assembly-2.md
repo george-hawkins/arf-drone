@@ -33,11 +33,21 @@ _Battery cover taped in place_
 
 I used rechargeable NiMH batteries - I used this [Varta charger](https://www.amazon.co.uk/Varta-57677-PLUG-Charger-Battery/dp/B00HV5XOEG/ref=pd_sim_23_2), that includes four batteries, and two additional [packs of four batteries](https://www.amazon.co.uk/Varta-Rechargeable-Batteries-2100mAh-Ni-MH-x/dp/B000EGWOCM/) (this means I can have six batteries in the transmitter and a further six charged and ready to swap in if it runs out of power). The Varta charger has a Europlug - Amazon have an own branded [charger](https://www.amazon.co.uk/AmazonBasics-Ni-MH-Battery-Charger-Port/dp/B00TS18AEA/), that presumably comes with a plug to match the market it's sold in, and their own brand [batteries](https://www.amazon.co.uk/AmazonBasics-Capacity-Pre-Charged-Rechargeable-Batteries/dp/B00HZV9WTM/). Non-rechargeable batteries, depending on how much you intend to use your drone, may also be fine - the transmitter batteries will last for many hours and, given that the LiPo on the drone will only last for about 20 minutes of flight time, this means a single set of batteries in the transmitter will last for many flights.
 
-TODO: include photo of using ribbon to make it possible to remove batteries.
-
 See Oscar Liang's in-depth [review of the Q X7](https://oscarliang.com/taranis-q-x7-tx/) that provides a nice walkthru of the transmitter and covers things like replacing the battery pack with a LiPo.
 
 Note: inserting AA batteries into the battery holder is trickier than it should be, getting them out is even worse. In the end I used a perspex ruler to force them out, the ruler still scratched some of the batteries slightly - if anyone has a tip as to how to do this better please say!
+
+TODO: include photo of using ribbon to make it possible to remove batteries.
+
+Balance bar
+-----------
+
+The transmitter comes with a mysterious little piece which turns out to be for attaching the neck strap. It's called a balance bar and needs to be screwed on pointing downwards with a 2.5mm hex wrench. The power button is still relatively easy to get at despite being covered by the balance bar once in place.
+
+<img height="512" src="images/assembly/transmitter/balance-bar.jpg">
+<img height="512" src="images/assembly/transmitter/balance-bar-and-strap.jpg">
+
+Even without the neck strap I didn't find the transmitter getting too heavy during the relatively short sessions that even the large LiPo batteries allow for. The best reason for using the neck strap is not to relieve weight but to force you to be somewhat disciplined about how you hold the transmitter. Anyone who's played console games will be used to the tendency to twist the controller in the direction you want to travel, e.g. coming to a tight corner you wrench the controller about to make the turn even though this has no real affect on things. I found myself doing the same with the transmitter - and on a number of occassions lost radio contact when I wanted the craft to come down as subconsciously I'd ended up pointing the transmitter in the desired direction, i.e. at the ground, which unsurprisingly isn't the ideal direction for the transmitter antenna to be pointing.
 
 Power on
 --------
