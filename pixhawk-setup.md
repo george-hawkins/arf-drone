@@ -13,6 +13,8 @@ Note: the ArduCopter site describes another ground control application called AP
 
 TODO: add pointer to [`windows-vm.md`](windows-vm.md) and add note on the need to add a [USB filter](windows-vm.md#usb-filters) for the Pixhawk.
 
+Previously I've referred to the software running on the flight controller as the flight stack - here I refer to it as the Pixhawk firmware as this is how its referred to in MP and QGC.
+
 Drivers
 -------
 
@@ -35,32 +37,63 @@ As noted elsewhere MP also installs all necessary Pixhawk drivers so no addition
 
 If you look carefully at the console output (the black window that opens in the background behind the MP splash screen) you can see the code complaining about the lack of internet access and such like when you start MP for the very first time and you haven't yet handled the just mentioned Windows Firewall dialog. So while it's probably unnecessary I'd suggest restarting straight away after this so that it can startup cleanly with all the access it expects.
 
-Once MP is up and running click on _Initial Setup_ and then on _Wizard_. The wizard is fairly self explanatory:
+### Wizard start up.
 
-* First you select your vehicle type, i.e. multirotor in this case.
-* Then the multirotor type, the simple four motor X type.
-* Then connect your Pixhawk - and select it from the dropdown list (most probably there'll only be one item in the list, e.g. COM3).
+Once MP is up and running you can go to _Initial Setup_ and click on _Wizard_. But first it's important to know that the wizard runs in two distinct modes depending on whether you've already pressed the _Connect_ button (in the upper right of the main MP window). Assuming your Pixhawk is connected to your computer via USB then:
 
-I have no Windows machine so I run Windows as a VM within VirtualBox - while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware via the VM never worked. So instead I always loaded firmware using QGC (which is covered later). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button (upper-right in the main MP window) and only then starting the wizard - this time it goes through the same initial steps but then jumps the firmware steps and goes straight onto the calibration steps.
+* If you start the wizard without having pressed _Connect_ then one of the wizard steps will involve upgrading the Pixhawk firmware.
+* If you instead you press _Connect_ before starting the wizard then it will skip the firmware upgrade step.
 
-The wizard could do with a little work on its usability - you might initially expect the _Next_ button, seen on each page of the wizard, to initiate the calibration covered by a particular step but it will actually skip it - each page of the wizard generally has another button to start the given calibration process - and for some steps there's also an additonal button that needs to be pressed to mark the step as completed. As we'll see being able to skip steps is important - as it's essentially impossible to complete the wizard in one go, you have to quit it and redo it a number of times, skipping the steps you've already completed.
+The Pixhawk's firmware can only be upgraded if it's connected to your computer but not currently connected to MP itself.
+
+This is important as it turns out that you will need to rerun the wizard several times and upgrading the firmware is a time consuming step that should be done just once and then skipped during subsequent runs of the wizard. So if you've completed the firmware upgrade step and find you need to rerun the wizard always press _Connect_ first.
+
+Now that's clear let's get on and connect your Pixhawk to your computer via USB, start MP, go to _Initial Setup_ and click on _Wizard_. The initial steps are fairly explanatory - first you select your vehicle type (multirotor) and then the multirotor type (the simple four motor X type). Then the firmware upgrade step - make sure your Pixhawk is connected and select it from the dropdown list of connected serial device (most probably there'll only be one item in the list, e.g. COM3).
+
+I'll have to admit I never completed this step. I have no Windows machine so I run Windows as a VM within VirtualBox and while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware never worked. So instead I always loaded firmware using QGC (which is covered later and can run on Mac and Linux). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button before starting the wizard - it goes through the same initial steps but jumps the firmware steps, going straight on instead to the calibration steps.
+
+Once the Pixhawk's firmware is upgraded (either via MP or QGC) the next steps involve calibrating its sensor. Here the wizard could possibly do with a little work on its usability - one might expect the _Next_ button that appears on each page of the wizard to initiate the calibration step covered by a particular page but it will actually skip it. Each page of the wizard generally has another button to start the given calibration process (and for some steps there's also an additonal button that needs to be pressed to mark the step as completed). As we'll see being able to skip steps is important - it's essentially impossible to complete the wizard in one go, so you have to quit it and redo it at least once, skipping the steps you've already completed.
+
+OK - so on with the calibration steps...
+
+### Accelerometer calibration
 
 _Accelerometer calibration - flat, left, right, nose, tail and back._  
 <img width="256" src="images/mission-planner/accel/flat.jpg"> <img height="189.5" src="images/mission-planner/accel/left.jpg"> <img height="189.5" src="images/mission-planner/accel/right.jpg">  
 <img width="256" src="images/mission-planner/accel/nose.jpg"> <img width="256" src="images/mission-planner/accel/tail.jpg"> <img width="256" src="images/mission-planner/accel/back.jpg">
 
-OK - so onto the calibration:
+As instructed you have to place you system in turn flat, on its left, right, nose, tail and back, pressing a key after each step. Each time I tried this I eventually got the message "3D Accel calibration needed" at some point in the process - I had to look at the [source code](https://github.com/ArduPilot/ardupilot/blob/126296b/libraries/AP_Arming/AP_Arming.cpp#L192) to detemine if this really was an error, it is - a critical one indicating that the calibration has failed. I just restarted and restarted this step, trying to make the transition between steps - left side to right side etc. - as smooth as possible until eventually the calibration completed without error.
 
-* Accelerometer - as instructed you have to place you system in turn flat, on its left, right, nose, tail and back, pressing a key after each step. Each time I tried this I eventually got the message "3D Accel calibration needed" at some point in the process - I had to look at the [source code](https://github.com/ArduPilot/ardupilot/blob/126296b/libraries/AP_Arming/AP_Arming.cpp#L192) to detemine if this really was an error, it is - a critical one indicating that the calibration has failed. I just restarted and restarted this step, trying to make the transition between steps - left side to right side etc. - as smooth as possible until eventually the calibration completed without error.
-* Compass - this is kind of a hard one to explain - you're probably best off watching the [compass calibration video](https://www.youtube.com/watch?v=DmsueBS0J3E) that they link to. Essentially you want to completely rotate your Pixhawk about the x, y and z axes, with the center of your Pixhawk being the origin. If you're connected via USB then the longer and more flexible your USB cable the easier this will be. As we'll see much later you can also connect to your ground control application wirelessly - which makes this kind of thing easier. In the video the presenter rotates the craft quite slowly in a fixed order. You don't have to be quite so disciplined - you can even just rotate your craft every which way, the calibration logic doesn't care what order the data points come in and won't give up recording data points until it's satisfied that it's got what it needs, i.e. you've rotated the craft into every position of interest. Having said that you'll be quicker consciously rotating the craft through 360&deg; for each axis, but the order of the axes isn't important and you'll probably find you generate enough data points after rotating about just two axes. If you're interested in what's going on here Adafruit have a nice tutorial on the electronics involved and this calibration step equates to what they cover in the [magnetometer calibration section](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all#magnetometer-calibration).
-* Battery monitor configuration - here you just need to choose "Pixhawk" and "3DR power module" for the autopilot and sensor you're using (the power module is equivalent to the original 3DR ones - interestingly the originals are still [available](https://www.amazon.com/dp/B071Y4CZGZ)) and then the mAh value for you battery. In my case this is 3700, if you're using a slightly different battery make sure to specify the correct value.
-* Sonar - just click _Next_ as we don't have one.
-* Radio calibration - assuming you've bound your transmitter to your receiver (as covered previously), you should now turn on your transmitter and once the green LED on the receiver goes on click the _Continue_ button. The _Spektrum Bind_ section isn't relevant, you just need to click _Calibrate Radio_ then move each stick in turn to its four corners, i.e. covering the furthest points each can go in all directions, you should see red upper and lower bands appear on the throttle, yaw, pitch and roll indicators. When you move the throttle to the lower-right corner you may hear an annoyed beep from the Pixhawk - this is because this stick position is used to arm the flight controller and the beep is telling you that (unsurprisingly) it's currently not in a state to be armed. Now flip through the switches you've set up to change flight modes, go from flight mode 1 to flight mode 6 - you should see a lower red bar established for radio channel 5 and the high bar getting higher as you flip up through the modes to mode 6. Make sure to press the _Click when Done_ button to wrap up - it will warn you to return you throttle to its lowest position (but doesn't remind you to return your switches to select flight mode 1 which is necessary in order to be able to arm later).
-* Flight mode selection - TODO: reorder things - choosing the flight modes has its own section below.
+### Compass calibration
+
+This is kind of a hard one to explain - you're probably best off watching the [compass calibration video](https://www.youtube.com/watch?v=DmsueBS0J3E) that they link to. Essentially you want to completely rotate your Pixhawk about its x, y and z axes. If you're connected via USB then the longer and more flexible your USB cable the easier this will be. As we'll see much later you can also connect to your ground control application wirelessly - which makes this kind of thing easier. In the video the presenter rotates the craft quite slowly in a fixed order. You don't have to be quite so disciplined - you can even just rotate your craft every which way, the calibration logic doesn't care what order the data points come in and won't give up recording data points until it's satisfied that it's got what it needs, i.e. you've rotated the craft into every position of interest. Having said that you'll be quicker consciously rotating the craft through 360&deg; for each axis, but the order of the axes isn't important and you'll probably find you generate enough data points after rotating about just two axes.
+
+If you're interested in what's going on here Adafruit have a nice tutorial on the electronics involved and this calibration step equates to what they cover in the [magnetometer calibration section](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all#magnetometer-calibration).
+
+### Battery monitor and sonar
+
+The next two steps are very simple:
+
+* Battery monitor configuration - here you just need to choose "Pixhawk" and "3DR power module" as the autopilot and sensor that you're using. Then enter the mAh value for you battery - in my case this was 3700 but if you're using a slightly different battery make sure to specify the correct value. The power module that came with your Pixhawk probably isn't an original 3DR (though they are still [available](https://www.amazon.com/dp/B071Y4CZGZ)) but is equivalent.
+* Sonar - just click _Next_ for this step as we don't have one.
+
+### Radio calibration
+
+Assuming you've bound your transmitter to your receiver (as covered previously), you should now turn on your transmitter and once the LED on the receiver goes green click the _Continue_ button. The _Spektrum Bind_ section isn't relevant, you just need to click _Calibrate Radio_ then move each stick in turn to its four corners, i.e. covering the furthest points each can go in all directions, you should see red upper and lower bands appear on the throttle, yaw, pitch and roll indicators. When you move the throttle to the lower-right corner you may hear an annoyed beep from the Pixhawk if you keep it there for a few seconds - this is because this stick position is used to arm the flight controller and the beep is telling you that (unsurprisingly) it's currently not in a state to be armed. Now flip through the switches you've set up to change flight modes, go from flight mode 1 to flight mode 6 - you should see a lower red bar established for radio channel 5 and the high bar getting higher as you flip up through the modes to mode 6. Make sure to press the _Click when Done_ button to wrap up - it will warn you to return you throttle to its lowest position (but doesn't remind you to return your switches to select flight mode 1 which is necessary in order to be able to arm later).
+
+---
+
+TODO move in stuff from below that goes between here and the next section on Arming
+
+XXX reorder things - choosing the flight modes has its own section below.
 
 XXX Sometimes I could quit out of the wizard by pressing the standard close (x) button of its window, but often this did nothing and I had to kill MP with the Task Manager to get out of the wizard.
 
 XXX main LED flashes blue when ready, except for safety button, and flashes green once safety button has been pressed and held such that it stays red.
+
+See initial two sections of [`wizard-issues/pages.md`](wizard-issues/pages.md).
+
+---
 
 Arming
 ------
