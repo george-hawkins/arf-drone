@@ -110,12 +110,16 @@ When we set up the transmitter we went to a lot of trouble to set up switches so
 
 The other available flight modes are related to things like more agressive and sporty flying styles and more obscure use cases - however [circle](http://ardupilot.org/copter/docs/circle-mode.html) looks interesting if you want to circle a point with a camera and [guided](http://ardupilot.org/copter/docs/flight-modes.html) is relevant if you want to control the craft in-flight from a ground control application. One mode we'll be coming back to later is [auto-tune](http://ardupilot.org/copter/docs/autotune.html) - there are many tunable parameters that affect how the craft flies, auto-tune causes the craft to put itself through various maneuvers and by seeing how it behaves it tries to automatically determine the optimal values for these tunable parameters.
 
+Six flight modes is probably more than enough to start with but it is possible to configure up even more than this using additional switches - this is covered separately in a later section below.
+
 _Flight modes._  
 ![flight modes](images/mission-planner/flight-modes.png)
 
 When we were setting up the transmitter we setup flight mode 6 with the intention that it be easy to activate as the panic option. Returning to the point of lanuch is generally a sensible panic option, so while the order of the other flight modes isn't important RTL should be slected as flight mode 6. Remember to actually press the _Save Modes_ button once you're finished!
 
 Assuming your transmitter is still on (from the previous transmitter calibration step) you can check the flight mode switches now, flick the switches you configured on the transmitter to flip up through all the flight modes from 1 to 6 - as you select each mode you should see the corresponding dropdown highlighted in green in the wizard (in the image above RTL is highlighted). Each time you change flight mode the Pixhawk will beep loudly.
+
+Beside each flight mode dropdown you'll also see a checkbox for _Simple Mode_ and _Super Simple_, these affect how the flight controller perceives directions, either relative to its current orientation or its orientation when it entered a mode marked simple or super simple. The general consensus is that simple and super simple are not a good idea even for beginners. In the Painless360 flight modes video linked to above he suggests simple may be a good option if you get panicked about the orientation of your vehicle but I think entering the RTL flight mode is a better general solution for panic situations.
 
 ### Verification
 
