@@ -50,8 +50,8 @@ This is important as it turns out that you will need to rerun the wizard several
 
 ### Steps
 
-| |
-|-|
+| | | | |
+|-|-|-|-|
 | _Step 1 - vehicle._<br><img width="256" src="images/mission-planner/steps/step-01.png"> | _Step 2 - frame type._<br><img width="256" src="images/mission-planner/steps/step-02.png"> | _Step 3 - connecting._<br><img width="256" src="images/mission-planner/steps/step-03.png"> | _Step 4 - frame layout._<br><img width="256" src="images/mission-planner/steps/step-04.png"> |
 | _Step 5 - accelerometer_<br><img width="256" src="images/mission-planner/steps/step-05.png"> | _Step 6A - compass._<br><img width="256" src="images/mission-planner/steps/step-6a.png"> | _Step 6B - compass._<br><img width="256" src="images/mission-planner/steps/step-6b.png"> | _Step 7 - battery monitor._<br><img width="256" src="images/mission-planner/steps/step-07.png"> |
 | _Step 8/9 - optional items._<br><img width="256" src="images/mission-planner/steps/step-08.png"> | _Step 10A - transmitter._<br><img width="256" src="images/mission-planner/steps/step-10a.png"> | _Step 10B - transmitter._<br><img width="256" src="images/mission-planner/steps/step-10b.png"> | _Step 11 - flight modes._<br><img width="256" src="images/mission-planner/steps/step-11.png"> |
