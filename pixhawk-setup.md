@@ -48,13 +48,26 @@ The Pixhawk's firmware can only be upgraded if it's connected to your computer b
 
 This is important as it turns out that you will need to rerun the wizard several times and upgrading the firmware is a time consuming step that should be done just once and then skipped during subsequent runs of the wizard. So if you've completed the firmware upgrade step and find you need to rerun the wizard always press _Connect_ first.
 
-Now that's clear let's get on and connect your Pixhawk to your computer via USB, start MP, go to _Initial Setup_ and click on _Wizard_. The initial steps are fairly explanatory - first you select your vehicle type (multirotor) and then the multirotor type (the simple four motor X type). Then the firmware upgrade step - make sure your Pixhawk is connected and select it from the dropdown list of connected serial device (most probably there'll only be one item in the list, e.g. COM3).
+### Steps
+
+| |
+|-|
+| _Step 1 - vehicle._<br><img width="256" src="images/mission-planner/steps/step-01.png"> | _Step 2 - frame type._<br><img width="256" src="images/mission-planner/steps/step-02.png"> | _Step 3 - connecting._<br><img width="256" src="images/mission-planner/steps/step-03.png"> | _Step 4 - frame layout._<br><img width="256" src="images/mission-planner/steps/step-04.png"> |
+| _Step 5 - accelerometer_<br><img width="256" src="images/mission-planner/steps/step-05.png"> | _Step 6A - compass._<br><img width="256" src="images/mission-planner/steps/step-6a.png"> | _Step 6B - compass._<br><img width="256" src="images/mission-planner/steps/step-6b.png"> | _Step 7 - battery monitor._<br><img width="256" src="images/mission-planner/steps/step-07.png"> |
+| _Step 8/9 - optional items._<br><img width="256" src="images/mission-planner/steps/step-08.png"> | _Step 10A - transmitter._<br><img width="256" src="images/mission-planner/steps/step-10a.png"> | _Step 10B - transmitter._<br><img width="256" src="images/mission-planner/steps/step-10b.png"> | _Step 11 - flight modes._<br><img width="256" src="images/mission-planner/steps/step-11.png"> |
+| _Step 12 - verification._<br><img width="256" src="images/mission-planner/steps/step-12.png"> | _Step 13 - failsafes._<br><img width="256" src="images/mission-planner/steps/step-13.png"> | _Step 14 - geofence._<br><img width="256" src="images/mission-planner/steps/step-14.png"> | _Step 15 - useful links._<br><img width="256" src="images/mission-planner/steps/step-15.png"> |
+
+The above table shows all the steps of the wizard. Steps 1 and 3 are skipped if, as described above, you've pressed _Connect_ before starting the wizard.
+
+### Getting started
+
+Connect your Pixhawk to your computer via USB, start MP, go to _Initial Setup_ and click on _Wizard_. The initial steps are fairly explanatory - first you select your vehicle type (multirotor) and then the multirotor type (the simple four motor X type). Then the firmware upgrade step - make sure your Pixhawk is connected and select it from the dropdown list of connected serial device (most probably there'll only be one item in the list).
 
 I'll have to admit I never completed this step. I have no Windows machine so I run Windows as a VM within VirtualBox and while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware never worked. So instead I always loaded firmware using QGC (which is covered later and can run on Mac and Linux). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button before starting the wizard - it goes through the same initial steps but jumps the firmware steps, going straight on instead to the calibration steps.
 
 Once the Pixhawk's firmware is upgraded (either via MP or QGC) the next steps involve calibrating its sensor. Here the wizard could possibly do with a little work on its usability - one might expect the _Next_ button that appears on each page of the wizard to initiate the calibration step covered by a particular page but it will actually skip it. Each page of the wizard generally has another button to start the given calibration process (and for some steps there's also an additonal button that needs to be pressed to mark the step as completed). As we'll see being able to skip steps is important - it's essentially impossible to complete the wizard in one go, so you have to quit it and redo it at least once, skipping the steps you've already completed.
 
-OK - so on with the calibration steps...
+OK - on with the calibration steps...
 
 ### Accelerometer calibration
 
@@ -70,88 +83,24 @@ This is kind of a hard one to explain - you're probably best off watching the [c
 
 If you're interested in what's going on here Adafruit have a nice tutorial on the electronics involved and this calibration step equates to what they cover in the [magnetometer calibration section](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all#magnetometer-calibration).
 
-### Battery monitor and sonar
+### Battery monitor and optional hardaware
 
 The next two steps are very simple:
 
-* Battery monitor configuration - here you just need to choose "Pixhawk" and "3DR power module" as the autopilot and sensor that you're using. Then enter the mAh value for you battery - in my case this was 3700 but if you're using a slightly different battery make sure to specify the correct value. The power module that came with your Pixhawk probably isn't an original 3DR (though they are still [available](https://www.amazon.com/dp/B071Y4CZGZ)) but is equivalent.
-* Sonar - just click _Next_ for this step as we don't have one.
+* Battery monitor configuration - here you just need to choose "Pixhawk" and "3DR power module" as the autopilot and sensor that you're using. The power module that came with your Pixhawk probably isn't an original 3DR (though they are still [available](https://www.amazon.com/dp/B071Y4CZGZ)) but is equivalent. Then enter the mAh value for you battery - in my case this was 3700 but if you're using a slightly different battery make sure to specify the correct value.
+* Optional hardware - in this step you're asked if you have a sonar device, as we don't have one just click _Next_.
+
+If you're looking very carefully you'll notice that the _Optional hardware_ step is step 8 and when you press _Next_ you jump to step 10. What happened to step 9? Steps 8 and 9 are both about optional hardware. If you had an [optical flow camera](https://pixhawk.org/modules/px4flow) you'd also be asked about this in step 8. And if you had an [airspeed sensor](http://ardupilot.org/plane/docs/airspeed.html) you'd be asked about this in step 9. It seems the wizard can work out that you don't have an optical flow sensor or an airspeed sensor and so skips these but for whatever reason it cannot work out whether or not you have a sonar.
 
 ### Radio calibration
 
-Assuming you've bound your transmitter to your receiver (as covered previously), you should now turn on your transmitter and once the LED on the receiver goes green click the _Continue_ button. The _Spektrum Bind_ section isn't relevant, you just need to click _Calibrate Radio_ then move each stick in turn to its four corners, i.e. covering the furthest points each can go in all directions, you should see red upper and lower bands appear on the throttle, yaw, pitch and roll indicators. When you move the throttle to the lower-right corner you may hear an annoyed beep from the Pixhawk if you keep it there for a few seconds - this is because this stick position is used to arm the flight controller and the beep is telling you that (unsurprisingly) it's currently not in a state to be armed. Now flip through the switches you've set up to change flight modes, go from flight mode 1 to flight mode 6 - you should see a lower red bar established for radio channel 5 and the high bar getting higher as you flip up through the modes to mode 6. Make sure to press the _Click when Done_ button to wrap up - it will warn you to return you throttle to its lowest position (but doesn't remind you to return your switches to select flight mode 1 which is necessary in order to be able to arm later).
+Assuming you've bound your transmitter to your receiver (as covered previously), you should now turn on your transmitter and once the LED on the receiver goes green click the _Continue_ button. The _Spektrum Bind_ section isn't relevant, you just need to click _Calibrate Radio_ then move each stick in turn to its four corners, i.e. covering the furthest points each can go in all directions, you should see red upper and lower bands appear on the throttle, yaw, pitch and roll indicators.
 
----
+When you move the throttle to the lower-right corner you may hear an annoyed beep from the Pixhawk if you keep it there more than momentarily - this is because this stick position is used to arm the flight controller and the beep is telling you that (unsurprisingly) it's currently not in a state to be armed.
 
-TODO move in stuff from below that goes between here and the next section on Arming
+Once you're finished with the sticks, flip through the switches you've set up to change flight modes, go from flight mode 1 to flight mode 6 - you should see a lower red bar established for radio channel 5 and the high bar getting higher as you flip up through the modes to mode 6. Make sure to press the _Click when Done_ button to wrap up - it will warn you to return you throttle to its lowest position (but doesn't remind you to return your switches to select flight mode 1 which is necessary in order to be able to arm later).
 
-XXX reorder things - choosing the flight modes has its own section below.
-
-XXX Sometimes I could quit out of the wizard by pressing the standard close (x) button of its window, but often this did nothing and I had to kill MP with the Task Manager to get out of the wizard.
-
-XXX main LED flashes blue when ready, except for safety button, and flashes green once safety button has been pressed and held such that it stays red.
-
-See initial two sections of [`wizard-issues/pages.md`](wizard-issues/pages.md).
-
----
-
-Arming
-------
-
-You can try to arm here in the wizard - move the throttle to the lower-right corner but all you'll hear it XXX indicating arming failure. Unfortunately it's impossible to diagnose arming failure here and there are a number of issues that will need to be overcome before you can arm. The best thing to do is quit out of the wizard at this point and switch from the _Initial Setup_ view to the _Flight Data_ view where its much easier to see why arming has failed.
-
-There are many reasons arming may fail and the messages involved may often seem less than obvious but you can generally find a clear explanation on the page covering all the [pre-arm safety checks](http://ardupilot.org/copter/docs/prearm_safety_check.html) or failing that using Google.
-
-**Important:** always make sure that you've got all switches related to changing flight mode in their initial position, your first flight mode should be something like _Stabilize_. The most obscure arming failures I experienced resulted from having a flight mode set that is not really suitable for take off. When trying or retrying the wizard I several times left things in a random flight mode after having flipped the flight mode switches as part of the _Radio Calibration_ step.
-
-TODO: explain arming with sticks and also the safety switch (there's a note about it later which should perhaps be here).
-
-_The Flight Data view._  
-<img width="512" src="images/mission-planner/arming/0-start.png">
-
-Above you can immediately see at least one problem - unless you're outside you probably have no GPS fix. But we'll come back to that later. Just try arming anyway - depending on the value sent by your transmitter when your throttle is at its lowest position the first arming failure you may see is "Check FS_THR_VALUE".
-
-_Check FS_THR_VALUE warning._  
-<img width="512" src="images/mission-planner/arming/1a-fs_thr_value.png">
-
-This is related to the [radio failsafe](http://ardupilot.org/copter/docs/radio-failsafe.html). There are two radio failsafe mechanisms - no-signal (preferred) and low-throttle. `FS_THR_VALUE` is related to the low-throttle mechanism and despite the fact that we're actually going to use the preferred no-signal mechanism the `FS_THR_VALUE` still has to be set correctly.
-
-Switch back to the _Initial Setup_ view, expand _Mandatory Hardware_ and select _Radio Calibration_. Move the throttle up and down and see the resulting throttle value change accordingly, move the throttle to its lowest position and note the value, e.g. 982. Then go from _Radio Calibration_ to _FailSafe_ - there's a section there for _Radio_ that has the value _FS Pwm_, this value must be at least ten less than your lowest throttle value. In my case it wasn't so I adjusted it down 970.
-
-_Note the lowest throttle value (982 here)._  
-![lowest throttle value](images/mission-planner/arming/1b-throttle-low.png)
-
-_Decrease the FS Pwn value._  
-![set FS_THR_VALUE](images/mission-planner/arming/1c-set-fs_thr_value.png)
-
-Now try arming again. The next failure reason is actually a result of running the wizard! The Pixhawk has to be rebooted in order to pick up the new accelerometer values resulting from the accelerometer calibration step. So press the _Disconnect_ button (upper right) in MP and unplug the Pixhawk and plug it back in to reboot it, once its ready again press the _Connect_ button in MP.
-
-_Reboot required after calibration._  
-<img width="512" src="images/mission-planner/arming/2-calibration-reboot.png">
-
-Now try arming again. This time there's no additional explanation shown for the failure - we're down to the initial problem that we saw, the lack of a GPS fix. If you can move outside that's perfect, in my case I balanced my setup, with the GPS unit, rather precariously on a windowsill. It can take several minutes to acquire a fix - on my unit, in addition to the green power LED, a smaller blue LED starts to blink slowly once it has a fix.
-
-_No GPS fix._  
-<img width="512" src="images/mission-planner/arming/3-gps-fix.png">
-
-Even once it has an inital fix it can take a while longer to get a satisfactorily accurate fix. If you ever had an old Garmin or similar handheld GPS unit, you'll remember the initial large circle around your initial position getting smaller and smaller as it acquired signals from further satellites and could gradually narrow down your position.
-
-So despite a GPS fix I sometimes saw further arming failures that were down to it not yet having an accurate enough fix. The reasons shown in these cases included "Need 3D Fix" - which is clear enough, "check fence" - this isn't quite as clear, if you've got geofencing enabled (we'll come to that later) then it needs a good initial fix to define the bounds of the geofenced region, and lastly I sometimes got "GPS speed error 1.4 (needs 1.0)" - this is the most obscure and I'm not really sure what it means (perhaps that the GPS is not yet sure that the craft isn't moving). In all cases I just had to wait further until the GPS acquired a suitably accurate fix.
-
-Now we're almost there - try arming again. This failure reason is the most obvious and simple. A feature of the Pixhawk, that many other flight controllers don't have, is a safety switch - this flashes on and off initially, you must press and hold down this switch until it stops flashing and stays red.
-
-_Safety switch needs to be pressed._  
-<img width="512" src="images/mission-planner/arming/4-safety-switch.png">
-
-Once this is done you can try arming one more time - hopefully this time it'll be successful and it will arm. Once armed it will quickly revert to disarmed unless you increase throttle (to make it think it's taking off), but even this won't fool it for long - it will eventually still work out that it's on land and disarm.
-
-TODO: what sounds for arm success beep and disarm beep?
-
-_Successfully armed._  
-<img width="512" src="images/mission-planner/arming/5-armed.png">
-
-Flight modes
-------------
+### Flight modes
 
 For a great introduction to flight modes see Painless360's [introduction to flight modes video](https://www.youtube.com/watch?v=PC2io5WPTzM). This gives you a far clearer overview of all the major flight modes than the ArduCopter documentation and points out little details that you might miss otherwise, e.g. altitude hold does not disable altitude adjustment but it does dramatically change how the throttle behaves, instead of directly controlling thrust the throttle range is divided into three broad bands that corresponding to descend, hold altitude and ascend, i.e. it becomes a three way switch for vertical direction.
 
@@ -168,17 +117,138 @@ When we were setting up the transmitter we setup flight mode 6 with the intentio
 
 Assuming your transmitter is still on (from the previous transmitter calibration step) you can check the flight mode switches now, flick the switches you configured on the transmitter to flip up through all the flight modes from 1 to 6 - as you select each mode you should see the corresponding dropdown highlighted in green in the wizard (in the image above RTL is highlighted). Each time you change flight mode the Pixhawk will beep loudly.
 
-It is possible to configure more than just six flight modes. Switching between flight modes is done by changing the value the transmitter sends on channel 5. But there are many further unused channels and its possible to use these channels to trigger many additional actions. E.g. if your craft had retractable landing gear controlled by a servo you could configure it to retract or extend depending on whether the channel 7 value is high or low. The channels 7 to 12 can be used to trigger actions in this way and you can see the full list of triggerable actions on the [auxilary function switches page](http://ardupilot.org/copter/docs/channel-7-and-8-options.html#configuration). As you can see many of these actions are flight modes, e.g. land, RTL and auto-tune.
+### Verification
 
-To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. Scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
+Now you've done all the basic steps that need to be completed before the flight controller can be armed. If all has gone then most of the items shown in the verification step should already be green.
 
-_Options for channels 7 to 12._  
-![options for channels 7 to 12](images/mission-planner/ch7-12-options.png)
+_Calibration complete but no GPS._  
+![wizard - no GPS](images/mission-planner/wizard-no-gps.png)
 
-The spacing is also a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
+If e.g. "Verify RC" is still red you may simply have forgotten to press the _Click when Done_ button that's part of that step. Assuming you've been doing all this indoors then "Verify GPS" will be red. If you place the GPS module such that it's got a clear view of the sky then it will eventually acquite a GPS fix and "Verify GPS" will go green. But there's no need to do that just yet - there are more problems than the GPS that will prevent you completing the most important part of this step - arming the flight controller (or autopilot as it's referred to here).
 
-_Channels 7 and 8 under Extended Tuning._  
-![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
+What is arming? Arming is a safety element - only once the vehicle is an armed stated will moving the throttle cause the propellers to spin. Being hit by a spinning propeller is very painful even with the smallest quadcopters and can result in a serious accident with larger ones (like the one here). Having the vehicle in a disarmed state prevents you accidentally knocking the throttle and starting the propellers while you're getting things ready before take off.
+
+Arming involves two steps - we'll come to the second step in a while but the first step involves moving the throttle to the lower right corner and holding it there for 5 seconds. If you try this now you'll hear the Pixhawk beep twice indicating arming failure.
+
+Unfortunately it's impossible to diagnose arming failure here and there are a number of issues that will need to be overcome before you can arm. So quit out of the wizard at this point and switch from the _Initial Setup_ view to the _Flight Data_ view where its much easier to see why arming has failed.
+
+Arming
+------
+
+There are many reasons arming may fail and the messages involved may often seem less than obvious but you can generally find a clear explanation on the page covering all the [pre-arm safety checks](http://ardupilot.org/copter/docs/prearm_safety_check.html) or failing that using Google.
+
+**Important:** always make sure that you've got all switches related to changing flight mode in their initial position, your first flight mode should be something like _Stabilize_. The most obscure arming failures I experienced resulted from having a flight mode set that is not really suitable for take off. When trying or retrying the wizard I several times left things in a random flight mode after having flipped the flight mode switches as part of the _Radio Calibration_ step.
+
+The main area of the _Flight Data_ view is the head-up display (HUD). If you haven't already pressed _Connect_ do that now and the HUD will display the current state of the flight controller.
+
+_The Flight Data view._  
+<img width="512" src="images/mission-planner/arming/0-start.png">
+
+Above you can immediately see at least one problem - unless you're outside you probably have no GPS fix. But we'll come back to that later. Just try arming anyway - depending on the value sent by your transmitter when your throttle is at its lowest position the first arming failure you may see is "Check FS_THR_VALUE".
+
+_Check FS_THR_VALUE warning._  
+<img width="512" src="images/mission-planner/arming/1a-fs_thr_value.png">
+
+This is related to the [radio failsafe](http://ardupilot.org/copter/docs/radio-failsafe.html). There are two radio failsafe mechanisms - no-signal (preferred) and low-throttle. `FS_THR_VALUE` is related to the low-throttle mechanism and despite the fact that we're actually going to use the preferred no-signal mechanism the `FS_THR_VALUE` still has to be set correctly.
+
+Switch back to the _Initial Setup_ view, expand _Mandatory Hardware_ and select _Radio Calibration_. Move the throttle up and down and see the resulting throttle value change accordingly, move the throttle to its lowest position and note the value, e.g. 982.
+
+_Note the lowest throttle value (982 here)._  
+![lowest throttle value](images/mission-planner/arming/1b-throttle-low.png)
+
+Once you know the the lowest throttle value, go from _Radio Calibration_ to _FailSafe_. There's a section there for _Radio_ that has the value _FS Pwm_, this value must be at least ten less than your lowest throttle value. In my case it wasn't so I adjusted it down 970.
+
+_Decrease the FS Pwn value._  
+![set FS_THR_VALUE](images/mission-planner/arming/1c-set-fs_thr_value.png)
+
+Now try arming again. The next failure reason is actually a result of running the wizard! The Pixhawk has to be rebooted in order to pick up the new accelerometer values resulting from the accelerometer calibration step. So press the _Disconnect_ button (upper right) in MP and unplug the Pixhawk and plug it back in to reboot it, once its ready again press the _Connect_ button in MP.
+
+_Reboot required after calibration._  
+<img width="512" src="images/mission-planner/arming/2-calibration-reboot.png">
+
+Now try arming again. This time there's no additional explanation shown for the failure - we're down to the initial problem that we saw, the lack of a GPS fix. If you can move outside that's perfect, in my case I balanced my setup, with the GPS unit, rather precariously on a windowsill. It can take several minutes to acquire a fix - on my unit, in addition to the green power LED, a smaller blue LED starts to blink slowly once it has a fix.
+
+_No GPS fix._  
+<img width="512" src="images/mission-planner/arming/3-gps-fix.png">
+
+Even once it has an inital fix it can take a while longer to get a satisfactorily accurate fix. If you ever had an old Garmin or similar handheld GPS unit, you'll remember the initial large circle around your initial position getting smaller and smaller as it acquired signals from further satellites and could gradually narrow down your position.
+
+So despite a GPS fix I sometimes saw further arming failures that were down to it not yet having an accurate enough fix. The reasons shown in these cases included "Need 3D Fix" - which is clear enough, "check fence" - this isn't quite as clear, if you've got geofencing enabled (we'll come to that later) then it needs a good initial fix to define the bounds of the geofenced region, and lastly I sometimes got "GPS speed error 1.4 (needs 1.0)" - this is the most obscure and I'm not really sure what it means (perhaps that the GPS is not yet sure that the craft isn't moving). In all cases I just had to wait further until the GPS acquired a suitably accurate fix. Sometimes though this wait can be exaperatingly long and it can be useful to see more about what's going on - there's a separate [GPS section](#gps) later that covers this.
+
+Once you've got a good GPS fix you're almost there - try arming again. It should fail again but this failure reason is the most obvious and simple. A feature of the Pixhawk, that many other flight controllers don't have, is a safety switch - this flashes on and off, you must press and hold it down until it stops flashing and stays red. I.e. arming is a two step process involving both the safety switch and the throttle.
+
+_Safety switch needs to be pressed._  
+<img width="512" src="images/mission-planner/arming/4-safety-switch.png">
+
+Once this is done you can try arming one more time - hopefully finally this time it will be succeed. On success you'll hear a long single beep. Once armed it will quickly revert to disarmed if just left sitting on the ground. So up the throttle to make it think it's taking off, but even this won't fool it forever and it will eventually still work out that it's on land and disarm.
+
+_Successfully armed._  
+<img width="512" src="images/mission-planner/arming/5-armed.png">
+
+To actively disarm the vehicle simply move the throttle to the lower left (rather than the lower right) corner and hold it there for 5 seconds - you'll hear a short single beep to indicate that it's disarmed.
+
+When out in the field and not connected to MP, with its informative HUD messages, it can be frustrating trying to work out why the vehicle won't arm when everything appears to be fine. One common reason I found was simply forgetting to press the safety switch. The main LED on the Pixhawk (the large one above the arrow) is your best insight into its state - so print out the [Pixhawk LED page](images/pixhawk-leds) and bring it with you in the field.
+
+If the main LED is flashing blue this indicates that everything is good so far but that the Pixhawk has not yet acquired a GPS lock. Once everything is good the Pixhawk flashes green to indicate it's ready to be armed and once armed it stops flashing and stays green. If it beeps twice and refuses to arm despite flashing green check that you've pressed the safety button!
+
+### Return to the wizard
+
+Once arming has been completed successfully return to the wizard and skip through the inital steps until you return to the _Verify_ step. You always have to complete the initial frame type and layout steps and see the [bugs section](#bugs) for a issue with skipping the battery monitor section.
+
+Once you're back at the _Verify_ step all items will now be green if you left the vehicle armed before restarting the wizard - if you disarmed first then you should be able to simply arm the vehicle now with the throttle and complete all the items in this step.
+
+_Verification complete._  
+![verification complete](images/mission-planner/steps/step-12.png)
+
+### Failsafes
+
+Failsafe actions are actions that the flight controller will automatically take if certain conditions occur. We can configure actions to occur when the battery level falls too low, when contact is lost with the ground control station (GCS) and when contact is lost with the transmitter.
+
+The only failsafe we'll configure at this point is what to do when contact is lost with the transmitter - the options are RTL, land and continue mission in auto. There's no choice that's right for every situation but RTL is probably the most appropriate - assuming the failure is due to distance (rather than equipment failure) returning to the point of takeoff should quickly bring the craft back into transmitter range (at which point one can just let it complete the RTL sequence or retake control).
+
+As we currently have no GCS (we'll come to that much later) we won't enable the GCS failsafe. And instead of enabling a failsafe for the low battery situation, we'll later configure an alarm on the transmitter for this situation and you can decide yourself what action to take if this alarm goes off.
+
+Note that the failsafe related to losing contact with the transmitter is called the "throttle failsafe" here in the wizard but if you later go to the _FailSafe_ section under _Mandatory Hardware_ you'll see it's got the more obvious name "radio failsafe". The throttle name is a historical hangover from the original mechanism (mentioned earlier) used for triggering this failsafe.
+
+_Failsafes._  
+![failsafes](images/mission-planner/steps/step-13.png)
+
+### Geofence
+
+Geofence is the final setup step. Geofence defines a virtual cyclinder, centered on the point of takeoff, beyond which your vehicle will not fly. This prevents the vehicle getting too far away from you. By default geofence is disabled - I chose to enable it while leaving all the other geofence related settings shown at their default values. You may want to increase the values like max. radius once you're happy with longer range missions.
+
+Note: in many jurisdictions there are limits on how high consumer drones are allowed to fly so your max. altitude should always be less than this.
+
+**Update:** geofence requires a precise initial position fix so that it can determine the bounds of the fence. If you're setting things up initially indoors with your GPS unit e.g. balanced on a windowsill it can be hard to achive the GPS accuracy needed and as a result you won't be able to arm the flight controller (the error "check fence" will keep on being displayed on the HUD when you attempt to arm). So you may want to disable geofence initially and only enable it later when you're ready to really go outdoors where the GPS unit has a clearer view of the sky.
+
+### Completing the wizard
+
+This final two steps are simply a page of useful links and the act of simply pressing the _Finish_ button. That's the wizard done and the basic setup for your flight controller completed. But there are a few more things to check - in particular you should go through the following bugs section and check that all the wizard steps worked as expected.
+
+Bugs
+----
+
+On the whole MP is a great piece of open source software - the author [Michael Oborne](http://diydrones.com/profiles/blogs/meet-the-developers-michael-oborne) has put an immense amount of work into it and has been actively developing it for years now.
+
+Like all large pieces of software it does have bugs and I came across a few minor ones. They may well be fixed by the time you read this but you may want to check the following after completing the wizard.
+
+First go to _Optional Hardware_ and then to _Battery Monitor_ and check that the _Monitor_, _Sensor_, _APM Ver_ and _Battery Capacity_ are all as expected.
+
+_Correct battery monitor settings._  
+![battery monitor settings](images/mission-planner/battery-monitor.png)
+
+This is related to issue [#1623](https://github.com/ArduPilot/MissionPlanner/issues/1623) whereby the _Monitor_ value may flip to disabled if you go through the wizard more than once.
+
+Note: some simpler sensors only monitor voltage but the battery module can monitor both voltage and current - if you're interested you can see its pinout at the bottom of [this page](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/) and find detailed coverage in the ArduPilot [power module section](http://ardupilot.org/copter/docs/common-3dr-power-module.html).
+
+Second go to _Mandatory Hardware_ and then to _FailSafe_ and check that the GCS and battery failsafes are disabled and that the radio failsafe is enabled, set to the expected action and has the expected _FS Pwm_ value.
+
+_Correct failsafe settings._  
+![failsafe settings](images/mission-planner/correct-failsafes.png)
+
+This is related to issue [#1624](https://github.com/ArduPilot/MissionPlanner/issues/1624) whereby the failsafe setttings shown in the wizard may not be in sync with those displayed outside the wizard in the _FailSafe_ section.
+
+The only other issue I logged was a minor cosmetic one - issue [#1622](https://github.com/ArduPilot/MissionPlanner/issues/1624) - related to the old "DistToMAV" appearing instead of the more intuitive replacement "Dist to Home" under certain circumstances.
 
 Testing the transmitter failsafe
 --------------------------------
@@ -204,6 +274,21 @@ _Still in failsafe flight mode._
 <img width="512" src="images/mission-planner/post-failsafe-rearm-issue.png">
 
 To get out of this situation simply flick one of the flight mode switches on your transmitter so that it explicitly tells the flight controller to change mode, then flick the switch back to its default position so as to return to stabilize mode - the craft can then be armed again as normal.
+
+Configuring more than 6 flight modes
+------------------------------------
+
+It is possible to configure more than just six flight modes. Switching between flight modes is done by changing the value the transmitter sends on channel 5. But there are many further unused channels and its possible to use these channels to trigger many additional actions. E.g. if your craft had retractable landing gear controlled by a servo you could configure it to retract or extend depending on whether the channel 7 value is high or low. The channels 7 to 12 can be used to trigger actions in this way and you can see the full list of triggerable actions on the [auxilary function switches page](http://ardupilot.org/copter/docs/channel-7-and-8-options.html#configuration). As you can see many of these actions are flight modes, e.g. land, RTL and auto-tune.
+
+To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. Scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
+
+_Options for channels 7 to 12._  
+![options for channels 7 to 12](images/mission-planner/ch7-12-options.png)
+
+The spacing is also a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
+
+_Channels 7 and 8 under Extended Tuning._  
+![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
 
 Flight data tabs
 ----------------
@@ -265,67 +350,12 @@ _High accuracy HDOP value reached._
 
 What MP considers a good enough HDOP values is controlled by the parameter `GPS_HDOP_GOOD` - by default it's 1.4. You can find this parameter mentioned under "High GPS HDOP" on the ArduCopter [pre-arm safety check page](http://ardupilot.org/copter/docs/prearm_safety_check.html). This is an advanced parameter so you won't see it listed in the _Standard Parameters_ section of MP - to examine it you have to enable MP's advanced mode and look for it in the _Full Parameter List_ section that then becomes visible - modifying this parameter is not recommended.
 
-Bugs
-----
-
-On the whole MP is a great piece of open source software - the author [Michael Oborne](http://diydrones.com/profiles/blogs/meet-the-developers-michael-oborne) has put an immense amount of work into it and has been actively developing it for years now.
-
-Like all large pieces of software it does have bugs and I came across a few minor ones. They may well be fixed by the time you read this but you may want to check the following after completing the wizard.
-
-First go to _Optional Hardware_ and then to _Battery Monitor_ and check that the _Monitor_, _Sensor_, _APM Ver_ and _Battery Capacity_ are all as expected.
-
-_Correct battery monitor settings._  
-![battery monitor settings](images/mission-planner/battery-monitor.png)
-
-This is related to issue [#1623](https://github.com/ArduPilot/MissionPlanner/issues/1623) whereby the _Monitor_ value may flip to disabled if you go through the wizard more than once.
-
-Note: some simpler sensors only monitor voltage but the battery module can monitor both voltage and current - if you're interested you can see its pinout at the bottom of [this page](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/) and find detailed coverage in the ArduPilot [power module section](http://ardupilot.org/copter/docs/common-3dr-power-module.html).
-
-Second go to _Mandatory Hardware_ and then to _FailSafe_ and check that the GCS and battery failsafes are disabled and that the radio failsafe is enabled, set to the expected action and has the expected _FS Pwm_ value.
-
-_Correct failsafe settings._  
-![failsafe settings](images/mission-planner/correct-failsafes.png)
-
-This is related to issue [#1624](https://github.com/ArduPilot/MissionPlanner/issues/1624) whereby the failsafe setttings shown in the wizard may not be in sync with those displayed outside the wizard in the _FailSafe_ section.
-
-The only other issue I logged was a minor cosmetic one - issue [#1622](https://github.com/ArduPilot/MissionPlanner/issues/1624) - related to the old "DistToMAV" appearing instead of the more intuitive replacement "Dist to Home" under certain circumstances.
-
----
-
 Inprogress
 ----------
 
-_Calibration complete but no GPS._  
-![wizard - no GPS](images/mission-planner/wizard-no-gps.png)
+Sometimes I could quit out of the wizard by pressing the standard close (x) button of its window, but often this did nothing and I had to kill MP with the Task Manager to get out of the wizard.
 
-_Calibration complete._  
-![wizard - calibration complete](images/mission-planner/calibration-complete.png)
-
-Try pushing throttle to lower-right to arm.
-TODO: what sound for arm-failure beep?
-
-Disarm and go back into the wizard and skip over the previous steps to return to the _Verify_ screen - now try arming and if all goes well this time the final step here should go green.
-
-_Arming successful in the wizard._  
-![wizard - armed](images/mission-planner/armed-wizard.png)
-
-Add these next steps to the list of wizard steps documented above. Geofencing doesn't warrant an image, just explain that I enabled it (it defaults to off) and that it'll limit your flight distances and you may want to up the values once you're happy with longer range missions.
-
-**Update:** geofence requires a precise initial position fix (see the GPS section elsewhere) so that it can determine the bounds of the fence. If you're setting things up initially indoors with your GPS unit balanced on a windowsill it can be hard to achive the GPS accuracy needed and as a result you won't be able to arm the flight controller (the error "check fence" will keep on being displayed on the HUD when you attempt to arm). So you may want to disable geofence initially and only enable it later when you're ready to really go outdoors where the GPS unit has a clearer view of the sky.
-
-Failsafe actions are actions that the flight controller will automatically take if certain conditions occur. We can configure actions to occur when the battery level falls too low, when contact is lost with the transmitter and when contact is lost with the ground control station (GCS). The only failsafe we'll configure at this point is what to do when contact is lost with the transmitter - the options are continue mission in auto, RTL and land. There's no choice that's right for every situation but RTL is probably the most appropriate - assuming the failure is due to distance (rather than equipment failure) returning to the point of takeoff should quickly bring the craft back into transmitter range (at which point one can just let it complete the RTL sequence or retake control).
-
-As we currently have no GCS (we'll come to that much later) we won't enable the GCS failsafe. And instead of enabling a failsafe for the low battery situation, we'll later configure an alarm on the transmitter for this situation and you can decide yourself what action to take if this alarm goes off.
-
-Note that the failsafe related to losing contact with the transmitter is called the "throttle failsafe" here in the wizard but if you later go to the _FailSafe_ section under _Mandatory Hardware_ you'll see it's got the more obvious name "radio failsafe". The throttle name is a historical hangover from the original mechanism (mentioned earlier) used for triggering this failsafe.
-
-_Failsafes._  
-![failsafes](images/mission-planner/failsafes.png)
-
-_Geofence_  
-![geofence](images/mission-planner/geofence.png)
-
-Geofence is (as you can see) step 14, step 15 is a page of links to look at before your first flight, step 16 doesn't exist as a page at all - pressing finish is step 16 and exits the wizard.
+See initial two sections of [`wizard-issues/pages.md`](wizard-issues/pages.md).
 
 Battery monitor is the only item in optional hardware that we have though we'll be adding an SiK radio later.
 
@@ -341,31 +371,13 @@ Throttle is low as you'd expect and pitch is low as we inverted this input when 
 _Throttle and pitch are both low._  
 ![pictch reversed](images/mission-planner/pitch-reversed.png)
 
----
-
 When you press _Connect_ in MP it will check the firmware version on your flight controller and inform you if a newer version is available. It's important to lookup the release announcements for a new version as it may involve additional steps. Version numbers are of the form MAJOR.MINOR.PATCH, e.g. 3.4.6, and changes that involve the MAJOR or MINOR number are far more likely to involve such steps, e.g. the recent (at the time of writing) change from 3.4.6 to 3.5.0 that's covered by this [announcement](https://discuss.ardupilot.org/t/copter-3-5-0-has-been-released/19241) on the [ArduPilot blog](https://discuss.ardupilot.org/c/blog) that requires setting the frame type again and doing a compass recalibration. You can also find the more detailed, but less easy to consume, release notes [here on Github](https://github.com/ArduPilot/ardupilot/blob/master/ArduCopter/ReleaseNotes.txt). You can check the latest stable firmware version currently published on the ArduPilot firmware site by checking the file [`Copter/stable/PX4/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4/git-version.txt). With 3.5.0 ArduCopter has a single multirotor version, previously there were separate versions for quad, hex, octa etc. and so beside the `PX4/git-version.txt` you'll still find files like [`PX4-quad/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4-quad/git-version.txt) that actually cover an older previous release (presumably these will eventually be cleared out).
-
-Arming is done by pressing the safety button until it goes solid red and then pushing the throttle to the lower-right corner.
-
-To disarm move throttle to lower-left corner.
 
 The Pixhawk indicates that it's not ready to arm with double flashing yellow.
 
 TODO: this may not be true - according to pixhawk.org "Amber - Low battery or Failsafe (Return to home, etc)" - so this may just have been because I was in RTL flight mode. Hmmm... if I power up the Pixhawk while in flight mode RTL then it flashes yellow, if I then flip to stabilize then all is good and if I flip back to RTL it (oddly) flashes blue rather than going back to yellow. So flashing yellow only happens if you boot in a stupid mode.
 
-If you try to arm in this situation the Pixhawk will beep loudly twice.
-
-The Pixhawk flashes blue while waiting for a lock.
-
-It complained that "GPS speed error 1.4 (needs 1.0)". However the real issue seems to have been that during the wizard steps I'd flipped the flight mode switches - I should have returned them all to their default position so that I was in acceptable flight mode for take off, i.e. stabilize.
-
 From <http://ardupilot.org/copter/docs/arming_the_motors.html> "You can only arm or disarm in Stabilize, ACRO, AltHold and Loiter mode."
-
-Once everything is good the Pixhawk flashes green to indicate its ready to be armed and once armed it goes solid green.
-
-If it beeps twice and refuses to arm despite blinking green check you've pressed the safety button!
-
----
 
 How to reset the flight controller: <http://ardupilot.org/copter/docs/common-parameter-reset.html>
 
