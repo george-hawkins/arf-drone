@@ -1,7 +1,7 @@
 Pixhawk setup
 =============
 
-In order to setup your Pixhawk you need a ground control application. Ground control applications fulfil a number of roles. Once your system is fully setup it's the software that you run on your computer to plan out routes that can be uploaded to the Pixhawk and can then be followed autonomously by your craft once it's in the air. If you've got a telemetry kit (like this [one](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/)), with a ground module that's plugged into your computer and an air module that's plugged into the flight controller on your craft, then the ground control software can track the status of your craft in flight (showing it's location, battery level and other telemetry data) and also control it in a similar fashion to your transmitter.
+In order to setup your Pixhawk you need a ground control application. Ground control applications fulfil a number of roles. Once your system is fully setup it's the software that you run on your computer to plan out routes that can be uploaded to the Pixhawk and can then be followed autonomously by your craft once it's in the air. If you've got a telemetry kit (like this [one](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/)), with a ground module that's plugged into your computer and an air module that's plugged into the flight controller on your craft, then the ground control software can track the status of your craft in-flight (showing it's location, battery level and other telemetry data) and also control it in a similar fashion to your transmitter.
 
 But most importantly initially, the ground control application is used to setup and configure your flight controller. It's use after this is optional. Once you've connected your flight controller to your computer via USB you can use the ground control application to update the flight stack (either [ArduCopter](http://ardupilot.org/copter/) or [PX4](http://px4.io/) in our case), calibrate the craft's sensors and setup the flight stack (configuring things such as flight modes).
 
@@ -196,7 +196,7 @@ For more on arming and disarming see the ArduCopter [arming documentation](http:
 
 When out in the field and not connected to MP, with its informative HUD messages, it can be frustrating trying to work out why the vehicle won't arm when everything appears to be fine. One common reason I found was simply forgetting to press the safety switch. The main LED on the Pixhawk (the large one above the arrow) is your best insight into its state - so print out the [Pixhawk LED page](images/pixhawk-leds) and bring it with you in the field.
 
-If the main LED is flashing blue this indicates that everything is good so far but that the Pixhawk has not yet acquired a GPS lock. Once everything is good the Pixhawk flashes green to indicate it's ready to be armed and once armed it stops flashing and stays green. If it beeps twice and refuses to arm despite flashing green check that you've pressed the safety button!
+If the main LED is flashing blue this indicates that everything is good so far but that the Pixhawk has not yet acquired a GPS lock. Once everything is good the Pixhawk flashes green to indicate it's ready to be armed and once armed it stops flashing and stays green. If it beeps twice and refuses to arm despite flashing green check that you've pressed the safety button! If the Pixhawk flashes yellow despite everything looking good check your flight mode and make sure it's something suitable for arming like stabilize.
 
 ### Return to the wizard
 
@@ -301,6 +301,15 @@ Then look at the bars for _Throttle_ and _Pitch_ in MP. _Throttle_ is low, as yo
 _Throttle and pitch are both low._  
 ![pictch reversed](images/mission-planner/pitch-reversed.png)
 
+Saving and restoring parameters
+-------------------------------
+
+After taking all the trouble to setup ArduCopter on your Pixhawk it might be nice to save all settings and be able to restore them later - especially if you want to try playing around with some features and want to be able to restore to the nice clean state established by doing the setup covered on this page.
+
+Oddly saving and restoring settings is considered an advanced feature in MP - you have to go to _Config/Tuning_ and then to _Planner_ and switch _Layout_ to _Advanced_. In my version of MP (1.3.49) this doesn't immediately update the items seen to the left, you have to switch to another view, e.g. _Help_, and then back to _Config/Tuning_ - then, in addition to _Standard Params_ etc., you'll now see _Full Parameter List_ and other new items.
+
+Go to _Full Parameter List_, to the right you'll see buttons for saving all parameters to a file and loading them back in. Once you've saved your parameters it's probably a good idea to switch back to the _Basic_ layout.
+
 Upgrading the firmware
 ----------------------
 
@@ -383,19 +392,44 @@ The spacing is also a little odd - it might look like each option is related to 
 _Channels 7 and 8 under Extended Tuning._  
 ![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
 
-Inprogress
-----------
+Minor notes
+-----------
 
-Sometimes I could quit out of the wizard by pressing the standard close (x) button of its window, but often this did nothing and I had to kill MP with the Task Manager to get out of the wizard.
+This final section is just for some fairly unimportant additional notes I made while putting together this page.
 
-See initial two sections of [`wizard-issues/pages.md`](wizard-issues/pages.md).
+#### Optional hardware
 
-Battery monitor is the only item in optional hardware that we have though we'll be adding an SiK radio later.
+There are a lot of items under the _Optional Hardware_ section in MP. The only item that we've configured that appears there is the battery monitor. However later, after our initial flights, we'll look at interacting with the vehicle in-flight from MP, this will involve another piece of optional hardware - a SiK radio.
 
 Note: the K in SiK is for kilo, as in 1000, as the chip in the radio is a SiLabs Si1000 (from the ["what does SiK mean" section](https://github.com/ArduPilot/SiK#what-does-sik-mean) of the SiK firmware README).
 
-The Pixhawk indicates that it's not ready to arm with double flashing yellow.
+#### Wizard hangs
 
-TODO: this may not be true - according to pixhawk.org "Amber - Low battery or Failsafe (Return to home, etc)" - so this may just have been because I was in RTL flight mode. Hmmm... if I power up the Pixhawk while in flight mode RTL then it flashes yellow, if I then flip to stabilize then all is good and if I flip back to RTL it (oddly) flashes blue rather than going back to yellow. So flashing yellow only happens if you boot in a stupid mode.
+Usually I could quit out of the wizard by pressing the standard close (x) button of its window, but sometimes this did nothing and I had to kill MP with the Task Manager.
 
-Setting expo?
+#### Unconfigure state
+
+When you connect a factory fresh or factory reset Pixhawk to QGC for the first time it flags up that various things that need to be configured (perhaps overly forcefully with its aggressive audio alerts). In contrast there's little in MP flagging up the things that have yet to be setup - the one place you can look is the _Messages_ tab under the HUD.  Here you can see that the accelerometer and compass are not yet calibrated and that the `FRAME_CLASS`, i.e. the drone type (quad, hexa etc.), has not yet been set.
+
+_Messages for an unconfigured Pixhawk._  
+![unconfigured messages](images/mission-planner/unconfigured-state.png)
+
+Similarly in QGC if you go to the section equivalent to _Mandatory Hardware_ in MP you'll see the various sections that need to be configured clearly highlighted in red. In MP there's no such highlighting and if you go through the items below _Mandatory Hardware_ there's little to indicate that configuration still needs to be done - about the only things you'll notice is that nothing is selected under _Frame Type_ and that under _Compass_ all the offsets appear in red (after configuration the offsets for compass 1 and 2, corresponding to the compass in the GPS module and the one in the Pixhawk itself, will go green).
+
+This isn't an issue - MP has a wizard to ensure that you go through configuring everything properly, whereas in QGC it's left up to you to configure everything separately so it's more important to point up the things that are still not configured.
+
+#### Tuning
+
+Under _Basic Tuning_ there are three sliders:
+
+* _RC Feel Roll/Pitch_ - this adjusts `RC_FEEL_RP` - this appears to be an insider feature as there's no very detailed definition of it anywhere - it's described as controlling the smoothness of roll/pitch response (0 = extremely soft, 100 = crisp). There's a little bit of discussion about it in [this post](https://groups.google.com/d/msg/drones-discuss/JUeGZjVJ6GI/zWCvi9s5-AoJ) on the drones-discuss forum (the predecesor to the current [ArduPilot forums](https://discuss.ardupilot.org/)).
+* _Roll/Pitch Sensitivity_ - this adjusts `ATC_RAT_PIT_P`, `ATC_RAT_PIT_I`, `ATC_RAT_RLL_P` and `ATC_RAT_RLL_I`. These appear as the P and I values for pitch and roll under _Extended Tuning_.
+* _Climb Sensitivity_ - this adjusts `ACCEL_Z_P` and `ACCEL_Z_I`. These appear as the throttle acceleration P and I values under _Extended Tuning_.
+
+By default the _Roll/Pitch Sensitivity_ slider is at 0.135 - moving it causes both the pitch and roll P and I values to update to the current slider value. This is a little odd as initially the P values are 0.135 (matching the slider) but the the I values are 0.09 - so dragging the slider to some other value and then back to 0.135 will not restore thing to the way they were originally - the I values will end up at 0.135 rather than back at 0.09.
+
+Under _Extended Tuning_ there are far more configurable parameters. The following images show the default values seen in _Basic Tuning_ and _Extended Tuning_ after the setup described in this page:
+
+![basic tuning](images/mission-planner/tuning-basic.png) ![extended tuning](images/mission-planner/tuning-extended.png)
+
+We won't attempt to adjust any of these parameters directly but as noted earlier we will come back to the [auto-tune](http://ardupilot.org/copter/docs/autotune.html) feature that gets the vehicle to tune some of these parameters itself.
