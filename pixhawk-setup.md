@@ -230,7 +230,11 @@ Note: in many jurisdictions there are limits on how high consumer drones are all
 
 ### Completing the wizard
 
-This final two steps are simply a page of useful links and the act of simply pressing the _Finish_ button. That's the wizard done and the basic setup for your flight controller completed. But there are a few more things to check - in particular you should go through the following bugs section and check that all the wizard steps worked as expected.
+This final two steps are simply a page of useful links and the act of simply pressing the _Finish_ button. That's the wizard done and the basic setup for your flight controller completed. But there are a few more things to check that are covered by the following sections:
+
+* Bugs - check that the wizard steps worked as expected.
+* Transmitter failsafe - check that the transmitter failsafe really works.
+* Pitch inversion - check that pitch is inverted as required by ArduCopter.
 
 Bugs
 ----
@@ -285,12 +289,14 @@ To get out of this situation simply flick one of the flight mode switches on you
 Pitch inversion
 ---------------
 
-Confirm that pitch is inverted.
+When we were configuring the transmitter one of the things we did was invert the pitch - this is to deal with a quirk in how ArduCopter handles things. It's important to check that the pitch really is inverted or you'll have a very confusing initial flying experience with the vehicle pitching backwards when you push the stick for pitch forward.
+
+Make sure your Pixhawk setup is plugged in and connected to MP, then go to _Mandatory Hardware_ under _Initial Setup_ and select _Radio Calibration_. Turn on the transmitter and push the right stick up and down, i.e. adjust the pitch. You should see the _Pitch_ bar in _Radio Calibration_ reacting to these changes. Make sure throttle is all the way down and push pitch all the way up as shown here.
 
 _Throttle down and pitch up._  
 <img height="512" src="images/mission-planner/pitch-up-throttle-down.jpg">
 
-Throttle is low as you'd expect and pitch is low as we inverted this input when setting up the transmitter. TODO: provide link confirming this is what's needed (probably already in section where I setup TX).
+Then look at the bars for _Throttle_ and _Pitch_ in MP. _Throttle_ is low, as you'd expect, and pitch should be low as result having inverted it when setting up the transmitter.
 
 _Throttle and pitch are both low._  
 ![pictch reversed](images/mission-planner/pitch-reversed.png)
