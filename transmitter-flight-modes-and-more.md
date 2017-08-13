@@ -151,8 +151,6 @@ You can then see the affect of this by going to the main screen and then pressin
 
 TODO: verify the claim about trim - establish the copter at a stable fixed point and then use the roll trims to force the copter left and right, rather than using the roll stick, then try the same with the pitch trims and see that these trims affect going back and forward in the same way as the roll trims affect going left and right.
 
-TODO: it looks like fixing it in the transmitter is easiest but see if there's a toggle for it during setup in Mission Planner.
-
 ---
 
 TODOs

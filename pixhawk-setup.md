@@ -52,10 +52,10 @@ This is important as it turns out that you will need to rerun the wizard several
 
 | | | | |
 |-|-|-|-|
-| _Step 1 - vehicle._<br><img width="256" src="images/mission-planner/steps/step-01.png"> | _Step 2 - frame type._<br><img width="256" src="images/mission-planner/steps/step-02.png"> | _Step 3 - connecting._<br><img width="256" src="images/mission-planner/steps/step-03.png"> | _Step 4 - frame layout._<br><img width="256" src="images/mission-planner/steps/step-04.png"> |
-| _Step 5 - accelerometer_<br><img width="256" src="images/mission-planner/steps/step-05.png"> | _Step 6A - compass._<br><img width="256" src="images/mission-planner/steps/step-6a.png"> | _Step 6B - compass._<br><img width="256" src="images/mission-planner/steps/step-6b.png"> | _Step 7 - battery monitor._<br><img width="256" src="images/mission-planner/steps/step-07.png"> |
-| _Step 8/9 - optional items._<br><img width="256" src="images/mission-planner/steps/step-08.png"> | _Step 10A - transmitter._<br><img width="256" src="images/mission-planner/steps/step-10a.png"> | _Step 10B - transmitter._<br><img width="256" src="images/mission-planner/steps/step-10b.png"> | _Step 11 - flight modes._<br><img width="256" src="images/mission-planner/steps/step-11.png"> |
-| _Step 12 - verification._<br><img width="256" src="images/mission-planner/steps/step-12.png"> | _Step 13 - failsafes._<br><img width="256" src="images/mission-planner/steps/step-13.png"> | _Step 14 - geofence._<br><img width="256" src="images/mission-planner/steps/step-14.png"> | _Step 15 - useful links._<br><img width="256" src="images/mission-planner/steps/step-15.png"> |
+| _Step 1 - vehicle._<br>![1](images/mission-planner/steps/step-01.png) | _Step 2 - frame type._<br>![2](images/mission-planner/steps/step-02.png) | _Step 3 - connecting._<br>![3](images/mission-planner/steps/step-03.png) | _Step 4 - frame layout._<br>![4](images/mission-planner/steps/step-04.png) |
+| _Step 5 - accelerometer_<br>![5](images/mission-planner/steps/step-05.png) | _Step 6A - compass._<br>![6A](images/mission-planner/steps/step-6a.png) | _Step 6B - compass._<br>![6B](images/mission-planner/steps/step-6b.png) | _Step 7 - battery monitor._<br>![7](images/mission-planner/steps/step-07.png) |
+| _Step 8/9 - optional items._<br>![8/9](images/mission-planner/steps/step-08.png) | _Step 10A - transmitter._<br>![10A](images/mission-planner/steps/step-10a.png) | _Step 10B - transmitter._<br>![10B](images/mission-planner/steps/step-10b.png) | _Step 11 - flight modes._<br>![11](images/mission-planner/steps/step-11.png) |
+| _Step 12 - verification._<br>![12](images/mission-planner/steps/step-12.png) | _Step 13 - failsafes._<br>![13](images/mission-planner/steps/step-13.png) | _Step 14 - geofence._<br>![14](images/mission-planner/steps/step-14.png) | _Step 15 - useful links._<br>![15](images/mission-planner/steps/step-15.png) |
 
 The above table shows all the steps of the wizard. Steps 1 and 3 are skipped if, as described above, you've pressed _Connect_ before starting the wizard.
 
@@ -76,6 +76,8 @@ _Accelerometer calibration - flat, left, right, nose, tail and back._
 <img width="256" src="images/mission-planner/accel/nose.jpg"> <img width="256" src="images/mission-planner/accel/tail.jpg"> <img width="256" src="images/mission-planner/accel/back.jpg">
 
 As instructed you have to place you system in turn flat, on its left, right, nose, tail and back, pressing a key after each step. Each time I tried this I eventually got the message "3D Accel calibration needed" at some point in the process - I had to look at the [source code](https://github.com/ArduPilot/ardupilot/blob/126296b/libraries/AP_Arming/AP_Arming.cpp#L192) to detemine if this really was an error, it is - a critical one indicating that the calibration has failed. I just restarted and restarted this step, trying to make the transition between steps - left side to right side etc. - as smooth as possible until eventually the calibration completed without error.
+
+Note: once you've calibrated the accelerometer once recalibrating always goes much smoother. I.e. calibrating at this point means that any subsequent recalibration, once all the components are mounted in their final position, will go much smoother. Doing the equivalent of a factory reset (switching back and forward between another firmware, e.g. PX4 or an Ardupilot firmware for a different vehicle type, or doing a [parameter reset](http://ardupilot.org/copter/docs/common-parameter-reset.html)) will undo this affect.
 
 ### Compass calibration
 
@@ -110,7 +112,7 @@ When we set up the transmitter we went to a lot of trouble to set up switches so
 
 The other available flight modes are related to things like more agressive and sporty flying styles and more obscure use cases - however [circle](http://ardupilot.org/copter/docs/circle-mode.html) looks interesting if you want to circle a point with a camera and [guided](http://ardupilot.org/copter/docs/flight-modes.html) is relevant if you want to control the craft in-flight from a ground control application. One mode we'll be coming back to later is [auto-tune](http://ardupilot.org/copter/docs/autotune.html) - there are many tunable parameters that affect how the craft flies, auto-tune causes the craft to put itself through various maneuvers and by seeing how it behaves it tries to automatically determine the optimal values for these tunable parameters.
 
-Six flight modes is probably more than enough to start with but it is possible to configure up even more than this using additional switches - this is covered separately in a later section below.
+Six flight modes is probably more than enough to start with but it is possible to configure up even more than this using additional switches - this is covered separately in a later section.
 
 _Flight modes._  
 ![flight modes](images/mission-planner/flight-modes.png)
@@ -136,8 +138,7 @@ Arming involves two steps - we'll come to the second step in a while but the fir
 
 Unfortunately it's impossible to diagnose arming failure here and there are a number of issues that will need to be overcome before you can arm. So quit out of the wizard at this point and switch from the _Initial Setup_ view to the _Flight Data_ view where its much easier to see why arming has failed.
 
-Arming
-------
+### Arming
 
 There are many reasons arming may fail and the messages involved may often seem less than obvious but you can generally find a clear explanation on the page covering all the [pre-arm safety checks](http://ardupilot.org/copter/docs/prearm_safety_check.html) or failing that using Google.
 
@@ -190,6 +191,8 @@ _Successfully armed._
 <img width="512" src="images/mission-planner/arming/5-armed.png">
 
 To actively disarm the vehicle simply move the throttle to the lower left (rather than the lower right) corner and hold it there for 5 seconds - you'll hear a short single beep to indicate that it's disarmed.
+
+For more on arming and disarming see the ArduCopter [arming documentation](http://ardupilot.org/copter/docs/arming_the_motors.html). In particular they note there that you can only arm in a fairly limited subset of the available flight modes - so the simplest thing is to always ensure you're in stabalize mode before attempting to arm.
 
 When out in the field and not connected to MP, with its informative HUD messages, it can be frustrating trying to work out why the vehicle won't arm when everything appears to be fine. One common reason I found was simply forgetting to press the safety switch. The main LED on the Pixhawk (the large one above the arrow) is your best insight into its state - so print out the [Pixhawk LED page](images/pixhawk-leds) and bring it with you in the field.
 
@@ -279,20 +282,25 @@ _Still in failsafe flight mode._
 
 To get out of this situation simply flick one of the flight mode switches on your transmitter so that it explicitly tells the flight controller to change mode, then flick the switch back to its default position so as to return to stabilize mode - the craft can then be armed again as normal.
 
-Configuring more than 6 flight modes
-------------------------------------
+Pitch inversion
+---------------
 
-It is possible to configure more than just six flight modes. Switching between flight modes is done by changing the value the transmitter sends on channel 5. But there are many further unused channels and its possible to use these channels to trigger many additional actions. E.g. if your craft had retractable landing gear controlled by a servo you could configure it to retract or extend depending on whether the channel 7 value is high or low. The channels 7 to 12 can be used to trigger actions in this way and you can see the full list of triggerable actions on the [auxilary function switches page](http://ardupilot.org/copter/docs/channel-7-and-8-options.html#configuration). As you can see many of these actions are flight modes, e.g. land, RTL and auto-tune.
+Confirm that pitch is inverted.
 
-To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. Scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
+_Throttle down and pitch up._  
+<img height="512" src="images/mission-planner/pitch-up-throttle-down.jpg">
 
-_Options for channels 7 to 12._  
-![options for channels 7 to 12](images/mission-planner/ch7-12-options.png)
+Throttle is low as you'd expect and pitch is low as we inverted this input when setting up the transmitter. TODO: provide link confirming this is what's needed (probably already in section where I setup TX).
 
-The spacing is also a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
+_Throttle and pitch are both low._  
+![pictch reversed](images/mission-planner/pitch-reversed.png)
 
-_Channels 7 and 8 under Extended Tuning._  
-![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
+Upgrading the firmware
+----------------------
+
+When you press _Connect_ in MP it will check the firmware version on your flight controller and inform you if a newer version is available. It's important to lookup the release announcements for a new version as it may involve additional steps. Version numbers are of the form MAJOR.MINOR.PATCH, e.g. 3.4.6, and changes that involve the MAJOR or MINOR number are far more likely to involve such steps, e.g. the recent (at the time of writing) change from 3.4.6 to 3.5.0 that's covered by this [announcement](https://discuss.ardupilot.org/t/copter-3-5-0-has-been-released/19241) on the [ArduPilot blog](https://discuss.ardupilot.org/c/blog) requires setting the frame type again and doing a compass recalibration. You can also find the more detailed, but less easy to consume, release notes [here on Github](https://github.com/ArduPilot/ardupilot/blob/master/ArduCopter/ReleaseNotes.txt).
+
+You can check the latest stable firmware version currently published on the ArduPilot firmware site by checking the file [`Copter/stable/PX4/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4/git-version.txt). With 3.5.0 ArduCopter has a single multirotor version, previously there were separate versions for quad, hex, octa etc. and so beside the `PX4/git-version.txt` file you'll still find files like [`PX4-quad/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4-quad/git-version.txt) that actually cover an older previous release (presumably these will eventually be cleared out).
 
 Flight data tabs
 ----------------
@@ -354,6 +362,21 @@ _High accuracy HDOP value reached._
 
 What MP considers a good enough HDOP values is controlled by the parameter `GPS_HDOP_GOOD` - by default it's 1.4. You can find this parameter mentioned under "High GPS HDOP" on the ArduCopter [pre-arm safety check page](http://ardupilot.org/copter/docs/prearm_safety_check.html). This is an advanced parameter so you won't see it listed in the _Standard Parameters_ section of MP - to examine it you have to enable MP's advanced mode and look for it in the _Full Parameter List_ section that then becomes visible - modifying this parameter is not recommended.
 
+Configuring more than 6 flight modes
+------------------------------------
+
+It is possible to configure more than just six flight modes. Switching between flight modes is done by changing the value the transmitter sends on channel 5. But there are many further unused channels and its possible to use these channels to trigger many additional actions. E.g. if your craft had retractable landing gear controlled by a servo you could configure it to retract or extend depending on whether the channel 7 value is high or low. The channels 7 to 12 can be used to trigger actions in this way and you can see the full list of triggerable actions on the [auxilary function switches page](http://ardupilot.org/copter/docs/channel-7-and-8-options.html#configuration). As you can see many of these actions are flight modes, e.g. land, RTL and auto-tune.
+
+To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. Scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
+
+_Options for channels 7 to 12._  
+![options for channels 7 to 12](images/mission-planner/ch7-12-options.png)
+
+The spacing is also a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
+
+_Channels 7 and 8 under Extended Tuning._  
+![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
+
 Inprogress
 ----------
 
@@ -365,25 +388,11 @@ Battery monitor is the only item in optional hardware that we have though we'll 
 
 Note: the K in SiK is for kilo, as in 1000, as the chip in the radio is a SiLabs Si1000 (from the ["what does SiK mean" section](https://github.com/ArduPilot/SiK#what-does-sik-mean) of the SiK firmware README).
 
-Confirm that pitch is reversed.
-
-_Throttle down and pitch up._  
-<img height="512" src="images/mission-planner/pitch-up-throttle-down.jpg">
-
-Throttle is low as you'd expect and pitch is low as we inverted this input when setting up the transmitter. TODO: provide link confirming this is what's needed (probably already in section where I setup TX).
-
-_Throttle and pitch are both low._  
-![pictch reversed](images/mission-planner/pitch-reversed.png)
-
-When you press _Connect_ in MP it will check the firmware version on your flight controller and inform you if a newer version is available. It's important to lookup the release announcements for a new version as it may involve additional steps. Version numbers are of the form MAJOR.MINOR.PATCH, e.g. 3.4.6, and changes that involve the MAJOR or MINOR number are far more likely to involve such steps, e.g. the recent (at the time of writing) change from 3.4.6 to 3.5.0 that's covered by this [announcement](https://discuss.ardupilot.org/t/copter-3-5-0-has-been-released/19241) on the [ArduPilot blog](https://discuss.ardupilot.org/c/blog) that requires setting the frame type again and doing a compass recalibration. You can also find the more detailed, but less easy to consume, release notes [here on Github](https://github.com/ArduPilot/ardupilot/blob/master/ArduCopter/ReleaseNotes.txt). You can check the latest stable firmware version currently published on the ArduPilot firmware site by checking the file [`Copter/stable/PX4/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4/git-version.txt). With 3.5.0 ArduCopter has a single multirotor version, previously there were separate versions for quad, hex, octa etc. and so beside the `PX4/git-version.txt` you'll still find files like [`PX4-quad/git-version.txt`](http://firmware.ardupilot.org/Copter/stable/PX4-quad/git-version.txt) that actually cover an older previous release (presumably these will eventually be cleared out).
-
 The Pixhawk indicates that it's not ready to arm with double flashing yellow.
 
 TODO: this may not be true - according to pixhawk.org "Amber - Low battery or Failsafe (Return to home, etc)" - so this may just have been because I was in RTL flight mode. Hmmm... if I power up the Pixhawk while in flight mode RTL then it flashes yellow, if I then flip to stabilize then all is good and if I flip back to RTL it (oddly) flashes blue rather than going back to yellow. So flashing yellow only happens if you boot in a stupid mode.
 
-From <http://ardupilot.org/copter/docs/arming_the_motors.html> "You can only arm or disarm in Stabilize, ACRO, AltHold and Loiter mode."
-
-How to reset the flight controller: <http://ardupilot.org/copter/docs/common-parameter-reset.html>
+Setting expo?
 
 ---
 
@@ -431,5 +440,3 @@ Using udev rules appeals to nerds like myself - adding yourself to the `dialout`
 As often seems to happen with USB devices on Linux if you plug them in and out too often something eventually gets confused and they can no longer be successfully reconnected - in this situation I reset the whole USB system with a script I wrote. You can find it [here](https://gist.github.com/george-hawkins/5d93be322379afdc690b976e4b12dd71) and run it like so (assuming you've made it executable):
 
     $ sudo ./reset-usb
-
----
