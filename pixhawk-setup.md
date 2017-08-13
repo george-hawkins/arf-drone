@@ -310,6 +310,8 @@ Oddly saving and restoring settings is considered an advanced feature in MP - yo
 
 Go to _Full Parameter List_, to the right you'll see buttons for saving all parameters to a file and loading them back in. Once you've saved your parameters it's probably a good idea to switch back to the _Basic_ layout.
 
+You can find the file of parameters, saved in this way when I completed initial setup, in [`arducopter.param`](arducopter.param).
+
 Upgrading the firmware
 ----------------------
 
