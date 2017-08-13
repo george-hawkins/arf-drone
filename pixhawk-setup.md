@@ -7,11 +7,11 @@ But most importantly initially, the ground control application is used to setup 
 
 There are a number of ground control applications - the two most popular are [Mission Planner](http://ardupilot.org/planner/) (MP) and [QGroundControl](http://qgroundcontrol.com/) (QGC). MP only supports the ArduPilot flight stack and only runs on Windows. QGC supports both ArduPilot and PX4 and it runs on Windows, Mac and Linux.
 
-However MP is by far the most used, so despite the fact that I use a Mac myself I'll go through setup using MP on Windows first.
-
-Note: the ArduCopter site describes another ground control application called APM Planner 2 (APMP2) as the [best one for Mac and Linux](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html#apm-planner-2-0). But this is just a plug for a project that's closely associated with ArduPilot. I found that the most common questions asked regarding it were of the form "I can do X in MP, how do I do X in APMP2?" with the answer almost invariably of the form "You can't do X in APMP2, APMP2 isn't really intended for that use case." So it seems they're not even aiming to create a full feature ground control application, it's unclear though what particular audience they are targeting.
+However MP is by far the most used, so despite the fact that I use a Mac myself I'll go through setup using MP on Windows first. You can find QGC covered [here](qgroundcontrol.md).
 
 TODO: add pointer to [`windows-vm.md`](windows-vm.md) and add note on the need to add a [USB filter](windows-vm.md#usb-filters) for the Pixhawk.
+
+Note: the ArduCopter site describes another ground control application called APM Planner 2 (APMP2) as the [best one for Mac and Linux](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html#apm-planner-2-0). But this is just a plug for a project that's closely associated with ArduPilot. I found that the most common questions asked regarding it were of the form "I can do X in MP, how do I do X in APMP2?" with the answer almost invariably of the form "You can't do X in APMP2, APMP2 isn't really intended for that use case." So it seems they're not even aiming to create a full feature ground control application, it's unclear though what particular audience they are targeting.
 
 Previously I've referred to the software running on the flight controller as the flight stack - here I refer to it as the Pixhawk firmware as this is how its referred to in MP and QGC.
 
@@ -24,7 +24,7 @@ For reasons we won't go into here Microsoft Windows has a much bigger issue than
 
 Often these devices appear to your computer as simple serial devices (the kind of thing that was common back in the days when people still used analog modems) or as generic USB storage devices. As such they can generally be connected to Mac or Linux machines without the need to install any extra drivers. This is not the case with Windows - where driver installation and setup generally forms a major part of creating a connection between your computer and one of these device for the first time.
 
-If updating the firmware on your transmitter or receiver via your computer or trying to connect a small FPV flight controller to something like [CleanFlight](http://cleanflight.com/) or [BetaFlight](https://github.com/betaflight/betaflight/blob/master/README.md) the driver setup generally involves something like [Zadig](http://zadig.akeo.ie/) (though recently an apparently more convenient/automatic solution is available in the form of the [ImpulseRC Driver Fixer Tool](http://www.dronetrest.com/t/fix-any-stm32-dfu-drivers-issues-when-flashing-betaflight-cleanflight-firmware/3603)).
+If updating the firmware on your transmitter or receiver via your computer or trying to connect a small FPV flight controller to something like [CleanFlight](http://cleanflight.com/) or [BetaFlight](https://github.com/betaflight/betaflight/blob/master/README.md) the driver setup generally involves something like [Zadig](http://zadig.akeo.ie/) (though recently an apparently more convenient/automatic solution is available, for flight controllers at least, in the form of the [ImpulseRC Driver Fixer Tool](http://www.dronetrest.com/t/fix-any-stm32-dfu-drivers-issues-when-flashing-betaflight-cleanflight-firmware/3603)).
 
 Having said all that it's nice to find out that for the Pixhawk drivers aren't an issue on any plaform, whether it's Windows, Mac or Linux. Mac and Linux don't need any additional drivers and on Windows the popular ground control applications, like MP or QGC, also automatically install the correct Pixhawk related drivers rather than leaving it to you as a separate step.
 
@@ -63,7 +63,7 @@ The above table shows all the steps of the wizard. Steps 1 and 3 are skipped if,
 
 Connect your Pixhawk to your computer via USB, start MP, go to _Initial Setup_ and click on _Wizard_. The initial steps are fairly explanatory - first you select your vehicle type (multirotor) and then the multirotor type (the simple four motor X type). Then the firmware upgrade step - make sure your Pixhawk is connected and select it from the dropdown list of connected serial device (most probably there'll only be one item in the list).
 
-I'll have to admit I never completed this step. I have no Windows machine so I run Windows as a VM within VirtualBox and while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware never worked. So instead I always loaded firmware using QGC (which is covered later and can run on Mac and Linux). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button before starting the wizard - it goes through the same initial steps but jumps the firmware steps, going straight on instead to the calibration steps.
+I'll have to admit I never completed this step. I have no Windows machine so I run Windows as a VM within VirtualBox and while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware never worked. So instead I always loaded firmware using QGC (which is covered [here](qgroundcontrol.md) and can run on Mac and Linux). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button before starting the wizard - it goes through the same initial steps but jumps the firmware steps, going straight on instead to the calibration steps.
 
 Once the Pixhawk's firmware is upgraded (either via MP or QGC) the next steps involve calibrating its sensor. Here the wizard could possibly do with a little work on its usability - one might expect the _Next_ button that appears on each page of the wizard to initiate the calibration step covered by a particular page but it will actually skip it. Each page of the wizard generally has another button to start the given calibration process (and for some steps there's also an additonal button that needs to be pressed to mark the step as completed). As we'll see being able to skip steps is important - it's essentially impossible to complete the wizard in one go, so you have to quit it and redo it at least once, skipping the steps you've already completed.
 
@@ -393,50 +393,3 @@ The Pixhawk indicates that it's not ready to arm with double flashing yellow.
 TODO: this may not be true - according to pixhawk.org "Amber - Low battery or Failsafe (Return to home, etc)" - so this may just have been because I was in RTL flight mode. Hmmm... if I power up the Pixhawk while in flight mode RTL then it flashes yellow, if I then flip to stabilize then all is good and if I flip back to RTL it (oddly) flashes blue rather than going back to yellow. So flashing yellow only happens if you boot in a stupid mode.
 
 Setting expo?
-
----
-
-QGroundControl
---------------
-
-Install QGroundControl (QGC) as per the [Download and Install](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html) section of its manual.
-
-For Mac this is no different to installing any other application. For Linux a few more step are involved.
-
-### Linux installation
-
-On the [download page](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html#ubuntu-linux) there's an easy to use AppImage (for more on AppImage see this [Ask Ubuntu question](https://askubuntu.com/q/774490)) and an old fashioned tar file. I opted for the tar file, so this involved downloading it and then:
-
-    $ sudo apt-get install espeak libespeak-dev libudev-dev libsdl2-dev
-    $ tar -xf ~/Downloads/QGroundControl.tar.bz2
-    $ cd qgroundcontrol
-    $ ./qgroundcontrol-start.sh
-
-The `apt-get` is listed in the [README](https://github.com/mavlink/qgroundcontrol#install-additional-packages) as needed to install all additionally required packages.
-
-Once up and running on Linux the first thing QGC does is point out the usual Linux permissions issue with connecting serial devices like the Pixhawk and tells you how to resolve this:
-
-    $ sudo usermod -a -G dialout $USER
-    $ sudo apt-get remove modemmanager
-
-It's a historical hangover that the `modemmanager` package is still installed by default and that the primary user is not by default a member of the `dialout` group (the group of people who can access serial-like devices like the Pixhawk). An alternative is to setup [udev](https://wiki.archlinux.org/index.php/udev) rules for the Pixhawk like so:
-
-    $ cat > 99-pixhawk.rules << EOF
-    # Pixhawk udev rules:
-    # * Make it accessable to all users and soft link it to /dev/pixhawk.
-    # * Tell the ModemManager to ignore it.
-    SUBSYSTEM=="tty", ATTRS{idVendor}=="26ac", ATTRS{idProduct}=="0011", SYMLINK+="pixhawk", MODE="0666"
-    ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2404", ENV{ID_MM_DEVICE_IGNORE}="1"
-    EOF
-    $ sudo chown root:root 99-pixhawk.rules
-    $ sudo mv 99-pixhawk.rules /etc/udev/rules.d
-
-Note: udev will automatically pick up this new rule when you plug in the Pixhawk (you only ever need to force udev to reread rules if the device in question is already plugged in or you've modified an existing rule).
-
-Even after such a rule is added QGC will still complain on startup about permissions but then go and successfully automatically connect to your Pixhawk device without issue.
-
-Using udev rules appeals to nerds like myself - adding yourself to the `dialout` group and removing the ModemManager package is probably a more sensible solution that solves the whole issue, for this device and others, once and for all. The only issue is that existing processes will not automatically pickup on the group change - the bluntest solution to this is to reboot your system (just once after invoking `usermod`).
-
-As often seems to happen with USB devices on Linux if you plug them in and out too often something eventually gets confused and they can no longer be successfully reconnected - in this situation I reset the whole USB system with a script I wrote. You can find it [here](https://gist.github.com/george-hawkins/5d93be322379afdc690b976e4b12dd71) and run it like so (assuming you've made it executable):
-
-    $ sudo ./reset-usb
