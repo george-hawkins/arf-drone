@@ -150,6 +150,17 @@ OpenTX splash screens suitable for the [Q X7](http://www.open-tx.org/screens-9x.
 
 ---
 
+Crimping
+--------
+
+HobbyKing crimper: https://hobbyking.com/en_us/hobbyking-jst-sh-connector-crimping-tool.html
+Video on how precisely to use this type of crimper: https://www.youtube.com/watch?v=MHLz1Mck_Kg
+Poster on getting things like the insulation and conductor correctly lined up: https://cdn-shop.adafruit.com/datasheets/JST_CrinpChart+(English).pdf
+
+See also bookmarks on crimping.
+
+---
+
 VHB tape
 --------
 
