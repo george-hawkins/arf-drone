@@ -1,6 +1,8 @@
 Antenna mount
 =============
 
+See [`result.md`](result.md) to see the actual mount that resulted from making the design described on this page.
+
 This directory contains two SVG file - the first [`antenna-mount-design.svg`](antenna-mount-design.svg) contains the design and includes all the work done to create all the shapes etc., while [`antenna-mount-production.svg`](antenna-mount-production.svg) is a completely cleaned up version suitable for upload to Scupteo.
 
 Note that the height of the attachment between the notches is 1mm higher than at the ends - this is so you can wrap tape around the ends to hold the antenna in place and not have the thickness of the tape interfere with plugging the attachment into the right arm.
