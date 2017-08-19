@@ -156,15 +156,7 @@ TODO: verify the claim about trim - establish the copter at a stable fixed point
 TODOs
 -----
 
-TODO: merge this expo stuff with the stuff in the "Videos and tutorials" section in [`transmitter-ongoing.md`](transmitter-ongoing.md).
-
-I asked about setting expo within ArduCopter / MP on the ArduCopter forum - https://discuss.ardupilot.org/t/set-expo-for-roll-pitch-yaw-in-arducopter-rather-than-on-tx/20009
-
-Painless360 has a nice short explanatory [video about expo](https://www.youtube.com/watch?v=ajJ3rJ1HN5Q). In this video he explains (at 4:26) why it's better to set expo on the flight controller rather than the transmitter (due to resolution issues) if you're using a flight controller. He repeats this briefly in his video on setting up models on the Q X7 at the [7:55 mark](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=475). However while you can do this in Cleanflight and Betaflight it doesn't seem to be an option with Mission Planner and ArduCopter.
-
-In the video that this page covers he also sets expos via the _Inputs_ tab at 5:23 - he puts expo of 25% on Ail, 25% on Ele and 15% on Rud (Thr is left without expo) to make controls "calmer".
-
-TODO: reference page <http://open-txu.org/home/special-interests/multirotor/opentx-apm-px4-pixhawk/> that accompanies Painless360's YouTube video.
+TODO: reference page <http://open-txu.org/home/special-interests/multirotor/opentx-apm-px4-pixhawk/> that accompanies Painless360's YouTube video on setting up flight modes.
 
 TODO: move the following section elsewhere.
 

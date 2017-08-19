@@ -151,15 +151,64 @@ TODO:
 * RCdiy covers [testing failsafe](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#Testing_Failsafe) - make sure to include a section on doing the same.
 * In the video on the ArduPilot failsafe setup page also show they [how to test things](https://youtu.be/FhKREgqjCpM?t=93), cf this with RCdiy's approach. Note: unlike here (but like RCdiy) they set up the failsafe via the receiver, also I think they're using an ancient PX4 so arming is different.
 
+Expo
+----
+
+When you use the sticks for pitch, roll and yaw you're generally not making extreme movements so the sticks stays near the center in any given direction and you rarely move any stick to its maximum or minimum position. You end up just moving the sticks within a small area around their center position. So it would be nice if we could adjust things to stretch out this small central area so that small movements around the center result in less dramatic movements in the vehicle, making it easier to control and making it less "twitchy" when responding to the small movements we're typically making.
+
+This is what expo is about - adjusting the responsiveness around the center of the sticks. Generally expo is just applied to pitch, roll and yaw while the throttle is left as it is - so for the left stick we're just talking about adjusting things for left-right movement, i.e. yaw, while for the right stick we're talking about both left-right and up-down movement, i.e. roll and pitch.
+
+Painless360 has a [nice video](https://www.youtube.com/watch?v=ajJ3rJ1HN5Q) that explains expo far better than I could. And then in a [separate video at 5:10](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=310) he explains how to set expo on the Q X7. That video covers everything clearly within a minute - so I'll just cover things briefly here.
+
+| Inputs before adjustments | AIL before adjustments | AIL with expo of 25 | Inputs after adjustments |
+|-|-|-|-|
+| ![inputs before](images/opentx-screenshots/start-inputs.png) | ![AIL before](images/opentx-screenshots/start-ail.png) | ![AIL with expo](images/opentx-screenshots/end-ail.png) | ![inputs after](images/opentx-screenshots/end-inputs.png) |
+
+From the main screen of the Q X7 you short press the MENU button to get to the _Model selection_ screen and then use the PAGE button until you get to the _Inputs_ screen. Then in turn for _Ail_, _Ele_ and _Rud_ you press and hold ENTER and select _Edit_ - on the edit screen for each you go down to _Curve_ and change the default values their (_Diff_ and 0) to _Expo_ and the desired expo value. Suggested values are as follows:
+
+| Control | Value |
+|---------|-------|
+| Ail | 25 |
+| Ele | 25 |
+| Rud | 15 |
+
+These are just values that Painless360 consistently suggests in various videos and not ones I've come to by experimentation. As noted above throttle is left unadjusted.
+
+Note: despite the name the function behind expo in OpenTX is not an exponential fuction - if you're interested take a look at [`mixer.cpp`](https://github.com/opentx/opentx/blob/2.2/radio/src/mixer.cpp), there you'll find a large comment and the actual `expou` function that's used.
+
+Loss of resolution
+------------------
+
+Painless360 says at [4:26](https://youtu.be/ajJ3rJ1HN5Q?t=266) in his video introducing the expo concept and at [7:57](https://youtu.be/NIR85KOqIAo?t=477) in his video on configuring the Q X7 that you should set up expo on the flight controller rather than the transmitter, if you can, as this avoids a loss of resolution.
+
+As it turns out you can't do this with ArduCopter. But what does he mean by loss of resolution? It's not important for our situation but let's look at it briefly.
+
+Let's just consider rudder. When the right stick is at its leftmost position it sends a PPM value of around 980 and when it's at its rightmost it sends a value of around 2000. So the range of rudder values runs from 980 to 2000.
+
+| | |
+|-|-|
+| _Before applying expo._<br>![before expo](images/opentx-screenshots/before-curve.png) | _After applying expo._<br>![after expo](images/opentx-screenshots/after-curve.png) |
+
+Above we see the graphs that we saw when setting expo on the transmitter. The x-axis is real stick movement and the y-axis is the PPM value sent by the transmitter - initially the relationship between the two is linear. However if I specify an expo of 25 then things change - the 50% of the stick movement range around the center, that used to correspond to 50% of the range of PPM values on the y-axis, now corresponds to just 40%.
+
+If we move the pitch stick from its leftmost position to its rightmost this is a movement of about 50&deg;. So if we think about the middle 50% of the range of the x-axis shown above then moving from one end to the other corresponds to a movement of about 25&deg;
+
+As already noted the range of PPM values sent by the transmitter runs from around 980 to 2000. After applying expo just 40% of the this range, i.e. 1286 to 1694, correspond to our 25&deg; of movement around the center point - whereas before expo, when things were still linear, this 40% of PPM values corresponded to 40% of total stick movement, ie. just 20&deg; of movement.
+
+So before expo an increase in the PPM value of one described a stick movement of 20&deg; / (1694 - 1286), i.e. 0.049&deg;, whereas afterwards it describes a stick movement of about 25% / (1694 - 1286), i.e. 0.0612&deg; ("about" because things are no longer completely liner even in the middle range).
+
+So this is the loss of resolution we're talking about. Note that there's a corresponding gain in resolution at the edges (where it's not particularly useful).
+
+However few would complain that 0.0612&deg; wasn't still quite fine grained enough, i.e. 16 PPM values per degree of movement vs 20 before. Obviously if you use higher expo values the difference becomes greater.
+
+One could avoid this loss of resolution by doing the adjustment in the flight controller software rather than on the transmitter - and flight stacks such as Cleanflight and Betaflight, that target racing drones, include this feature - but ArduCopter does not (I asked [a question](https://discuss.ardupilot.org/t/set-expo-for-roll-pitch-yaw-in-arducopter-rather-than-on-tx/20009) about this on the ArduCopter forum but didn't receive any replies).
+
 Videos and tutorials
 --------------------
 
 If you had any problem with the basic transmitter setup and model creation then this section contains some links to content that hopefully will make things clearer. While much of the content may not be specific to our setup, e.g. covering planes rather than quadcopters, it can still be helpful in order to see how to use OpenTX and interact with the transmitter.
 
-Painless360 has two relevant videos - in [Tips for setting up a new radio - 10:37](https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=637) he sets date and time and later at 11:39 he goes through callibration. Then in [Creating basic model types - 2:50](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=170) he creates and names a new model. However after that he does initial setup for a plane, e.g. he sets up inputs (to make the sticks less "twitchy" by changing their expo values) but then says that for a quadcopter this is normally handled via the flight controller, so you can just skip to 6:44 for his quadcopter setup. At 10:50 it's all over as far as quadcopters are concerned. He sets up an arming switch (which isn't relevant for the Pixhawk as it uses a physical safety switch combined with stick based arming) and also sets up a flight mode switch. We'll handle flight modes later using a different Painless360 video for reference  where he sets flight modes specifically for the Pixhawk using OpenTX Companion rather than the transmitter.
-
-**Update:** it doesn't actually seem to be possible to set expo with Mission Planner and ArduCopter so you shouldn't actually skip the expo section starting at 5:10.
-TODO: merge this expo stuff with the stuff in the TODOs section in [`transmitter-flight-modes-and-more.md`](transmitter-flight-modes-and-more.md).
+Painless360 has two relevant videos - in [Tips for setting up a new radio - 10:37](https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=637) he sets date and time and later at 11:39 he goes through callibration. Then in [Creating basic model types - 2:50](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=170) he creates and names a new model. Then he sets up expo (this has already been linked to above) roller. Then he briefly covers the mixer (note that the channel order shown is different to that used with the Pixhawk). From 6:44 he covers quadcopter specific setup and by 10:50 it's all over as far as quadcopters are concerned. After this point he sets up an arming switch (which isn't relevant for the Pixhawk as it uses a physical safety switch combined with stick based arming) and also sets up a flight mode switch. We'll handle flight modes later using a different Painless360 video for reference where he sets flight modes specifically for the Pixhawk using OpenTX Companion rather than the transmitter.
 
 The Flite Test team cover model creation in [Q X7 Setup and review - 16:50](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=1010). Later they bind it (which we'll come to later) to a D4R-II receiver. Most of what they cover is plane specific.
 

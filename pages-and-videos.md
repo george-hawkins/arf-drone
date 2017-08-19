@@ -86,6 +86,10 @@ The tidying up of the ESC signal wires (to the flight controller) is nicely done
 
 ---
 
+See "testing motor spin directions" section of http://ardupilot.org/copter/docs/connect-escs-and-motors.html
+
+---
+
 Assembly pages:
 
 1. [F450 as assembly example](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) on pixhawk.org.
@@ -279,6 +283,8 @@ I added some of these, plug a couple of gimbal protectors so my Shapeways models
 
 Additional misc links Aug 2017:
 
+Heat gun - links to version available via Sparkfun and Banggood - http://www.propwashed.com/heat-guns-deceptively-useful-tool/
+
 Pixhawk AliExpress: https://www.aliexpress.com/item/PX4-PIX-2-4-8-32-Bit-Flight-Controller-433-915-Telemetry-Neo-M8N-GPS-Minim/32759523206.html
 Pixhawk Banggood: https://www.banggood.com/Pixhawk-PX4-2_4_8-Flight-Controller-32-Bit-ARM-PX4FMU-PX4IO-Combo-for-Multicopters-p-1040416.html
 
@@ -293,6 +299,9 @@ You'll have to look up your own country's rules - about 100m maximum altitude fo
 
 Hot glue for insulation and support: http://www.instructables.com/id/Using-Hot-Glue-to-Insulate-and-Support-Soldering-J/
 
+Wire coloring schemes by servo manufacturer: http://www.robotplatform.com/knowledge/servo/servo_manufacturers.html
+
+3DR detailed Pixhawk manual: https://3dr.com/wp-content/uploads/2017/03/pixhawk-manual-rev7-1.pdf
 3DR detailed build guide for their DIY Quad kit with Pixhawk: https://3dr.com/wp-content/uploads/2017/03/3DR-DIY-Quad-Build-Manual-vA.pdf
 
 Mounting a GPS mast with typical four way screw hole base with tape rather than screws: http://www.thedronesmag.com/install-setup-gpscompass-unit-dji-naza-m-v2/

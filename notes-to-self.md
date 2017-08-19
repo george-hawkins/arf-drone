@@ -25,4 +25,13 @@ To scale the resulting BMPs without any smoothing:
 
     $ convert -scale 200% x.bmp y.png
 
+Or for multiple files:
+
+    for i in *.bmp
+    do
+        convert -scale 200% $i ${i%.bmp}.png
+    done
+
+The warnings can be ignored and seem to be a result of incorrect header data in the original BMPs from OpenTX.
+
 Note that BMP is a space inefficient format - even at up to 16 times multiplication the resulting PNG is still smaller than the original BMP.

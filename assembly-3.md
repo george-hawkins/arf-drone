@@ -7,6 +7,11 @@ I bought the RX8R only because the X8R was out of stock at the online store I us
 
 **Update:** The RX8R is missing the RSSI output port of the X8R (it's been repurposed as an S.BUS input port). This may be an issue if you want to output the RSSI value to the Pixhawk (so that it can forward it on via MAVLink).
 
+TODO:
+
+* See my question regarding X8R vs XSR: https://github.com/george-hawkins/arf-drone/blob/master/assembly-3.md
+* See [R-XSR on RCGroups](https://www.rcgroups.com/forums/showthread.php?2935614-FrSky-new-arrival-Full-range-ultra-mini-redundancy-receiver-R-XSR%21) - this seems to resolve the only obvious shortcoming of the XSR (other than the difficult to get to RSSI pad) which was the non-detachable antenna - now you can attach PCB antenna or the long whisker antenna of the X4R (presumable the R-XSR comes with a detachable version of the short whisker antenna of the XSR). According to [GetFPV](http://www.getfpv.com/frsky-r-xsr-2-4ghz-16ch-accst-micro-receiver-w-s-bus-cppm.html) they should be in-stock around Sept 3rd, 2017.
+
 Upgrading the receiver
 ----------------------
 
