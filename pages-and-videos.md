@@ -266,6 +266,52 @@ I added some of these, plug a couple of gimbal protectors so my Shapeways models
 
 ---
 
+Additional misc links Aug 2017:
+
+Pixhawk AliExpress: https://www.aliexpress.com/item/PX4-PIX-2-4-8-32-Bit-Flight-Controller-433-915-Telemetry-Neo-M8N-GPS-Minim/32759523206.html
+Pixhawk Banggood: https://www.banggood.com/Pixhawk-PX4-2_4_8-Flight-Controller-32-Bit-ARM-PX4FMU-PX4IO-Combo-for-Multicopters-p-1040416.html
+
+Pixhawk 3:
+
+* F450 example build - https://dev.px4.io/en/airframes_multicopter/dji_flamewheel_450.html
+* Pixhawk 3 bundle (&euro;370) - https://drotek.com/shop/en/flight-controllers/844-pixhawk-3-pro-pack.html
+
+Quadcopter orientation - getting your drone back to your when it's gone to far to tell which way it's facing: http://quadcopter101.blogspot.ch/2014/02/flight-school-6-distance-flying-keeping.html
+
+You'll have to look up your own country's rules - about 100m maximum altitude for hobbyist fliers is typical (in the US and the UK it's 120m, in Germany it's 100m and in Switzerland it's 150m).
+
+Hot glue for insulation and support: http://www.instructables.com/id/Using-Hot-Glue-to-Insulate-and-Support-Soldering-J/
+
+3DR detailed build guide for their DIY Quad kit with Pixhawk: https://3dr.com/wp-content/uploads/2017/03/3DR-DIY-Quad-Build-Manual-vA.pdf
+
+Mounting a GPS mast with typical four way screw hole base with tape rather than screws: http://www.thedronesmag.com/install-setup-gpscompass-unit-dji-naza-m-v2/
+
+GPS mounting tips: http://ardupilot.org/copter/docs/common-installing-3dr-ublox-gps-compass-module.html#mounting-the-gps-module
+
+My Electronics StackExchange question on feed lines and antenna: https://electronics.stackexchange.com/q/321893/27099
+
+Hakko distributors worldwide: https://www.hakko.com/world_network.html
+Germany: https://tbk-onlineshop.de/produkt/hakko-fx-888d-16-by/
+
+Determining the point at which your battery's voltage drops like a stone: http://diydrones.com/forum/topics/lowest-safe-voltage-per-cell-on-lipo?commentId=705844%3AComment%3A871856
+
+Small vices:
+
+* http://www.conrad.ch/ce/de/product/815880/Schraubstock-Basetech-Backenbreite-73-mm-Spann-Weite-max-55-mm?ref=list
+* https://www.bauundhobby.ch/maschinen-+-werkstatt/handwerkzeug/metallbearbeitung/schraubst%C3%B6cke/mini-schraubstock/C04010404/P4939581/de
+* https://www.bauundhobby.ch/maschinen-+-werkstatt/handwerkzeug/metallbearbeitung/schraubst%C3%B6cke/hobby-schraubstock-60x55-mm/C04010404/P3191093/de
+
+Distinguishing CW and CCW propellers: http://ardupilot.org/copter/docs/connect-escs-and-motors.html#recognizing-clockwise-and-counterclockwise-propellers
+
+Getting rid of polyurethane foam odor: http://www.doityourself.com/stry/how-to-get-rid-of-polyurethane-foam-odor
+
+Rosin paste flux:
+
+* https://www.amazon.com/Rosin-Paste-Flux-135-Jar/dp/B008ZIV85A
+* https://www.pcb-soldering.co.uk/sra-rosin-flux-paste-no-135.html
+
+---
+
 Misc links:
 
 * 1S Paraboard for charging 1S batteries - https://hobbyking.com/en_us/micro-paraboard-micro-jst-jst-ph-connectors.html
