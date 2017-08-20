@@ -5,8 +5,8 @@ The OpenTX sound files are built by the Python code in [`opentx/.../radio/util`]
 
 If you look at `tts.py` you can see that it can use a number of speech synthesizers:
 
-* SAPI and SAPI2 - the Microsoft Speech API.
-* eSpeak - a very mechanical sounding open source synthesizer.
+* SAPI and SAPI2 - the [Microsoft Speech API](https://en.wikipedia.org/wiki/Microsoft_Speech_API).
+* [eSpeak](http://espeak.sourceforge.net/) - a very mechanical sounding open source synthesizer.
 * Google - co-opts the speaking functionality of the [Google Translate](https://translate.google.com/) web service.
 
 Mac voices
