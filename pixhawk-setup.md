@@ -1,9 +1,9 @@
 Pixhawk setup
 =============
 
-In order to setup your Pixhawk you need a ground control application. Ground control applications fulfil a number of roles. Once your system is fully setup it's the software that you run on your computer to plan out routes that can be uploaded to the Pixhawk and can then be followed autonomously by your craft once it's in the air. If you've got a telemetry kit (like this [one](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/)), with a ground module that's plugged into your computer and an air module that's plugged into the flight controller on your craft, then the ground control software can track the status of your craft in-flight (showing it's location, battery level and other telemetry data) and also control it in a similar fashion to your transmitter.
+In order to setup your Pixhawk you need a ground control application. Ground control applications fulfil a number of roles. Once your system is fully setup it's the software that you run on your computer to plan out routes that can be uploaded to the Pixhawk and can then be followed autonomously by your craft once it's in the air. If you've got a telemetry kit (like this [one](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/)), made up of a ground module that's plugged into your computer and an air module that's plugged into the flight controller on your craft, then the ground control software can track the status of your craft in-flight (showing it's location, battery level and other telemetry data) and also control it in a similar fashion to your transmitter.
 
-But most importantly initially, the ground control application is used to setup and configure your flight controller. It's use after this is optional. Once you've connected your flight controller to your computer via USB you can use the ground control application to update the flight stack (either [ArduCopter](http://ardupilot.org/copter/) or [PX4](http://px4.io/) in our case), calibrate the craft's sensors and setup the flight stack (configuring things such as flight modes).
+But most importantly initially, the ground control application is used to setup and configure your flight controller. It's use after this is optional. Once you've connected your flight controller to your computer via USB you can use the ground control application to update the flight stack (either [ArduCopter](http://ardupilot.org/copter/) or [PX4](http://px4.io/) in our case), calibrate the craft's sensors and set up the flight stack (configuring things such as flight modes).
 
 There are a number of ground control applications - the two most popular are [Mission Planner](http://ardupilot.org/planner/) (MP) and [QGroundControl](http://qgroundcontrol.com/) (QGC). MP only supports the ArduPilot flight stack and only runs on Windows. QGC supports both ArduPilot and PX4 and it runs on Windows, Mac and Linux.
 
@@ -11,7 +11,7 @@ However MP is by far the most used, so despite the fact that I use a Mac myself 
 
 TODO: add pointer to [`windows-vm.md`](windows-vm.md) and add note on the need to add a [USB filter](windows-vm.md#usb-filters) for the Pixhawk.
 
-Note: the ArduCopter site describes another ground control application called APM Planner 2 (APMP2) as the [best one for Mac and Linux](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html#apm-planner-2-0). But this is just a plug for a project that's closely associated with ArduPilot. I found that the most common questions asked regarding it were of the form "I can do X in MP, how do I do X in APMP2?" with the answer almost invariably of the form "You can't do X in APMP2, APMP2 isn't really intended for that use case." So it seems they're not even aiming to create a full feature ground control application, it's unclear though what particular audience they are targeting.
+Note: the ArduCopter site describes another ground control application called APM Planner 2 (APMP2) as the [best one for Mac and Linux](http://ardupilot.org/copter/docs/common-choosing-a-ground-station.html#apm-planner-2-0). But this is just a plug for a project that's closely associated with ArduPilot. I found that the most common questions asked regarding it were of the form "I can do X in MP, how do I do X in APMP2?" with the answer almost invariably of the form "You can't do X in APMP2, APMP2 isn't really intended for that use case." So it seems they're not even aiming to create a full feature ground control application - it's unclear though what particular audience they are targeting.
 
 Previously I've referred to the software running on the flight controller as the flight stack - here I refer to it as the Pixhawk firmware as this is how its referred to in MP and QGC.
 
@@ -22,31 +22,31 @@ TL;DR on Windows all necessary drivers for the Pixhawk are installed for you whe
 
 For reasons we won't go into here Microsoft Windows has a much bigger issue than Mac or Linux with small hobbyist electronic devices that aren't backed by big corporations (who can pay up for a USB vendor ID and Windows certification).
 
-Often these devices appear to your computer as simple serial devices (the kind of thing that was common back in the days when people still used analog modems) or as generic USB storage devices. As such they can generally be connected to Mac or Linux machines without the need to install any extra drivers. This is not the case with Windows - where driver installation and setup generally forms a major part of creating a connection between your computer and one of these device for the first time.
+Often these devices appear to your computer as simple serial devices (the kind of thing that was common back in the days when people still used analog modems) or as generic USB storage devices. As such they can generally be connected to Mac or Linux machines without the need to install any extra drivers. This is not the case with Windows - here driver installation and setup generally forms a major part of creating a connection between your computer and one of these device for the first time.
 
-If updating the firmware on your transmitter or receiver via your computer or trying to connect a small FPV flight controller to something like [CleanFlight](http://cleanflight.com/) or [BetaFlight](https://github.com/betaflight/betaflight/blob/master/README.md) the driver setup generally involves something like [Zadig](http://zadig.akeo.ie/) (though recently an apparently more convenient/automatic solution is available, for flight controllers at least, in the form of the [ImpulseRC Driver Fixer Tool](http://www.dronetrest.com/t/fix-any-stm32-dfu-drivers-issues-when-flashing-betaflight-cleanflight-firmware/3603)).
+If updating the firmware on your transmitter or receiver via your computer or trying to connect a small FPV flight controller to something like [CleanFlight](http://cleanflight.com/) or [BetaFlight](https://github.com/betaflight/betaflight/blob/master/README.md) the driver setup generally involves something like [Zadig](http://zadig.akeo.ie/) on Windows (though recently an apparently more convenient/automatic solution is available, for flight controllers at least, in the form of the [ImpulseRC Driver Fixer Tool](http://www.dronetrest.com/t/fix-any-stm32-dfu-drivers-issues-when-flashing-betaflight-cleanflight-firmware/3603)).
 
-Having said all that it's nice to find out that for the Pixhawk drivers aren't an issue on any plaform, whether it's Windows, Mac or Linux. Mac and Linux don't need any additional drivers and on Windows the popular ground control applications, like MP or QGC, also automatically install the correct Pixhawk related drivers rather than leaving it to you as a separate step.
+Having said all that it's nice to find out that for the Pixhawk drivers aren't an issue on any plaform, whether it's Windows, Mac or Linux. Mac and Linux don't need any additional drivers and on Windows the popular ground control applications, like MP or QGC, automatically install the correct Pixhawk related drivers rather than leaving it to you as a separate step.
 
 Mission Planner setup
 ---------------------
 
 Download the latest MP version using the link in the [installation section](http://ardupilot.org/planner/docs/common-install-mission-planner.html) of the MP documentation (you can also browse around in the [directory](http://firmware.ardupilot.org/Tools/MissionPlanner/) containing the MP installation file if you're interested). At the time of writing (and for some time now) the EU mirror for MP is amazingly slow - it takes more than 20 minutes to download the roughtly 60MB installation file.
 
-As noted elsewhere MP also installs all necessary Pixhawk drivers so no additional driver installation is needed. When running MP for the first time is asks you if you want to enable [Altitude Angel data](https://www.altitudeangel.com/Home/Developers) - you should probably select _Yes_ as this data is needed by MP to highlight things like restricted airspaces around airports. You then have to register for a free Altitude Angel account and allow MP to access it. In the background Windows will also have popped up a Firewall dialog asking if you want to allow MP to access networks (I ticked the boxes for both private and public networks). It then asks you if you want to run the setup wizard - this will set up your Pixhawk - however I suggest skipping the wizard at this point and just let it open the normal full MP application.
+As noted already MP also installs all necessary Pixhawk drivers so no additional driver installation is needed. When running MP for the first time it asks you if you want to enable [Altitude Angel data](https://www.altitudeangel.com/Home/Developers) - you should select _Yes_ as this data is needed by MP to highlight things like restricted airspaces around airports. You then have to register for a free Altitude Angel account and allow MP to access it. In the background Windows will also have popped up a Firewall dialog asking if you want to allow MP to access networks (I ticked the boxes for both private and public networks). It then asks you if you want to run the setup wizard - to set up your Pixhawk - however I suggest skipping the wizard at this point and just let it open the normal full MP application.
 
-If you look carefully at the console output (the black window that opens in the background behind the MP splash screen) you can see the code complaining about the lack of internet access and such like when you start MP for the very first time and you haven't yet handled the just mentioned Windows Firewall dialog. So while it's probably unnecessary I'd suggest restarting straight away after this so that it can startup cleanly with all the access it expects.
+If you look carefully at the console output (the black window that opens in the background behind the MP splash screen) you can see the code complaining about the lack of internet access and such like when you start MP for the very first time and you haven't yet handled the Windows Firewall dialog. So while it's probably unnecessary I'd suggest restarting straight away after first startup so that it can startup cleanly with all the access it expects.
 
 ### Wizard start up.
 
 Once MP is up and running you can go to _Initial Setup_ and click on _Wizard_. But first it's important to know that the wizard runs in two distinct modes depending on whether you've already pressed the _Connect_ button (in the upper right of the main MP window). Assuming your Pixhawk is connected to your computer via USB then:
 
-* If you start the wizard without having pressed _Connect_ then one of the wizard steps will involve upgrading the Pixhawk firmware.
-* If you instead you press _Connect_ before starting the wizard then it will skip the firmware upgrade step.
+* If you start the wizard without having pressed _Connect_ one of the wizard steps will involve upgrading the Pixhawk firmware.
+* If you instead press _Connect_ before starting the wizard then it will skip the firmware upgrade step.
 
 The Pixhawk's firmware can only be upgraded if it's connected to your computer but not currently connected to MP itself.
 
-This is important as it turns out that you will need to rerun the wizard several times and upgrading the firmware is a time consuming step that should be done just once and then skipped during subsequent runs of the wizard. So if you've completed the firmware upgrade step and find you need to rerun the wizard always press _Connect_ first.
+This is important as it turns out that you will need to rerun the wizard at least once and upgrading the firmware is a time consuming step that should be done just once and then skipped during subsequent runs of the wizard. So if you've completed the firmware upgrade step and find you need to rerun the wizard always press _Connect_ first.
 
 ### Steps
 
@@ -57,15 +57,15 @@ This is important as it turns out that you will need to rerun the wizard several
 | _Step 8/9 - optional items._<br>![8/9](images/mission-planner/steps/step-08.png) | _Step 10A - transmitter._<br>![10A](images/mission-planner/steps/step-10a.png) | _Step 10B - transmitter._<br>![10B](images/mission-planner/steps/step-10b.png) | _Step 11 - flight modes._<br>![11](images/mission-planner/steps/step-11.png) |
 | _Step 12 - verification._<br>![12](images/mission-planner/steps/step-12.png) | _Step 13 - failsafes._<br>![13](images/mission-planner/steps/step-13.png) | _Step 14 - geofence._<br>![14](images/mission-planner/steps/step-14.png) | _Step 15 - useful links._<br>![15](images/mission-planner/steps/step-15.png) |
 
-The above table shows all the steps of the wizard. Steps 1 and 3 are skipped if, as described above, you've pressed _Connect_ before starting the wizard.
+The above table shows all the steps of the wizard. Steps 1 and 3 are skipped if, as described above, you've pressed _Connect_ before starting the wizard. If you're confused about any step below the pictures above show the correctly selected options for all steps.
 
 ### Getting started
 
-Connect your Pixhawk to your computer via USB, start MP, go to _Initial Setup_ and click on _Wizard_. The initial steps are fairly explanatory - first you select your vehicle type (multirotor) and then the multirotor type (the simple four motor X type). Then the firmware upgrade step - make sure your Pixhawk is connected and select it from the dropdown list of connected serial device (most probably there'll only be one item in the list).
+Connect your Pixhawk to your computer via USB, start MP, go to _Initial Setup_ and click on _Wizard_. The initial steps are fairly self explanatory - first you select your vehicle type (multirotor) and then the multirotor type (the simple four motor X type). Then the firmware upgrade step - make sure your Pixhawk is connected and select it from the dropdown list of connected serial device (most probably there'll only be one item in the list).
 
-I'll have to admit I never completed this step. I have no Windows machine so I run Windows as a VM within VirtualBox and while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware never worked. So instead I always loaded firmware using QGC (which is covered [here](qgroundcontrol.md) and can run on Mac and Linux). Once the latest firmware is installed you can cause the MP wizard to skip the firmware step by first clicking the _Connect_ button before starting the wizard - it goes through the same initial steps but jumps the firmware steps, going straight on instead to the calibration steps.
+I'll have to admit I never completed this step. I have no Windows machine so I run Windows as a VM within VirtualBox and while all other aspects of using MP with VirtualBox worked perfectly, trying to install firmware never worked. So instead I always loaded firmware using QGC (which is covered [here](qgroundcontrol.md) and can run on Mac and Linux). Once the latest firmware is installed click the _Connect_ button before starting the wizard - it goes through the same initial steps but skips the firmware step.
 
-Once the Pixhawk's firmware is upgraded (either via MP or QGC) the next steps involve calibrating its sensor. Here the wizard could possibly do with a little work on its usability - one might expect the _Next_ button that appears on each page of the wizard to initiate the calibration step covered by a particular page but it will actually skip it. Each page of the wizard generally has another button to start the given calibration process (and for some steps there's also an additonal button that needs to be pressed to mark the step as completed). As we'll see being able to skip steps is important - it's essentially impossible to complete the wizard in one go, so you have to quit it and redo it at least once, skipping the steps you've already completed.
+Once the Pixhawk's firmware is upgraded (either via MP or QGC) the next steps involve calibrating the Pixhawk's sensors. Here the wizard could possibly do with a little work on its usability - one might expect the _Next_ button that appears on each page of the wizard to initiate the calibration step covered by a particular page but it will actually skip it. Each page of the wizard generally has another button to start the given calibration process (and for some steps there's also an additonal button that needs to be pressed to mark the step as completed). As we'll see being able to skip steps is important - it's essentially impossible to complete the wizard in one go, so you have to quit it and redo it at least once, skipping the steps you've already completed.
 
 OK - on with the calibration steps...
 
@@ -75,13 +75,13 @@ _Accelerometer calibration - flat, left, right, nose, tail and back._
 <img width="256" src="images/mission-planner/accel/flat.jpg"> <img height="189.5" src="images/mission-planner/accel/left.jpg"> <img height="189.5" src="images/mission-planner/accel/right.jpg">  
 <img width="256" src="images/mission-planner/accel/nose.jpg"> <img width="256" src="images/mission-planner/accel/tail.jpg"> <img width="256" src="images/mission-planner/accel/back.jpg">
 
-As instructed you have to place you system in turn flat, on its left, right, nose, tail and back, pressing a key after each step. Each time I tried this I eventually got the message "3D Accel calibration needed" at some point in the process - I had to look at the [source code](https://github.com/ArduPilot/ardupilot/blob/126296b/libraries/AP_Arming/AP_Arming.cpp#L192) to detemine if this really was an error, it is - a critical one indicating that the calibration has failed. I just restarted and restarted this step, trying to make the transition between steps - left side to right side etc. - as smooth as possible until eventually the calibration completed without error.
+As instructed you have to place you system in turn flat, on its left, right, nose, tail and back, pressing a key after each step. Each time I tried this I eventually got the message "3D Accel calibration needed" at some point in the process - I had to look at the [source code](https://github.com/ArduPilot/ardupilot/blob/126296b/libraries/AP_Arming/AP_Arming.cpp#L192) to detemine if this really is an error, it is - a critical one indicating that the calibration has failed. I just restarted and restarted this step, trying to make the transition between steps - left side to right side etc. - as smooth as possible until eventually the calibration completed without error.
 
 Note: once you've calibrated the accelerometer once recalibrating always goes much smoother. I.e. calibrating at this point means that any subsequent recalibration, once all the components are mounted in their final position, will go much smoother. Doing the equivalent of a factory reset (switching back and forward between another firmware, e.g. PX4 or an Ardupilot firmware for a different vehicle type, or doing a [parameter reset](http://ardupilot.org/copter/docs/common-parameter-reset.html)) will undo this affect.
 
 ### Compass calibration
 
-This is kind of a hard one to explain - you're probably best off watching the [compass calibration video](https://www.youtube.com/watch?v=DmsueBS0J3E) that they link to. Essentially you want to completely rotate your Pixhawk about its x, y and z axes. If you're connected via USB then the longer and more flexible your USB cable the easier this will be. As we'll see much later you can also connect to your ground control application wirelessly - which makes this kind of thing easier. In the video the presenter rotates the craft quite slowly in a fixed order. You don't have to be quite so disciplined - you can even just rotate your craft every which way, the calibration logic doesn't care what order the data points come in and won't give up recording data points until it's satisfied that it's got what it needs, i.e. you've rotated the craft into every position of interest. Having said that you'll be quicker consciously rotating the craft through 360&deg; for each axis, but the order of the axes isn't important and you'll probably find you generate enough data points after rotating about just two axes.
+This is kind of a hard one to explain - you're probably best off watching the [compass calibration video](https://www.youtube.com/watch?v=DmsueBS0J3E) that they link to. Essentially you want to completely rotate your Pixhawk about its x, y and z axes. The longer and more flexible your USB cable the easier this will be. As we'll see much later you can also connect to your ground control application wirelessly - which makes this kind of thing easier. In the video the presenter rotates the craft quite slowly in a fixed order. You don't have to be quite so disciplined - you can even just rotate your craft every which way, the calibration logic doesn't care what order the data points come in and won't give up recording data points until it's satisfied that it's got what it needs, i.e. you've rotated the craft into every position of interest. Having said that you'll be quicker consciously rotating the craft through 360&deg; for each axis, but the order of the axes isn't important and you may find you generate enough data points after rotating about just two axes.
 
 If you're interested in what's going on here Adafruit have a nice tutorial on the electronics involved and this calibration step equates to what they cover in the [magnetometer calibration section](https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout?view=all#magnetometer-calibration).
 
@@ -100,15 +100,15 @@ Assuming you've bound your transmitter to your receiver (as covered previously),
 
 When you move the throttle to the lower-right corner you may hear an annoyed beep from the Pixhawk if you keep it there more than momentarily - this is because this stick position is used to arm the flight controller and the beep is telling you that (unsurprisingly) it's currently not in a state to be armed.
 
-Once you're finished with the sticks, flip through the switches you've set up to change flight modes, go from flight mode 1 to flight mode 6 - you should see a lower red bar established for radio channel 5 and the high bar getting higher as you flip up through the modes to mode 6. Make sure to press the _Click when Done_ button to wrap up - it will warn you to return you throttle to its lowest position (but doesn't remind you to return your switches to select flight mode 1 which is necessary in order to be able to arm later).
+Once you're finished with the sticks, flip through the switches you've set up to change flight modes, go from flight mode 1 to flight mode 6 - you should see a lower red bar established for radio channel 5 and the high bar getting higher as you flip up through the modes to mode 6. Make sure to press the _Click when Done_ button to wrap up - it will then warn you to return you throttle to its lowest position (but doesn't remind you to return your switches to select flight mode 1 which is necessary in order to be able to arm later).
 
 ### Flight modes
 
-For a great introduction to flight modes see Painless360's [introduction to flight modes video](https://www.youtube.com/watch?v=PC2io5WPTzM). This gives you a far clearer overview of all the major flight modes than the ArduCopter documentation and points out little details that you might miss otherwise, e.g. altitude hold does not disable altitude adjustment but it does dramatically change how the throttle behaves, instead of directly controlling thrust the throttle range is divided into three broad bands that corresponding to descend, hold altitude and ascend, i.e. it becomes a three way switch for vertical direction.
+For a great introduction to flight modes see Painless360's [introduction to flight modes video](https://www.youtube.com/watch?v=PC2io5WPTzM). This gives you a far clearer overview of all the major flight modes than the ArduCopter documentation and points out little details that you might miss otherwise, e.g. altitude hold does not disable altitude adjustment but it does dramatically change how the throttle behaves - instead of directly controlling thrust the throttle range is divided into three broad bands that corresponding to descend, hold altitude and ascend, i.e. it becomes a three way switch for vertical direction.
 
 When we set up the transmitter we went to a lot of trouble to set up switches so that we could switch between six flight modes. Now we can choose what those six modes are. For a full list of flight modes see the ArduCopter [flight modes page](http://ardupilot.org/copter/docs/flight-modes.html) - there are quite a number. But there are five standard recommended flight modes - [stabilize](http://ardupilot.org/copter/docs/stabilize-mode.html), [altitude hold](http://ardupilot.org/copter/docs/altholdmode.html), [loiter](http://ardupilot.org/copter/docs/loiter-mode.html), [return to launch](http://ardupilot.org/copter/docs/rtl-mode.html) (RTL) and [auto](http://ardupilot.org/copter/docs/auto-mode.html). So I configured up these five modes and then chose the very dull mode [land](http://ardupilot.org/copter/docs/land-mode.html) as my sixth choice (as apparently it can do a much smoother job of landing than most beginners).
 
-**Update:** I replaced loiter with position hold, this is a newer mode that's similar to loiter but allows more natural stick control, i.e. you can fly the craft in this mode but if you release the sticks it comes to a stop and holds its position, and the throttle behaves as it does in altitude hold.
+**Update:** I replaced loiter with [position hold](http://ardupilot.org/copter/docs/poshold-mode.html), this is a newer mode that's similar to loiter but allows more natural stick control, i.e. you can fly the craft in this mode but if you release the sticks it comes to a stop and holds its position, and the throttle behaves as it does in altitude hold.
 
 The other available flight modes are related to things like more agressive and sporty flying styles and more obscure use cases - however [circle](http://ardupilot.org/copter/docs/circle-mode.html) looks interesting if you want to circle a point with a camera and [guided](http://ardupilot.org/copter/docs/flight-modes.html) is relevant if you want to control the craft in-flight from a ground control application. One mode we'll be coming back to later is [auto-tune](http://ardupilot.org/copter/docs/autotune.html) - there are many tunable parameters that affect how the craft flies, auto-tune causes the craft to put itself through various maneuvers and by seeing how it behaves it tries to automatically determine the optimal values for these tunable parameters.
 
@@ -130,13 +130,13 @@ Now you've done all the basic steps that need to be completed before the flight 
 _Calibration complete but no GPS._  
 ![wizard - no GPS](images/mission-planner/wizard-no-gps.png)
 
-If e.g. "Verify RC" is still red you may simply have forgotten to press the _Click when Done_ button that's part of that step. Assuming you've been doing all this indoors then "Verify GPS" will be red. If you place the GPS module such that it's got a clear view of the sky then it will eventually acquite a GPS fix and "Verify GPS" will go green. But there's no need to do that just yet - there are more problems than the GPS that will prevent you completing the most important part of this step - arming the flight controller (or autopilot as it's referred to here).
+If e.g. _Verify RC_ is still red you may simply have forgotten to press the _Click when Done_ button that's part of that step. Assuming you've been doing all this indoors then _Verify GPS_ will be red. If you place the GPS module such that it's got a clear view of the sky then it will eventually acquite a GPS fix and _Verify GPS_ will go green. But there's no need to do that just yet - there are more problems than the GPS that will prevent you completing the most important part of this step - arming the flight controller (or autopilot as it's referred to here).
 
-What is arming? Arming is a safety element - only once the vehicle is an armed stated will moving the throttle cause the propellers to spin. Being hit by a spinning propeller is very painful even with the smallest quadcopters and can result in a serious accident with larger ones (like the one here). Having the vehicle in a disarmed state prevents you accidentally knocking the throttle and starting the propellers while you're getting things ready before take off.
+What is arming? Arming is a safety element - only once the vehicle is in an armed state will moving the throttle cause the propellers to spin. Being hit by a spinning propeller is painful even with the smallest quadcopters and can result in serious injury with larger ones (like the one here). Having the vehicle in a disarmed state prevents you accidentally knocking the throttle and starting the propellers while you're getting things ready before take off.
 
 Arming involves two steps - we'll come to the second step in a while but the first step involves moving the throttle to the lower right corner and holding it there for 5 seconds. If you try this now you'll hear the Pixhawk beep twice indicating arming failure.
 
-Unfortunately it's impossible to diagnose arming failure here and there are a number of issues that will need to be overcome before you can arm. So quit out of the wizard at this point and switch from the _Initial Setup_ view to the _Flight Data_ view where its much easier to see why arming has failed.
+Unfortunately it's impossible to diagnose arming failure here in the wizard and there are a number of issues that will need to be overcome before you can arm. So quit out of the wizard at this point and switch from the _Initial Setup_ view to the _Flight Data_ view where its much easier to see why arming has failed.
 
 ### Arming
 
@@ -166,7 +166,7 @@ Once you know the the lowest throttle value, go from _Radio Calibration_ to _Fai
 _Decrease the FS Pwn value._  
 ![set FS_THR_VALUE](images/mission-planner/arming/1c-set-fs_thr_value.png)
 
-Now try arming again. The next failure reason is actually a result of running the wizard! The Pixhawk has to be rebooted in order to pick up the new accelerometer values resulting from the accelerometer calibration step. So press the _Disconnect_ button (upper right) in MP and unplug the Pixhawk and plug it back in to reboot it, once its ready again press the _Connect_ button in MP.
+Now try arming again. The next failure reason is actually a result of running the wizard! The Pixhawk has to be rebooted in order to pick up the new accelerometer values resulting from the accelerometer calibration step. So press the _Disconnect_ button (upper right) in MP and unplug the Pixhawk and plug it back in to reboot it, once it's ready again press the _Connect_ button in MP.
 
 _Reboot required after calibration._  
 <img width="512" src="images/mission-planner/arming/2-calibration-reboot.png">
@@ -176,7 +176,7 @@ Now try arming again. This time there's no additional explanation shown for the 
 _No GPS fix._  
 <img width="512" src="images/mission-planner/arming/3-gps-fix.png">
 
-Even once it has an inital fix it can take a while longer to get a satisfactorily accurate fix. If you ever had an old Garmin or similar handheld GPS unit, you'll remember the initial large circle around your initial position getting smaller and smaller as it acquired signals from further satellites and could gradually narrow down your position.
+Even once it has an inital fix it can take a while longer to get a satisfactorily accurate fix. If you ever had an old Garmin or similar handheld GPS unit, you'll remember the initial large circle around your position getting smaller and smaller as it acquired signals from further satellites and could gradually narrow down your position.
 
 So despite a GPS fix I sometimes saw further arming failures that were down to it not yet having an accurate enough fix. The reasons shown in these cases included "Need 3D Fix" - which is clear enough, "check fence" - this isn't quite as clear, if you've got geofencing enabled (we'll come to that later) then it needs a good initial fix to define the bounds of the geofenced region, and lastly I sometimes got "GPS speed error 1.4 (needs 1.0)" - this is the most obscure and I'm not really sure what it means (perhaps that the GPS is not yet sure that the craft isn't moving). In all cases I just had to wait further until the GPS acquired a suitably accurate fix. Sometimes though this wait can be exaperatingly long and it can be useful to see more about what's going on - there's a separate [GPS section](#gps) later that covers this.
 
@@ -185,7 +185,7 @@ Once you've got a good GPS fix you're almost there - try arming again. It should
 _Safety switch needs to be pressed._  
 <img width="512" src="images/mission-planner/arming/4-safety-switch.png">
 
-Once this is done you can try arming one more time - hopefully finally this time it will be succeed. On success you'll hear a long single beep. Once armed it will quickly revert to disarmed if just left sitting on the ground. So up the throttle to make it think it's taking off, but even this won't fool it forever and it will eventually still work out that it's on land and disarm.
+When this is done you can try arming one more time - hopefully finally this time it will be succeed. On success you'll hear a long single beep. Once armed it will quickly revert to disarmed if just left sitting on the ground. So up the throttle to make it think it's taking off, but even this won't fool it forever and it will eventually still work out that it's on land and disarm.
 
 _Successfully armed._  
 <img width="512" src="images/mission-planner/arming/5-armed.png">
@@ -200,7 +200,7 @@ If the main LED is flashing blue this indicates that everything is good so far b
 
 ### Return to the wizard
 
-Once arming has been completed successfully return to the wizard and skip through the inital steps until you return to the _Verify_ step. You always have to complete the initial frame type and layout steps and see the [bugs section](#bugs) for a issue with skipping the battery monitor section.
+Once arming has been completed successfully return to the wizard and skip through the inital steps until you return to the _Verify_ step. You always have to complete the initial frame type and layout steps and see the [bugs section](#bugs) later for an issue with skipping the battery monitor section.
 
 Once you're back at the _Verify_ step all items will now be green if you left the vehicle armed before restarting the wizard - if you disarmed first then you should be able to simply arm the vehicle now with the throttle and complete all the items in this step.
 
@@ -209,7 +209,7 @@ _Verification complete._
 
 ### Failsafes
 
-Failsafe actions are actions that the flight controller will automatically take if certain conditions occur. We can configure actions to occur when the battery level falls too low, when contact is lost with the ground control station (GCS) and when contact is lost with the transmitter.
+The next step covers failsafes - failsafe actions are actions that the flight controller will automatically take if certain conditions occur. We can configure actions to occur when the battery level falls too low, when contact is lost with the ground control station (GCS) and when contact is lost with the transmitter.
 
 The only failsafe we'll configure at this point is what to do when contact is lost with the transmitter - the options are RTL, land and continue mission in auto. There's no choice that's right for every situation but RTL is probably the most appropriate - assuming the failure is due to distance (rather than equipment failure) returning to the point of takeoff should quickly bring the craft back into transmitter range (at which point one can just let it complete the RTL sequence or retake control).
 
@@ -222,7 +222,7 @@ _Failsafes._
 
 ### Geofence
 
-Geofence is the final setup step. Geofence defines a virtual cyclinder, centered on the point of takeoff, beyond which your vehicle will not fly. This prevents the vehicle getting too far away from you. By default geofence is disabled - I chose to enable it while leaving all the other geofence related settings shown at their default values. You may want to increase the values like max. radius once you're happy with longer range missions.
+Geofence is the final setup step. Geofence defines a virtual cyclinder, centered on the point of takeoff, beyond which your vehicle will not fly. This prevents the vehicle getting too far away from you. By default geofence is disabled - I chose to enable it while leaving all the other geofence related settings at their default values. You may want to increase the values like max. radius once you're happy with longer range missions.
 
 Note: in many jurisdictions there are limits on how high consumer drones are allowed to fly so your max. altitude should always be less than this.
 
@@ -230,7 +230,7 @@ Note: in many jurisdictions there are limits on how high consumer drones are all
 
 ### Completing the wizard
 
-This final two steps are simply a page of useful links and the act of simply pressing the _Finish_ button. That's the wizard done and the basic setup for your flight controller completed. But there are a few more things to check that are covered by the following sections:
+This final two steps are simply a page of useful links and the act of pressing the _Finish_ button. That's the wizard done and the basic setup for your flight controller completed. But there are a few more things to check that are covered by the following sections:
 
 * Bugs - check that the wizard steps worked as expected.
 * Transmitter failsafe - check that the transmitter failsafe really works.
@@ -259,7 +259,7 @@ _Correct failsafe settings._
 
 This is related to issue [#1624](https://github.com/ArduPilot/MissionPlanner/issues/1624) whereby the failsafe setttings shown in the wizard may not be in sync with those displayed outside the wizard in the _FailSafe_ section.
 
-The only other issue I logged was a minor cosmetic one - issue [#1622](https://github.com/ArduPilot/MissionPlanner/issues/1624) - related to the old "DistToMAV" appearing instead of the more intuitive replacement "Dist to Home" under certain circumstances.
+The only other issue I logged was a minor cosmetic one - issue [#1622](https://github.com/ArduPilot/MissionPlanner/issues/1624) - related to the old "DistToMAV" text appearing instead of the more intuitive replacement "Dist to Home" under certain circumstances.
 
 Testing the transmitter failsafe
 --------------------------------
@@ -296,7 +296,7 @@ Make sure your Pixhawk setup is plugged in and connected to MP, then go to _Mand
 _Throttle down and pitch up._  
 <img height="512" src="images/mission-planner/pitch-up-throttle-down.jpg">
 
-Then look at the bars for _Throttle_ and _Pitch_ in MP. _Throttle_ is low, as you'd expect, and pitch should be low as result having inverted it when setting up the transmitter.
+Then look at the bars for _Throttle_ and _Pitch_ in MP. _Throttle_ is low, as you'd expect, and pitch should be low as a result of having inverted it when setting up the transmitter.
 
 _Throttle and pitch are both low._  
 ![pictch reversed](images/mission-planner/pitch-reversed.png)
@@ -340,7 +340,7 @@ _Unsquashed flight data tabs._
 GPS
 ---
 
-If you go to the _PreFlight_ tab you can see a count of the number of satellites that the GPS unit can currently see. This gives you some clue as to the current state but acquiring a GPS fix can often be very slow and it can be useful to get more insight into what's going on with the GPS unit.
+If you go to the _PreFlight_ tab, mentioned in the previous section, you can see a count of the number of satellites that the GPS unit can currently see. This gives you some clue as to the current state but acquiring a GPS fix can often be very slow and it can be useful to get more insight into what's going on with the GPS unit.
 
 If you go to the _Quick_ tab you'll see a preselected set of values that summarize the current state of the craft.
 
@@ -365,9 +365,9 @@ Assuming the GPS unit hasn't yet acquired any kind of fix you'll see an initial 
 | 6 | `GPS_FIX_TYPE_RTK_FIXED` | RTK Fixed, 3D position |
 | 7 | `GPS_FIX_TYPE_STATIC`    | Static fixed, typically used for base stations |
 
-So 1 means "no position information, GPS is connected". What about HDOP? This sounds complicated but it's actually the most useful bit of information and it's the value the flight controller uses to determine if the GPS measurements are accurate enough to be relied on. DOP stands for dilution of precision and you can find a full explanation of [DOP on Wikipedia](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) - HDOP is horizontal DOP. The important thing is to be able to interpret its value - the Wikipedia page contains a clear [table](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)#Meaning_of_DOP_Values) covering this. Basically you want the HDOP value to drop to 1.4 or lower.
+So 1 means "no position information, GPS is connected". What about HDOP? This sounds complicated but it's actually the most useful bit of information and it's the value the flight controller uses to determine if the GPS measurements are accurate enough to be relied on. DOP stands for dilution of precision and you can find a full explanation of [DOP on Wikipedia](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) - HDOP is horizontal DOP. The important thing is to be able to interpret its value - the Wikipedia page contains [a clear table](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)#Meaning_of_DOP_Values) covering this. Basically you want the HDOP value to drop to 1.4 or lower.
 
-If you place the GPS unit somewhere it can acquire a lock (in my case out on a windowsill) then you'll eventually see the satellite count tick up from zero. You need at least four satellites for a 3D fix. So here we see the GPS status has switched from 1 to 3, i.e. it now has a "3D position", but the satellite count is still low and the HDOP value isn't good enough yet.
+If you place the GPS unit somewhere where it can acquire a lock (in my case out on a windowsill) then you'll eventually see the satellite count tick up from zero. You need at least four satellites for a 3D fix. So here we see the GPS status has switched from 1 to 3, i.e. it now has a "3D position", but the satellite count is still low and the HDOP value isn't good enough yet.
 
 _Initial GPS lock acquired._  
 ![GPS lock acquired](images/mission-planner/gps/gps-lock.png)
@@ -401,15 +401,15 @@ This final section is just for some fairly unimportant additional notes I made w
 
 #### Optional hardware
 
-There are a lot of items under the _Optional Hardware_ section in MP. The only item that we've configured that appears there is the battery monitor. However later, after our initial flights, we'll look at interacting with the vehicle in-flight from MP, this will involve another piece of optional hardware - a SiK radio.
+There are a lot of items under the _Optional Hardware_ section in MP. The only item that we've configured that appears here is the battery monitor. However later, after our initial flights, we'll look at interacting with the vehicle in-flight from MP, this will involve another piece of optional hardware - a SiK radio.
 
-Note: the K in SiK is for kilo, as in 1000, as the chip in the radio is a SiLabs Si1000 (from the ["what does SiK mean" section](https://github.com/ArduPilot/SiK#what-does-sik-mean) of the SiK firmware README).
+Note: the K in SiK is for kilo, as in 1000, as the chip in the radio is a SiLabs Si1000 (from the ["what does SiK mean" section](https://github.com/ArduPilot/SiK#what-does-sik-mean) of the SiK firmware README - where they also note that the K should really be lowercase).
 
 #### Wizard hangs
 
 Usually I could quit out of the wizard by pressing the standard close (x) button of its window, but sometimes this did nothing and I had to kill MP with the Task Manager.
 
-#### Unconfigure state
+#### Unconfigured state
 
 When you connect a factory fresh or factory reset Pixhawk to QGC for the first time it flags up that various things that need to be configured (perhaps overly forcefully with its aggressive audio alerts). In contrast there's little in MP flagging up the things that have yet to be setup - the one place you can look is the _Messages_ tab under the HUD.  Here you can see that the accelerometer and compass are not yet calibrated and that the `FRAME_CLASS`, i.e. the drone type (quad, hexa etc.), has not yet been set.
 
@@ -428,7 +428,7 @@ Under _Basic Tuning_ there are three sliders:
 * _Roll/Pitch Sensitivity_ - this adjusts `ATC_RAT_PIT_P`, `ATC_RAT_PIT_I`, `ATC_RAT_RLL_P` and `ATC_RAT_RLL_I`. These appear as the P and I values for pitch and roll under _Extended Tuning_.
 * _Climb Sensitivity_ - this adjusts `ACCEL_Z_P` and `ACCEL_Z_I`. These appear as the throttle acceleration P and I values under _Extended Tuning_.
 
-By default the _Roll/Pitch Sensitivity_ slider is at 0.135 - moving it causes both the pitch and roll P and I values to update to the current slider value. This is a little odd as initially the P values are 0.135 (matching the slider) but the the I values are 0.09 - so dragging the slider to some other value and then back to 0.135 will not restore thing to the way they were originally - the I values will end up at 0.135 rather than back at 0.09.
+By default the _Roll/Pitch Sensitivity_ slider is at 0.135 - moving it causes both the pitch and roll P and I values to update to the current slider value. This is a little odd as the initial P values are 0.135 (matching the slider) but the I values are 0.09 - so dragging the slider to some other value and then back to 0.135 will not restore thing to the way they were originally - the I values will end up at 0.135 rather than back at 0.09.
 
 Under _Extended Tuning_ there are far more configurable parameters. The following images show the default values seen in _Basic Tuning_ and _Extended Tuning_ after the setup described in this page:
 
