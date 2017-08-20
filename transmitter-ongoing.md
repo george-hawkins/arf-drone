@@ -15,7 +15,7 @@ On your transmitter you have to create models - each model corresponds to the on
 The transmitter comes with one model, called MODEL01, already setup - when you turn on the transmitter you can see in the main screen that it's the currently selected model.
 
 _Main screen before any setup._  
-<img width="256" src="images/opentx-screenshots/before-setup.bmp">
+![before setup](images/opentx-screenshots/before-setup.png)
 
 Configuration
 -------------
@@ -27,7 +27,7 @@ In this section we're just going to:
 * Set date and time for the transmitter.
 * Set its county code.
 * Set the receiver channel order.
-* Callibrate the sticks and pots.
+* Calibrate the sticks and pots.
 * Create a new model.
 * Set the model name.
 * Set the model's failsafe setting.
@@ -35,67 +35,67 @@ In this section we're just going to:
 To get started long press MENU to get to the _Radio setup_ screen and set the current date and time.
 
 _Set date and time._  
-<img width="256" src="images/opentx-screenshots/date-and-time.bmp">
+![date and time](images/opentx-screenshots/date-and-time.png)
 
 Then use the dial to navigate downwards and set the country code if necessary. It defaults to US, I set it to EU. This tells the transmitter to comply with the radio spectrum regulations that apply in your region. The low level radio firmware is already region specific and should behave appropriately for that region anyway so this setting isn't as important as it sounds.
 
 _Set country code._  
-<img width="256" src="images/opentx-screenshots/country-code.bmp">
+![country code](images/opentx-screenshots/country-code.png)
 
 Now navigate down further to the bottom of the screen. The last two entries are _Rx channel ord_ and _Mode_. We already covered mode when setting up the sticks - we're using mode 2 and default value of _Mode_ should already match this. However we do have to change _Rx channel ord_ (by default it's set to _TAER_), change this to _AETR_. The next section down below explains what this means.
 
 _Set RX channel order._  
-<img width="256" src="images/opentx-screenshots/rx-channel-ord.bmp">
+![rx channel ord](images/opentx-screenshots/rx-channel-ord.png)
 
-Then use PAGE to get to the _Callibration_ screen and re-callibrate the sticks and pots (this has been covered previously). Remember to set the pots to their mid position before starting.
+Then use PAGE to get to the _Calibration_ screen and re-calibrate the sticks and pots (this has been covered previously). Remember to set the pots to their mid position before starting.
 
-_Callibration._  
-<img width="256" src="images/opentx-screenshots/callibration.bmp">
+_Calibration._  
+![calibration](images/opentx-screenshots/calibration.png)
 
 Now onto creating a model. Press EXIT to get back to the main screen then short press MENU to get to the _Model selection_ screen. You can either modify the existing MODEL01 or create a completely new model. To create a new model turn the dial to select an empty slot, e.g. 02, and press ENTER and select _Create model_.
 
 _Create a new model._  
-<img width="256" src="images/opentx-screenshots/create-model-1.bmp">
+![create model-1](images/opentx-screenshots/create-model-1.png)
 
 The new model is initially just called MODEL02, the asterisk beside it indicates that it's the currently selected model.
 
 _New model with default name._  
-<img width="256" src="images/opentx-screenshots/create-model-2.bmp">
+![create model 2](images/opentx-screenshots/create-model-2.png)
 
 Now press PAGE and update the model name to something more informative, e.g. "F450 Pix". Long hold ENTER to get a capital letter.
 
 _Set model name._  
-<img width="256" src="images/opentx-screenshots/model-name.bmp">
+![model name](images/opentx-screenshots/model-name.png)
 
 Use the dial to scroll through all the other options until you reach failsafe. Set it to _No pulses_, we'll come to what this means later.
 
 _No pulses failsafe._  
-<img width="256" src="images/opentx-screenshots/failsafe.bmp">
+![failsafe](images/opentx-screenshots/failsafe.png)
 
 That's it - setup is done for the moment. If you return to the main screen you'll see that the name of the newly created model is now shown as selected. If you play with the sticks and switches you'll see the screen update in response.
 
 _Main screen with new model selected._  
-<img width="256" src="images/opentx-screenshots/main-screen-p1-top.bmp">
+![main screen p1 top](images/opentx-screenshots/main-screen-p1-top.png)
 
 If you accidentally turn the dial on the main screen you get to two mysterious rows of dashes - just dial back up to get out of here. **Update:** if you configure six flight modes (as we do later) then you'll see one of the first six dots here highlighted according to the currently selected flight mode (so as there are 64 dots does it really support 64 flight modes or are some for something else?). Even then these dots seem of limited use (could one really distinguish between the 15th and 16th dot being highlighted) and anyway the name assigned to the current flight mode is shown in the upper half of the main screen which seems more informative than these dots.
 
 _Main screen - lower half._  
-<img width="256" src="images/opentx-screenshots/main-screen-p1-bottom.bmp">
+![main screen p1 bottom](images/opentx-screenshots/main-screen-p1-bottom.png)
 
 If you press PAGE you'll get to a screen that shows the transmitter's channels. These are essentially the set of values that the transmitter will send to the receiver. Initially just the sticks are bound to channels, i.e. only the stick states and nothing else will be sent. Move the sticks and see how the bars of this screen react.
 
 _Main screen - page 2, showing channels 1 to 8._  
-<img width="256" src="images/opentx-screenshots/main-screen-p2-ch1-8.bmp">
+![main screen p2 ch1 8](images/opentx-screenshots/main-screen-p2-ch1-8.png)
 
 The transmitter supports up to 32 channels (16 using the standard internal RF module and 16 more if you add an additional external RF module), initially bars for channels 1 to 8 are shown. Turn the dial and you'll see the topmost bar change to indicate that channels 9 to 16 are now showing, turn it further to see channels 17 to 24 and so on. As nothing is bound to these channels there's nothing really to see.
 
 _Main screen - page 2, showing channels 9 to 16._  
-<img width="256" src="images/opentx-screenshots/main-screen-p2-ch9-16.bmp">
+![main screen p2 ch9 16](images/opentx-screenshots/main-screen-p2-ch9-16.png)
 
 If you press the PAGE button again you'll get to the same channel information but this time displayed as numbers rather than bars.
 
 _Main screen - page 3._  
-<img width="256" src="images/opentx-screenshots/main-screen-p3.bmp">
+![main screen p3](images/opentx-screenshots/main-screen-p3.png)
 
 Receiver channel order
 ----------------------
@@ -131,7 +131,7 @@ Note: as discussed elsewhere the names elevator, aileron, rudder and throttle te
 When you create a new model the controls are initially mapped to channels according to the current value of _Rx channel ord_. If you go to the _Mixer_ screen for your model you can see the current mapping between channels and controls.
 
 _Mixer screen._  
-<img width="256" src="images/opentx-screenshots/mixer-screen.bmp">
+![mixer screen](images/opentx-screenshots/mixer-screen.png)
 
 _RX channel ord_ is a global setting, however it only affects the initial channel order of models created after you modify it. If you change _Rx channel ord_ again later it won't affect any existing models. And once a model has been created you can go to its _Mixer_ screen and change the initially assigned channel order without it affecting anything else.
 
@@ -208,7 +208,7 @@ Videos and tutorials
 
 If you had any problem with the basic transmitter setup and model creation then this section contains some links to content that hopefully will make things clearer. While much of the content may not be specific to our setup, e.g. covering planes rather than quadcopters, it can still be helpful in order to see how to use OpenTX and interact with the transmitter.
 
-Painless360 has two relevant videos - in [Tips for setting up a new radio - 10:37](https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=637) he sets date and time and later at 11:39 he goes through callibration. Then in [Creating basic model types - 2:50](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=170) he creates and names a new model. Then he sets up expo (this has already been linked to above) roller. Then he briefly covers the mixer (note that the channel order shown is different to that used with the Pixhawk). From 6:44 he covers quadcopter specific setup and by 10:50 it's all over as far as quadcopters are concerned. After this point he sets up an arming switch (which isn't relevant for the Pixhawk as it uses a physical safety switch combined with stick based arming) and also sets up a flight mode switch. We'll handle flight modes later using a different Painless360 video for reference where he sets flight modes specifically for the Pixhawk using OpenTX Companion rather than the transmitter.
+Painless360 has two relevant videos - in [Tips for setting up a new radio - 10:37](https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=637) he sets date and time and later at 11:39 he goes through calibration. Then in [Creating basic model types - 2:50](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=170) he creates and names a new model. Then he sets up expo (this has already been linked to above) roller. Then he briefly covers the mixer (note that the channel order shown is different to that used with the Pixhawk). From 6:44 he covers quadcopter specific setup and by 10:50 it's all over as far as quadcopters are concerned. After this point he sets up an arming switch (which isn't relevant for the Pixhawk as it uses a physical safety switch combined with stick based arming) and also sets up a flight mode switch. We'll handle flight modes later using a different Painless360 video for reference where he sets flight modes specifically for the Pixhawk using OpenTX Companion rather than the transmitter.
 
 The Flite Test team cover model creation in [Q X7 Setup and review - 16:50](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=1010). Later they bind it (which we'll come to later) to a D4R-II receiver. Most of what they cover is plane specific.
 
