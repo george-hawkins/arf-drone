@@ -22,11 +22,11 @@ The voice data can be found under `/System/Library/Speech/Voices` and is substan
 
 Ava, Allison and Samantha are probably my favorite voices. Allison despite being listed as an American voice doesn't sound very American.
 
-    $ say -vAva "stabilize, altitude hold, position hold, return to launch, land, auto"
-    $ say -vAllison "stabilize, altitude hold, position hold, return to launch, land, auto"
-    $ say -vSamantha "stabilize, altitude hold, position hold, return to launch, land, auto"
+    $ say -vAva "stabilize, altitude hold, position hold, return to launch, land, otto"
+    $ say -vAllison "stabilize, altitude hold, position hold, return to launch, land, otto"
+    $ say -vSamantha "stabilize, altitude hold, position hold, return to launch, land, otto"
 
-For whatever reason saying "auto" on its own sounds very strange with Allison:
+Why have I writen "auto" as "otto" above. The Ava and Samantha voices seem to handle "auto" fine but, for whatever reason, the Allison voice sounds very strange saying "auto" on its own:
 
     $ say -vAllison "auto"
 
@@ -39,7 +39,7 @@ Or you can just try and help it out:
     $ say -vAllison "awe toe"
     $ say -vAllison "otto"
 
-"Otto" seems to produce the nearest sound to the American English "auto" sound.
+"Otto" seems to produce an identical sound to the American English "auto" sound.
 
 Siri voice
 ----------
@@ -49,5 +49,7 @@ Siri voice
     $ curl -O https://raw.githubusercontent.com/dale3h/taranis-siri-sound-pack/master/en/system/tada.wav
     $ open -a "quicktime player" tada.wav
     $ say -vSamantha "welcome to open t x"
+
+And I confirmed on the nearest to hand iOS device that this is how Siri sounds a real device (by default she reads a little faster than normal speed).
 
 Note: many of the WAV files have been renamed in recent releases - `tada.wav` is one of them, it's now called `hello.wav`.
