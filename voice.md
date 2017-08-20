@@ -50,6 +50,6 @@ Siri voice
     $ open -a "quicktime player" tada.wav
     $ say -vSamantha "welcome to open t x"
 
-And I confirmed on the nearest to hand iOS device that this is how Siri sounds a real device (by default she reads a little faster than normal speed).
+And I confirmed, using the nearest to hand iOS device, that this is how Siri sounds on a real device (by default she reads a little faster than normal speed).
 
 Note: many of the WAV files have been renamed in recent releases - `tada.wav` is one of them, it's now called `hello.wav`.
