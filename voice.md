@@ -40,3 +40,14 @@ Or you can just try and help it out:
     $ say -vAllison "otto"
 
 "Otto" seems to produce the nearest sound to the American English "auto" sound.
+
+Siri voice
+----------
+
+[Susan Bennett](https://en.wikipedia.org/wiki/Susan_Bennett) is the voice behind Samantha and Siri. Compare Samantha with the same sound from a sound pack created with Siri's voice and you'll see they're identical:
+
+    $ curl -O https://raw.githubusercontent.com/dale3h/taranis-siri-sound-pack/master/en/system/tada.wav
+    $ open -a "quicktime player" tada.wav
+    $ say -vSamantha "welcome to open t x"
+
+Note: many of the WAV files have been renamed in recent releases - `tada.wav` is one of them, it's now called `hello.wav`.
