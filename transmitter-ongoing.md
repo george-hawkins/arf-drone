@@ -15,7 +15,7 @@ On your transmitter you have to create models - each model corresponds to the on
 The transmitter comes with one model, called MODEL01, already setup - when you turn on the transmitter you can see in the main screen that it's the currently selected model.
 
 _Main screen before any setup._  
-<img width="256" src="images/opentx-screenshots/before-setup.bmp">
+![before setup](images/opentx-screenshots/before-setup.png)
 
 Configuration
 -------------
@@ -27,7 +27,7 @@ In this section we're just going to:
 * Set date and time for the transmitter.
 * Set its county code.
 * Set the receiver channel order.
-* Callibrate the sticks and pots.
+* Calibrate the sticks and pots.
 * Create a new model.
 * Set the model name.
 * Set the model's failsafe setting.
@@ -35,67 +35,67 @@ In this section we're just going to:
 To get started long press MENU to get to the _Radio setup_ screen and set the current date and time.
 
 _Set date and time._  
-<img width="256" src="images/opentx-screenshots/date-and-time.bmp">
+![date and time](images/opentx-screenshots/date-and-time.png)
 
 Then use the dial to navigate downwards and set the country code if necessary. It defaults to US, I set it to EU. This tells the transmitter to comply with the radio spectrum regulations that apply in your region. The low level radio firmware is already region specific and should behave appropriately for that region anyway so this setting isn't as important as it sounds.
 
 _Set country code._  
-<img width="256" src="images/opentx-screenshots/country-code.bmp">
+![country code](images/opentx-screenshots/country-code.png)
 
 Now navigate down further to the bottom of the screen. The last two entries are _Rx channel ord_ and _Mode_. We already covered mode when setting up the sticks - we're using mode 2 and default value of _Mode_ should already match this. However we do have to change _Rx channel ord_ (by default it's set to _TAER_), change this to _AETR_. The next section down below explains what this means.
 
 _Set RX channel order._  
-<img width="256" src="images/opentx-screenshots/rx-channel-ord.bmp">
+![rx channel ord](images/opentx-screenshots/rx-channel-ord.png)
 
-Then use PAGE to get to the _Callibration_ screen and re-callibrate the sticks and pots (this has been covered previously). Remember to set the pots to their mid position before starting.
+Then use PAGE to get to the _Calibration_ screen and re-calibrate the sticks and pots (this has been covered previously). Remember to set the pots to their mid position before starting.
 
-_Callibration._  
-<img width="256" src="images/opentx-screenshots/callibration.bmp">
+_Calibration._  
+![calibration](images/opentx-screenshots/calibration.png)
 
 Now onto creating a model. Press EXIT to get back to the main screen then short press MENU to get to the _Model selection_ screen. You can either modify the existing MODEL01 or create a completely new model. To create a new model turn the dial to select an empty slot, e.g. 02, and press ENTER and select _Create model_.
 
 _Create a new model._  
-<img width="256" src="images/opentx-screenshots/create-model-1.bmp">
+![create model-1](images/opentx-screenshots/create-model-1.png)
 
 The new model is initially just called MODEL02, the asterisk beside it indicates that it's the currently selected model.
 
 _New model with default name._  
-<img width="256" src="images/opentx-screenshots/create-model-2.bmp">
+![create model 2](images/opentx-screenshots/create-model-2.png)
 
 Now press PAGE and update the model name to something more informative, e.g. "F450 Pix". Long hold ENTER to get a capital letter.
 
 _Set model name._  
-<img width="256" src="images/opentx-screenshots/model-name.bmp">
+![model name](images/opentx-screenshots/model-name.png)
 
 Use the dial to scroll through all the other options until you reach failsafe. Set it to _No pulses_, we'll come to what this means later.
 
 _No pulses failsafe._  
-<img width="256" src="images/opentx-screenshots/failsafe.bmp">
+![failsafe](images/opentx-screenshots/failsafe.png)
 
 That's it - setup is done for the moment. If you return to the main screen you'll see that the name of the newly created model is now shown as selected. If you play with the sticks and switches you'll see the screen update in response.
 
 _Main screen with new model selected._  
-<img width="256" src="images/opentx-screenshots/main-screen-p1-top.bmp">
+![main screen p1 top](images/opentx-screenshots/main-screen-p1-top.png)
 
 If you accidentally turn the dial on the main screen you get to two mysterious rows of dashes - just dial back up to get out of here. **Update:** if you configure six flight modes (as we do later) then you'll see one of the first six dots here highlighted according to the currently selected flight mode (so as there are 64 dots does it really support 64 flight modes or are some for something else?). Even then these dots seem of limited use (could one really distinguish between the 15th and 16th dot being highlighted) and anyway the name assigned to the current flight mode is shown in the upper half of the main screen which seems more informative than these dots.
 
 _Main screen - lower half._  
-<img width="256" src="images/opentx-screenshots/main-screen-p1-bottom.bmp">
+![main screen p1 bottom](images/opentx-screenshots/main-screen-p1-bottom.png)
 
 If you press PAGE you'll get to a screen that shows the transmitter's channels. These are essentially the set of values that the transmitter will send to the receiver. Initially just the sticks are bound to channels, i.e. only the stick states and nothing else will be sent. Move the sticks and see how the bars of this screen react.
 
 _Main screen - page 2, showing channels 1 to 8._  
-<img width="256" src="images/opentx-screenshots/main-screen-p2-ch1-8.bmp">
+![main screen p2 ch1 8](images/opentx-screenshots/main-screen-p2-ch1-8.png)
 
 The transmitter supports up to 32 channels (16 using the standard internal RF module and 16 more if you add an additional external RF module), initially bars for channels 1 to 8 are shown. Turn the dial and you'll see the topmost bar change to indicate that channels 9 to 16 are now showing, turn it further to see channels 17 to 24 and so on. As nothing is bound to these channels there's nothing really to see.
 
 _Main screen - page 2, showing channels 9 to 16._  
-<img width="256" src="images/opentx-screenshots/main-screen-p2-ch9-16.bmp">
+![main screen p2 ch9 16](images/opentx-screenshots/main-screen-p2-ch9-16.png)
 
 If you press the PAGE button again you'll get to the same channel information but this time displayed as numbers rather than bars.
 
 _Main screen - page 3._  
-<img width="256" src="images/opentx-screenshots/main-screen-p3.bmp">
+![main screen p3](images/opentx-screenshots/main-screen-p3.png)
 
 Receiver channel order
 ----------------------
@@ -131,7 +131,7 @@ Note: as discussed elsewhere the names elevator, aileron, rudder and throttle te
 When you create a new model the controls are initially mapped to channels according to the current value of _Rx channel ord_. If you go to the _Mixer_ screen for your model you can see the current mapping between channels and controls.
 
 _Mixer screen._  
-<img width="256" src="images/opentx-screenshots/mixer-screen.bmp">
+![mixer screen](images/opentx-screenshots/mixer-screen.png)
 
 _RX channel ord_ is a global setting, however it only affects the initial channel order of models created after you modify it. If you change _Rx channel ord_ again later it won't affect any existing models. And once a model has been created you can go to its _Mixer_ screen and change the initially assigned channel order without it affecting anything else.
 
@@ -151,15 +151,64 @@ TODO:
 * RCdiy covers [testing failsafe](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#Testing_Failsafe) - make sure to include a section on doing the same.
 * In the video on the ArduPilot failsafe setup page also show they [how to test things](https://youtu.be/FhKREgqjCpM?t=93), cf this with RCdiy's approach. Note: unlike here (but like RCdiy) they set up the failsafe via the receiver, also I think they're using an ancient PX4 so arming is different.
 
+Expo
+----
+
+When you use the sticks for pitch, roll and yaw you're generally not making extreme movements so the sticks stays near the center in any given direction and you rarely move any stick to its maximum or minimum position. You end up just moving the sticks within a small area around their center position. So it would be nice if we could adjust things to stretch out this small central area so that small movements around the center result in less dramatic movements in the vehicle, making it easier to control and making it less "twitchy" when responding to the small movements we're typically making.
+
+This is what expo is about - adjusting the responsiveness around the center of the sticks. Generally expo is just applied to pitch, roll and yaw while the throttle is left as it is - so for the left stick we're just talking about adjusting things for left-right movement, i.e. yaw, while for the right stick we're talking about both left-right and up-down movement, i.e. roll and pitch.
+
+Painless360 has a [nice video](https://www.youtube.com/watch?v=ajJ3rJ1HN5Q) that explains expo far better than I could. And then in a [separate video at 5:10](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=310) he explains how to set expo on the Q X7. That video covers everything clearly within a minute - so I'll just cover things briefly here.
+
+| Inputs before adjustments | AIL before adjustments | AIL with expo of 25 | Inputs after adjustments |
+|-|-|-|-|
+| ![inputs before](images/opentx-screenshots/start-inputs.png) | ![AIL before](images/opentx-screenshots/start-ail.png) | ![AIL with expo](images/opentx-screenshots/end-ail.png) | ![inputs after](images/opentx-screenshots/end-inputs.png) |
+
+From the main screen of the Q X7 you short press the MENU button to get to the _Model selection_ screen and then use the PAGE button until you get to the _Inputs_ screen. Then in turn for _Ail_, _Ele_ and _Rud_ you press and hold ENTER and select _Edit_ - on the edit screen for each you go down to _Curve_ and change the default values their (_Diff_ and 0) to _Expo_ and the desired expo value. Suggested values are as follows:
+
+| Control | Value |
+|---------|-------|
+| Ail | 25 |
+| Ele | 25 |
+| Rud | 15 |
+
+These are just values that Painless360 consistently suggests in various videos and not ones I've come to by experimentation. As noted above throttle is left unadjusted.
+
+Note: despite the name the function behind expo in OpenTX is not an exponential fuction - if you're interested take a look at [`mixer.cpp`](https://github.com/opentx/opentx/blob/2.2/radio/src/mixer.cpp), there you'll find a large comment and the actual `expou` function that's used.
+
+Loss of resolution
+------------------
+
+Painless360 says at [4:26](https://youtu.be/ajJ3rJ1HN5Q?t=266) in his video introducing the expo concept and at [7:57](https://youtu.be/NIR85KOqIAo?t=477) in his video on configuring the Q X7 that you should set up expo on the flight controller rather than the transmitter, if you can, as this avoids a loss of resolution.
+
+As it turns out you can't do this with ArduCopter. But what does he mean by loss of resolution? It's not important for our situation but let's look at it briefly.
+
+Let's just consider rudder. When the right stick is at its leftmost position it sends a PPM value of around 980 and when it's at its rightmost it sends a value of around 2000. So the range of rudder values runs from 980 to 2000.
+
+| | |
+|-|-|
+| _Before applying expo._<br>![before expo](images/opentx-screenshots/before-curve.png) | _After applying expo._<br>![after expo](images/opentx-screenshots/after-curve.png) |
+
+Above we see the graphs that we saw when setting expo on the transmitter. The x-axis is real stick movement and the y-axis is the PPM value sent by the transmitter - initially the relationship between the two is linear. However if I specify an expo of 25 then things change - the 50% of the stick movement range around the center, that used to correspond to 50% of the range of PPM values on the y-axis, now corresponds to just 40%.
+
+If we move the pitch stick from its leftmost position to its rightmost this is a movement of about 50&deg;. So if we think about the middle 50% of the range of the x-axis shown above then moving from one end to the other corresponds to a movement of about 25&deg;
+
+As already noted the range of PPM values sent by the transmitter runs from around 980 to 2000. After applying expo just 40% of the this range, i.e. 1286 to 1694, correspond to our 25&deg; of movement around the center point - whereas before expo, when things were still linear, this 40% of PPM values corresponded to 40% of total stick movement, ie. just 20&deg; of movement.
+
+So before expo an increase in the PPM value of one described a stick movement of 20&deg; / (1694 - 1286), i.e. 0.049&deg;, whereas afterwards it describes a stick movement of about 25% / (1694 - 1286), i.e. 0.0612&deg; ("about" because things are no longer completely liner even in the middle range).
+
+So this is the loss of resolution we're talking about. Note that there's a corresponding gain in resolution at the edges (where it's not particularly useful).
+
+However few would complain that 0.0612&deg; wasn't still quite fine grained enough, i.e. 16 PPM values per degree of movement vs 20 before. Obviously if you use higher expo values the difference becomes greater.
+
+One could avoid this loss of resolution by doing the adjustment in the flight controller software rather than on the transmitter - and flight stacks such as Cleanflight and Betaflight, that target racing drones, include this feature - but ArduCopter does not (I asked [a question](https://discuss.ardupilot.org/t/set-expo-for-roll-pitch-yaw-in-arducopter-rather-than-on-tx/20009) about this on the ArduCopter forum but didn't receive any replies).
+
 Videos and tutorials
 --------------------
 
 If you had any problem with the basic transmitter setup and model creation then this section contains some links to content that hopefully will make things clearer. While much of the content may not be specific to our setup, e.g. covering planes rather than quadcopters, it can still be helpful in order to see how to use OpenTX and interact with the transmitter.
 
-Painless360 has two relevant videos - in [Tips for setting up a new radio - 10:37](https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=637) he sets date and time and later at 11:39 he goes through callibration. Then in [Creating basic model types - 2:50](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=170) he creates and names a new model. However after that he does initial setup for a plane, e.g. he sets up inputs (to make the sticks less "twitchy" by changing their expo values) but then says that for a quadcopter this is normally handled via the flight controller, so you can just skip to 6:44 for his quadcopter setup. At 10:50 it's all over as far as quadcopters are concerned. He sets up an arming switch (which isn't relevant for the Pixhawk as it uses a physical safety switch combined with stick based arming) and also sets up a flight mode switch. We'll handle flight modes later using a different Painless360 video for reference  where he sets flight modes specifically for the Pixhawk using OpenTX Companion rather than the transmitter.
-
-**Update:** it doesn't actually seem to be possible to set expo with Mission Planner and ArduCopter so you shouldn't actually skip the expo section starting at 5:10.
-TODO: merge this expo stuff with the stuff in the TODOs section in [`transmitter-flight-modes-and-more.md`](transmitter-flight-modes-and-more.md).
+Painless360 has two relevant videos - in [Tips for setting up a new radio - 10:37](https://www.youtube.com/watch?v=YD3ojhwVmrI&feature=youtu.be&t=637) he sets date and time and later at 11:39 he goes through calibration. Then in [Creating basic model types - 2:50](https://www.youtube.com/watch?v=NIR85KOqIAo&feature=youtu.be&t=170) he creates and names a new model. Then he sets up expo (this has already been linked to above) roller. Then he briefly covers the mixer (note that the channel order shown is different to that used with the Pixhawk). From 6:44 he covers quadcopter specific setup and by 10:50 it's all over as far as quadcopters are concerned. After this point he sets up an arming switch (which isn't relevant for the Pixhawk as it uses a physical safety switch combined with stick based arming) and also sets up a flight mode switch. We'll handle flight modes later using a different Painless360 video for reference where he sets flight modes specifically for the Pixhawk using OpenTX Companion rather than the transmitter.
 
 The Flite Test team cover model creation in [Q X7 Setup and review - 16:50](https://www.youtube.com/watch?v=7cExS1tTOJA&feature=youtu.be&t=1010). Later they bind it (which we'll come to later) to a D4R-II receiver. Most of what they cover is plane specific.
 

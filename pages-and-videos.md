@@ -10,7 +10,7 @@ Watching videos is much more bearable if you double the speed - a feature that s
 The Painless360 Pixhawk series - <https://www.youtube.com/playlist?list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p>
 
 * Video 1 - lots of talk on Pixhawk vs the older APM. At [9:47](https://www.youtube.com/watch?v=uH2iCRA9G7k&feature=youtu.be&list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p&t=587) it gets on to hooking the plugged together setup up to Mission Planner. Mentions aligning arrows on GPS and Pixhawk. Mentions drivers and using a USB port capable of at least 500mA. At 13:52 he gets onto flashing the latest firmware - the phase where you _don't_ connect, then once that's done you connect and go through the wizard for mandatory hardware configuration. Only when you get to the radio calibration do you need to turn on the TX - when calibrating move the sticks _and_ the mode switches. He just sets up three flight modes - stabilize, loiter and RTL - he says he'll get back to this (and that he's already covered this in a video for APM). He doesn't setup failsafe at this point. Once your done hold it out a window until it gets a GPS fix and then try moving it about and moving the sticks and switches.
-* Video 2 - he replaces an existing APM unit on an F450 frame - he's got the flight controller on a vibration damping platform on the top frame plate - I wonder if in an earlier APM video we see how he attached the vibration damping platform to the plate. Note in this video he recommends pulling the red wires out of the ESC connectors and so skip needing a Zener diode. Worth watching - at 4:37 he starts attaching and distributing parts around the frame. At 8:14 he wires in the ESCs to the Pixhawk taking account of CW and CCW. At 9:43 he recommends labelling your ESC connectors 1 to 4, matching the numbering in the ArduCopter Quad X documentation, so you can keep track of them and easily plug them into the Pixhawk. He covers the status LEDs - see [my documentation](images/pixhawk-leds/README.md) - print out the LED pictures. Make sure not to have props on when powering up for first time. He powers it up by plugging in the battery then once happy he plugs it into Mission Planner via USB (and presses Connect). He presses the safety switch, arms then ups the throttle. He says if the ESCs don't come on at the same time you need to go through ESC callibration. He notes the reversal of the pitch (tho' it looks as if you do reversal and still see pitch (in radio calibration) moving counter to expected - is this really what's wanted? See 17:05). Once happy he goes outdoors, with props now on and does the same - he notes the lack of Expo. Note: this video shows a vibration damping platform that's nearly identical to the one used in my build but with much larger 3M pads than the ones that came with my platform.
+* Video 2 - he replaces an existing APM unit on an F450 frame - he's got the flight controller on a vibration damping platform on the top frame plate - I wonder if in an earlier APM video we see how he attached the vibration damping platform to the plate. Note in this video he recommends pulling the red wires out of the ESC connectors and so skip needing a Zener diode. Worth watching - at 4:37 he starts attaching and distributing parts around the frame. At 8:14 he wires in the ESCs to the Pixhawk taking account of CW and CCW. At 9:43 he recommends labelling your ESC connectors 1 to 4, matching the numbering in the ArduCopter Quad X documentation, so you can keep track of them and easily plug them into the Pixhawk. He covers the status LEDs - see [my documentation](images/pixhawk-leds/README.md) - print out the LED pictures. Make sure not to have props on when powering up for first time. He powers it up by plugging in the battery then once happy he plugs it into Mission Planner via USB (and presses Connect). He presses the safety switch, arms then ups the throttle. He says if the ESCs don't come on at the same time you need to go through ESC calibration. He notes the reversal of the pitch (tho' it looks as if you do reversal and still see pitch (in radio calibration) moving counter to expected - is this really what's wanted? See 17:05). Once happy he goes outdoors, with props now on and does the same - he notes the lack of Expo. Note: this video shows a vibration damping platform that's nearly identical to the one used in my build but with much larger 3M pads than the ones that came with my platform.
 * Video 3 - looks like its all been covered already in my pages. At 4:06 he mentions the pitch flip and seems to confirm that you see the pitch moving oposite to expected _after_ you've applied the correction to the elevator/pitch and this is how things should be. On the mixes page he does actually name things Roll, Pitch etc. (see 4:28). He applies Expo in OpenTX rather than in Mission Planner - at 6:00 he uses 25% on Ail and Ele and 15% on Rud (and 0 on throttle). At 20:52 he sets the failsafe (pushing throttle to zero to make the craft come down) - again via OpenTX rather than Mission Planner - he says he'll cover this later.
 * Video 4 is just relevant if you've got a D4R-II and covers upgrading the firmware to change the CPPM period to 27ms so there's time to output all 8 channels.
 * Video 5 covers flight modes - it points to the ArduCopter flight modes page. With flight modes there's also simple and super simple options - which equate to headless - and like everyone he discourages their use - although he does say being able to flick into simple or super simple can be nice if the craft is so far away that you've lost orientation (though perhaps RTL is a more obvious option in this situation unless there are obstacles). He recommends stabalize (auto-level) as the initial mode. From 4:32 on is worth watching for a talk-thru of all the modes. Note that you can turn some modes on in combination with others, e.g. alt. hold - this would require a separate switch for such modes though (and channels???). Actually alt. hold is the only one where using it in combination is mentioned.. Alt. hold changes behavior of throttle - essentially it divides the throttle range into three simple fat bands - down, hold, up. He says Land lands better than he can.
@@ -86,6 +86,10 @@ The tidying up of the ESC signal wires (to the flight controller) is nicely done
 
 ---
 
+See "testing motor spin directions" section of http://ardupilot.org/copter/docs/connect-escs-and-motors.html
+
+---
+
 Assembly pages:
 
 1. [F450 as assembly example](https://pixhawk.org/platforms/multicopters/dji_flamewheel_450) on pixhawk.org.
@@ -134,7 +138,7 @@ However none of this is relevant for the 420 Lite ESCs that come with the E305 b
 
 ---
 
-DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick callibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner. **Update** - this video doesn't cover anything not covered just as well in the Painless360 Pixhawk series.
+DroneTrest recommend [this video](https://youtu.be/S-LSZQk1Ya8?t=324) on Taranis plus Mission Planner setup, but skip to 5:24 as most of what it covers looks easier in OpenTX Companion (as covered in the Painless360 series) but it is interesting to see stick calibration etc. for the flight controller and how the flight mode swtiches he configured earlier can be seen acting in Mission Planner. **Update** - this video doesn't cover anything not covered just as well in the Painless360 Pixhawk series.
 
 ---
 
@@ -147,6 +151,17 @@ In this DroneTrest [build page](http://www.dronetrest.com/t/qav-zmr-250-assembly
 ---
 
 OpenTX splash screens suitable for the [Q X7](http://www.open-tx.org/screens-9x.html) that are much less exciting than [those](http://www.open-tx.org/screens-taranis.html) for the X9D+ (note the Q X7 doesn't support [model images](http://www.open-tx.org/icons-taranis.html)).
+
+---
+
+Crimping
+--------
+
+HobbyKing crimper: https://hobbyking.com/en_us/hobbyking-jst-sh-connector-crimping-tool.html
+Video on how precisely to use this type of crimper: https://www.youtube.com/watch?v=MHLz1Mck_Kg
+Poster on getting things like the insulation and conductor correctly lined up: https://cdn-shop.adafruit.com/datasheets/JST_CrinpChart+(English).pdf
+
+See also bookmarks on crimping.
 
 ---
 
@@ -268,6 +283,8 @@ I added some of these, plug a couple of gimbal protectors so my Shapeways models
 
 Additional misc links Aug 2017:
 
+Heat gun - links to version available via Sparkfun and Banggood - http://www.propwashed.com/heat-guns-deceptively-useful-tool/
+
 Pixhawk AliExpress: https://www.aliexpress.com/item/PX4-PIX-2-4-8-32-Bit-Flight-Controller-433-915-Telemetry-Neo-M8N-GPS-Minim/32759523206.html
 Pixhawk Banggood: https://www.banggood.com/Pixhawk-PX4-2_4_8-Flight-Controller-32-Bit-ARM-PX4FMU-PX4IO-Combo-for-Multicopters-p-1040416.html
 
@@ -282,6 +299,9 @@ You'll have to look up your own country's rules - about 100m maximum altitude fo
 
 Hot glue for insulation and support: http://www.instructables.com/id/Using-Hot-Glue-to-Insulate-and-Support-Soldering-J/
 
+Wire coloring schemes by servo manufacturer: http://www.robotplatform.com/knowledge/servo/servo_manufacturers.html
+
+3DR detailed Pixhawk manual: https://3dr.com/wp-content/uploads/2017/03/pixhawk-manual-rev7-1.pdf
 3DR detailed build guide for their DIY Quad kit with Pixhawk: https://3dr.com/wp-content/uploads/2017/03/3DR-DIY-Quad-Build-Manual-vA.pdf
 
 Mounting a GPS mast with typical four way screw hole base with tape rather than screws: http://www.thedronesmag.com/install-setup-gpscompass-unit-dji-naza-m-v2/
