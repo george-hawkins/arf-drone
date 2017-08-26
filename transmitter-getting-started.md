@@ -32,12 +32,12 @@ See Oscar Liang's in-depth [review of the Q X7](https://oscarliang.com/taranis-q
 
 With time I grew to really like the Q X7 but the one terrible feature is the design of the battery compartment - I presume the manufacturer with give it a makeover eventually.
 
-The following is a simple tip but I would describe it as essential. Inserting AA batteries into the battery holder is harder than it should be, getting them out is even worse. The first time I did this I ended up very slightly damaging some of the batteries in the process (just little scratches to their casings). So to make things much easier cut off a length of ribbon and run it below the batteries as you insert them - then you can use the ribbon to help pull them out later when needed.
+The following is a simple tip but I would describe it as essential. Inserting AA batteries into the battery holder is harder than it should be, getting them out is even worse. The first time I did this I slightly dented the casings of some of the batteries as I ended up levering them out with a wooden lollipop stick. So to make things much easier cut off a length of ribbon and run it below the batteries as you insert them - then use it to help pull out the batteries later when needed.
 
 _Batteries with ribbon underneath._  
 <img width="512" src="images/assembly/transmitter/battery-ribbon.jpg">
 
-Several times I found the transmitter would not start up after replacing the batteries. There never seemed to be any issue with how the batteries were sitting in the batter compartment - but still removing them all and reinsterting them always resolved the problem.
+Several times I found the transmitter would not start up after replacing the batteries. There never seemed to be any issue with how the batteries were sitting in the battery compartment - but still removing them all and reinsterting them always resolved the problem.
 
 Finally the battery cover itself is very loose - eventually I ended up keeping it in place with masking tape.
 
@@ -52,9 +52,11 @@ The transmitter comes with a mysterious little piece which turns out to be for a
 
 <img height="512" src="images/assembly/transmitter/balance-bar.jpg"> <img height="512" src="images/assembly/transmitter/balance-bar-and-strap.jpg">
 
-The balance bar has four holes, try suspending the transmitter from the neck strap using each of the different holes in turn - you'll see it affects the angle at which the transmitter hangs - chose whatever suits you best.
+The balance bar has four holes, try suspending the transmitter from the neck strap using each of the different holes in turn - you'll see it affects the angle at which the transmitter hangs - choose whatever suits you best (I used the lowest one).
 
 Even without the neck strap I didn't find the transmitter getting too heavy during the relatively short sessions that even the large LiPo batteries allow for. The best reason for using the neck strap is not to relieve weight but to force you to be somewhat disciplined about how you hold the transmitter. Anyone who's played console games will be used to the tendency to twist the controller in the direction you want to travel, e.g. coming to a tight corner you wrench the controller about to make the turn even though this has no real affect on things. I found myself doing the same with the transmitter - and on a number of occassions lost radio contact when I wanted the craft to come down as subconsciously I'd ended up pointing the transmitter in the desired direction, i.e. at the ground, which unsurprisingly isn't the ideal direction for the transmitter antenna to be pointing.
+
+**Update:** initially I used the transmitter without the neck strap but after using it for a while I now see it as essential - as well as making you hold the transmitter correctly it also means you can let the transmitter dangle, freeing up your hands when you need.
 
 Power on
 --------
