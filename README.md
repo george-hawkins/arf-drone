@@ -19,50 +19,52 @@ Important: this build requires a small amount of soldering and it's assumed you'
 
 Build
 
-* parts.md
-* assembly-1.md
-* assembly-2.md
-* assembly-3.md
-* assembly-4.md
-* binding.md
-* frame-assembly.md
-* frame-parts.md
-* pixhawk-setup.md
-* qgroundcontrol.md
-* stick-setup.md
-* transmitter-flight-modes-and-more.md
-* transmitter-ongoing.md
-* vibration-damping-platform.md
+* [`parts.md`](parts.md) - all parts required for this build with explanations of the major parts.
+* [`transmitter-getting-started.md`](transmitter-getting-started.md) - introduction to the transmitter along with basic setup.
+* [`receiver-upgrade.md`](receiver-upgrade.md) - upgrading the receiver firmware via the transmitter.
+* [`electronics-assembly.md`](electronics-assembly.md) - wiring up the core electronics, i.e. the Pixhawk, GPS etc.
+* [`stick-setup.md`](stick-setup.md) - disabling self centering for the transmitter throttle.
+* [`transmitter-model-setup.md`](transmitter-model-setup.md) - configuring a model in the transmitter. TODO: move out unrelated sections.
+* [`binding.md`](binding.md) - TODO: integrate into binding section of `transmitter-model-setup.md`.
+* [`transmitter-flight-modes.md`](transmitter-flight-modes.md) - setting up flight modes for a model. TODO: move out unrelated sections.
+* [`frame-parts.md`](frame-parts.md) - details of the parts that come with the frame kit and propulsion system.
+* [`pdb-soldering.md`](pdb-soldering.md) - soldering up the PDB.
+* [`frame-assembly.md`](frame-assembly.md) - assembling the frame.
+* [`pixhawk-setup.md`](pixhawk-setup.md) - configuring the Pixhawk.
+* [`battery-charging.md`](battery-charging.md) - charging and storing the batteries.
+
+* [`qgroundcontrol.md`](qgroundcontrol.md)
+* [`vibration-damping-platform.md`](vibration-damping-platform.md)
 
 Miscellaneous
 
-* notes.md
-* pixhawk-leds.md
-* purchase-order.md
-* stores.md
+* [`notes.md`](notes.md)
+* [`pixhawk-leds.md`](pixhawk-leds.md)
+* [`purchase-order.md`](purchase-order.md)
+* [`stores.md`](stores.md)
 
 Inprogress
 
-* pages-and-videos.md
-* notes-to-self.md
+* [`pages-and-videos.md`](pages-and-videos.md)
+* [`notes-to-self.md`](notes-to-self.md)
 
 Practice quads
 
-* eachine-qx95.md
-* inprogress-qx95.md
-* fpv-x-racer.md
+* [`eachine-qx95.md`](eachine-qx95.md)
+* [`inprogress-qx95.md`](inprogress-qx95.md)
+* [`fpv-x-racer.md`](fpv-x-racer.md)
 
 Appendices
 
-* windows-vm.md
-* voice.md
-* soldering.md
-* power-module-connector.md
-* pixhawk-driver.md
-* receiver-power.md
-* gps-mast-placement.md
-* rx8r.md
-* receiver-windows-upgrade.md
+* [`windows-vm.md`](windows-vm.md)
+* [`soldering.md`](soldering.md)
+* [`voice.md`](voice.md)
+* [`power-module-xt60-to-deans.md`](power-module-xt60-to-deans.md)
+* [`pixhawk-driver.md`](pixhawk-driver.md)
+* [`receiver-power.md`](receiver-power.md)
+* [`gps-mast-placement.md`](gps-mast-placement.md)
+* [`rx8r.md`](rx8r.md)
+* [`receiver-windows-upgrade.md`](receiver-windows-upgrade.md)
 
 ---
 
