@@ -11,7 +11,7 @@ Looking back I'm amazed at the naivety of this thinking but at the time I was qu
 
 The ARF acronym makes it sound like all the interesting work has been taken care of and all that's left is to put things together lego style. But it turns out, if starting from scratch with no prior experience of drones, that there's quite enough additional complexity without also having to worry about the frame and the propulsion system.
 
-The [`parts.md`] page makes clear how many different components are required to get a quadcopter off the ground - covering everything from the transmitter, frame and motor to velcro straps and LiPo safety bags. As well as assembly some of these parts, such as the transmitter and flight controller, require serious amounts of configuration.
+The [`parts.md`](parts.md) page makes clear how many different components are required to get a quadcopter off the ground - covering everything from the transmitter, frame and motor to velcro straps and LiPo safety bags. As well as assembly some of these parts, such as the transmitter and flight controller, require serious amounts of configuration.
 
 Important: this build requires a small amount of soldering and it's assumed you've already got a soldering iron, solder etc. If you've never tried soldering before it's not that hard - see [`soldering.md`](soldering.md) for details.
 
