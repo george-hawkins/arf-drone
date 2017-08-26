@@ -9,7 +9,7 @@ I bought the RX8R only because the X8R was out of stock at the online store I us
 
 TODO:
 
-* See my question regarding X8R vs XSR: https://github.com/george-hawkins/arf-drone/blob/master/assembly-3.md
+* See my question regarding X8R vs XSR: <https://www.rcgroups.com/forums/showthread.php?2926651-Differences-between-X8R-and-XSR-%28other-than-physical-pins%29>
 * See [R-XSR on RCGroups](https://www.rcgroups.com/forums/showthread.php?2935614-FrSky-new-arrival-Full-range-ultra-mini-redundancy-receiver-R-XSR%21) - this seems to resolve the only obvious shortcoming of the XSR (other than the difficult to get to RSSI pad) which was the non-detachable antenna - now you can attach PCB antenna or the long whisker antenna of the X4R (presumable the R-XSR comes with a detachable version of the short whisker antenna of the XSR). According to [GetFPV](http://www.getfpv.com/frsky-r-xsr-2-4ghz-16ch-accst-micro-receiver-w-s-bus-cppm.html) they should be in-stock around Sept 3rd, 2017.
 
 Upgrading the receiver
