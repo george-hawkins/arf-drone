@@ -26,3 +26,5 @@ Once you've got all the equipment, soldering iron and so on, and a nice kit like
 Note: everyone seems to solder in a slightly different way so don't be surprised if the advice isn't quite identical across videos etc. but on the whole the core points are always the same.
 
 Painless360 has produced a lot of nice RC related videos that are referenced elsewhere here - and he has a nice "Introduction to soldering" [video](https://www.youtube.com/watch?v=-YPLW5cCiGY). Similarly Propwashed have a "Soldering Exercises for Drone Building" [video](https://www.youtube.com/watch?v=1XwDlVb7gt4).
+
+**Update:** I found Bruce Simpson's [soldering basics video](https://www.youtube.com/watch?v=nS0bEuYPJoA) later and think it's excellent (though he could have sped up the bits where he's measuring temperature). He covers RC relevant aspects of soldering that I wasn't aware of from having just soldered up small electronics projects such as losing too much heat when using a low power soldering iron and the consequences of burning off all the flux in your solder.
