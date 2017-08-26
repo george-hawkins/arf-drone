@@ -10,9 +10,9 @@ Online stores seem to be particularly vague about what exactly comes in the F450
 * An adhesive backed velcro strip.
 * A red and a black piece of 14AWG wire.
 
-The velcro strip comes in a bag labelled 450MSX - this corresponds to the part mysteriously referred to as the "magic strap" in the user manual. Its purpose isn't clear, some people seem to use it in combination with the battery strap - cutting off a section of the strip and attaching one side of this to the frame and the other side to the battery to stop the battery sliding under the battery strap.
+The parts section of the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) mentions, but does not picture, a mysterious "magic strap", labelled 450MSX, that is never referred to again in the manual. The actual part that comes labelled 450MSX turns out to be the velcro strip and, while not covered in the manual, can be seen in DJI videos with one side attached to the top plate and the other side (or a small piece of it) attached to the battery to prevent it sliding around under the battery strap.
 
-The packets of screws are unlabelled but the packet of shorter screws are the 24 M2.5 6mm screws needed to secure the central plates to the legs and the packet of longer screws are the the 16 M3 8mm screws needed to secure motors to the legs.
+The packets of screws are unlabelled but the packet of shorter screws are the 24 M2.5 6mm screws needed to secure the central plates to the legs and the packet of longer screws are the the 16 M3 8mm screws needed to secure motors to the legs. Both packets contain several spare screws.
 
 The red and black wires are for connecting the lower plate (that also serves as a PDB) to power. However rather than solder an XT60 connector onto these I just bought an XT60 connectors that was already soldered onto a pair of wires.
 
