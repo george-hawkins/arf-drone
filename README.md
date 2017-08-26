@@ -7,16 +7,66 @@ TODO: include photo of final build here.
 
 Having some experience with hobbyist electronics projects I initially thought that I'd really be able to make a quadcopter from scratch, 3D printing elements of the frame, sourcing most of the components, like motors, as generic parts from a big distributor like Digi-Key, and only having to buy a few drone-specific components like propellers.
 
-I was quite disappointed when I found various pages (such as [this one](http://ardupilot.org/copter/docs/build-your-own-multicopter.html) from ArduPilot) making clear that this wasn't an option to consider when making ones first drone. Apparently I'd have to start with what's referred to as an ARF (almost ready to fly) kit, i.e. an unassembled frame and the parts for the propulsion system (propellers, motors etc.).
+Looking back I'm amazed at the naivety of this thinking but at the time I was quite disappointed when I found various pages (such as [this one](http://ardupilot.org/copter/docs/build-your-own-multicopter.html) from ArduPilot) making clear that this wasn't an option to consider when making ones first drone. Apparently I'd have to start with what's referred to as an ARF (almost ready to fly) kit, i.e. an unassembled frame and the parts for the propulsion system (propellers, motors etc.).
 
 The ARF acronym makes it sound like all the interesting work has been taken care of and all that's left is to put things together lego style. But it turns out, if starting from scratch with no prior experience of drones, that there's quite enough additional complexity without also having to worry about the frame and the propulsion system.
 
+The [`parts.md`] page makes clear how many different components are required to get a quadcopter off the ground - covering everything from the transmitter, frame and motor to velcro straps and LiPo safety bags. As well as assembly some of these parts, such as the transmitter and flight controller, require serious amounts of configuration.
+
 Important: this build requires a small amount of soldering and it's assumed you've already got a soldering iron, solder etc. If you've never tried soldering before it's not that hard - see [`soldering.md`](soldering.md) for details.
 
-TODO: add summary explaining that this page covers parts and that there are other pages - [`notes.md`](notes.md), [`stores.md`](stores.md), [`purchase-order.md`](purchase-order.md) and [`assembly.md`](assembly.md). Fill out [`assembly.md`](assembly.md) file properly.
+---
+
+Build
+
+* parts.md
+* assembly-1.md
+* assembly-2.md
+* assembly-3.md
+* assembly-4.md
+* binding.md
+* frame-assembly.md
+* frame-parts.md
+* pixhawk-setup.md
+* qgroundcontrol.md
+* stick-setup.md
+* transmitter-flight-modes-and-more.md
+* transmitter-ongoing.md
+* vibration-damping-platform.md
+
+Miscellaneous
+
+* notes.md
+* pixhawk-leds.md
+* purchase-order.md
+* stores.md
+
+Inprogress
+
+* pages-and-videos.md
+* notes-to-self.md
+
+Practice quads
+
+* eachine-qx95.md
+* inprogress-qx95.md
+* fpv-x-racer.md
+
+Appendices
+
+* windows-vm.md
+* voice.md
+* soldering.md
+* power-module-connector.md
+* pixhawk-driver.md
+* receiver-power.md
+* gps-mast-placement.md
+* rx8r.md
+* receiver-windows-upgrade.md
+
+---
 
 TODO: move following sections elsewhere, they no longer belong here.
-
 
 Websites
 --------
