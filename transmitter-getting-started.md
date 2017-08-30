@@ -56,7 +56,7 @@ The balance bar has four holes, try suspending the transmitter from the neck str
 
 Even without the neck strap I didn't find the transmitter getting too heavy during the relatively short sessions that even the large LiPo batteries allow for. The best reason for using the neck strap is not to relieve weight but to force you to be somewhat disciplined about how you hold the transmitter. Anyone who's played console games will be used to the tendency to twist the controller in the direction you want to travel, e.g. coming to a tight corner you wrench the controller about to make the turn even though this has no real affect on things. I found myself doing the same with the transmitter - and on a number of occassions lost radio contact when I wanted the craft to come down as subconsciously I'd ended up pointing the transmitter in the desired direction, i.e. at the ground, which unsurprisingly isn't the ideal direction for the transmitter antenna to be pointing.
 
-**Update:** initially I used the transmitter without the neck strap but after using it for a while I now see it as essential - as well as making you hold the transmitter correctly it also means you can let the transmitter dangle, freeing up your hands when you need.
+**Update:** initially I used the transmitter without the neck strap but after using it for a while I wouldn't use it without it - as well as making you hold the transmitter correctly it also means you can let the transmitter dangle, freeing up your hands when you need.
 
 Power on
 --------

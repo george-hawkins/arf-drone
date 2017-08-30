@@ -60,7 +60,7 @@ The [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Ma
 Details
 -------
 
-The following sections cover the major components of the quadcopter including some non-physical elements such as the flight stack. The details here are more general notes rather than good explanations and could certainly do with more high level introduction but hopefully anything that isn't made clear here should become clearer as we proceed through the actual build.
+The following sections cover the major components of the quadcopter including some non-physical elements such as the flight stack. This is one of the weaker parts here and the details covered are more general notes rather than good explanations and could certainly do with more high level introduction but hopefully anything that isn't made clear here should become clearer as we proceed through the actual practical build.
 
 ### Frame
 

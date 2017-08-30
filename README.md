@@ -17,6 +17,8 @@ Important: this build requires a small amount of soldering and it's assumed you'
 
 ---
 
+There's way too much information here to consume in one go - I suggest you first quickly scan through the main build pages to get an overview of what's where and hopefully some kind of clearer idea of what's involved. Then work your way through the pages in a more systematic manner, starting with the purchase of the necessary parsts and working your way through all the necessary setup until you finally have a quadcopter that's ready to fly.
+
 Build
 
 * [`parts.md`](parts.md) - all parts required for this build with explanations of the major parts.
