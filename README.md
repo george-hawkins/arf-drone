@@ -64,6 +64,7 @@ Appendices
 * [`receiver-power.md`](receiver-power.md)
 * [`gps-mast-placement.md`](gps-mast-placement.md)
 * [`rx8r.md`](rx8r.md)
+* [`unused-parts.md`](unused-parts.md)
 * [`receiver-windows-upgrade.md`](receiver-windows-upgrade.md)
 
 ---

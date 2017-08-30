@@ -285,9 +285,6 @@ Additional misc links Aug 2017:
 
 Heat gun - links to version available via Sparkfun and Banggood - http://www.propwashed.com/heat-guns-deceptively-useful-tool/
 
-Pixhawk AliExpress: https://www.aliexpress.com/item/PX4-PIX-2-4-8-32-Bit-Flight-Controller-433-915-Telemetry-Neo-M8N-GPS-Minim/32759523206.html
-Pixhawk Banggood: https://www.banggood.com/Pixhawk-PX4-2_4_8-Flight-Controller-32-Bit-ARM-PX4FMU-PX4IO-Combo-for-Multicopters-p-1040416.html
-
 Pixhawk 3:
 
 * F450 example build - https://dev.px4.io/en/airframes_multicopter/dji_flamewheel_450.html
