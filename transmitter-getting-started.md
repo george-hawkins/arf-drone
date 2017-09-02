@@ -3,20 +3,23 @@ The transmitter
 
 It came as a bit of a surprise to me, initially at any rate, that the transmitter involves at least as much configuration as the flight controller. I couldn't believe that it's really just a box of switches with a radio that you essentially have to program in order to use it for a specific purpose. This page is one of the longest build steps but don't let it intimidate you!
 
+_FrSKY Taranis Q X7._  
+<img width="512" src="images/assembly/transmitter/transmitter.jpg">
+
 If you're new to the whole field, as I am, then the small folded black and white manual that comes with the Taranis Q X7 is impressively unhelpful (and it's not one of those cases where the manufacturer makes the real manual available online). Actually the information about the antenna is useful (the side rather than the tip of the antenna should be pointing at the drone in flight), as is the model setup information (but only once you have enough background information to understand it).
 
 The manual doesn't even tell you how to turn on the transmitter, the power button is actually missing completely from the incluced diagrams. I assumed it must be one of the many mechnical switches but it's actually the lower half of what I took to be just the power indicator in the very middle of the front panel.
 
 So we've got the on/off button, the other immediately important things are either side of the LCD. To the left we've got _PAGE_ and _EXIT_ and the circular button between them is called _MENU_. And to the right we've got a dial - you can turn it but it's aso the _ENTER_ button if you press it.
 
-_Q X7 LCD, buttons and dial_  
+_Q X7 LCD, buttons and dial._  
 <img width="512" src="images/assembly/transmitter/taranis-q-x7-lcd-and-input.png">
 
 What about all the other switches etc? At each of the upper corners we've got a set of three switches, then between them we've got two knobs (called pots), then two joysticks (always just called sticks) and finally, above the LCD and between the sticks, a set of four 2-way momentary switches (that together are referred to as digital trim). What do these all do? The odd answer is that they don't have any inherent meaning - but we'll get to that soon.
 
 The only important thing for the moment is that the switches have names (_SA_, _SB_, _SC_, _SD_, _SF_ and _SH_) as do the pots (_S1_ and _S2_) and that (initially at least) up/down on the left stick is the throttle (pull it all the way down and the throttle is at zero). The stick directions also have names - _J1_ to _J4_.
 
-_Q X7 switches, pots and sticks_  
+_Q X7 switches, pots and sticks._  
 <img width="512" src="images/assembly/transmitter/taranis-q-x7-switches.png">
 
 Notes:
@@ -154,7 +157,7 @@ TODO: remove link to above Github issue - and uncheck the options involved - onc
 
 When you start OpenTX it'll check for the latest firmware and ask if you want to download it. Don't - you haven't configured your transmitter model yet and it defaults to downloading firmware for the Taranis X9D+.
 
-TODO: the needs a rewrite for a non-prerelease version of OpenTX. The screenshot below is from installing Companion 2.2 on Windows. At the end of installation it opened and opened straight into settings so you have to establish your radio etc. immediately (which makes more sense than the previous behavior). So setup _Profile Name_, _Radio Type_, _Build Options_ and _SD Structure path_ as shown. It did not bug me on starting to download the latest firmware.
+TODO: the needs a rewrite for a non-prerelease version of OpenTX. The screenshot below is from installing Companion 2.2 on Windows. At the end of installation it opened and opened straight into settings so you have to establish your radio etc. immediately (which makes more sense than the previous behavior). So setup _Profile Name_, _Radio Type_, _Build Options_ and _SD Structure path_ as shown. It did not bug me on _first_ starting to download the latest firmware - oddly it only this on restarting it, it would seem to make most sense to bug you immediately after forcing you to complete the settings.
 
 ![companion settings](images/opentx-screenshots/companion-settings.png)
 
@@ -177,8 +180,10 @@ Note: every so often when starting the transmitter in bootloader mode I found it
 
 ![bootloader](images/opentx-screenshots/bootloader.png)
 
-
 Once started in bootloader mode you'll see _Or plug in a USB cable_ at the bottom of the screen - so do that (the USB port is under the flap at the bottom of the transmitter) and connect it to your computer running OpenTX Companion.
+
+_Connected via USB._  
+<img height="512" src="images/assembly/transmitter/usb-connected.jpg">
 
 First we're going to backup the current transmitter setup - in OpenTX Companion go to the _Read/Write_ menu and first select _Read Firware from Radio_ and save the result as e.g. `orig-firmware.bin`, then select _Backup Radio to File_ and save the result as e.g. `orig-eeprom.bin`.
 
@@ -197,16 +202,18 @@ For upgrading we're going to connect the transmitter to the computer again but t
 
 Now, using OpenTX Companion, let's download the latest OpenTX firmware suitable for your transmitter (assuming you haven't already done so - OpenTX Companion nags you everytime you restart it to do so). Go to the _File_ menu and select _Download..._, then click _Check for updates_. It'll go off and find the latest firmware and prompt you to save it to your local drive - do so. Now we're ready to write the latest version of OpenTX to the transmitter - go to the _Read/Write_ menu and select _Write Firmware to Radio_. It will now pop up a dialog showing the details of the firmware version you just downloaded, just click the _Write to TX_ button. Now you'll see a progress bar, click _Show Details_ and you'll then see a more informative indication of progress.
 
-Once that's finished it's all done - unplug the transmitter (as we never turned it on it was never mounted as a USB drive so we don't have to be careful about ejecting it first).
+Once that's finished it's all done, there are no further steps. Unplug the transmitter (as we never turned it on it was never mounted as a USB drive so we don't have to be careful about ejecting it first).
 
-It you turn on the transmitter now and go to the _version_ screen (as described above) you should see the new version details, similarly if you startup the transmitter in bootloader mode you should see that the bootloader version that's shown has changed as well.
+It you turn on the transmitter now and go to the _Version_ screen (as described above) you should see the new version details, similarly if you startup the transmitter in bootloader mode you should see that the bootloader version that's shown has changed as well.
+
+TODO: include screenshot of 2.2.1 version screen once it's out.
 
 **Important:** there are other ways, described elsewhere on the web, to upgrade the firmware - however these approaches are only able to update the OpenTX firmware, while this approach updates both the OpenTX firmware and the OpenTX bootloader. E.g. Oscar Liang, in his walkthru connects the transmitter in bootloader mode both for the backup (as above) and for the upgrade - but if you start in bootloader mode then the bootloader is active and it cannot be upgraded while active so only the OpenTX firmware is upgraded.
 
 SD card
 -------
 
-The Q X7 doesn't come with an SD card but we're going to need one to upgrade the radio firmware next.
+The Q X7 doesn't come with an SD card but we're going to need one to upgrade the radio firmware next (when I say radio here I mean the Q X7's low level radio transmission hardware).
 
 The SD card can store images and sound files that the OpenTX firmware can use and you can backup to the SD card and store firmware updates for the radio (and, as we'll see later, also for the receiver).
 
@@ -232,46 +239,50 @@ Once you're ready eject the card and put it into the transmitter (the SD card sl
 
 **Important:** the Q X7 manual warns that you should never insert or remove the SD card while the transmitter is on.
 
-Now turn on the transmitter - the first thing you'll notice is that the transmitter starts talking to you. This can be a little disconcerting but apparently it's useful when your flying and you want to stay looking at your drone rather than the LCD screen.
+_Inserting SD card._  
+<img width="512" src="images/assembly/transmitter/sd-card.jpg">
+
+Now turn on the transmitter - the first thing you'll notice is that the transmitter starts talking to you, you'll here it say "Welcome to OpenTX". This can be a little disconcerting but apparently the audio alerts are useful when you're flying and you want to stay looking at your drone rather than the LCD screen.
 
 Now if you go to _radio setup_ (as described already above) and then press _PAGE_ to get to the _SD card_ screen you'll see the contents of the card. If you haven't already, try playing with the dial and pressing it to navigate around the contents of the card - it's fairly intuitive.
 
-If you turn off the transmitter, restart it in bootloader mode and connect to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined above). One is the _Taranis_ drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
+![SD card contents](images/opentx-screenshots/sd-card-contents.png)
 
-Here I setup the initial contents of the SD card on my computer before putting it into the transmitter - in [this video](https://www.youtube.com/watch?v=2wZM_dqvBJ4&feature=youtu.be&list=PLiYYhnH4BhI-ot9OQ9djvRaacFHboFqC2&t=170) the presenter inserts a blank SD card straight into the transmitter and then connects the transmitter to his computer and copies the extracted SD card contents over via USB. The end result is the same but don't try to interact with the SD card via the transmitter before this is done. I tried doing this - I put the transmitter into bootloader and just wanted to use its _Write Firmware_ option to backup the firmware to a blank SD card. But this just results in the somewhat cryptic error "No directory found" - OpenTX and its bootloader expect the directory structure seen above, i.e. `FIRMWARE` etc. to already be there.
+If you turn off the transmitter, restart it in bootloader mode and connect to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined up above). One is the _Taranis_ drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
+
+Note: Here I setup the initial contents of the SD card on my computer before putting it into the transmitter - in [this video](https://www.youtube.com/watch?v=2wZM_dqvBJ4&feature=youtu.be&list=PLiYYhnH4BhI-ot9OQ9djvRaacFHboFqC2&t=170) the presenter inserts a blank SD card straight into the transmitter and then connects the transmitter to his computer and copies the extracted SD card contents over via USB. The end result is the same but don't try to interact with the SD card via the transmitter before this is done. I tried doing this - after inserting a blank SD card into the transmitter I put it into bootloader and tried to use the _Write Firmware_ option to backup the firmware to the card. However this just results in the somewhat cryptic error "No directory found" - OpenTX and its bootloader expect the directory structure seen above, i.e. `FIRMWARE` etc. to already be there.
 
 XJT module upgrade
 -------------
 
 The internal XJT module is the hardware within the transmitter that communicates with the receiver on your drone, i.e. the XJT module is the core radio hardware.
 
-Aside: I don't know what XJT stands for though I'd make a wild guess that the X indicates the FrSKY X series, the J is for [JR](http://www.jramericas.com/) and T is for telemetry - i.e. an XJT module is an FrSKY X series telemetry module for use with JR compatible devices. The X series is FrSKY's S.BUS based range (the older D series, that includes models like the D4R-II, is PPM based). For a summary of receiver technologies (PWM, PPM etc.) see this [video](https://www.youtube.com/watch?v=GbUMC8h2uhU) from Painless360.
+Aside: I don't know what XJT stands for though I'd make a wild guess that the X indicates the FrSKY X series, the J is for [JR](http://www.jramericas.com/) and T is for telemetry - i.e. an XJT module is an FrSKY X series module, for use with JR type devices, that supports telemetry. The X series is FrSKY's S.BUS based range (the older D series, that includes models like the D4R-II, is PPM based). For a summary of receiver technologies (PWM, PPM etc.) see this [video](https://www.youtube.com/watch?v=GbUMC8h2uhU) from Painless360.
+<!-- The web page for the XJT external module describes it as being "compatible with transmitters with external JR/Graupner type module slot." -->
 
-I don't think XJT means - it's probably just a meaningless FrSKY product identifier. Now that we've upgraded we've upgraded the OpenTX and its bootloader the last step is to upgrade the XJT module.
+Now that we've upgraded we've upgraded the OpenTX and its bootloader the last step is to upgrade the XJT module.
 
-Go to [_Download_](http://www.frsky-rc.com/download/) on the FrSKY site, select _Firmware_, then select _Tx Modules_ (from the dropdown) and click on _Firmware-XJT_ - the picture shows an external XJT module but if you look at the compatibility list you'll see that it's also appropriate for the Taranis Q X7 and other transmitters where the XJT is the standard internal module.
+The Q X7 and other modern FrSKY transmitters come with an internal XJT module but FrSKY also sell an external XJT module. All these modules use the same firmware - on the old FrSKY site this used to be clear as the firmware download page included a list of compatible devices. This list seems to have been lost with the recent site redesign - so you just have to know that the firmware associated with the external XJT module is also the firmware for use with the internal module in your transmitter.
 
-Click on Download and extract the resulting zip file. It will contain two `.frk` files, one with `LBT` in the middle of its name. The US and the EU have different wireless regulations and you should use only the `.frk` file appropriate for your jurisdiction, the LBT one for the EU and the other for the US.
+Go to [_Download_](http://www.frsky-rc.com/download/) on the FrSKY site, scroll down to _Modules_ and select _XJT_. On the _XJT_ page expand the _Firmware_ section and download the latest firmware file. The downloaded zip file will contain two `.frk` files, one for the EU (with `EU` or `LBT` in the middle of its name) and one for other jurisdictions. The EU has specific wireless regulations that require a technology called LBT. You should use only the `.frk` file appropriate for your jurisdiction.
 
 Notes:
 
-* LBT stands for Listen Before Talk and is the firmware type FrSKY is now using for the EU (see their [press release](http://www.frsky-rc.com/media/mediaItem.php?m_id=17)).
-* Your transmitter needs to be compatible with the firmware used by the receiver - so when we come to setting up the receiver next we'll upgrade it too to ensure this is the case. Mixing EU firmware on the transmitter with US firmware on the receiver, or vice-versa, won't work.
+* LBT stands for Listen Before Talk and is the firmware type FrSKY is now using for the EU (see their [press release](https://www.frsky-rc.com/lbt-eu-firmware-official-release/)).
+* Your transmitter needs to be compatible with the firmware used by the receiver - so when we come to setting up the receiver next we'll upgrade it too to ensure this is the case. Mixing EU firmware on the transmitter with non-EU firmware on the receiver, or vice-versa, won't work.
 
-If you can see you're transmitters SD card via USB connection as described above then just copy the appropriate `.frk` file to the `FIRMWARE` directory on the card (otherwise if you disabled _massstorage_ then turn off the transmitter, pop out the card and copy the file on directly from your computer).
+Copy the appropriate `.frk` file to the `FIRMWARE` directory on your transmitter's SD card (either connect your transmitter to your computer via USB, as described up above, so the SD card shows up that way or simply turn off the transmitter, pop out the card and copy the file on directly from your computer).
 
-Once you've disconnected USB (or reinsterted the SD card) restart the transmitter in normal mode and navigate to the contents of the SD card (as described above). Navigate to `FIRMWARE` and select the `.frk` file that you just copied on (it should have a name like `XJT_LBT_build161214.frk` or the same without `LBT` for the US). Select it and press _ENTER_, i.e. press the dial. You should see a popup with various options - select _Flash int module_ and a progress bar will appear indicating that it's being written.
+Once that's done, and you've disconnected USB (or reinsterted the SD card), restart the transmitter in normal mode and navigate to the contents of the SD card. Navigate into `FIRMWARE` and select the `.frk` file that you just copied on (it should have a name like `XJT_EU_V20_build170317.hex.frk` or the same with `NONEU` for the non-EU firmware). Now press and hold _ENTER_, i.e. press the dial, you should see a popup with various options - select _Flash int module_ and a progress bar will appear indicating that it's being written.
+
+![flash XJT](images/opentx-screenshots/flash-xjt.png)
 
 Oddly the process just finishes without any confirmation (if there had been a problem though it would have told you) and there appears to be no way to query the XJT firmware version via OpenTX - you just have to trust that it's been done (I've confirmed this on the [OpenTX chat channel](https://opentx.rocket.chat/channel/OpenTX_General?msg=mszoW8QwiAirmFfvy)).
-
-Note: the version history section on the XJT module page only goes up to 23rd Dec 2015, however the notes above refer to version 61214 which came out late 2016. The main download button downloads the latest version, i.e. 61214 at the time of writing.
 
 Wrap up
 -------
 
 OK - that's it for the moment with the transmitter. Later on we'll use Open Companion again to configure some of the switches to select between various [flight modes](http://ardupilot.org/copter/docs/flight-modes.html) for the quadcopter. And we'll look at disabling self-centering for the throttle.
-
-As noted at the start of this page getting the transmitter ready is the most involved task in the whole build - everything gets simpler from now on.
 
 Notes
 -----
@@ -280,6 +291,6 @@ If you're really interested the OpenTX project has a lot of documentation - howe
 
 * [The OpenTX 2.2 manual](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/) - this is probably the most digestable of the items here but it isn't terribly detailed. It is part of the [OpenTX Gitbook collection](https://www.gitbook.com/@opentx) that also includes some Lua related documentation and the OpenTX Taranis manual (which is nearly identical to the OpenTX 2.2 manual but covers a previous version).
 * [The OpenTX 2.1 documentation](http://openrcforums.com/forum/viewtopic.php?f=45&t=8724) - despite the similar name this is a completely different set of documentation (in PDF format), it has far more detail but can be confusing at times.
-* [OpenTX University](http://open-txu.org/home/undergraduate-courses/) - someone has put a lot of work into this but I found it so meandering as to be almost useless - but there is some good information in there.
+* [OpenTX University](http://open-txu.org/home/undergraduate-courses/) - someone has put a lot of work into this but I found it so meandering as to be almost useless - but there is some good information burried in there.
 
 For any given task it's often easier just to Google for information - you'll generally find someone else has writen something shorter and clearer on that particular thing.
