@@ -23,7 +23,7 @@ Build
 
 * [`parts.md`](parts.md) - all parts required for this build with explanations of the major parts.
 * [`transmitter-getting-started.md`](transmitter-getting-started.md) - introduction to the transmitter along with basic setup.
-* [`receiver-upgrade.md`](receiver-upgrade.md) - upgrading the receiver firmware via the transmitter.
+* [`receiver.md`](receiver.md) - introduction to the receiver and how to upgrade it via the transmitter.
 * [`electronics-assembly.md`](electronics-assembly.md) - wiring up the core electronics, i.e. the Pixhawk, GPS etc.
 * [`stick-setup.md`](stick-setup.md) - disabling self centering for the transmitter throttle.
 * [`transmitter-model-setup.md`](transmitter-model-setup.md) - configuring a model in the transmitter. TODO: move out unrelated sections.
