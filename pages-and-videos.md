@@ -257,18 +257,6 @@ I asked a [question on antennas](https://electronics.stackexchange.com/q/321893/
 
 ---
 
-Arduino and receiver:
-
-* Sparkfun and [wiring up receiver and plain PWM outputs](https://www.sparkfun.com/tutorials/348). And a better [diagram](https://cdn.shopify.com/s/files/1/1689/3027/files/Rc_Arduino_Schematic.png?v=1486084270).
-
-TODO: find the original S.BUS Arduino libraries plus the page that at least tries to cover the interupt aspect well.
-
-* [mbed derived Arduino S.BUS library](https://github.com/zendes/SBUS)
-
-Building the necessary S.BUS inverter - [video](https://oscarliang.com/ctt/uploads/2015/12/sbus-inverter-diagram-schematics.jpg) and [schematic](https://oscarliang.com/ctt/uploads/2015/12/sbus-inverter-diagram-schematics.jpg). Question: why can't the inversion be done in software - the inverter seems to just swap zeroes and ones and do nothing else to the signal.
-
----
-
 Camera mounts:
 
 * [Simple F450 GoPro mount](http://www.thingiverse.com/thing:470945)
@@ -326,6 +314,11 @@ Rosin paste flux:
 
 * https://www.amazon.com/Rosin-Paste-Flux-135-Jar/dp/B008ZIV85A
 * https://www.pcb-soldering.co.uk/sra-rosin-flux-paste-no-135.html
+
+---
+
+I asked if there was any other difference between the X8R and the XSR other than the physical pin arrangement but didn't get any answers: <https://www.rcgroups.com/forums/showthread.php?2926651-Differences-between-X8R-and-XSR-%28other-than-physical-pins%29>
+
 
 ---
 

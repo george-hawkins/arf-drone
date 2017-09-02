@@ -248,7 +248,7 @@ Now if you go to _radio setup_ (as described already above) and then press _PAGE
 
 ![SD card contents](images/opentx-screenshots/sd-card-contents.png)
 
-If you turn off the transmitter, restart it in bootloader mode and connect to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined up above). One is the _Taranis_ drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
+If you connect your transmitter (while turned on) via USB to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined up above). One is the _Taranis_ drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
 
 Note: Here I setup the initial contents of the SD card on my computer before putting it into the transmitter - in [this video](https://www.youtube.com/watch?v=2wZM_dqvBJ4&feature=youtu.be&list=PLiYYhnH4BhI-ot9OQ9djvRaacFHboFqC2&t=170) the presenter inserts a blank SD card straight into the transmitter and then connects the transmitter to his computer and copies the extracted SD card contents over via USB. The end result is the same but don't try to interact with the SD card via the transmitter before this is done. I tried doing this - after inserting a blank SD card into the transmitter I put it into bootloader and tried to use the _Write Firmware_ option to backup the firmware to the card. However this just results in the somewhat cryptic error "No directory found" - OpenTX and its bootloader expect the directory structure seen above, i.e. `FIRMWARE` etc. to already be there.
 
