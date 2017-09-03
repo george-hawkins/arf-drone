@@ -3,7 +3,7 @@ Stick configuration
 
 Your transmitter comes with two sticks but what should happen when you e.g. move the left stick up and down? This depends on convention. There are a number of conventions for stick configuration and they have been given uninformative names, i.e. "mode 1", "mode 2" etc. By far the most common mode is mode 2 (where up down on the left stick controls the throttle). The next most common is mode 1 (popular in Japan) and then the other modes almost never come up.
 
-Mode 2 is the default on the Q X7 and we're going to stick with it, so there's no need to go into detail here on how to change mode. If you're interested in the different setups of the different modes see Oscar Liang's description of [modes](https://oscarliang.com/choose-rc-transmitter-quadcopter/#modes) but before you do a note...
+Mode 2 is the default on the Q X7 and we're going to stick with it, so there's no need to go into detail here on how to change mode. If you're interested in the different setups of the different modes see Oscar Liang's description of [modes](https://oscarliang.com/choose-rc-transmitter-quadcopter/#modes), but before you do a note...
 
 The stick directions have names, people who come to quadcopter flying from flying RC planes tend to continue using names that meant something for planes but mean little for quadcopters - i.e. aileron, elevator and rudder. For people less wedded to the thinking that went with planes the terms pitch, yaw and roll are used. Both schools use the term throttle. If you're new to RC then neither set of terms may mean much so here's a simple table:
 
@@ -19,7 +19,7 @@ The term "elevator" seems particularly confusing, at least to me, it doesn't mea
 * Going right is the equivalent of siddling left crabwise while still facing the same direction.
 * Turning clockwise means changing the direction your facing (turning to face right, turning further to face back and so on until you do a full 360&deg;).
 
-I couldn't find a perfect page showing the use of the terms pitch, roll etc. This [page](http://newatlas.com/drone-school-quadcopter-transmitter-mode-1-2/40847/) clearly labels the sticks for mode 1 and 2 while this [page](https://www.wearechampionmag.com/quadcopter-transmitter-mode2-vs-mode1-difference) shows nicely the affect of the controls on the drone (unfortunately it uses the term roll for forward and backward, as well as left and right, rather than using the more common pitch for forward and backward).
+I couldn't find a perfect page showing the use of the terms pitch, roll etc. This [page](http://newatlas.com/drone-school-quadcopter-transmitter-mode-1-2/40847/) clearly labels the sticks for mode 1 and 2 while this [page](https://www.wearechampionmag.com/quadcopter-transmitter-mode2-vs-mode1-difference) shows nicely the affect of the controls on the drone (unfortunately it uses the term roll for forward and backward, as well as left and right, rather than using the more common term pitch for forward and backward).
 
 Note: one aspect of stick setup that I won't go into here is trim. If you go back to the diagrams I used when first introducing the transmitter you'll see the four black digital trim buttons. For details on trim see the "controller trim" section of this [page](https://dronebuff.com/drone-controller/) and see this [video](https://www.youtube.com/watch?v=Nk2h06Ql3cM) (the presenter is not terribly successful at getting his trim settings correct but you get the idea).
 
