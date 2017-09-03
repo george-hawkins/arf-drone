@@ -94,6 +94,10 @@ If you're interested in experimenting with the receiver then see the project and
 _Transmitter, receiver and breadboard setup._  
 <img height="512" src="images/assembly/receiver/tx-and-breadboard.jpg">
 
-And if you want to see alternative ways to power your receiver, while you experiment with it then see [`receiver-power.md`](receiver-power.md).
+If you look at the `SBUS::process()` method in the main [`SBUS.cpp`](https://github.com/george-hawkins/arduino-sbus/blob/master/SBUS.cpp) file in this project you'll see that it's actually very easy to decode the 25 bytes that make up an S.BUS frame.
 
-TODO: add in project on decoding Smart Port sensor data too.
+Note: this project is about understanding S.BUS - there are lots of other projects out there that cover the simpler task of just reading PWM values directly from the signal pins (the top row of pins in the main block of pins on the X8R), e.g. see this [one](https://www.sparkfun.com/tutorials/348) from Sparkfun.
+
+If you want to see alternative ways to power your receiver, while you experiment with it then see [`receiver-power.md`](receiver-power.md).
+
+TODO: add in project on decoding Smart Port sensor data too - see <https://github.com/jcheger/arduino-frskysp>

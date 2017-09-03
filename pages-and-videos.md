@@ -269,6 +269,10 @@ I added some of these, plug a couple of gimbal protectors so my Shapeways models
 
 ---
 
+As I note in the electronics assembly page I didn't find anything super simple on connecting the X8R to the Pixhawk. In the end the best I found was this [video starting at the 21 second mark](https://www.youtube.com/watch?v=uCcVCM7ajNA&feature=youtu.be&t=21). **Important:** when he plugs the connector into the X8R he plugs in the cable such that the white wire (signal) is on the left and black (ground) is on the right, which is correct, but he clearly says "the signal is on the right side" which is incorrect. In the video he just comments that we use the column of pins on the Pixhawk labelled RC and not the one labelled SB (for S.BUS) but doesn't explain why. The SB labelled pins are meant for S.BUS output, not for taking receiver input (whether in S.BUS format or not).
+
+---
+
 Additional misc links Aug 2017:
 
 Heat gun - links to version available via Sparkfun and Banggood - http://www.propwashed.com/heat-guns-deceptively-useful-tool/
@@ -284,7 +288,10 @@ You'll have to look up your own country's rules - about 100m maximum altitude fo
 
 Hot glue for insulation and support: http://www.instructables.com/id/Using-Hot-Glue-to-Insulate-and-Support-Soldering-J/
 
-Wire coloring schemes by servo manufacturer: http://www.robotplatform.com/knowledge/servo/servo_manufacturers.html
+Wire coloring schemes by servo manufacturer:
+
+* http://www.robotplatform.com/knowledge/servo/servo_manufacturers.html
+* https://learn.sparkfun.com/tutorials/hobby-servo-tutorial
 
 3DR detailed Pixhawk manual: https://3dr.com/wp-content/uploads/2017/03/pixhawk-manual-rev7-1.pdf
 3DR detailed build guide for their DIY Quad kit with Pixhawk: https://3dr.com/wp-content/uploads/2017/03/3DR-DIY-Quad-Build-Manual-vA.pdf
