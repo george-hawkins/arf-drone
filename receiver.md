@@ -53,15 +53,17 @@ So as before go to [_Download_](http://www.frsky-rc.com/download/) on the FrSKY 
 
 Once you've downloaded and extracted the firmware zip file you should have a single `.frk` firmware file. Now turn on you're transmitter, connect it to your computer via USB and the transmitter's SD card should appear as a USB drive. Copy the `.frk` file to the `FIRMWARE` directory there. Eject the transmitter's drives on your computer and disconnect it.
 
+Note: FrSKY seem to randomly switch between [zip](https://en.wikipedia.org/wiki/Zip_(file_format)) and [rar](https://en.wikipedia.org/wiki/RAR_(file_format)) for compressing their firmware files etc.
+
 Now we're going to connect up the transmitter to the receiver as shown here using the servo cable. The servo cable won't prevent you plugging things in incorrectly - you can connect ground on one side to signal on the other so double check the connections on both receiver and transmitter (see the pictures below). The black wire (ground) should always be furthest away from that little extra notch you see on one side of any S.BUS socket.
 
 | | | |
 |-|-|-|
 | _Q X7 connected to receiver._<br>![to receiver](images/assembly/receiver/taranis-q-x7-to-receiver.jpg) | _Q X7 connection closeup._<br>![TX closeup](images/assembly/receiver/taranis-q-x7-connection.jpg) | _Receiver connection closeup._<br>![RX closeup](images/assembly/receiver/receiver-connection.jpg) |
 
-Now that the receiver is connected, turn it on, navigate to the `FIRMWARE` directory. Select the right firmware file (don't mix it up with the XJT module firmware that you might also have there), it should be called something like `X8R_LBT_build151118.frk`, select ENTER and this time select _Flash ext. device_ (rather than _int. device_).
+Now that the receiver is connected, turn it on, navigate to the `FIRMWARE` directory. Select the right firmware file (don't mix it up with the XJT module firmware that you might also have there), it should be called something like `X8R_LBT_build151118.frk`, select _ENTER_ and this time select _Flash ext. device_ (rather than _int. device_).
 
-You'll see a progress bar indicating that it's being written, once successfully completed it'll just return to the SD card screen. Turn off the transmitter and disconnect the now upgraded receiver.
+The receiver's green LED will turn on and its red LED will flash during the process. On the transmitter you'll see a progress bar, indicating that the new firmware is being written, and once successfully completed it'll just return to the SD card screen. Turn off the transmitter and disconnect the now upgraded receiver.
 
 Note: servo cables always have power as the middle wire - this prevents a more serious issue than getting ground and signal mixed up (which won't work but is probably safe). If ground and power were the two outer pins (with signal in the middle) then it would be possible to get power and ground mixed up which would almost certainly fry the device. It's always important to check power and ground wires - in hobbyist setups, unlike consumer electronics, there may be nothing preventing you wiring things up incorrectly and the result will often be fatal for the devices involved.
 
@@ -70,7 +72,7 @@ X8R alternatives
 
 As noted above the X8R is by far the most popular receiver for this kind of build. But you will also see other receivers being used and depending on your preferences you might like to use one of them instead.
 
-Above in some of the pictures, if you've been looking carefully, you might have noticed that the receiver is an RX8R rather than an X8R. This is just because the X8R was out of stock at the particular retailer I was using. The RX8R is physically identical to the X8R except that instead of an RSSI port it has an RX IN port - this allows for redundancy (hence the R at the start of the name) and let's you connect up a second receiver - if the primary one fails for some reason the secondary one takes over. The RX8R is slightly more expensive than the X8R, has absolutely no advantages over the X8R for our setup and has the downside that RSSI isn't easily available as a port for connection to the flight controller. You can though open up the RX8R and run out a wire from a solder pad there that provides RSSI (for shots of the inside of the RX8R see [`rx8r.md`](rx8r.md)).
+If you look closely elsewhere in this guide you may notice that the receiver in some of the photos is an RX8R rather than an X8R. This is just because the X8R was out of stock at the particular retailer I was using. The RX8R is physically identical to the X8R except that instead of an RSSI port it has an RX IN port - this allows for redundancy (hence the R at the start of the name) and let's you connect up a second receiver - if the primary one fails for some reason the secondary one takes over. The RX8R is slightly more expensive than the X8R, has absolutely no advantages over the X8R for our setup and has the downside that RSSI isn't easily available as a port for connection to the flight controller. You can though open up the RX8R and run out a wire from a solder pad there that provides RSSI (for shots of the inside of the RX8R see [`rx8r.md`](rx8r.md)).
 
 Note: unlike the X8R the firmware for the RX8R seems to always ship with two firmware files, the EU and non-EU versions, bundled together in one zip file so, unlike the X8R, you don't have to hunt through the version history information for the latest version appropriate for your jurisdiction.
 
