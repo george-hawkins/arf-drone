@@ -5,6 +5,8 @@ TODO: move initial website recommendations from README to here.
 
 Watching videos is much more bearable if you double the speed - a feature that someone else only recently pointed out to me. Click on the video's settings cog and change the speed.
 
+RCdiy covers doing a [range check](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#Range_Check) via the transmitter - make sure to cover this too.
+
 ---
 
 The Painless360 Pixhawk series - <https://www.youtube.com/playlist?list=PLYsWjANuAm4r4idFZY24pP6s1K6ABMU0p>

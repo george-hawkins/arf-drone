@@ -1,7 +1,9 @@
 Binding
 =======
 
-Binding the receiver to the transmitter is very simple.
+We've already got all our electronics wired up and can power the Pixhawk via USB and the Pixhawk in turn can power the receiver. And we've created a model on our transmitter - so now we can bind our receiver to out transmitter.
+
+Each RC craft has a receiver - to control a craft the transmitter has to be bound to that craft's receiver. Binding is like pairing a new bluetooth device, such as a speaker, with your smartphone. A single transmitter can be bound to many receivers, each model you create on your transmitter should have an associated bound receiver, a receiver however can only be bound to one transmitter at any given time.
 
 Now that we've got the receiver connected to the Pixhawk you can provide it with power simply by connecting the Pixhawk to a USB port on your computer (or to a USB mains power adapter).
 

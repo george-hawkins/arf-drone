@@ -78,7 +78,10 @@ OK - press the power button. The first thing you see is a throttle warning. Pull
 
 You can ignore any warning by pressing a key like _PAGE_ but I suggest you get into the habit of always resolving the issue being complained about rather than ignoring it - when you're flying for real it's important to know that nothing is in an unexpected position before you take off.
 
-Now you're at the main screen, move the sticks around, flick the switches (including the black plastic trim switches) and twist the pots and see how this is reflected on the LCD. As you can see the LCD updates to show the state of the switches etc. as they change.
+_Main screen._  
+![before setup](images/opentx-screenshots/before-setup.png)
+
+Now you're at the main screen, move the sticks around, flick the switches (including the black plastic trim switches) and twist the pots and see how this is reflected on the LCD. As you can see the screen updates to reflect the current state of the switches etc., e.g. if you move the left stick around you'll see a corresponding little circle moving around in the left box or if you flip _SA_ (see the switch names up above) you'll see the little arrow beside _SA_ changing accordingly. 
 
 To turn off the transmitter just hold down the power button for a few seconds (if you don't keep holding until the transmitter is off you'll just return to whatever screen you were on).
 
@@ -108,9 +111,9 @@ So the OS on the transmitter is OpenTX and you can interact with it via the LCD 
 
 Go to _Radio setup_ and press the _PAGE_ button repeatedly to cycle through various screens (you can see the screen you're on, e.g. 3 of 9, in the upper right corner).
 
-Note: confusingly in this context _radio_ just means the overall device, i.e. your Taranis Q X7, and doesn't mean the radio hardware that communicates with the receiver on the drone. Even more confusingly the radio hardware is sometimes be referred to as the transmitter or TX module. I.e. depending on context transmitter and radio can refer to the whole device or just the component that handles the actual radio communication.
+Note: confusingly in this context _radio_ just means the overall device, i.e. your Taranis Q X7, and doesn't mean the radio hardware that communicates with the receiver on the drone. Even more confusingly the radio hardware is sometimes referred to as the transmitter or TX module. I.e. depending on context transmitter and radio can refer to the whole device or just the component that handles the actual radio communication.
 
-![throttle warning](images/opentx-screenshots/calibration.png)
+![calibration](images/opentx-screenshots/calibration.png)
 
 Let's try out something simple, safe and somewhat important - calibration. Go to _Radio setup_, press _PAGE_ until you reach the last screen - the _Calibration_ screen. Before you start (by pressing _ENTER_, i.e. the dial), turn the pots so that they're set at half way, i.e. make sure they're neither as far as they can go clockwise nor as far as they can go counterclockwise (if a pot is e.g. all the way clockwise before starting then calibration will only work out its lower limit but not its upper limit). Now press _ENTER_ and move the sticks, it'll ask you to set the sticks to their midpoint - as the sticks are self centering you don't have to do anything so just press _ENTER_ again. Now move the sticks so you touch every point of the outline of their corresponding boxes, this calibrates how far the sticks can travel in every direction. Finally turn both pots fully in both directions to similarly calibrate them and then press _ENTER_ - calibration is done.
 

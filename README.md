@@ -26,7 +26,7 @@ Build
 * [`receiver.md`](receiver.md) - introduction to the receiver and how to upgrade it via the transmitter.
 * [`electronics-assembly.md`](electronics-assembly.md) - wiring up the core electronics, i.e. the Pixhawk, GPS etc.
 * [`stick-setup.md`](stick-setup.md) - disabling self centering for the transmitter throttle.
-* [`transmitter-model-setup.md`](transmitter-model-setup.md) - configuring a model in the transmitter. TODO: move out unrelated sections.
+* [`transmitter-model-setup.md`](transmitter-model-setup.md) - configuring a model in the transmitter.
 * [`binding.md`](binding.md) - TODO: integrate into binding section of `transmitter-model-setup.md`.
 * [`transmitter-flight-modes.md`](transmitter-flight-modes.md) - setting up flight modes for a model. TODO: move out unrelated sections.
 * [`frame-parts.md`](frame-parts.md) - details of the parts that come with the frame kit and propulsion system.
@@ -60,7 +60,9 @@ Appendices
 
 * [`windows-vm.md`](windows-vm.md)
 * [`soldering.md`](soldering.md)
+* [`telemetry.md`](telemetry.md)
 * [`voice.md`](voice.md)
+* [`transmitter-extras.md`](transmitter-extras.md)
 * [`power-module-xt60-to-deans.md`](power-module-xt60-to-deans.md)
 * [`pixhawk-driver.md`](pixhawk-driver.md)
 * [`receiver-power.md`](receiver-power.md)
