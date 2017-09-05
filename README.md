@@ -17,7 +17,7 @@ Important: this build requires a small amount of soldering and it's assumed you'
 
 ---
 
-There's way too much information here to consume in one go - I suggest you first quickly scan through the main build pages to get an overview of what's where and hopefully some kind of clearer idea of what's involved. Then work your way through the pages in a more systematic manner, starting with the purchase of the necessary parsts and working your way through all the necessary setup until you finally have a quadcopter that's ready to fly.
+There's way too much information here to consume in one go - I suggest you first quickly scan through the main build pages to get an overview of what's where and hopefully some kind of clearer idea of what's involved. Then work your way through the pages in a more systematic manner, starting with the purchase of the necessary parts and working your way through all the necessary setup until you finally have a quadcopter that's ready to fly.
 
 Build
 
@@ -27,7 +27,7 @@ Build
 * [`electronics-assembly.md`](electronics-assembly.md) - wiring up the core electronics, i.e. the Pixhawk, GPS etc.
 * [`stick-setup.md`](stick-setup.md) - disabling self centering for the transmitter throttle.
 * [`transmitter-model-setup.md`](transmitter-model-setup.md) - configuring a model in the transmitter.
-* [`binding.md`](binding.md) - TODO: integrate into binding section of `transmitter-model-setup.md`.
+* [`binding.md`](binding.md) - binding the receiver to the transmitter.
 * [`transmitter-flight-modes.md`](transmitter-flight-modes.md) - setting up flight modes for a model. TODO: move out unrelated sections.
 * [`frame-parts.md`](frame-parts.md) - details of the parts that come with the frame kit and propulsion system.
 * [`pdb-soldering.md`](pdb-soldering.md) - soldering up the PDB.

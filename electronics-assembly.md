@@ -56,6 +56,8 @@ _Pixhawk wired up (with receiver)._
 
 Initially I was worriend that the whole setup would need more power than a laptop USB port could easily provide so I connected the Pixhawk to one of the higher ampage capable ports on a powered USB hub but, for whatever reason, this didn't work (the Pixhawk made an unhappy squawking sound). As it turns out the whole system runs fine off my laptop USB port. I used a USB power meter to measure how many amps the whole setup draws - it's never more than 300mA so well wihtin the 500mA minimum that all USB ports should support.
 
+The Pixhawk seems quite choosy about the type of USB port it's plugged into - as well as complaining when plugged into a higher ampage charging port, as just described, it also complained if I tried to power it off a USB charger (the kind of thing you'd use with your phone). So it seems best to just use it with the standard USB ports one finds on a computer.
+
 Cardboard layout
 ----------------
 

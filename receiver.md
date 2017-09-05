@@ -60,6 +60,7 @@ Now we're going to connect up the transmitter to the receiver as shown here usin
 | | | |
 |-|-|-|
 | _Q X7 connected to receiver._<br>![to receiver](images/assembly/receiver/taranis-q-x7-to-receiver.jpg) | _Q X7 connection closeup._<br>![TX closeup](images/assembly/receiver/taranis-q-x7-connection.jpg) | _Receiver connection closeup._<br>![RX closeup](images/assembly/receiver/receiver-connection.jpg) |
+<!-- The ratios are correct on these photos so why aren't the cells equal widths? -->
 
 Now that the receiver is connected, turn it on, navigate to the `FIRMWARE` directory. Select the right firmware file (don't mix it up with the XJT module firmware that you might also have there), it should be called something like `X8R_LBT_build151118.frk`, select _ENTER_ and this time select _Flash ext. device_ (rather than _int. device_).
 
