@@ -152,6 +152,8 @@ OpenTX Companion can run on Mac, Linux and Windows. On Mac and Linux it doesn't 
 
 To get OpenTX Companion go to [OpenTX.org](http://www.open-tx.org/) and then to the _News_ section, click on the link to the latest OpenTX 2.2.0 RC (RC18 at the time of writing). Go to the bottom of the resulting page and click on the link for the OpenTX Companion version for your system (Window, Mac or Linux).
 
+Note: OpenTX Companion is installed like any other application on Windows or Mac - on Linux it's still easy but requires installing the releases PPA for OpenTX first - see [`opentx-companion-on-ubuntu.md`](opentx-companion-on-ubuntu.md) for more details.
+
 TODO: normally I wouldn't recommend an RC release but it's actually a prerelease version of 2.2.0 that comes on the Q X7 and 2.2.X is the first version that comes with direct support for the Q X7. Once 2.2.0 stable is out update this section telling people to go to Downloads (where stable versions are) rather than to New and an RC release.
 
 When you start OpenTX it'll complain that it's "Unable to check for updates" - this is a consequence of using an RC release and you can resolve it as described [here](https://github.com/opentx/opentx/issues/4012) (actually you need to tick both "Use OpenTX firmware nightly builds" and "Use Companion nightly builds").

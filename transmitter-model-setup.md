@@ -15,6 +15,7 @@ On this page we're just going to:
 * Set the model name.
 * Set the model's failsafe setting.
 * Set expo for pitch, roll and yaw.
+* Invert the pitch.
 
 Basic onfiguration
 ------------------
@@ -158,6 +159,33 @@ Note: despite the name the function behind expo in OpenTX is not an exponential 
 
 In both videos on setting expo Painless360 says that if you can you should set expo on the flight controller rather than the transmitter as this avoids a loss of resolution. This isn't too important and as it happens you can't do set expo like this with the flight controller software that we're using. However if you're interested by what he mean then see [loss of resolution](transmitter-extras.md#loss-of-resolution).
 
+
+Inverting pitch
+---------------
+
+We'll be using the ArduCopter flight stack and one of its odd features is that you have to invert the pitch, i.e. the elevator in airplane-speak, otherwise the quadcopter will go forward when you pull the right stick back and go backward when you push it forward.
+
+Go to the _Outputs_ screen for your model, go down to _CH2_ (which is elevator), press ENTER, select _Edit_, go down to _Direction_ and change the _---_ value shown to _INV_.
+
+![direction inverted](images/opentx-screenshots/inverted-pitch-1.png)
+
+Afterwards you'll see on the _Outputs_ screen that the little arrow for _CH2_ is pointing the opposite direction to all the other ones.
+
+![direction inverted](images/opentx-screenshots/inverted-pitch-2.png)
+
+You can then see the affect of this by going to the main screen and then pressing _PAGE_. This brings you to the screen shown below - try moving the sticks about, up and down, left and right, and seeing how things react. Move the left stick, i.e. throttle, up and down and you'll see the value corresponding to channel 3 changing - as you'd expect its value is highest when you push it all the way up. Now move the right stick, i.e. pitch which we've just inverted, and you'll see how its value is instead at its lowest when it's pushed all the way up.
+
+![direction inverted](images/opentx-screenshots/inverted-pitch-3.png)
+
+Notes:
+
+* Having to invert the pitch is basically an ArduCopter bug though some people argue it's a matter of perception what's correct, see ArduPilot issue [#935](https://github.com/ArduPilot/ardupilot/issues/935) and this [DIY Drones thread](http://diydrones.com/forum/topics/pitch-is-reversed-where-should-i-fix-it).
+* This is one of the few situations where Painless360 gets things wrong - in more than one of his videos he discusses inverting pitch via the _Inputs_ screen but this just inverts the stick and not the associated trim buttons.
+
+TODO: verify the claim about trim - establish the craft at a stable fixed point and then use the roll trims to force the copter left and right, rather than using the roll stick, then try the same with the pitch trims and see that these trims affect going back and forward in the same way as the roll trims affect going left and right. Then unset _INV_ in _Outputs_ and instead set the _Weight_ for _Ele_ to -100 in _Inputs_ and see if things behave differently.
+
+TODO: see if pitch inversion is also required when using the PX4 flight stack and see if QGroundControl has any special handling for it.
+
 Videos and tutorials
 --------------------
 
@@ -173,3 +201,5 @@ The Flite Test team cover model creation at 16:50 in their [Q X7 Setup and revie
 Blue Falcon covers failsafes in his [Q X7 - setting up failsafes](https://www.youtube.com/watch?v=LuJ_K0pOJkE&feature=youtu.be) video and at 5:28 he sets _no pulses_ as we do here. Blue Falcon in fact has a whole [playlist](https://www.youtube.com/playlist?list=PLiYYhnH4BhI-ot9OQ9djvRaacFHboFqC2) of videos covering the Q X7, that starts out with a [basic introduction](https://www.youtube.com/watch?v=W9zYI7KAtn8) and works through pretty much every aspect of the transmitter, both its hardware and its software. There are better approaches for some things he covers, e.g. gimbal adjustment, but overall it at least makes you aware of pretty much everything one can do with the transmitter.
 
 RCdiy has a [detailed page](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#Using_OpenTX_The_Transmitter), that's accompanied by a video, that covers similar content. He covers setting the mode for the sticks (in our case the default is already what we want), binding and setting the failsafe (he delegates the choice of action to the receiver).
+
+Hanger Fifty one explains in this [video](https://www.youtube.com/watch?v=oJXETHp2lsE) why trying to invert the pitch via the _Inputs_ screen is incorrect and he demonstrates setting it up, as we did above, via the _Outputs_ screen. And RCdiy discusses [changing control surface directions](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#ChangingControl_Surface_Directions) on one of his pages - this covers the same thing but he uses the term "inverting control surfaces" as he's talking about planes.

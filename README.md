@@ -69,6 +69,7 @@ Appendices
 * [`rx8r.md`](rx8r.md)
 * [`unused-parts.md`](unused-parts.md)
 * [`receiver-windows-upgrade.md`](receiver-windows-upgrade.md)
+* [`opentx-companion-on-ubuntu.md`](opentx-companion-on-ubuntu.md)
 * [`sounds.md`](sounds.md)
 * [`voice.md`](voice.md)
 

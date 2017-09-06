@@ -18,7 +18,9 @@ The first thing we want to do is upload all the work we've done already on the t
 
 ![loaded models](images/opentx-companion/loaded-models.png)
 
-This page largely covers the process that Painless360 covers well in [this video](https://www.youtube.com/watch?v=agjHu-WhCJw&feature=youtu.be&t=364) from 6:04. However he first shows how to set things up using a Taranis X9D+ that's been modified to add a six position switch, it's only around 10:00 that he discusses achieving things using two of the switches on an unmodified transmitter.
+This page largely covers the process that Painless360 covers well in this [video](https://www.youtube.com/watch?v=agjHu-WhCJw) from 6:04 onwards. However he first shows how to set things up using a Taranis X9D+ that's been modified to add a six position switch, it's only around 10:00 that he discusses achieving things using two of the switches on an unmodified transmitter.
+
+Note: if you watch this video from the start then ignore the part on pitch inversion - we handled this differently.
 
 He uses the swtiches SF and SE on the Taranis X9D+. The Q X7 doesn't have an SE switch so instead we'll use the upper left pair of three-way switches called SA and SB.
 
@@ -158,9 +160,9 @@ Note: 0.4 is 0.4 seconds - initially I thought a value like 0.2 would be more th
 Choose your own setup
 ---------------------
 
-The above setup tries to match the setup covered in the Painless360 video. But you should know enough now to be able to create whatever setup seems most logical to you. In the end I went for a different setup myself.
+The above setup tries to match the setup covered in the Painless360 video. But you should know enough now to be able to create whatever setup seems most logical to you. In the end I went for something different myself.
 
-In my setup SA and SB are in the up position, as before, for flight mode 1, then I move SA to its middle position for flight mode 2 and to its down position for flight mode 3. Then (leaving SA in its down position) I move SB to its middle position for flight mode 4 and to its down position for flight mode 5. And then I have _SF_ set up as above in the emergency switch section, so I move it to its down position for flight mode 6. So unlike the Painless360 setup I don't have two ways to reach flight mode 6.
+In my setup SA and SB are in the up position, as before, for flight mode 1, then I move SA to its middle position for flight mode 2 and to its down position for flight mode 3. Then (leaving SA in its down position) I move SB to its middle position for flight mode 4 and to its down position for flight mode 5. And then I have _SF_ set up as above in the emergency switch section, so I move it to its down position for flight mode 6. So unlike the Painless360 setup I don't have two ways to reach flight mode 6. And as flight mode 6 is activated by a single physical switch I don't need to create a logical switch for it.
 
 ![own logical switches](images/opentx-companion/own-logical-switches.png)
 
@@ -173,57 +175,6 @@ For more details on logical switches, including an explanation of the _AND switc
 Notes
 -----
 
-TODO: reference page <http://open-txu.org/home/special-interests/multirotor/opentx-apm-px4-pixhawk/> that accompanies Painless360's YouTube video on setting up flight modes.
+As noted above this page is heavily based on this [video](https://www.youtube.com/watch?v=agjHu-WhCJw) from Painless360. This page has been updated for the Q X7 (the video features the X9D+) and the screenshots here are from a more recent version of OpenTX Companion.
 
-Invert the elevator / pitch
----------------------------
-
-At 3:57 he explains that for ArduCopter the elevator/pitch value has to be inverted otherwise the quadcopter will go forward when you pull the right stick back and go backward when push it forward.
-
-Note: having to reverse the elevator is basically an ArduCopter bug (though some people seem to argue its a matter of perception what's correct), see [ArduPilot #935](https://github.com/ArduPilot/ardupilot/issues/935) and this [DIY Drones thread](http://diydrones.com/forum/topics/pitch-is-reversed-where-should-i-fix-it).
-
-TODO: see if this is also the same when using PX4 and QGroundControl.
-
-Painless360 inverts the elevator via the _Inputs_ screen but [this video](https://www.youtube.com/watch?v=oJXETHp2lsE&feature=youtu.be&t=114) and others suggest that this isn't how you should do this as apparently you'll invert the stick but not the associated trim buttons.
-
-So instead go to the _Outputs_ screen for your model, go down to _CH2_ (which is elevator), press ENTER, select _Edit_, go down to _Direction_ and change the _---_ value shown to _INV_.
-
-RCdiy also outlines inverting in this way - as he's referring to a plane he talks of [inverting control surfaces](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#ChangingControl_Surface_Directions).
-
-You can then see the affect of this by going to the main screen and then pressing PAGE to see values being output on the first eight values, move the left stick up and down and you'll see the channel 3 value changing - its value is highest when you push it all the way up (as you'd expect), now move the right stick, i.e. elevator, which we've just inverted and you'll see how its value is at its lowest when the stick is pushed all the way up.
-
-TODO: verify the claim about trim - establish the copter at a stable fixed point and then use the roll trims to force the copter left and right, rather than using the roll stick, then try the same with the pitch trims and see that these trims affect going back and forward in the same way as the roll trims affect going left and right.
-
----
-
-TODOs
------
-
-TODO: move the following section elsewhere.
-
-Installing OpenTX Companion on Ubuntu
--------------------------------------
-
-TODO: this is the test PPA - update to be `rel` PPA instead.
-
-Installed PPA as per <https://launchpad.net/~opentx-test/+archive/ubuntu/ppa>
-
-    $ sudo add-apt-repository ppa:opentx-test/ppa
-    $ sudo apt-get update
-    $ sudo apt-get install opentx-companion22
-
-Launched it:
-
-    $ companion22
-
-Enabled nightly firmware and Companion downloads under Settings / Application Settings.
-
-Under Settings / Radio Profile I set the Radio Type to "FrSky Taranis X7" and enabled the lua and massstorage Build Options.
-
-As restarting I, as prompted, saved the latest firmware - I saved it to `~/opentx-companion`.
-
-After connecting to the TX in normal and off modes it turns out what Companion wants is bootloader mode.
-
-So keeping the two lower trim buttons pressed towards the center I turned on the TX and connected it.
-
-Important: I have automounting of USB drives disabled. So while the drives show up in Unity I had to explicitly open the Taranis before Companion could get the `EEPROM.BIN` file it needs if you want to load exisitng models.
+The Painless360 video is accompanied by its own [page](http://open-txu.org/home/special-interests/multirotor/opentx-apm-px4-pixhawk/) on OpenTX University which you may find useful as a reference.
