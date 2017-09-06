@@ -81,7 +81,7 @@ You can ignore any warning by pressing a key like _PAGE_ but I suggest you get i
 _Main screen._  
 ![before setup](images/opentx-screenshots/before-setup.png)
 
-Now you're at the main screen, move the sticks around, flick the switches (including the black plastic trim switches) and twist the pots and see how this is reflected on the LCD. As you can see the screen updates to reflect the current state of the switches etc., e.g. if you move the left stick around you'll see a corresponding little circle moving around in the left box or if you flip _SA_ (see the switch names up above) you'll see the little arrow beside _SA_ changing accordingly. 
+Now you're at the main screen, move the sticks around, flick the switches (including the black plastic trim switches) and twist the pots and see how this is reflected on the LCD. As you can see the screen updates to reflect the current state of the switches etc., e.g. if you move the left stick around you'll see a corresponding little circle moving around in the left box or if you flip _SA_ (see the switch names up above) you'll see the little arrow beside _SA_ changing accordingly.
 
 To turn off the transmitter just hold down the power button for a few seconds (if you don't keep holding until the transmitter is off you'll just return to whatever screen you were on).
 
@@ -160,15 +160,17 @@ TODO: remove link to above Github issue - and uncheck the options involved - onc
 
 When you start OpenTX it'll check for the latest firmware and ask if you want to download it. Don't - you haven't configured your transmitter model yet and it defaults to downloading firmware for the Taranis X9D+.
 
-TODO: the needs a rewrite for a non-prerelease version of OpenTX. The screenshot below is from installing Companion 2.2 on Windows. At the end of installation it opened and opened straight into settings so you have to establish your radio etc. immediately (which makes more sense than the previous behavior). So setup _Profile Name_, _Radio Type_, _Build Options_ and _SD Structure path_ as shown. It did not bug me on _first_ starting to download the latest firmware - oddly it only this on restarting it, it would seem to make most sense to bug you immediately after forcing you to complete the settings.
+TODO: the needs a rewrite for a non-prerelease version of OpenTX. The screenshot below is from installing Companion 2.2 on Windows. At the end of installation it opened and opened straight into settings so you have to establish your radio etc. immediately (which makes more sense than the previous behavior). So setup _Profile Name_, _Radio Type_ and _Build Options_ (_SD Structure path_ gets set in a later page/chapter). It did not bug me on _first_ starting to download the latest firmware - oddly it only this on restarting it, it would seem to make most sense to bug you immediately after forcing you to complete the settings.
 
-![companion settings](images/opentx-screenshots/companion-settings.png)
+![initial settings](images/opentx-companion/initial-settings.png)
 
 In _Settings_ change the radio type to _FrSky Taranis X7_ and tick _lua_ and _massstorage_ as build options. Only the radio type is very important, the build options could probably all be safely left unchecked. The three options suggested in nearly all guides are:
 
 * _lua_ - this enables [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) scripting for the transmitter. While you may probably never use Lua scripting yourself it is used in some standard operations such as the new model setup wizard (that currently is only available if using the older X9D+), but it does not seem to be used in any really core functionality (see [my question](https://opentx.rocket.chat/channel/OpenTX_General?msg=z9X8qKSt2afERAy6y) on the OpenTX chat channel).
 * _massstorage_ - this means that your Taranis looks like a USB drive when it's plugged into your computer via a USB cable. I find this very convenient and the only reason not to enable it is that you have to choose between this feature and being able to connect the transmitter up to simulator software running on your computer (see [here](https://oscarliang.com/free-quadcopter-simulator-drone-multirotor-trainer/) and [here](http://www.dronethusiast.com/drone-flight-simulator/) for more on simulators).
 * _sqt5font_ - this is an alternative font, for use by the transmitter, that some people prefer. I tried the firmware with _sqt5font_ ticked and with it unticked and didn't see any difference so perhaps this setting is irrelevant for the Q X7 - as such I don't select it.
+
+**Update:** it turns out that the SQT5 font was accidentally left out of 2.2.0 (see [#5142](https://github.com/opentx/opentx/issues/5142)) - hence the  lack of any difference if _sqt5font_ is ticked or not.
 
 For a more detailed walkthru of these basic settings see Oscar Liang's [walkthru](https://oscarliang.com/flash-opentx-firmware-taranis/), just jump down to the "Firmware Download and Flashing" section. Note that he's setting things up for a Taranis X9D+ and that he turns off _massstorage_ (as he wants to be able to use the transmitter with simulators, something I haven't tried). Also Wayne Flower's [video from the 2:59 mark](https://www.youtube.com/watch?v=q1D-LEfDprk&feature=youtu.be&t=179) covers the same thing for the Q X7 (note he enables nightly builds as an option, but only because this video was made before a stable 2.2.X version came out).
 
@@ -179,7 +181,9 @@ Now we're ready to connect the transmitter to the computer. You'll need a USB ca
 
 First start the transmitter in bootloader mode - this involves pressing the two black trim swtiches above the LCD inwards while you press the power button. Again Oscar Liang has a nice picture in his [walkthru](https://oscarliang.com/flash-opentx-firmware-taranis/) , see the "Backup Current Configuration" section (however we're going to back things up in a different way to him).
 
-Note: every so often when starting the transmitter in bootloader mode I found it would crash in the same fashion as described [here](http://openrcforums.com/forum/viewtopic.php?t=8882). Whenever this happened I had to pull out a battery to turn it off. This just seemed to happen occassionally and the transmitter always successfully entered bootloader mode the next time I tried.
+Note: when starting the transmitter in bootloader mode I sometimes found it would crash in the same fashion as described [here](http://openrcforums.com/forum/viewtopic.php?t=8882). Whenever this happened I had to pull out a battery to turn it off. While annoying the transmitter did usually enter bootloader mode successfully on trying again.
+
+**Update:** after a little more experimentation, it seems this bug is triggered by holding down the power button at startup rather than just quickly pressing and releasing it.
 
 ![bootloader](images/opentx-screenshots/bootloader.png)
 

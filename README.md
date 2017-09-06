@@ -61,7 +61,6 @@ Appendices
 * [`windows-vm.md`](windows-vm.md)
 * [`soldering.md`](soldering.md)
 * [`telemetry.md`](telemetry.md)
-* [`voice.md`](voice.md)
 * [`transmitter-extras.md`](transmitter-extras.md)
 * [`power-module-xt60-to-deans.md`](power-module-xt60-to-deans.md)
 * [`pixhawk-driver.md`](pixhawk-driver.md)
@@ -70,6 +69,8 @@ Appendices
 * [`rx8r.md`](rx8r.md)
 * [`unused-parts.md`](unused-parts.md)
 * [`receiver-windows-upgrade.md`](receiver-windows-upgrade.md)
+* [`sounds.md`](sounds.md)
+* [`voice.md`](voice.md)
 
 ---
 

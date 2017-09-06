@@ -1,3 +1,5 @@
+TODO: merge with [`sounds.md`](sounds.md)
+
 OpenTX sounds
 =============
 

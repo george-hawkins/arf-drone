@@ -7,6 +7,8 @@ Each RC craft has a receiver - to control a craft the transmitter has to be boun
 
 Now that we've got the receiver connected to the Pixhawk you can provide it with power simply by connecting the Pixhawk to a USB port on your computer. After flashing its LEDs wildly, the Pixhawk will chirp loudly every time you connect it up via USB - but don't worry about that for the moment - you can safely plug it in and out without issue. When I say turn on or off the receiver below I just mean connect or disconnect the Pixhawk, that's powering it, from USB.
 
+Note: if you're using Mac or Linux there are no additional drivers that need to be installed for the Pixhawk. However if you're using Windows then I suggest at this point powering the Pixhawk from your computer while it's in sleep mode so that it won't go off trying to find drivers for it. If that isn't an option for some reason then flip forward to [`pixhawk-setup.md`](pixhawk-setup.md) and follow the instructions there for installing Mission Planner as this will also install the necessary Windows drivers.
+
 _Binding the receiver to the transmitter._  
 <img width="512" src="images/assembly/receiver/binding.jpg">
 
