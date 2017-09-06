@@ -101,15 +101,16 @@ If you'd like the transmitter to announce the current mode as you flick the swit
 
 First though OpenTX Companion needs to know what sounds are available. The sounds are stored in the _SOUNDS_ directory on the transmitter's SD card and OpenTX Companion works off a synced copy of the SD card. Go to _Settings_ in OpenTX Companion and then go down to _SD Structure path_ and click its _Select Folder_ button. Create a new folder (called e.g. `opentx-sdcard`) and select it - this is where the synced copy of the transmitter's SD card will be stored. Then, assuming your transmitter is still connected in bootloader mode, go to the _File_ menu and select _Synchronize SD_.
 
-Note: if you're using the default SD card contents then about 99% of the used disk space is taken up with the sound files and these include sounds for German, Spanish, French and Italian, in addition to English, so 80% of the content is for other languages. You might want to delete all but your preferred language first before syncing as the syncing process is very slow.
+Notes:
+
+* If you're using the default SD card contents then about 99% of the used disk space is taken up with the sound files and these include sounds for German, Spanish, French and Italian, in addition to English, so 80% of the content is for other languages. You might want to delete all but your preferred language first before syncing as the syncing process is very slow.
+* Windows may "helpfully" automatically add a directory called `System Volume Information` to your SD card that cannot be synced - you can ignore any errors related to this directory.
 
 Once synched OpenTX Companion will know what sounds can be played so back to _Special Functions_ and this time assign _L1_ to _L6_ to _SF11_ to _SF16_ (the only reason for using these rather than _SF7_ onwards is so that the last digit matches nicely for each, i.e. _L1_ to _SF11_ and so on) and this time choose _Play Track_ at the action for each. Then for the _Parameters_ value for each you can choose a track.
 
 Note: don't mix up _Play Track_ with the altogether more limited _Play Sound_ which just works against a limited set of predefined beeps and chirps. Oddly the actions aren't alphabetically sorted so you just have to search about.
 
-The default set of sounds are more suitable for planes than quadcopters - there aren't tracks in the default sound pack for stabilize etc., you can just choose the generic flight mode tracks _fm-1_ to _fm-6_, that just announce "flight mode one" and so on.
-
-We'll look at adding sounds that match the actual flight modes, e.g. "Stabilize" etc., as an addon after we've done our first flight.
+The default set of sounds are more suitable for planes than quadcopters - there aren't tracks in the default sound pack for stabilize etc., you can just choose the generic flight mode tracks _fm-1_ to _fm-6_, that just announce "flight mode one" and so on. At the end of this page is a section on adding additional sounds that match the actual flight modes, e.g. "stabilize" etc., but I suggest you only do this once you've configured the flight modes you want later when we cover setting up the Pixhawk.
 
 ![play tracks](images/opentx-companion/play-tracks.png)
 
@@ -171,6 +172,42 @@ Note: for this configuration I used a column in the _Logical Switches_ tab that 
 TODO: log to a bug - in the version I was using the simulator ignored the values of SA and SB unless I closed the simulator, changed focus to another application, then returned to OpenTX Companion and reopened the simulator, alternatively I could change one to the SF&uarr; values to !SF&darr; (which is logically the same thing for a two-way switch like SF) - though the issue returned each time I moved focus to another application and then returned to OpenTX Companion. Also see if it's Linux specific.
 
 For more details on logical switches, including an explanation of the _AND switch_ column, see the [logical switches section](https://opentx.gitbooks.io/manual-for-opentx-2-2/content/logical_switches.html) of the OpenTX 2.2 manual.
+
+Adding sounds
+-------------
+
+As noted before the standard SD card contents do not include sounds for the ArduCopter flight modes that we will be setting up later. This is simple to fix. I've put together the zip file [`arducopter-flight-modes-sounds.zip`](arducopter-flight-modes-sounds.zip) which contains the necessary sounds. The following table shows the flight mode names and the corresponding sound files (for some modes there wasn't a suitable file in the sound pack from which I took these files).
+
+| Flight mode | Sound file |
+|-------------|------------|
+| Acro | `acromd.wav` |
+| AltHold | `althld.wav` |
+| Auto | `automd.wav` |
+| AutoTune | `attnmd.wav` |
+| Avoid_ADSB | |
+| Brake | `brkmd.wav` |
+| Circle | `crclmd.wav` |
+| Drift | `drftmd.wav` |
+| Flip | |
+| Guided | `giddmd.wav` |
+| Guided_NoGPS | |
+| Land | `lndgmd.wav` |
+| Loiter | `loitrmd.wav` |
+| PosHold | `poshld.wav` |
+| RTL | `rtl.wav` |
+| Sport | `sprtmd.wav` |
+| Stabilize | `stblzmd.wav` |
+| Throw | &nbsp; |
+
+Extract the zip file above into the `SOUNDS/en` folder on your transmitter's SD card and synchronize the contents of your SD card with the copy on your computer (as described previously). Once you've configred your set of flight modes on the flight controller (which we'll do later) you just have to update the _Name_ field for each flight mode to match, e.g. as below (see "Stabil" etc. in brackets on each flight mode tab).
+
+![assigned flight modes](images/opentx-companion/assigned-flight-modes.png)
+
+Now on the special functions tab you can replace the uninformative sounds that we used before, like "flight mode one" etc., with sounds that correspond to the names you've just set up above.
+
+![assigned sounds](images/opentx-companion/assigned-sounds.png)
+
+Note: the sound files used here were taken from the Amber sound pack linked to on the [2.2 resources page](http://open-txu.org/v2-2-resources-2/) on OpenTX University. The files `loitmd.wav` and `stblmd.wav` were originally called `loitrmd.wav` and `stblzmd.wav` respectively, they were renamed as file names can only be a maximum of six letters now (excluding the suffix).
 
 Notes
 -----
