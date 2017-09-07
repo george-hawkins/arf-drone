@@ -12,7 +12,7 @@ Once installed start the VM - when up and running for the first time just leave 
 
 The VM is already setup with VirtualBox [guest additions](https://www.virtualbox.org/manual/ch04.html) so there's no need to install these.
 
-TODO: this doesn't always seem to be the case - best to install version that matches your VirtualBox version (see below for Ubuntu instructions - process is the same for Mac).
+TODO: this doesn't always seem to be the case - best to install version that matches your VirtualBox version (see below for Ubuntu instructions - process is the same for Mac). Just go to _Devices_ menus and select _Insert Guest Additions CD Image..._, then in Windows got to Explorer and then to _This PC_ and double click the _VirtualBox Guest Additions_ CD and complete the resulting install process. You can eject the CD afterwards.
 
 In order to use USB passthrough, i.e. access USB devices connected to the host, you do however need to install the VirtualBox extension pack. Go to VirtualBox [downloads](https://www.virtualbox.org/wiki/Downloads), find the "VirtualBox Extension Pack" and click the "all supported platforms" link - this downloads a `vbox-extpack` file. Just double click this to install it.
 
