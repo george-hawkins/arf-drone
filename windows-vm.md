@@ -12,6 +12,8 @@ Once installed start the VM - when up and running for the first time just leave 
 
 The VM is already setup with VirtualBox [guest additions](https://www.virtualbox.org/manual/ch04.html) so there's no need to install these.
 
+TODO: this doesn't always seem to be the case - best to install version that matches your VirtualBox version (see below for Ubuntu instructions - process is the same for Mac). Just go to _Devices_ menus and select _Insert Guest Additions CD Image..._, then in Windows got to Explorer and then to _This PC_ and double click the _VirtualBox Guest Additions_ CD and complete the resulting install process. You can eject the CD afterwards.
+
 In order to use USB passthrough, i.e. access USB devices connected to the host, you do however need to install the VirtualBox extension pack. Go to VirtualBox [downloads](https://www.virtualbox.org/wiki/Downloads), find the "VirtualBox Extension Pack" and click the "all supported platforms" link - this downloads a `vbox-extpack` file. Just double click this to install it.
 
 Note: host is the term used in virtualization to refer to the real machine, i.e. the physical machine running VirtualBox (though technically you can run VMs within VMs within VMs and so on, so the host may be a VM running another VM).
@@ -25,6 +27,14 @@ That's it. Now you can use the VM just as you would a physical Windows machine. 
 Just go to the Devices menu, select Shared Folders, click the folded icon with a plus, select Other... from the Folder Path dropdown, leave Folder Name as it is (unless you want the folder to have a different name on the VM), tick Auto-Mount and Make Permanent (so the folder is automatically available whenever the VM starts) and then OK.
 
 I had to restart the VM for the shared folder to become visible - once done you'll find it as a shared folder under This PC in Explorer.
+
+TODO: add note that you need to change the VM's audio controller setting from the default "ICH AC97" to "Intel HD Audio" if you want audio to work in Windows - this was the case irrespective of whether VirtualBox was running on Mac or Linux - see [`intel-hd-audio.png`](images/virtualization/intel-hd-audio.png).
+
+TODO: comment that you "need" to bump video memory up to 18MB - see [`low-video-memory.png`](images/virtualization/low-video-memory.png).
+
+TODO: comment the VMs provided by Microsoft are only meant for browser testing and technically you should buy a Windows license for this kind of usage.
+
+TODO: note that before you used to log in straight to the desktop - now you need to enter IEUser's password which is "Passw0rd!".
 
 USB filters
 -----------
