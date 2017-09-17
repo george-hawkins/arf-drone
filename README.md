@@ -33,6 +33,7 @@ Build
 * [`pdb-soldering.md`](pdb-soldering.md) - soldering up the PDB.
 * [`frame-assembly.md`](frame-assembly.md) - assembling the frame.
 * [`pixhawk-setup.md`](pixhawk-setup.md) - configuring the Pixhawk.
+* [`final-assembly.md`](final-assembly.md) - assembling the frame and electronics for the first flight.
 * [`battery-charging.md`](battery-charging.md) - charging and storing the batteries.
 
 * [`qgroundcontrol.md`](qgroundcontrol.md)
