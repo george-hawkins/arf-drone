@@ -23,9 +23,7 @@ The camera holder can take interchangeable adapters for different mounts - it ju
 
 The camera comes with a number of cables - as well a standard USB cable, for recharging the battery and for connecting the camera to you computer, there's a cable consisting of a micro USB connector with power and video connectors coming off it. This second cable is more interesting - if you want you can use the power connector to provide power from e.g. your craft's main battery, rather than use the camera's internal battery, and the video connector can be connected up to a video transmitter or it can be connected up to the RCA composite video adapter and from their directly to e.g. an LCD monitor that takes composite video input.
 
-You don't need to use this second cable at all - you can just power the camera off its internal battery and record video to the internal SD card (rather than transmitting it to some other device). The camera doesn't come with an SD card - you need at least a class 6 card, something like 16GB class 10 [SanDisk card](https://www.amazon.co.uk/SanDisk-Ultra-MicroSDHC-Memory-Adapter/dp/B013UDL5V6/) is enough for more than an hour of video at 1080p and 60fps.
-
-TODO: get figure for GBs used by camera at 1080p/60fps.
+You don't need to use this second cable at all - you can just power the camera off its internal battery and record video to the internal SD card (rather than transmitting it to some other device). The camera doesn't come with an SD card - you need at least a class 6 card, something like a 16GB class 10 [SanDisk card](https://www.amazon.co.uk/SanDisk-Ultra-MicroSDHC-Memory-Adapter/dp/B013UDL5V6/) is enough for more than an hour of video at 1080p and 60fps.
 
 **Important**: if you're using the camera while powering it via USB, i.e. using its video capabilities rather than simply recharging its battery, then you must remove the battery first otherwise the battery can overheat and be damaged.
 
