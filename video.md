@@ -23,7 +23,7 @@ The camera holder can take interchangeable adapters for different mounts - it ju
 
 The camera comes with a number of cables - as well a standard USB cable, for recharging the battery and for connecting the camera to you computer, there's a cable consisting of a micro USB connector with power and video connectors coming off it. This second cable is more interesting - if you want you can use the power connector to provide power from e.g. your craft's main battery, rather than use the camera's internal battery, and the video connector can be connected up to a video transmitter or it can be connected up to the RCA composite video adapter and from their directly to e.g. an LCD monitor that takes composite video input.
 
-You don't need to use this second cable at all - you can just power the camera off its internal battery and record video to the internal SD card (rather than transmitting it to some other device). The camera doesn't come with an SD card - you need at least a class 6 card, something like 16GB class 10 [SanDisk card](https://www.amazon.co.uk/SanDisk-Ultra-MicroSDHC-Memory-Adapter/dp/B013UDL5V6/) is probably more than enough.
+You don't need to use this second cable at all - you can just power the camera off its internal battery and record video to the internal SD card (rather than transmitting it to some other device). The camera doesn't come with an SD card - you need at least a class 6 card, something like 16GB class 10 [SanDisk card](https://www.amazon.co.uk/SanDisk-Ultra-MicroSDHC-Memory-Adapter/dp/B013UDL5V6/) is enough for more than an hour of video at 1080p and 60fps.
 
 TODO: get figure for GBs used by camera at 1080p/60fps.
 
@@ -46,7 +46,7 @@ However it takes a long time to charge and once charged you'll run it down quite
 The first thing you should do is install the [iOS or Android app](https://www.runcam.com/download/runcam2/) on your smartphone - this lets you see the video output of the camera, start and stop recording and adjust settings easily. Once the app is installed you can connect to the camera as follows:
 
 * Turn on the camera by pressing the main button for 3 seconds - the LED behind this button will go blue (if it flashes blue this means you haven't inserted an SD card yet).
-* Turn on WiFi by briefly pressing the WiFi button, i.e. don't hold it down.
+* Turn on WiFi by briefly pressing the WiFi button, i.e. don't hold it down. It may take a second or two before the white LED above the WiFi button starts to flash.
 * On your smartphone look for a wireless network named something like "RUNCAM2_2fc113" and connect using the password "1234567890".
 * Open the RunCam app and select the RunCam 2 as your device type and then press _Connect your camera_. It then goes through a binding phase, this process failed for me but the app was able to explain why - it was necessary to turn off mobile data first on my phone - once this was done the binding completed without problem.
 * Once bound and connected you'll see what the camera sees on your smartphone.
@@ -57,4 +57,4 @@ Assuming you're still connected to your camera (as outlined above) you'll have t
 
 Note: in the unlikely event that your camera came with a firmware version earlier than 2.1 then you'll have to update the firmware via the SD card (see the instructions included on the [download page](https://www.runcam.com/download/runcam2/)).
 
-You'll see a lot of criticism of early releases of the app and firmware but the latest versions of both make for a very easy to use camera. Once connected via the app try out the buttons above and below the video image, e.g. the white balance (WB) button, the field-of-view (FOV) button etc., drag the modes line, i.e. video, photo etc., left and right and try taking photos and videos (the big obvious red button). It's all pretty obvious.
+You'll see a lot of criticism on the web of early releases of the app and firmware but the latest versions of both make for a very easy to use camera. Once connected via the app try out the buttons above and below the video image, e.g. the white balance (WB) button, the field-of-view (FOV) button etc., drag the modes line, i.e. video, photo etc., left and right and try taking photos and videos (the big obvious red button). To the left below the video you'll see an amount of time, e.g. 01:07:00, which is the amount of video you can record given the current settings. It's all pretty obvious.
