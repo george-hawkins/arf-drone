@@ -1,17 +1,23 @@
 feature -RX_PPM
 feature -BLACKBOX
 feature -TRANSPONDER
+
+feature LED_STRIP
 feature RX_SERIAL
 feature MOTOR_STOP
-feature LED_STRIP
+
 map TAER1234
+
 serial 1 64 115200 57600 0 115200
+
 set looptime = 1000
 set serialrx_provider = SBUS
 set max_throttle = 2000
 set motor_pwm_rate = 1000
+
 aux 0 0 0 1450 2100
 aux 1 1 0 1175 2100
+
 set 3d_deadband_throttle = 0
 set acc_trim_roll = 4
 set p_pitch = 80

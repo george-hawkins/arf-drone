@@ -98,7 +98,7 @@ I haven't found anything really good on rates and expos in Betaflight - [this vi
 TODO:
 
 * add in [`inprogress-qx95.md`](inprogress-qx95.md) content and work in any relevant information from [`fpv-x-racer.md`](fpv-x-racer.md).
-* cleanup contents of [`cleanflight-settings`](cleanflight-settings) - probably the only thing actually worth keeping is [`qx95-cleanflight-backup-20170624-diff.txt`](cleanflight-settings/qx95-cleanflight-backup-20170624-diff.txt) - move it up out of `cleanflight-settings` and get rid of the rest.
+* work in contents of [`cleanflight-settings`](cleanflight-settings).
 
 ---
 
@@ -118,6 +118,8 @@ In the end it all worked out and also I replaced the much battered Hubsan propel
 
 _Resurrected QX95 with new LED strip (with integrated buzzer) and Walkera propellers._  
 <img width="512" src="images/qx95/resurrected.jpg">
+
+TODO: the Walkera propellers aren't nicely labelled, it turns out that for each color one is CW and one CCW  - you have to work out which motors are CW and which CCW (from the color of their wiring) and then visually work out which propeller of each pair is CW and which CCW and pair things up appropriately - I'm sure I've commented on how to do this elsewhere so search or maybe it's in the links page.
 
 Battery charging
 ----------------
