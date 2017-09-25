@@ -16,7 +16,7 @@ RunCam 2 - what you get in the box:
 * USB cable (for recharging and connecting to your computer).
 * Layard (that can be unscrewed at the middle).
 
-_RunCam 2 parts_
+_RunCam 2 parts_  
 <img width="512" src="images/video/parts.jpg">
 
 The camera holder can take interchangeable adapters for different mounts - it just comes with an adapater for the standard 1/4-20 UNC screw found on most tripods but you can e.g. also get adapters like the ones included in this [package](https://www.banggood.com/RunCam2-Camera-Mount-Support-GoPro-Action-Camera-p-1031391.html) for GoPro style mounts.
@@ -31,7 +31,7 @@ TODO: get figure for GBs used by camera at 1080p/60fps.
 
 If you look at the battery you'll see a clear plastic tab with an arrow on it - I initially assumed that this was something that was meant to be pulled off, like the little protective film on the lens, but it's meant to be left there and enables you to pull the battery out of the battery compartment. Similarly I almost damaged the battery cover by assuming it's supposed to be pushed all the way to the side when removing it - instead you just push it over a few millimeters and then waggle it outwards as shown [here](https://youtu.be/r1Ju8icXsRQ?t=427) - this video also shows how to insert the SD card (upside down relative to the top of the camera).
 
-_RunCam 2 battery compartment._
+_RunCam 2 battery compartment._  
 <img width="512" src="images/video/battery-compartment.jpg">
 
 Usage
