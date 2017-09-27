@@ -56,3 +56,32 @@ Assuming you're still connected to your camera (as outlined above) you'll have t
 Note: in the unlikely event that your camera came with a firmware version earlier than 2.1 then you'll have to update the firmware via the SD card (see the instructions included on the [download page](https://www.runcam.com/download/runcam2/)).
 
 You'll see a lot of criticism on the web of early releases of the app and firmware but the latest versions of both make for a very easy to use camera. Once connected via the app try out the buttons above and below the video image, e.g. the white balance (WB) button, the field-of-view (FOV) button etc., drag the modes line, i.e. video, photo etc., left and right and try taking photos and videos (the big obvious red button). To the left below the video you'll see an amount of time, e.g. 01:07:00, which is the amount of video you can record given the current settings. It's all pretty obvious.
+
+---
+
+_Transmitter._  
+<img width="512" src="images/video/transmitter.jpg">
+
+_Transmitter PCB rev:2.2._  
+<img width="512" src="images/video/transmitter-pcb-rev-2.2.jpg">
+
+_Receiver._  
+<img width="512" src="images/video/receiver.jpg">
+
+_Fpv googles._  
+<img width="512" src="images/video/fpv-googles.jpg">
+
+_Fpv googles bag and lens cloth._  
+<img height="380" src="images/video/fpv-googles-bag.jpg">
+
+_Camera mounts (for GoPro and RunCam 2)._  
+<img width="512" src="images/video/camera-mounts.jpg">
+
+_Cloverleaf RP-SMA antennas._  
+<img width="512" src="images/video/cloverleaf-rp-sma.jpg">
+
+_GoPro FPV adapter cable._  
+<img width="512" src="images/video/gopro-fpv-adapter-cable.jpg">
+
+_Analog video capture._  
+<img width="512" src="images/video/analog-video-capture.jpg">
