@@ -209,3 +209,18 @@ _49 Tools and materials used._
 
 _50 Voltage sensor in place._  
 <img src="images/assembly/final-assembly/IMG_20170910_151003.jpg" width="512">
+
+Straps
+------
+
+<img width="512" src="images/assembly/final-assembly/battery-straps.jpg">
+
+* <https://www.banggood.com/10PCS-26cm-Eachine-Lipo-Battery-Tie-Down-Strap-p-1137622.html>
+* <https://www.banggood.com/RJX-HOBBY-Magic-Tape-Tie-Down-Strap-for-RC-Battery-p-1134012.html>
+* <https://www.banggood.com/RJX-Hobby-Magic-Tape-Bulletproof-Vest-Material-Tie-Down-Strap-for-RC-Battery-p-1153171.html>
+* Silicone - <http://www.rjxhobby.com/rjx-rjx1280>
+* Stiched faux-leather - <http://www.rjxhobby.com/rjx-rjx1494>
+
+<img width="512" src="images/assembly/final-assembly/eachine-260mm-strap.jpg">
+
+<img width="512" src="images/assembly/final-assembly/jx-hobby-250mm-strap.jpg">
