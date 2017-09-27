@@ -1,7 +1,21 @@
-Finished result
-===============
+Version 1
+=========
 
-This page shows the laser cut parts that I received from Sculpteo and their assembly with the receiver.
+This directory contains the original antenna mount design.
+
+Design notes
+------------
+
+I refer to the small secondardy arm that's meant to be attached at right angles to the main body as the "attachment" in rest of this page.
+
+If you look at [`antenna-mount-design.svg`](antenna-mount-design.svg) you'll see the attachment - if you look carefully you'll see it's 1mm taller between the two catches used to attach it to the main body than it is at the ends - this is so you can wrap tape around the ends to hold the antenna in place and not have the thickness of the tape interfere with plugging the arm into the main body.
+
+[`antenna-mount-production.svg`](antenna-mount-production.svg) contains some important features that are hard to spot - the antenna outlines on the right arm and on the attachment arm are actually each made up of two rounded rectangle overlaid on each other. One rectangle is simply the outer boundary that's stroked in red for edge engraving, in the case of the arm nothing has been done to the rectangle, but for the attachment the path has been broken to remove the left edge. The other rectangle is filled in black for area engraving and in both the arm and the attachment case the intersection tool has been used to remove areas of the rectangles that don't need to be engraved (e.g. the holes for the notches). For the left arm a single rectangle suffices that is filled with black and stroked with red.
+
+Finished result
+---------------
+
+This section shows the laser cut parts that I received from Sculpteo and their assembly with the receiver.
 
 The laser cutting process results in some scorching. At first I thought it might just be soot but it couldn't be cleaned off with soapy water or isopropyl alcohol.
 
