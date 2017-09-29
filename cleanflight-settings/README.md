@@ -1,3 +1,7 @@
+TODO: the first part of below is just of technical interest - instead start with upgrading to 2.1.0, pasting in `parameters.txt` and then the appropriate LEDs file and then explaining what you get with this (_AUX1_ and _AUX2_ setup) and suggest that the reader calibrate their accelerometer. Perhaps add in something related to the batter monitor and https://github.com/cleanflight/cleanflight/issues/2951#issuecomment-332921466
+
+---
+
 The QX95 came with Cleanflight 1.13.0 and as this is too old a version for the modern configurator it dumped me straight into CLI mode on connecting.
 
 Cleanflight 1.13.0 doesn't support the `diff` command so I created a diff manually like so:
@@ -10,9 +14,11 @@ The result can be found in [`1.13.0-diff.txt`](1.13.0-diff.txt).
 
 I then upgraded the firmware to 2.1.0 (the latest version available at the time of writing), then after connecting I applied the diff I'd created from 1.13.0. I didn't go through any of the parameters to work out what they did, to see if any of the default 2.1.0 values were perhaps more appropriate, I just applied the diff blindly by pasting it in on the CLI tab, followed by `save`.
 
-The LED setup that comes with the QX95 isn't particularly fancy but I stuck with it. However when I switched to the [Matek LED strip](https://www.banggood.com/Matek-WS2812B-LED-Board-With-5V-Buzzer-For-Naze-32-Skyline-32-Flight-Controller-p-991715.html) that has six, rather than four, LEDs I adjusted the setup slightly as otherwise the leftmost four LEDs continued to behave like the original four LED strip while the rightmost two just stayed permanently white. I just swapped the setup of the 3rd LED with the 5th and the 4th with the 6th so that the two permanently white LEDs became the middle two and things balanced out again left and right of the center.
+The LED setup that comes with the QX95 isn't particularly fancy but I stuck with it. It can be found in [`leds-4.txt`](leds-4.txt).
 
-To apply this change just paste in the contents of [`leds-6.txt`](leds-6.txt).
+However when I switched to the [Matek LED strip](https://www.banggood.com/Matek-WS2812B-LED-Board-With-5V-Buzzer-For-Naze-32-Skyline-32-Flight-Controller-p-991715.html) that has six, rather than four, LEDs so I adjusted the setup slightly as otherwise the leftmost four LEDs continued to behave like the original four LED strip while the rightmost two just stayed permanently white. I just configured the rightmost two LEDs of the six LED strip to behave just like the rightmost two LEDs of the four LED strip and made the middle two LEDs of the six LED strip to behave just like the middle two LEDs of the four LED strip.
+
+To apply these change just paste in the contents of [`leds-6.txt`](leds-6.txt).
 
 When configuring my model on my transmitter I setup the value for switch _SF_ to be sent as channel 5 and that for switch _SA_ to be sent as channel 6.
 

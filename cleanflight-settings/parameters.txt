@@ -7,12 +7,7 @@ feature MOTOR_STOP
 feature LED_STRIP
 map TAER1234
 serial 1 64 115200 57600 0 115200
-led 0 0,7::CI:3
-led 1 3,7::CTI:12
-led 2 6,7::C:1
-led 3 9,7::C:1
-led 4 12,7::CTI:12
-led 5 15,7::CI:3
+
 aux 0 0 0 1900 2100
 aux 1 1 1 900 1100
 aux 2 2 1 1400 1600
