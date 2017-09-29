@@ -31,3 +31,18 @@ The only other thing I did was do _Calibrate Accelerometer_ on the main _Setup_ 
 The final configuration can be found in [`parameters.txt`](parameters.txt) (produced by `diff`).
 
 Note: upgrading from 1.13.0 to a later version is probably best done before you add a beeper as, for whatever reason, the beeper beeps incessantly while connected to the computer until this is completed.
+
+---
+
+It's possible to disable beeping while powered via USB which may save the sanity of people around you when you're working with the Configurator. On the CLI tab:
+
+    beeper -ON_USB
+    save
+
+To reverse just do the same without the `-`.
+
+Unfortunately it doesn't seem to be possible to disable the most common beep sequence - the startup sequence you here when you e.g. do `save` and cause the flight controller to restart. This seems to be a board specific issue - it seems to have been resolved for most boards - see [#218](https://github.com/betaflight/betaflight/issues/218) - but the related issues seem to show some boards still have issues.
+
+Note `beeper` with human readable values like `ON_USB` (rather than bitmask numbers) was introduced via Betaflight - and is only documented there - see the [Betaflight CLI documentation](https://github.com/betaflight/betaflight/wiki/Betaflight-specific-CLI-commands).
+
+It would be nice if there was something similar to dim the blindingly bright LEDs while on USB.
