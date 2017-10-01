@@ -105,6 +105,8 @@ The goggles and the camera come with hard case batteries that presumably come wi
 
 You can power the VTX off the same battery as the main craft but this brings its own issues. There tends to be a lot of electrical noise introduced by the other components using this power source - this leads to a lot of the noise that you often see in FPV videos on YouTube. There may also be issues with voltage spikes created by the ESCs that may actually damage the VTX. Noise and spikes can be addressed, e.g. with an LC filter and a voltage regulator, but to start off it's probably simpler just to use a completely separate battery as here.
 
+Note to self: unlike the servo connectors, where you lift up a plastic tab on the connector in order to release a pin, you have to press down a little metal tab on the crimp pin itself for the wires going into the main VTX connector - see this [video](https://www.youtube.com/watch?v=S9xeg_3eREc).
+
 Setup
 -----
 
