@@ -190,6 +190,8 @@ When you press Search on the googles you'll see it cycling through the channels,
 
 Some of the frequencies are very close together, e.g. CH8 of band B is 5,866 MHz while CH1 of band A is 5,865 MHz and the same frequency, 5,880 MHz, appears in both band D and band R. When using Search on the goggles it sometimes stopped on a nearby channel before the one actually being used by the VTX and I had to press Search again for it to actually search on to the real channel and get a better picture.
 
+Once you've got used to the whole thing then using the CH+/Band+ button on the goggles is much quicker than using the Search button to match the band and frequency on your VTX. Just long press it to switch back and forward between selecting bands and selecting channels and short press it to cycle through band letters or channel numbers on the screen.
+
 Legality
 --------
 
