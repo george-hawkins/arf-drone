@@ -42,7 +42,7 @@ _Charger and charger lead._
 
 Doing things in his order is more important than it seems - the easiest way to permanently damage your battery (and potentially cause an explosion and fire) is to short it - and probably the easiest way to short it is to first connect the charger lead to the battery, rather than the charger, and then accidentally knock together the banana plugs of the charger lead.
 
-Despite reading dire warnings about this (and having written this section) I've still thoughtlessly disconnected the charger lead from the charger before unplugging the battery from the lead - when you do this it becomes frighteningly obvious how easy it is to touch the banana connectors together. I actually attached a little label, with "THINK!" in red, to the banana plug end of my charger lead after doing this (whether it works is another matter). Why charger manufacturers standardized on male banana plugs for charger leads, making this kind of accident very easy, is a mystery.
+Despite reading dire warnings about this (and having written this section) I've still thoughtlessly disconnected the charger lead from the charger before unplugging the battery from the lead - when you do this it becomes frighteningly obvious how easy it is to touch the banana connectors together. I actually attached a little label, with "THINK!" in red, to the banana plug end of my charger lead after doing this (whether that works is another matter). Why charger manufacturers standardized on male banana plugs for charger leads, making this kind of accident very easy, is a mystery.
 
 Once the charger lead is plugged in connect the battery to the charger - the battery must be connected via both leads to the charger as shown.
 
