@@ -1,7 +1,7 @@
 Video
 =====
 
-TODO: remember to add SD card (see specific link below) to purchase list of things for video.
+TODO: remember to add SD card (see specific link below) to purchase list of things for video. Along with extra long pin header or a mirco-B USB connector shell (see below).
 
 RunCam 2 - what you get in the box:
 
@@ -59,10 +59,14 @@ You'll see a lot of criticism on the web of early releases of the app and firmwa
 
 ---
 
-_Transmitter._  
+The video transmitter is referred to as a VTX.
+
+See Oscar Liang's nice [introduction to VTXs](https://oscarliang.com/choose-video-transmitter-fpv-mini-quad/) and his piece on [circular vs linear polarized antenna](https://oscarliang.com/linear-circular-polarized-antenna-fpv/) that's more balanced than the many articles that say there are only pros and no cons to circular antenna.
+
+_VTX._  
 <img width="512" src="images/video/transmitter.jpg">
 
-_Transmitter PCB rev:2.2._  
+_VTX PCB rev:2.2._  
 <img width="512" src="images/video/transmitter-pcb-rev-2.2.jpg">
 
 _Receiver._  
@@ -85,3 +89,108 @@ _GoPro FPV adapter cable._
 
 _Analog video capture._  
 <img width="512" src="images/video/analog-video-capture.jpg">
+
+---
+
+Batteries
+---------
+
+The LCD has a builtin 1200mAh battery. Eachine claim about 3.5 hours runtime on a fully charged batteries - reviews say its nearer to 2 hours. The RunCam 2 has a 850mAh battery and RunCam say this should give you about 1 hour when recording 60fps at 1080p.
+
+You have to provide your own battery for the VTX (or power it off the same battery that powers the motors on your craft). The TS832 can work off 2S, 3S and 4S batteries. I chose a [Gens ace 800mAh 3S battery](http://www.gensace.de/gens-ace-800mah-11-1v-40c-3s1p-lipo-battery-pack.html) that has the BEC style connector that matches the connector on the VTX cable. The TS832 manual says it draws 220mA at 12V so an 800mAh 3S battery should provide power for substantially longer than the camera can keep shooting on a single charge. In fact a smaller battery might have been more suitable - Gens Ace have a 450mAh 3S battery that also comes with a BEC connector.
+
+The S60 charger comes with a charger lead with banana plugs at the charger end and an XT60 connector for the battery. So to charge something with a BEC connector you'll need to buy a banana to BEC cable. Oddly Banggood and hobbyking don't seem to carry such a cable - but you can find them easily by [searching on eBay](https://www.ebay.co.uk/sch/i.html?_nkw=banana+to+bec) or you can buy a banana to multiple-connectors adapter like this [one](https://www.banggood.com/Multifunctional-Charger-4_0mm-Banana-Adapter-Connector-T-Tamiya-Futaba-TRX-XT60-EC3-JST-Wire-p-925673.html).
+
+The goggles and the camera come with hard case batteries that presumably come with the normal protection circuitry that one finds with most consumer electronic devices that come with Li-Ion - so one shouldn't have to worry about over discharging them etc. The VTX battery though is the same style Li-Po battery as used to power the main craft and comes with no protection circuitry so it's up to you to treat it properly and not overdischarge it and bring it to storage voltage yourself when necessary.
+
+You can power the VTX off the same battery as the main craft but this brings its own issues. There tends to be a lot of electrical noise introduced by the other components using this power source - this leads to a lot of the noise that you often see in FPV videos on YouTube. There may also be issues with voltage spikes created by the ESCs that may actually damage the VTX. Noise and spikes can be addressed, e.g. with an LC filter and a voltage regulator, but to start off it's probably simpler just to use a completely separate battery as here.
+
+Setup
+-----
+
+The [Banggood EV800D page](https://www.banggood.com/Eachine-EV800D-5_8G-40CH-Diversity-FPV-Goggles-5-Inch-800480-Video-Headset-HD-DVR-Build-in-Battery-p-1180354.html) has a nice GIF showing how to detach the LCD from the goggles.
+
+_Charging the transmitter, LCD and camera batteries._  
+<img width="512" src="images/video/charging.jpg">
+
+_Transmitter and camera cables and male header._  
+<img width="512" src="images/video/cables-and-header.jpg">
+
+This photo shows header with standard length pins and header with the extra long pins that we'll use to create an adapter to connect the transmitter cable to the video cable. Adafruit sell [extra long pin header](https://www.adafruit.com/product/400) where the pins are already centered lengthwise (unlike the header shown here) which is what we want.
+
+The wires or the camera cable have a nice silicone coating so you can twist them as shown to nicely separate the power and the video wires. The wires of the VTX cable are plastic coated so you can't this with them.
+
+Note: if you never plan to power the camera off anything other than its internal battery you could snip off the power part of the camera cable, i.e. snip off the black and red cable leaving just the yellow and black one.
+
+If the big five pin connector that connects the VTX used the same style of crimped terminals as the servo connectors then we could just pop out the black and yellow terminals from the servo on the camera cable, pop out the corresponding terminals (and the additional terminal of the unused red wire) on the main VTX connector and plug the terminals from the camera cable straight in instead. Unfortunately the main VTX connector and the servos use different styles of crimped terminals.
+
+The best long term solution is probably to discard the camera cable altogether, chop the servo connector off the VTX cable, pop out and discard the unused red wire, that ran to the servo connector, and then solder the remaining black and yellow wires into USB micro-B connector shell (like this [one](https://www.adafruit.com/product/1390)).
+
+Cut off three pins, use a pliers on each pin to center (if the pins didn't already come centered). We've not got a servo-to-servo adapter, plug it into the servo connector from the VTX cable and then plug in the connector from the camera cable making sure the yellow and black wires match up either side of the connection.
+
+<img height="256" src="images/video/cutting-header.jpg"> <img height="256" src="images/video/servo-adapter.jpg"> <img height="256" src="images/video/tx-cable-and-adapter.jpg"> <img height="256" src="images/video/tx-and-camera-connectors-joined.jpg">
+
+_VTX and camera cables connected together._  
+<img height="512" src="images/video/tx-and-camera-cables-joined.jpg">
+
+Now plug in the VTX and the camera and have the battery ready to power the VTX.
+
+_VTX and camera ready for transmitting._  
+<img height="512" src="images/video/tx-and-camera-ready.jpg">
+
+**Warning:** this is another situation where you can instantly destroy your equipment. Never power the VTX without first having connected its antenna. When the VTX is powered up it will want to dump out energy via the antenna and if it's not present the inability to get rid of energy like this may lead to immediate damange. Depending on make and manufacturer some VTXs will survive this situation while for others some component on the VTX will heat up and burnout within seconds. It's probably best to avoid finding out what the behavior of your VTX is in this situation. The same warning does not apply to the receiver, i.e. googles or LCD, as here the antenna have a passive role, i.e. they're for receiving energy pumped out by something else.
+
+Press and hold the power button on the LCD to turn it on, then press _Search_ to scan for video signals. If you're indoors and there are various nearby 5.8GHz sources you may find the stop searching on various channels where something is transmitting without it being a video signal.
+
+_LCD turned on and ready to receive._  
+<img width="512" src="images/video/lcd-turned-on.jpg">
+
+Then plug your battery into your VTX (mine started with the small red two digit seven segment display showing 11) and turn on the camera as well. I then searched again from the LCD. The initial picture was extremely underwhelming - so I switched channel on the VTX to 21 and searched again and this time got a perfect crystal clear image on my LCD.
+
+_VTX transmitting camera feed to LCD._  
+<img width="512" src="images/video/transmitting.jpg">
+
+**Important:** where you're out in the field you should always power up your LCD/goggles first, before turning on the VTX, and see if you pick up an existing signal so that you can make sure you won't start transmitting on a channel that is aleady in use by someone nearby (you powering up your VTX would cause them to lose signal and crash - something that won't improve your popularity).
+
+Frequencies
+-----------
+
+You need to match the frequency transmitted by the one received by the goggles. As the googles have a search feature all you really need to do is set a frequency on the VTX and then let the googles search for this. The googles support 40 channels split over 5 frequency ranges while the VTX supports those 40 channels plus an additional 8 on an additional frequency range.
+
+### VTX frequencies
+
+The VTX has a small red two digit display - the first digit is the frequency range and the second is the channel. So e.g. 24 means channel 4 on frequency range 2.
+
+| FREQ | CH1   | CH2   | CH3   | CH4   | CH5   | CH6   | CH7   | CH8   |
+|------|-------|-------|-------|-------|-------|-------|-------|-------|
+| FR1  | 5,865 | 5,845 | 5,825 | 5,805 | 5,785 | 5,765 | 5,745 | 5,725 |
+| FR2  | 5,733 | 5,752 | 5,711 | 5,790 | 5,809 | 5,828 | 5,847 | 5,866 |
+| FR3  | 5,705 | 5,685 | 5,665 | 5,645 | 5,885 | 5,905 | 5,925 | 5,945 |
+| FR4  | 5,740 | 5,760 | 5,780 | 5,800 | 5,820 | 5,840 | 5,860 | 5,880 |
+| FR5  | 5,658 | 5,695 | 5,732 | 5,769 | 5,806 | 5,843 | 5,880 | 5,917 |
+| FR6  | 5,474 | 5,492 | 5,510 | 5,528 | 5,546 | 5,564 | 5,582 | 5,600 |
+
+Note: all frequencies are in MHz.
+
+You can switch the frequency band, i.e. FR1 to FR6, by pressing the FR button on the VTX and you can switch the channel, i.e. CH1 to CH8, by pressing the CH button.
+
+### Goggles frequencies
+
+When you press Search on the googles you'll see it cycling through the channels, displaying CH-A-1, CH-A-2 etc. So unlike the VTX it uses letters to denote the frequency ranges with A to D corresponding to 1 to 4 respectively on the VTX and R corresponding to 5.
+
+| FREQ    | CH1   | CH2   | CH3   | CH4   | CH5   | CH6   | CH7   | CH8   |
+|---------|-------|-------|-------|-------|-------|-------|-------|-------|
+| A (FR1) | 5,865 | 5,845 | 5,825 | 5,805 | 5,785 | 5,765 | 5,745 | 5,725 |
+| B (FR2) | 5,733 | 5,752 | 5,771 | 5,790 | 5,809 | 5,828 | 5,847 | 5,866 |
+| C (FR3) | 5,705 | 5,685 | 5,665 | 5,645 | 5,885 | 5,905 | 5,925 | 5,945 |
+| D (FR4) | 5,740 | 5,760 | 5,780 | 5,800 | 5,820 | 5,840 | 5,860 | 5,880 |
+| R (FR5) | 5,658 | 5,695 | 5,732 | 5,769 | 5,806 | 5,843 | 5,880 | 5,917 |
+
+Legality
+--------
+
+I only became aware after buying this popular VTX that there's an issue with the fact that it transmits at several hundred milliwatts. While this is typical it is also well above the technical legal limit in most countries for the unlicensed 5.8GHz band - the limit is usually about 25mW, i.e. dramatically lower.
+
+If you're out in a field and transmitting at this power it probably isn't an issue and I didn't come across any evidence on the web that anyone has ever gotten in trouble for doing so. However home WiFi routers also use the 5.8GHz band (and obey the power output limits) so don't use your VTX indoors or you may well annoy your neighbors by knocking out their WiFi.
+
+It's up to you if you want to use a VTX like the TS832 or find a genuine 25mW VTX, e.g. this [ImmersionRC 25mW VTX](https://hobbyking.com/en_us/immersionrc-race-band-25mw-5-8ghz-a-v-transmitter.html). While most transmitters transmit at 200mW or 600mW some allow you to also flip down to 25mW. If you're planning on flying small indoor quadcopters then you should definitely use a 25mW VTX.
