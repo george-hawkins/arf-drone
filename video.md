@@ -110,7 +110,7 @@ Note to self: unlike the servo connectors, where you lift up a plastic tab on th
 Setup
 -----
 
-The [Banggood EV800D page](https://www.banggood.com/Eachine-EV800D-5_8G-40CH-Diversity-FPV-Goggles-5-Inch-800480-Video-Headset-HD-DVR-Build-in-Battery-p-1180354.html) has a nice GIF showing how to detach the LCD from the goggles.
+The [Banggood EV800D page](https://www.banggood.com/Eachine-EV800D-5_8G-40CH-Diversity-FPV-Goggles-5-Inch-800480-Video-Headset-HD-DVR-Build-in-Battery-p-1180354.html) has a nice GIF showing how to detach the LCD from the goggles. Once you pop off the LCD you'll see it's covered in a protective film, that you might not have otherwise noticed, that needs to be removed.
 
 _Charging the transmitter, LCD and camera batteries._  
 <img width="512" src="images/video/charging.jpg">
