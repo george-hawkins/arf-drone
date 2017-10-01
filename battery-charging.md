@@ -51,6 +51,8 @@ _Charger connected to battery._
 
 Ideally you should do your charging on a concrete or stone floor (as shown below), i.e. avoid more flammable surfaces like wood or carpet. I do my charging on a metal baking tray near a window so I can throw it outside if any problems occur.
 
+**Update:** I stopped using a metal tray after I did exactly what I warn about above - I unplugged the banana connectors from the charger before disconnecting the battery from the charger lead. Having a large metal surface around when you make this kind of mistake is only likely to make the shorting risk even worse.
+
 Battery charging
 ----------------
 
