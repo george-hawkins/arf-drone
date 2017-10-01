@@ -35,11 +35,13 @@ _RunCam 2 battery compartment._
 Usage
 -----
 
-To charge the battery you just need to install it in the RunCam and connect it to a USB charger or to a computer - the LED behind the main button will light up red initially before turning off later to indicate that it's fully charged.
+To charge the battery you just need to install it in the RunCam and connect it to a USB charger or to a computer - an LED behind the main button will light up red initially before turning off later to indicate that it's fully charged.
 
-However it takes a long time to charge and once charged you'll run it down quite quickly if you use it to power the RunCam during initial setup and getting to know the camera. So for setup I just took out the battery and powered the RunCam via USB (as noted above its important to remove the battery when using the camera like this). When powered via USB a small red LED at the edge of the main button pulses weakly but this seems to be fine.
+However it takes a long time to charge and once charged you'll run it down quite quickly if you use it to power the RunCam during initial setup and getting to know the camera. So for setup I just took out the battery and powered the RunCam via USB (as noted above its important to remove the battery when using the camera like this). When powered via USB the small red LED at the edge of the main button, that lit up nice and solid when charging the battery, pulses weakly but this seems to be fine.
 
 **Important:** I found that while the camera would turn on if connected to a normal USB port you couldn't then turn on its WiFi. The issue seemed to be that the USB port couldn't provide enough power - if I connected it to a charging port or to a USB charger then everything worked fine.
+
+Note: I thought the red LED plusing weakly might indicate a lack of power, or low voltage, coming in via USB but it did the same even if I connected up the battery cable that allowed me to attach the 12V 800mAh battery that I use later for the VTX.
 
 The first thing you should do is install the [iOS or Android app](https://www.runcam.com/download/runcam2/) on your smartphone - this lets you see the video output of the camera, start and stop recording and adjust settings easily. Once the app is installed you can connect to the camera as follows:
 
@@ -90,7 +92,16 @@ _GoPro FPV adapter cable._
 _Analog video capture._  
 <img width="512" src="images/video/analog-video-capture.jpg">
 
----
+Notes
+-----
+
+The internal battery of the goggles didn't come with enough initial power to turn on the goggles straight away, but they could be turned on immediately on connecting to mains power, i.e. you don't have to wait while the battery charges. On being plugged plugged in the battery LED goes solid red and goes green once fully charged.
+
+On delivery the internal battery of the goggles didn't have 
+
+The googles would not power up off their internal battery 
+
+I could turn on the googles immediately on plugging
 
 Batteries
 ---------
