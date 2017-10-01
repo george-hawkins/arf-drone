@@ -186,6 +186,8 @@ When you press Search on the googles you'll see it cycling through the channels,
 | D (FR4) | 5,740 | 5,760 | 5,780 | 5,800 | 5,820 | 5,840 | 5,860 | 5,880 |
 | R (FR5) | 5,658 | 5,695 | 5,732 | 5,769 | 5,806 | 5,843 | 5,880 | 5,917 |
 
+Some of the frequencies are very close together, e.g. CH8 of band B is 5,866 MHz while CH1 of band A is 5,865 MHz and the same frequency, 5,880 MHz, appears in both band D and band R. When using Search on the goggles it sometimes stopped on a nearby channel before the one actually being used by the VTX and I had to press Search again for it to actually search on to the real channel and get a better picture.
+
 Legality
 --------
 
