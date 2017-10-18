@@ -84,7 +84,7 @@ They add extra solder after soldering on the power connector as it has far fatte
 
 They discuss the motor to ESC connectors as being AC connectors (check this) and say you can plug them in however you like - then when you do your first power test just swap any two connectors of a given motor if it's turning the wrong direction - yes really just choose any two of the three connectors and swap them. As noted elsewhere (where?) the fact that a CW motor will also run CCW if wired incorrectly doesn't mean they're interchangeable - running CW motors CCW and vice-versa is bad for the motor (have I got a good ref?).
 
-The tidying up of the ESC signal wires (to the flight controller) is nicely done (spooled up together rather than individually) as is the tying of the GPS cable to the mast and spooling up the excess below.
+The tidying up of the ESC signal wires (to the flight controller) is nicely done (coiled up together rather than individually) as is the tying of the GPS cable to the mast and coiling up the excess below.
 
 ---
 

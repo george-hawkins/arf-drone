@@ -70,6 +70,8 @@ Now tie the ESCs to the undersides of the arms with cable ties - I used ties lik
 _Cable ties holding ESCs and their power cables in place._  
 <img width="512" src="images/assembly/frame/cable-ties.jpg">
 
+Update: for whatever reason I only cable-tied the power cables of the ESCs to the the frame - I should have also tied down the thinner control wires at the same time. See [`final-assembly.md`](final-assembly.md) for more on how these wires ultimately ended up being routed etc.
+
 The thinner wires coming out of each ESC are used to control them and will eventually be plugged into the flight controller. It's important to be able to distinguish which connector belongs to which ESC so before adding on the top plate number the connectors at the end of ESC control cables according to the following scheme:
 
 | No. | Arm         | Motor type |

@@ -65,7 +65,9 @@ The platform designed specifically for the Pixhawk, rather than the APM, has a s
 _13._  
 <img src="images/assembly/final-assembly/IMG_20170908_135720.jpg" height="512">
 
-VHB neatly cut to the desired lengths and widths with the help of parchment paper. I didn't sand any of the surfaces but I did make sure they were very clean using isopropyl alcohol. I did this here for the plates of the damping platform and for the top F450 plate and the underside of the Pixhawk that the platform is attached to. I did it also for the GPS module and the GPS mast head that it is stuck to and for the end of the mast and the bottom socket that it's plugged into (before applying epoxy glue).
+VHB neatly cut to the desired lengths and widths with the help of parchment paper. I can't conclusively say, without some lab analysis, that the parchment paper had no detrimental affect on the VHB tape, but it would seem not - I could lift the entire craft (including battery) by the vibration damping platform without the tape giving way.
+
+I didn't sand any of the surfaces but I did make sure they were very clean using isopropyl alcohol. I did this here for the plates of the damping platform and for the top F450 plate and the underside of the Pixhawk that the platform is attached to. I did it also for the GPS module and the GPS mast head that it is stuck to and for the end of the mast and the bottom socket that it's plugged into (before applying epoxy glue).
 
 I did buy sandpaper but only used it on the end of the GPS mast (before glueing it into its socket), in other situations I forgot to use it (e.g. here with the damping platform). Apparently the most important things with VHB tape are having clean surfaces and applying as much pressure as you can when sticking surfaces together.
 
@@ -83,8 +85,6 @@ One thing to take into account when applying VHB tape to the lower half of the p
 
 _14._  
 <img src="images/assembly/final-assembly/IMG_20170908_150250.jpg" width="512">
-
-I can't conclusively say, without some lab analysis, that the parchment paper had no detrimental affect on the VHB tape, but it would seem not - I could lift the entire craft (including battery) by the vibration damping platform without the tape giving way.
 
 _15._  
 <img src="images/assembly/final-assembly/IMG_20170908_151107.jpg" height="512">
@@ -158,11 +158,6 @@ Pixhawk gently clamped down and GPS mast expoxied into base and drying.
 
 _25._  
 <img src="images/assembly/final-assembly/IMG_20170909_132051.jpg" width="512">
-
-_26._  
-<img src="images/assembly/final-assembly/IMG_20170909_140604.jpg" height="512">
-
-One way catches - not clear in photo.
 
 _27._  
 <img src="images/assembly/final-assembly/IMG_20170909_141028.jpg" width="512">
@@ -321,7 +316,16 @@ _49 Tools and materials used in assembly._
 _50 Voltage sensor in place._  
 <img src="images/assembly/final-assembly/IMG_20170910_151003.jpg" width="512">
 
-Voltage sensor attached to frame. Note: plug sensor cable into RX, spool up and cable tie _before_ taping down RX and make sure RX is far enough forward that sensor cable doesn't poke into battery strap. Move note about plugging in S.PORT cable up to where you taped down the RX.
+Voltage sensor attached to frame. Note: plug sensor cable into RX, coil up and cable tie _before_ taping down RX and make sure RX is far enough forward that sensor cable doesn't poke into battery strap. Move note about plugging in S.PORT cable up to where you taped down the RX.
+
+---
+
+_26._  
+<img src="images/assembly/final-assembly/IMG_20170909_140604.jpg" height="512">
+
+One way catches - not clear in photo.
+
+![one way catch](images/assembly/final-assembly/one-way-catch.png)
 
 Straps
 ------
