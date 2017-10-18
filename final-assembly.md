@@ -32,11 +32,10 @@ There's little gained in showing any of these bases (except perhaps the FCMODEL)
 _55._  
 <img src="images/assembly/final-assembly/IMG_20170910_170348.jpg" width="512">
 
+An M3x10mm bolt, a 3.2x8x0.8mm washer and an M3 [locknut](https://en.wikipedia.org/wiki/Locknut) for attaching a four-screw-hole style GPS mast base to the F450 top plate. The bolt here is 10mm which is a little long, 9mm would be perfect and 8mm would be too short.
+
 _09._  
 <img src="images/assembly/final-assembly/IMG_20170908_122219.jpg" width="512">
-
-_10._  
-<img src="images/assembly/final-assembly/IMG_20170908_123640.jpg" width="512">
 
 The inner slot is much wider than the outer and you'd need washers with a larger diameter than typically come with the 3.2mm hole size that matches our bolts.
 
@@ -66,7 +65,19 @@ The platform designed specifically for the Pixhawk, rather than the APM, has a s
 _13._  
 <img src="images/assembly/final-assembly/IMG_20170908_135720.jpg" height="512">
 
-VHB neatly cut to the desired lengths and widths with the help of parchment paper.
+VHB neatly cut to the desired lengths and widths with the help of parchment paper. I didn't sand any of the surfaces but I did make sure they were very clean using isopropyl alcohol. I did this here for the plates of the damping platform and for the top F450 plate and the underside of the Pixhawk that the platform is attached to. I did it also for the GPS module and the GPS mast head that it is stuck to and for the end of the mast and the bottom socket that it's plugged into (before applying epoxy glue).
+
+I did buy sandpaper but only used it on the end of the GPS mast (before glueing it into its socket), in other situations I forgot to use it (e.g. here with the damping platform). Apparently the most important things with VHB tape are having clean surfaces and applying as much pressure as you can when sticking surfaces together.
+
+For a nice article on getting the most out of VHB tape see [this](https://www.headphonesty.com/2017/06/how-to-10x-3m-vhb-tape-adhesiveness/) on Headphonesty.
+
+I bought sandpaper with a [CAMI 400](https://en.wikipedia.org/wiki/Sandpaper#Grit_sizes) grit size (KWB [830-400](https://www.kwb.eu/de/detail/index/sArticle/2950698/sCategory/3131985) paper) - for no better reason than this was the finest sandpaper at the hardware store before one got into what was classed as ultra fine (where it was hard to feel any abrasiveness).
+
+None of the surfaces involved, e.g. the plastic of the damping platform here, reacted badly to isopropyl alcohol but in the case of the Pixhawk and GPS module I took care to make sure it didn't come near to any of the electronics and didn't spray it on directly to devices containing electronics.
+
+Some portions of the VHB tape end up over holes in the F450 top plate once attached. I did plan to apply talc to exposed portions like this - to avoid random gunk getting stuck to them over time - but forgot, by the time I remembered too much assembly had been done for it to still be easy to get at these areas anymore.
+
+One thing to take into account when applying VHB tape to the lower half of the platform is the position of the bolts on the top F450 plate (that hold on the arms). In the photo below the large pieces of VHB tape at the top and bottom of the lower platform are shorter left-to-right than they might be - this is in order to avoid those raised bolt heads.
 
 _14._  
 <img src="images/assembly/final-assembly/IMG_20170908_150250.jpg" width="512">
@@ -81,6 +92,8 @@ _02._
 
 _16._  
 <img src="images/assembly/final-assembly/IMG_20170908_151339.jpg" width="512">
+
+TODO: move above two pictures of the other damping platform (and probably some of the other stuff here) into [`vibration-damping-platform.md`](vibration-damping-platform.md) and note that the rubber feet of this platform end up sitting on bolt heads on the F450 top plate - the rubber feet and the raised bolt heads combine to form a gap between F450 top plate and damping platform underside of about 2.5mm (of this a tiny bit more than half is the foot) which makes the gap too big for standard VHB tape.
 
 _17._  
 <img src="images/assembly/final-assembly/IMG_20170908_153236.jpg" height="512">
@@ -112,23 +125,32 @@ Arrow facing forward - upside down relative the DJI branding on top plate.
 _20._  
 <img src="images/assembly/final-assembly/IMG_20170908_160926.jpg" height="512">
 
+---
+
+Mast setup part 1 (of 2).
+
 _21._  
 <img src="images/assembly/final-assembly/IMG_20170908_161427.jpg" width="512">
 
-GPS base before insertion of mast with epoxy.
+Above the GPS base before insertion of mast with epoxy.
 
 _22._  
 <img src="images/assembly/final-assembly/IMG_20170908_164942.jpg" height="512">
 
-GPS after inserting mast with epoxy. Excess epoxy cleaned off with tissue. Note: epoxy is very toxic, do not get in eyes and clean off skin.
+Above the GPS base after inserting mast with epoxy. Excess epoxy cleaned off with tissue. Note: epoxy is very toxic, do not get in eyes and clean off skin.
 
-_23._  
-<img src="images/assembly/final-assembly/IMG_20170908_170322.jpg" width="512">
+Doing the epoxying at this stage meant I could get leaving this to dry overnight out of the way at the same time as clamping the Pixhawk. In retrospect I'd leave the Pixhawk clamped one evening and do the rest of the assembly the next day, doing the mast setup as the last part (see below where I add the GPS module itself - both this and adding the mast here were done prematurely). I'd add the GPS module to the top component of the mast as one of the last steps on the next day and have everything else ready (mast cleaned and base cleaned and lower mast end sandpapered) but only do the actual epoxying before going to bed.
+
+Here I used a suitable UHU epoxy but I later bought [J-B Weld epoxy](https://www.amazon.co.uk/dp/B0006O1ICE) as (like 3M VHB tape) it seems to be considered a standard component of the drone builder's toolkit and is noted for creating extremely tough and robust bonds.
+
+---
+
+I just used a ??? metal plate (have a look in Migros and see what it's called and get it's dimensions) on top of a piece of cardboard (for a bit of padding between the metal plate and the Pixhawk) so that the clamps didn't press down directly on the fairly flimsy case of the Pixhawk.
 
 _24._  
 <img src="images/assembly/final-assembly/IMG_20170909_131942.jpg" width="512">
 
-Pixhawk gently clamped down and GPS mast expoxied into base and drying 1.
+Pixhawk gently clamped down and GPS mast expoxied into base and drying.
 
 _25._  
 <img src="images/assembly/final-assembly/IMG_20170909_132051.jpg" width="512">
@@ -141,7 +163,7 @@ One way catches - not clear in photo.
 _27._  
 <img src="images/assembly/final-assembly/IMG_20170909_141028.jpg" width="512">
 
-Buzzer and safety button wired on and plugged in.
+Buzzer and safety button wired on and plugged in. I wired down the buzzer via its mounting holes rather than e.g. trying to attach it by its back to the frame with Blu Tack - as noted previously the back isn't attached very strongly to the rest of the buzzer.
 
 _28._  
 <img src="images/assembly/final-assembly/IMG_20170909_141047.jpg" height="512">
@@ -168,7 +190,7 @@ _35._
 
 "Control" cables taped down.
 
-In retrospect I'd do the battery test with the solder pads temporally insulated with insulation tape. After this I'd feed the front ESC wires back like this and permanently tape down the middle portion of these wires with tape and then cover the solder pads (and the ends of the tape) with black Sugru (smoothed out with soapy finger tips). Then I'd look at pulling all the "control" wires up to the middle rear of the top plate, possibly temporally taping them in place. All this as part of the soldering section - with the intension then in this section of coiling all four wires into a single coil and connecting them to the Pixhawk before connecting anything else, i.e. before buzzer and safety switch.
+In retrospect I'd do the battery test with the solder pads temporally insulated with insulation tape. After this I'd feed the front ESC wires back like this and permanently tape down the middle portion of these wires with tape and then cover the solder pads (and the ends of the tape) with black Sugru (smoothed out with soapy finger tips). Then I'd look at pulling all the "control" wires up to the middle rear of the top plate, possibly temporally taping them in place. All this as part of the soldering section - with the intension then in this section of coiling all four wires into a single coil and connecting them to the Pixhawk before connecting anything else, i.e. before buzzer and safety switch. Whether a single coil works out better than two, as here, remains to be seen.
 
 Covering the main power connector though with Sugru would make it hard to add extra power cables later, e.g. for transmitter, camera and SiK radio (or is powered via Pixhawk?).
 
@@ -188,10 +210,23 @@ _34._
 _[*] 53._  
 <img src="images/assembly/final-assembly/IMG_20170910_161608.jpg" height="512">
 
+---
+
+Mast setup part 2 (of 2).
+
+_23._  
+<img src="images/assembly/final-assembly/IMG_20170908_170322.jpg" width="512">
+
+While the bottom end of the mast is glued into the base the top end is attached to the top plate (above) using a both (that requires a 1.5mm wrench).
+
+Important: when screwing on the plate holding the GPS module to the mast the most important thing is to make sure the arrow on the module is facing exactly forward like the arrow on the Pixhawk.
+
 _37._  
 <img src="images/assembly/final-assembly/IMG_20170909_154329.jpg" width="512">
 
-GPS module (and compass) attached to mast (with 1.5mm wrench). Done a little prematurely.
+GPS module (and compass) attached to mast.
+
+As noted above in part 1 of the mast setup this was all done a bit prematurely.
 
 _38._  
 <img src="images/assembly/final-assembly/IMG_20170909_154354.jpg" width="512">
@@ -200,6 +235,8 @@ GPS module plugged into Pixhawk.
 
 _[*] 54._  
 <img src="images/assembly/final-assembly/IMG_20170910_163942.jpg" width="512">
+
+---
 
 _39._  
 <img src="images/assembly/final-assembly/IMG_20170909_163018.jpg" height="512">
@@ -259,7 +296,7 @@ _52._
 
 Safety red - battery plugged in.
 
-_Motor test._
+_Motor test._  
 ![motor test](images/opentx-companion/motor-test-17pc.png)
 
 The motor test does _not_ require a GPS fix or the ability to arm but the safety must be off/red.
