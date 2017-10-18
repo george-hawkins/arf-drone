@@ -77,6 +77,8 @@ None of the surfaces involved, e.g. the plastic of the damping platform here, re
 
 Some portions of the VHB tape end up over holes in the F450 top plate once attached. I did plan to apply talc to exposed portions like this - to avoid random gunk getting stuck to them over time - but forgot, by the time I remembered too much assembly had been done for it to still be easy to get at these areas anymore.
 
+Note: when stripping down and rebuilding look at how feasible it really is to talc these points - maybe they're impossible to get at.
+
 One thing to take into account when applying VHB tape to the lower half of the platform is the position of the bolts on the top F450 plate (that hold on the arms). In the photo below the large pieces of VHB tape at the top and bottom of the lower platform are shorter left-to-right than they might be - this is in order to avoid those raised bolt heads.
 
 _14._  
@@ -140,6 +142,8 @@ _22._
 Above the GPS base after inserting mast with epoxy. Excess epoxy cleaned off with tissue. Note: epoxy is very toxic, do not get in eyes and clean off skin.
 
 Doing the epoxying at this stage meant I could get leaving this to dry overnight out of the way at the same time as clamping the Pixhawk. In retrospect I'd leave the Pixhawk clamped one evening and do the rest of the assembly the next day, doing the mast setup as the last part (see below where I add the GPS module itself - both this and adding the mast here were done prematurely). I'd add the GPS module to the top component of the mast as one of the last steps on the next day and have everything else ready (mast cleaned and base cleaned and lower mast end sandpapered) but only do the actual epoxying before going to bed.
+
+So I'd move attaching the base of the mast to be the very first thing I do (before attaching the damping platform) but move everything else to do with it to the end.
 
 Here I used a suitable UHU epoxy but I later bought [J-B Weld epoxy](https://www.amazon.co.uk/dp/B0006O1ICE) as (like 3M VHB tape) it seems to be considered a standard component of the drone builder's toolkit and is noted for creating extremely tough and robust bonds.
 
