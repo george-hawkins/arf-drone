@@ -230,6 +230,8 @@ _37._
 
 GPS module (and compass) attached to mast.
 
+I would have liked a Coke can as a scale reference but it seems, other than Redbull sized cans, cans have been completely replaced by PET bottles (at least in Switzerland). And then there's the metric/imperial issue anyway - cans in Europe are 330ml while in the US they're larger at 355ml (12 US fl oz).
+
 As noted above in part 1 of the mast setup this was all done a bit prematurely.
 
 _38._  
