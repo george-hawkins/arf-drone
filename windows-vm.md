@@ -28,7 +28,7 @@ Just go to the Devices menu, select Shared Folders, click the folded icon with a
 
 I had to restart the VM for the shared folder to become visible - once done you'll find it as a shared folder under This PC in Explorer.
 
-TODO: add note that you need to change the VM's audio controller setting from the default "ICH AC97" to "Intel HD Audio" if you want audio to work in Windows - this was the case irrespective of whether VirtualBox was running on Mac or Linux - see [`intel-hd-audio.png`](images/virtualization/intel-hd-audio.png).
+TODO: add note that you need to change the VM's audio controller setting from the default "ICH AC97" to "Intel HD Audio" if you want audio to work in Windows - this was the case irrespective of whether VirtualBox was running on Mac or Linux - see [`Intel HD Audio`](images/virtualization/intel-hd-audio.png) (from note on [`pixhawk-tones.html`](https://george-hawkins.github.io/arf-drone/pixhawk-tones.html) page).
 
 TODO: comment that you "need" to bump video memory up to 18MB - see [`low-video-memory.png`](images/virtualization/low-video-memory.png).
 

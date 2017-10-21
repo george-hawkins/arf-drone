@@ -78,6 +78,8 @@ _Fully soldered PDB._
 
 In the picture above showing the completed soldering job you can still see the female connector that I attached to the male XT60 connector at the end of the power connector. This is often recommended for any kind of connector when doing soldering - the pins in the connector can get hot enough to cause their plastic casing to distort, holding the pins in place, by connecting the opposite gender connector, helps prevent this.
 
+**Update:** see how the power connector ends up being connected with the power module later - the power connector wires are way longer than needed - if doing again I'd line up the power module in its intended final location, plug the unsoldered power connector into it and then cut the power connector wires down to the minimum length that would work for this setup.
+
 Continuity testing
 ------------------
 
