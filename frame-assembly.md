@@ -83,11 +83,12 @@ The thinner wires coming out of each ESC are used to control them and will event
 
 The arms are numbered 1 to 4 so number the connector of each arm's ESC accordingly. The ordering may seem odd (being neither a CW or CCW numbering order) but you can confirm it in the relevant [ArduCopter documentation](http://ardupilot.org/copter/docs/connect-escs-and-motors.html#motor-order-diagrams) and the corresponding [PX4 documentation](https://dev.px4.io/en/airframes/airframe_reference.html#quadrotor-x).
 
-I used a white [edding 780](http://www.edding.com/creating-and-decorating/products/gloss-paint-marker/edding-780-gloss-paint-marker/) pen that's designed for writing on glass, metal and plastic.
+I used a white [edding 780](http://www.edding.com/creating-and-decorating/products/gloss-paint-marker/edding-780-gloss-paint-marker/) pen that's designed for writing on glass, metal and plastic - the ink is still easy to scratch off afterwards so it's not perfect (especially given that this pen is fairly expensive).
 
-_Arm numbering and CW and CCW motor placement._  
 [![arm numbering](images/assembly/frame/arm-numbering.png)](images/assembly/frame/arm-numbering.svg)
 <!-- Github can't handle relative SVGs - see https://github.com/github/markup/issues/556 and https://github.com/isaacs/github/issues/316 -->
+
+The diagram above shows arm numbering and CW and CCW motor placement. The A, B, C, D values (that don't even follow the same ordering as the 1, 2, 3, 4 values) are used later when it comes to motor testing.
 
 When adding the motors later it's important to use the appropriate motor type (CCW or CW) for each arm, so the above table and diagram include this information.
 
