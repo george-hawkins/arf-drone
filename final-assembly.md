@@ -257,14 +257,6 @@ Power module plugged into Pixhawk 1. I want to keep the front area clear for a c
 _42._  
 <img src="images/assembly/final-assembly/IMG_20170909_165449.jpg" width="512">
 
-_43._  
-<img src="images/assembly/final-assembly/IMG_20170909_172102.jpg" height="512">
-
-Partially inserted motor wires 1.
-
-_44._  
-<img src="images/assembly/final-assembly/IMG_20170909_172138.jpg" width="512">
-
 Is there a better term than "anti-slip mat"?
 
 _57._  
@@ -289,6 +281,8 @@ Battery strap done up. At 30cm it's at least 4cm too long. Bought 26 and 25cm la
 
 ---
 
+51, 52 and 43 can probably go.
+
 _51._  
 <img src="images/assembly/final-assembly/IMG_20170910_160533.jpg" width="512">
 
@@ -298,6 +292,16 @@ _52._
 <img src="images/assembly/final-assembly/IMG_20170910_160649.jpg" width="512">
 
 Safety red - battery plugged in.
+
+_43._  
+<img src="images/assembly/final-assembly/IMG_20170909_172102.jpg" height="512">
+
+Partially inserted motor wires - above and below.
+
+_44._  
+<img src="images/assembly/final-assembly/IMG_20170909_172138.jpg" width="512">
+
+
 
 _Motor test._  
 ![motor test](images/opentx-companion/motor-test-17pc.png)
