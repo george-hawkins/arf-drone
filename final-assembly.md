@@ -301,8 +301,6 @@ Partially inserted motor wires - above and below.
 _44._  
 <img src="images/assembly/final-assembly/IMG_20170909_172138.jpg" width="512">
 
-
-
 _Motor test._  
 ![motor test](images/opentx-companion/motor-test-17pc.png)
 
@@ -358,7 +356,11 @@ Under _Motor Test_ you'll see two fields, _Throttle_ and _Duration_, that are in
 
 Once the throttle value is high enough and the motors turn, go through each motor in turn and see that it turns in the required direction, i.e. look at how the streamers behave. If a given motor turns in the required direction then just move onto the next one, if it doesn't just swap over two of the connectors plugged into the ESC - this will always reverse the direction but restest anyway to confirm that everything is plugged in properly and you see the expected behavior.
 
-Once you've gone through all four motors and got each turning in its required direction the craft is now essentially ready to fly. Now is a good time to recalibrate, i.e. with Mission Planner still connected go to _Initial Setup_, click on _Wizard_ and redo the frame selection, accelerometer and compass steps - that's all that's needed, once you've completed the compass step you can close the wizard. As noted when doing the calibration the very first time, the new calibration only actually comes into affect after the Pixhawk is restarted.
+Once you've gone through all four motors and got each turning in its required direction the craft is now essentially ready to fly.
+
+TODO: the next line says now is a good time to recalibrate - but it is it? If the motor test is done before the GPS mast is epoxied in then probably not.
+
+Now is a good time to recalibrate, i.e. with Mission Planner still connected go to _Initial Setup_, click on _Wizard_ and redo the frame selection, accelerometer and compass steps - that's all that's needed, once you've completed the compass step you can close the wizard. As noted when doing the calibration the very first time, the new calibration only actually comes into affect after the Pixhawk is restarted.
 
 When doing the calibration you should have the mast up and everything else in place as it will be in flight. Whether this makes any serious difference is hard to tell (see the next) section and its probably fine to leave the propellars off (as they make turning the craft on its sides much harder).
 
@@ -389,7 +391,7 @@ The compass calibration affects the parameters:
 * `COMPASS_ODI`
 * `COMPASS_OFS`
 
-Note: these aren't the full parameter names, there are `X`, `Y` and `Z` variants for most and accelerometer 1 and accelerometer 2 variants etc.
+Note: these aren't the full parameter names, there are `X`, `Y` and `Z` variants for most and device 1 and device 2 variants for some, e.g. accelerometer 1 and 2.
 
 Most of these values, with the exception of `INS_ACCSCAL`, changed noticeably with recalibration but they also changed noticeably on every recalibration whether the setup had been changed or not. So it wasn't possible to isolate if any of the above factors (the presence of the battery etc.) was relevant or not.
 
@@ -400,6 +402,47 @@ Note: the `GND_ABS_PRESS`, `INS_GYROFF` and `STAT_BOOTCNT` values are updated ev
 If your interested you can see the relative difference (as a percentage) for parameters between uninstalled and fully setup in [`uninstalled-installed.txt`](param-changes/uninstalled-installed.txt) and between two recalibration runs with the same setup in [`rerun.txt`](param-changes/rerun.txt).
 
 The relative difference was calculated as `|x - y| / max(|x|, |y|)` (as per Wikipedia [relative change and difference](https://en.wikipedia.org/wiki/Relative_change_and_difference)).
+
+### Brushless motor and necklace notes from keep.google.com
+
+From bookmarks:
+
+* http://www.rcuniverse.com/forum/rc-electric-off-road-trucks-buggies-truggies-more-147/8359705-what-purpose-three-wires-brushless-motor.html - idiots and intelligent people
+* https://www.reddit.com/r/Multicopter/comments/2afixg/can_someone_explain_esc_wiring/
+* https://en.wikipedia.org/wiki/Electronic_speed_control#ESC
+* https://en.wikipedia.org/wiki/Brushless_DC_electric_motor#Controller_implementations
+
+#### 1.
+
+How can it be that plugging the cables in in any order gets the motor to go in one direction and then swapping any two of the connections gets it to go in the other?
+
+If you're a math nerds then you can think of the connectors as three distinct beads on a necklace, if you take all rotations as equivalent then the number of orderings is 3!/3, i.e. just 2 (see the [necklace example](https://en.wikipedia.org/wiki/Necklace_(combinatorics)#Necklace_example) in the Wikipedia Necklace (combinatorics) article). So if you plug in the connectors in any order it should be clear that you can then achieve the second (and only other) ordering by swapping any two of the connectors.
+
+At the risk of laboring the point let's go through the permutations - it's really quite simple.
+
+Essentially the motor has three phases 1, 2 and 3 and it doesn't matter which phase we start on - we just need to get a sequence going.
+
+So the sequence 1, 2, 3 and its rotations 2, 3, 1 and 3, 1, 2 are equivalent - we don't care which phases comes first.
+
+If we reverse the sequence the engine will run in the opposite direction, so reversing 1, 2, 3 we get 3, 2, 1 and its rotations 2, 1, 3 and 1, 3, 2 (which similarly are equivalent).
+
+We can get to 3, 2, 1 from 1, 2, 3 by just flipping 1 and 3 - this is equivalent to flipping two wires on our motor.
+
+What other flips can we do on 1, 2, 3? We can flip 1 and 2 to get 2, 1, 3 - which we see is just one of the rotations of 3, 2, 1, and if we flip 2 and 3 we get its other rotation.
+
+I.e. any flip in the ordering 1, 2, 3 results in the reverse ordering or one of its rotations - the same holds true for flips done on the rotations of 1, 2, 3.
+
+#### 2.
+
+This trick only works due to a neat bit of combinatorics and the fact that we only have three phases and not more. The ESC has a clear ordering of phases but we don't care if the phases are rotated by how we connect up the leads, we just care if they're reversed.
+
+#### 3.
+
+You might think that as there are three wires there must be six possible permutations - so how can it be fine to just plug then in any old way and then just switch any two of them if the motor turns the wrong way?
+
+There are indeed six permutations, but half of them correspond to turning CW and the other half correspond to turning CCW and it turns out that switching any two wires is guaranteed to get you from a CW permutation to a CCW permutation (and not one of the other two CW permutations) and vice-versa when going from CCW to CW.
+
+This is a case of necklace combinatorics, the three CW permutations are just rotations of each other, as are the CCW ones. To understand why this is the case you need to know a little about how brushless motors work - see X and Y. Then if the Wikipedia necklace combinatorics page is clear you can just look at the three possible swaps on each of the six permutations and you'll quickly see you always get from a CW permutation to a CCW one and vice-versa.
 
 ---
 
