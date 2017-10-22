@@ -287,6 +287,8 @@ _48 Overlong battery strap._
 
 Battery strap done up. At 30cm it's at least 4cm too long. Bought 26 and 25cm later and 25cm was perfect. Move up pictures of these from later.
 
+---
+
 _51._  
 <img src="images/assembly/final-assembly/IMG_20170910_160533.jpg" width="512">
 
@@ -303,6 +305,22 @@ _Motor test._
 The motor test does _not_ require a GPS fix or the ability to arm but the safety must be off/red.
 
 TODO: explain that I say safety off I mean the safety switch has been pressed and gone from flashing to solid red.
+
+<img src="images/assembly/final-assembly/IMG_20171021_151310.jpg" height="512">
+
+<img src="images/assembly/final-assembly/IMG_20171021_152006.jpg" width="512">
+
+<img src="images/assembly/final-assembly/IMG_20171021_152036.jpg" width="512">
+
+<img src="images/assembly/final-assembly/IMG_20171021_152050.jpg" width="512">
+
+<img src="images/assembly/final-assembly/IMG_20171022_131936.jpg" width="512">
+
+<img src="images/assembly/final-assembly/IMG_20171022_133825.jpg" width="512">
+
+<img src="images/assembly/final-assembly/IMG_20171022_133951.jpg" height="512">
+
+---
 
 _45 Getting a GPS fix._  
 <img src="images/assembly/final-assembly/IMG_20170909_175458.jpg" height="512">
