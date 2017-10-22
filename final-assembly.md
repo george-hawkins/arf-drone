@@ -324,6 +324,83 @@ TODO: explain that I say safety off I mean the safety switch has been pressed an
 
 <img src="images/assembly/final-assembly/IMG_20171022_133951.jpg" height="512">
 
+When you press a button you're usually turning something on. However pressing the safety switch turns the safety off - the safety switch flashes red initially and when you press it it goes solid red. Solid red essentially means that the motors are unlocked and that the propellars may turn. Turning off the safety is a precondition for another step - arming. Arming relates to the flight controller - before arming can occur the flight controller must be ready and a number of pre-flight conditions must have been met - these include the already mentioned safety being off and e.g. that a GPS lock has been acquired. Arming is done via the transmitter and involves holding the throttle down and to the right for five seconds.
+
+The temptation once the craft is fully assembled is to immediately plug in the battery and see what happens - the answer is that it'll make an awful racket and not much else.
+
+The battery powers both the flight controller and the ESCs, and the ESCs will beep continuously until the flight controller is ready and the safety is off.
+
+USB from your computer however powers just the flight controller, so to avoid all this noise it's better to first power the system via USB, so the ESCs are off initially, let the flight controller start up and then press the safety switch. Once the safety switch is solid red the system is in a state where the ESCs will be silent when the battery is connected (they'll just make an initial cheerful beep).
+
+### Motor testing
+
+So when the system is ready as described connect a battery so the ESCs are powered and we can test the motors. When we soldered the PDB we continuity tested everything and then connected the battery to test that we heard each ESC making a noise (the racket mentioned above). So unless something is seriously wrong all motors will turn - what needs to be tested and corrected if necessary is the direction the motors turn.
+
+Despite being labelled CW and CCW the motors can actually rotate in both directions but rotating against its intended direction isn't good for the motor (and the craft won't fly and the self-locking propellars won't lock if any motor is turning opposite to its expected direction).
+
+TODO: do I have a link on why turning counter to the intended direction is bad for a motor?
+
+TODO: is it only at this point that I plugged in the motors - or was it done earlier? Probably best to do it here - in which case modify the next paragraph.
+
+When we plugged each motor into its ESC we plugged in the wires in no particular order - it turns out that any order is fine to get the motor to turn and that switching any two wires will reverse the direction of turning. So all motors should turn but we have to check each in turn - if the initially wiring order for a given motor causes it to turn opposite to its intended direction then we must correct this by swapping any two of the motor connectors plugged into the ESC, e.g. just swap over the left and the right connectors (leaving the middle one as it is).
+
+If this sounds a little odd then see XXX - you just need to understand a little about how brushless motors work and then works through some simple maths, called necklace combinatorics, to see why this works.
+
+I found that even at their lowest speed the motors turned too fast for me to be able to easily see which direction they're turning. So I cut out little paper streamers and attached one to each of the motors with masking tape - with the streamers attached, as shown in the photos, behind the arrow heads on the motors that indicate the intended turning direction. If you attach each streamer like this then it should flatten down nicely against the body of the motor if the motor turns in the intended direction, if the motor turns in the wrong direction it'll turn so fast that the streamer will still flatten againt the motor body but when it stops turning you'll see that the streamer has been ripped backwards.
+
+If you've powered up things as described above, i.e. via USB, turned off the safety and connected the battery then everything is ready for testing. Just start up Mission Planner, press _Connect_, go to the _Initial Setup_ view, expand _Optional Hardware_ and select _Motor Test_. For whatever reason the motor test does not use the 1, 2, 3, 4 motor labelling used everywhere else but labels the motors A, B, C, D (starting at the front right and going clockwise).
+
+Note: as described elsewhere batteries are stored at a storage voltage - this is about 3.85V per cell - i.e. well above voltage that you should stop flying (around 3.3V, 3V being the danger point for LiPo batteries). So even new batteries that have never been charged should be at about this voltage (you can check with the voltage sensor) and have more than enough charge for these tests.
+
+So print out the little arm numbering/lettering diagram we already used earlier, when labelling the ESCs and attaching the motors to the arms, and let's go through each motor in turn.
+
+Under _Motor Test_ you'll see two fields, _Throttle_ and _Duration_, that are initially set to 5% and 2 seconds respectively - so when you e.g. press _Test motor A_ it will apply 5% throttle to motor A for 2 seconds. Try it - you'll here a low pitched beep from the relevant ESC for two seconds and then a quick higher pitched beep at the end (as the throttle drops back to zero) but worryingly the motor won't actually turn. This is simple to resolve - the motors won't turn at all until a certain minimum throttle value is reached and it turns out 5% is too low - just increase the throttle value and retry, in my case I had to raise it to 17% before the motors would turn.
+
+Once the throttle value is high enough and the motors turn, go through each motor in turn and see that it turns in the required direction, i.e. look at how the streamers behave. If a given motor turns in the required direction then just move onto the next one, if it doesn't just swap over two of the connectors plugged into the ESC - this will always reverse the direction but restest anyway to confirm that everything is plugged in properly and you see the expected behavior.
+
+Once you've gone through all four motors and got each turning in its required direction the craft is now essentially ready to fly. Now is a good time to recalibrate, i.e. with Mission Planner still connected go to _Initial Setup_, click on _Wizard_ and redo the frame selection, accelerometer and compass steps - that's all that's needed, once you've completed the compass step you can close the wizard. As noted when doing the calibration the very first time, the new calibration only actually comes into affect after the Pixhawk is restarted.
+
+When doing the calibration you should have the mast up and everything else in place as it will be in flight. Whether this makes any serious difference is hard to tell (see the next) section and its probably fine to leave the propellars off (as they make turning the craft on its sides much harder).
+
+TODO: add note that after 90 days the VM still works but you can't run it for more than 4 hours - after 4 hours it shuts itself down. I couldn't find anything that said it should behave like this but this is the behavior I observed and I'm _assuming_ the license expiring and this behavior beginning are linked.
+
+The resulting `.param` file for my setup after this recalibration can be found in [`ready-to-fly.param`](ready-to-fly.param).
+
+### Affect of physical components
+
+I tried to determine what settings were affected as a result of the Pixhawk now being part of the ready-to-fly craft and then what settings were affected by:
+
+* Having the GPS mast up or down.
+* Having the battery (with voltage sensor) in place or not.
+* Having the battery plugged in or not while in place.
+* Having the propellars on or not.
+
+Unsurprisingly nothing has an affect on the radio calibration - so you only need to redo the accelerometer and compass calibration steps.
+
+The accelerometer calibration affects the parameters:
+
+* `AHRS_TRIM`
+* `INS_ACCOFFS`
+* `INS_ACCSCAL`
+
+The compass calibration affects the parameters:
+
+* `COMPASS_DIA`
+* `COMPASS_ODI`
+* `COMPASS_OFS`
+
+Note: these aren't the full parameter names, there are `X`, `Y` and `Z` variants for most and accelerometer 1 and accelerometer 2 variants etc.
+
+Most of these values, with the exception of `INS_ACCSCAL`, changed noticeably with recalibration but they also changed noticeably on every recalibration whether the setup had been changed or not. So it wasn't possible to isolate if any of the above factors (the presence of the battery etc.) was relevant or not.
+
+Some of the parameters do look like they're more affected by changes than others, e.g. `AHRS_TRIM`, but the data wasn't clear enough to draw any solid conclusions without a lot more work.
+
+Note: the `GND_ABS_PRESS`, `INS_GYROFF` and `STAT_BOOTCNT` values are updated everytime the Pixhawk restarts and the `STAT_RUNTIME` updates continuously so any changes seen in these values is not related to calibration.
+
+If your interested you can see the relative difference (as a percentage) for parameters between uninstalled and fully setup in [`uninstalled-installed.txt`](param-changes/uninstalled-installed.txt) and between two recalibration runs with the same setup in [`rerun.txt`](param-changes/rerun.txt).
+
+The relative difference was calculated as `|x - y| / max(|x|, |y|)` (as per Wikipedia [relative change and difference](https://en.wikipedia.org/wiki/Relative_change_and_difference)).
+
 ---
 
 _45 Getting a GPS fix._  
