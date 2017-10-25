@@ -462,6 +462,10 @@ _50 Voltage sensor in place._
 
 Voltage sensor attached to frame. Note: plug sensor cable into RX, coil up and cable tie _before_ taping down RX and make sure RX is far enough forward that sensor cable doesn't poke into battery strap. Move note about plugging in S.PORT cable up to where you taped down the RX.
 
+The FrSKY FLVSS sensor can handle any battery with a balance connector from 2S up to 6S. On one side you have six pins, one of which is marked GND - if you have a 4S battery then its balance connector should be plugged into this pin and the next four pins (leaving the last two pins unconnected). The balance connector should be plugged in so that it's final red power wire should be the furthest away from the GND pin. On the other side of the sensor you have a 3x2 group of pins - you can connect the cable from the receiver to either the top or bottom set of three pins, it doesn't matter which you choose, and the other three are free for daisy chaining additional sensors. The little graphic beside these pins shows which is are signal, power and ground - make sure to connect the yellow signal wire, red power wire and black ground wire from the receiver accordingly.
+
+Note: older FLVSS used to have yellow text for the total battery voltage and cyan text for the individual cell voltages, while newer ones have white text for all values.
+
 ---
 
 _26._  
