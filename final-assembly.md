@@ -432,6 +432,8 @@ What other flips can we do on 1, 2, 3? We can flip 1 and 2 to get 2, 1, 3 - whic
 
 I.e. any flip in the ordering 1, 2, 3 results in the reverse ordering or one of its rotations - the same holds true for flips done on the rotations of 1, 2, 3.
 
+In short - of the six permutations half correspond to turning CW and half to CCW and switching any two connectors moves you from the CW half to the CCW half or vice-versa.
+
 #### 2.
 
 This trick only works due to a neat bit of combinatorics and the fact that we only have three phases and not more. The ESC has a clear ordering of phases but we don't care if the phases are rotated by how we connect up the leads, we just care if they're reversed.
