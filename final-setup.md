@@ -51,8 +51,7 @@ Note: for _RSSI_ (and many other values) there are also plus and minus variants,
 
 TODO: when are the _RSSI-_ and _RSSI+_ values reset - when the TX is switched on and off?
 
-TODO: ask about the following on the [OpenTX 2.2 support thread](https://www.rcgroups.com/forums/showthread.php?2823315-OpenTx-2-2
-https://youtu.be/Qo4Ck_vsJ6I):
+TODO: ask about the following on the [OpenTX 2.2 support thread](https://www.rcgroups.com/forums/showthread.php?2823315-OpenTx-2-2):
 
 1. The TX battery voltage is still displayed in the top bar but RSSI has disappeared from the bottom one. Why? If I remove _RSSI_ as a displayed value it's still gone (i.e. it's not removed to avoid duplication). In OpenTX 2.1 you could choose the voltage source displayed in the top bar, i.e. you could switch it from the TX value to the Cels value, but this feature seems have gone from the _Telemetry_ screen - has setting up the top and bottom bar moved elsewhere?
 
