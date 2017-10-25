@@ -34,7 +34,7 @@ Upgrading the receiver
 
 With other receivers such as the D4R-II there are [warnings](https://pixhawk.org/peripherals/radio-control/frsky#parts_list) that the receiver must be upgraded before use with the Pixhawk. There are no such warning for receivers like the X8R but it makes sense to make sure your receiver is using the latest firmware.
 
-You can upgrade the receiver via the transmitter - this is much simpler than upgrading it via a computer (and requires no special cables) and is much simpler with the Taranis Q X7 than with the older X9D+. Unlike the older X9D+ the Q X7 comes with a smart port, so it can be connected directly to the receiver with a standard cable.
+You can upgrade the receiver via the transmitter - this is much simpler than upgrading it via a computer (and requires no special cables) and is much simpler with the Taranis Q X7 than with the older X9D+. Unlike the older X9D+ the Q X7 comes with a Smart Port, so it can be connected directly to the receiver with a standard cable.
 
 Note: I documented upgrading the receiver using a computer [here](receiver-windows-upgrade.md) but I think using the transmitter, as outlined here, is the substantially simpler approach.
 

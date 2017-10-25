@@ -466,6 +466,8 @@ The FrSKY FLVSS sensor can handle any battery with a balance connector from 2S u
 
 Note: older FLVSS used to have yellow text for the total battery voltage and cyan text for the individual cell voltages, while newer ones have white text for all values.
 
+Note: the little black and white one page printed manual that came with my FLVSS sensor incorrectly showed the signal pin of the sensor connected to the ground pin of the receiver's Smart Port (and the ground pin of the sensor connected to the signal pin of the receiver), this is corrected in the online color PDF [manual page](https://www.frsky-rc.com/wp-content/uploads/2017/07/Manual/FLVSS.pdf).
+
 ---
 
 _26._  

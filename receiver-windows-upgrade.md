@@ -31,9 +31,9 @@ _FUC-3 with other cable plugged in and connected to the SPC_.
 _Closeup of cable from FUC-3 connected to SPC_.  
 <img height="256" src="images/assembly/receiver/windows/spc-connection-closeup.jpg">
 
-Now you have a joined up cable with a USB connector at one end, the SPC in the middle and a smart port connector at the other end. The smart point connector plugs into the left hand side of the X8R receiver (the side that has just a single port), but **don't** do that yet.
+Now you have a joined up cable with a USB connector at one end, the SPC in the middle and a Smart Port connector at the other end. The smart point connector plugs into the left hand side of the X8R receiver (the side that has just a single port), but **don't** do that yet.
 
-Aside: don't get smart port connectors and S.BUS connectors mixed up - the receiver has both and they look identical but they're different things.
+Aside: don't get Smart Port connectors and S.BUS connectors mixed up - the receiver has both and they look identical but they're different things.
 
 Now plug the FUC-3 USB connector into your computer, a red power LED on the FUC-3 PCB will light up and Windows will automatically detect the device and install the necessary drivers (assuming you're running Windows 8 or 10). Remember that if you're on Mac or Linux and using a VM you'll need to tell VirtualBox to pass the device through to the VM.
 
@@ -48,6 +48,6 @@ Only now should you plug in the receiver, the LED on the receiver should light u
 _Receiver connected to computer via FUC-3 and SPC_.  
 <img height="256" src="images/assembly/receiver/windows/receiver-connected-to-computer.jpg">
 
-Important: the upgrade software seems to be completely inflexible as to the order things need to be plugged in. The FUC-3 must be plugged into the computer before the upgrade software is started, then the `.frk` file should be selected and only then should the receiver be connected (to the smart port terminated connector coming out of the SPC). Things did not work for me if I plugged in the USB connector after starting the upgrade software or connected the receiver before the firmware file had been chosen (the LED on the receiver would light up red and stay red unless the upgrade software was already ready to update it).
+Important: the upgrade software seems to be completely inflexible as to the order things need to be plugged in. The FUC-3 must be plugged into the computer before the upgrade software is started, then the `.frk` file should be selected and only then should the receiver be connected (to the Smart Port terminated connector coming out of the SPC). Things did not work for me if I plugged in the USB connector after starting the upgrade software or connected the receiver before the firmware file had been chosen (the LED on the receiver would light up red and stay red unless the upgrade software was already ready to update it).
 
 Note: DJ WoodZ has a [page](http://djwoodz.com/2016/04/11/How-To-Update-FrSky-X4R-SB-Firmware-via-USB/) that covers similar instructions for the X4R and has nice clear photos and screenshots that provide some more step-by-step details than here (that are relevant for both the X4R and X8R).

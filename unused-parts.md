@@ -6,7 +6,7 @@ The following are parts that were originally included in the [`parts.md`](parts.
 |-------|-------------|
 | &euro;4 | <img width="128" src="images/parts/ttl-to-rs232-converter-ful-1.jpg"><br>FUL-1 TTL to RS232 converter - connects the telemetry port of the flight controller to the receiver ([link](https://www.unmannedtechshop.co.uk/frsky-transmitter-receiver-upgrade-adapter-ful-1/)).
 | &euro;9 | <img height="128" src="images/parts/telemetry-upgrade-cable-1.jpg"><br>FUC-3 upgrade cable ([link](https://www.unmannedtechshop.co.uk/frusb-3-frsky-upgrade-cable-fuc-3/)).
-| &euro;2.50 | <img width="128" src="images/parts/telemetry-upgrade-cable-adapter.jpg"><br>SPC (smart port converter) ([link](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/)).
+| &euro;2.50 | <img width="128" src="images/parts/telemetry-upgrade-cable-adapter.jpg"><br>SPC (Smart Port converter) ([link](https://www.unmannedtechshop.co.uk/frsky-smart-port-converter-spc/)).
 | &euro;8 | <img height="128" src="images/parts/pixhawk-external-led-and-usb.jpg"><br>External LED and USB connector ([link](https://www.unmannedtechshop.co.uk/all-in-one-led-and-usb-module-for-pixhawk/)).
 | &euro;2.50 | <img width="128" src="images/parts/i2c-splitter.jpg"><br>I2C splitter - share the Pixhawk I2C connector between the GPS module's compass connector and the external LED and USB connector ([link](https://www.unmannedtechshop.co.uk/i2c-board/)).
 | &euro;5 | <img width="128" src="images/parts/f450-f550-landing-gear.jpg"><br>F450/F550 landing gear ([link](http://www.helipal.com/dji-landing-gear-for-f450-f550.html)).
