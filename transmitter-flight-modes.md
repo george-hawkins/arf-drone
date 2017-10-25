@@ -176,7 +176,7 @@ For more details on logical switches, including an explanation of the _AND switc
 Adding sounds
 -------------
 
-As noted before the standard SD card contents do not include sounds for the ArduCopter flight modes that we will be setting up later. This is simple to fix. I've put together the zip file [`arducopter-flight-modes-sounds.zip`](arducopter-flight-modes-sounds.zip) which contains the necessary sounds. The following table shows the flight mode names and the corresponding sound files (for some modes there wasn't a suitable file in the sound pack from which I took these files).
+As noted before the standard SD card contents do not include sounds for the ArduCopter flight modes that we will be setting up later. This is simple to fix. I've put together the zip file [`opentx-extra-tracks.zip`](opentx-extra-tracks.zip) which contains the necessary sounds. The following table shows the flight mode names and the corresponding sound files (for some modes there wasn't a suitable file in the sound pack from which I took these files).
 
 | Flight mode | Sound file |
 |-------------|------------|
@@ -207,7 +207,7 @@ Now on the special functions tab you can replace the uninformative sounds that w
 
 ![assigned sounds](images/opentx-companion/assigned-sounds.png)
 
-Note: the sound files used here were taken from the Amber sound pack linked to on the [2.2 resources page](http://open-txu.org/v2-2-resources-2/) on OpenTX University. The files `loitmd.wav` and `stblmd.wav` were originally called `loitrmd.wav` and `stblzmd.wav` respectively, they were renamed as file names can only be a maximum of six letters now (excluding the suffix).
+Note: the sound files used here were taken from the Amber sound pack linked to on the [2.2 resources page](http://open-txu.org/v2-2-resources-2/) on OpenTX University. The files `loitmd.wav` and `stblmd.wav` were originally called `loitrmd.wav` and `stblzmd.wav` respectively, they were renamed as file names can only be a maximum of six letters now (excluding the suffix). As well as the flight modes the zip file also contains a WAV file for "battery critical" which we'll use later.
 
 Notes
 -----
