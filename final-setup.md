@@ -5,7 +5,7 @@ If you long press _PAGE_ from the main screen you get to the telemetry screens. 
 
 ![no setup](images/opentx-screenshots/rssi-bat/01-no-setup.png)
 
-Plug the Pixhawk in to USB (there's no need to connect the main LiPo battery). This will provide power to the receiver. Now (without you needing to configure anything) it will start displaying the [RSSI](Received signal strength indication) (received signal strength indication). This tells you how strong the radio link between the receiver and the transmitter is. If you walk around with the transmitter you should the value increase and decrease as you'd expect. However when you get within about 2m things get a little odder as various affects kick-in due to the receiver and transmitter being too close together.
+Plug the Pixhawk in to USB (there's no need to connect the main LiPo battery). This will provide power to the receiver. Now (without you needing to configure anything) it will start displaying the [RSSI](https://en.wikipedia.org/wiki/Received_signal_strength_indication)(Received signal strength indication) (received signal strength indication). This tells you how strong the radio link between the receiver and the transmitter is. If you walk around with the transmitter you should the value increase and decrease as you'd expect. However when you get within about 2m things get a little odder as various affects kick-in due to the receiver and transmitter being too close together.
 
 TODO: this should be explained way earlier as people get confused by the "telemetry lost" / "telmetetry recover" (yes it's "recover" and not "recovered"). Can I find a good explanation for the "saturation" affect when RX and TX are close.
 

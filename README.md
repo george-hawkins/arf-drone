@@ -34,6 +34,7 @@ Build
 * [`frame-assembly.md`](frame-assembly.md) - assembling the frame.
 * [`pixhawk-setup.md`](pixhawk-setup.md) - configuring the Pixhawk.
 * [`final-assembly.md`](final-assembly.md) - assembling the frame and electronics for the first flight.
+* [`final-setup.md`](final-setup.md) - configuring the display of RSSI and battery voltage (with alarms).
 * [`battery-charging.md`](battery-charging.md) - charging and storing the batteries.
 
 * [`qgroundcontrol.md`](qgroundcontrol.md)
