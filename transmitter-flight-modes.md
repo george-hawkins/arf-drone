@@ -61,6 +61,10 @@ This is done by going to the _Special Functions_ tab and setting up six function
 
 If you're interested in where the values -90 etc. come from then watch the Painless360 video mentioned above from [6:16](https://www.youtube.com/watch?v=agjHu-WhCJw&feature=youtu.be&t=376) onwards - he explains things in terms of a six position rotary switch but the same applies for our six logical switches.
 
+---
+
+TODO: I don't believe this section (setting up an input called _Mod_) is meaningful or needed for our setup involving logical switches. Unlike a physical 6 way switch there's no underlying input here - nothing is piped on through to a mix (it's all done using special functions instead). Watch the video again and cf with the physical 6 way switch approach - where if I remember right things do involve taking advantage of inputs and curves, unlike here. If that's the case remove this bit. Add in a link somewhere to <http://www.rc-soar.com/opentx/basics/index.htm> which nicely shows how real inputs get mapped to inputs, where expo etc. can be applied, and can then feed into mixes that output values on channels. If you remove this bit maybe point out that _if_ you had a six way switch you'd use an input and mix rather than special functions and point to the relevant bit of the video. And point to Banggood where you can get a six way switch - https://www.banggood.com/FrSky-Taranis-X9E-6-Position-Switch-Pot-Knob-p-1043146.html
+
 Now go to the _Inputs_ tab, right click on _I05_, select _Edit_ and and enter:
 
 * Input name: _Mod_
@@ -69,6 +73,8 @@ Now go to the _Inputs_ tab, right click on _I05_, select _Edit_ and and enter:
 ![mod input](images/opentx-companion/mod-input.png)
 
 I.e. _Mod_ for "mode" (the names can only be three characters long). The value for _Source_ isn't really important but you should tie it to one of the physical switches being used, i.e. _SA_ or _SB_, rather than tying up something that isn't involved.
+
+---
 
 Now try try everything out - press the _Simulate_ button at the bottom of the screen. The _Radio Simulator_ window will appear (its layout has changed since the Painless360 video), go to the _View_ menu, select _Radio Outputs_ and then dock the _Radio Outputs_ dialog to the main simulator window to make things easier to manage. The _Radio Outputs_ shows the logical switches and the channel outputs (along with global variables).
 
