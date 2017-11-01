@@ -103,7 +103,7 @@ _17._
 _18._  
 <img src="images/assembly/final-assembly/IMG_20170908_154917.jpg" height="512">
 
-Added GPS base.
+Added GPS base. The GPS mast is tall enough that when it's lying flat backwards you can no longer tip the craft onto its back legs to get at the underside (instead you have to tip it onto its right or left side). In retrospect I'd place the base more towards the middle/front so there wasn't this problem or cut the mast length down by one or two cm.
 
 TODO: add picture of washer and split washer, i.e. the bits that didn't come with the mast.
 
