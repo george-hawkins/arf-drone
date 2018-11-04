@@ -38,6 +38,8 @@ _3._
 Soldering PDB
 --------
 
+TODO: decide on using wire, cable or cord - see <https://ell.stackexchange.com/a/104907> - maybe cable?
+
 _Roll under craft knife._  
 <img src="IMG_20181013_162855.jpg" height="512">
 
@@ -65,10 +67,10 @@ _Cut down both to around 4mm._
 _Determine ideal length for battery connector._  
 <img src="IMG_20181013_170504.jpg" width="512">
 
-_Battery connector (is this the right term?)._  
+_Battery connector (is this the right term?) - ends tinned._  
 <img src="IMG_20181013_171139.jpg" height="512">
 
-_Battery connector with femalse XT60 in place._  
+_Battery connector with ends tinned ends trimmed down and female XT60 in place._  
 <img src="IMG_20181013_172752.jpg" height="512">
 
 _PDB with about 1cm of 0.7mm solder per pad (just enough to cover each pad)._  
@@ -83,7 +85,7 @@ _PDB ready for testing._
 _First plug in a motor._  
 <img src="IMG_20181014_162211.jpg" height="512">
 
-_Then plug in the battery (then unplug the battery and repeat for each motor)._  
+_Then plug in the battery, ESC should beep loudly (then unplug the battery and repeat for each motor)._  
 <img src="IMG_20181014_162318.jpg" height="512">
 
 _Once satisfied insulate the pads with electrical tape (right term, is it different to duct tape?)._  
@@ -175,7 +177,7 @@ Now finally start connecting things.
 _ESCs connected._  
 <img src="IMG_20181020_170109.jpg" height="512">
 
-_GPS connected (not labels are **above** sockets)._  
+_GPS connected (note labels are **above** sockets)._  
 <img src="IMG_20181020_170359.jpg" height="512">
 
 _Buzzer and safety switch attached._  
@@ -202,16 +204,19 @@ _Material and tools used._
 GPS masts
 ---------
 
-### Tarot
+### 4-bolt stand
 
 _Parts._  
-<img src="IMAG0321.jpg" height="512">
-
-_Assembled._  
-<img src="IMAG0322.jpg" height="512">
+<img src="IMG_20181104_143452.jpg" height="512">
 
 _Joint._  
-<img src="IMG_20181104_144423.jpg" height="512">
+<img src="IMG_20181104_144005.jpg" width="512">
+
+_Notch (on some versions)._  
+<img src="IMG_20181104_144231.jpg" height="512">
+
+_Notch (on some versions)._  
+<img src="IMAG0332.jpg" height="512">
 
 ### L stand
 
@@ -231,19 +236,16 @@ _Parts._
 _Joint._  
 <img src="IMG_20181104_143128.jpg" width="512">
 
-### 4-bolt stand
+### Tarot
 
 _Parts._  
-<img src="IMG_20181104_143452.jpg" height="512">
+<img src="IMAG0321.jpg" height="512">
+
+_Assembled._  
+<img src="IMAG0322.jpg" height="512">
 
 _Joint._  
-<img src="IMG_20181104_144005.jpg" width="512">
-
-_Notch (on some versions)._  
-<img src="IMG_20181104_144231.jpg" height="512">
-
-_Notch (on some versions)._  
-<img src="IMAG0332.jpg" height="512">
+<img src="IMG_20181104_144423.jpg" height="512">
 
 ### 1-bolt stand
 
