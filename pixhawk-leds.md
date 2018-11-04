@@ -14,3 +14,5 @@ _The main Pixhawk LED._
 
 _The safety switch LED._  
 ![safety switch](images/pixhawk-leds/safety-switch.png)
+
+TODO: see also <https://docs.px4.io/en/flying/led_meanings.html>
