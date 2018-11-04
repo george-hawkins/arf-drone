@@ -191,6 +191,8 @@ _35._
 
 In retrospect I'd do the battery test with the solder pads temporally insulated with insulation tape. After this I'd feed the front ESC wires back like this and permanently tape down the middle portion of these wires with tape and then cover the solder pads (and the ends of the tape) with black Sugru (smoothed out with soapy finger tips). Then I'd look at pulling all the "control" wires up to the middle rear of the top plate, possibly temporally taping them in place. All this as part of the soldering section - with the intension then in this section of coiling all four wires into a single coil and connecting them to the Pixhawk before connecting anything else, i.e. before buzzer and safety switch. Whether a single coil works out better than two, as here, remains to be seen.
 
+Update: and indeed this is what I did 2nd time around - see frame-assembly.md.
+
 Covering the main power connector though with Sugru would make it hard to add extra power cables later, e.g. for transmitter, camera and SiK radio (or is powered via Pixhawk?).
 
 _32._  

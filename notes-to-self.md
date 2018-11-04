@@ -10,6 +10,8 @@ To shrink pictures to fit within a 2048x2048 box while maintaining their aspect 
 
     $ convert ~/Downloads/IMG_2017XYZ.jpg -resize 2048x2048\> result.jpg
 
+    $ file *.jpg | sed -n 's/\(.*\.jpg\):.*precision ., \([0-9]*\)x\([0-9]*\).*/\1 \2 \3/p' | while read line; do x=( $line ); echo -n "${x[0]} "; if [ ${x[1]} -gt ${x[2]} ]; then echo width; else echo height; fi; done
+
 To setup screen capture in OpenTX:
 
 * Go to _Model selection_.

@@ -1,7 +1,13 @@
 Soldering the PDB
 =================
 
-Soldering the ESCs and the power connector to the PDB is the only really tricky part of the assembly. I had soldered [through hole](https://en.wikipedia.org/wiki/Through-hole_technology) components before for hobby electronics projects but this didn't prepare me very well for the soldering involved here - I was surprised at how quickly the heat from the soldering iron was drawn away from the point of contact, meaning that things like the PDB and wires became extremely hot in the process of trying to solder anything.
+Soldering the ESCs and the power connector to the PDB is the only really tricky part of the assembly.
+
+---
+
+TODO: summarize this block.
+
+I had soldered [through hole](https://en.wikipedia.org/wiki/Through-hole_technology) components before for hobby electronics projects but this didn't prepare me very well for the soldering involved here - I was surprised at how quickly the heat from the soldering iron was drawn away from the point of contact, meaning that things like the PDB and wires became extremely hot in the process of trying to solder anything.
 
 For electronics projects I generally have my soldering iron at 325C (when working with leaded solder) but after reading around it seems that a higher temperature is typically used for the thicker wires and larger pads involved here. 375C is a commonly suggested temperature and some people go as high as 400C (but this seems to be considered extreme). At least as important as the temperature is the soldering iron tip - for electronics projects I use a narrow chisel but a broader tip, even at the same temperature setting, can deliver and maintain much more heat at the point of contact. So for this work I switched up to a 2mm tip.
 
@@ -17,6 +23,9 @@ So I used something similar to this [solder paste](https://hobbyking.com/en_us/s
 
 TODO: can I get a definitive take on this - the fact that HobbyKing sells solder paste but no flux pens seems to imply the former is more used in RC hobbyist circles.
 
+---
+
+
 Each ESC comes with two long cables - a servo cable that goes to the flight controller and a power cable that is going to be soldered to the PDB. We're going to leave the servo cables as they are but the power cables are heavy and far too long for this build as they are.
 
 Each motor has its own dedicated ESC. Each motor has three cables coming out of it and the connectors on these cables are inserted into one end of an ESC. The motors are mounted at the ends of the quadcopter arms and the ESCs are mounted on the undersides of the arms. When cutting short the ESC power cables it's obviously important to make sure you don't cut them so short that the fairly short cables on the motors can't reach the ESCs when everything is mounted later.
@@ -27,12 +36,12 @@ _ESCs and power connector._
 _F450 PDB._  
 <img width="512" src="images/assembly/soldering/pdb.jpg">
 
-I cut my cables down to 112mm, I then removed the last 16mm of the outer black silicone coating to reveal the strands of ground wire that are braided into a sheath around the power wire. The silicone is extremely soft - you just have to gently roll the cable under a craft knife to cut the silicone deeply enough to then be able to pull it off.
+Cut the cables down to 122mm, remove the last 22mm of the outer black silicone coating to reveal the strands of ground wire that are braided into a sheath around the power wire. The silicone is extremely soft - you just have to gently roll the cable under a craft knife to cut the silicone deeply enough to then be able to pull it off.
+
+TODO: update the image to match this text which was updated 2018.10.13.
 
 _ESC cable length._  
 <img width="512" src="images/assembly/soldering/esc-cable-length.png">
-
-**Update:** see the post-mortem and following section below. If repeating I'd cut the cables down to 122mm and expose 26mm of ground and power cable so I could apply the trick of using the coating that's ultimately going to be removed from the power cable to both twist the strands together and stop them splaying apart during tinning.
 
 _ESC's braided ground sheath._  
 <img width="512" src="images/assembly/soldering/esc-power-braided.jpg">
@@ -42,9 +51,7 @@ It's easier than it looks to just gently pull apart the braiding with something 
 _Unbraided ground wires._  
 <img width="512" src="images/assembly/soldering/esc-power-unbraided.jpg">
 
-These strands can then be pulled sideways and twisted into a single ground wire and cut back to just a few millimeters. You can then also remove a few millimeters of the red coating around the ground wire (the ground wire seems to be about 20 AWG so I stripped this off with my wire stripper set to 20 AWG / 0.8mm).
-
-**Update:** carrying on from the update above, if doing things again I'd cut into the coating of the power wire about 14mm down and pull up the coating slowly, twisting it as I went, to expose around 6mm of wire, tin this exposed wire and only then completely pull off the coating and cut the exposed wire down to about 4mm.
+These strands can then be pulled sideways and twisted into a single ground wire. You can then also remove 10mm of the red coating around the live wire (again using a craft knife to score around the outside) and twist the together the exposed strands of wire.
 
 _Strands twisted into single ground wire._  
 <img width="512" src="images/assembly/soldering/esc-power-untinned.jpg">

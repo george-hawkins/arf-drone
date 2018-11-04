@@ -9,14 +9,20 @@ If you've done the continuity testing properly you should be pretty confident th
 
 The ESCs will beep to indicate their state if everything is OK and they are getting power (you can see a description of the sounds they make in the [E305 user manual](http://dl.djicdn.com/downloads/e305/en/E305_User_Manual_v1.00_en.pdf)). They'll only make a sound if the motors are connected so connect a motor to each ESC. At this point the order of the connectors is unimportant, for each motor just plug its three connectors any-which-way into an ESC. The bullet connectors are quite hard to remove once fully inserted so push them in most but not all of the way for this test. Once all the motors are connected, connect the battery - for safety reasons don't lean over the battery while doing this.
 
+Update: The ESCs produce a high pitched beep that's very hard to localize, i.e. if three of the ESCs were beeping and one wasn't I'd find it very hard to tell which of the four was the non-beeping one. So instead of connecting all four motors at once I connected them one at a time. So making sure the battery was unplugged I plugged a motor into one of the ESCs, then plugged in the battery and then unplugged it again once I'd heard the expected beeping sound. This is primarily a test of the wiring and the ESCs and one could just swap the one motor from one ESC to the next but using a different motor to test each ESC also provides a basic check of the motors as well.
+
+TODO: it sounds like the motors are making a sound as well, can this be? They definitely throb gently - is the a motor sound or the throbbing covered anywhere?
+
+The bullet plugs can be quite to disconnect from the ESC so for this test it's fine not to push them in fully.
+
+I would not recommed plugging in and out motors, or leaving motors partially plugged in, while the battery is connected - you want to avoid any possibility that the bullet connectors touch anything that's conducting power and causes a short.
+
 _Outdoor battery test._  
 <img width="512" src="images/assembly/frame/pdb-battery-test.jpg">
 
 If all goes well you'll hear a continuous tone from all the ESCs. This is actually the ESC error tone - indicating that they're receiving no control signal - which isn't surprising as they're not connected yet to the flight controller. But it does indicate that the PDB is wired up correctly and delivering power to each ESC.
 
 The tone is one of those sounds where it's hard to determine the source, I had to hold my ear right up to each ESC in turn to check that a sound was coming from each. The motors also seem to be making a sound, if you hold each one you can feel a little pulsing motion in each motor.
-
-TODO: are both ESCs and motors really making separate sounds, is the pulsing feel from the motors covered anywhere.
 
 The solder joints are large and exposed and could easily accidentally short against something, the [F450 user manual](http://dl.djicdn.com/downloads/flamewheel/en/F450_User_Manual_v2.2_en.pdf) very briefly mentions that you should insulate these points but doesn't suggest how. At [3:31](https://youtu.be/pUTHIL_Xfcc?t=211) in their assembly video they use hot glue. At [28:41](https://youtu.be/ER2GxMo0X3E?t=1721) in the Marionville Models video he just uses insulation tape.
 
@@ -72,6 +78,8 @@ _Cable ties holding ESCs and their power cables in place._
 
 Update: for whatever reason I only cable-tied the power cables of the ESCs to the the frame - I should have also tied down the thinner control wires at the same time. See [`final-assembly.md`](final-assembly.md) for more on how these wires ultimately ended up being routed etc.
 
+Update 2: in the new photos I did tie down the control wires as well.
+
 The thinner wires coming out of each ESC are used to control them and will eventually be plugged into the flight controller. It's important to be able to distinguish which connector belongs to which ESC so before adding on the top plate number the connectors at the end of ESC control cables according to the following scheme:
 
 | No. | Arm         | Motor type |
@@ -96,6 +104,8 @@ _ESC connectors numbered 1 to 4._
 <img width="512" src="images/assembly/frame/numbered-connectors.jpg">
 
 Now that's done scew down the top plate and that's the assembly of the main frame body done - the rest is adding the electronics. Unlike IKEA they've been fairly generous with the screws so there are a few left over spare.
+
+Update: here, once numbered, I fed the front wires thru to the back and taped them down - see the newer photos.
 
 _Frame with top plate attached._  
 <img width="512" src="images/assembly/frame/top-plate-attached.jpg">
