@@ -1,3 +1,8 @@
+---
+id: transmitter-model-setup
+title: Transmitter Model Setup
+---
+
 Transmitter next steps
 ======================
 

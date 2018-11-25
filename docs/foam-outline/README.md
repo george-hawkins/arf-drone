@@ -1,3 +1,8 @@
+---
+id: foam-outline-README
+title: Foam Outline README
+---
+
 Files:
 
 * DSC_0015-perspective.jpg - F450 photo that's been cropped and stretched so it can be used for creating an outline.

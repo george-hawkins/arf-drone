@@ -1,3 +1,8 @@
+---
+id: battery-charging
+title: Battery Charging
+---
+
 Batteries
 =========
 

@@ -1,3 +1,8 @@
+---
+id: power-module-xt60-to-deans
+title: Power Module Xt60 To Deans
+---
+
 Power module connector
 ======================
 

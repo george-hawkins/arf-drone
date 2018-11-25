@@ -1,3 +1,8 @@
+---
+id: rx8r
+title: Rx8r
+---
+
 Inside the RX8R
 ===============
 

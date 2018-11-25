@@ -1,3 +1,8 @@
+---
+id: receiver
+title: Receiver
+---
+
 Receiver
 ========
 

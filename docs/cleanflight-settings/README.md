@@ -1,3 +1,8 @@
+---
+id: cleanflight-settings-README
+title: Cleanflight Settings README
+---
+
 TODO: the first part of below is just of technical interest - instead start with upgrading to 2.1.0, pasting in `parameters.txt` and then the appropriate LEDs file and then explaining what you get with this (_AUX1_ and _AUX2_ setup) and suggest that the reader calibrate their accelerometer. Perhaps add in something related to the batter monitor and https://github.com/cleanflight/cleanflight/issues/2951#issuecomment-332921466
 
 ---

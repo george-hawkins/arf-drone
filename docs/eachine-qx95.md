@@ -1,3 +1,8 @@
+---
+id: eachine-qx95
+title: Eachine Qx95
+---
+
 Practising with the Eachine QX95
 ================================
 

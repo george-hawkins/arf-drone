@@ -1,3 +1,8 @@
+---
+id: windows-vm
+title: Windows Vm
+---
+
 Some of applications used in this drone build only run on Windows. As I only use Linux and MacOS I had to run these in a VM.
 
 This is very simple. I used [VirtualBox](https://www.virtualbox.org) and the very nicely preconfigured [Windows 10 (stable) VM](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) that Microsoft makes available for browser testing.

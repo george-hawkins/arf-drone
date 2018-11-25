@@ -1,3 +1,8 @@
+---
+id: fpv-x-racer
+title: Fpv X Racer
+---
+
 X-racer notes
 =============
 

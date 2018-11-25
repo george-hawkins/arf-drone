@@ -1,3 +1,8 @@
+---
+id: pixhawk-setup
+title: Pixhawk Setup
+---
+
 Pixhawk setup
 =============
 

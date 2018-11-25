@@ -1,3 +1,8 @@
+---
+id: electronics-assembly
+title: Electronics Assembly
+---
+
 Electronics
 ===========
 

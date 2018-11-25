@@ -1,3 +1,8 @@
+---
+id: pages-and-videos
+title: Pages And Videos
+---
+
 Pages and videos
 ================
 

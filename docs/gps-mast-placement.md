@@ -1,3 +1,8 @@
+---
+id: gps-mast-placement
+title: Gps Mast Placement
+---
+
 Mast placement
 --------------
 

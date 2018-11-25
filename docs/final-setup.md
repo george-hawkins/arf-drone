@@ -1,3 +1,8 @@
+---
+id: final-setup
+title: Final Setup
+---
+
 Final setup
 -----------
 

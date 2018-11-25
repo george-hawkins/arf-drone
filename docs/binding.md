@@ -1,3 +1,8 @@
+---
+id: binding
+title: Binding
+---
+
 Binding
 =======
 

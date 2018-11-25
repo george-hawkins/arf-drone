@@ -1,3 +1,8 @@
+---
+id: parts
+title: Parts
+---
+
 Parts
 =====
 

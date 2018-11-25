@@ -1,3 +1,8 @@
+---
+id: frame-assembly
+title: Frame Assembly
+---
+
 Frame assembly
 ==============
 

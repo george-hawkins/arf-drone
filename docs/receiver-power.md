@@ -1,3 +1,8 @@
+---
+id: receiver-power
+title: Receiver Power
+---
+
 Receiver power
 ==============
 

@@ -1,3 +1,8 @@
+---
+id: pixhawk-driver
+title: Pixhawk Driver
+---
+
 Pixhawk Windows device driver
 =============================
 

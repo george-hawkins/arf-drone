@@ -1,3 +1,8 @@
+---
+id: video
+title: Video
+---
+
 Video
 =====
 

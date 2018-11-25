@@ -1,3 +1,8 @@
+---
+id: notes
+title: Notes
+---
+
 Notes
 =====
 

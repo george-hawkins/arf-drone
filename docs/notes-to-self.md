@@ -1,3 +1,8 @@
+---
+id: notes-to-self
+title: Notes To Self
+---
+
 Notes to self
 =============
 

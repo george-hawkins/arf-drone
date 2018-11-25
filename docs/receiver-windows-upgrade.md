@@ -1,3 +1,8 @@
+---
+id: receiver-windows-upgrade
+title: Receiver Windows Upgrade
+---
+
 Upgrading the receiver via Windows
 ==================================
 

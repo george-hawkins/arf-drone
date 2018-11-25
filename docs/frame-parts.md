@@ -1,3 +1,8 @@
+---
+id: frame-parts
+title: Frame Parts
+---
+
 F450 frame kit
 --------------
 

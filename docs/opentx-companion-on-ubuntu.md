@@ -1,3 +1,8 @@
+---
+id: opentx-companion-on-ubuntu
+title: Opentx Companion On Ubuntu
+---
+
 Installing OpenTX Companion on Ubuntu
 -------------------------------------
 

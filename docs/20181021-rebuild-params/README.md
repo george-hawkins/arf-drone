@@ -1,3 +1,8 @@
+---
+id: 20181021-rebuild-params-README
+title: 20181021 Rebuild Params README
+---
+
 1-old-setup.param - the configuration still in place from the old build.
 2-recalibrated.param - the configuration after recalibrating for the new build.
 3-rebooted.param - the configuration after rebooting after recalibrating.

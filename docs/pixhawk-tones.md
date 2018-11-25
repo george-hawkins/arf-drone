@@ -1,3 +1,8 @@
+---
+id: pixhawk-tones
+title: Pixhawk Tones
+---
+
 Pixhawk tones
 =============
 

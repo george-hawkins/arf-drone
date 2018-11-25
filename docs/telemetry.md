@@ -1,3 +1,8 @@
+---
+id: telemetry
+title: Telemetry
+---
+
 
 TODO: Telemetry
 ===============

@@ -1,3 +1,8 @@
+---
+id: voice
+title: Voice
+---
+
 TODO: merge with [`sounds.md`](sounds.md)
 
 OpenTX sounds

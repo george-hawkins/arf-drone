@@ -1,3 +1,8 @@
+---
+id: final-assembly
+title: Final Assembly
+---
+
 Final assembly
 =============
 

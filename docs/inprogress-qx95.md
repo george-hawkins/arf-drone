@@ -1,3 +1,8 @@
+---
+id: inprogress-qx95
+title: Inprogress Qx95
+---
+
 The default channel order on my Q X7 was set to AETR while the QX 95 expects the channel order to be TAER.
 
 After creating a new model and setting its name to QX95 and setting the internal RF mode to D8 I went to the mixer screen, went down to CH5, pressed ENTER, went down to source and pressed ENTER again and flipped the _SF_ switch. That was it for setup - then I just pressed EXIT repeatedly until I returned to the main screen.

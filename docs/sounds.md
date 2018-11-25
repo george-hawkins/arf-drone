@@ -1,3 +1,8 @@
+---
+id: sounds
+title: Sounds
+---
+
 TODO: merge with [`voice.md`](voice.md)
 
 Flight mode sounds

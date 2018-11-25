@@ -1,3 +1,8 @@
+---
+id: vibration-damping-platform
+title: Vibration Damping Platform
+---
+
 Vibration damping
 =================
 

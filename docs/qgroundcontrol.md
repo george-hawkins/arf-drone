@@ -1,3 +1,8 @@
+---
+id: qgroundcontrol
+title: Qgroundcontrol
+---
+
 QGroundControl
 ==============
 

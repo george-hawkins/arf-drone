@@ -1,3 +1,8 @@
+---
+id: stick-setup
+title: Stick Setup
+---
+
 Stick configuration
 ===================
 

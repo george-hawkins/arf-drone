@@ -1,3 +1,8 @@
+---
+id: soldering
+title: Soldering
+---
+
 Soldering
 =========
 
