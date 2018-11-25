@@ -22,7 +22,7 @@ RunCam 2 - what you get in the box:
 * Layard (that can be unscrewed at the middle).
 
 _RunCam 2 parts_  
-<img width="512" src="images/video/parts.jpg">
+<img width="512" src="assets/images/video/parts.jpg">
 
 The camera holder can take interchangeable adapters for different mounts - it just comes with an adapater for the standard 1/4-20 UNC screw found on most tripods but you can e.g. also get adapters like the ones included in this [package](https://www.banggood.com/RunCam2-Camera-Mount-Support-GoPro-Action-Camera-p-1031391.html) for GoPro style mounts.
 
@@ -35,7 +35,7 @@ You don't need to use this second cable at all - you can just power the camera o
 If you look at the battery you'll see a clear plastic tab with an arrow on it - I initially assumed that this was something that was meant to be pulled off, like the little protective film on the lens, but it's meant to be left there and enables you to pull the battery out of the battery compartment. Similarly I almost damaged the battery cover by assuming it's supposed to be pushed all the way to the side when removing it - instead you just push it over a few millimeters and then waggle it outwards as shown [here](https://youtu.be/r1Ju8icXsRQ?t=427) - this video also shows how to insert the SD card (upside down relative to the top of the camera).
 
 _RunCam 2 battery compartment._  
-<img width="512" src="images/video/battery-compartment.jpg">
+<img width="512" src="assets/images/video/battery-compartment.jpg">
 
 Usage
 -----
@@ -71,31 +71,31 @@ The video transmitter is referred to as a VTX.
 See Oscar Liang's nice [introduction to VTXs](https://oscarliang.com/choose-video-transmitter-fpv-mini-quad/) and his piece on [circular vs linear polarized antenna](https://oscarliang.com/linear-circular-polarized-antenna-fpv/) that's more balanced than the many articles that say there are only pros and no cons to circular antenna.
 
 _VTX._  
-<img width="512" src="images/video/transmitter.jpg">
+<img width="512" src="assets/images/video/transmitter.jpg">
 
 _VTX PCB rev:2.2._  
-<img width="512" src="images/video/transmitter-pcb-rev-2.2.jpg">
+<img width="512" src="assets/images/video/transmitter-pcb-rev-2.2.jpg">
 
 _Receiver._  
-<img width="512" src="images/video/receiver.jpg">
+<img width="512" src="assets/images/video/receiver.jpg">
 
 _Fpv googles._  
-<img width="512" src="images/video/fpv-googles.jpg">
+<img width="512" src="assets/images/video/fpv-googles.jpg">
 
 _Fpv googles bag and lens cloth._  
-<img height="380" src="images/video/fpv-googles-bag.jpg">
+<img height="380" src="assets/images/video/fpv-googles-bag.jpg">
 
 _Camera mounts (for GoPro and RunCam 2)._  
-<img width="512" src="images/video/camera-mounts.jpg">
+<img width="512" src="assets/images/video/camera-mounts.jpg">
 
 _Cloverleaf RP-SMA antennas._  
-<img width="512" src="images/video/cloverleaf-rp-sma.jpg">
+<img width="512" src="assets/images/video/cloverleaf-rp-sma.jpg">
 
 _GoPro FPV adapter cable._  
-<img width="512" src="images/video/gopro-fpv-adapter-cable.jpg">
+<img width="512" src="assets/images/video/gopro-fpv-adapter-cable.jpg">
 
 _Analog video capture._  
-<img width="512" src="images/video/analog-video-capture.jpg">
+<img width="512" src="assets/images/video/analog-video-capture.jpg">
 
 Notes
 -----
@@ -135,10 +135,10 @@ Setup
 The [Banggood EV800D page](https://www.banggood.com/Eachine-EV800D-5_8G-40CH-Diversity-FPV-Goggles-5-Inch-800480-Video-Headset-HD-DVR-Build-in-Battery-p-1180354.html) has a nice GIF showing how to detach the LCD from the goggles. Once you pop off the LCD you'll see it's covered in a protective film, that you might not have otherwise noticed, that needs to be removed.
 
 _Charging the transmitter, LCD and camera batteries._  
-<img width="512" src="images/video/charging.jpg">
+<img width="512" src="assets/images/video/charging.jpg">
 
 _Transmitter and camera cables and male header._  
-<img width="512" src="images/video/cables-and-header.jpg">
+<img width="512" src="assets/images/video/cables-and-header.jpg">
 
 This photo shows header with standard length pins and header with the extra long pins that we'll use to create an adapter to connect the transmitter cable to the video cable. Adafruit sell [extra long pin header](https://www.adafruit.com/product/400) where the pins are already centered lengthwise (unlike the header shown here) which is what we want.
 
@@ -152,27 +152,27 @@ The best long term solution is probably to discard the camera cable altogether, 
 
 Cut off three pins, use a pliers on each pin to center (if the pins didn't already come centered). We've not got a servo-to-servo adapter, plug it into the servo connector from the VTX cable and then plug in the connector from the camera cable making sure the yellow and black wires match up either side of the connection.
 
-<img height="256" src="images/video/cutting-header.jpg"> <img height="256" src="images/video/servo-adapter.jpg"> <img height="256" src="images/video/tx-cable-and-adapter.jpg"> <img height="256" src="images/video/tx-and-camera-connectors-joined.jpg">
+<img height="256" src="assets/images/video/cutting-header.jpg"> <img height="256" src="assets/images/video/servo-adapter.jpg"> <img height="256" src="assets/images/video/tx-cable-and-adapter.jpg"> <img height="256" src="assets/images/video/tx-and-camera-connectors-joined.jpg">
 
 _VTX and camera cables connected together._  
-<img height="512" src="images/video/tx-and-camera-cables-joined.jpg">
+<img height="512" src="assets/images/video/tx-and-camera-cables-joined.jpg">
 
 Now plug in the VTX and the camera and have the battery ready to power the VTX.
 
 _VTX and camera ready for transmitting._  
-<img height="512" src="images/video/tx-and-camera-ready.jpg">
+<img height="512" src="assets/images/video/tx-and-camera-ready.jpg">
 
 **Warning:** this is another situation where you can instantly destroy your equipment. Never power the VTX without first having connected its antenna. When the VTX is powered up it will want to dump out energy via the antenna and if it's not present the inability to get rid of energy like this may lead to immediate damange. Depending on make and manufacturer some VTXs will survive this situation while for others some component on the VTX will heat up and burnout within seconds. It's probably best to avoid finding out what the behavior of your VTX is in this situation. The same warning does not apply to the receiver, i.e. googles or LCD, as here the antenna have a passive role, i.e. they're for receiving energy pumped out by something else.
 
 Press and hold the power button on the LCD to turn it on, then press _Search_ to scan for video signals. If you're indoors and there are various nearby 5.8GHz sources you may find the stop searching on various channels where something is transmitting without it being a video signal.
 
 _LCD turned on and ready to receive._  
-<img width="512" src="images/video/lcd-turned-on.jpg">
+<img width="512" src="assets/images/video/lcd-turned-on.jpg">
 
 Then plug your battery into your VTX (mine started with the small red two digit seven segment display showing 11) and turn on the camera as well. I then searched again from the LCD. The initial picture was extremely underwhelming - so I switched channel on the VTX to 21 and searched again and this time got a perfect crystal clear image on my LCD.
 
 _VTX transmitting camera feed to LCD._  
-<img width="512" src="images/video/transmitting.jpg">
+<img width="512" src="assets/images/video/transmitting.jpg">
 
 **Important:** where you're out in the field you should always power up your LCD/goggles first, before turning on the VTX, and see if you pick up an existing signal so that you can make sure you won't start transmitting on a channel that is aleady in use by someone nearby (you powering up your VTX would cause them to lose signal and crash - something that won't improve your popularity).
 

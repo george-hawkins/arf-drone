@@ -20,35 +20,35 @@ Various acronyms used in the parts list, like ESC and PDB, are explained later i
 
 | Price | Description |
 |-------|-------------|
-| &euro;24 | <img width="128" src="images/parts/f450-frame-3.jpg"> <img height="128" src="images/parts/f450-frame-1.gif"> <img width="128" src="images/parts/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link 1](https://www.amainhobbies.com/dji-flame-wheel-f450-basic-quadcopter-drone-kit-dji-fw450bas/p235233), [link 2](http://www.builtdrones.com/dji-flamewheel-f450-basic-kit/)).
-| &euro;150 | <img height="128" src="images/parts/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellers, motors and ESCs ([link](http://store.dji.com/product/e305-4)).
-| &euro;175 | <img width="128" src="images/parts/pixhawk-1.jpg"> <img height="128" src="images/parts/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](https://pixhawk.org/modules/pixhawk)).
-| &euro;41 | <img width="128" src="images/parts/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/)).
-| &euro;35 | <img width="128" src="images/parts/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).
-| &euro;17.50 | <img height="128" src="images/parts/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB ([link](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/)).
-| &euro;48 | <img width="128" src="images/parts/tattu-3700mAh-45C-4S1P-LiPo.jpg"><br>LiPo 3300mAh 4S1P 14.8V 45C battery ([link](http://www.gensace.de/tattu-3700mah-14-8v-45c-4s1p-lipo-battery-pack.html)). |
-| &euro;108 | <img height="128" src="images/parts/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter ([link](https://www.unmannedtechshop.co.uk/frsky-taranis-q-x7-2-4ghz-transmitter/)).
+| &euro;24 | <img width="128" src="assets/images/parts/f450-frame-3.jpg"> <img height="128" src="assets/images/parts/f450-frame-1.gif"> <img width="128" src="assets/images/parts/f450-frame-4.jpg"><br>F450 frame - the basic platform to which everything else is attached ([link 1](https://www.amainhobbies.com/dji-flame-wheel-f450-basic-quadcopter-drone-kit-dji-fw450bas/p235233), [link 2](http://www.builtdrones.com/dji-flamewheel-f450-basic-kit/)).
+| &euro;150 | <img height="128" src="assets/images/parts/e305-quad-propulsion-system.jpg"><br>E305 propulsion system - propellers, motors and ESCs ([link](http://store.dji.com/product/e305-4)).
+| &euro;175 | <img width="128" src="assets/images/parts/pixhawk-1.jpg"> <img height="128" src="assets/images/parts/pixhawk-3.jpg"><br>Pixhawk flight controller - the "brains" of the system ([link](https://pixhawk.org/modules/pixhawk)).
+| &euro;41 | <img width="128" src="assets/images/parts/ublox-neo-m8n-gps-with-compass.jpg"><br>u-blox NEO-M8 GPS (and compass) module ([link](https://www.unmannedtechshop.co.uk/ublox-neo-m8n-gps-with-compass/)).
+| &euro;35 | <img width="128" src="assets/images/parts/receiver-x8r.jpg"><br>X8R receiver - the drone's wireless receiver ([link](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).
+| &euro;17.50 | <img height="128" src="assets/images/parts/apm-power-module.jpg"><br>Power module - connects the battery to the flight controller and the PDB ([link](https://www.unmannedtechshop.co.uk/high-voltage-apm-power-module-with-3a-ubec/)).
+| &euro;48 | <img width="128" src="assets/images/parts/tattu-3700mAh-45C-4S1P-LiPo.jpg"><br>LiPo 3300mAh 4S1P 14.8V 45C battery ([link](http://www.gensace.de/tattu-3700mah-14-8v-45c-4s1p-lipo-battery-pack.html)). |
+| &euro;108 | <img height="128" src="assets/images/parts/transmitter-taranis-q-x7.jpg"><br>Taranis Q X7 transmitter ([link](https://www.unmannedtechshop.co.uk/frsky-taranis-q-x7-2-4ghz-transmitter/)).
 
 ### Support components
 
 | Price | Description |
 |-------|-------------|
-| &euro;40 | <img width="128" src="images/parts/s60-lipo-charger.jpg"><br>S60 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
-| &euro;12.50 | <img width="128" src="images/parts/voltage-sensor.jpg"><br>FLVSS voltage sensor ([link](https://hobbyking.com/en_us/frsky-flvss-lipo-voltage-sensor-with-smart-port-1pc.html)).
-| &euro;6.50 | <img width="64" src="images/parts/micro-sd-card.jpg"><br>Micro SD card (at least 1GB) for transmitter ([link](https://www.amazon.co.uk/Kingston-8GB-Micro-SD-HC/dp/B001CQT0X4/)).
-| &euro;5 | <img height="128" src="images/parts/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system ([link](https://www.unmannedtechshop.co.uk/foldable-gps-mast-mount/)).
-| &euro;7.50 | <img width="128" src="images/parts/spare-props.jpg"><br>Spare propellers ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
-| &euro;17 | <img width="256" src="images/parts/telemetry-cable.jpg"><br>Telemetry cable ([link](http://www.craftandtheoryllc.com/product/telemetry-cable-flightdeck-taranis-opentx-ardupilot-arducopter-pixhawk-2-cube-servo-frsky-smartport-smart-port-df13-jst-gh-serial/)).
+| &euro;40 | <img width="128" src="assets/images/parts/s60-lipo-charger.jpg"><br>S60 LiPo charger ([link](https://www.unmannedtechshop.co.uk/skyrc-s60-ac-balance-charger-discharger/)).
+| &euro;12.50 | <img width="128" src="assets/images/parts/voltage-sensor.jpg"><br>FLVSS voltage sensor ([link](https://hobbyking.com/en_us/frsky-flvss-lipo-voltage-sensor-with-smart-port-1pc.html)).
+| &euro;6.50 | <img width="64" src="assets/images/parts/micro-sd-card.jpg"><br>Micro SD card (at least 1GB) for transmitter ([link](https://www.amazon.co.uk/Kingston-8GB-Micro-SD-HC/dp/B001CQT0X4/)).
+| &euro;5 | <img height="128" src="assets/images/parts/gps-mast.jpg"><br>GPS mast - separates the GPS unit from interference from the rest of the system ([link](https://www.unmannedtechshop.co.uk/foldable-gps-mast-mount/)).
+| &euro;7.50 | <img width="128" src="assets/images/parts/spare-props.jpg"><br>Spare propellers ([link](https://store.dji.com/product/9450-self-tightening-rotor-white-silver-stripes)).
+| &euro;17 | <img width="256" src="assets/images/parts/telemetry-cable.jpg"><br>Telemetry cable ([link](http://www.craftandtheoryllc.com/product/telemetry-cable-flightdeck-taranis-opentx-ardupilot-arducopter-pixhawk-2-cube-servo-frsky-smartport-smart-port-df13-jst-gh-serial/)).
 
 ### Additional physical components
 
 | Price | Description |
 |-------|-------------|
-| &euro;1 | <img width="128" src="images/parts/xt60-male-power-connector.jpg"><br>XT60 male power connector - connects the PDB to the power module ([link](https://www.unmannedtechshop.co.uk/male-xt60-wire-10cm/)).
-| &euro;3 | <img width="128" src="images/parts/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)).
-| &euro;3 | <img height="128" src="images/parts/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps - attach battery to frame ([link](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
-| &euro;2 | <img width="128" src="images/parts/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
-| &euro;5 | <img width="128" src="images/parts/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
+| &euro;1 | <img width="128" src="assets/images/parts/xt60-male-power-connector.jpg"><br>XT60 male power connector - connects the PDB to the power module ([link](https://www.unmannedtechshop.co.uk/male-xt60-wire-10cm/)).
+| &euro;3 | <img width="128" src="assets/images/parts/vibration-damping-mounting-set.jpg"><br>Vibration damping mounting set - isolates the flight controller from the vibration of the frame ([link](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/)).
+| &euro;3 | <img height="128" src="assets/images/parts/hook-and-loop-velcro-straps.jpg"><br>Hook and loop velcro straps - attach battery to frame ([link](https://www.unmannedtechshop.co.uk/hook-loop-battery-strap-pack-of-5/)).
+| &euro;2 | <img width="128" src="assets/images/parts/mounting-foam.jpg"><br>Mounting foam - attach ESCs and other components to the frame ([link](https://www.unmannedtechshop.co.uk/3m-double-sided-mounting-foam/)).
+| &euro;5 | <img width="128" src="assets/images/parts/lipo-safety-bag.jpg"><br>LiPo safety bag - keep LiPos safely contained when charging or not in use ([link](https://www.unmannedtechshop.co.uk/lipo-safety-bag/)).
 
 TODO: add female XT60 connector - simply to go with the power connector to be used when soldering it to the PDB to ensure the connector doesn't warp.
 
@@ -75,7 +75,7 @@ The following sections cover the major components of the quadcopter including so
 The frame is the basic physical platform to which all other components are attached. While most of the other components are updated on a regular basis, frame design seems to evolve at a slower pace. The [DJI Flame Wheel](https://www.dji.com/flame-wheel-arf/feature) F450 frame came out in early 2012 and still seems to be one of the most popular non-race quadcopter frames.
 
 _DJI F450 frame._  
-![F450 frame](images/parts/f450-frame-1.gif)
+![F450 frame](assets/images/parts/f450-frame-1.gif)
 
 I choose it because it's recommended on many first time build page (such as the ArduPilot [build your own multicopter](http://ardupilot.org/copter/docs/build-your-own-multicopter.html)) and it has more available space in its central section than it's little brother - the F350 - without the extra complexity and expense of its six armed big brother - the F550.
 
@@ -88,7 +88,7 @@ Note: if you buy the E305 propulsion system separately from the frame then it wi
 The PDB distributes power to the ESCs (and from them to the motors). The power module consists of a main cable that's split in two with a tiny circuit board (PCB) in the middle. The main cable connects to the battery at one end and to the PDB at the other end and most of the power simply flows through from the battery to the PDB. However there's also another smaller cable, with a 6-position connector, coming out of the PCB - this connects to the flight controller and provides it with power along with current and voltage information (allowing it to monitor the state of the battery).
 
 _Power module._  
-<img width="256" src="images/parts/apm-power-module.jpg">
+<img width="256" src="assets/images/parts/apm-power-module.jpg">
 
 ### Flight controller
 
@@ -120,7 +120,7 @@ It is the most expensive component in the parts list above and there are certain
 However I chose the Pixhawk as I liked the flight stack projects that used it and liked the fact that it is popular in academic environments.
 
 _Pixhawk._  
-<img src="images/parts/pixhawk-1.jpg">
+<img src="assets/images/parts/pixhawk-1.jpg">
 
 While the Pixhawk is open source hardware most discussions recommend the [3DR](https://3dr.com/) produced Pixhawk and warn against cheap chinese produced versions. However 3DR no longer produce the Pixhawk version you see covered by the [pixhawk.org](https://pixhawk.org/) and [px4.io](http://px4.io/) sites and have pivoted and pivoted again in trying to find a profitable business model - they no longer focus on producting hardware (see [here](https://techcrunch.com/2017/04/27/investors-are-betting-3dr-can-find-life-after-solo-as-a-drone-data-platform/) for a TechCrunch take on this).
 
@@ -167,7 +167,7 @@ There are open source hardware ESC implementations and many commercial ESCs are 
 DJI make a big deal of the fact that their propulsion systems, including the E305, are "tuned" propulsion systems - that the ESCs rather than being sold for use with arbitrary motors have been specifically tuned to work very well with the motors sold as part of the same system. This seems to have been well received by reviewers.
 
 _420 Lite ESC._  
-<img width="512" src="images/parts/420-lite-esc.jpg">
+<img width="512" src="assets/images/parts/420-lite-esc.jpg">
 
 Note: for earlier DJI propulsion systems the system and the ESCs had the same name, e.g. E300. For the E305 system that's no longer the case and the ESCs are named 420 LITE.
 
@@ -180,14 +180,14 @@ The transmitters and receivers from the manufacturers FrSKY seem to be the most 
 The Taranis X9D+ is a mid-spec transmitter that historically has been very popular choice for setups like the one here. However it's little brother the cheaper Q X7 came out in early 2017 - it's a somewhat cut down version of the X9D+ but is very similar in most respects and runs the same [OpenTX](http://www.open-tx.org/downloads) firmware. See the DroneTrest blog for a [comparison of the two transmitters](http://blog.dronetrest.com/taranis-x9d-or-taranis-q-x7-which-is-better-to-buy/).
 
 _Q X7 transmitter._  
-<img height="512" src="images/parts/transmitter-taranis-q-x7.jpg">
+<img height="512" src="assets/images/parts/transmitter-taranis-q-x7.jpg">
 
 **Update:** the Q X7 actually has some improvements over the X9D+, like an S.BUS port that makes using it to upgrade the receiver very simple, and I prefer it's simpler design - the Q X7 is more than adequate for this purpose and I would choose it over the X9D+ irrespective of cost.
 
 The recommended receiver to go with the FrSKY transmitter, for this kind of build, is the [X8R](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/). While it features a big 3x8 row of servo pins that are unneeded for this build, its design makes it easier to plug together with other components using standard servo cables than smaller but otherwise equally suitable transmitters like the "naked" [X4R-SB](https://www.unmannedtechshop.co.uk/frsky-x4r-sb-eu-naked-receiver-without-case/) or the [R-XSR](https://www.rcgroups.com/forums/showthread.php?2935614-FrSky-new-arrival-Full-range-ultra-mini-redundancy-receiver-R-XSR%21).
 
 _X8R receiver._  
-<img width="256" src="images/parts/receiver-x8r.jpg">
+<img width="256" src="assets/images/parts/receiver-x8r.jpg">
 
 The ArduPilot [FrSKY telemetry page](http://ardupilot.org/copter/docs/common-frsky-telemetry.html) describes telemetry support for various FrSKY receivers and lists the X8R as the best supported (along with the X6R).
 

@@ -57,10 +57,10 @@ This is important as it turns out that you will need to rerun the wizard at leas
 
 | | | | |
 |-|-|-|-|
-| _Step 1 - vehicle._<br>![1](images/mission-planner/steps/step-01.png) | _Step 2 - frame type._<br>![2](images/mission-planner/steps/step-02.png) | _Step 3 - connecting._<br>![3](images/mission-planner/steps/step-03.png) | _Step 4 - frame layout._<br>![4](images/mission-planner/steps/step-04.png) |
-| _Step 5 - accelerometer_<br>![5](images/mission-planner/steps/step-05.png) | _Step 6A - compass._<br>![6A](images/mission-planner/steps/step-6a.png) | _Step 6B - compass._<br>![6B](images/mission-planner/steps/step-6b.png) | _Step 7 - battery monitor._<br>![7](images/mission-planner/steps/step-07.png) |
-| _Step 8/9 - optional items._<br>![8/9](images/mission-planner/steps/step-08.png) | _Step 10A - transmitter._<br>![10A](images/mission-planner/steps/step-10a.png) | _Step 10B - transmitter._<br>![10B](images/mission-planner/steps/step-10b.png) | _Step 11 - flight modes._<br>![11](images/mission-planner/steps/step-11.png) |
-| _Step 12 - verification._<br>![12](images/mission-planner/steps/step-12.png) | _Step 13 - failsafes._<br>![13](images/mission-planner/steps/step-13.png) | _Step 14 - geofence._<br>![14](images/mission-planner/steps/step-14.png) | _Step 15 - useful links._<br>![15](images/mission-planner/steps/step-15.png) |
+| _Step 1 - vehicle._<br>![1](assets/images/mission-planner/steps/step-01.png) | _Step 2 - frame type._<br>![2](assets/images/mission-planner/steps/step-02.png) | _Step 3 - connecting._<br>![3](assets/images/mission-planner/steps/step-03.png) | _Step 4 - frame layout._<br>![4](assets/images/mission-planner/steps/step-04.png) |
+| _Step 5 - accelerometer_<br>![5](assets/images/mission-planner/steps/step-05.png) | _Step 6A - compass._<br>![6A](assets/images/mission-planner/steps/step-6a.png) | _Step 6B - compass._<br>![6B](assets/images/mission-planner/steps/step-6b.png) | _Step 7 - battery monitor._<br>![7](assets/images/mission-planner/steps/step-07.png) |
+| _Step 8/9 - optional items._<br>![8/9](assets/images/mission-planner/steps/step-08.png) | _Step 10A - transmitter._<br>![10A](assets/images/mission-planner/steps/step-10a.png) | _Step 10B - transmitter._<br>![10B](assets/images/mission-planner/steps/step-10b.png) | _Step 11 - flight modes._<br>![11](assets/images/mission-planner/steps/step-11.png) |
+| _Step 12 - verification._<br>![12](assets/images/mission-planner/steps/step-12.png) | _Step 13 - failsafes._<br>![13](assets/images/mission-planner/steps/step-13.png) | _Step 14 - geofence._<br>![14](assets/images/mission-planner/steps/step-14.png) | _Step 15 - useful links._<br>![15](assets/images/mission-planner/steps/step-15.png) |
 
 The above table shows all the steps of the wizard. Steps 1 and 3 are skipped if, as described above, you've pressed _Connect_ before starting the wizard. If you're confused about any step below the pictures above show the correctly selected options for all steps.
 
@@ -77,8 +77,8 @@ OK - on with the calibration steps...
 ### Accelerometer calibration
 
 _Accelerometer calibration - flat, left, right, nose, tail and back._  
-<img width="256" src="images/mission-planner/accel/flat.jpg"> <img height="189.5" src="images/mission-planner/accel/left.jpg"> <img height="189.5" src="images/mission-planner/accel/right.jpg">  
-<img width="256" src="images/mission-planner/accel/nose.jpg"> <img width="256" src="images/mission-planner/accel/tail.jpg"> <img width="256" src="images/mission-planner/accel/back.jpg">
+<img width="256" src="assets/images/mission-planner/accel/flat.jpg"> <img height="189.5" src="assets/images/mission-planner/accel/left.jpg"> <img height="189.5" src="assets/images/mission-planner/accel/right.jpg">  
+<img width="256" src="assets/images/mission-planner/accel/nose.jpg"> <img width="256" src="assets/images/mission-planner/accel/tail.jpg"> <img width="256" src="assets/images/mission-planner/accel/back.jpg">
 
 As instructed you have to place you system in turn flat, on its left, right, nose, tail and back, pressing a key after each step. Each time I tried this I eventually got the message "3D Accel calibration needed" at some point in the process - I had to look at the [source code](https://github.com/ArduPilot/ardupilot/blob/126296b/libraries/AP_Arming/AP_Arming.cpp#L192) to detemine if this really is an error, it is - a critical one indicating that the calibration has failed. I just restarted and restarted this step, trying to make the transition between steps - left side to right side etc. - as smooth as possible until eventually the calibration completed without error.
 
@@ -120,7 +120,7 @@ The other available flight modes are related to things like more agressive and s
 Six flight modes is probably more than enough to start with but it is possible to configure up even more than this using additional switches - this is covered separately in a later section.
 
 _Flight modes._  
-![flight modes](images/mission-planner/flight-modes.png)
+![flight modes](assets/images/mission-planner/flight-modes.png)
 
 When we were setting up the transmitter we setup flight mode 6 with the intention that it be easy to activate as the panic option. Returning to the point of lanuch is generally a sensible panic option, so while the order of the other flight modes isn't important RTL should be slected as flight mode 6. Remember to actually press the _Save Modes_ button once you're finished!
 
@@ -133,7 +133,7 @@ Beside each flight mode dropdown you'll also see a checkbox for _Simple Mode_ an
 Now you've done all the basic steps that need to be completed before the flight controller can be armed. If all has gone then most of the items shown in the verification step should already be green.
 
 _Calibration complete but no GPS._  
-![wizard - no GPS](images/mission-planner/wizard-no-gps.png)
+![wizard - no GPS](assets/images/mission-planner/wizard-no-gps.png)
 
 If e.g. _Verify RC_ is still red you may simply have forgotten to press the _Click when Done_ button that's part of that step. Assuming you've been doing all this indoors then _Verify GPS_ will be red. If you place the GPS module such that it's got a clear view of the sky then it will eventually acquite a GPS fix and _Verify GPS_ will go green. But there's no need to do that just yet - there are more problems than the GPS that will prevent you completing the most important part of this step - arming the flight controller (or autopilot as it's referred to here).
 
@@ -152,34 +152,34 @@ There are many reasons arming may fail and the messages involved may often seem 
 The main area of the _Flight Data_ view is the head-up display (HUD). If you haven't already pressed _Connect_ do that now and the HUD will display the current state of the flight controller.
 
 _The Flight Data view._  
-<img width="512" src="images/mission-planner/arming/0-start.png">
+<img width="512" src="assets/images/mission-planner/arming/0-start.png">
 
 Above you can immediately see at least one problem - unless you're outside you probably have no GPS fix. But we'll come back to that later. Just try arming anyway - depending on the value sent by your transmitter when your throttle is at its lowest position the first arming failure you may see is "Check FS_THR_VALUE".
 
 _Check FS_THR_VALUE warning._  
-<img width="512" src="images/mission-planner/arming/1a-fs_thr_value.png">
+<img width="512" src="assets/images/mission-planner/arming/1a-fs_thr_value.png">
 
 This is related to the [radio failsafe](http://ardupilot.org/copter/docs/radio-failsafe.html). There are two radio failsafe mechanisms - no-signal (preferred) and low-throttle. `FS_THR_VALUE` is related to the low-throttle mechanism and despite the fact that we're actually going to use the preferred no-signal mechanism the `FS_THR_VALUE` still has to be set correctly.
 
 Switch back to the _Initial Setup_ view, expand _Mandatory Hardware_ and select _Radio Calibration_. Move the throttle up and down and see the resulting throttle value change accordingly, move the throttle to its lowest position and note the value, e.g. 982.
 
 _Note the lowest throttle value (982 here)._  
-![lowest throttle value](images/mission-planner/arming/1b-throttle-low.png)
+![lowest throttle value](assets/images/mission-planner/arming/1b-throttle-low.png)
 
 Once you know the the lowest throttle value, go from _Radio Calibration_ to _FailSafe_. There's a section there for _Radio_ that has the value _FS Pwm_, this value must be at least ten less than your lowest throttle value. In my case it wasn't so I adjusted it down 970.
 
 _Decrease the FS Pwn value._  
-![set FS_THR_VALUE](images/mission-planner/arming/1c-set-fs_thr_value.png)
+![set FS_THR_VALUE](assets/images/mission-planner/arming/1c-set-fs_thr_value.png)
 
 Now try arming again. The next failure reason is actually a result of running the wizard! The Pixhawk has to be rebooted in order to pick up the new accelerometer values resulting from the accelerometer calibration step. So press the _Disconnect_ button (upper right) in MP and unplug the Pixhawk and plug it back in to reboot it, once it's ready again press the _Connect_ button in MP.
 
 _Reboot required after calibration._  
-<img width="512" src="images/mission-planner/arming/2-calibration-reboot.png">
+<img width="512" src="assets/images/mission-planner/arming/2-calibration-reboot.png">
 
 Now try arming again. This time there's no additional explanation shown for the failure - we're down to the initial problem that we saw, the lack of a GPS fix. If you can move outside that's perfect, in my case I balanced my setup, with the GPS unit, rather precariously on a windowsill. It can take several minutes to acquire a fix - on my unit, in addition to the green power LED, a smaller blue LED starts to blink slowly once it has a fix.
 
 _No GPS fix._  
-<img width="512" src="images/mission-planner/arming/3-gps-fix.png">
+<img width="512" src="assets/images/mission-planner/arming/3-gps-fix.png">
 
 Even once it has an inital fix it can take a while longer to get a satisfactorily accurate fix. If you ever had an old Garmin or similar handheld GPS unit, you'll remember the initial large circle around your position getting smaller and smaller as it acquired signals from further satellites and could gradually narrow down your position.
 
@@ -188,12 +188,12 @@ So despite a GPS fix I sometimes saw further arming failures that were down to i
 Once you've got a good GPS fix you're almost there - try arming again. It should fail again but this failure reason is the most obvious and simple. A feature of the Pixhawk, that many other flight controllers don't have, is a safety switch - this flashes on and off, you must press and hold it down until it stops flashing and stays red. I.e. arming is a two step process involving both the safety switch and the throttle.
 
 _Safety switch needs to be pressed._  
-<img width="512" src="images/mission-planner/arming/4-safety-switch.png">
+<img width="512" src="assets/images/mission-planner/arming/4-safety-switch.png">
 
 When this is done you can try arming one more time - hopefully finally this time it will be succeed. On success you'll hear a long single beep. Once armed it will quickly revert to disarmed if just left sitting on the ground. So up the throttle to make it think it's taking off, but even this won't fool it forever and it will eventually still work out that it's on land and disarm.
 
 _Successfully armed._  
-<img width="512" src="images/mission-planner/arming/5-armed.png">
+<img width="512" src="assets/images/mission-planner/arming/5-armed.png">
 
 To actively disarm the vehicle simply move the throttle to the lower left (rather than the lower right) corner and hold it there for 5 seconds - you'll hear a short single beep to indicate that it's disarmed.
 
@@ -210,7 +210,7 @@ Once arming has been completed successfully return to the wizard and skip throug
 Once you're back at the _Verify_ step all items will now be green if you left the vehicle armed before restarting the wizard - if you disarmed first then you should be able to simply arm the vehicle now with the throttle and complete all the items in this step.
 
 _Verification complete._  
-![verification complete](images/mission-planner/steps/step-12.png)
+![verification complete](assets/images/mission-planner/steps/step-12.png)
 
 ### Failsafes
 
@@ -223,7 +223,7 @@ As we currently have no GCS (we'll come to that much later) we won't enable the 
 Note that the failsafe related to losing contact with the transmitter is called the "throttle failsafe" here in the wizard but if you later go to the _FailSafe_ section under _Mandatory Hardware_ you'll see it's got the more obvious name "radio failsafe". The throttle name is a historical hangover from the original mechanism (mentioned earlier) used for triggering this failsafe.
 
 _Failsafes._  
-![failsafes](images/mission-planner/steps/step-13.png)
+![failsafes](assets/images/mission-planner/steps/step-13.png)
 
 ### Geofence
 
@@ -251,7 +251,7 @@ Like all large pieces of software it does have bugs and I came across a few mino
 First go to _Optional Hardware_ and then to _Battery Monitor_ and check that the _Monitor_, _Sensor_, _APM Ver_ and _Battery Capacity_ are all as expected.
 
 _Correct battery monitor settings._  
-![battery monitor settings](images/mission-planner/battery-monitor.png)
+![battery monitor settings](assets/images/mission-planner/battery-monitor.png)
 
 This is related to issue [#1623](https://github.com/ArduPilot/MissionPlanner/issues/1623) whereby the _Monitor_ value may flip to disabled if you go through the wizard more than once.
 
@@ -260,7 +260,7 @@ Note: some simpler sensors only monitor voltage but the battery module can monit
 Second go to _Mandatory Hardware_ and then to _FailSafe_ and check that the GCS and battery failsafes are disabled and that the radio failsafe is enabled, set to the expected action and has the expected _FS Pwm_ value.
 
 _Correct failsafe settings._  
-![failsafe settings](images/mission-planner/correct-failsafes.png)
+![failsafe settings](assets/images/mission-planner/correct-failsafes.png)
 
 This is related to issue [#1624](https://github.com/ArduPilot/MissionPlanner/issues/1624) whereby the failsafe setttings shown in the wizard may not be in sync with those displayed outside the wizard in the _FailSafe_ section.
 
@@ -272,22 +272,22 @@ Testing the transmitter failsafe
 It's worth confirming that the transmitter failsafe works as expected, i.e. if the craft loses contact with the transmitter it will perform the failsafe action you configured for this situation. To test this turn on the transmitter and arm the craft as we did before. Push the throttle value up to full so that it doesn't immediatelly disarm itself. Then switch to the _Initial Setup_ view, expand _Mandatory Hardware_ and go to _FailSafe_. You'll see green bars for the radio channels showing that values are being received as expected from the transmitter (in the picture below you can see e.g. that channel 3, corresponding to the throttle, is at its max). You'll also see the current flight mode, i.e. stabilize, and that the craft is armed.
 
 _Ready for failsafe test._  
-![ready for failsafe test](images/mission-planner/ready-for-failsafe-test.png)
+![ready for failsafe test](assets/images/mission-planner/ready-for-failsafe-test.png)
 
 Now turn off the transmitter - you'll hear the Pixhawk beep loudly, as it detects the loss of signal, and you'll see the green bars in the _Radio IN_ column disappear. The flight mode will switch to land (the last phase of RTL) and the bars in the _Servo/Motor OUT_ column will drop accordingly before disappearing as well as the craft quickly determines that it has already landed, at which point it disarms itself.
 
 _Landed and disarmed after failsafe._  
-![failsafe triggered](images/mission-planner/failsafe-triggered.png)
+![failsafe triggered](assets/images/mission-planner/failsafe-triggered.png)
 
 If you then switch to the _Flight Data_ view you'll see an even clearer confirmation of what just happened, i.e. the flight controller stopped receiving input from the RC receiver (as we configured the receiver to output no pulses in the failsafe situation), that the failsafe has been triggered and that the craft is now disarmed.
 
 _Failsafe reported on the HUD._  
-<img width="512" src="images/mission-planner/failsafe-flight-data-view.png">
+<img width="512" src="assets/images/mission-planner/failsafe-flight-data-view.png">
 
 If you now turn on your transmitter again and try to rearm the craft you'll find it refuses with the error message "Mode not armable". This is because the failsafe caused the flight mode to change (to land in our situation) and this flight mode is not suitable for rearming.
 
 _Still in failsafe flight mode._  
-<img width="512" src="images/mission-planner/post-failsafe-rearm-issue.png">
+<img width="512" src="assets/images/mission-planner/post-failsafe-rearm-issue.png">
 
 To get out of this situation simply flick one of the flight mode switches on your transmitter so that it explicitly tells the flight controller to change mode, then flick the switch back to its default position so as to return to stabilize mode - the craft can then be armed again as normal.
 
@@ -299,12 +299,12 @@ When we were configuring the transmitter one of the things we did was invert the
 Make sure your Pixhawk setup is plugged in and connected to MP, then go to _Mandatory Hardware_ under _Initial Setup_ and select _Radio Calibration_. Turn on the transmitter and push the right stick up and down, i.e. adjust the pitch. You should see the _Pitch_ bar in _Radio Calibration_ reacting to these changes. Make sure throttle is all the way down and push pitch all the way up as shown here.
 
 _Throttle down and pitch up._  
-<img height="512" src="images/mission-planner/pitch-up-throttle-down.jpg">
+<img height="512" src="assets/images/mission-planner/pitch-up-throttle-down.jpg">
 
 Then look at the bars for _Throttle_ and _Pitch_ in MP. _Throttle_ is low, as you'd expect, and pitch should be low as a result of having inverted it when setting up the transmitter.
 
 _Throttle and pitch are both low._  
-![pictch reversed](images/mission-planner/pitch-reversed.png)
+![pictch reversed](assets/images/mission-planner/pitch-reversed.png)
 
 Saving and restoring parameters
 -------------------------------
@@ -315,7 +315,7 @@ Oddly saving and restoring settings is considered an advanced feature in MP - yo
 
 Go to _Full Parameter List_, to the right you'll see buttons for saving all parameters to a file and loading them back in. Once you've saved your parameters it's probably a good idea to switch back to the _Basic_ layout.
 
-You can find the file of parameters, saved in this way when I completed initial setup, in [`bare-pixhawk.param`](bare-pixhawk.param).
+You can find the file of parameters, saved in this way when I completed initial setup, in [`bare-pixhawk.param`](assets/bare-pixhawk.param).
 
 Upgrading the firmware
 ----------------------
@@ -330,17 +330,17 @@ Flight data tabs
 If you go to the _Flight Data_ view you'll see a set of tabs below the head up display (HUD), i.e. below the main area. These contain various useful things, e.g. the _PreFlight_ tab shows the pre-flight conditions that have been met (green) or have yet to be met (red), note that only the ticked ones are mandatory.
 
 _Flight data tabs - pre-flight._  
-![satellite count](images/mission-planner/satellite-count.png)
+![satellite count](assets/images/mission-planner/satellite-count.png)
 
 Sometimes the flight data tabs become mysteriously squashed to the bottom of the window and you can't drag the resize bar above them to make them accessable. This happens because the HUD area has a fixed aspect ratio - if the current window size or the ratio of the HUD's width relative to that of the map cause it to get too wide then it will need too much height to maintain its aspect ratio and squash the tabs to the bottom of the widow.
 
 _Squashed flight data tabs._  
-<img width="512" src="images/mission-planner/flight-data-tabs-issue.png">
+<img width="512" src="assets/images/mission-planner/flight-data-tabs-issue.png">
 
 So you can either resize the window to give it more vertical space or adjust the resize bar between the HUD and the map to shrink the width of the HUD (and hence also its height) in order to unsquash the tabs.
 
 _Unsquashed flight data tabs._  
-<img width="512" src="images/mission-planner/flight-data-gauges.png">
+<img width="512" src="assets/images/mission-planner/flight-data-gauges.png">
 
 GPS
 ---
@@ -350,12 +350,12 @@ If you go to the _PreFlight_ tab, mentioned in the previous section, you can see
 If you go to the _Quick_ tab you'll see a preselected set of values that summarize the current state of the craft.
 
 _Default Quick tab values._  
-![initial Quick tab](images/mission-planner/gps/gps-initial-quick.png)
+![initial Quick tab](assets/images/mission-planner/gps/gps-initial-quick.png)
 
 We can customize this to include information relevant to GPS. Right click anywhere among the current values and select _Set View Count_ and change the number of columns from 2 to 3 (and leave the row count as it is at 3). You'll end up with a new column of values - initially all just displaying altitude, double click on each in turn and select the values _satcount_, _gpsstatus_ and _gpshdop_. Note that there are also _satcount2_, _gpsstatus2_ and _gpshdop2_ values, these are only relevant if you also have a secondary GPS unit.
 
 _Quick tab with added GPS values._  
-![Quick tab with added GPS values](images/mission-planner/gps/gps-modified-quick.png)
+![Quick tab with added GPS values](assets/images/mission-planner/gps/gps-modified-quick.png)
 
 Assuming the GPS unit hasn't yet acquired any kind of fix you'll see an initial satellite count of zero, a GPS status of 1 and a HDOP value of 99.99. You can find the meanings of the GPS status codes in the MP codebase in [`common.xml`](https://github.com/ArduPilot/MissionPlanner/blob/master/ExtLibs/Mavlink/message_definitions/common.xml) (search down for `GPS_FIX_TYPE`). They're as follows:
 
@@ -375,12 +375,12 @@ So 1 means "no position information, GPS is connected". What about HDOP? This so
 If you place the GPS unit somewhere where it can acquire a lock (in my case out on a windowsill) then you'll eventually see the satellite count tick up from zero. You need at least four satellites for a 3D fix. So here we see the GPS status has switched from 1 to 3, i.e. it now has a "3D position", but the satellite count is still low and the HDOP value isn't good enough yet.
 
 _Initial GPS lock acquired._  
-![GPS lock acquired](images/mission-planner/gps/gps-lock.png)
+![GPS lock acquired](assets/images/mission-planner/gps/gps-lock.png)
 
 With time the satellite count increases and the HDOP value improves further, here below the count is 12 and HDOP has reached a value of 1.01 (which is rated excellent).
 
 _High accuracy HDOP value reached._   
-![high accuracy HDOP value reached](images/mission-planner/gps/gps-12-sats.png)
+![high accuracy HDOP value reached](assets/images/mission-planner/gps/gps-12-sats.png)
 
 What MP considers a good enough HDOP values is controlled by the parameter `GPS_HDOP_GOOD` - by default it's 1.4. You can find this parameter mentioned under "High GPS HDOP" on the ArduCopter [pre-arm safety check page](http://ardupilot.org/copter/docs/prearm_safety_check.html). This is an advanced parameter so you won't see it listed in the _Standard Parameters_ section of MP - to examine it you have to enable MP's advanced mode and look for it in the _Full Parameter List_ section that then becomes visible - modifying this parameter is not recommended.
 
@@ -392,12 +392,12 @@ It is possible to configure more than just six flight modes. Switching between f
 To associate an action with a given channel go to the _Config / Tuning_ view and select _Standard Parameters_. Scroll down until you find _Channel 10 option_, below this you'll also find options for channels 11, 12, 7, 8 and 9 (the ordering is odd as the simple alphabetical ordering means 10, 11 and 12 appear before 7, 8 and 9).
 
 _Options for channels 7 to 12._  
-![options for channels 7 to 12](images/mission-planner/ch7-12-options.png)
+![options for channels 7 to 12](assets/images/mission-planner/ch7-12-options.png)
 
 The spacing is also a little odd - it might look like each option is related to the dropdown immediatelly above it but actually each option is set by the dropdown beneath it. Nowadays these triggerable actions cover pretty much anything but historically they used to be associated with tuning and as a result you can still also find dropdowns for channels 7 and 8 under _Extended Tuning_.
 
 _Channels 7 and 8 under Extended Tuning._  
-![extended tuning ch 7 and 8](images/mission-planner/ch7-8-options.png)
+![extended tuning ch 7 and 8](assets/images/mission-planner/ch7-8-options.png)
 
 Minor notes
 -----------
@@ -419,7 +419,7 @@ Usually I could quit out of the wizard by pressing the standard close (x) button
 When you connect a factory fresh or factory reset Pixhawk to QGC for the first time it flags up that various things that need to be configured (perhaps overly forcefully with its aggressive audio alerts). In contrast there's little in MP flagging up the things that have yet to be setup - the one place you can look is the _Messages_ tab under the HUD.  Here you can see that the accelerometer and compass are not yet calibrated and that the `FRAME_CLASS`, i.e. the drone type (quad, hexa etc.), has not yet been set.
 
 _Messages for an unconfigured Pixhawk._  
-![unconfigured messages](images/mission-planner/unconfigured-state.png)
+![unconfigured messages](assets/images/mission-planner/unconfigured-state.png)
 
 Similarly in QGC if you go to the section equivalent to _Mandatory Hardware_ in MP you'll see the various sections that need to be configured clearly highlighted in red. In MP there's no such highlighting and if you go through the items below _Mandatory Hardware_ there's little to indicate that configuration still needs to be done - about the only things you'll notice is that nothing is selected under _Frame Type_ and that under _Compass_ all the offsets appear in red (after configuration the offsets for compass 1 and 2, corresponding to the compass in the GPS module and the one in the Pixhawk itself, will go green).
 
@@ -437,6 +437,6 @@ By default the _Roll/Pitch Sensitivity_ slider is at 0.135 - moving it causes bo
 
 Under _Extended Tuning_ there are far more configurable parameters. The following images show the default values seen in _Basic Tuning_ and _Extended Tuning_ after the setup described in this page:
 
-![basic tuning](images/mission-planner/tuning-basic.png) ![extended tuning](images/mission-planner/tuning-extended.png)
+![basic tuning](assets/images/mission-planner/tuning-basic.png) ![extended tuning](assets/images/mission-planner/tuning-extended.png)
 
 We won't attempt to adjust any of these parameters directly but as noted earlier we will come back to the [auto-tune](http://ardupilot.org/copter/docs/autotune.html) feature that gets the vehicle to tune some of these parameters itself.

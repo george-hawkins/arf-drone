@@ -21,7 +21,7 @@ Start OpenTX Companion on your computer and start your transmitter in bootloader
 
 The first thing we want to do is upload all the work we've done already on the transmitter into OpenTX Companion. So to read the current model (or models) from the transmitter - go to the _Read/Write_ menu and select _Read Models and Settings From Radio_.
 
-![loaded models](images/opentx-companion/loaded-models.png)
+![loaded models](assets/images/opentx-companion/loaded-models.png)
 
 This page largely covers the process that Painless360 covers well in this [video](https://www.youtube.com/watch?v=agjHu-WhCJw) from 6:04 onwards. However he first shows how to set things up using a Taranis X9D+ that's been modified to add a six position switch, it's only around 10:00 that he discusses achieving things using two of the switches on an unmodified transmitter.
 
@@ -30,7 +30,7 @@ Note: if you watch this video from the start then ignore the part on pitch inver
 He uses the swtiches SF and SE on the Taranis X9D+. The Q X7 doesn't have an SE switch so instead we'll use the upper left pair of three-way switches called SA and SB.
 
 _Upper left switches._  
-<img width="256" src="images/assembly/transmitter/upper-left-switches.png">
+<img width="256" src="assets/images/assembly/transmitter/upper-left-switches.png">
 
 So it's easy to see how we can flip SB through three positions, we'll set things up so that when SA is up we can use SB to flip through the first three flight modes, i.e. 1 to 3, and when SA is in its middle position we can use DB to flip through the remaining three flight modes, i.e. 4 to 6.
 
@@ -47,7 +47,7 @@ To do this we first have to create six logical switches. Under the _Logical Swit
 | L5 | AND      | SA-      | SB-      |
 | L6 | AND      | SA-      | SB&darr; |
 
-![logical switches](images/opentx-companion/logical-switches.png)
+![logical switches](assets/images/opentx-companion/logical-switches.png)
 
 Then we set up what each of these logical switch is going to do - they're going to output different values on channel 5 and the flight controller will interpret each of these values as meaning it should switch to a corresponding flight mode.
 
@@ -62,7 +62,7 @@ This is done by going to the _Special Functions_ tab and setting up six function
 | SF5 | L5     | Override CH05 |  40        | &#x2713; |
 | SF6 | L6     | Override CH05 |  80        | &#x2713; |
 
-![special functions](images/opentx-companion/special-functions.png)
+![special functions](assets/images/opentx-companion/special-functions.png)
 
 If you're interested in where the values -90 etc. come from then watch the Painless360 video mentioned above from [6:16](https://www.youtube.com/watch?v=agjHu-WhCJw&feature=youtu.be&t=376) onwards - he explains things in terms of a six position rotary switch but the same applies for our six logical switches.
 
@@ -75,7 +75,7 @@ Now go to the _Inputs_ tab, right click on _I05_, select _Edit_ and and enter:
 * Input name: _Mod_
 * Source: _SA_
 
-![mod input](images/opentx-companion/mod-input.png)
+![mod input](assets/images/opentx-companion/mod-input.png)
 
 I.e. _Mod_ for "mode" (the names can only be three characters long). The value for _Source_ isn't really important but you should tie it to one of the physical switches being used, i.e. _SA_ or _SB_, rather than tying up something that isn't involved.
 
@@ -87,7 +87,7 @@ Note: docking the _Radio Outputs_ dialog involves double clicking its title bar 
 
 You can't interact with the logical switches directly, instead move the sliders for the real switchs _SA_ and _SB_ and you'll see the state of the logical switches and the output for _CH05_ changing in accordance with what we've just configured.
 
-![simulator with docked outputs](images/opentx-companion/simulator-docked-outputs.png)
+![simulator with docked outputs](assets/images/opentx-companion/simulator-docked-outputs.png)
 
 Above you can see that _SA_ and _SB_ (upper left) are both in their middle position so in the _Logic_ section (upper right) _05_ is selected and in the _Channels_ section (lower right) _CH05_ is at 40%.
 
@@ -97,7 +97,7 @@ To do this go to the _Flight Modes_ tab, you'll see a set of sub-tabs, the first
 
 If you then try out _Simulate_ again you'll see the names appear on the transmitter LCD as you flip _SA_ and _SB_.
 
-![flight mode simulation](images/opentx-companion/flight-mode-simulation.png)
+![flight mode simulation](assets/images/opentx-companion/flight-mode-simulation.png)
 
 Above you can see that _SA_ and _SB_ are still in their middle position so logical switch 5 is selected - I've bound this to flight mode 5 and given it the name "Auto" - so now "Auto" appears on the simulated LCD screen.
 
@@ -108,7 +108,7 @@ Assigning sounds
 
 If you'd like the transmitter to announce the current mode as you flick the switches (which can be a helpful confirmation when you want to remain focused on your drone rather than the transmitter's LCD screen) you can also do this in _Special Functions_.
 
-![SD structure path](images/opentx-companion/sd-structure-path.png)
+![SD structure path](assets/images/opentx-companion/sd-structure-path.png)
 
 First though OpenTX Companion needs to know what sounds are available. The sounds are stored in the _SOUNDS_ directory on the transmitter's SD card and OpenTX Companion works off a synced copy of the SD card. Go to _Settings_ in OpenTX Companion and then go down to _SD Structure path_ and click its _Select Folder_ button. Create a new folder (called e.g. `opentx-sdcard`) and select it - this is where the synced copy of the transmitter's SD card will be stored. Then, assuming your transmitter is still connected in bootloader mode, go to the _File_ menu and select _Synchronize SD_.
 
@@ -123,7 +123,7 @@ Note: don't mix up _Play Track_ with the altogether more limited _Play Sound_ wh
 
 The default set of sounds are more suitable for planes than quadcopters - there aren't tracks in the default sound pack for stabilize etc., you can just choose the generic flight mode tracks _fm-1_ to _fm-6_, that just announce "flight mode one" and so on. At the end of this page is a section on adding additional sounds that match the actual flight modes, e.g. "stabilize" etc., but I suggest you only do this once you've configured the flight modes you want later when we cover setting up the Pixhawk.
 
-![play tracks](images/opentx-companion/play-tracks.png)
+![play tracks](assets/images/opentx-companion/play-tracks.png)
 
 So now each logical button is associated with two special functions - one for changing the value transmitted on channel 5 and one for playing a sound.
 
@@ -145,7 +145,7 @@ Important: this assumes RTL mode is configured as the sixth flight mode, i.e. th
 
 Note: this won't cause the flight mode shown on the LCD screen to update - as this is configured off the state of the logical switches.
 
-![panic button](images/opentx-companion/panic-button.png)
+![panic button](assets/images/opentx-companion/panic-button.png)
 
 Save changes
 ------------
@@ -161,11 +161,11 @@ You can fix this by introducing a delay for the logical switches. At the moment 
 
 If you don't want to reconnect to OpenTX Companion you can quickly add a delay to each logical button on the transmitter by going to the _Logical switches_ page and pressing _ENTER_ for each one to get to its edit page and then set the _Delay_ value to 0.4.
 
-![logical delay](images/opentx-screenshots/logical-delay.png)
+![logical delay](assets/images/opentx-screenshots/logical-delay.png)
 
 Or you can set up the delay in the same place you set up the logical switches originally.
 
-![logical delay](images/opentx-companion/delays.png)
+![logical delay](assets/images/opentx-companion/delays.png)
 
 Note: 0.4 is 0.4 seconds - initially I thought a value like 0.2 would be more than enough but it wasn't and I still ended up activating intermediate logical switches even when I flipped the switches quite quickly. Initially I was sure the timing logic in OpenTX must be off (as 0.4 seconds sounds too long to me) but if you bump the delay up to something more easily measurable like 5 seconds then you can time things and see that it really does take 5 seconds for a logical switch with this delay to become active. So OpenTX does seem to be measuring the passing of time correctly.
 
@@ -176,7 +176,7 @@ The above setup tries to match the setup covered in the Painless360 video. But y
 
 In my setup SA and SB are in the up position, as before, for flight mode 1, then I move SA to its middle position for flight mode 2 and to its down position for flight mode 3. Then (leaving SA in its down position) I move SB to its middle position for flight mode 4 and to its down position for flight mode 5. And then I have _SF_ set up as above in the emergency switch section, so I move it to its down position for flight mode 6. So unlike the Painless360 setup I don't have two ways to reach flight mode 6. And as flight mode 6 is activated by a single physical switch I don't need to create a logical switch for it.
 
-![own logical switches](images/opentx-companion/own-logical-switches.png)
+![own logical switches](assets/images/opentx-companion/own-logical-switches.png)
 
 Note: for this configuration I used a column in the _Logical Switches_ tab that we ignored previously - to the right of the _V1_ and _V2_ columns is an _AND Switch_ column. It may seem odd to have such a column when _AND_ can be selected in the _Function_ column, however it's independent of the _Function_, _V1_ and _V2_ columns and allows you to optionally specify a third switch that must also be in a given state for the specific logical switch to become active. So I specified SF&uarr; in this column for all my logical switches.
 
@@ -187,7 +187,7 @@ For more details on logical switches, including an explanation of the _AND switc
 Adding sounds
 -------------
 
-As noted before the standard SD card contents do not include sounds for the ArduCopter flight modes that we will be setting up later. This is simple to fix. I've put together the zip file [`opentx-extra-tracks.zip`](opentx-extra-tracks.zip) which contains the necessary sounds. The following table shows the flight mode names and the corresponding sound files (for some modes there wasn't a suitable file in the sound pack from which I took these files).
+As noted before the standard SD card contents do not include sounds for the ArduCopter flight modes that we will be setting up later. This is simple to fix. I've put together the zip file [`opentx-extra-tracks.zip`](assets/opentx-extra-tracks.zip) which contains the necessary sounds. The following table shows the flight mode names and the corresponding sound files (for some modes there wasn't a suitable file in the sound pack from which I took these files).
 
 | Flight mode | Sound file |
 |-------------|------------|
@@ -212,11 +212,11 @@ As noted before the standard SD card contents do not include sounds for the Ardu
 
 Extract the zip file above into the `SOUNDS/en` folder on your transmitter's SD card and synchronize the contents of your SD card with the copy on your computer (as described previously). Once you've configred your set of flight modes on the flight controller (which we'll do later) you just have to update the _Name_ field for each flight mode to match, e.g. as below (see "Stabil" etc. in brackets on each flight mode tab).
 
-![assigned flight modes](images/opentx-companion/assigned-flight-modes.png)
+![assigned flight modes](assets/images/opentx-companion/assigned-flight-modes.png)
 
 Now on the special functions tab you can replace the uninformative sounds that we used before, like "flight mode one" etc., with sounds that correspond to the names you've just set up above.
 
-![assigned sounds](images/opentx-companion/assigned-sounds.png)
+![assigned sounds](assets/images/opentx-companion/assigned-sounds.png)
 
 Note: the sound files used here were taken from the Amber sound pack linked to on the [2.2 resources page](http://open-txu.org/v2-2-resources-2/) on OpenTX University. The files `loitmd.wav` and `stblmd.wav` were originally called `loitrmd.wav` and `stblzmd.wav` respectively, they were renamed as file names can only be a maximum of six letters now (excluding the suffix). As well as the flight modes the zip file also contains a WAV file for "battery critical" which we'll use later.
 

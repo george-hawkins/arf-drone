@@ -23,7 +23,7 @@ The bullet plugs can be quite to disconnect from the ESC so for this test it's f
 I would not recommed plugging in and out motors, or leaving motors partially plugged in, while the battery is connected - you want to avoid any possibility that the bullet connectors touch anything that's conducting power and causes a short.
 
 _Outdoor battery test._  
-<img width="512" src="images/assembly/frame/pdb-battery-test.jpg">
+<img width="512" src="assets/images/assembly/frame/pdb-battery-test.jpg">
 
 If all goes well you'll hear a continuous tone from all the ESCs. This is actually the ESC error tone - indicating that they're receiving no control signal - which isn't surprising as they're not connected yet to the flight controller. But it does indicate that the PDB is wired up correctly and delivering power to each ESC.
 
@@ -34,14 +34,14 @@ The solder joints are large and exposed and could easily accidentally short agai
 I bought a cheap arts and crafts hot glue gun (the Uhu [Creative XL](http://www.uhu.com/en/products/glue-guns-hot-melt-adhesives/detail/uhu-creative-xl-low-melt-110c-glue-gun.html?cHash=62ef031c5d16bc8a8cefa468999b7dd9)) and you can see the results here.
 
 _Solder joints covered in hot glue._  
-<img height="512" src="images/assembly/frame/hot-glue.jpg">
+<img height="512" src="assets/images/assembly/frame/hot-glue.jpg">
 
 If you've ever opened up any consumer electronics item you'll often find clear rubbery hot glue has been used at various point, generally as a form of strain relief for cables that may occassionaly be pulled rather than as a form of insulation. The glue from my glue gun was quite different to this, it's not transparent and it went hard rather than rubbery and once hard it was quite easy to prise off (even after leaving it for its 2 hours maximum bonding time) which obviously isn't ideal. After a little searching it seems I should have been looking for "high viscosity", i.e. more rubbery, glue but I can't recommend a particular product.
 
 It's probably good enough to just cover everything up with insulating tape without using hot glue - though watch out, if there are any little spurs or sharp points at the solder joints they may pierce the tape. I finished up covering everything in tape anyway (using completely normal insulating tape - this [one](https://www.amazon.co.uk/d/Tape/Tesa-56192-00010-02-Insulation-Tape-15-mm-Black/B004SQLWH2/) from Tesa), this makes things look much tidier.
 
 _Glue and wires covered by insulation tape._  
-<img height="512" src="images/assembly/frame/insulation-tape.jpg">
+<img height="512" src="assets/images/assembly/frame/insulation-tape.jpg">
 
 What goes where
 ---------------
@@ -72,14 +72,14 @@ TODO: confirm that thread locker really doesn't survive unscrew/rescrew operatio
 Now screw on the legs making sure that the power connector for each ESC runs between the arch formed by the points of the leg that are screwed down to the PDB. I made sure not to overtighten the screws, I applied enough force that I could screw them all the way in but I didn't put any real extra force at the end to try and turn them that little bit more. In many videos I've seen the arms still flop around a bit (at least up and down, if not side to side) when the bottom plate is turned over after screwing in the arms - in my case I found there was little or no such motion and the arms were firmly in place once they'd been screwed down.
 
 _PDB with arms screwed on._  
-<img width="512" src="images/assembly/frame/pdb-with-arms.jpg">
+<img width="512" src="assets/images/assembly/frame/pdb-with-arms.jpg">
 
 As shown in the photo I've used a 2mm hex screw driver for this - using a proper screw driver is far more convenient than using a small Allen key.
 
 Now tie the ESCs to the undersides of the arms with cable ties - I used ties like these [natural / white 160mm x 2.5mm ties](https://hobbyking.com/en_us/cable-ties-160mm-x-2-5mm-white-100pcs.html) from HobbyKing - 100mm ties are too short. Some people like to match the color of the cable ties to the color of the arms but I didn't find the natural semi-transparent color of standard nylon cable ties too intrusive even on the red arms. 2.5mm is quite thin - wider ones might prevent the ESCs rotating against the arm more, but this isn't really an issue. Be careful not to overtighten the cable ties - you don't want them to tight that they cause the ESC cases to distort. I've used two ties on each arm - one holding down the ESC and another holding the ESC power cable in place at the point where the arm joins the cental body.
 
 _Cable ties holding ESCs and their power cables in place._  
-<img width="512" src="images/assembly/frame/cable-ties.jpg">
+<img width="512" src="assets/images/assembly/frame/cable-ties.jpg">
 
 Update: for whatever reason I only cable-tied the power cables of the ESCs to the the frame - I should have also tied down the thinner control wires at the same time. See [`final-assembly.md`](final-assembly.md) for more on how these wires ultimately ended up being routed etc.
 
@@ -98,7 +98,7 @@ The arms are numbered 1 to 4 so number the connector of each arm's ESC according
 
 I used a white [edding 780](http://www.edding.com/creating-and-decorating/products/gloss-paint-marker/edding-780-gloss-paint-marker/) pen that's designed for writing on glass, metal and plastic - the ink is still easy to scratch off afterwards so it's not perfect (especially given that this pen is fairly expensive).
 
-[![arm numbering](images/assembly/frame/arm-numbering.png)](images/assembly/frame/arm-numbering.svg)
+[![arm numbering](assets/images/assembly/frame/arm-numbering.png)](assets/images/assembly/frame/arm-numbering.svg)
 <!-- Github can't handle relative SVGs - see https://github.com/github/markup/issues/556 and https://github.com/isaacs/github/issues/316 -->
 
 The diagram above shows arm numbering and CW and CCW motor placement. The A, B, C, D values (that don't even follow the same ordering as the 1, 2, 3, 4 values) are used later when it comes to motor testing.
@@ -106,14 +106,14 @@ The diagram above shows arm numbering and CW and CCW motor placement. The A, B, 
 When adding the motors later it's important to use the appropriate motor type (CCW or CW) for each arm, so the above table and diagram include this information.
 
 _ESC connectors numbered 1 to 4._  
-<img width="512" src="images/assembly/frame/numbered-connectors.jpg">
+<img width="512" src="assets/images/assembly/frame/numbered-connectors.jpg">
 
 Now that's done scew down the top plate and that's the assembly of the main frame body done - the rest is adding the electronics. Unlike IKEA they've been fairly generous with the screws so there are a few left over spare.
 
 Update: here, once numbered, I fed the front wires thru to the back and taped them down - see the newer photos.
 
 _Frame with top plate attached._  
-<img width="512" src="images/assembly/frame/top-plate-attached.jpg">
+<img width="512" src="assets/images/assembly/frame/top-plate-attached.jpg">
 
 Mounting the motors
 -------------------
@@ -128,16 +128,16 @@ Each motor is clearly labelled with the text CW or CCW along with an arrow showi
 
 | CW motor | CCW motor |
 |----------|-----------|
-| <img width="256" src="images/assembly/frame/cw-motor.jpg"> | <img width="256" src="images/assembly/frame/ccw-motor.jpg"> |
+| <img width="256" src="assets/images/assembly/frame/cw-motor.jpg"> | <img width="256" src="assets/images/assembly/frame/ccw-motor.jpg"> |
 
 So open up the second packet of screws that came with the F450 frame kit - these are the longer 8mm M3 screws - and pair each arm with a motor with the appropriate rotation for that arm. As before the screws have pre-applied thread locker.
 
 _Arms paired with appropriate motors._  
-<img width="512" src="images/assembly/frame/arms-and-motors.jpg">
+<img width="512" src="assets/images/assembly/frame/arms-and-motors.jpg">
 
 Check the wires coming out of each motor and flatten them down a little, making sure no wire will squash down on another when the motor is screwed into place. After pushing each screw through a hole in the frame it's a little fiddly to line it up with the appropriate threaded hole in the motor but not too troublesome. Again the screws should be screwed in tight but don't force them at the end - you don't want to overtighten them.
 
 _Arms with motors attached._  
-<img width="512" src="images/assembly/frame/motors-attached.jpg">
+<img width="512" src="assets/images/assembly/frame/motors-attached.jpg">
 
 After attaching the motors double check that each arm has the appropriate motor - for each motor the diagonally opposite one should be of the same type. Don't plug the connectors from the motors into the ESCs at this point - we'll do that later.

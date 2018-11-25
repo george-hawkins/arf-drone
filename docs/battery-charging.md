@@ -10,10 +10,10 @@ Charging LiPo batteries is somewhat more involved than you might imagine. The ba
 
 | Parts |
 |-------|
-| _S60 charger._<br><img width="256" src="images/assembly/charging/charger.jpg"> |
-| _Battery._<br><img width="256" src="images/assembly/charging/battery.jpg"> |
-| _Voltage sensor._<br><img height="256" src="images/assembly/charging/voltage-sensor.jpg"> |
-| _LiPo safety bag._<br><img height="256" src="images/assembly/charging/safety-bag.jpg"> |
+| _S60 charger._<br><img width="256" src="assets/images/assembly/charging/charger.jpg"> |
+| _Battery._<br><img width="256" src="assets/images/assembly/charging/battery.jpg"> |
+| _Voltage sensor._<br><img height="256" src="assets/images/assembly/charging/voltage-sensor.jpg"> |
+| _LiPo safety bag._<br><img height="256" src="assets/images/assembly/charging/safety-bag.jpg"> |
 
 
 Voltage sensor
@@ -24,7 +24,7 @@ LiPo batteries should never be fully discharged, most LiPo chargers will refuse 
 So new LiPo batteries will come delivered at what's called their storage voltage. You can check the voltage with the voltage sensor as shown.
 
 _Sensor displaying cell voltages._  
-<img width="512" src="images/assembly/charging/battery-voltage.jpg">
+<img width="512" src="assets/images/assembly/charging/battery-voltage.jpg">
 
 The balance connector for a 4 cell battery has 5 wires, i.e. one wire for each of the cells plus an additional wire. At one end of the connector there should be a black ground wire and at the other end a red power wire. The colors of the in-between wires vary randonly by manufacturer - in this case they're black. Look for the pin labelled _GND_ on the sensor and plug in the balance connector such that the _GND_ pin and the next four pins of the sensor are connected, making sure that it's a black wire (and not a red wire) from your battery that's connected to the _GND_ pin.
 
@@ -33,7 +33,7 @@ The sensor displays the voltage of all the cells in the battery, this is importa
 This sensor is a high-tech version of the classic battery alarm. Both this sensor and a battery alarm are convenient for checking the voltage of your battery on the ground but their real purpose is for warning you in-flight if the battery voltage is getting too low.
 
 _Battery alarm._  
-<img width="256" src="images/assembly/charging/battery-alarm.jpg">
+<img width="256" src="assets/images/assembly/charging/battery-alarm.jpg">
 
 The classic battery alarm makes a very loud noise as its warning signal whereas this sensor is plugged into the battery (just as shown above) and also connected via another lead to your craft's receiver and sends voltage data via the receiver to the transmitter. The transmitter can be configured to display this data on its telemetry data screens and to raise an alarm if the values drop below defined levels. This is an example of where the historical terms receiver and transmitter aren't entirely appropriate anymore as it's the receiver that's transmitting telemetry data to the transmitter.
 
@@ -43,7 +43,7 @@ Connecting charger and battery
 *Warning:* Always connect the charger lead (with the banana plugs) to the charger before connecting it to the battery.
 
 _Charger and charger lead._  
-<img height="512" src="images/assembly/charging/charger-and-lead.jpg">
+<img height="512" src="assets/images/assembly/charging/charger-and-lead.jpg">
 
 Doing things in his order is more important than it seems - the easiest way to permanently damage your battery (and potentially cause an explosion and fire) is to short it - and probably the easiest way to short it is to first connect the charger lead to the battery, rather than the charger, and then accidentally knock together the banana plugs of the charger lead.
 
@@ -52,7 +52,7 @@ Despite reading dire warnings about this (and having written this section) I've 
 Once the charger lead is plugged in connect the battery to the charger - the battery must be connected via both leads to the charger as shown.
 
 _Charger connected to battery._  
-<img height="512" src="images/assembly/charging/charger-to-battery.jpg">
+<img height="512" src="assets/images/assembly/charging/charger-to-battery.jpg">
 
 Ideally you should do your charging on a concrete or stone floor (as shown below), i.e. avoid more flammable surfaces like wood or carpet. I do my charging on a metal baking tray near a window so I can throw it outside if any problems occur.
 
@@ -67,18 +67,18 @@ When you power on the charger it starts back into the last mode that you used - 
 
 Assuming the charger is in "LiPo balance" mode then all that needs to be done is to adjust the amps and cell count to match the battery. To do this just press ENTER, first the amps values will flash - if your battery is e.g. 3700mAh then use INC and/or DEC to adjust the amps value to 3.7A - then press ENTER again and the cells value will flash, adjust this if necessary or if it already shows the correct value - e.g. 4S for a 4 cell battery - then just press ENTER again to complete this step.
 
-<img width="256" src="images/assembly/charging/amps-and-cells.jpg">
+<img width="256" src="assets/images/assembly/charging/amps-and-cells.jpg">
 
 Important: you must adjust the amps to match your battery, my battery is a 3700mAh one so I used an amps value of 3.7A, if your's is e.g. 3300mAh then you should use 3.3A - i.e. it's a simple relationship between the mAh value of your battery and the amps value on the charger (see later for more on this).
 
 Now you're ready to start charging - you should keep the battery in a LiPo safety bag for the duration of the charging.
 
 _Ready to start charging._  
-<img height="512" src="images/assembly/charging/ready-to-charge.jpg">
+<img height="512" src="assets/images/assembly/charging/ready-to-charge.jpg">
 
 Press and hold the ENTER button for 3 seconds, the charger will check the battery - it shows an R and an S value, the S value is the number of cells you set and the R value is the number of cells the charger detected. You should confirm these are both the same value and match your battery (actually if they're not the same value the charger will complain and you can't proceed). If all is correct press ENTER again.
 
-<img width="256" src="images/assembly/charging/pre-start-check.jpg">
+<img width="256" src="assets/images/assembly/charging/pre-start-check.jpg">
 
 Aside: if anyone can tell me why it says 4SER rather than just 4S then please tell me.
 

@@ -28,24 +28,24 @@ Basic onfiguration
 To get started long press _MENU_ to get to the _Radio setup_ screen and set the current date and time.
 
 _Set date and time._  
-![date and time](images/opentx-screenshots/date-and-time.png)
+![date and time](assets/images/opentx-screenshots/date-and-time.png)
 
 Then use the dial to navigate downwards and set the country code if necessary. It defaults to US, I set it to EU.
 
 _Set country code._  
-![country code](images/opentx-screenshots/country-code.png)
+![country code](assets/images/opentx-screenshots/country-code.png)
 
 Aside: if you look through the OpenTX source code it seems that the only behavior that this country code value affects is binding for the XJT module used by all modern FrSKY transmitters (search for `countryCode` in [`pxx_arm.cpp`](https://github.com/opentx/opentx/blob/2.2/radio/src/pulses/pxx_arm.cpp) - PXX is the protocol used with these modules).
 
 Now navigate down further to the bottom of the screen. The last two entries are _Rx channel ord_ and _Mode_. We already covered mode when setting up the sticks - we're using mode 2, which is the default so leave this as it is. However we do have to change _Rx channel ord_ to _AETR_ (by default it's set to _TAER_). Channel order is explained in more detail later on.
 
 _Set RX channel order._  
-![rx channel ord](images/opentx-screenshots/rx-channel-ord.png)
+![rx channel ord](assets/images/opentx-screenshots/rx-channel-ord.png)
 
 Then use _PAGE_ to get to the _Calibration_ screen and re-calibrate the sticks and pots (calibration was already been covered in more detail in the [OpenTX intro](transmitter-getting-started.md#opentx)). Remember to set the pots to their mid position before starting.
 
 _Calibration._  
-![calibration](images/opentx-screenshots/calibration.png)
+![calibration](assets/images/opentx-screenshots/calibration.png)
 
 Models
 ------
@@ -56,32 +56,32 @@ Later we'll cover the binding process that ties a given model, that you've creat
 The transmitter comes with one model, called MODEL01, already set up - when you turn on the transmitter you can see on the main screen that it's the currently selected model.
 
 _Main screen before any setup._  
-![before setup](images/opentx-screenshots/before-setup.png)
+![before setup](assets/images/opentx-screenshots/before-setup.png)
 
 So let's create a new model corresponding to the Pixhawk based quadcopter that we're building. Make sure you're on the main screen (use _EXIT_ to get back there if you're not) and then short press _MENU_ to get to the _Model selection_ screen. You can either modify the existing MODEL01 or create a completely new model. To create a new model turn the dial to select an empty slot, e.g. 02, and press _ENTER_ and select _Create model_.
 
 _Create a new model._  
-![create model-1](images/opentx-screenshots/create-model-1.png)
+![create model-1](assets/images/opentx-screenshots/create-model-1.png)
 
 The new model is initially just called MODEL02, the asterisk beside it indicates that it's the currently selected model.
 
 _New model with default name._  
-![create model 2](images/opentx-screenshots/create-model-2.png)
+![create model 2](assets/images/opentx-screenshots/create-model-2.png)
 
 Now press _PAGE_ and update the model name to something more informative, e.g. "F450 Pix". Long hold _ENTER_ to get a capital letter.
 
 _Set model name._  
-![model name](images/opentx-screenshots/model-name.png)
+![model name](assets/images/opentx-screenshots/model-name.png)
 
 Use the dial to scroll through all the other options until you reach failsafe. Set it to _No pulses_, we'll come to what this means later.
 
 _No pulses failsafe._  
-![failsafe](images/opentx-screenshots/failsafe.png)
+![failsafe](assets/images/opentx-screenshots/failsafe.png)
 
 That's it - setup is done for the moment. If you return to the main screen you'll see that the name of the newly created (and currently selected) model is now shown.
 
 _Main screen with new model selected._  
-![main screen p1 top](images/opentx-screenshots/main-screen-p1-top.png)
+![main screen p1 top](assets/images/opentx-screenshots/main-screen-p1-top.png)
 
 As you've already seen the main screen shows current switch states etc., if you're interested there's other data you can get to from the main screen - see [main screen pages](transmitter-extras.md#main-screen-pages).
 
@@ -121,7 +121,7 @@ The shorthand for this convention is AETR. This is the convention that the setup
 When you create a new model the controls are initially mapped to channels according to the current value of _Rx channel ord_. If you go to the _Mixer_ screen for your model you can see the current mapping between channels and controls.
 
 _Mixer screen._  
-![mixer screen](images/opentx-screenshots/mixer-screen.png)
+![mixer screen](assets/images/opentx-screenshots/mixer-screen.png)
 
 _RX channel ord_ is a global setting, however its current value is only used to determine the initial channel order when creating a new model. Changing _Rx channel ord_ won't affect any existing models. And you can modify the channel order of existing models independent of the current value of _Rx channel ord_ (just go to the _Mixer_ screen and rearrange the order there).
 
@@ -148,7 +148,7 @@ Painless360 has a [nice video](https://www.youtube.com/watch?v=ajJ3rJ1HN5Q) that
 
 |  |  |  |  |
 |-|-|-|-|
-| _Inputs before adjustments._<br>![inputs before](images/opentx-screenshots/start-inputs.png) | _AIL before adjustments._<br>![AIL before](images/opentx-screenshots/start-ail.png) | _AIL with expo of 25._<br>![AIL with expo](images/opentx-screenshots/end-ail.png) | _Inputs after adjustments._<br>![inputs after](images/opentx-screenshots/end-inputs.png) |
+| _Inputs before adjustments._<br>![inputs before](assets/images/opentx-screenshots/start-inputs.png) | _AIL before adjustments._<br>![AIL before](assets/images/opentx-screenshots/start-ail.png) | _AIL with expo of 25._<br>![AIL with expo](assets/images/opentx-screenshots/end-ail.png) | _Inputs after adjustments._<br>![inputs after](assets/images/opentx-screenshots/end-inputs.png) |
 
 From the main screen short press the _MENU_ button to get to the _Model selection_ screen, then use the _PAGE_ button until you get to the _Inputs_ screen. Then in turn for _Ail_, _Ele_ and _Rud_ you press and hold _ENTER_ and select _Edit_ - on the edit screen for each you go down to _Curve_ and change the default values their (_Diff_ and 0) to _Expo_ and the desired expo value. Suggested values are as follows:
 
@@ -172,15 +172,15 @@ We'll be using the ArduCopter flight stack and one of its odd features is that y
 
 Go to the _Outputs_ screen for your model, go down to _CH2_ (which is elevator), press ENTER, select _Edit_, go down to _Direction_ and change the _---_ value shown to _INV_.
 
-![direction inverted](images/opentx-screenshots/inverted-pitch-1.png)
+![direction inverted](assets/images/opentx-screenshots/inverted-pitch-1.png)
 
 Afterwards you'll see on the _Outputs_ screen that the little arrow for _CH2_ is pointing the opposite direction to all the other ones.
 
-![direction inverted](images/opentx-screenshots/inverted-pitch-2.png)
+![direction inverted](assets/images/opentx-screenshots/inverted-pitch-2.png)
 
 You can then see the affect of this by going to the main screen and then pressing _PAGE_. This brings you to the screen shown below - try moving the sticks about, up and down, left and right, and seeing how things react. Move the left stick, i.e. throttle, up and down and you'll see the value corresponding to channel 3 changing - as you'd expect its value is highest when you push it all the way up. Now move the right stick, i.e. pitch which we've just inverted, and you'll see how its value is instead at its lowest when it's pushed all the way up.
 
-![direction inverted](images/opentx-screenshots/inverted-pitch-3.png)
+![direction inverted](assets/images/opentx-screenshots/inverted-pitch-3.png)
 
 Notes:
 

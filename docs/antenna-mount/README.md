@@ -6,7 +6,7 @@ title: Antenna Mount README
 Antenna mount
 =============
 
-This directory contains contains two antenna mount designs for laser cut POM. [`version-1`](version-1) contains the original design and [`version-2`](version-2) contains the follow-up improved design.
+This directory contains contains two antenna mount designs for laser cut POM. [`version-1`](version-1/antenna-mount-v1-README) contains the original design and [`version-2`](version-2/antenna-mount-v2-README) contains the follow-up improved design.
 
 Each directory contains two SVG file - `antenna-mount-design.svg` contains the main design and includes all the work done to create all the shapes etc., while `antenna-mount-production.svg` is a completely cleaned up version suitable for upload to Scupteo.
 

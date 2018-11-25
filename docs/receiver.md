@@ -13,7 +13,7 @@ Note: it's sometimes erroneously claimed that one of the two antennas is for rec
 At one end of the receiver is a block of 8 by 3 pins - if you look at the side of the receiver you'll see a little sticker that indicates that the top row of pins provide signal, the middle row power and the bottom row ground. So you have 8 columns of 3 pins and each column can control a separate motor (providing it with signal, ground and power). The receiver can receive 8 channels from the transmitter and output the values received on these channels on the 8 signal pins so allowing the independent control of up to 8 motors.
 
 _The main block of pins and the S.BUS and RSSI ports._  
-<img width="512" src="images/assembly/receiver/sbus-port.jpg">
+<img width="512" src="assets/images/assembly/receiver/sbus-port.jpg">
 
 These pins would be used in the setup for a classic model airplane where the motors, e.g one for the rudder, one for the left aileron and so on, are controlled directly by the receiver. However in a quadcopter the motors and everything else are controlled by the flight controller so the receiver just pipes its data into it rather than controlling anything directly. On older receivers this would have involved connecting the 8 columns of pins to the flight controller with 8 seperate servo cables. However the X series receivers from FrSKY feature a technology called [S.BUS](http://www.futabarc.com/sbus/) (developed by a Japanese company called Futaba) that allows all the channel information to be communicated over a single connection. If you look at the top of the receiver you'll see two little graphics, one labelled RSSI and the other labelled SBUS. These correspond to the two ports (each with 3 pins) found below the main block of pins. The little graphics make clear the ground, power and signal pins of each connector. So just the the S.BUS port needs to be connected to the flight controller. And as this port is unconstrained by the need for columns of physical pins it actually carries data for 16 channels rather than just 8.
 
@@ -24,7 +24,7 @@ Note: even in a classic model airplane setup it's not just motors that can be co
 At the opposite end of the receiver to the main block of pins is another 3 pin port - if you look at the top of the receiver you'll see it marked in the same fashion as the other ports and labelled with the Smart Port logo. Smart Port (sometimes abbreviated S.PORT making it easy to mix up with S.BUS) is a technology developed by FrSKY themselves and allows a large array of sensors to be connected directly to the receiver, which can then transmit the sensor data back to the transmitter. We'll be using it later with a sensor that monitors the voltage of the individual cells in our battery.
 
 _The Smart Port._  
-<img height="512" src="images/assembly/receiver/smart-port.jpg">
+<img height="512" src="assets/images/assembly/receiver/smart-port.jpg">
 
 The data the receiver sends back to the transmitter is referred to as telemetry data. Even without any sensors plugged into it the receiver stills sends some data back to the transmitter. It sends a value called RxBT which is the voltage seen by the receiver, in a simpler setup where the receiver (Rx) is being powered by a battery (BT) this might be more interesting but in our setup it's powered by the flight controller (via the S.BUS port). We'll instead get data directly from the battery via a separate voltage sensor.
 
@@ -46,7 +46,7 @@ Note: I documented upgrading the receiver using a computer [here](receiver-windo
 Your Pixhawk should have come with various cables - one of which is a standard servo cable that should look like this:
 
 _Standard servo cable._  
-<img width="256" src="images/assembly/receiver/servo-cable.jpg">
+<img width="256" src="assets/images/assembly/receiver/servo-cable.jpg">
 
 Later we'll use this to connect the receiver to the Pixhawk but here we'll use it to connect the receiver to the Q X7.
 
@@ -64,7 +64,7 @@ Now we're going to connect up the transmitter to the receiver as shown here usin
 
 | | | |
 |-|-|-|
-| _Q X7 connected to receiver._<br>![to receiver](images/assembly/receiver/taranis-q-x7-to-receiver.jpg) | _Q X7 connection closeup._<br>![TX closeup](images/assembly/receiver/taranis-q-x7-connection.jpg) | _Receiver connection closeup._<br>![RX closeup](images/assembly/receiver/receiver-connection.jpg) |
+| _Q X7 connected to receiver._<br>![to receiver](assets/images/assembly/receiver/taranis-q-x7-to-receiver.jpg) | _Q X7 connection closeup._<br>![TX closeup](assets/images/assembly/receiver/taranis-q-x7-connection.jpg) | _Receiver connection closeup._<br>![RX closeup](assets/images/assembly/receiver/receiver-connection.jpg) |
 <!-- The ratios are correct on these photos so why aren't the cells equal widths? -->
 
 Now that the receiver is connected, turn it on, navigate to the `FIRMWARE` directory. Select the right firmware file (don't mix it up with the XJT module firmware that you might also have there), it should be called something like `X8R_LBT_build151118.frk`, select _ENTER_ and this time select _Flash ext. device_ (rather than _int. device_).
@@ -100,7 +100,7 @@ Experimenting with the receiver
 If you're interested in experimenting with the receiver then see the project and details I put together around an existing S.BUS library [here on Github](https://github.com/george-hawkins/arduino-sbus). Sending the current position of the sticks on your transmitter involves four channels (two for each stick, one for up/down and one for left/right). In this project I vary the intensity of four LEDs according to the value the receiver sees on these four channels as you move the sticks about.
 
 _Transmitter, receiver and breadboard setup._  
-<img height="512" src="images/assembly/receiver/tx-and-breadboard.jpg">
+<img height="512" src="assets/images/assembly/receiver/tx-and-breadboard.jpg">
 
 If you look at the `SBUS::process()` method in the main [`SBUS.cpp`](https://github.com/george-hawkins/arduino-sbus/blob/master/SBUS.cpp) file in this project you'll see that it's actually very easy to decode the 25 bytes that make up an S.BUS frame.
 

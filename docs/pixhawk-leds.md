@@ -15,9 +15,9 @@ The images here cover:
 For more details on the various other LEDs see the [status LEDs page](https://pixhawk.org/users/status_leds) on pixhawk.org.
 
 _The main Pixhawk LED._  
-![main LED](images/pixhawk-leds/main-led.png)
+![main LED](assets/images/pixhawk-leds/main-led.png)
 
 _The safety switch LED._  
-![safety switch](images/pixhawk-leds/safety-switch.png)
+![safety switch](assets/images/pixhawk-leds/safety-switch.png)
 
 TODO: see also <https://docs.px4.io/en/flying/led_meanings.html>

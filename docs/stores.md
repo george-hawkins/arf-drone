@@ -18,7 +18,7 @@ For the specialist country specific sites [Unmanned Tech UK](https://www.unmanne
 
 When researching any component of this quadcopter build the name HobbyKing invariably came up - it is certainly one of the most referenced / well known sites when it comes to this area. They have European, Global (Hong Kong based) and US warehouses. The shipping estimator on their shopping cart page oddly does not optimize for cost, in my case (I live in Swizerland) it's _Update Total_ button will always "helpfully" flip the warehouse to Europe, for all items that are available from the European warehouse, even though this can be substantially more expensive than shipping from the Global warehouse. Each item in your cart has a dropdown beside it, if it's available from more than one warehouse, so once you've registered (so the site knows your shipping location), ignore the estimator and play with the warehouse locations yourself to get the best shipping prices (shown below the estimator).
 
-For the full Alexa figures see [`alexa-rank.txt`](alexa-rank.txt) - some of the stores listed here have very low/poor ranks, interpret that as you will.
+For the full Alexa figures see [`alexa-rank.txt`](assets/alexa-rank.txt) - some of the stores listed here have very low/poor ranks, interpret that as you will.
 
 E305 propulsion system
 ----------------------

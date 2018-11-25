@@ -9,7 +9,7 @@ The transmitter
 It came as a bit of a surprise to me, initially at any rate, that the transmitter involves at least as much configuration as the flight controller. I couldn't believe that it's really just a box of switches with a radio that you essentially have to program in order to use it for a specific purpose. This page is one of the longest build steps but don't let it intimidate you!
 
 _FrSKY Taranis Q X7._  
-<img width="512" src="images/assembly/transmitter/transmitter.jpg">
+<img width="512" src="assets/images/assembly/transmitter/transmitter.jpg">
 
 If you're new to the whole field, as I am, then the small folded black and white manual that comes with the Taranis Q X7 is impressively unhelpful (and it's not one of those cases where the manufacturer makes the real manual available online). Actually the information about the antenna is useful (the side rather than the tip of the antenna should be pointing at the drone in flight), as is the model setup information (but only once you have enough background information to understand it).
 
@@ -18,14 +18,14 @@ The manual doesn't even tell you how to turn on the transmitter, the power butto
 So we've got the on/off button, the other immediately important things are either side of the LCD. To the left we've got _PAGE_ and _EXIT_ and the circular button between them is called _MENU_. And to the right we've got a dial - you can turn it but it's aso the _ENTER_ button if you press it.
 
 _Q X7 LCD, buttons and dial._  
-<img width="512" src="images/assembly/transmitter/taranis-q-x7-lcd-and-input.png">
+<img width="512" src="assets/images/assembly/transmitter/taranis-q-x7-lcd-and-input.png">
 
 What about all the other switches etc? At each of the upper corners we've got a set of three switches, then between them we've got two knobs (called pots), then two joysticks (always just called sticks) and finally, above the LCD and between the sticks, a set of four 2-way momentary switches (that together are referred to as digital trim). What do these all do? The odd answer is that they don't have any inherent meaning - but we'll get to that soon.
 
 The only important thing for the moment is that the switches have names (_SA_, _SB_, _SC_, _SD_, _SF_ and _SH_) as do the pots (_S1_ and _S2_) and that (initially at least) up/down on the left stick is the throttle (pull it all the way down and the throttle is at zero). The stick directions also have names - _J1_ to _J4_.
 
 _Q X7 switches, pots and sticks._  
-<img width="512" src="images/assembly/transmitter/taranis-q-x7-switches.png">
+<img width="512" src="assets/images/assembly/transmitter/taranis-q-x7-switches.png">
 
 Notes:
 
@@ -47,14 +47,14 @@ With time I grew to really like the Q X7 but the one terrible feature is the des
 The following is a simple tip but essential in my opinion. Inserting AA batteries into the battery holder is harder than it should be, getting them out is even worse. The first time I did this I slightly dented the casings of some of the batteries as I ended up levering them out with a wooden lollipop stick. So to make things much easier cut off a length of ribbon and run it below the batteries as you insert them - then use it to help pull out the batteries later when needed.
 
 _Batteries with ribbon underneath._  
-<img width="512" src="images/assembly/transmitter/battery-ribbon.jpg">
+<img width="512" src="assets/images/assembly/transmitter/battery-ribbon.jpg">
 
 Several times I found the transmitter would not start up after replacing the batteries. There never seemed to be any issue with how the batteries were sitting in the battery compartment - still removing them all and reinsterting them always resolved the problem.
 
 Finally the battery cover itself is very loose - eventually I ended up keeping it in place with masking tape.
 
 _Battery cover taped in place._  
-<img width="512" src="images/assembly/transmitter/taranis-q-x7-masking-tape.jpg">
+<img width="512" src="assets/images/assembly/transmitter/taranis-q-x7-masking-tape.jpg">
 
 
 Balance bar
@@ -62,7 +62,7 @@ Balance bar
 
 The transmitter comes with a mysterious little piece which turns out to be for attaching the neck strap. It's called a balance bar and needs to be screwed on, pointing downwards, with a 2.5mm hex wrench. The power button is still relatively easy to get at despite being covered by the balance bar once in place.
 
-<img height="512" src="images/assembly/transmitter/balance-bar.jpg"> <img height="512" src="images/assembly/transmitter/balance-bar-and-strap.jpg">
+<img height="512" src="assets/images/assembly/transmitter/balance-bar.jpg"> <img height="512" src="assets/images/assembly/transmitter/balance-bar-and-strap.jpg">
 
 The balance bar has four holes, try suspending the transmitter from the neck strap using each of the different holes in turn - you'll see it affects the angle at which the transmitter hangs - choose whatever suits you best (I used the lowest hole).
 
@@ -77,14 +77,14 @@ Before switching on the transmitter just play with the switches, pots and sticks
 
 I actually recommend that you flip some of the mechanical switches into different positions, some all the way back or up, some all the way forward or down, so that we see the transmitter warnings and how to resolve them. As the throttle (up/down on the left switch) self centers, i.e. springs to the mid position, it will always be in what the transmitter considers an unsafe position unless you actively push it down to its lowest position, i.e. zero throttle. We'll resolve this later.
 
-![throttle warning](images/opentx-screenshots/throttle-warning.png)
+![throttle warning](assets/images/opentx-screenshots/throttle-warning.png)
 
 OK - press the power button. The first thing you see is a throttle warning. Pull the throttle (left stick) all the way down and this warning will go away. Next, if you've flipped some of the switches out of their neutral position you'll see a switch warning - below the warning you'll see what switches its complaining about, e.g. _SB_ and _SC_. Look at the diagram up above and find the relevant switch and flip it all the way up (or back) so that the warning goes away for that button - once this is done for all problem switches the overall warning goes away. The next warning is that the failsafe hasn't been set - for the moment you'll have to ignore this by pressing e.g. _PAGE_.
 
 You can ignore any warning by pressing a key like _PAGE_ but I suggest you get into the habit of always resolving the issue being complained about rather than ignoring it - when you're flying for real it's important to know that nothing is in an unexpected position before you take off.
 
 _Main screen._  
-![before setup](images/opentx-screenshots/before-setup.png)
+![before setup](assets/images/opentx-screenshots/before-setup.png)
 
 Now you're at the main screen, move the sticks around, flick the switches (including the black plastic trim switches) and twist the pots and see how this is reflected on the LCD. As you can see the screen updates to reflect the current state of the switches etc., e.g. if you move the left stick around you'll see a corresponding little circle moving around in the left box or if you flip _SA_ (see the switch names up above) you'll see the little arrow beside _SA_ changing accordingly.
 
@@ -118,7 +118,7 @@ Go to _Radio setup_ and press the _PAGE_ button repeatedly to cycle through vari
 
 Note: confusingly in this context _radio_ just means the overall device, i.e. your Taranis Q X7, and doesn't mean the radio hardware that communicates with the receiver on the drone. Even more confusingly the radio hardware is sometimes referred to as the transmitter or TX module. I.e. depending on context transmitter and radio can refer to the whole device or just the component that handles the actual radio communication.
 
-![calibration](images/opentx-screenshots/calibration.png)
+![calibration](assets/images/opentx-screenshots/calibration.png)
 
 Let's try out something simple, safe and somewhat important - calibration. Go to _Radio setup_, press _PAGE_ until you reach the last screen - the _Calibration_ screen. Before you start (by pressing _ENTER_, i.e. the dial), turn the pots so that they're set at half way, i.e. make sure they're neither as far as they can go clockwise nor as far as they can go counterclockwise (if a pot is e.g. all the way clockwise before starting then calibration will only work out its lower limit but not its upper limit). Now press _ENTER_ and move the sticks, it'll ask you to set the sticks to their midpoint - as the sticks are self centering you don't have to do anything so just press _ENTER_ again. Now move the sticks so you touch every point of the outline of their corresponding boxes, this calibrates how far the sticks can travel in every direction. Finally turn both pots fully in both directions to similarly calibrate them and then press _ENTER_ - calibration is done.
 
@@ -169,7 +169,7 @@ When you start OpenTX it'll check for the latest firmware and ask if you want to
 
 TODO: the needs a rewrite for a non-prerelease version of OpenTX. The screenshot below is from installing Companion 2.2 on Windows. At the end of installation it opened and opened straight into settings so you have to establish your radio etc. immediately (which makes more sense than the previous behavior). So setup _Profile Name_, _Radio Type_ and _Build Options_ (_SD Structure path_ gets set in a later page/chapter). It did not bug me on _first_ starting to download the latest firmware - oddly it only this on restarting it, it would seem to make most sense to bug you immediately after forcing you to complete the settings.
 
-![initial settings](images/opentx-companion/initial-settings.png)
+![initial settings](assets/images/opentx-companion/initial-settings.png)
 
 In _Settings_ change the radio type to _FrSky Taranis X7_ and tick _lua_ and _massstorage_ as build options. Only the radio type is very important, the build options could probably all be safely left unchecked. The three options suggested in nearly all guides are:
 
@@ -192,12 +192,12 @@ Note: when starting the transmitter in bootloader mode I sometimes found it woul
 
 **Update:** after a little more experimentation, it seems this bug is triggered by holding down the power button at startup rather than just quickly pressing and releasing it.
 
-![bootloader](images/opentx-screenshots/bootloader.png)
+![bootloader](assets/images/opentx-screenshots/bootloader.png)
 
 Once started in bootloader mode you'll see _Or plug in a USB cable_ at the bottom of the screen - so do that (the USB port is under the flap at the bottom of the transmitter) and connect it to your computer running OpenTX Companion.
 
 _Connected via USB._  
-<img height="512" src="images/assembly/transmitter/usb-connected.jpg">
+<img height="512" src="assets/images/assembly/transmitter/usb-connected.jpg">
 
 First we're going to backup the current transmitter setup - in OpenTX Companion go to the _Read/Write_ menu and first select _Read Firware from Radio_ and save the result as e.g. `orig-firmware.bin`, then select _Backup Radio to File_ and save the result as e.g. `orig-eeprom.bin`.
 
@@ -254,13 +254,13 @@ Once you're ready eject the card and put it into the transmitter (the SD card sl
 **Important:** the Q X7 manual warns that you should never insert or remove the SD card while the transmitter is on.
 
 _Inserting SD card._  
-<img width="512" src="images/assembly/transmitter/sd-card.jpg">
+<img width="512" src="assets/images/assembly/transmitter/sd-card.jpg">
 
 Now turn on the transmitter - the first thing you'll notice is that the transmitter starts talking to you, you'll here it say "Welcome to OpenTX". This can be a little disconcerting but apparently the audio alerts are useful when you're flying and you want to stay looking at your drone rather than the LCD screen.
 
 Now if you go to _radio setup_ (as described already above) and then press _PAGE_ to get to the _SD card_ screen you'll see the contents of the card. If you haven't already, try playing with the dial and pressing it to navigate around the contents of the card - it's fairly intuitive.
 
-![SD card contents](images/opentx-screenshots/sd-card-contents.png)
+![SD card contents](assets/images/opentx-screenshots/sd-card-contents.png)
 
 If you connect your transmitter (while turned on) via USB to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined up above). One is the _Taranis_ drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
 
@@ -289,7 +289,7 @@ Copy the appropriate `.frk` file to the `FIRMWARE` directory on your transmitter
 
 Once that's done, and you've disconnected USB (or reinsterted the SD card), restart the transmitter in normal mode and navigate to the contents of the SD card. Navigate into `FIRMWARE` and select the `.frk` file that you just copied on (it should have a name like `XJT_EU_V20_build170317.hex.frk` or the same with `NONEU` for the non-EU firmware). Now press and hold _ENTER_, i.e. press the dial, you should see a popup with various options - select _Flash int module_ and a progress bar will appear indicating that it's being written.
 
-![flash XJT](images/opentx-screenshots/flash-xjt.png)
+![flash XJT](assets/images/opentx-screenshots/flash-xjt.png)
 
 Oddly the process just finishes without any confirmation (if there had been a problem though it would have told you) and there appears to be no way to query the XJT firmware version via OpenTX - you just have to trust that it's been done (I've confirmed this on the [OpenTX chat channel](https://opentx.rocket.chat/channel/OpenTX_General?msg=mszoW8QwiAirmFfvy)).
 

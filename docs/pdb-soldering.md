@@ -36,57 +36,57 @@ Each ESC comes with two long cables - a servo cable that goes to the flight cont
 Each motor has its own dedicated ESC. Each motor has three cables coming out of it and the connectors on these cables are inserted into one end of an ESC. The motors are mounted at the ends of the quadcopter arms and the ESCs are mounted on the undersides of the arms. When cutting short the ESC power cables it's obviously important to make sure you don't cut them so short that the fairly short cables on the motors can't reach the ESCs when everything is mounted later.
 
 _ESCs and power connector._  
-<img height="512" src="images/assembly/soldering/escs-and-power-connector.jpg">
+<img height="512" src="assets/images/assembly/soldering/escs-and-power-connector.jpg">
 
 _F450 PDB._  
-<img width="512" src="images/assembly/soldering/pdb.jpg">
+<img width="512" src="assets/images/assembly/soldering/pdb.jpg">
 
 Cut the cables down to 122mm, remove the last 22mm of the outer black silicone coating to reveal the strands of ground wire that are braided into a sheath around the power wire. The silicone is extremely soft - you just have to gently roll the cable under a craft knife to cut the silicone deeply enough to then be able to pull it off.
 
 TODO: update the image to match this text which was updated 2018.10.13.
 
 _ESC cable length._  
-<img width="512" src="images/assembly/soldering/esc-cable-length.png">
+<img width="512" src="assets/images/assembly/soldering/esc-cable-length.png">
 
 _ESC's braided ground sheath._  
-<img width="512" src="images/assembly/soldering/esc-power-braided.jpg">
+<img width="512" src="assets/images/assembly/soldering/esc-power-braided.jpg">
 
 It's easier than it looks to just gently pull apart the braiding with something like a toothpick (I used a blunt nosed needle), leaving you with the individual strands of ground wire.
 
 _Unbraided ground wires._  
-<img width="512" src="images/assembly/soldering/esc-power-unbraided.jpg">
+<img width="512" src="assets/images/assembly/soldering/esc-power-unbraided.jpg">
 
 These strands can then be pulled sideways and twisted into a single ground wire. You can then also remove 10mm of the red coating around the live wire (again using a craft knife to score around the outside) and twist the together the exposed strands of wire.
 
 _Strands twisted into single ground wire._  
-<img width="512" src="images/assembly/soldering/esc-power-untinned.jpg">
+<img width="512" src="assets/images/assembly/soldering/esc-power-untinned.jpg">
 
 You can then tin both the ground and power wire (even for these small wires I applied a little solder paste first to make this easier).
 
 _Tinned ground and power wires._  
-<img width="512" src="images/assembly/soldering/esc-power-tinned.jpg">
+<img width="512" src="assets/images/assembly/soldering/esc-power-tinned.jpg">
 
 Once this is done for all four ESCs they're ready to be soldered to the PDB. In this picture I've wrapped the servo wires around the ESCs to keep them out of the way during the soldering job.
 
 _ESCs ready for soldering._  
-<img height="512" src="images/assembly/soldering/escs-soldering-ready.jpg">
+<img height="512" src="assets/images/assembly/soldering/escs-soldering-ready.jpg">
 
 The PDB first has to be prepared by applying solder to all the pads. Applying solder paste to the pads first made a huge difference to how easily the solder spread out nicely on the pads. When soldering I held the iron to each pad for several seconds (the solder paste clearly heats up and starts to bubble) before applying the solder itself. Quite a lot of solder needs to melted onto each pad - too much though and it becomes hard to remelt later when attaching the wires from the ESCs and the power connector - too little and there isn't enough to properly hold the wires in place.
 
 _Solder on PDB pads._  
-<img width="512" src="images/assembly/soldering/pdb-solder-on-pads.jpg">
+<img width="512" src="assets/images/assembly/soldering/pdb-solder-on-pads.jpg">
 
 I want to mount the PDB upside down so I first brought each the cable up through the hole next to the pads that the cable was going to be soldered to. This is a layout choice that's discussed later. It does make things a little trickier when doing the soldering but connecting the ESCs to the PDB was relatively easy in the end. I applied the soldering iron to each pad until the solder already there remelted then, keeping the iron in place, I brought the appropriate wire down on top of the tip until the tinned solder on the wire also melted. Then I pulled the soldering iron tip out and used it to push the wire into the solder on the pad before removing it and letting things cool. Holding the wire in place while the solder cooled was tricky as the wire got very hot - I had to use a pliers rather than my fingers.
 
 _ESCs soldered to PDB._  
-<img width="512" src="images/assembly/soldering/escs-soldered-to-pdb.jpg">
+<img width="512" src="assets/images/assembly/soldering/escs-soldered-to-pdb.jpg">
 
 It's not the best soldering job the world has seen but everything looks fairly reasonable. The last thing is to attach the power connector. This proved more difficult than the ESC cables - I found it almost impossible to create a good joint. The power connector pads drew the heat away so quickly that the solder on the pad went solid almost instantly at the point where I tried to pull the tip out of the solder (or to the side) and push the power connector wires down into it. Pulling the tip up around the wire and using it to force the wire into the solder on the pad didn't have any apparent affect on keeping things molten long enough to form a good joint. And it was certainly impossible to bring both the solder on the tinned wire end and on the pad to melt by holding the wire down on the solder pad with the tip. In the end I made the best joint I could but suspected that the solder of the pad and on the tinned wire hadn't fully melted together and so then applied large amounts of solder to the soldering iron tip (for maximum heat transmission) and held it against the sides of the joint in the hope of bringing it to melt together properly. The joints passed continuity testing but whether they're very good is doubtful.
 
 TODO: Googling didn't help - can I get tips on what the correct approach is? It wasn't enough using solder paste and an iron at 375C with the broadest tip of the three tips that came with my iron (2mm across at the point of the chisel). Do I need a higher wattage iron (than my 40W Weller WHS 40) or a yet wider tip? Googling at least seemed to make clear that upping the temperature wasn't the answer, that 375C is really the sensible max for unleaded (with 400C as an absolute max).
 
 _Fully soldered PDB._  
-<img width="512" src="images/assembly/soldering/pdb-fully-soldered.jpg">
+<img width="512" src="assets/images/assembly/soldering/pdb-fully-soldered.jpg">
 
 In the picture above showing the completed soldering job you can still see the female connector that I attached to the male XT60 connector at the end of the power connector. This is often recommended for any kind of connector when doing soldering - the pins in the connector can get hot enough to cause their plastic casing to distort, holding the pins in place, by connecting the opposite gender connector, helps prevent this.
 
@@ -146,21 +146,21 @@ On one of the discard lengths of wire that I'd cut off one of the ESCs I tried t
 On soldering down the ground wires I'd noticed the strands were more splayed out at the base than ideal. So really split the strands 50/50 and pull them around either side of the central power wire, really push them down on the outer coating with a finger nail so all strands are at a proper right angle and twist the strands together making sure to twist tight up against the central ground wire.
 
 _Twist ground wires right upto base._  
-<img height="512" src="images/assembly/soldering/post-mortem//twist-to-base.jpg">
+<img height="512" src="assets/images/assembly/soldering/post-mortem//twist-to-base.jpg">
 
 As per the mentioned Instructable I cut off 26mm of outer coating rather than 16, leaving me with 10mm of excess. Then when it came to removing the coating from the power wire, instead of pulling off 4mm of coating straight away, I cut into the coating 14mm down and then slowly pulled up (twisting as I went) to expose about 5mm of wire for tinning - this approach stops the strands splaying at the end.
 
 _Expose section for tinning._  
-<img width="512" src="images/assembly/soldering/post-mortem//expose-section.jpg">
+<img width="512" src="assets/images/assembly/soldering/post-mortem//expose-section.jpg">
 
 I held the wire in a vice like so I could drag the iron from left-to-right underneath the wire while applying solder to the top. It took a little while for the wire to heat up enough for the solder to melt into it. Before tinning the wires I applied solder paste with a toothpick.
 
 _Heat from below._  
-<img width="512" src="images/assembly/soldering/post-mortem//heat-from-below.jpg">
+<img width="512" src="assets/images/assembly/soldering/post-mortem//heat-from-below.jpg">
 
 Tinning a longer length than needed and then cutting the tinned wire down to a length of 4mm results in very nice ends with no splaying.
 
 _Trim to desired length._  
-<img width="512" src="images/assembly/soldering/post-mortem//trim-to-size.jpg">
+<img width="512" src="assets/images/assembly/soldering/post-mortem//trim-to-size.jpg">
 
 I found it impossible to tin the wire right at the base (you can still see the strands at the base here) and trying to do so just meant using more solder than wanted without getting it onto the base. So just split the strands nicely 50/50 and pull them tightly around the central power wire - in this photo you can see I pulled more strands around the side we're looking at which results, as seen here, in a thick bunch of strands on one side.

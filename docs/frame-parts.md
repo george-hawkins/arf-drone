@@ -22,10 +22,10 @@ The packets of screws are unlabelled but the packet of shorter screws are the 24
 The red and black wires are for connecting the lower plate (that also serves as a PDB) to power. However rather than solder an XT60 connector onto these I just bought an XT60 connectors that was already soldered onto a pair of wires.
 
 _Central plates, velcro strip, battery strap, wires and screws._  
-![F450 parts](images/assembly/frame/parts/f450-kit-parts.jpg)
+![F450 parts](assets/images/assembly/frame/parts/f450-kit-parts.jpg)
 
 _F450 legs._  
-![F450 legs](images/assembly/frame/parts/f450-kit-parts-legs.jpg)
+![F450 legs](assets/images/assembly/frame/parts/f450-kit-parts-legs.jpg)
 
 E305 tuned propulsion system
 ----------------------------
@@ -48,7 +48,7 @@ The housing of the motors is aluminium and apparently buckles easily under press
 Each pack of propellers contains one CW propeller (with a black colored central nut) and one CCW propeller (with a silver colored central nut).
 
 _Motors, ESCs, clamp, PDB and screws._  
-![E305 parts](images/assembly/frame/parts/e305-system-parts.jpg)
+![E305 parts](assets/images/assembly/frame/parts/e305-system-parts.jpg)
 
 _Propellers._  
-![propellers](images/assembly/frame/parts/e305-system-parts-props.jpg)
+![propellers](assets/images/assembly/frame/parts/e305-system-parts-props.jpg)

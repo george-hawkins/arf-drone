@@ -15,13 +15,13 @@ Now that we've got the receiver connected to the Pixhawk you can provide it with
 Note: if you're using Mac or Linux there are no additional drivers that need to be installed for the Pixhawk. However if you're using Windows then I suggest at this point powering the Pixhawk from your computer while it's in sleep mode so that it won't go off trying to find drivers for it. If that isn't an option for some reason then flip forward to [`pixhawk-setup.md`](pixhawk-setup.md) and follow the instructions there for installing Mission Planner as this will also install the necessary Windows drivers.
 
 _Binding the receiver to the transmitter._  
-<img width="512" src="images/assembly/receiver/binding.jpg">
+<img width="512" src="assets/images/assembly/receiver/binding.jpg">
 
 The receiver has a little window labelled LED - there are actually two LEDs behind it, a green and a red one. If you turn on the receiver now the red one will flash on and off (and green one will remain off). This indicates that the receiver is either unbound or that the transmitter that its bound to is not on.
 
 So before we start make sure the receiver is turned off and locate the little recessed button on labelled F/S. Now turn on the transmitter and go to the _Model selection_ screen and press PAGE to get to _Setup_, turn the dial until you reach the _Internal RF_ section (the default values here are already set to what we want, i.e. _Mode_ is _D16_ and _Ch. Range_ is _CH1 - 16_).
 
-![bind](images/opentx-screenshots/bind.png)
+![bind](assets/images/opentx-screenshots/bind.png)
 
 You just have to go to _[Bnd]_ and press _ENTER_ - the transmitter will start emitting a chirping sound.
 

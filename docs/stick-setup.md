@@ -38,7 +38,7 @@ However throttle, i.e. up/down, controls overall power to the propellers - when 
 Aside: older consumer drones used to behave much like this too, at least for the low throttle case. On older DJI models the throttle only self centered if you took your finger off it when it was above the midpoint - on the latest models though the throttle always self centers. This is because on these models there's less of a direct link between the position of the throttle and how fast the motors are turning, instead the center point means "hold current altitude" while up and down, either side of this, mean ascend and descend respectively. When using ArduCopter the throttle behaves similarly to this is the [position hold](http://ardupilot.org/copter/docs/poshold-mode.html) and [altitude hold](http://ardupilot.org/copter/docs/altholdmode.html) flight modes.
 
 _Throttle with self centering disabled_  
-<img width="512" src="images/assembly/transmitter/throttle-self-centering-disabled.jpg">
+<img width="512" src="assets/images/assembly/transmitter/throttle-self-centering-disabled.jpg">
 
 To disable self centering on the throttle you have to open up the transmitter - this isn't a big issue, unlike many consumer electronic items that come with strict injunctions against opening them up it's expected that you'll take apart the transmitter (though if you break anything that's still your problem).
 
@@ -52,7 +52,7 @@ I'm not going to go in-depth into disabling self centering for the throttle, ins
 I watched quite a number of videos before settling on these two as describing the best way to do thing. The Painless360 video is closest to how I did things - however he mixes this step in with removing the battery holder (so he can put in a LiPo instead) which is something I didn't do. Also when removing the back cover he removes two screws that you don't need to remove (the upper left and right screws under the battery cover). In the Flite Test video they leave the battery holder connected to the main PCB, while I (like Painless360) chose to unplug it.
 
 _Q X7 internals._  
-<img height="512" src="images/assembly/transmitter/internals.jpg">
+<img height="512" src="assets/images/assembly/transmitter/internals.jpg">
 
 The whole thing is easy to do but I was a little nervous that I'd yank out the wires when unplugging the battery holder or that the screw driver would slip and I'd stab the PCB when tightening the screw that disengages the gimbal spring. Note that this screw is only barely screwed in initially - it actually popped out when I started trying to screw it down. When you've got the transmitter opened up and are looking at the internals make sure to still think about the front of the transmitter and take care that you don't accidentally rest everything on one switch or stick while focusing e.g. on tightening a screw.
 

@@ -33,9 +33,9 @@ Just go to the Devices menu, select Shared Folders, click the folded icon with a
 
 I had to restart the VM for the shared folder to become visible - once done you'll find it as a shared folder under This PC in Explorer.
 
-TODO: add note that you need to change the VM's audio controller setting from the default "ICH AC97" to "Intel HD Audio" if you want audio to work in Windows - this was the case irrespective of whether VirtualBox was running on Mac or Linux - see [`Intel HD Audio`](images/virtualization/intel-hd-audio.png) (from note on [`pixhawk-tones.html`](https://george-hawkins.github.io/arf-drone/pixhawk-tones.html) page).
+TODO: add note that you need to change the VM's audio controller setting from the default "ICH AC97" to "Intel HD Audio" if you want audio to work in Windows - this was the case irrespective of whether VirtualBox was running on Mac or Linux - see [`Intel HD Audio`](assets/images/virtualization/intel-hd-audio.png) (from note on [`pixhawk-tones.html`](assets/pixhawk-tones.html) page).
 
-TODO: comment that you "need" to bump video memory up to 18MB - see [`low-video-memory.png`](images/virtualization/low-video-memory.png).
+TODO: comment that you "need" to bump video memory up to 18MB - see [`low-video-memory.png`](assets/images/virtualization/low-video-memory.png).
 
 TODO: comment the VMs provided by Microsoft are only meant for browser testing and technically you should buy a Windows license for this kind of usage.
 
@@ -50,7 +50,7 @@ However there are issues with this - often background processes on the host syst
 
 To prevent this you can setup USB filters for a given VM. Make sure the given VM is shutdown - then right click on it in VirtualBox and select _Settings..._, go to the _USB_ section and make sure _Enable USB Controller_ is ticked and that at least _USB 2.0_ is selected. Then plug in any USB devices that you will want to use with the VM, once plugged in these devices can be added to the list of _USB Device Filters_. For each device just click the "+" button to the right of the list and select the device from the displayed list.
 
-![adding a USB filter](images/virtualization/usb-filters.png)
+![adding a USB filter](assets/images/virtualization/usb-filters.png)
 
 Then unplug the devices and start the VM - now if you plug in any of these devices VirtualBox will grab it immediatelly before any other process on the host system sees it and immediatelly connect it to the VM, so avoiding any issues with host process trying to grab the device. When the VM is not running the USB device will be treated as normal, i.e. processes on the host system can see it as before.
 

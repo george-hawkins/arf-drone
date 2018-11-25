@@ -13,10 +13,10 @@ The most common step up from this is a vibration damping platform. Nearly every 
 I bought [one from Unmanned Tech UK](https://www.unmannedtechshop.co.uk/vibration-damping-mounting-set/). In this set the plates seem to be cut from some strong plastic (rather than molded) and are significantly stronger than you'd achieve with a hobbyist 3D printer.
 
 _Vibration damping platform unassembled_  
-<img height="256" src="images/assembly/vibration/vibration-damping-platform-unassembled.jpg">
+<img height="256" src="assets/images/assembly/vibration/vibration-damping-platform-unassembled.jpg">
 
 _Vibration damping platform assembled_  
-<img height="256" src="images/assembly/vibration/vibration-damping-platform-assembled.jpg">
+<img height="256" src="assets/images/assembly/vibration/vibration-damping-platform-assembled.jpg">
 
 Forcing the ends of the rubber plugs through the holes in the plates is somewhat challenging - for some hints see [these instructions](https://cdn.thingiverse.com/assets/e6/fe/0b/ee/57/Omnimac_Pixhawk_Mount_v1.1_Instructions.pdf).
 
