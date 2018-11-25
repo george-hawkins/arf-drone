@@ -1,0 +1,28 @@
+# Cleanflight / SPRACINGF3EVO 2.1.0 Jul 30 2017 / 13:13:51 (8b24735)
+
+feature -RX_PPM
+feature -TRANSPONDER
+feature RX_SERIAL
+feature MOTOR_STOP
+feature LED_STRIP
+map TAER1234
+serial 1 64 115200 57600 0 115200
+
+aux 0 0 0 1900 2100
+aux 1 1 1 900 1100
+aux 2 2 1 1400 1600
+aux 3 13 1 1900 2100
+set serialrx_provider = SBUS
+set motor_pwm_rate = 1000
+set 3d_deadband_throttle = 0
+profile 0
+
+set p_pitch = 80
+set d_pitch = 44
+set p_roll = 80
+set d_roll = 44
+set p_yaw = 185
+rateprofile 0
+
+set rc_expo = 55
+set rc_expo_yaw = 35

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  </head>
+  <body>
+	<div class="container">
+		<h1>Pixhawk tones</h1>
+
+        <p>Here you can listen to the various sounds the Pixhawk makes to report its state.</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Meaning</th>
+      <th>Audio</th>
+      <th>Sound wave</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td>Start up OK.</td><td><audio controls><source src="tones/start-up-OK.mp3" type="audio/mp3"></audio></td><td><img src="tones/start-up-OK.png"></td></tr>
+<tr><td>Startup failed.</td><td><audio controls><source src="tones/startup-failed.mp3" type="audio/mp3"></audio></td><td><img src="tones/startup-failed.png"></td></tr>
+<tr><td>Armed.</td><td><audio controls><source src="tones/armed.mp3" type="audio/mp3"></audio></td><td><img src="tones/armed.png"></td></tr>
+<tr><td>Failed to arm.</td><td><audio controls><source src="tones/failed-to-arm.mp3" type="audio/mp3"></audio></td><td><img src="tones/failed-to-arm.png"></td></tr>
+<tr><td>Disarmed.</td><td><audio controls><source src="tones/disarmed.mp3" type="audio/mp3"></audio></td><td><img src="tones/disarmed.png"></td></tr>
+<tr><td>Low battery.</td><td><audio controls><source src="tones/low-battery.mp3" type="audio/mp3"></audio></td><td><img src="tones/low-battery-squashed.png"></td></tr>
+<tr><td>No SD card.</td><td><audio controls><source src="tones/no-SD-card.mp3" type="audio/mp3"></audio></td><td><img src="tones/no-SD-card-squashed.png"></td></tr>
+<tr><td>Lost copter alarm.</td><td><audio controls><source src="tones/lost-copter-alarm.mp3" type="audio/mp3"></audio></td><td><img src="tones/lost-copter-alarm.png"></td></tr>
+<tr><td>GPS glitch.</td><td><audio controls><source src="tones/GPS-glitch.mp3" type="audio/mp3"></audio></td><td><img src="tones/GPS-glitch.png"></td></tr>
+<tr><td>Barometer glitch.</td><td><audio controls><source src="tones/barometer-glitch.mp3" type="audio/mp3"></audio></td><td><img src="tones/barometer-glitch.png"></td></tr>
+<tr><td>EKF or inertial nav failure.</td><td><audio controls><source src="tones/EKF-or-inertial-nav-failure.mp3" type="audio/mp3"></audio></td><td><img src="tones/EKF-or-inertial-nav-failure.png"></td></tr>
+<tr><td>Parachute release.</td><td><audio controls><source src="tones/parachute-release.mp3" type="audio/mp3"></audio></td><td><img src="tones/parachute-release.png"></td></tr>
+<tr><td>New IO board firmware found.</td><td><audio controls><source src="tones/new-IO-board-firmware-found.mp3" type="audio/mp3"></audio></td><td><img src="tones/new-IO-board-firmware-found.png"></td></tr>
+<tr><td>New IO board firmware loaded successfully.</td><td><audio controls><source src="tones/new-IO-board-firmware-loaded.mp3" type="audio/mp3"></audio></td><td><img src="tones/new-IO-board-firmware-loaded-squashed.png"></td></tr>
+  </tbody>
+</table>
+
+<h2>Notes</h2>
+
+<p>The sounds for "low battery", "no SD card" and "new IO board firmware loaded successfully" are much longer than the other sounds so their soundwave images have been squashed to a maximum length of 500 pixels, so they're not to scale relative to all the other images.</p>
+
+<p>The original sound files came from <a href="https://3dr.com/support/articles/listen_to_notification_tones/">https://3dr.com/support/articles/listen_to_notification_tones/</a> and have been converted to small MP3s that can be played directly on this page.</p>
+
+<p>The originals were oddly large stereo recordings of mono sounds, e.g. the "loaded successfully" sound was a 2.1MB WAV file and has been converted to a 95KB MP3 file here. Really you should be able to get them down to a few bytes, e.g. as MIDI files played back through <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio</a> but these MP3 files were the smallest things I could produce that could easily be played on all platforms. The corresponding <a href="https://en.wikipedia.org/wiki/Ogg">ogg</a> files are smaller but did not work with MS Edge.</p>
+
+<p>The audio playback on this page has been tested on the latest versions of Chrome, Safari, Firefox and MS Edge.<p>
+
+<p>I use Windows running on a VirtualBox VM. In order to get sound working for Windows I had to change the VM's audio controller setting from "ICH AC97" to "Intel HD Audio".</p>
+
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  </body>
+</html>
