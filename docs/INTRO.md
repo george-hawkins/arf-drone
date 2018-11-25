@@ -1,6 +1,6 @@
 ---
-id: README
-title: README
+id: INTRO
+title: Introduction
 ---
 
 2017 first time large quadcopter build
