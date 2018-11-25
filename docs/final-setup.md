@@ -198,6 +198,11 @@ Note: the auto-trim instructions haven't been updated since the time of the old 
 
 TODO: wouldn't it be easier if auto-tune just involved letting the craft drift for 25 seconds (assuming its drifting is not too extreme) and then working out from the start and end GPS positions how trim needs to be adjusted - even with relatively inaccurate GPS fixes this should be fairly OK if the craft is left to drift for long enough, no?
 
+TODO
+----
+
+See auto-tune and auto-trim snippits in misc (not added to git - on Linux box) - maybe neaten them up into a one page PDF to printout and bring with you on first flight.
+
 Notes
 -----
 
