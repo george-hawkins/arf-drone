@@ -11,18 +11,12 @@
 const siteConfig = {
   title: 'ARF Drone', // Title for your website.
   tagline: 'Unused',
-  url: 'https://george-hawkins.github.io', // Your website URL
-  baseUrl: '/arf-drone/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
 
-  // Used for publishing and more
-  projectName: 'unused',
+  // See https://docusaurus.io/docs/en/publishing#deploying-to-github-pages
+  url: 'https://george-hawkins.github.io',
+  baseUrl: '/arf-drone/', // You can't omit the trailing slash.
+  projectName: 'arf-drone',
   organizationName: 'george-hawkins',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [],
