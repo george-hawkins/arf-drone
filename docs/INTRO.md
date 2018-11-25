@@ -1,10 +1,8 @@
 ---
 id: INTRO
-title: Introduction
+title: 2017 first time large quadcopter build
+sidebar_label: Introduction
 ---
-
-2017 first time large quadcopter build
-======================================
 
 **Goal:** I wanted to go from knowing nothing about remote control vehicles to building a quadcopter that could complete a route autononmously, i.e. without human control from the ground. I wanted as few black box elements as possible in the system and so used open source software and hardware wherever reasonably possible.
 

@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+export GIT_USER=george-hawkins
+export USE_SSH=true
+
+yarn run publish-gh-pages
