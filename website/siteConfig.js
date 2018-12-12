@@ -9,8 +9,8 @@
 // site configuration options.
 
 const siteConfig = {
-  title: 'ARF Drone', // Title for your website.
-  tagline: 'Unused',
+  title: 'Large Quadcopter Build', // Title for your website.
+  disableTitleTagline: true,
 
   // See https://docusaurus.io/docs/en/publishing#deploying-to-github-pages
   url: 'https://george-hawkins.github.io',
@@ -18,15 +18,16 @@ const siteConfig = {
   projectName: 'arf-drone',
   organizationName: 'george-hawkins',
 
+  editUrl: 'https://github.com/george-hawkins/arf-drone/edit/docusaurus/docs/',
+
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [],
 
-  /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
+  // Path to images for header.
+  headerIcon: 'img/header-icon.svg',
   favicon: 'img/favicon.png',
 
-  /* Colors for website */
+  // Colors for website.
   colors: {
     primaryColor: '#2E8555',
     secondaryColor: '#205C3B',
@@ -49,9 +50,8 @@ const siteConfig = {
   // No .html extensions for paths.
   cleanUrl: true,
 
-  // Open Graph and Twitter card images.
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
+  // Open Graph image.
+  ogImage: 'img/og-image.png',
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
