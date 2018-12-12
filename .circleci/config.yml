@@ -21,7 +21,9 @@ jobs:
           command: |
             git config --global user.email "george-hawkins@users.noreply.github.com"
             git config --global user.name "George Hawkins"
-            cd website && yarn install && GIT_USER=george-hawkins USE_SSH=true yarn run publish-gh-pages
+            cd website && yarn install && \
+              GIT_USER=george-hawkins USE_SSH=true CUSTOM_COMMIT_MESSAGE="[skip ci]" \
+              yarn run publish-gh-pages
 
 workflows:
   version: 2
