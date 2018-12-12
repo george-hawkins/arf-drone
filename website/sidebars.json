@@ -1,59 +1,71 @@
 {
   "docs": {
-    "Getting Started": [
+    "Build": [
         "INTRO",
+        "parts",
+        "purchase-order",
+        "battery-charging",
+
+        "transmitter-getting-started",
+        "stick-setup",
+        "transmitter-model-setup",
+        "transmitter-flight-modes",
+
+        "receiver",
+
+        "electronics-assembly",
+        "binding",
+        "pixhawk-setup",
+
+        "frame-parts",
+        "pdb-soldering",
+        "frame-assembly",
+
+        "final-assembly",
+        "build-2/build-2",
+
+        "final-setup"
+    ],
+    "Appendices": [
+        "pixhawk-leds",
+        "pixhawk-tones",
+        "pixhawk-driver",
+        "transmitter-extras",
+        "soldering",
+        "stores",
+        "windows-vm",
+        "opentx-companion-on-ubuntu",
+        "qgroundcontrol"
+    ],
+    "FPV quad": [
+        "eachine-qx95",
+        "inprogress-qx95",
+        "cleanflight-settings/cleanflight-settings-README",
+        "fpv-x-racer"
+    ],
+    "Followup projects": [
+        "video",
+        "telemetry"
+    ],
+    "Miscellaneous" : [
         "antenna-mount/antenna-mount-README",
         "antenna-mount/version-1/antenna-mount-v1-README",
         "antenna-mount/version-2/antenna-mount-v2-README",
-        "battery-charging",
-        "binding",
-        "build-2/build-2",
-        "case",
-        "cleanflight-settings/cleanflight-settings-README",
-        "eachine-qx95",
-        "electronics-assembly",
         "f450-dimensions",
-        "final-assembly",
-        "final-setup",
-        "foam-outline/foam-outline-README",
-        "fpv-x-racer",
-        "frame-assembly",
-        "frame-parts",
         "gps-mast-placement",
-        "inprogress-qx95",
-        "opentx-companion-on-ubuntu",
+        "notes",
+        "notes-to-self",
         "pages-and-videos",
-        "parts",
-        "pdb-soldering",
-        "pixhawk-driver",
-        "pixhawk-leds",
-        "pixhawk-setup",
-        "pixhawk-tones",
         "power-module-xt60-to-deans",
-        "purchase-order",
-        "qgroundcontrol",
-        "receiver",
         "receiver-power",
         "receiver-windows-upgrade",
         "rx8r",
-        "soldering",
-        "sounds",
-        "stick-setup",
-        "stores",
-        "telemetry",
-        "transmitter-extras",
-        "transmitter-flight-modes",
-        "transmitter-getting-started",
-        "transmitter-model-setup",
         "unused-parts",
         "vibration-damping-platform",
-        "video",
         "voice",
-        "windows-vm"
-    ],
-    "Miscellaneous" : [
-        "notes",
-        "notes-to-self",
+        "sounds",
+        "case",
+        "foam-outline/foam-outline-README",
         "20181021-rebuild-params/20181021-rebuild-params-README"
     ]
   }
