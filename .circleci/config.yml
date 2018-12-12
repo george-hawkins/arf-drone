@@ -18,8 +18,7 @@ jobs:
           command: |
             git config --global user.email "george-hawkins@users.noreply.github.com"
             git config --global user.name "George Hawkins"
-            echo "machine github.com login george-hawkins password $GITHUB_TOKEN" > ~/.netrc
-            cd website && yarn install && GIT_USER=george-hawkins yarn run publish-gh-pages
+            cd website && yarn install && GIT_USER=george-hawkins USE_SSH=true yarn run publish-gh-pages
 
 workflows:
   version: 2
