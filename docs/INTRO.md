@@ -6,7 +6,7 @@ sidebar_label: Introduction
 
 **Goal:** I wanted to go from knowing nothing about remote control vehicles to building a quadcopter that could complete a route autononmously, i.e. without human control from the ground. I wanted as few black box elements as possible in the system and so used open source software and hardware wherever reasonably possible.
 
-TODO: include photo of final build here.
+![in-flight](assets/images/in-flight.jpg)
 
 Having some experience with hobbyist electronics projects I initially thought that I'd really be able to make a quadcopter from scratch, 3D printing elements of the frame, sourcing most of the components, like motors, as generic parts from a big distributor like Digi-Key, and only having to buy a few drone-specific components like propellers.
 

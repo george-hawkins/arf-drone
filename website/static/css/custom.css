@@ -1,5 +1,9 @@
 /* your custom css */
 
+article p img {
+    display: inline; // Override Docusaurus switching it to block and forcing each image onto a new line.
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
