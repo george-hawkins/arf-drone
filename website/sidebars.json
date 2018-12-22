@@ -35,7 +35,8 @@
         "stores",
         "windows-vm",
         "opentx-companion-on-ubuntu",
-        "qgroundcontrol"
+        "qgroundcontrol",
+        "notes"
     ],
     "FPV quad": [
         "eachine-qx95",
@@ -53,7 +54,6 @@
         "antenna-mount/version-2/antenna-mount-v2-README",
         "f450-dimensions",
         "gps-mast-placement",
-        "notes",
         "notes-to-self",
         "pages-and-videos",
         "power-module-xt60-to-deans",
