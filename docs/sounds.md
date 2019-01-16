@@ -1,12 +1,9 @@
 ---
 id: sounds
-title: Sounds
+title: Flight mode sounds
 ---
 
 TODO: merge with [`voice.md`](voice.md)
-
-Flight mode sounds
-==================
 
 TODO: provide some kind of pointers to getting nicer sounds than "flight mode 1" etc. going on the transmitter.
 

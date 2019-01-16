@@ -1,10 +1,7 @@
 ---
 id: notes-to-self
-title: Notes To Self
+title: Notes to self
 ---
-
-Notes to self
-=============
 
 The white arrow seen near the bottom of the front panel of the Pixhawk case isn't a pointless graphic - when installing the unit this arrow should be pointing towards the front of the quadcopter (see the [standard orientation](http://ardupilot.org/copter/docs/common-mounting-the-flight-controller.html#standard-orientation) section of the ArduPilot setup guide).
 

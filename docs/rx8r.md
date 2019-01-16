@@ -1,10 +1,7 @@
 ---
 id: rx8r
-title: Rx8r
+title: Inside the RX8R
 ---
-
-Inside the RX8R
-===============
 
 The RX8R consists of a primary PCB and a radio submodule.
 

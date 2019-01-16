@@ -1,10 +1,7 @@
 ---
 id: pixhawk-setup
-title: Pixhawk Setup
+title: Pixhawk setup
 ---
-
-Pixhawk setup
-=============
 
 In order to setup your Pixhawk you need a ground control application. Ground control applications fulfil a number of roles. Once your system is fully setup it's the software that you run on your computer to plan out routes that can be uploaded to the Pixhawk and can then be followed autonomously by your craft once it's in the air. If you've got a telemetry kit (like this [one](https://www.unmannedtechshop.co.uk/100mw-ardupilot-unmanned-telemetry-kit-v2-433mhz/)), made up of a ground module that's plugged into your computer and an air module that's plugged into the flight controller on your craft, then the ground control software can track the status of your craft in-flight (showing it's location, battery level and other telemetry data) and also control it in a similar fashion to your transmitter.
 

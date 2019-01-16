@@ -1,6 +1,6 @@
 ---
 id: windows-vm
-title: Windows Vm
+title: Windows VM
 ---
 
 Some of applications used in this drone build only run on Windows. As I only use Linux and MacOS I had to run these in a VM.

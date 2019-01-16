@@ -1,10 +1,7 @@
 ---
 id: qgroundcontrol
-title: Qgroundcontrol
+title: QGroundControl
 ---
-
-QGroundControl
-==============
 
 Install QGroundControl (QGC) as per the [Download and Install](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html) section of its manual.
 

@@ -1,9 +1,7 @@
 ---
 id: unused-parts
-title: Unused Parts
+title: Unused parts
 ---
-
-### Unused parts
 
 The following are parts that were originally included in the [`parts.md`](parts.md) page but were ultimately never used.
 

@@ -1,10 +1,7 @@
 ---
 id: vibration-damping-platform
-title: Vibration Damping Platform
+title: Vibration damping
 ---
-
-Vibration damping
-=================
 
 It's important to minimize the vibration to which the internal sensors in the flight controller are subjected. There are no end of suggested alternatives to attaching the flight controller directly to the frame. For some reducing vibration has become an obsession but it is possible to overstate the issue - 3DR, the original Pixhawk manufacturer, felt that just using adhesive foam to attach the controller to the frame was an adequate solution.
 

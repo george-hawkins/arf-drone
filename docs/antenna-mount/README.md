@@ -1,10 +1,7 @@
 ---
 id: antenna-mount-README
-title: Antenna Mount README
+title: Antenna mount
 ---
-
-Antenna mount
-=============
 
 This directory contains contains two antenna mount designs for laser cut POM. [`version-1`](version-1/antenna-mount-v1-README) contains the original design and [`version-2`](version-2/antenna-mount-v2-README) contains the follow-up improved design.
 

@@ -1,10 +1,7 @@
 ---
 id: frame-parts
-title: Frame Parts
+title: F450 frame kit
 ---
-
-F450 frame kit
---------------
 
 Online stores seem to be particularly vague about what exactly comes in the F450 frame kit. The kit I received consisted of:
 

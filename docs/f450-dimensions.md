@@ -1,10 +1,7 @@
 ---
 id: f450-dimensions
-title: F450 Dimensions
+title: F450 dimensions
 ---
-
-F450 dimensions
-===============
 
 There don't seem to be any comprehensive technical drawing for the F450 frame.
 

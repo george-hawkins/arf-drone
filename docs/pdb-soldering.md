@@ -1,10 +1,7 @@
 ---
 id: pdb-soldering
-title: Pdb Soldering
+title: Soldering the PDB
 ---
-
-Soldering the PDB
-=================
 
 Soldering the ESCs and the power connector to the PDB is the only really tricky part of the assembly.
 

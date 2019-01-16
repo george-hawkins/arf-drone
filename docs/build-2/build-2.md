@@ -1,32 +1,9 @@
 ---
 id: build-2
-title: Build 2
+title: Final assembly
 ---
 
-Second pass
-===========
-
-Blah blah...
-
-Flight video
-------------
-
-[![flight video](https://img.youtube.com/vi/zLzhGyQgPUc/0.jpg)](https://www.youtube.com/watch?v=zLzhGyQgPUc)
-
-Ideally you'd just include the following HTML, that YouTube gives you, directly. You could this if using GitHub pages but GitHub markdown doesn't allow the `iframe` tag needed.
-
-```HTML
-<!-- Add &autoplay=1 to autoplay. -->
-<iframe
-    width="892" height="502"
-    src="https://www.youtube.com/embed/zLzhGyQgPUc?version=3&loop=1&playlist=zLzhGyQgPUc"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-```
-
-So instead here I'm just using a non-embedded [solution](https://stackoverflow.com/a/16079387) from SO that includes only the black bars as a visual clue that the image links to a video.
+This is the second pass at doing the final assemebly - merge with the first version.
 
 Flight photos
 -------------
@@ -39,6 +16,8 @@ _2._
 
 _3._  
 <img src="../assets/build-2/IMAG0314.jpg" width="512">
+
+TODO: include one of the above after the final instructions for the first flight.
 
 Soldering PDB
 --------

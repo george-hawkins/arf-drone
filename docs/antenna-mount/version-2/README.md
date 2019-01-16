@@ -1,10 +1,7 @@
 ---
 id: antenna-mount-v2-README
-title: Antenna Mount Version 2 README
+title: Antenna mount - version 2
 ---
-
-Version 2
-=========
 
 This directory contains my second antenna mount design, incorporating the lessons learned from the first design. It retains the cable-tie hole though really I think it probably makes more sense to attach the receiver to the mount using tape.
 

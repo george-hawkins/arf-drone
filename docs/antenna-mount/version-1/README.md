@@ -1,10 +1,7 @@
 ---
 id: antenna-mount-v1-README
-title: Antenna Mount Version 1 README
+title: Antenna mount - version 1
 ---
-
-Version 1
-=========
 
 This directory contains the original antenna mount design.
 

@@ -1,10 +1,7 @@
 ---
 id: pixhawk-driver
-title: Pixhawk Driver
+title: Pixhawk Windows device driver
 ---
-
-Pixhawk Windows device driver
-=============================
 
 Both Mission Planner and QGroundControl will install the necessary Pixhawk device driver as part of their installation process on Windows. You can also [download](https://pixhawk.org/firmware/downloads) the driver from pixhawk.org and install it directly. The dev.px4.io [Windows development page](https://dev.px4.io/en/setup/dev_env_windows.html) just links to the version on pixhawk.org.
 

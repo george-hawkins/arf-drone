@@ -1,10 +1,7 @@
 ---
 id: fpv-x-racer
-title: Fpv X Racer
+title: X-racer notes
 ---
-
-X-racer notes
-=============
 
 DIY X-racer: <https://www.fpvmodel.com/x-racer-x-1-diy-combo_g1269.html> (it's assumed you have a TX).
 

@@ -1,7 +1,9 @@
 ---
 id: transmitter-extras
-title: Transmitter Extras
+title: Transmitter extras
 ---
+
+This page includes some additional transmitter related notes.
 
 Main screen pages
 -----------------

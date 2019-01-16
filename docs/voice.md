@@ -1,12 +1,9 @@
 ---
 id: voice
-title: Voice
+title: OpenTX sounds
 ---
 
 TODO: merge with [`sounds.md`](sounds.md)
-
-OpenTX sounds
-=============
 
 The OpenTX sound files are built by the Python code in [`opentx/.../radio/util`](https://github.com/opentx/opentx/blob/2.2/radio/util) - the main files being [`tts.py`](https://github.com/opentx/opentx/blob/2.2/radio/util/tts.py) and [`tts_en.py`](https://github.com/opentx/opentx/blob/2.2/radio/util/tts_en.py).
 

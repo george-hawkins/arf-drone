@@ -1,10 +1,7 @@
 ---
 id: electronics-assembly
-title: Electronics Assembly
+title: Assembling the electronics
 ---
-
-Electronics
-===========
 
 Now that we've done the initial set up for the transmitter and receiver, we can connect up all the electronics (except the battery, ESCs and motors) and then connect everything to a computer via USB to configure the flight controller (and experiment a bit) before putting together the full drone.
 

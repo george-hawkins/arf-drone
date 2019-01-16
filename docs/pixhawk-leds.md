@@ -1,6 +1,6 @@
 ---
 id: pixhawk-leds
-title: Pixhawk Leds
+title: Pixhawk LEDs
 ---
 
 The 3DR site used to maintain information on the LEDs on the Pixhawk - however gradually all their Pixhawk information is disappearing and the images included below are no longer available from there.

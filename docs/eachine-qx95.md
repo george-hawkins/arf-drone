@@ -1,10 +1,7 @@
 ---
 id: eachine-qx95
-title: Eachine Qx95
+title: Eachine QX95
 ---
-
-Practising with the Eachine QX95
-================================
 
 Nearly every introduction to flying quadcopters tells people to expect frequent crashes when they get started with learning to fly. You have to get used to controlling the two sticks simultaneously and get used to things like [ground effect](https://en.wikipedia.org/wiki/Ground_effect_(aerodynamics)) and so on.
 
@@ -94,7 +91,7 @@ I took out the FPV camera on my QX95 which gave me lots of room for the buzzer b
 
 Increased the roll/pitch expo from 0 to 0.55 and the yaw expo from 0 to 0.35 as per <http://www.propwashed.com/learning-rate-mode/>.
 
-Painless360 (when working with ArduCopter rather than Betaflight) use rates of 25% and 15% respectively for these values. 
+Painless360 (when working with ArduCopter rather than Betaflight) use rates of 25% and 15% respectively for these values.
 
 I haven't found anything really good on rates and expos in Betaflight - [this video](https://www.youtube.com/watch?v=sGl7KBfZYZA) explains things a bit but you'd already need to have thought about the linear relationship between stick movements and quadcopter movements that exists before these adjustments are applied. Oscar Liang goes into more details [here](https://oscarliang.com/rc-roll-pitch-yaw-rate-cleanflight/), although his initial screenshot comes from an old version of Cleanflight and this is an area where things have changed a lot (which is reflected in comments and updates in the text).
 

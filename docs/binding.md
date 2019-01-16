@@ -1,10 +1,7 @@
 ---
 id: binding
-title: Binding
+title: Binding the receiver
 ---
-
-Binding
-=======
 
 We've already got all our electronics wired up and can power the Pixhawk via USB and the Pixhawk in turn can power the receiver. And we've created a model on our transmitter - so now we can bind our receiver to out transmitter.
 

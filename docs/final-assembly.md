@@ -1,10 +1,7 @@
 ---
 id: final-assembly
-title: Final Assembly
+title: Final assembly
 ---
-
-Final assembly
-=============
 
 First pass at final assembly. Next add in the comments included with the photos in Google Photos. Rename the image files to more informative names. Then work in all the Post-its etc.
 

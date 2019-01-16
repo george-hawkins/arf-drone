@@ -1,12 +1,12 @@
 ---
 id: opentx-companion-on-ubuntu
-title: Opentx Companion On Ubuntu
+title: OpenTX Companion on Ubuntu
 ---
 
 Installing OpenTX Companion on Ubuntu
 -------------------------------------
 
-Just follow the instructions on <https://launchpad.net/~opentx-test/+archive/ubuntu/rel> to install OpenTX Companion on Ubuntu:
+To install OpenTX Companion on Ubuntu just follow the instructions on <https://launchpad.net/~opentx-test/+archive/ubuntu/rel>:
 
     $ sudo add-apt-repository ppa:opentx-test/rel
     $ sudo apt-get update

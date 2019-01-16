@@ -1,10 +1,7 @@
 ---
 id: power-module-xt60-to-deans
-title: Power Module Xt60 To Deans
+title: Power module - XT60 To Deans
 ---
-
-Power module connector
-======================
 
 Rather than use an adapter I eventually cut off the XT60 connector on my power module and replaced it with a T-plug connector suitable for use with my batteries.
 

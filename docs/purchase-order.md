@@ -3,9 +3,6 @@ id: purchase-order
 title: Purchase Order
 ---
 
-Purchase order
---------------
-
 * GBP 215 - Pixhawk flight controller - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/unmanned-pixhawk-autopilot-kit/)).
   With the optional power module, Ublox Neo-M8N GPS module and telemetry kit.
 * GBP 30 - X8R receiver - ([Unmanned Tech UK](https://www.unmannedtechshop.co.uk/frsky-x8r-8-16ch-s-bus-accst-receiver-with-smart-port/)).

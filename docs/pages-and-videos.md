@@ -1,16 +1,25 @@
 ---
 id: pages-and-videos
-title: Pages And Videos
+title: Pages and videos
 ---
-
-Pages and videos
-================
-
-TODO: move initial website recommendations from README to here.
 
 Watching videos is much more bearable if you double the speed - a feature that someone else only recently pointed out to me. Click on the video's settings cog and change the speed.
 
 RCdiy covers doing a [range check](http://rcdiy.ca/taranis-q-x7-tutorial-first-flight-setup/#Range_Check) via the transmitter - make sure to cover this too.
+
+---
+
+When putting together these pages initially the most useful sites I found were:
+
+* ArduPilot - in particular its [assembly](http://ardupilot.org/copter/docs/common-pixhawk-wiring-and-quick-start.html) and related sections.
+* [Pixhawk.org](https://pixhawk.org/)
+* RCGroups - in particualr the [multicopter drone forums](https://www.rcgroups.com/aircraft-electric-multirotor-drones-790/).
+
+The [ArduPilot forums](http://discuss.ardupilot.org/) and [PX4 forums](http://discuss.px4.io/) were also useful.
+
+Note: the terms Pixhawk and PX4 are often used interchangeably - though Pixhawk generally refers to the flight controller hardware while PX4 generally refers to the flight controller software stack.
+
+**Update:** much of the information of pixhawk.org was stale and out-of-date - but they seem to have revamped the site since and there's also now lots of very useful information at <https://docs.px4.io/en/>
 
 ---
 

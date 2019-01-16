@@ -3,9 +3,6 @@ id: video
 title: Video
 ---
 
-Video
-=====
-
 TODO: remember to add SD card (see specific link below) to purchase list of things for video. Along with extra long pin header or a mirco-B USB connector shell (see below).
 
 RunCam 2 - what you get in the box:
@@ -102,9 +99,9 @@ Notes
 
 The internal battery of the goggles didn't come with enough initial power to turn on the goggles straight away, but they could be turned on immediately on connecting to mains power, i.e. you don't have to wait while the battery charges. On being plugged plugged in the battery LED goes solid red and goes green once fully charged.
 
-On delivery the internal battery of the goggles didn't have 
+On delivery the internal battery of the goggles didn't have
 
-The googles would not power up off their internal battery 
+The googles would not power up off their internal battery
 
 I could turn on the googles immediately on plugging
 

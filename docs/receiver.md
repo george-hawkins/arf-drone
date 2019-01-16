@@ -3,9 +3,6 @@ id: receiver
 title: Receiver
 ---
 
-Receiver
-========
-
 The FrSKY X8R receiver is probably the most popular receiver for this kind of build. It features two PCB antennas - a PCB antenna provides much the same performance as a classic whisker style antenna in a smaller package (but at increased cost). The two antenna provide [antenna diversity](https://en.wikipedia.org/wiki/Antenna_diversity) which allows for a more reliable wireless link.
 
 Note: it's sometimes erroneously claimed that one of the two antennas is for reception and the other for transmission - this is not the case.

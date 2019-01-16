@@ -3,9 +3,6 @@ id: soldering
 title: Soldering
 ---
 
-Soldering
-=========
-
 If you come from a background, like computer science in my case, that doesn't involve much hacking of the physical world, beyond occassionally plugging things in, then soldering can seem a little intimidating initially.
 
 But it's actually very easy and just takes a small amount of practice to get started. You do however need some equipment first.

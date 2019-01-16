@@ -1,10 +1,7 @@
 ---
 id: receiver-power
-title: Receiver Power
+title: Receiver power
 ---
-
-Receiver power
-==============
 
 Normally the flight controller provides power to the receiver. But if you want to experiment with it on its own then it's easy to power it directly.
 

@@ -1,10 +1,7 @@
 ---
 id: transmitter-flight-modes
-title: Transmitter Flight Modes
+title: Transmitter - Flight Modes
 ---
-
-Flight modes
-============
 
 We've already done a lot with the transmitter. But now we've got to set up being able to switch between flight modes. Unlike a classic model airplane, a quadcopter has a flight controller that looks after many things for you and which can operate in various different modes. These modes are called flight modes and can cover a whole range of things from particular operations, e.g. taking care of landing itself or using GPS to return to its point of take off, or changing its flight behavior, normally the craft flies in mode called stabilize where it tries to take care of a lot of the difficulty of flying but you can switch it into modes like acro where flying is more difficult but you can engage in more aggressive flying (like sports mode on some cars).
 

@@ -49,6 +49,7 @@
         "telemetry"
     ],
     "Miscellaneous" : [
+        "snippets",
         "antenna-mount/antenna-mount-README",
         "antenna-mount/version-1/antenna-mount-v1-README",
         "antenna-mount/version-2/antenna-mount-v2-README",

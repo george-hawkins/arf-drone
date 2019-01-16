@@ -1,10 +1,7 @@
 ---
 id: stick-setup
-title: Stick Setup
+title: Stick setup
 ---
-
-Stick configuration
-===================
 
 Your transmitter comes with two sticks but what should happen when you e.g. move the left stick up and down? This depends on convention. There are a number of conventions for stick configuration and they have been given uninformative names, i.e. "mode 1", "mode 2" etc. By far the most common mode is mode 2 (where up down on the left stick controls the throttle). The next most common is mode 1 (popular in Japan) and then the other modes almost never come up.
 

@@ -4,8 +4,8 @@ title: Telemetry
 ---
 
 
-TODO: Telemetry
-===============
+TODO
+====
 
 Wiring up telemetry for X8R and Pixhawk - <http://ardupilot.org/copter/docs/common-frsky-telemetry.html> (includes setup in Mission Planner).
 

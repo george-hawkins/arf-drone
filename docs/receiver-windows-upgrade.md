@@ -1,10 +1,7 @@
 ---
 id: receiver-windows-upgrade
-title: Receiver Windows Upgrade
+title: Receiver Windows upgrade
 ---
-
-Upgrading the receiver via Windows
-==================================
 
 It is much easier to upgrade the receiver via the transmitter but for reference this page documents the process of upgrading the receiver via Windows - this requires two additional components, an [FrUSB-3 (FUC-3)](http://www.frsky-rc.com/product/pro.php?pro_id=37) upgrade cable and the [Smart Port Converter (SPC)](http://www.frsky-rc.com/product/pro.php?pro_id=132).
 

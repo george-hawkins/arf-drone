@@ -1,10 +1,7 @@
 ---
 id: frame-assembly
-title: Frame Assembly
+title: Frame assembly
 ---
-
-Frame assembly
-==============
 
 TODO: see also [`frame-parts.md`](frame-parts.md).
 

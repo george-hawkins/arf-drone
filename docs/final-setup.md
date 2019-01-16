@@ -1,10 +1,7 @@
 ---
 id: final-setup
-title: Final Setup
+title: Final setup
 ---
-
-Final setup
------------
 
 Here we'll just do some final setup to:
 
@@ -213,7 +210,9 @@ Notes
 
 * For a nice video on setting up telemetry (discovering sensors) on the Q X7 see this [video](https://youtu.be/Qo4Ck_vsJ6I?t=122) from Painless360 (from 2:02 onwards). And for one on displaying all the data available from your FLVSS sensor on your transmitter, including the individual cell voltages, the highest and lowest values and the difference between these two, see this [video](https://youtu.be/lORZGjDpZEg).
 * There are only so many tracks available in the OpenTX standard sound pack, even the larger packs that you can find in the popular  [Amber sound pack thread](https://www.rcgroups.com/forums/showthread.php?2151914-The-Amber-Transmitter-Sound-Pack) can't cover everything. So if there isn't a track already available for something, it may be more convenient to flag the event with one of the non-specific chirps and beeps that OpenTX provides. So instead of _Play Track_ you can choose _Play Sound_ and then pick from sounds with names like Robot, Sci-fi, Cricket etc.
- ![play sound special function](assets/images/opentx-screenshots/tuning/play-sound-special-function.png)  
- You can add new tracks but you can't add new sounds - there's just a limited set of them hardcoded into OpenTX. They're programmatically generated in the `audioEvent` function found in the OpenTX [`audio_arm.cpp`](https://github.com/opentx/opentx/blob/2.2/radio/src/audio_arm.cpp) file.
+
+ ![play sound special function](assets/images/opentx-screenshots/tuning/play-sound-special-function.png)
+
+* You can add new tracks but you can't add new sounds - there's just a limited set of them hardcoded into OpenTX. They're programmatically generated in the `audioEvent` function found in the OpenTX [`audio_arm.cpp`](https://github.com/opentx/opentx/blob/2.2/radio/src/audio_arm.cpp) file.
 * Above we just setup the _SC_ switch to trigger auto tune mode directly. There are only a limited number of switches on the transmitter - if you end up wanting to trigger substantially more actions then it makes more sense to create logical switches (as we did for the flight modes). This way you can easily get easily trigger eight additional events by combining _SC_ and _SD_ to get 3 banks of 3 triggers, i.e. 9 possible states (where the first corresponds to nothing-triggered, leaving you with 8 triggers).
 * I used a special function to get _SC_ to set the channel 7 value high. On the whole though this kind of thing should be done via mixes - I asked a question above this on RCGroups and got some nice replies, if you look at the [thread](https://www.rcgroups.com/forums/showthread.php?2979489-OpenTX-set-3-way-switch-so-its-mid-maxes-one-ch-and-down-maxes-another-%28via-mixes%29) you can see alternative approaches to doing things with mixes rather than using a special function. The question involves using the _SC&darr;_ position in addition to the _SC-_ position used here. For this situation though a special function is good enough.

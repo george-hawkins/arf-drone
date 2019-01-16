@@ -1,10 +1,7 @@
 ---
 id: transmitter-getting-started
-title: Transmitter Getting Started
+title: Transmitter - Getting Started
 ---
-
-The transmitter
-===============
 
 It came as a bit of a surprise to me, initially at any rate, that the transmitter involves at least as much configuration as the flight controller. I couldn't believe that it's really just a box of switches with a radio that you essentially have to program in order to use it for a specific purpose. This page is one of the longest build steps but don't let it intimidate you!
 

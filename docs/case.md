@@ -3,9 +3,6 @@ id: case
 title: Case
 ---
 
-Case
-====
-
 I filled my case with polyurethance foam - this is often called upholstery or cushion foam and can be found in a hardware stores.
 
 It would be very convenient if you could cut polyurethane foam with a [hot wire cutter](https://www.banggood.com/Hot-Wire-Polystyrene-Foam-Cutter-Cutting-Tool-Craft-Hobby-DIY-Processing-p-1204378.html) or an [electric craft pen cutter](https://www.banggood.com/15W-100-240V-Foam-Cutter-Electric-Styrofoam-Cutting-Machine-Pen-Kit-Tool-p-1040053.html) as you can with styrofoam.

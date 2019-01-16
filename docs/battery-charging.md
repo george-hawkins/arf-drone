@@ -1,20 +1,20 @@
 ---
 id: battery-charging
-title: Battery Charging
+title: Batteries
 ---
-
-Batteries
-=========
 
 Charging LiPo batteries is somewhat more involved than you might imagine. The battery needs to be connected to the charger via two leads, one is the same heavy duty lead that's used to connect the battery to your drone and the other is a balance lead. The charger charges the battery via the main heavy duty lead and monitors the state of the individual cells via the balance lead. Not all the cells become fully charged at the same time so once some of the cells reach full charge an odd thing happens (or so it seems initially), the charger continues charging the whole battery so that the remaining cells also become fully charged but at the same time it has to start ever so slightly discharging the cells that have aleady reached full charge so that they don't become overcharged as the battery continues to be charged. This discharging happens via the balance lead, so it serves both to monitor and discharge cells. Bruce Simpson has a very good video that goes into the details, from [6:08](https://www.youtube.com/watch?v=wIbHLacozFo&feature=youtu.be&t=368) to 11:30 he explains the whole thing on a whiteboard (after the 11:30 point he starts explaining his clever trick for quickly charging specific cells in a battery that have somehow become very out of balance with the others - this is fairly specialist stuff and not immediately relevant).
 
-| Parts |
-|-------|
-| _S60 charger._<br><img width="256" src="assets/images/assembly/charging/charger.jpg"> |
-| _Battery._<br><img width="256" src="assets/images/assembly/charging/battery.jpg"> |
-| _Voltage sensor._<br><img height="256" src="assets/images/assembly/charging/voltage-sensor.jpg"> |
-| _LiPo safety bag._<br><img height="256" src="assets/images/assembly/charging/safety-bag.jpg"> |
+Parts
+-----
 
+_S60 charger._<br><img width="256" src="assets/images/assembly/charging/charger.jpg">
+
+_Battery._<br><img width="256" src="assets/images/assembly/charging/battery.jpg">
+
+_Voltage sensor._<br><img height="256" src="assets/images/assembly/charging/voltage-sensor.jpg">
+
+_LiPo safety bag._<br><img height="256" src="assets/images/assembly/charging/safety-bag.jpg">
 
 Voltage sensor
 --------------
@@ -40,7 +40,7 @@ The classic battery alarm makes a very loud noise as its warning signal whereas 
 Connecting charger and battery
 ------------------------------
 
-*Warning:* Always connect the charger lead (with the banana plugs) to the charger before connecting it to the battery.
+**Warning:** Always connect the charger lead (with the banana plugs) to the charger _before_ connecting it to the battery.
 
 _Charger and charger lead._  
 <img height="512" src="assets/images/assembly/charging/charger-and-lead.jpg">
@@ -56,7 +56,7 @@ _Charger connected to battery._
 
 Ideally you should do your charging on a concrete or stone floor (as shown below), i.e. avoid more flammable surfaces like wood or carpet. I do my charging on a metal baking tray near a window so I can throw it outside if any problems occur.
 
-**Update:** I stopped using a metal tray after I did exactly what I warn about above - I unplugged the banana connectors from the charger before disconnecting the battery from the charger lead. Having a large metal surface around when you make this kind of mistake is only likely to make the shorting risk even worse.
+**Update:** I stopped using a metal tray after I did exactly what I warn about above - I unplugged the banana connectors from the charger before disconnecting the battery from the charger lead. Having a large metal surface around when you make this kind of mistake is only likely to increase the risk of shorting risk.
 
 Battery charging
 ----------------

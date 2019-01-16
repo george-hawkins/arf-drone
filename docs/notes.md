@@ -3,9 +3,6 @@ id: notes
 title: Notes
 ---
 
-Notes
-=====
-
 This page contains miscellaneous notes that came out of putting together the parts list for the quadcopter.
 
 Motor direction

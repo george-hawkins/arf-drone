@@ -1,6 +1,6 @@
 ---
 id: inprogress-qx95
-title: Inprogress Qx95
+title: Inprogress QX95
 ---
 
 The default channel order on my Q X7 was set to AETR while the QX 95 expects the channel order to be TAER.

@@ -1,10 +1,7 @@
 ---
 id: transmitter-model-setup
-title: Transmitter Model Setup
+title: Transmitter - Model Setup
 ---
-
-Transmitter next steps
-======================
 
 Previously we updated everything to do with the transmitter - in particular the transmitter OS called OpenTX. Then we disabled self-centering for the throttle. Now we'll finally go through the basic configuration for the transmitter. There are no end of transmitter settings you can adjust but we can ignore nearly all of them as they have sensible defaults or are irrelevant for our setup. We'll just set some basic things like time and date and create a model.
 
