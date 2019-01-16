@@ -4,6 +4,14 @@ article p img {
     display: inline; /* Override Docusaurus switching it to block and forcing each image onto a new line. */
 }
 
+.navPusher {
+    padding-top: 50px; /* Fix navbar issue - https://github.com/facebook/Docusaurus/issues/1187 */
+}
+
+.tocActive .onPageNav {
+    top: 98px; /* See navbar issue above. */
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
