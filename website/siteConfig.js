@@ -42,7 +42,15 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+      '//code.jquery.com/jquery-3.3.1.min.js',
+      '//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js',
+      '/arf-drone/js/config-fancybox.js' // You can't do baseUrl + 'js/...' - see https://stackoverflow.com/q/4616202
+  ],
+
+  stylesheets: [
+      '//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'
+  ],
 
   // On page navigation for the current documentation page.
   // Comment out onPageNav to remove the right-hand sidebar that includes the section heading within the current page.
