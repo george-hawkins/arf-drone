@@ -153,6 +153,20 @@ Here I used a suitable UHU epoxy but I later bought [J-B Weld epoxy](https://www
 
 I just used a ??? metal plate (have a look in Migros and see what it's called and get it's dimensions) on top of a piece of cardboard (for a bit of padding between the metal plate and the Pixhawk) so that the clamps didn't press down directly on the fairly flimsy case of the Pixhawk.
 
+**Update:** the clamping was pointless, according to the [instructions](https://github.com/george-hawkins/vhb-tape/blob/master/5952F.png) on the packaging you just need to apply pressure for 10 seconds. That and cleaning the surface with isopropyl alcohol seem to be the important things.
+
+> Instructions for use:
+> 
+> 1. The surfaces to be bonded must be solid, clean, dry and free from grease and dust. Do not clean surfaces with oily or silicon based household cleaners but use isopropyl alcohol or a 50:50 mix of isopropyl alcohol and water instead.
+> 
+> 2. Do not touch the adhesive. Apply the tape with firm pressure.
+> 
+> 3. Then remove the liner from the other side, press the parts together over the whole area and apply firm pressure for 10 seconds.
+> 
+> 4. Ideal temperature for application is 15 °C to 25 °C.
+> 
+> Do not apply weight to the attachment until at least 24 hours after application Support the attachment for this duration of time. Overhead applications are not recommended.
+
 _24._  
 <img src="assets/images/assembly/final-assembly/IMG_20170909_131942.jpg" width="512">
 
