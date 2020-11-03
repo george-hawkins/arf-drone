@@ -91,6 +91,8 @@ _Cloverleaf RP-SMA antennas._
 _GoPro FPV adapter cable._  
 <img width="512" src="assets/images/video/gopro-fpv-adapter-cable.jpg">
 
+**Update:** in the end, I didn't use this adapter. Instead, I used the one that came with the RunCam 2, i.e. this [one](https://shop.runcam.com/tv-out-and-power-cable-for-runcam-2/).
+
 _Analog video capture._  
 <img width="512" src="assets/images/video/analog-video-capture.jpg">
 
