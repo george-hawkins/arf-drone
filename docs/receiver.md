@@ -66,6 +66,8 @@ Now we're going to connect up the transmitter to the receiver as shown here usin
 
 Now that the receiver is connected, turn it on, navigate to the `FIRMWARE` directory. Select the right firmware file (don't mix it up with the XJT module firmware that you might also have there), it should be called something like `X8R_LBT_build151118.frk`, select _ENTER_ and this time select _Flash ext. device_ (rather than _int. device_).
 
+TODO: now, in addition to _Flash ext. device_, there's also _Flash S.Port_ - you now have to use this option, _Flash ext. device_ no longer works.
+
 The receiver's green LED will turn on and its red LED will flash during the process. On the transmitter you'll see a progress bar, indicating that the new firmware is being written, and once successfully completed it'll just return to the SD card screen. Turn off the transmitter and disconnect the now upgraded receiver.
 
 Note: servo cables always have power as the middle wire - this prevents a more serious issue than getting ground and signal mixed up (which won't work but is probably safe). If ground and power were the two outer pins (with signal in the middle) then it would be possible to get power and ground mixed up which would almost certainly fry the device. It's always important to check power and ground wires - in hobbyist setups, unlike consumer electronics, there may be nothing preventing you wiring things up incorrectly and the result will often be fatal for the devices involved.

@@ -111,6 +111,8 @@ So the OS on the transmitter is OpenTX and you can interact with it via the LCD 
 * _MENU_ - press and release quickly and you get to _Model selection_, press _EXIT_ to get back to the main screen, press and hold _MENU_ for a little longer and you get to _Radio setup_.
 * _EXIT_ - gets you back to the main screen, it's also used in combination with the dial when changing the value of settings. Also - if you've scrolled far down a long screen, with the dial, pressing _EXIT_ quickly will return you to the top of the screen.
 
+TODO: long pressing _MENU_ now takes you to the _TOOLS_ page and it's only if you page forward to page 3 that you get to _RADIO SETUP_.
+
 Go to _Radio setup_ and press the _PAGE_ button repeatedly to cycle through various screens (you can see the screen you're on, e.g. 3 of 9, in the upper right corner).
 
 Note: confusingly in this context _radio_ just means the overall device, i.e. your Taranis Q X7, and doesn't mean the radio hardware that communicates with the receiver on the drone. Even more confusingly the radio hardware is sometimes referred to as the transmitter or TX module. I.e. depending on context transmitter and radio can refer to the whole device or just the component that handles the actual radio communication.
@@ -154,7 +156,9 @@ OpenTX Companion can run on Mac, Linux and Windows. On Mac and Linux it doesn't 
 
 To get OpenTX Companion go to [OpenTX.org](http://www.open-tx.org/) and then to the _News_ section, click on the link to the latest OpenTX 2.2.0 RC (RC18 at the time of writing). Go to the bottom of the resulting page and click on the link for the OpenTX Companion version for your system (Window, Mac or Linux).
 
-Note: OpenTX Companion is installed like any other application on Windows or Mac - on Linux it's still easy but requires installing the releases PPA for OpenTX first - see [`opentx-companion-on-ubuntu.md`](opentx-companion-on-ubuntu.md) for more details.
+Note: OpenTX Companion is installed like any other application on Windows or Mac - on Linux it's still easy but requires installing the releases PPA for OpenTX first - see [`opentx-companion-on-ubuntu`](opentx-companion-on-ubuntu.md) for more details.
+
+TODO: update instructions to just use the `.deb` rather than bothering with the PPA.
 
 TODO: normally I wouldn't recommend an RC release but it's actually a prerelease version of 2.2.0 that comes on the Q X7 and 2.2.X is the first version that comes with direct support for the Q X7. Once 2.2.0 stable is out update this section telling people to go to Downloads (where stable versions are) rather than to New and an RC release.
 
@@ -178,10 +182,14 @@ In _Settings_ change the radio type to _FrSky Taranis X7_ and tick _lua_ and _ma
 
 For a more detailed walkthru of these basic settings see Oscar Liang's [walkthru](https://oscarliang.com/flash-opentx-firmware-taranis/), just jump down to the "Firmware Download and Flashing" section. Note that he's setting things up for a Taranis X9D+ and that he turns off _massstorage_ (as he wants to be able to use the transmitter with simulators, something I haven't tried). Also Wayne Flower's [video from the 2:59 mark](https://www.youtube.com/watch?v=q1D-LEfDprk&feature=youtu.be&t=179) covers the same thing for the Q X7 (note he enables nightly builds as an option, but only because this video was made before a stable 2.2.X version came out).
 
+TODO: _massstorage_ is no longer an option - you no longer have to choose between it and simulator usage.
+
 Backup
 ------
 
 Now we're ready to connect the transmitter to the computer. You'll need a USB cable with a mini-B connector (like [this one](https://www.amazon.co.uk/AmazonBasics-USB-2-0-Cable-Male/dp/B00NH11N5A)), i.e. the kind of cable usually used to connect to cameras.
+
+Do **not** plug the cable into the transmitter before entering bootloader mode - if you do so you will not be able to turn on the transmitter.
 
 First start the transmitter in bootloader mode - this involves pressing the two black trim swtiches above the LCD inwards while you press the power button. Again Oscar Liang has a nice picture in his [walkthru](https://oscarliang.com/flash-opentx-firmware-taranis/) , see the "Backup Current Configuration" section (however we're going to back things up in a different way to him).
 
@@ -200,6 +208,8 @@ First we're going to backup the current transmitter setup - in OpenTX Companion 
 
 If _massstorage_ is currently enabled for your Q X7 (which is the factory default) then you transmitter should appear on your computer as a USB drive called _Taranis_, if you open this drive you should find two files called `EEPROM.BIN` and `FIRMWARE.BIN` that contain exactly the same contents as the two files we just backed up. So if _massstorage_ is enabled an even easier way to backup your transmitter is to just copy these two files to your computer.
 
+TODO: as covered below, you'll actually see two drives if you've inserted an SD card into your Q X7, _Taranis_, as mentioned, and _OPENTX_, where _OPENTX_ corresponds to the contents of the SD card.
+
 In all likelyhood you'll never need these backups.
 
 Note: if you recorded your current OpenTX firmware version as described above then you may also want to record the bootloader version to see how it is affected by the upgrade process - just record the top title of the bootloader screen, it should be something like "X7 Bootloader 2.2.0".
@@ -209,7 +219,7 @@ While USB is connected it's not acutally possible to power off the transmitter, 
 Upgrade
 -------
 
-For upgrading we're going to connect the transmitter to the computer again but this time without turning the transmitter on first. When you connected the transmitter you may here a little pop from its speaker but nothing else should happen.
+For upgrading we're going to connect the transmitter to the computer again but this time the transmitter **must** be turned off when you connect the USB cable. When you connect the transmitter you may here a little pop from its speaker but nothing else should happen - the transmitter should appear to be in a turned-off state (but actually, it's waiting silently for a firmware update).
 
 Now, using OpenTX Companion, let's download the latest OpenTX firmware suitable for your transmitter (assuming you haven't already done so - OpenTX Companion nags you everytime you restart it to do so). Go to the _File_ menu and select _Download..._, then click _Check for updates_. It'll go off and find the latest firmware and prompt you to save it to your local drive - do so. Now we're ready to write the latest version of OpenTX to the transmitter - go to the _Read/Write_ menu and select _Write Firmware to Radio_. It will now pop up a dialog showing the details of the firmware version you just downloaded, just click the _Write to TX_ button. Now you'll see a progress bar, click _Show Details_ and you'll then see a more informative indication of progress.
 
@@ -228,9 +238,11 @@ The Q X7 doesn't come with an SD card but we're going to need one to upgrade the
 
 The SD card can store images and sound files that the OpenTX firmware can use and you can backup to the SD card and store firmware updates for the radio (and, as we'll see later, also for the receiver).
 
-You don't need a very big one - the standard set of sound files etc. are only around 37MB and a complete backup takes less than 1MB so a 1GB card would be more than enough. However the smallest card you can buy these days seems to be about 8GB - something like this [Kingston 8GB microSD card](https://www.amazon.co.uk/Kingston-8GB-Micro-SD-HC/dp/B001CQT0X4/).
+You don't need a very big one - the full set of sound files etc. are less than 150MB and a complete backup takes less than 1MB so a 1GB card would be more than enough. However the smallest card you can buy these days seems to be about 8GB - something like this [Kingston 8GB microSD card](https://www.amazon.co.uk/Kingston-8GB-Micro-SD-HC/dp/B001CQT0X4/).
 
-Go to the same place that you downloaded OpenTX Companion (see above) and just above the links to OpenTX Companion you should find a link to _SDCard content_. Click this and download the latest version shown for the Q X7 (`sdcard-taranis-x7-2.2V0009.zip` at the time of writing).
+TODO: the card contents are about 140MB, but more than 99% of that is sounds files and about 90% of these sound files are for languages other than English. But given that the total is so small anyway, it's hardly worth optimizing by removing sound files for other languages. Hmmm... actually, it is worth removing other language sound files as it greatly speeds-up the sync operations done with OpenTX Companion later on when setting up flight modes etc.
+
+Go to the same place that you downloaded OpenTX Companion (see above) and just above the links to OpenTX Companion you should find a link to _SDCard content_. Click this and download the latest version shown for the Q X7 (`sdcard-128x64-2.3V0034.zip` at the time of writing).
 
 TODO: update once 2.2.0 stable comes out.
 
@@ -253,13 +265,20 @@ Once you're ready eject the card and put it into the transmitter (the SD card sl
 _Inserting SD card._  
 <img width="512" src="assets/images/assembly/transmitter/sd-card.jpg">
 
-Now turn on the transmitter - the first thing you'll notice is that the transmitter starts talking to you, you'll here it say "Welcome to OpenTX". This can be a little disconcerting but apparently the audio alerts are useful when you're flying and you want to stay looking at your drone rather than the LCD screen.
+Now turn on the transmitter - the first thing you'll notice is that the transmitter starts talking to you, you'll here it say "Welcome to OpenTX". This can be a little disconcerting but the audio alerts are very useful when you're flying and you want to stay looking at your drone rather than the LCD screen.
 
 Now if you go to _radio setup_ (as described already above) and then press _PAGE_ to get to the _SD card_ screen you'll see the contents of the card. If you haven't already, try playing with the dial and pressing it to navigate around the contents of the card - it's fairly intuitive.
 
 ![SD card contents](assets/images/opentx-screenshots/sd-card-contents.png)
 
 If you connect your transmitter (while turned on) via USB to your computer you'll now see two USB drives (assuming you enabled _massstorage_ as outlined up above). One is the _Taranis_ drive we saw before and the other is the SD card - it looks just as it did when directly connected to your computer.
+
+TODO: now that _massstorage_ is no longer an option, you're now asked (when OpenTX is running in normal mode, i.e. not bootloader mode nor the silent firmware update mode), on connecting the USB cable, to _Select mode_:
+
+* _USB joystick (HID)_
+* _USB storage (SD)_
+
+If you select joystick you can go to a site like <https://gamepad-tester.com/> and, once you move the sticks, you'll see it detected up as a joystick.
 
 Note: Here I setup the initial contents of the SD card on my computer before putting it into the transmitter - in [this video](https://www.youtube.com/watch?v=2wZM_dqvBJ4&feature=youtu.be&list=PLiYYhnH4BhI-ot9OQ9djvRaacFHboFqC2&t=170) the presenter inserts a blank SD card straight into the transmitter and then connects the transmitter to his computer and copies the extracted SD card contents over via USB. The end result is the same but don't try to interact with the SD card via the transmitter before this is done. I tried doing this - after inserting a blank SD card into the transmitter I put it into bootloader and tried to use the _Write Firmware_ option to backup the firmware to the card. However this just results in the somewhat cryptic error "No directory found" - OpenTX and its bootloader expect the directory structure seen above, i.e. `FIRMWARE` etc. to already be there.
 
@@ -275,6 +294,8 @@ Now that we've upgraded we've upgraded the OpenTX and its bootloader the last st
 
 The Q X7 and other modern FrSKY transmitters come with an internal XJT module but FrSKY also sell an external XJT module. All these modules use the same firmware - on the old FrSKY site this used to be clear as the firmware download page included a list of compatible devices. This list seems to have been lost with the recent site redesign - so you just have to know that the firmware associated with the external XJT module is also the firmware for use with the internal module in your transmitter.
 
+TODO: now you can find the XJT firmware with the other downloads for your particular transmitter (in the _FIRMWARE - XJT RF Module_ section) but as before it's identical with the firmware for the external XJT module.
+
 Go to [_Download_](http://www.frsky-rc.com/download/) on the FrSKY site, scroll down to _Modules_ and select _XJT_. On the _XJT_ page expand the _Firmware_ section and download the latest firmware file. The downloaded zip file will contain two `.frk` files, one for the EU (with `EU` or `LBT` in the middle of its name) and one for other jurisdictions. The EU has specific wireless regulations that require a technology called LBT. You should use only the `.frk` file appropriate for your jurisdiction.
 
 Notes:
@@ -289,6 +310,8 @@ Once that's done, and you've disconnected USB (or reinsterted the SD card), rest
 ![flash XJT](assets/images/opentx-screenshots/flash-xjt.png)
 
 Oddly the process just finishes without any confirmation (if there had been a problem though it would have told you) and there appears to be no way to query the XJT firmware version via OpenTX - you just have to trust that it's been done (I've confirmed this on the [OpenTX chat channel](https://opentx.rocket.chat/channel/OpenTX_General?msg=mszoW8QwiAirmFfvy)).
+
+TODO: now it says _Flash successful_ - much nicer.
 
 Wrap up
 -------
